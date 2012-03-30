@@ -1,0 +1,37 @@
+---
+layout: post
+title: "To Iterate is Human, to Recurse, Divine"
+date: 2011-07-28 12:30
+comments: true
+categories: programming
+---
+
+今天偶然看到這句話，"To iterate is human, to recurse, divine."，無巧不巧，最近幾天的課程我也剛好在講解**遞迴**的概念。
+
+說這句話的老兄是 [L. Peter Deutsch][deutsch]，雖然他的姓寫作是「德意志（Deutsch）」，可是這位德意志先生卻是個道道地地的美國麻省人。Deutsch 在電腦界最主要的貢獻就是 [Ghostscript][ghostscript] 和 [Archie][archie]。Ghostscript 是可以用來生成 PDF 或是 Postscript 格式文件的軟體，從 1988 第一版釋出一直到今年 2011 橫跨了 23 個年頭，仍然持續開發維護中（當然維護者早已換人接手，不再是 Deutsch 了），也衍生了許多分支專案。
+
+[deutsch]: http://en.wikipedia.org/wiki/L._Peter_Deutsch
+[ghostscript]: http://zh.wikipedia.org/wiki/Ghostscript
+[archie]: http://en.wikipedia.org/wiki/Archie_search_engine
+
+而關於另一項成就 Archie 可能聽過的人就比較少了，因為這是早年的一項網路服務，如同 Gopher 或是 News 一樣，早已淹沒在歷史的洪流中。在大家都還是以 FTP 作為主要下載方式的年代裡，Archie 可以整合不同匿名 FTP 站台的資訊，建立各站台擁有檔案的索引，然後使用者只要上連 Archie 網站，輸入檔名進行搜尋，就可以知道自己想要的檔案可以從哪個 FTP 站台下載。聽起來很像搜尋引擎做的工作不是？沒錯，**Archie 某種程度上可說是網頁搜尋引擎的前身**。早在 Google 甚至 Yahoo! 出生之前，Archie 就已經在 Internet 上運作好一段時間了。對這段歷史有興趣的可以看看這篇：[The first search engine, Archie.][tfsea]
+
+[tfsea]: http://www.isrl.illinois.edu/~chip/projects/timeline/1990archie.htm
+
+回頭來看看篇首這句：
+
+> "To iterate is human, to recurse, divine" 
+
+這句到底代表什麼意思，著實讓我推敲了很久。先來看看網路找來的兩個我覺得不錯的翻譯（原譯者均不明）：
+
+> “迭代（iterate）者为人，递归（recurse）者为神。”
+
+> 「遞迴（recurse）只應天上有, 凡人該當用迴圈（iterate）」
+
+同樣一句話，將其放在不同情境下會有截然不同的解讀。這句的意思到底是要說*「我們應該放棄平凡的作法，盡量使用遞迴，以追求神的境界」*呢？還是想表達*「遞迴這種作法太神乎奇技了，我們應該用簡單、平凡，一般人都可以接受的作法，以迴圈來實現」*呢？
+
+我參透不出這句話到底是*推崇遞迴*還是*鼓勵迴圈*。不過以我的經驗而言，遞迴雖然一開始很容易讓人腦筋打結，可是當熟悉遞迴之後，許多複雜的處理都會變得簡單明瞭。許多程式機制的實作擺脫不了遞迴，比方說遍歷某資料夾下的所有子資料夾與檔案、迷宮路徑的搜尋，或是 AI 決策樹的判斷，使用遞迴來寫可以達到事半功倍的效果。
+
+當然，所有的的遞迴都可以改寫成迴圈形式，改寫為迴圈形式通常也可以獲得效率上的提升，因為遞迴層層呼叫的過程中不停將資料塞入堆疊又從堆疊取出的手續太耗成本，遠不如迴圈以少數幾個變數就可以控制完整的流程。但是將遞迴改寫成迴圈的形式往往會失去邏輯的簡潔與結構的優雅。
+
+寫程式經常就是遇到這種兩難：要嘛對電腦好，讓它少算一點，少用點空間；要嘛對人好，電腦多做點工，可是人類看起 Code 來輕鬆（話說遞迴也不見得都比迴圈式的改寫好懂就是）。因此，針對同一件事情，該用遞迴解還是迴圈解好呢？我想，選擇自己與他人都**容易理解的方法**去做，那就對了。

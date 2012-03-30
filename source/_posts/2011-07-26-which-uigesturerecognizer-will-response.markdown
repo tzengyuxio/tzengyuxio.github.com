@@ -1,0 +1,30 @@
+---
+layout: post
+title: "UIGestureRecognizer 的共存"
+date: 2011-07-26 19:55
+comments: true
+categories: objective-C
+---
+
+在 iPhone 或 iPad 的開發中，除了用 `touchesBegan` / `touchesMoved` / `touchesEnded` 這組方法來控制使用者的手指觸控外，也可以用 [UIGestureRecognizer][] 的衍生類別來進行判斷。用 `UIGestureRecognizer` 的好處在於有現成的手勢，開發者不用自己計算手指移動的軌跡。`UIGestureRecognizer` 的衍生類別有以下數種：
+
+[UIGestureRecognizer]: http://developer.apple.com/library/ios/#documentation/uikit/reference/UIGestureRecognizer_Class/Reference/Reference.html#//apple_ref/occ/cl/UIGestureRecognizer
+
+- `UITapGestureRecognizer`
+- `UIPinchGestureRecognizer`
+- `UIRotationGestureRecognizer`
+- `UISwipeGestureRecognizer`
+- `UIPanGestureRecognizer`
+- `UILongPressGestureRecognizer`
+
+從命名上不難了解這些類別所對應代表的手勢，分別是 Tap（點一下）、Pinch（二指往內或往外撥動）、Rotation（旋轉）、Swipe（滑動，快速移動）、Pan （拖移，慢速移動）以及 LongPress（長按）。這些手勢類別在使用上也很簡單，只要在使用前宣告並掛到對應的視圖（UIView）元件上即可。
+
+<script src="https://gist.github.com/1106515.js?file=uigesturerecognizer.m"></script>
+
+問題來了。有些手勢其實是互相關連的，例如 Tap 與 LongPress、Swipe 與 Pan，或是 Tap 一次與 Tap 兩次。當一個 UIView 同時掛上兩個相關連的手勢時，到底我這一下手指頭按的要算是 Tap 還是 LongPress？如果照預設作法來看，只要「先滿足條件」的就會跳出並呼叫對應方法，舉例來說，如果同時註冊了 Pan 跟 Swipe，只要手指頭一移動就會觸發 Pan 然後跳出，因而永遠都不會發生 Swipe；單點與雙點的情形也是一樣，永遠都只會觸發單點，不會有雙點。
+
+那麼這問題有解嗎？有的，`UIGestureRecognizer` 有個方法叫做 `requireGestureRecognizerToFail`，他可以指定某一個 recognizer，即便自己已經滿足條件了，也不會立刻觸發，會等到該指定的 recognizer 確定失敗之後才觸發。以同時支援單點擊與雙點擊的作法為例，程式碼如下：
+
+<script src="https://gist.github.com/1106562.js?file=uitapgesturerecognizer.m"></script>
+
+如此一來，在第一下點擊後，如果有迅速點擊第二下，就會觸發 `doubleRecognizer`；反之要是隔了一小段時間，造成 `doubleRecognizer` 發生 fail，就會回頭觸發 `singleRecognizer` 了。

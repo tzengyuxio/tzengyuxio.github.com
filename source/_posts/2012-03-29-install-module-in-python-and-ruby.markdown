@@ -14,7 +14,7 @@ categories: [python, ruby]
 
 ## Python 的 easy_install
 
-Python 的 easy_install 人如其名，真的很 easy。比方說我看到 [Markdown 2.1.1 : Python Package Index](http://pypi.python.org/pypi/Markdown) 這個套件想要安裝，我只要到終端機輸入下面指令就行了：
+Python 的 easy_install 人如其名，真的很 easy。比方說我看到 [Markdown 2.1.1 : Python Package Index][python] 這個套件想要安裝，我只要到終端機輸入下面指令就行了：
 
     $ easy_install markdown
     
@@ -28,7 +28,7 @@ easy_install 主要的功能就是安裝，如果需要進一步說明，可以�
 
 ## Ruby 的 gem
 
-相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的**套件管理工具**。例如我想安裝一個叫 [toodledo](http://toodledo.rubyforge.org/toodledo/) 的套件，可以這麼輸入：
+相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的**套件管理工具**。例如我想安裝一個叫 [toodledo][rubyforge] 的套件，可以這麼輸入：
 
     $ gem install toodledo
 
@@ -55,3 +55,6 @@ easy_install 主要的功能就是安裝，如果需要進一步說明，可以�
 ## 在 Mac 上
 
 上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 `sudo` 再執行就好了。
+
+[python]: http://pypi.python.org/pypi/Markdown
+[rubyforge]: http://toodledo.rubyforge.org/toodledo/
