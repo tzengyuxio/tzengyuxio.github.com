@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://tzengyuxio.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: octopress | My Octopress Blog]]></title>
+  <link href="http://tzengyuxio.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.github.com/"/>
   <updated>2012-03-30T09:54:26+08:00</updated>
   <id>http://tzengyuxio.github.com/</id>
@@ -138,119 +138,6 @@
 <p>裝的過程還算順利，但也不是完全一帆風順。我遇到了一個 <code>rb-fsevent</code> 編譯錯誤的問題，幸好在 <a href="http://newbsd.com/blog/2012/03/19/my-first-try-install-octopress-on-my-mac-os-x-lion-10-dot-7-3-and-some-thing-stuff/">這篇文章</a> 中找到了解決方式，重點在於一行 <code>xcode-select</code> 指令。</p>
 
 <p>架設好了環境，索性又申請了一個新的域名，這下真的是徹頭徹尾搬了新家。鷹架都搭好了，剩下的就是充實內容了。希望新的環境能夠帶來更愉快的書寫體驗，也期許自己今年能夠有更充實文章記錄。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Python 與 Ruby 的模組安裝]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/29/install-module-in-python-and-ruby/"/>
-    <updated>2012-03-29T08:39:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/29/install-module-in-python-and-ruby</id>
-    <content type="html"><![CDATA[<p>其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。</p>
-
-<p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
-
-<p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
-
-<h2>Python 的 easy_install</h2>
-
-<p>Python 的 easy_install 人如其名，真的很 easy。比方說我看到 <a href="http://pypi.python.org/pypi/Markdown">Markdown 2.1.1 : Python Package Index</a> 這個套件想要安裝，我只要到終端機輸入下面指令就行了：</p>
-
-<pre><code>$ easy_install markdown
-</code></pre>
-
-<p>要刪除模組的話則是輸入：</p>
-
-<pre><code>$ easy_install -m markdown
-</code></pre>
-
-<p>easy_install 主要的功能就是安裝，如果需要進一步說明，可以參考</p>
-
-<pre><code>$ easy_install --help
-</code></pre>
-
-<h2>Ruby 的 gem</h2>
-
-<p>相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的<strong>套件管理工具</strong>。例如我想安裝一個叫 <a href="http://toodledo.rubyforge.org/toodledo/">toodledo</a> 的套件，可以這麼輸入：</p>
-
-<pre><code>$ gem install toodledo
-</code></pre>
-
-<p>或是指定版本號：</p>
-
-<pre><code>$ gem install toodledo --version 1.3.8
-</code></pre>
-
-<p>移除的話是：</p>
-
-<pre><code>$ gem uninstall toodledo
-</code></pre>
-
-<p>我想知道有沒有跟 markdown 相關的套件，我可以用如下方式尋找：</p>
-
-<pre><code>$ gem list markdown --remote
-</code></pre>
-
-<p>如果沒有加上 <code>--remote</code>, 則會列出本機已經安裝的套件。</p>
-
-<pre><code>$ gem list
-</code></pre>
-
-<p>更詳細的說明可以參考線上說明。</p>
-
-<pre><code>$ gem help
-</code></pre>
-
-<h2>在 Mac 上</h2>
-
-<p>上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 <code>sudo</code> 再執行就好了。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ls Color on Mac]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac/"/>
-    <updated>2012-03-29T01:44:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac</id>
-    <content type="html"><![CDATA[<p><img src="http://tzengyuxio.github.com/images/2012/2012-03-29-ls-color.png" alt="ls color" /></p>
-
-<p>昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。</p>
-
-<p>是說原本預設的也夠我用了就是，不過有個多采多姿的 ls 輸出不僅能提昇工作效率，光看著心情也會好起來。</p>
-
-<h2>開啟顏色輸出</h2>
-
-<p>在 Linux 要開啟顏色輸出是透過 <code>ls --color</code> 指令。而在 Mac 或 BSD 上則是使用 <code>ls -G</code>。</p>
-
-<p>當然，每次都加這參數也是麻煩。寫程式的都是懶人，所以我在 <code>~/.bashrc</code> 檔案中加入下面這行設定：</p>
-
-<pre><code>alias ls='ls -GF'
-</code></pre>
-
-<p>要說明一下的是，上面的設定除了開啟顏色輸出外，還加了 <code>-F</code> 這個能夠在 ls 輸出中加入識別符號的參數。像是目錄的名字後面會加上 &#8216;/&#8217;, 可執行檔會加上 &#8216;*&#8217;,  符號連結 (symbolic link) 會加上 &#8216;@&#8217; 等等。</p>
-
-<h2>顏色的指定</h2>
-
-<p>關於顏色的指定，Linux 使用 <code>LS_COLORS</code> 環境變數，BSD 則是使用 <code>LSCOLORS</code>。兩者的設定方式也不同，這部份網路上資料很好找，就不贅述。</p>
-
-<p>直接說結果，我所使用的顏色組合如下：</p>
-
-<pre><code>export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
-</code></pre>
-
-<p>將這行加入 <code>~/.bash_profile</code> 就可以享受美美的 ls 了。這個配色設定是從 <a href="https://github.com/seebi/dircolors-solarized/issues/10">LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD</a> 這網頁參考來的。</p>
-
-<p>附帶一提，Mac 或 BSD 的 <code>LSCOLORS</code> 參數只能指定預設檔案類型的顏色，比較常見的類型只有檔案、可執行檔、符號連結三種。Linux 的 <code>LS_COLORS</code> 除了上述這些之外，還可以針對附檔名作指定，像是把 .zip .rar .tgz 等壓縮檔設成黃色；然後 .avi .m4v .mov 等影片檔設成洋紅色之類的。</p>
-
-<h2>補充資訊</h2>
-
-<ol>
-<li>BSD 下還有一個環境變數 <code>CLICOLOR</code>, 在 <code>~/.bash_profile</code> 中加入 <code>export CLICOLOR=1</code> 可以得到跟 <code>ls -G</code> 一樣的效果。</li>
-<li>如果想要自己配色的，<a href="http://geoff.greer.fm/lscolors/">LSCOLORS Generator</a> 這個網頁提供了一個方便的配色小工具。</li>
-<li>喜歡 Solarized 的話，<a href="https://github.com/seebi/dircolors-solarized">seebi/dircolors-solarized</a> 是一個將 Solarized 延伸到 ls color 的專案。可惜只適用在 <strong>GNU ls</strong>, 也就是 Linux 系統上的 ls。</li>
-<li>如果你無論如何也想在 Mac 上看到壓縮檔、影片檔、音樂檔等不同類型檔案也有不同顏色，或是想要使用上面提到的 Solarized ls 配色，那麼可以考慮安裝 <a href="http://www.gnu.org/software/coreutils/">Coreutils - GNU core utilities</a> 這套件。</li>
-</ol>
-
 ]]></content>
   </entry>
   

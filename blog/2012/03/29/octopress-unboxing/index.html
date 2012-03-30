@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - My Octopress Blog</title>
+  <title>Octopress 開箱首發文 - My Octopress Blog</title>
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="Blog Archive 2012 octopress 的開箱文系列
-Mar 30 2012 posted in octopress Octopress 開箱首發文
-Mar 29 2012 posted in octopress Python 與 Ruby 的模組安裝
-Mar 29 2012 &hellip;">
+  <meta name="description" content="前天與昨天兩天我都在修改 blogger 的 template－－起因是這樣：我在 Chrome 裝了個 HTML5 Outliner 的擴充，透過這個擴充，可以查看某個網頁的大綱排列是否如預想的一樣。很顯然，blogger 預設提供的幾個範本並沒有良好的 HTML5 大綱結構， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ Mar 29 2012 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://tzengyuxio.github.com/blog/archives">
+  <link rel="canonical" href="http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -78,78 +75,109 @@ Mar 29 2012 &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Octopress 開箱首發文</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-29T16:55:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>前天與昨天兩天我都在修改 blogger 的 template－－起因是這樣：我在 Chrome 裝了個 <a href="https://chrome.google.com/webstore/detail/afoibpobokebhgfnknfndkgemglggomo">HTML5 Outliner</a> 的擴充，透過這個擴充，可以查看某個網頁的大綱排列是否如預想的一樣。很顯然，blogger 預設提供的幾個範本並沒有良好的 HTML5 大綱結構，於是我決定動手修改它。</p>
 
-  
-  <h2>2012</h2>
+<p>原本以為這是個小工程，沒想到卻花了我整整一夜一天的時間在和 <strong>blogger template</strong> 的語法纏鬥。blogger template 用到了許多神乎奇技的技巧，可以在一個 template 檔案中同時提供桌面與行動等不同平台的版面；同時提供首頁、封存、標籤與單篇等不同文章組合的版面；可以提供各式各樣的參數讓你在後台中只要簡單選選顏色調整大小就可以做出各式各樣的變化。而這些全部都是在一個 XML 檔案裡就可以搞定。</p>
 
-<article>
-  
-<h1><a href="/blog/2012/03/30/octopress-unboxing-collections/">octopress 的開箱文系列</a></h1>
-<time datetime="2012-03-30T08:44:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>30</span> <span class='year'>2012</span></time>
+<p>但也正因如此，許多設定與參數都是牽一髮動全身，想改也不曉得從哪邊改才安全。偏偏 blogger template 的設定與參數目前還缺乏文件，網路上能找到的多半是舊版的 template 語法。很多時候看到一個 css class 你只能先用猜的猜他的用途，然後慢慢試誤。最後雖然整出了滿意的結果，也獲得了不少寶貴的經驗－－但心中卻冒出了一個更大的疑問：</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
-</footer>
+<p><strong>「我真的想要再和這個怪物繼續相處下去嗎？」</strong></p>
 
+<p>念頭一起，手也沒停著。立刻就進了不久前才開的 <a href="http://tzengyuxio.tumblr.com/">Tumblr</a> 帳號琢磨了許久。「要轉到 Tumblr 嗎？」我這麼問著自己，然而心裡總覺得還有什麼缺憾沒有被滿足。這時腦袋閃過先前看過的 <a href="http://octopress.org/">Octopress</a>, 數週前第一眼看到時沒什麼興趣，這次決定給它個機會，動手裝個起來玩玩看。</p>
 
-</article>
+<p>裝的過程還算順利，但也不是完全一帆風順。我遇到了一個 <code>rb-fsevent</code> 編譯錯誤的問題，幸好在 <a href="http://newbsd.com/blog/2012/03/19/my-first-try-install-octopress-on-my-mac-os-x-lion-10-dot-7-3-and-some-thing-stuff/">這篇文章</a> 中找到了解決方式，重點在於一行 <code>xcode-select</code> 指令。</p>
 
-
-
-<article>
-  
-<h1><a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a></h1>
-<time datetime="2012-03-29T16:55:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>29</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a></h1>
-<time datetime="2012-03-29T08:39:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>29</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/python/'>python</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a></h1>
-<time datetime="2012-03-29T01:44:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>29</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/shell/'>shell</a></span>
-</footer>
-
-
-</article>
-
+<p>架設好了環境，索性又申請了一個新的域名，這下真的是徹頭徹尾搬了新家。鷹架都搭好了，剩下的就是充實內容了。希望新的環境能夠帶來更愉快的書寫體驗，也期許自己今年能夠有更充實文章記錄。</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-29T16:55:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/03/29/install-module-in-python-and-ruby/" title="Previous Post: Python 與 Ruby 的模組安裝">&laquo; Python 與 Ruby 的模組安裝</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/03/30/octopress-unboxing-collections/" title="Next Post: octopress 的開箱文系列">octopress 的開箱文系列 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -255,7 +283,10 @@ Mar 29 2012 &hellip;">
       var disqus_shortname = 'tzyxblog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/';
+        var disqus_url = 'http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: shell | My Octopress Blog]]></title>
+  <link href="http://tzengyuxio.github.com/blog/categories/shell/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.github.com/"/>
+  <updated>2012-03-30T09:54:26+08:00</updated>
+  <id>http://tzengyuxio.github.com/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ls Color on Mac]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac/"/>
+    <updated>2012-03-29T01:44:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac</id>
+    <content type="html"><![CDATA[<p><img src="/images/2012/2012-03-29-ls-color.png" alt="ls color" /></p>
+
+<p>昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。</p>
+
+<p>是說原本預設的也夠我用了就是，不過有個多采多姿的 ls 輸出不僅能提昇工作效率，光看著心情也會好起來。</p>
+
+<h2>開啟顏色輸出</h2>
+
+<p>在 Linux 要開啟顏色輸出是透過 <code>ls --color</code> 指令。而在 Mac 或 BSD 上則是使用 <code>ls -G</code>。</p>
+
+<p>當然，每次都加這參數也是麻煩。寫程式的都是懶人，所以我在 <code>~/.bashrc</code> 檔案中加入下面這行設定：</p>
+
+<pre><code>alias ls='ls -GF'
+</code></pre>
+
+<p>要說明一下的是，上面的設定除了開啟顏色輸出外，還加了 <code>-F</code> 這個能夠在 ls 輸出中加入識別符號的參數。像是目錄的名字後面會加上 '/', 可執行檔會加上 '*',  符號連結 (symbolic link) 會加上 '@' 等等。</p>
+
+<h2>顏色的指定</h2>
+
+<p>關於顏色的指定，Linux 使用 <code>LS_COLORS</code> 環境變數，BSD 則是使用 <code>LSCOLORS</code>。兩者的設定方式也不同，這部份網路上資料很好找，就不贅述。</p>
+
+<p>直接說結果，我所使用的顏色組合如下：</p>
+
+<pre><code>export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+</code></pre>
+
+<p>將這行加入 <code>~/.bash_profile</code> 就可以享受美美的 ls 了。這個配色設定是從 <a href="https://github.com/seebi/dircolors-solarized/issues/10">LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD</a> 這網頁參考來的。</p>
+
+<p>附帶一提，Mac 或 BSD 的 <code>LSCOLORS</code> 參數只能指定預設檔案類型的顏色，比較常見的類型只有檔案、可執行檔、符號連結三種。Linux 的 <code>LS_COLORS</code> 除了上述這些之外，還可以針對附檔名作指定，像是把 .zip .rar .tgz 等壓縮檔設成黃色；然後 .avi .m4v .mov 等影片檔設成洋紅色之類的。</p>
+
+<h2>補充資訊</h2>
+
+<ol>
+<li>BSD 下還有一個環境變數 <code>CLICOLOR</code>, 在 <code>~/.bash_profile</code> 中加入 <code>export CLICOLOR=1</code> 可以得到跟 <code>ls -G</code> 一樣的效果。</li>
+<li>如果想要自己配色的，<a href="http://geoff.greer.fm/lscolors/">LSCOLORS Generator</a> 這個網頁提供了一個方便的配色小工具。</li>
+<li>喜歡 Solarized 的話，<a href="https://github.com/seebi/dircolors-solarized">seebi/dircolors-solarized</a> 是一個將 Solarized 延伸到 ls color 的專案。可惜只適用在 <strong>GNU ls</strong>, 也就是 Linux 系統上的 ls。</li>
+<li>如果你無論如何也想在 Mac 上看到壓縮檔、影片檔、音樂檔等不同類型檔案也有不同顏色，或是想要使用上面提到的 Solarized ls 配色，那麼可以考慮安裝 <a href="http://www.gnu.org/software/coreutils/">Coreutils - GNU core utilities</a> 這套件。</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
