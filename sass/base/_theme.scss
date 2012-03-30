@@ -69,6 +69,7 @@ aside.sidebar a {
 }
 a {
   @include transition(color .3s);
+  text-decoration: none;
 }
 
 html {
