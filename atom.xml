@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.github.com/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-30T09:54:26+08:00</updated>
+  <updated>2012-03-30T12:56:54+08:00</updated>
   <id>http://tzengyuxio.github.com/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -23,92 +23,92 @@
 <p>以下按照時間順序排列：</p>
 
 <ul>
-<li><a href="http://blog.xdite.net/posts/2011/10/07/migrate-to-octopress/">Migrate to Octopress - Blog.XDite.net</a>
+<li><p><a href="http://blog.xdite.net/posts/2011/10/07/migrate-to-octopress/">Migrate to Octopress - Blog.XDite.net</a></p>
 
 <ul>
 <li>Oct 7, 2011 by <strong>XDite</strong></li>
-<li>title: migrate-to-octopress</li>
+<li>title: <code>migrate-to-octopress</code></li>
 <li>這是我所能找到的最早的一篇。相信國內很多用 Octopress 架站的也或多或少受了這篇與 XDite 的影響。</li>
 </ul>
 </li>
-<li><a href="http://tzangms.com/2011/10/09/from-blogofile-to-octopress/">From blogofile to octopress - Oceanic / 人生海海</a>
+<li><p><a href="http://tzangms.com/2011/10/09/from-blogofile-to-octopress/">From blogofile to octopress - Oceanic / 人生海海</a></p>
 
 <ul>
 <li>Oct 9, 2011 by <strong>tzangms</strong></li>
-<li>title: from-blogofile-to-octopress</li>
+<li>title: <code>from-blogofile-to-octopress</code></li>
 <li>tzangms 在這篇最後寫道：「不過, 我覺得一定有一些人一定換了這類的 blog 系統之後, 就減少了發文的動力, 像我就是 XD」hmm…我完全可以理解這種「為了想跑步而買新球鞋，買了之後反而減少了跑步動力」的心情 XD</li>
 </ul>
 </li>
-<li><a href="http://hack.sslab.co/blog/2011/10/14/hello/">Hello, Octopress - Hack × StrongSoft</a>
+<li><p><a href="http://hack.sslab.co/blog/2011/10/14/hello/">Hello, Octopress - Hack × StrongSoft</a></p>
 
 <ul>
 <li>Oct 14, 2011 by <strong>StrongSoft</strong></li>
-<li>title: hello</li>
+<li>title: <code>hello</code></li>
 <li>小小吐槽一下，雖然文中作者有說用了 Octopress 之後，就發現自己「回不去了」－－可是我看你後來還是<em>回去</em>用 blogger 繼續寫文章啊 XD</li>
 </ul>
 </li>
-<li><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">搬家後的第一篇文章-Octopress安裝筆記 - Corleonis</a>
+<li><p><a href="http://swind.github.com/blog/2011/10/19/ban-jia-hou-di-1pian/">搬家後的第一篇文章-Octopress安裝筆記 - Corleonis</a></p>
 
 <ul>
 <li>Oct 19, 2011 by <strong>swind</strong></li>
-<li>title: ban-jia-hou-di-1pian</li>
+<li>title: <code>ban-jia-hou-di-1pian</code></li>
 <li>這篇有許多在 Windows 上安裝的心得，有興趣的可以參考看看。</li>
 </ul>
 </li>
-<li><a href="http://blog.eddie.com.tw/2011/10/27/move-to-octopress/">搬到Octopress了 - 高見龍</a>
+<li><p><a href="http://blog.eddie.com.tw/2011/10/27/move-to-octopress/">搬到Octopress了 - 高見龍</a></p>
 
 <ul>
 <li>Oct 27, 2011 by <strong>高見龍</strong></li>
-<li>title: move-to-octopress</li>
+<li>title: <code>move-to-octopress</code></li>
 <li>我在安裝 Octopress 時有向作者請教過些問題，感謝他的熱心回應。</li>
 </ul>
 </li>
-<li><a href="http://hychen.wuweig.org/blog/2011/11/13/huan-dao-octopress/">換到octopress - 無為閣</a>
+<li><p><a href="http://hychen.wuweig.org/blog/2011/11/13/huan-dao-octopress/">換到octopress - 無為閣</a></p>
 
 <ul>
 <li>Nov 13, 2011 by <strong>hychen</strong></li>
-<li>title: huan-dao-octopress</li>
+<li>title: <code>huan-dao-octopress</code></li>
 <li>這篇文章中有一段 Script, 可以幫助作者減輕 Octopress 有一堆指令得記的壓力。</li>
 </ul>
 </li>
-<li><a href="http://blog.yorkxin.org/2011/11/20/hello-octology/">Hello! Octology - YORKXIN×YORKXIN</a>
+<li><p><a href="http://blog.yorkxin.org/2011/11/20/hello-octology/">Hello! Octology - YORKXIN×YORKXIN</a></p>
 
 <ul>
 <li>Nov 20, 2011, by <strong>Yu-Cheng Chuang (chitsaou)</strong></li>
-<li>title: hello-octology</li>
+<li>title: <code>hello-octology</code></li>
 <li>從 WordPress 搬家過來的。這個網站還有許多篇與 Octopress 相關的文章（〈Octopress 搬家記〉系列），很值得參考。</li>
 </ul>
 </li>
-<li><a href="http://blog.hinablue.me/entry/move-to-octopress/">搬家到 Octopress - HINA::工程幼稚園</a>
+<li><p><a href="http://blog.hinablue.me/entry/move-to-octopress/">搬家到 Octopress - HINA::工程幼稚園</a></p>
 
 <ul>
 <li>Nov 29, 2011, by <strong>hinablue</strong></li>
-<li>title: move-to-octopress</li>
+<li>title: <code>move-to-octopress</code></li>
 <li>從 TextCube 搬家過來的，其實在這之前我沒聽過 TextCube (太孤陋寡聞了我)。</li>
 </ul>
 </li>
-<li><a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">Hello Octopress! - Zespia</a>
+<li><p><a href="http://zespia.tw/blog/2012/01/14/hello-octopress/">Hello Octopress! - Zespia</a></p>
 
 <ul>
 <li>Jan 14, 2012, by <strong>SkyArrow</strong></li>
-<li>title: hello-octopress</li>
+<li>title: <code>hello-octopress</code></li>
 <li>是 Octopress 主題 <a href="http://zespia.tw/Octopress-Theme-Slash/index_tw.html">Slash</a> 的作者。Slash 看上去簡約優雅，有許多人使用。更令人佩服的是，作者目前還只是個高中生！</li>
 </ul>
 </li>
-<li><a href="http://xoyo.name/2012/02/migrate-to-octopress/">博客跟风改用octopress - Mr Sunshine</a>
+<li><p><a href="http://xoyo.name/2012/02/migrate-to-octopress/">博客跟风改用octopress - Mr Sunshine</a></p>
 
 <ul>
 <li>Feb 7, 2012, by <strong>Zhiwei Xiao</strong></li>
-<li>title: migrate-to-octopress</li>
+<li>title: <code>migrate-to-octopress</code></li>
 <li>也是從 WordPress 搬來的，文章中有提供一個將 Octopress 指令整合進 Emacs 的擴展。</li>
 </ul>
 </li>
-<li><a href="http://warwithinme.com/blog/2012/02/blogging-with-octopress/">开始用Octopress写Blog - War Within Me</a>
+<li><p><a href="http://warwithinme.com/blog/2012/02/blogging-with-octopress/">开始用Octopress写Blog - War Within Me</a></p>
 
 <ul>
 <li>Feb, 20, 2012, by <strong>WWM</strong></li>
-<li>title: blogging-with-octopress</li>
-<li>我很喜歡這個網站的主題設計。作者的文字風格也很有趣，看得出來是宅宅星人（恭維的意味）。另外作者也是個 Alfred 愛好者！</li>
+<li>title: <code>blogging-with-octopress</code></li>
+<li>我很喜歡這個網站的主題設計。作者的文字風格也很有趣，看得出來是宅宅星人（恭維的意味）。另外作者也是個 <a href="http://www.alfredapp.com/">Alfred</a> 愛好者！</li>
 </ul>
 </li>
 </ul>
@@ -251,6 +251,326 @@
 <li>如果你無論如何也想在 Mac 上看到壓縮檔、影片檔、音樂檔等不同類型檔案也有不同顏色，或是想要使用上面提到的 Solarized ls 配色，那麼可以考慮安裝 <a href="http://www.gnu.org/software/coreutils/">Coreutils - GNU core utilities</a> 這套件。</li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用 google-code-prettify 在網頁中嵌入代碼]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/"/>
+    <updated>2011-08-07T09:13:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify</id>
+    <content type="html"><![CDATA[<p>作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 <a href="https://github.com/">github</a> 的 <a href="http://www.gist.com/">gist</a> 服務來將程式代碼內嵌到網頁（[使用效果見此]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。</p>
+
+<p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>
+
+<p>其實就功能上而言，SyntaxHighlighter 遠遠勝過 google-code-prettify，之所以選擇了 google-code-prettify，最主要的原因就在於「<strong>簡單</strong>」。兩者的比較如下（分別簡稱為 GCP 和 SH）：</p>
+
+<ul>
+<li>遇到過長的程式碼，SH 可以顯示出 Scrollbar，維持原排版；而 GCP 則會強制換行。</li>
+<li>SH 預設有行號，GCP 也可加入行號，但不方便。</li>
+<li>兩者都支援顏色主題。包含預設的在內，SH 現有 7 種顏色主題，GCP 則有 4 種。</li>
+<li>SH 支援 23 種程式語法，GCP 預設內建的也有 20 種左右。</li>
+<li>就安裝上，GCP 只要加入兩個檔案，就可以處理大多數的語言；SH 則除了得加入核心的 CSS 與 JavaScript 檔共三個檔外，還必須加入對應使用程式語言的 JavaScript。</li>
+<li>使用上兩者差異不大。SH 除了 <code>&lt;pre&gt;</code> 標籤外也提供了 <code>&lt;script&gt;</code> 的使用方式；GCP 則是可以省略語法指定，自動判斷。</li>
+</ul>
+
+
+<p>由於我經常跨不同程式語言撰寫，因此 SH 在安裝上對我而言就顯得比較不便。雖然新版提供了 Autoloader 來動態決定要載入哪些程式語言語法的 JavaScript，不過我最後還是選擇單純一點的 GCP。GCP 對我而言最大的缺點就是沒有行號，我在 IDE 上寫 code 一定會打開行號顯示，不過反正網頁上顯示的代碼行數都不多，沒有行號這一點倒是還可以接受。</p>
+
+<p>以下就是我的 google-code-prettify 安裝筆記：</p>
+
+<h2>Step 1.</h2>
+
+<p>到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> 首頁下載好檔案後，解壓放到自己的網路空間上。我是放到 Dropbox 的 public 資料夾下。</p>
+
+<h2>Step 2.</h2>
+
+<p>然後再修改自己網頁的範本。有兩個地方要修改，一個是在 <code>&lt;/head&gt;</code> 標籤之前加上 css 與 javascript 的載入；另外一個是在 <code>&lt;body&gt;</code> 標籤內加上 onLoad 函式。</p>
+
+<pre class="prettyprint lang-html"><code>&lt;head&gt;
+  &lt;-- 中略 --&gt;
+  &lt;-- 1. 在 /head 標籤前加入下面兩行 --&gt;
+  &lt;link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://my.url.to/prettify.js" type="text/javascript"/&gt;
+&lt;/head&gt;
+
+&lt;-- 2. 在 body 標籤內加入 onload 設定 --&gt;
+&lt;body onload='prettyPrint()'&gt;
+&lt;/body&gt;
+</code></pre>
+
+
+<h2>Step 3.</h2>
+
+<p>接下來只要在想要使用代碼的地方，用 <code>&lt;pre&gt;</code> 或 <code>&lt;code&gt;</code> 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。</p>
+
+<pre class="prettyprint lang-html"><code>&lt;pre class="prettyprint"&gt;
+#include &lt;stdio.h&gt;
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+&lt;/pre&gt;
+</code></pre>
+
+
+<p>上面這段代碼的結果如下：</p>
+
+<pre class="prettyprint"><code>#include &lt;stdio.h&gt;
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+</code></pre>
+
+
+<p>如果想要自己指定區塊內的程式語言，可以再加上 <code>lang-*</code>，其中 * 要替換成該程式語言的代碼。</p>
+
+<pre class="prettyprint"><code>&lt;pre class="prettyprint lang-html"&gt;
+  &lt;-- HTML 的場合 --&gt;
+&lt;/pre&gt;
+&lt;pre class="prettyprint lang-c"&gt;
+  /* C 的場合 */
+&lt;/pre&gt;
+&lt;pre class="prettyprint lang-py"&gt;
+  " Python 的場合
+&lt;/pre&gt;
+</code></pre>
+
+
+<p>目前支援的代碼有</p>
+
+<blockquote><p>&#8220;bsh&#8221;, &#8220;c&#8221;, &#8220;cc&#8221;, &#8220;cpp&#8221;, &#8220;cs&#8221;, &#8220;csh&#8221;, &#8220;cyc&#8221;, &#8220;cv&#8221;, &#8220;htm&#8221;, &#8220;html&#8221;, &#8220;java&#8221;, &#8220;js&#8221;, &#8220;m&#8221;, &#8220;mxml&#8221;, &#8220;perl&#8221;, &#8220;pl&#8221;, &#8220;pm&#8221;, &#8220;py&#8221;, &#8220;rb&#8221;, &#8220;sh&#8221;, &#8220;xhtml&#8221;, &#8220;xml&#8221;, &#8220;xsl&#8221;</p></blockquote>
+
+<p>看得出來是以程式碼的副檔名做區隔。基本上常見的幾乎都包含在裡面了。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<ul>
+<li><a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a></li>
+<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a></li>
+<li><a href="http://www.vixual.net/blog/archives/197">在 Blogger 中使用 google-code-prettify 顯示程式碼 | Vixual</a></li>
+<li><a href="http://www.vixual.net/blog/archives/198">在 Blogger 中使用 dp.SyntaxHighlighter 顯示程式碼 | Vixual</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/google-code-prettify.html">幻影千瞳的部落格: 使用 google-code-prettify</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/syntaxhighlighter.html">幻影千瞳的部落格: 使用 SyntaxHighlighter</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Eclipse 的常用快速鍵]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts/"/>
+    <updated>2011-07-30T16:09:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts</id>
+    <content type="html"><![CDATA[<p>我身為一個程式設計師，有個鍵盤在身邊，也很合邏輯。這個鍵盤呢，是我用來撰寫代碼用的，很合理吧？可話說回來，這扳子，啊不，這鍵盤如果只有拿來寫代碼，那可就浪費了；身為一個<strong>高生產力</strong>的程式設計師，應該充分活用鍵盤的各種功能，活用到甚至能夠取代大多數滑鼠的操作，那才叫<a href="http://youtu.be/yKWwrxaOxsY">專業</a>。所以說，善用功能熱鍵就很重要啦，江湖上有本武功秘笈，書名叫做<a href="http://www.anobii.com/books/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E6%8F%90%E5%8D%87%E7%94%9F%E7%94%A2%E5%8A%9B%E7%A7%98%E7%AC%88/9789866840340/01c423030629cd8ad5/">《程式設計師提昇生產力秘笈》</a>，裡頭就有一段關於「奧義，鍵盤捷徑」的心法敘述：</p>
+
+<blockquote><p>&#8230;&#8230;程式設計（除了使用者介面設計外）是文字性活動，所以，你應該儘可能把你的手放在鍵盤上。&#8230;&#8230;你一整天都使用 IDE 建立程式碼，而 IDE 有大量鍵盤捷徑。<strong>全都學！</strong>使用鍵盤捷徑在原始碼內走動，一定比使用滑鼠快。 (P.30)</p></blockquote>
+
+<p>當然，沒有必要每個人都成為一代武林宗師，因此也沒有必要像上面說的一樣將每個鍵盤捷徑全部學起來。大多數人只要學個一招半式，就可以闖蕩江湖，應付<a href="http://wiki.komica.org/wiki/?%E9%AB%98%E9%81%94%E5%85%AB%E6%88%90">高達八成</a>以上的滑鼠操作。可是，功能熱鍵百百款，到底哪些才是常用需要記得呢？底下整理一些 Eclipse 上常用的熱鍵表：</p>
+
+<h2>編輯相關</h2>
+
+<ul>
+<li><code>Ctrl + Shift + F</code> = 重新排版</li>
+<li><code>Ctrl + Shift + M</code> = 加入 import （加入游標所在類別所需的 import）</li>
+<li><code>Ctrl + Shift + O</code> = 整理 imports （掃描整個檔案，加入所需並刪除沒用的）</li>
+<li><code>Ctrl + /</code> = 切換註解（按一次加上註解，再按一次取消註解）</li>
+<li><code>Ctrl + I</code> = 修正縮排</li>
+<li><code>Alt + Shift + ↑</code> = 擴大選取</li>
+</ul>
+
+
+<h2>游標或檔案定位</h2>
+
+<ul>
+<li><code>F3</code> = 跳到定義</li>
+<li><code>Ctrl + E</code> = 已開啟檔案清單</li>
+<li><code>Ctrl + O</code> = 開啟符號清單</li>
+<li><code>Ctrl + J</code> = 漸增式搜尋</li>
+</ul>
+
+
+<h2>除錯與執行</h2>
+
+<ul>
+<li><code>F11</code> = 以除錯模式啟動 (Debug)</li>
+<li><code>Ctrl + F11</code> = 啟動 (Run)</li>
+<li><code>F5</code> = 步進，深入一層 (Step Into)</li>
+<li><code>F6</code> = 步進，往下一行 (Step Over)</li>
+<li><code>F7</code> = 步進，回上一層 (Step Return)</li>
+</ul>
+
+
+<h2>重構相關</h2>
+
+<ul>
+<li><code>Alt + Shift + R</code> = 重新命名 (Rename)</li>
+<li><code>Alt + Shift + M</code> = 提煉函式 (Extract Method)</li>
+<li><code>Alt + Shift + L</code> = 提煉區域變數 (Extract Local Variable)</li>
+</ul>
+
+
+<p>如果覺得上面這些功能熱鍵還不夠看，當然也可以自己進去 Eclipse 的設定中去挖掘更多的指上神功。查看功能熱鍵列表的途徑要從選單列的 Window → Preferences 進入，接著就可以看到下面這張圖，然後按圖索驥，找到自己常用功能的熱鍵。</p>
+
+<p><img src="http://4.bp.blogspot.com/-0Bds_glMARA/TjO3I7Q5cRI/AAAAAAAAAZw/Pn_C_vQoIYY/s400/eclipse-shortcut.png" alt="eclipse key binding" /></p>
+
+<p>好啦，上面列出這許多的熱鍵，要怎樣才能有效的背下來呢？很簡單，不用背－－最有效的記憶方法不是靠腦袋記，而是<strong>用身體去記</strong>。把常用功能熱鍵印出來貼到電腦旁邊，然後不斷的用、不停的用，直到每次要使用該功能時，腦袋想都來不及想手指就已經按出組合熱鍵，這樣就再也忘不掉了。（不過太久沒用的話，還是需要一小段時間來重新回復手感，只要一小段時間而已，真的。）</p>
+
+<p>除此之外，當每次要使用選單列（Menu Bar）或工具列（Toolbar）上某樣功能時，停下來多想兩秒鐘：不要急著按下滑鼠左鍵，先看看選單文字或按鈕的提示上有沒有快速鍵的按法，有的話將手放開滑鼠，重新以快速鍵的方式完成自己的目的。久而久之，這些操作自然都會內化成為身體上的一部分。只要持之以恆，每日精進，減少手指頭在鍵盤滑鼠上切換的次數，那麼總有一天，我想，要達到「每小時幾十萬行程式碼上下」也不再是個夢想啦！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[To Iterate is Human, to Recurse, Divine]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/"/>
+    <updated>2011-07-28T12:30:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine</id>
+    <content type="html"><![CDATA[<p>今天偶然看到這句話，&#8221;To iterate is human, to recurse, divine.&#8221;，無巧不巧，最近幾天的課程我也剛好在講解<strong>遞迴</strong>的概念。</p>
+
+<p>說這句話的老兄是 <a href="http://en.wikipedia.org/wiki/L._Peter_Deutsch">L. Peter Deutsch</a>，雖然他的姓寫作是「德意志（Deutsch）」，可是這位德意志先生卻是個道道地地的美國麻省人。Deutsch 在電腦界最主要的貢獻就是 <a href="http://zh.wikipedia.org/wiki/Ghostscript">Ghostscript</a> 和 <a href="http://en.wikipedia.org/wiki/Archie_search_engine">Archie</a>。Ghostscript 是可以用來生成 PDF 或是 Postscript 格式文件的軟體，從 1988 第一版釋出一直到今年 2011 橫跨了 23 個年頭，仍然持續開發維護中（當然維護者早已換人接手，不再是 Deutsch 了），也衍生了許多分支專案。</p>
+
+<p>而關於另一項成就 Archie 可能聽過的人就比較少了，因為這是早年的一項網路服務，如同 Gopher 或是 News 一樣，早已淹沒在歷史的洪流中。在大家都還是以 FTP 作為主要下載方式的年代裡，Archie 可以整合不同匿名 FTP 站台的資訊，建立各站台擁有檔案的索引，然後使用者只要上連 Archie 網站，輸入檔名進行搜尋，就可以知道自己想要的檔案可以從哪個 FTP 站台下載。聽起來很像搜尋引擎做的工作不是？沒錯，<strong>Archie 某種程度上可說是網頁搜尋引擎的前身</strong>。早在 Google 甚至 Yahoo! 出生之前，Archie 就已經在 Internet 上運作好一段時間了。對這段歷史有興趣的可以看看這篇：<a href="http://www.isrl.illinois.edu/~chip/projects/timeline/1990archie.htm">The first search engine, Archie.</a></p>
+
+<p>回頭來看看篇首這句：</p>
+
+<blockquote><p>&#8220;To iterate is human, to recurse, divine&#8221;</p></blockquote>
+
+<p>這句到底代表什麼意思，著實讓我推敲了很久。先來看看網路找來的兩個我覺得不錯的翻譯（原譯者均不明）：</p>
+
+<blockquote><p>“迭代（iterate）者为人，递归（recurse）者为神。”</p>
+
+<p>「遞迴（recurse）只應天上有, 凡人該當用迴圈（iterate）」</p></blockquote>
+
+<p>同樣一句話，將其放在不同情境下會有截然不同的解讀。這句的意思到底是要說<em>「我們應該放棄平凡的作法，盡量使用遞迴，以追求神的境界」</em>呢？還是想表達<em>「遞迴這種作法太神乎奇技了，我們應該用簡單、平凡，一般人都可以接受的作法，以迴圈來實現」</em>呢？</p>
+
+<p>我參透不出這句話到底是<em>推崇遞迴</em>還是<em>鼓勵迴圈</em>。不過以我的經驗而言，遞迴雖然一開始很容易讓人腦筋打結，可是當熟悉遞迴之後，許多複雜的處理都會變得簡單明瞭。許多程式機制的實作擺脫不了遞迴，比方說遍歷某資料夾下的所有子資料夾與檔案、迷宮路徑的搜尋，或是 AI 決策樹的判斷，使用遞迴來寫可以達到事半功倍的效果。</p>
+
+<p>當然，所有的的遞迴都可以改寫成迴圈形式，改寫為迴圈形式通常也可以獲得效率上的提升，因為遞迴層層呼叫的過程中不停將資料塞入堆疊又從堆疊取出的手續太耗成本，遠不如迴圈以少數幾個變數就可以控制完整的流程。但是將遞迴改寫成迴圈的形式往往會失去邏輯的簡潔與結構的優雅。</p>
+
+<p>寫程式經常就是遇到這種兩難：要嘛對電腦好，讓它少算一點，少用點空間；要嘛對人好，電腦多做點工，可是人類看起 Code 來輕鬆（話說遞迴也不見得都比迴圈式的改寫好懂就是）。因此，針對同一件事情，該用遞迴解還是迴圈解好呢？我想，選擇自己與他人都<strong>容易理解的方法</strong>去做，那就對了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[UIGestureRecognizer 的共存]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response/"/>
+    <updated>2011-07-26T19:55:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response</id>
+    <content type="html"><![CDATA[<p>在 iPhone 或 iPad 的開發中，除了用 <code>touchesBegan</code> / <code>touchesMoved</code> / <code>touchesEnded</code> 這組方法來控制使用者的手指觸控外，也可以用 <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIGestureRecognizer_Class/Reference/Reference.html#//apple_ref/occ/cl/UIGestureRecognizer">UIGestureRecognizer</a> 的衍生類別來進行判斷。用 <code>UIGestureRecognizer</code> 的好處在於有現成的手勢，開發者不用自己計算手指移動的軌跡。<code>UIGestureRecognizer</code> 的衍生類別有以下數種：</p>
+
+<ul>
+<li><code>UITapGestureRecognizer</code></li>
+<li><code>UIPinchGestureRecognizer</code></li>
+<li><code>UIRotationGestureRecognizer</code></li>
+<li><code>UISwipeGestureRecognizer</code></li>
+<li><code>UIPanGestureRecognizer</code></li>
+<li><code>UILongPressGestureRecognizer</code></li>
+</ul>
+
+
+<p>從命名上不難了解這些類別所對應代表的手勢，分別是 Tap（點一下）、Pinch（二指往內或往外撥動）、Rotation（旋轉）、Swipe（滑動，快速移動）、Pan （拖移，慢速移動）以及 LongPress（長按）。這些手勢類別在使用上也很簡單，只要在使用前宣告並掛到對應的視圖（UIView）元件上即可。</p>
+
+<script src="https://gist.github.com/1106515.js?file=uigesturerecognizer.m"></script>
+
+
+<p>問題來了。有些手勢其實是互相關連的，例如 Tap 與 LongPress、Swipe 與 Pan，或是 Tap 一次與 Tap 兩次。當一個 UIView 同時掛上兩個相關連的手勢時，到底我這一下手指頭按的要算是 Tap 還是 LongPress？如果照預設作法來看，只要「先滿足條件」的就會跳出並呼叫對應方法，舉例來說，如果同時註冊了 Pan 跟 Swipe，只要手指頭一移動就會觸發 Pan 然後跳出，因而永遠都不會發生 Swipe；單點與雙點的情形也是一樣，永遠都只會觸發單點，不會有雙點。</p>
+
+<p>那麼這問題有解嗎？有的，<code>UIGestureRecognizer</code> 有個方法叫做 <code>requireGestureRecognizerToFail</code>，他可以指定某一個 recognizer，即便自己已經滿足條件了，也不會立刻觸發，會等到該指定的 recognizer 確定失敗之後才觸發。以同時支援單點擊與雙點擊的作法為例，程式碼如下：</p>
+
+<script src="https://gist.github.com/1106562.js?file=uitapgesturerecognizer.m"></script>
+
+
+<p>如此一來，在第一下點擊後，如果有迅速點擊第二下，就會觸發 <code>doubleRecognizer</code>；反之要是隔了一小段時間，造成 <code>doubleRecognizer</code> 發生 fail，就會回頭觸發 <code>singleRecognizer</code> 了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的程式語言之路]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/07/26/my-way-as-a-coder/"/>
+    <updated>2011-07-26T10:54:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/07/26/my-way-as-a-coder</id>
+    <content type="html"><![CDATA[<p>從大學以來，這十幾年的工作與生活總與程式設計脫不了關係。前前後後寫了不少的 Code, 也接觸過許許多多不同的 Programming Language。這邊就來記錄一下自己現在還有印象的程式語言，也許十年之後再來回顧，又是另一種不同的想法吧。</p>
+
+<h2>QBasic</h2>
+
+<p>高中時候獲得人生的第一台電腦，當時還是 DOS 的年代，每個裝了 MS-DOS 的電腦都會內附 QBasic。還記得用 QBasic 寫過一些簡單的遊戲，像是 1A2B、迷宮產生之類的，但是真要說自己寫的其實也不是，很多都是照著當時雜誌（例如「第三波」）上的代碼 key 進電腦中而已。</p>
+
+<h2>Turbo C++</h2>
+
+<p>說真的，我已經不記得是 Turbo C 或是 Turbo C++ 了，但可以肯定的一點是，我當時一定只用到 C 的語法概念，沒有物件，只有單純的流程控制，對指標有似懂非懂的感覺。其實嚴格說起來，Turbo C++ 只能算是種 IDE，不算程式語言。</p>
+
+<h2>Borland C++ Builder</h2>
+
+<p>這也是 IDE，不過因為同樣的 C++ 語言在不同的 IDE 與不同的基本函式庫下會呈現出截然不同的個性，所以我就單列了。記得在我還是學生的時代，BCB 的出現帶來革命性的軟體開發方式，只要簡單拉一拉就可以有個像樣的視窗程式。當時蔚為風潮，我也趕流行玩了一陣子，不過也沒拿來寫過什麼東西就是。</p>
+
+<h2>Visual Basic</h2>
+
+<p>很簡單的程式語言。我曾經用 VB 寫過一個「光榮三國志臉譜瀏覽程式」的工具，可以讀取《三國志》四代、五代的頭像檔案。可惜現在原始碼與二進位檔都沒有留下，只有留下當時<a href="http://webbbs.gamer.com.tw/readSrhPost.php?brd=KOEI&amp;pos=448&amp;author=tzengyu&amp;keyword=">在巴哈姆特發佈時的帖子</a>。如果有人看到這篇文章，又碰巧有留當年的程式的話，歡迎跟我聯絡。也許哪天我心血來潮會再重寫一遍也說不定。 ;-)</p>
+
+<h2>Common Lisp &amp; ML</h2>
+
+<p>這兩個都是因為學校的課程而接觸的。剛開始學 Lisp，腦袋會打結，就是一層又一層的括號，常見的數學運算也都得換成前置式；不過作業寫到後來我還蠻喜歡寫 Lisp 的感覺。ML 也是，跟一般我們常見的 C-like 語法結構都不一樣。那時候我還蠻愛這兩個語言的，一直到畢業後的幾年間，我只要重灌電腦完要重新安裝軟體時，我就會把這兩個程式語言給裝進去，就像現在我會安裝 Python 一樣。</p>
+
+<h2>ASP</h2>
+
+<p>大四時接了一個學姊的家教網案子，那時候用的開發語言就是 ASP。不過說真的現在我對 ASP 都忘光光了。附帶一提，那個網站現在還活著，當然已經轉型了就是，不再是以媒介家教資訊為主。</p>
+
+<h2>Java</h2>
+
+<p>學生時代有寫過一些 Java applet，那時候的網頁很流行水波效果，幾乎十個個人網站有八個的 banner 都要來一下水波盪漾。Applet 也是淺嚐個大概而已，倒是 Java Servlet 因為工作的關係寫了蠻長久一段時間，從學生時代到退伍後都還有在接觸。話說事隔多年後，因為最近工作的關係，又開始跟 Java 打交道了。</p>
+
+<h2>HTML &amp; JavaScript</h2>
+
+<p>還在唸書時因為有協助維護一個購物網站，因此免不了要碰到 HTML 與 Java Script 的撰寫。當時那個購物網站使用的技術，有一部分是上面提到的 Java Servlet，另外也有用到 PHP 的部份。之後過了好幾年，有一個跟朋友合作開發 Facebook 遊戲的機會，在那次開發中又重新溫習了一次 Java Script，並且大量採用 Ajax 技術。可惜那個遊戲在發佈之前就胎死腹中了。</p>
+
+<h2>PHP</h2>
+
+<p>最主要就是上面提到的購物網站與 Facebook 遊戲這兩個案子用到，不過卻前前後後持續寫了蠻長久的一段時間。維護購物網站的時後基本上都還是程式碼硬幹，到了寫 Facebook 遊戲的時候，就有現成的框架了，我選了一個叫 CodeIgniter 的框架，大體上類似 ROR 的寫法。其實一開始選的是 CakePHP，比較完整，不過真的是太龐大了，所以才換成 CodeIgniter。此外，由於以前經常安裝討論區、部落格、Wiki、購物車等網站套件，其中許多是 PHP 寫的，常常需要 hack 部分代碼，因此對 PHP 還算蠻熟悉的，有陣子甚至拿 PHP 當 Shell Script 來使用，用來解決手邊的小問題。</p>
+
+<h2>SQL</h2>
+
+<p>說到網站程式就不能不提到資料庫。前前後後接觸過一些不同的資料庫，學生時代在 IBM 打工時是 DB2，前面提到的購物網站是 MySQL，進了遊戲公司之後，陸續又接觸到 PostgreSQL、Microsoft SQL Server，Oracle。其實單就 SQL 來看的話都大同小異，各資料庫 Server 之間最大的差異性還是在 Server 的管理與調校上，以及各種千奇百怪的程式介接函式庫寫法。</p>
+
+<h2>Shell Script</h2>
+
+<p>除了用 PHP 當 Shell Script 外，在我還在第一家遊戲公司時，由於是在 Linux 平台上開發的關係，也用 BASH 寫了不少方便日常工作或是開發的 Script。有少部分的代碼用 Perl 寫，用 Perl 寫起來很快，不過寫完看起來真的像天書一樣，真的是「寫完即丟」的語言。在 Windows 上，也曾經用 Batch 檔或是 Power Shell 寫過一些臨時性的小工具。</p>
+
+<h2>C++</h2>
+
+<p>進入遊戲公司後，幾乎就一直過著與 C++ 分不開的生活。早先是在 Linux 下寫 Server，能用的就是 Emacs 或是 Vim，後來換了公司，改用 Visual C++ 寫，一開始我還真的很不習慣，這麼複雜而多功能的介面，有時常常不曉得從哪邊開始下手。雖然在念書時學過，但我是從進遊戲公司之後，才真正重新認識了 C++，學到物件導向、Template、設計模式、重構等概念。當然，上面有些概念是跨語言通用的，不過因為 C++ 是我這幾年來長期接觸的語言，自然也成為前述幾個概念的學習媒介。</p>
+
+<p>C++ 是個頗具爭議性的語言，他使用者多，但批評者更多，C 語言的陣營批評 C++ 不夠簡潔、純粹，STL 更是把許多工作變成讓人摸不著頭的黑箱；反之 Java 或 C# 的支持者又覺得 C++ 不夠完善，要寫個功能還要到處找函式庫，同個功能可能還有好幾種不同的函式庫，不同的實作與不同的使用概念，令人眼花撩亂。我自己是覺得，C++ 雖然亂，雖然我也對此感到困擾，但是也正因為他的兼容並蓄，使得各種各樣的想法與實作都能在上面獲得實踐。不過話說回來，對於產品開發而言，有時候工具還是單純點好。</p>
+
+<h2>Auto Hotkey Script</h2>
+
+<p>為了玩 Facebook 遊戲更「方便」而去學的程式。有寫了餐城（Restaurant City）的自動撿垃圾、自動到別人家評分，以及 Farmville 的自動種植、收割、耕地等功能，Mafia Wars 的連續任務。這些工具都是自娛，沒有對外釋出。隨著社群遊戲不斷的改版，這些工具也早就失效不能使用了。</p>
+
+<h2>Lua</h2>
+
+<p>在之前待過的公司中有用過，之後自己出來做的案子也有用。雖然如此，自己還是覺得對 Lua 的使用還不夠熟。曾經有寫過一個專案，使可以整合 C++ 與 Lua / Python / Squirrel 這三種 Script Language，目的是可以從 C++ 呼叫寫在 Script 的函式，也可以反過來。不過當初只寫了一個方向（C++ 呼叫外部），反過來的方向由於各 Script 語言存在的差異較大，自己的能力也不夠，就沒繼續開發下去了。</p>
+
+<h2>Python</h2>
+
+<p>這語言已經成為我這一兩年來的最愛了。在 Script Language 的領域中，一開始我是對 Lua 比較有興趣的，畢竟公司專案在用，而且 WOW 的 Custom UI 也都是用 Lua 撰寫，有 Billizard 的光芒加持，自然讓人不得不多看 Lua 幾眼。不過自從寫過 Python 的 Code 之後，我發現寫 Python 的過程可以獲得一種純粹的程式撰寫樂趣，我面對的是「程式所要解決的問題」本身，而不再是陣列、記憶體配置、指標、堆疊等等這些瑣碎的雜事。去年開發一個簡單的動畫編輯器，就是以 Python + wxPython 作的；而最早接觸 Python 的起點呢？喔，那是為了寫一個 Travian 的找資源點的工具，比較了幾個語言後發現用 Python 來抓網頁資料進行解析最為方便，於是就一頭踏入 Python 的思考領域了。</p>
+
+<h2>NSIS (Nullsoft Scriptable Install System)</h2>
+
+<p>最近才開始摸的東西，是用來寫安裝程式的語言。除了一開始入門門檻稍高外，不算太難，只要跨進去後剩下的就簡單了。之所以說一開始稍難，是因為最簡單的安裝軟體也要做許多事情，畢竟安裝軟體可不像其他語言只要秀秀 &#8220;Hello World&#8221; 就算完成第一個程式了。NSIS 也有 function 跟 macro，不過 function 沒有傳入參數，反正所有變數都是全域，也就不用傳入什麼了；如果真的需要傳入參數的話，倒是可以用 macro，雖然意義上不是，但程式碼看起來更接近傳參數的函式。這算是最近寫 NSIS 的一個小小心得吧。</p>
+
+<h2>Objective-C</h2>
+
+<p>這是目前正在進行的專案所用的語言。如果熟悉 C++/Java/PHP 這類 C-like 的語言，要學 Objective-C 真的很快。比較大的不同在於 message 的概念，前面的幾個語言不管是 function 或是 method，都是圓括弧呼叫的方式，在 Objectiv-C 中，函式的呼叫變成了訊息的傳遞，而且每個變數都必須寫出變數名字。剛開始看的確會有些彆扭不習慣，但是徹底改用「訊息傳遞」的角度去思考理解的話，其實 Objective-C 的這種寫法還蠻可愛與口語化的。</p>
+
+<h2>後記</h2>
+
+<p>看了一下 <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">TIOBE Programming Community Index for July 2011</a>，前十名的程式語言中，除了 C# 之外，有九個我都接觸過或多或長的一段時間。其實之前為了研究 XNA，也有稍微看過 C# 的 code，不過稍微看看也不算寫過就是。但是 Windows Phone 的開發免不了得靠 C#，或許再不久的將來有機會寫 C# 也說不定？</p>
 ]]></content>
   </entry>
   

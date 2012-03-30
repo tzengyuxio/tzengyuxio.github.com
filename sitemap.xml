@@ -1,12 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://tzengyuxio.github.com/blog/2011/07/26/my-way-as-a-coder/</loc>
+        <lastmod>2012-03-30T12:42:20+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response/
+        </loc>
+        <lastmod>2012-03-30T12:46:19+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/
+        </loc>
+        <lastmod>2012-03-30T12:50:14+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts/</loc>
+        <lastmod>2012-03-30T12:51:59+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/
+        </loc>
+        <lastmod>2012-03-30T12:54:48+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac/</loc>
         <lastmod>2012-03-30T08:41:12+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.github.com/blog/2012/03/29/install-module-in-python-and-ruby/</loc>
-        <lastmod>2012-03-29T21:00:06+08:00</lastmod>
+        <lastmod>2012-03-30T12:31:51+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/</loc>
@@ -14,14 +40,14 @@
     </url>
     <url>
         <loc>http://tzengyuxio.github.com/blog/2012/03/30/octopress-unboxing-collections/</loc>
-        <lastmod>2012-03-30T09:54:05+08:00</lastmod>
+        <lastmod>2012-03-30T12:30:44+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.github.com/blog/archives/</loc>
-        <lastmod>2012-03-30T09:54:05+08:00</lastmod>
+        <lastmod>2012-03-30T12:54:48+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.github.com/</loc>
-        <lastmod>2012-03-30T09:54:05+08:00</lastmod>
+        <lastmod>2012-03-30T12:54:48+08:00</lastmod>
     </url>
 </urlset>

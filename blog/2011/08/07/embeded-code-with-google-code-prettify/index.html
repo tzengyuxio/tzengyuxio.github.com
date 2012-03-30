@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>用 google-code-prettify 在網頁中嵌入代碼 - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 github 的 gist 服務來將程式代碼內嵌到網頁（[使用效果見此]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。 不過有時候只是想要顯示幾行代碼 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">用 Google-code-prettify 在網頁中嵌入代碼</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-07T09:13:00+08:00" pubdate data-updated="true">Aug 7<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 <a href="https://github.com/">github</a> 的 <a href="http://www.gist.com/">gist</a> 服務來將程式代碼內嵌到網頁（[使用效果見此]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。</p>
+
+<p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>
+
+<p>其實就功能上而言，SyntaxHighlighter 遠遠勝過 google-code-prettify，之所以選擇了 google-code-prettify，最主要的原因就在於「<strong>簡單</strong>」。兩者的比較如下（分別簡稱為 GCP 和 SH）：</p>
+
+<ul>
+<li>遇到過長的程式碼，SH 可以顯示出 Scrollbar，維持原排版；而 GCP 則會強制換行。</li>
+<li>SH 預設有行號，GCP 也可加入行號，但不方便。</li>
+<li>兩者都支援顏色主題。包含預設的在內，SH 現有 7 種顏色主題，GCP 則有 4 種。</li>
+<li>SH 支援 23 種程式語法，GCP 預設內建的也有 20 種左右。</li>
+<li>就安裝上，GCP 只要加入兩個檔案，就可以處理大多數的語言；SH 則除了得加入核心的 CSS 與 JavaScript 檔共三個檔外，還必須加入對應使用程式語言的 JavaScript。</li>
+<li>使用上兩者差異不大。SH 除了 <code>&lt;pre&gt;</code> 標籤外也提供了 <code>&lt;script&gt;</code> 的使用方式；GCP 則是可以省略語法指定，自動判斷。</li>
+</ul>
+
+
+<p>由於我經常跨不同程式語言撰寫，因此 SH 在安裝上對我而言就顯得比較不便。雖然新版提供了 Autoloader 來動態決定要載入哪些程式語言語法的 JavaScript，不過我最後還是選擇單純一點的 GCP。GCP 對我而言最大的缺點就是沒有行號，我在 IDE 上寫 code 一定會打開行號顯示，不過反正網頁上顯示的代碼行數都不多，沒有行號這一點倒是還可以接受。</p>
+
+<p>以下就是我的 google-code-prettify 安裝筆記：</p>
+
+<h2>Step 1.</h2>
+
+<p>到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> 首頁下載好檔案後，解壓放到自己的網路空間上。我是放到 Dropbox 的 public 資料夾下。</p>
+
+<h2>Step 2.</h2>
+
+<p>然後再修改自己網頁的範本。有兩個地方要修改，一個是在 <code>&lt;/head&gt;</code> 標籤之前加上 css 與 javascript 的載入；另外一個是在 <code>&lt;body&gt;</code> 標籤內加上 onLoad 函式。</p>
+
+<pre class="prettyprint lang-html"><code>&lt;head&gt;
+  &lt;-- 中略 --&gt;
+  &lt;-- 1. 在 /head 標籤前加入下面兩行 --&gt;
+  &lt;link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://my.url.to/prettify.js" type="text/javascript"/&gt;
+&lt;/head&gt;
+
+&lt;-- 2. 在 body 標籤內加入 onload 設定 --&gt;
+&lt;body onload='prettyPrint()'&gt;
+&lt;/body&gt;
+</code></pre>
+
+
+<h2>Step 3.</h2>
+
+<p>接下來只要在想要使用代碼的地方，用 <code>&lt;pre&gt;</code> 或 <code>&lt;code&gt;</code> 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。</p>
+
+<pre class="prettyprint lang-html"><code>&lt;pre class="prettyprint"&gt;
+#include &lt;stdio.h&gt;
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+&lt;/pre&gt;
+</code></pre>
+
+
+<p>上面這段代碼的結果如下：</p>
+
+<pre class="prettyprint"><code>#include &lt;stdio.h&gt;
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+</code></pre>
+
+
+<p>如果想要自己指定區塊內的程式語言，可以再加上 <code>lang-*</code>，其中 * 要替換成該程式語言的代碼。</p>
+
+<pre class="prettyprint"><code>&lt;pre class="prettyprint lang-html"&gt;
+  &lt;-- HTML 的場合 --&gt;
+&lt;/pre&gt;
+&lt;pre class="prettyprint lang-c"&gt;
+  /* C 的場合 */
+&lt;/pre&gt;
+&lt;pre class="prettyprint lang-py"&gt;
+  " Python 的場合
+&lt;/pre&gt;
+</code></pre>
+
+
+<p>目前支援的代碼有</p>
+
+<blockquote><p>&#8220;bsh&#8221;, &#8220;c&#8221;, &#8220;cc&#8221;, &#8220;cpp&#8221;, &#8220;cs&#8221;, &#8220;csh&#8221;, &#8220;cyc&#8221;, &#8220;cv&#8221;, &#8220;htm&#8221;, &#8220;html&#8221;, &#8220;java&#8221;, &#8220;js&#8221;, &#8220;m&#8221;, &#8220;mxml&#8221;, &#8220;perl&#8221;, &#8220;pl&#8221;, &#8220;pm&#8221;, &#8220;py&#8221;, &#8220;rb&#8221;, &#8220;sh&#8221;, &#8220;xhtml&#8221;, &#8220;xml&#8221;, &#8220;xsl&#8221;</p></blockquote>
+
+<p>看得出來是以程式碼的副檔名做區隔。基本上常見的幾乎都包含在裡面了。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<ul>
+<li><a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a></li>
+<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a></li>
+<li><a href="http://www.vixual.net/blog/archives/197">在 Blogger 中使用 google-code-prettify 顯示程式碼 | Vixual</a></li>
+<li><a href="http://www.vixual.net/blog/archives/198">在 Blogger 中使用 dp.SyntaxHighlighter 顯示程式碼 | Vixual</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/google-code-prettify.html">幻影千瞳的部落格: 使用 google-code-prettify</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/syntaxhighlighter.html">幻影千瞳的部落格: 使用 SyntaxHighlighter</a></li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-07T09:13:00+08:00" pubdate data-updated="true">Aug 7<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/html/'>html</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/07/30/eclipse-common-keyboard-shortcuts/" title="Previous Post: Eclipse 的常用快速鍵">&laquo; Eclipse 的常用快速鍵</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/03/29/ls-color-on-mac/" title="Next Post: ls Color on Mac">ls Color on Mac &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/03/30/octopress-unboxing-collections/">octopress 的開箱文系列</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/07/embeded-code-with-google-code-prettify/">用 google-code-prettify 在網頁中嵌入代碼</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/';
+        var disqus_url = 'http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: eclipse | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.github.com/blog/categories/eclipse/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.github.com/"/>
+  <updated>2012-03-30T12:56:54+08:00</updated>
+  <id>http://tzengyuxio.github.com/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Eclipse 的常用快速鍵]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts/"/>
+    <updated>2011-07-30T16:09:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts</id>
+    <content type="html"><![CDATA[<p>我身為一個程式設計師，有個鍵盤在身邊，也很合邏輯。這個鍵盤呢，是我用來撰寫代碼用的，很合理吧？可話說回來，這扳子，啊不，這鍵盤如果只有拿來寫代碼，那可就浪費了；身為一個<strong>高生產力</strong>的程式設計師，應該充分活用鍵盤的各種功能，活用到甚至能夠取代大多數滑鼠的操作，那才叫<a href="http://youtu.be/yKWwrxaOxsY">專業</a>。所以說，善用功能熱鍵就很重要啦，江湖上有本武功秘笈，書名叫做<a href="http://www.anobii.com/books/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E6%8F%90%E5%8D%87%E7%94%9F%E7%94%A2%E5%8A%9B%E7%A7%98%E7%AC%88/9789866840340/01c423030629cd8ad5/">《程式設計師提昇生產力秘笈》</a>，裡頭就有一段關於「奧義，鍵盤捷徑」的心法敘述：</p>
+
+<blockquote><p>......程式設計（除了使用者介面設計外）是文字性活動，所以，你應該儘可能把你的手放在鍵盤上。......你一整天都使用 IDE 建立程式碼，而 IDE 有大量鍵盤捷徑。<strong>全都學！</strong>使用鍵盤捷徑在原始碼內走動，一定比使用滑鼠快。 (P.30)</p></blockquote>
+
+<p>當然，沒有必要每個人都成為一代武林宗師，因此也沒有必要像上面說的一樣將每個鍵盤捷徑全部學起來。大多數人只要學個一招半式，就可以闖蕩江湖，應付<a href="http://wiki.komica.org/wiki/?%E9%AB%98%E9%81%94%E5%85%AB%E6%88%90">高達八成</a>以上的滑鼠操作。可是，功能熱鍵百百款，到底哪些才是常用需要記得呢？底下整理一些 Eclipse 上常用的熱鍵表：</p>
+
+<h2>編輯相關</h2>
+
+<ul>
+<li><code>Ctrl + Shift + F</code> = 重新排版</li>
+<li><code>Ctrl + Shift + M</code> = 加入 import （加入游標所在類別所需的 import）</li>
+<li><code>Ctrl + Shift + O</code> = 整理 imports （掃描整個檔案，加入所需並刪除沒用的）</li>
+<li><code>Ctrl + /</code> = 切換註解（按一次加上註解，再按一次取消註解）</li>
+<li><code>Ctrl + I</code> = 修正縮排</li>
+<li><code>Alt + Shift + ↑</code> = 擴大選取</li>
+</ul>
+
+
+<h2>游標或檔案定位</h2>
+
+<ul>
+<li><code>F3</code> = 跳到定義</li>
+<li><code>Ctrl + E</code> = 已開啟檔案清單</li>
+<li><code>Ctrl + O</code> = 開啟符號清單</li>
+<li><code>Ctrl + J</code> = 漸增式搜尋</li>
+</ul>
+
+
+<h2>除錯與執行</h2>
+
+<ul>
+<li><code>F11</code> = 以除錯模式啟動 (Debug)</li>
+<li><code>Ctrl + F11</code> = 啟動 (Run)</li>
+<li><code>F5</code> = 步進，深入一層 (Step Into)</li>
+<li><code>F6</code> = 步進，往下一行 (Step Over)</li>
+<li><code>F7</code> = 步進，回上一層 (Step Return)</li>
+</ul>
+
+
+<h2>重構相關</h2>
+
+<ul>
+<li><code>Alt + Shift + R</code> = 重新命名 (Rename)</li>
+<li><code>Alt + Shift + M</code> = 提煉函式 (Extract Method)</li>
+<li><code>Alt + Shift + L</code> = 提煉區域變數 (Extract Local Variable)</li>
+</ul>
+
+
+<p>如果覺得上面這些功能熱鍵還不夠看，當然也可以自己進去 Eclipse 的設定中去挖掘更多的指上神功。查看功能熱鍵列表的途徑要從選單列的 Window → Preferences 進入，接著就可以看到下面這張圖，然後按圖索驥，找到自己常用功能的熱鍵。</p>
+
+<p><img src="http://4.bp.blogspot.com/-0Bds_glMARA/TjO3I7Q5cRI/AAAAAAAAAZw/Pn_C_vQoIYY/s400/eclipse-shortcut.png" alt="eclipse key binding" /></p>
+
+<p>好啦，上面列出這許多的熱鍵，要怎樣才能有效的背下來呢？很簡單，不用背－－最有效的記憶方法不是靠腦袋記，而是<strong>用身體去記</strong>。把常用功能熱鍵印出來貼到電腦旁邊，然後不斷的用、不停的用，直到每次要使用該功能時，腦袋想都來不及想手指就已經按出組合熱鍵，這樣就再也忘不掉了。（不過太久沒用的話，還是需要一小段時間來重新回復手感，只要一小段時間而已，真的。）</p>
+
+<p>除此之外，當每次要使用選單列（Menu Bar）或工具列（Toolbar）上某樣功能時，停下來多想兩秒鐘：不要急著按下滑鼠左鍵，先看看選單文字或按鈕的提示上有沒有快速鍵的按法，有的話將手放開滑鼠，重新以快速鍵的方式完成自己的目的。久而久之，這些操作自然都會內化成為身體上的一部分。只要持之以恆，每日精進，減少手指頭在鍵盤滑鼠上切換的次數，那麼總有一天，我想，要達到「每小時幾十萬行程式碼上下」也不再是個夢想啦！</p>
+]]></content>
+  </entry>
+  
+</feed>
