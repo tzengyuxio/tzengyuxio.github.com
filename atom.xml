@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.github.com/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-30T12:56:54+08:00</updated>
+  <updated>2012-03-30T13:21:50+08:00</updated>
   <id>http://tzengyuxio.github.com/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -250,6 +250,299 @@
 <li>喜歡 Solarized 的話，<a href="https://github.com/seebi/dircolors-solarized">seebi/dircolors-solarized</a> 是一個將 Solarized 延伸到 ls color 的專案。可惜只適用在 <strong>GNU ls</strong>, 也就是 Linux 系統上的 ls。</li>
 <li>如果你無論如何也想在 Mac 上看到壓縮檔、影片檔、音樂檔等不同類型檔案也有不同顏色，或是想要使用上面提到的 Solarized ls 配色，那麼可以考慮安裝 <a href="http://www.gnu.org/software/coreutils/">Coreutils - GNU core utilities</a> 這套件。</li>
 </ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[設定 Mac Terminal 下的 .bashrc]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2012/03/27/dot-bashrc-in-mac-terminal/"/>
+    <updated>2012-03-27T16:07:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2012/03/27/dot-bashrc-in-mac-terminal</id>
+    <content type="html"><![CDATA[<p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
+
+<p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
+
+<pre class="prettyprint"><code>if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+</code></pre>
+
+
+<p>這樣原本寫在 <code>.bashrc</code> 裡的指令稿就會被讀取並且發揮作用了。補充說明，我的作業系統版本為 <strong>Mac OS X Lion (10.7)</strong>。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，簡述如下：</p>
+
+<h3>.bash_profile</h3>
+
+<p>輸入帳號密碼登入時，不論遠端或本地，都會執行此設定檔。</p>
+
+<h3>.bashrc</h3>
+
+<p>在已經登入的情況下，開啟終端機視窗（如 Gnome 的 xterm），在命令提示符號出現前，就會先執行 .bashrc 內的指令。</p>
+
+<p>不過 Mac OS X 的行為是上述流程的例外，詳細可參考本文最後面的連結。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<p><a href="http://macfidelity.de/2008/07/02/mac-customizing-terminal-in-mac-os-x-105/">Customizing Terminal in Mac OS X 10.5 | macfidelity</a></p>
+
+<p>上面這篇文章中的步驟比較多，甚至還要進 Terminal 的「偏好設定」畫面去修改打開 Shell 的指令。不過我自己的操作結果是就算沒有設定那些指令也沒關係，只要有包含文章中那段代碼的 <code>.bash_profile</code>, 就可以讀取 <code>.bashrc</code> 了。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，請見下面這篇文章。</p>
+
+<p><a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">.bash_profile vs .bashrc</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JSON for Vim]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2012/03/26/json-for-vim/"/>
+    <updated>2012-03-26T10:42:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2012/03/26/json-for-vim</id>
+    <content type="html"><![CDATA[<p>剛剛在 Terminal 下開了個新檔要來寫 JSON, 發現 Vim 竟然沒有支援 JSON 的 FileType 與 syntax highlight。想說這問題應該很多人遇過，因此上網找了一下，找到這個 script: <a href="http://www.vim.org/scripts/script.php?script_id=1945">JSON.vim</a>。</p>
+
+<p>不過看了下安裝說明，感覺麻煩了點。於是又找到了<a href="http://www.codeography.com/2010/07/13/json-syntax-highlighting-in-vim.html">這篇文章</a>，只要到 <code>~/.vimrc</code> 加入下面這行，就可以讓 JSON 檔案套用 JavaScript 的 syntax highlight, 簡單明瞭。</p>
+
+<pre class="prettyprint"><code>autocmd BufNewFile,BufRead *.json set ft=javascript</code></pre>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2012/03/11/tips-for-mac-os-x-quick-look/"/>
+    <updated>2012-03-11T18:17:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2012/03/11/tips-for-mac-os-x-quick-look</id>
+    <content type="html"><![CDATA[<p>我用了 Mac 好一段時間了才知道，原來對檔案直接按空白鍵可以開啟快速檢視 (Quick Look)；又隔了好一段時間，才又知道原來快速檢視除了內建的之外，還可以加上些外掛以增加支援檔案類型。下面是一些我所用到的 QuickLook 相關技巧整理。</p>
+
+<p><img src="http://tzengyuxio.github.com/images/2012/2012-03-11-quicklook-of-zip.png" alt="BetterZip Plugin" /></p>
+
+<h2>在 Terminal 下開啟快速檢視</h2>
+
+<p>除了在 Finder 中按空白鍵外，有時候在 Terminal 底下工作時，也可以利用指令來開啟快速檢視，這樣可以減少鍵盤滑鼠的切換以提升效率。開啟的指令如下：</p>
+
+<pre><code>$ qlmanage -p [FILE]
+</code></pre>
+
+<p>把 [FILE] 替換成要開啟的檔名即可。不過這指令也不算短，要更方便的話，可以在 <code>~/.bashrc</code> 中加入以下指令別名 (alias)，這樣只要輸入 <code>ql [FILE]</code> 就可以立刻檢視了：</p>
+
+<pre><code>alias ql='qlmanage -p'
+</code></pre>
+
+<p>對了，設定檔 .bashrc 預設在 Mac OS X 中是不起作用的，可以參考<a href="http://coder.aqualuna.me/2012/03/bashrc-in-mac-terminal-os-x-lion.html">這篇文章</a>來讓 .bashrc work。</p>
+
+<h2>增加支援檔案類型的 Plugin</h2>
+
+<p>快速檢視本身支援文字、圖片、音樂、影片等基本檔案格式，至於其他不支援的格式則只會顯示一個大大的檔案 icon。透過以下 Plugin 可以增加快速檢視支援的檔案格式，安裝很簡單，只要將下載下來的 <code>*.qlgenerator</code> 檔案放到下面路徑之一：</p>
+
+<ul>
+<li><code>(Macintosh HD)/Library/QuickLook/</code> 安裝給本機的所有使用者</li>
+<li><code>~/Library/QuickLook/</code> 只安裝給自己使用</li>
+</ul>
+
+
+<h3>壓縮檔 (Archives)</h3>
+
+<p><a href="http://macitbetter.com/BetterZip-Quick-Look-Generator/">BetterZip 2 - The Next Generation of Archiving</a></p>
+
+<p>上面這個外掛預設是暗色背景的，如果喜歡白色背景的（如同文章開頭那張圖），可以考慮下面這個修改版本：</p>
+
+<p><a href="https://github.com/farfanoide/BetterZ-QuickLook-plugin-theme-for-Lion">farfanoide/BetterZ-QuickLook-plugin-theme-for-Lion</a></p>
+
+<h3>程式碼 (Code)</h3>
+
+<p><a href="http://code.google.com/p/qlcolorcode/">qlcolorcode - A Quick Look plugin for source code with syntax highlighting - Google Project Hosting</a></p>
+
+<h3>CSV 檔案</h3>
+
+<p><a href="http://code.google.com/p/quicklook-csv/">quicklook-csv - A QuickLook plugin to quick look CSV files for Mac OS X 10.5+ - Google Project Hosting</a></p>
+
+<h2>快速檢視文字檔案時，可以複製文字</h2>
+
+<p>按空白鍵檢視文字檔案內容很方便，可是有時候如果想要複製文字，就得另外再開啟文字編輯，相當麻煩。在 Terminal 下輸入以下指令，可以讓你在快速檢視文字檔時，也能選取想要的片段，然後按 Cmd+C 複製出來。</p>
+
+<pre><code>$ defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+</code></pre>
+
+<h2>用不同的應用程式開啟</h2>
+
+<p>在快速檢視時，右上方會有個按鈕讓你以預設關連的應用程式開啟。如果你想要用其他的應用程式開啟，例如用 Photoshop 開啟圖檔，那麼只要按著右上方按鈕不放，就會出現選單供你選擇想要開啟的應用程式。</p>
+
+<h2>以全螢幕開啟快速檢視</h2>
+
+<p>選取檔案，然後按下 <code>Cmd+Opt+Y</code>，就可以直接以全螢幕方式進入快速檢視，這對影像或是影片格式相當有用。</p>
+
+<p>其實也可以在按著 Opt 的狀態下按空白鍵進入全螢幕的快速檢視，不過像我有安裝 Alfred, <code>Opt+空白鍵</code> 預設會啟動 Alfred 的輸入視窗，因此就沒辦法用來開啟快速檢視了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
+    <updated>2012-03-09T20:28:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
+    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<hr />
+
+<p>Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
+
+<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 &#8220;EF BB BF&#8221;。</p>
+
+<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
+
+<h2>在 VIM 中的 BOM 相關操作</h2>
+
+<h3>加入 BOM</h3>
+
+<pre><code>:set bomb
+</code></pre>
+
+<h3>移除 BOM</h3>
+
+<pre><code>:set nobomb
+</code></pre>
+
+<h3>查詢 BOM 狀態</h3>
+
+<pre><code>:set bomb?
+</code></pre>
+
+<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
+
+<h3>查詢包含 UTF-8 BOM 的檔案</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+</code></pre>
+
+<h3>找出並移除 UTF-8 的 BOM</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+</code></pre>
+
+<h3>編碼的轉換</h3>
+
+<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+</code></pre>
+
+<p>其中 ENCODING 的部份可以是以下數值：</p>
+
+<ul>
+<li>UTF-8 UTF8</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UCS-2BE UNICODEBIG</li>
+<li>UCS-2LE UNICODELITTLE</li>
+</ul>
+
+
+<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在網頁中嵌入 Facebook 與 twitter 社交按鈕]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/"/>
+    <updated>2011-08-09T19:02:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page</id>
+    <content type="html"><![CDATA[<p>Facebook 常見的社交按鈕有兩種：<strong>Facebook Share</strong> 與 <strong>Facebook Like</strong>，不過前者已經不在 Facebook 官方提供的 Plugin 列表中，連到<a href="http://developers.facebook.com/docs/share">舊的 Facebook Share 說明頁面</a>會自動導向 <a href="http://developers.facebook.com/docs/reference/plugins/like/">Facebook Like 的說明頁面</a>，看起來 Facebook 似乎有意以 Like 取代 Share 的地位。雖然如此，兩種功能還是有其不同的定位，目前也都能夠共存並用。關於兩者差異的說明，可以參考<a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">這篇文章（英文）</a>。下面則是 Facebook 與 twitter 各種社交功能與外觀的顯示範例與分享代碼。</p>
+
+<h2>Facebook Share 的分享代碼</h2>
+
+<h3>按鈕配置</h3>
+
+<p><a href="http://www.facebook.com/sharer.php" name="fb_share" type="button_count">分享</a></p>
+
+<pre class="prettyprint"><code>&lt;a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php"&gt;分享&lt;/a&gt;&lt;script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"&gt;&lt;/script&gt;
+</code></pre>
+
+
+<h3>方塊配置</h3>
+
+<p><a href="http://www.facebook.com/sharer.php" name="fb_share" type="box_count">分享</a></p>
+
+<pre class="prettyprint"><code>&lt;a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php"&gt;分享&lt;/a&gt;&lt;script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+
+<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript">
+</script>
+
+
+<h2>Facebook Like 的分享代碼</h2>
+
+<h3>標準配置</h3>
+
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" style="border: none; height: 20px; overflow: hidden; width: 450px;"></iframe>
+
+
+
+
+<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=standard&amp;amp;width=450&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=20&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:450px; height:20px;'&gt;&lt;/iframe&gt;
+</code></pre>
+
+
+<h3>按鈕配置</h3>
+
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" style="border: none; height: 20px; overflow: hidden; width: 90px;"></iframe>
+
+
+
+
+<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=button_count&amp;amp;width=90&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=20&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:90px; height:20px;'&gt;&lt;/iframe&gt;
+</code></pre>
+
+
+<h3>方塊配置</h3>
+
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=box_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=63" style="border: none; height: 63px; overflow: hidden; width: 90px;"></iframe>
+
+
+
+
+<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=box_count&amp;amp;width=90&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=63&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:90px; height:63px;'&gt;&lt;/iframe&gt;
+</code></pre>
+
+
+<h2>twitter 的分享代碼</h2>
+
+<h3>水平按鈕</h3>
+
+<p><a class="twitter-share-button" href="http://twitter.com/share">Tweet</a></p>
+
+<pre class="prettyprint"><code>&lt;script src='http://platform.twitter.com/widgets.js' type='text/javascript'/&gt;
+&lt;a class='twitter-share-button' href='http://twitter.com/share' expr:data-url='data:post.url' expr:data-text='data:post.title'&gt;Tweet&lt;/a&gt;
+</code></pre>
+
+
+<h3>垂直按鈕</h3>
+
+<p><a class="twitter-share-button" data-count="vertical" href="http://twitter.com/share">Tweet</a></p>
+
+<pre class="prettyprint"><code>&lt;script src='http://platform.twitter.com/widgets.js' type='text/javascript'/&gt;
+&lt;a class='twitter-share-button' href='http://twitter.com/share' expr:data-url='data:post.url' expr:data-text='data:post.title' data-count='vertical'&gt;Tweet&lt;/a&gt;
+</code></pre>
+
+
+<h2>參考資料</h2>
+
+<ul>
+<li><a href="http://developers.facebook.com/docs/reference/plugins/like/">Like Button - Facebook Developers</a></li>
+<li><a href="https://dev.twitter.com/docs/tweet-button">Tweet Button | Twitter Developers</a></li>
+<li><a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">Facebook Like Button Vs. Facebook Share: Why I’m Keeping Both</a></li>
+<li><a href="http://jinnsblog.blogspot.com/2010/12/facebook-share-link-button-widget.html">[Blogger] 臉書的「分享」、「讚」推文按扭語法分享-靖 ● 技場</a></li>
+<li><a href="http://jasonblog.tw/2010/05/add-facebook-share-button-on-blogger.html">在Blogger裝置具有計數功能的Facebook分享按鈕 | 哲生博客 Jason Blog</a></li>
+<li><a href="http://jasonblog.tw/2010/04/add-facebook-like-button-on-your.html">在Blogger嵌入Facebook的讚(Like)按鈕 | 哲生博客 Jason Blog</a></li>
+<li><a href="http://clonn.blogspot.com/2011/05/bloggerfacebook-add-facebook-like.html">[教學] Blogger當中加入facebook 讚！ Add facebook like button in Blogger template</a></li>
+<li><a href="http://www.bloggerplugins.org/2010/08/twitter-share-buttons-for-blogger-tweet.html">Official Twitter Share Button (Tweet Button) for Blogger ~ Blogger Widgets</a></li>
+</ul>
 
 ]]></content>
   </entry>

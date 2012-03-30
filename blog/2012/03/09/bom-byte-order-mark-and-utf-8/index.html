@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: python - Tzeng Yuxio</title>
+  <title>BOM (Byte Order Mark) 與 UTF-8 - Tzeng Yuxio</title>
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="Category: python">
+  <meta name="description" content="一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。 Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://tzengyuxio.github.comblog/categories/python">
+  <link rel="canonical" href="http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -75,53 +75,152 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Python</h1>
+    
+      <h1 class="entry-title">BOM (Byte Order Mark) 與 UTF-8</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-09T20:28:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
 
-  
-  <h2>2012</h2>
+<hr />
 
-<article>
-  
-<h1><a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a></h1>
-<time datetime="2012-03-29T08:39:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>29</span> <span class='year'>2012</span></time>
+<p>Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/python/'>python</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
+<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 &#8220;EF BB BF&#8221;。</p>
+
+<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
+
+<h2>在 VIM 中的 BOM 相關操作</h2>
+
+<h3>加入 BOM</h3>
+
+<pre><code>:set bomb
+</code></pre>
+
+<h3>移除 BOM</h3>
+
+<pre><code>:set nobomb
+</code></pre>
+
+<h3>查詢 BOM 狀態</h3>
+
+<pre><code>:set bomb?
+</code></pre>
+
+<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
+
+<h3>查詢包含 UTF-8 BOM 的檔案</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+</code></pre>
+
+<h3>找出並移除 UTF-8 的 BOM</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+</code></pre>
+
+<h3>編碼的轉換</h3>
+
+<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+</code></pre>
+
+<p>其中 ENCODING 的部份可以是以下數值：</p>
+
+<ul>
+<li>UTF-8 UTF8</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UCS-2BE UNICODEBIG</li>
+<li>UCS-2LE UNICODELITTLE</li>
+</ul>
 
 
-</article>
-
-
-
-  
-  <h2>2011</h2>
-
-<article>
-  
-<h1><a href="/blog/2011/07/26/my-way-as-a-coder/">我的程式語言之路</a></h1>
-<time datetime="2011-07-26T10:54:00+08:00" pubdate><span class='month'>Jul</span> <span class='day'>26</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/c-/'>c++</a>, <a class='category' href='/blog/categories/java/'>java</a>, <a class='category' href='/blog/categories/python/'>python</a></span>
-</footer>
-
-
-</article>
-
+<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-09T20:28:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/vim/'>vim</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/" title="Previous Post: 在網頁中嵌入 Facebook 與 twitter 社交按鈕">&laquo; 在網頁中嵌入 Facebook 與 twitter 社交按鈕</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/" title="Next Post: 關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -231,7 +330,10 @@
       var disqus_shortname = 'tzyxblog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8/';
+        var disqus_url = 'http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
