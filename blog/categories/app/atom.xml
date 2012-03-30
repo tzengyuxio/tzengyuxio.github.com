@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: app | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.github.com/blog/categories/app/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.github.com/"/>
+  <updated>2012-03-31T01:35:28+08:00</updated>
+  <id>http://tzengyuxio.github.com/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（下）]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2/"/>
+    <updated>2011-03-29T13:08:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2</id>
+    <content type="html"><![CDATA[<p>上篇：<a href="http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></p>
+
+<p>這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。</p>
+
+<p>CamScanner 的作法有點接近理想方式。在裁剪之前，左上方的按鈕可以選擇「色彩增強」模式，有五種方案：「普通」、「增強」、「增強並銳化」、「經濟模式」、「黑白模式」，可惜這些模式的名稱不夠直覺。裁剪完之後，有提供滑軸用來調整明暗跟對比。裁剪前的「色彩增強」模式無法預覽，裁剪後才知道結果，裁剪完後的明暗對比則會即時反應在畫面上，方便掌握。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b01.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b02.jpeg" width="240" height="360"><br/>
+（左：裁剪前的色彩增強選項；右：明亮與對比的即時調整）</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b03.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b04.jpeg" width="240" height="360"><br/>
+（左：經濟模式；右：黑白模式）</p>
+
+<p>Genius Scan 在這方面就很陽春，後製處理只有三個選項：「不處理」、「黑白文件」、「彩色文件」。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b05.jpeg" width="240" height="360"></p>
+
+<p>JotNot 的後製功能全部放在一起。他的分類方式是我所喜歡的：「收據」、「黑白文件」、「彩色文件或白板」、「亮顯文本或黑板」、「攝影」。預設分類往下拉，也可以看到對比調整等選項，甚至可以控制背景與加上時間戳記，算是功能最完整的。但是這些調整功能，包含對比，都必須設定好後進行處理，才看得到結果，不滿意的話還要回頭改對比，並不是很方便。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b06.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b07.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b08.jpeg" width="240" height="360"></p>
+
+<p>關於文件分享與輸出部分，如果以付費版本來看，基本上我所需要的都包含了。</p>
+
+<p>CamScanner 有以下選項：</p>
+
+<ul>
+<li>打開方式 (iBooks 或其他可開啟 PDF 的 iPhone app)</li>
+<li>電子郵件</li>
+<li>Google Docs</li>
+<li>BOX.net</li>
+<li>Evernote</li>
+<li>iDisk</li>
+<li>Dropbox</li>
+</ul>
+
+
+<p>Genius Scan 可以輸出的選項有：</p>
+
+<ul>
+<li>電子郵件</li>
+<li>iBooks 或其他可開啟 PDF 的 app</li>
+<li>（付費版）Dropbox</li>
+<li>（付費版）Evernote</li>
+<li>（付費版）Google Docs</li>
+</ul>
+
+
+<p>JotNot 比較特別的是它可以直接傳真或列印，傳真好像要額外付費 In-App-Purchases，這兩個功能我都沒試過。其餘的分享功能都只有付費版才有：</p>
+
+<ul>
+<li>（付費版）可輸出成 PDFs、JPEGs、PNGs</li>
+<li>（付費版）電子郵件</li>
+<li>（付費版）Dropbox</li>
+<li>（付費版）iDisk / WebDAV</li>
+<li>（付費版）Evernote</li>
+<li>（付費版）Box.net</li>
+<li>（付費版）Google Docs</li>
+</ul>
+
+
+<p>另外一些有的沒有的雜項功能，在最後作個記錄：</p>
+
+<ul>
+<li>標籤功能，CamScanner 與 JotNot 都可以對文件下 Tag，除了內建的 Tag 之外也可自己新增。CamScanner 的 Tag 在中文版下也是中文名稱，很貼心。 <br/>
+  <img src="/images/2011/2011-03-29-scan-app-b09.jpeg" width="240" height="360">
+  <img src="/images/2011/2011-03-29-scan-app-b10.jpeg" width="240" height="360"><br/>
+  （左：CamScanner 的預設標籤；右：JotNot 的預設標籤）</li>
+<li>除了標籤外，JotNot 還可以對文件標示星號。</li>
+<li>關於版面大小：
+
+<ul>
+<li>JotNot 可以設定整本的預設大小，如 A4，也可以在單張處理時分別指定；</li>
+<li>CamScanner 能夠設定整本的版面大小，也可勾選「自動適應大小」，這樣每頁的圖檔掃多大就多大，比例不一。</li>
+<li>Genius Scan 我找不到可以設定版面大小的地方。它也是唯一一套以預設方式掃完上篇範例後，兩頁頁面大小不同的軟體。<br/>
+<img src="/images/2011/2011-03-29-scan-app-b11.jpeg" width="240" height="360"> <br/>
+（Genius Scan 輸出後的頁面大小不一）</li>
+</ul>
+</li>
+<li>JotNot 可以加入 PDF 密碼作為保護</li>
+<li>CamScanner 可以對每一頁加入筆記。輸出 PDF 時，也可決定要不要將筆記內容一起存入 PDF 中。</li>
+<li>CamScanner 有「快速批次掃描」的功能，不過我還沒試過。</li>
+</ul>
+
+
+<p>至於最後我選了哪套留在 iPhone 上呢？我只能說真的是「一分錢一分貨」了......</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）]]></title>
+    <link href="http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-1/"/>
+    <updated>2011-03-29T10:57:00+08:00</updated>
+    <id>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-1</id>
+    <content type="html"><![CDATA[<p>iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 <a href="http://itunes.apple.com/tw/app/pdf-reader-file-scanner-file/id325924458?mt=8">PDF Reader</a> 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。</p>
+
+<p>當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：</p>
+
+<ul>
+<li><a href="http://itunes.apple.com/us/app/camscanner-free/id388627783?mt=8#">CamScanner Free</a> / CamScanner+ ($4.99, a.k.a 《掃描全能王》)</li>
+<li><a href="http://itunes.apple.com/us/app/genius-scan/id377672876?mt=8">Genius Scan</a> / Genius Scan+ ($2.99)</li>
+<li><a href="http://itunes.apple.com/us/app/jotnot-scanner-free/id310789464?mt=8#">JotNot Scanner Free</a> / JotNot Scanner Pro ($0.99)</li>
+</ul>
+
+
+<p>這邊也順便說說我對掃描軟體的基本要求：</p>
+
+<ol>
+<li>自動辨識文件邊緣的功能要準確</li>
+<li>能針對不同文件類型作適當的影像調整</li>
+<li>可以輸出到 Google Docs, Evernote, Dropbox 等雲端服務</li>
+</ol>
+
+
+<p>簡單說就是要<strong>「掃的方便、掃的清楚，掃完輕鬆丟到雲端上」</strong>，至於文件管理之類的，我用其他工具，就不勞煩這些掃描軟體了。</p>
+
+<p>在進行比較之前，先說說這三款的共通之處：</p>
+
+<ol>
+<li>都有免費版與付費版，其中 CamScanner 的價格比另外兩套加起來還貴。不過 JotNot 的 $0.99 是特價，原價也是 $4.99，只是 JotNot 從去年(2010)九月開始特價到現在，不曉得還會不會調回原價？還是就這樣 0.99 下去了？</li>
+<li>三款都有「Wifi 分享」功能，也就是能透過區網內桌機端的瀏覽器連上指定的 port 來下載文件。因為我不常用這功能，所以下面就沒進一步測試比較。</li>
+<li>都可以透過直接拍照或是從相簿中載入的方式取得圖檔。</li>
+<li>CamScanner 與 JotNot 都有中文，前者甚至有中文名字 《掃描全能王》。雖然說英文不是問題，但是有中文大大加分啊！</li>
+</ol>
+
+
+<p>以下的測試都是針對免費版。至於免費跟付費版的差異這邊就不贅述了，多半都是廣告與附屬功能。對於最主要的「邊緣辨識」與「影像調整」兩個功能，免費與付費都是一樣的。</p>
+
+<p>先一起來看看基本介面吧（依序為 CamScanner, Genius Scan, JotNot Scanner）這三個的介面各有各的特色，三個我都喜歡。真要挑一個最高分的，大概是就 JotNot 了吧，他的介面設計跟 iPhone 本身的 APP 很一致，但是我不喜歡那個 Logo；Genius 的介面很簡潔，一進去就知道要做什麼；CamScanner 中規中矩，初次啟動還附了兩個文件作為說明檔案與範例，算是不錯的作法。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a01.jpeg" width="240" height="360" title="CamScanner" >
+<img src="/images/2011/2011-03-29-scan-app-a02.jpeg" width="240" height="360" title="Genius Scan" >
+<img src="/images/2011/2011-03-29-scan-app-a03.jpeg" width="240" height="360" title="JotNot Scanner" ></p>
+
+<p>接著是文件邊緣辨識的測試，為了公平起見，我用底下同樣的兩張圖作為輸入，分別看看在三款軟體中的辨識情況：</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a04.jpeg" width="240" height="360" title="Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a05.jpeg" width="240" height="360" title="Sample 2" ></p>
+
+<p>首先是 CamScanner 的辨識結果。相對於其他兩套，CamScanner 沒有對齊的格線，只有邊緣的八個點，算是比較可惜，但是辨識的結果卻是三套中最好的。左圖有確實找到盒子邊緣，右圖的則是上方邊線錯誤。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a06.jpeg" width="240" height="360" title="CamScanner with Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a07.jpeg" width="240" height="360" title="CamScanner with Sample 2" ></p>
+
+<p>接著看看 Genius Scan。左圖只有辨識出主圖部分，盒子上方被忽略掉了。右圖辨識到的範圍則蠻令人匪夷所思......</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a08.jpeg" width="240" height="360" title="Genius with Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a09.jpeg" width="240" height="360" title="Genius with Sample 1" ></p>
+
+<p>最後是 JotNot Scanner。JotNot 的辨識能力介於中間。左圖的辨識跟 Genius Scan 一樣，只有主圖；右圖的辨識跟 CamScanner 一樣，都是上邊線錯誤。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a10.jpeg" width="240" height="360" title="JotNot with Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a11.jpeg" width="240" height="360" title="JotNot with Sample 1" ></p>
+
+<p>辨識出錯誤的範圍是難免的，因此也要順便看看調整邊界的功能方不方便。在這一點上，CamScanner 跟 JotNot 就很用心。前者在手指點下去要調整的時候，會出現小圓框特寫要調整的角角；後者點下去之後會自動針對該區域放大，以方便操作。兩種方式使用起來都很流暢。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a12.jpeg" width="240" height="360" title="CamScanner Close-up 1" >
+<img src="/images/2011/2011-03-29-scan-app-a13.jpeg" width="240" height="360" title="JotNot Close-up" ><br/>
+（左：CamScanner 的圓框特寫；右：JotNot 的自動放大）</p>
+
+<p>寫到這邊有點長，先休息一下。<a href="/blog/2011/03/29/scanner-app-review-part-2/">下一篇</a>將繼續從影像處理與文件分享兩個層面去做比較。</p>
+]]></content>
+  </entry>
+  
+</feed>
