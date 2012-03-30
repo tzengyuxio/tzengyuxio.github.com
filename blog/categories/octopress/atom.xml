@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: octopress | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress 的開箱文系列]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/30/octopress-unboxing-collections/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/30/octopress-unboxing-collections/"/>
     <updated>2012-03-30T08:44:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/30/octopress-unboxing-collections</id>
+    <id>http://tzengyuxio.me/blog/2012/03/30/octopress-unboxing-collections</id>
     <content type="html"><![CDATA[<p>在安裝 Octopress 的時候，上網找了許多資料，也發現一個有趣的現象，就是大家的第一篇文章幾乎都是要對 Octopress 說幾句話。所以乾脆就來收集一下，看看大家的第一篇都寫些什麼？</p>
 
 <p>以下按照時間順序排列：</p>
@@ -140,9 +140,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress 開箱首發文]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/29/octopress-unboxing/"/>
     <updated>2012-03-29T16:55:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing</id>
+    <id>http://tzengyuxio.me/blog/2012/03/29/octopress-unboxing</id>
     <content type="html"><![CDATA[<p>前天與昨天兩天我都在修改 blogger 的 template－－起因是這樣：我在 Chrome 裝了個 <a href="https://chrome.google.com/webstore/detail/afoibpobokebhgfnknfndkgemglggomo">HTML5 Outliner</a> 的擴充，透過這個擴充，可以查看某個網頁的大綱排列是否如預想的一樣。很顯然，blogger 預設提供的幾個範本並沒有良好的 HTML5 大綱結構，於是我決定動手修改它。</p>
 
 <p>原本以為這是個小工程，沒想到卻花了我整整一夜一天的時間在和 <strong>blogger template</strong> 的語法纏鬥。blogger template 用到了許多神乎奇技的技巧，可以在一個 template 檔案中同時提供桌面與行動等不同平台的版面；同時提供首頁、封存、標籤與單篇等不同文章組合的版面；可以提供各式各樣的參數讓你在後台中只要簡單選選顏色調整大小就可以做出各式各樣的變化。而這些全部都是在一個 XML 檔案裡就可以搞定。</p>

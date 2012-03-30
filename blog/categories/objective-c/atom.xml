@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: objective-C | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/objective-c/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/objective-c/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[UIGestureRecognizer 的共存]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response/"/>
+    <link href="http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response/"/>
     <updated>2011-07-26T19:55:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response</id>
+    <id>http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response</id>
     <content type="html"><![CDATA[<p>在 iPhone 或 iPad 的開發中，除了用 <code>touchesBegan</code> / <code>touchesMoved</code> / <code>touchesEnded</code> 這組方法來控制使用者的手指觸控外，也可以用 <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIGestureRecognizer_Class/Reference/Reference.html#//apple_ref/occ/cl/UIGestureRecognizer">UIGestureRecognizer</a> 的衍生類別來進行判斷。用 <code>UIGestureRecognizer</code> 的好處在於有現成的手勢，開發者不用自己計算手指移動的軌跡。<code>UIGestureRecognizer</code> 的衍生類別有以下數種：</p>
 
 <ul>

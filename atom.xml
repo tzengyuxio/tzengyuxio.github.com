@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress 的開箱文系列]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/30/octopress-unboxing-collections/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/30/octopress-unboxing-collections/"/>
     <updated>2012-03-30T08:44:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/30/octopress-unboxing-collections</id>
+    <id>http://tzengyuxio.me/blog/2012/03/30/octopress-unboxing-collections</id>
     <content type="html"><![CDATA[<p>在安裝 Octopress 的時候，上網找了許多資料，也發現一個有趣的現象，就是大家的第一篇文章幾乎都是要對 Octopress 說幾句話。所以乾脆就來收集一下，看看大家的第一篇都寫些什麼？</p>
 
 <p>以下按照時間順序排列：</p>
@@ -140,9 +140,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress 開箱首發文]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/29/octopress-unboxing/"/>
     <updated>2012-03-29T16:55:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing</id>
+    <id>http://tzengyuxio.me/blog/2012/03/29/octopress-unboxing</id>
     <content type="html"><![CDATA[<p>前天與昨天兩天我都在修改 blogger 的 template－－起因是這樣：我在 Chrome 裝了個 <a href="https://chrome.google.com/webstore/detail/afoibpobokebhgfnknfndkgemglggomo">HTML5 Outliner</a> 的擴充，透過這個擴充，可以查看某個網頁的大綱排列是否如預想的一樣。很顯然，blogger 預設提供的幾個範本並沒有良好的 HTML5 大綱結構，於是我決定動手修改它。</p>
 
 <p>原本以為這是個小工程，沒想到卻花了我整整一夜一天的時間在和 <strong>blogger template</strong> 的語法纏鬥。blogger template 用到了許多神乎奇技的技巧，可以在一個 template 檔案中同時提供桌面與行動等不同平台的版面；同時提供首頁、封存、標籤與單篇等不同文章組合的版面；可以提供各式各樣的參數讓你在後台中只要簡單選選顏色調整大小就可以做出各式各樣的變化。而這些全部都是在一個 XML 檔案裡就可以搞定。</p>
@@ -161,9 +161,9 @@
   
   <entry>
     <title type="html"><![CDATA[Python 與 Ruby 的模組安裝]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/29/install-module-in-python-and-ruby/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby/"/>
     <updated>2012-03-29T08:39:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/29/install-module-in-python-and-ruby</id>
+    <id>http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby</id>
     <content type="html"><![CDATA[<p>其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。</p>
 
 <p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
@@ -227,10 +227,10 @@
   
   <entry>
     <title type="html"><![CDATA[ls Color on Mac]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac/"/>
     <updated>2012-03-29T01:44:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac</id>
-    <content type="html"><![CDATA[<p><img src="http://tzengyuxio.github.com/images/2012/2012-03-29-ls-color.png" alt="ls color" /></p>
+    <id>http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac</id>
+    <content type="html"><![CDATA[<p><img src="http://tzengyuxio.me/images/2012/2012-03-29-ls-color.png" alt="ls color" /></p>
 
 <p>昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。</p>
 
@@ -274,9 +274,9 @@
   
   <entry>
     <title type="html"><![CDATA[設定 Mac Terminal 下的 .bashrc]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/27/dot-bashrc-in-mac-terminal/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal/"/>
     <updated>2012-03-27T16:07:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/27/dot-bashrc-in-mac-terminal</id>
+    <id>http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal</id>
     <content type="html"><![CDATA[<p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
 
 <p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
@@ -317,9 +317,9 @@ fi
   
   <entry>
     <title type="html"><![CDATA[JSON for Vim]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/26/json-for-vim/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/26/json-for-vim/"/>
     <updated>2012-03-26T10:42:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/26/json-for-vim</id>
+    <id>http://tzengyuxio.me/blog/2012/03/26/json-for-vim</id>
     <content type="html"><![CDATA[<p>剛剛在 Terminal 下開了個新檔要來寫 JSON, 發現 Vim 竟然沒有支援 JSON 的 FileType 與 syntax highlight。想說這問題應該很多人遇過，因此上網找了一下，找到這個 script: <a href="http://www.vim.org/scripts/script.php?script_id=1945">JSON.vim</a>。</p>
 
 <p>不過看了下安裝說明，感覺麻煩了點。於是又找到了<a href="http://www.codeography.com/2010/07/13/json-syntax-highlighting-in-vim.html">這篇文章</a>，只要到 <code>~/.vimrc</code> 加入下面這行，就可以讓 JSON 檔案套用 JavaScript 的 syntax highlight, 簡單明瞭。</p>
@@ -333,12 +333,12 @@ fi
   
   <entry>
     <title type="html"><![CDATA[關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/11/tips-for-mac-os-x-quick-look/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look/"/>
     <updated>2012-03-11T18:17:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/11/tips-for-mac-os-x-quick-look</id>
+    <id>http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look</id>
     <content type="html"><![CDATA[<p>我用了 Mac 好一段時間了才知道，原來對檔案直接按空白鍵可以開啟快速檢視 (Quick Look)；又隔了好一段時間，才又知道原來快速檢視除了內建的之外，還可以加上些外掛以增加支援檔案類型。下面是一些我所用到的 QuickLook 相關技巧整理。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2012/2012-03-11-quicklook-of-zip.png" alt="BetterZip Plugin" /></p>
+<p><img src="http://tzengyuxio.me/images/2012/2012-03-11-quicklook-of-zip.png" alt="BetterZip Plugin" /></p>
 
 <h2>在 Terminal 下開啟快速檢視</h2>
 
@@ -401,9 +401,9 @@ fi
   
   <entry>
     <title type="html"><![CDATA[Solarized for google-code-prettify]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/11/solarized-for-google-code-prettify/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify/"/>
     <updated>2012-03-11T07:20:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/11/solarized-for-google-code-prettify</id>
+    <id>http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify</id>
     <content type="html"><![CDATA[<p><a href="http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify/">我用 google-code-prettify 來做 blog 文章中的代碼上色</a>，google-code-prettify 本身有<a href="http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html">附上幾個 Color Scheme</a>, 然而除了預設的之外，都是以暗色背景為主。</p>
 
 <p>昨天心血來潮將 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考<a href="http://coder.aqualuna.me/2012/02/zenburn-solarized.html">這篇文章</a>。</p>
@@ -544,9 +544,9 @@ public class GetEnv {
   
   <entry>
     <title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
     <updated>2012-03-09T20:28:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
+    <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
     <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
 
 <hr />
@@ -608,9 +608,9 @@ public class GetEnv {
   
   <entry>
     <title type="html"><![CDATA[在網頁中嵌入 Facebook 與 twitter 社交按鈕]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/"/>
+    <link href="http://tzengyuxio.me/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/"/>
     <updated>2011-08-09T19:02:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page</id>
+    <id>http://tzengyuxio.me/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page</id>
     <content type="html"><![CDATA[<p>Facebook 常見的社交按鈕有兩種：<strong>Facebook Share</strong> 與 <strong>Facebook Like</strong>，不過前者已經不在 Facebook 官方提供的 Plugin 列表中，連到<a href="http://developers.facebook.com/docs/share">舊的 Facebook Share 說明頁面</a>會自動導向 <a href="http://developers.facebook.com/docs/reference/plugins/like/">Facebook Like 的說明頁面</a>，看起來 Facebook 似乎有意以 Like 取代 Share 的地位。雖然如此，兩種功能還是有其不同的定位，目前也都能夠共存並用。關於兩者差異的說明，可以參考<a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">這篇文章（英文）</a>。下面則是 Facebook 與 twitter 各種社交功能與外觀的顯示範例與分享代碼。</p>
 
 <h2>Facebook Share 的分享代碼</h2>
@@ -710,9 +710,9 @@ public class GetEnv {
   
   <entry>
     <title type="html"><![CDATA[用 google-code-prettify 在網頁中嵌入代碼]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/"/>
+    <link href="http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify/"/>
     <updated>2011-08-07T09:13:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify</id>
+    <id>http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify</id>
     <content type="html"><![CDATA[<p>作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 <a href="https://github.com/">github</a> 的 <a href="http://www.gist.com/">gist</a> 服務來將程式代碼內嵌到網頁（[使用效果見此]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。</p>
 
 <p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>
@@ -820,9 +820,9 @@ int main(void)
   
   <entry>
     <title type="html"><![CDATA[Eclipse 的常用快速鍵]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts/"/>
+    <link href="http://tzengyuxio.me/blog/2011/07/30/eclipse-common-keyboard-shortcuts/"/>
     <updated>2011-07-30T16:09:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts</id>
+    <id>http://tzengyuxio.me/blog/2011/07/30/eclipse-common-keyboard-shortcuts</id>
     <content type="html"><![CDATA[<p>我身為一個程式設計師，有個鍵盤在身邊，也很合邏輯。這個鍵盤呢，是我用來撰寫代碼用的，很合理吧？可話說回來，這扳子，啊不，這鍵盤如果只有拿來寫代碼，那可就浪費了；身為一個<strong>高生產力</strong>的程式設計師，應該充分活用鍵盤的各種功能，活用到甚至能夠取代大多數滑鼠的操作，那才叫<a href="http://youtu.be/yKWwrxaOxsY">專業</a>。所以說，善用功能熱鍵就很重要啦，江湖上有本武功秘笈，書名叫做<a href="http://www.anobii.com/books/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E6%8F%90%E5%8D%87%E7%94%9F%E7%94%A2%E5%8A%9B%E7%A7%98%E7%AC%88/9789866840340/01c423030629cd8ad5/">《程式設計師提昇生產力秘笈》</a>，裡頭就有一段關於「奧義，鍵盤捷徑」的心法敘述：</p>
 
 <blockquote><p>&#8230;&#8230;程式設計（除了使用者介面設計外）是文字性活動，所以，你應該儘可能把你的手放在鍵盤上。&#8230;&#8230;你一整天都使用 IDE 建立程式碼，而 IDE 有大量鍵盤捷徑。<strong>全都學！</strong>使用鍵盤捷徑在原始碼內走動，一定比使用滑鼠快。 (P.30)</p></blockquote>
@@ -883,9 +883,9 @@ int main(void)
   
   <entry>
     <title type="html"><![CDATA[To Iterate is Human, to Recurse, Divine]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/"/>
+    <link href="http://tzengyuxio.me/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/"/>
     <updated>2011-07-28T12:30:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine</id>
+    <id>http://tzengyuxio.me/blog/2011/07/28/to-iterate-is-human-to-recurse-divine</id>
     <content type="html"><![CDATA[<p>今天偶然看到這句話，&#8221;To iterate is human, to recurse, divine.&#8221;，無巧不巧，最近幾天的課程我也剛好在講解<strong>遞迴</strong>的概念。</p>
 
 <p>說這句話的老兄是 <a href="http://en.wikipedia.org/wiki/L._Peter_Deutsch">L. Peter Deutsch</a>，雖然他的姓寫作是「德意志（Deutsch）」，可是這位德意志先生卻是個道道地地的美國麻省人。Deutsch 在電腦界最主要的貢獻就是 <a href="http://zh.wikipedia.org/wiki/Ghostscript">Ghostscript</a> 和 <a href="http://en.wikipedia.org/wiki/Archie_search_engine">Archie</a>。Ghostscript 是可以用來生成 PDF 或是 Postscript 格式文件的軟體，從 1988 第一版釋出一直到今年 2011 橫跨了 23 個年頭，仍然持續開發維護中（當然維護者早已換人接手，不再是 Deutsch 了），也衍生了許多分支專案。</p>
@@ -914,9 +914,9 @@ int main(void)
   
   <entry>
     <title type="html"><![CDATA[UIGestureRecognizer 的共存]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response/"/>
+    <link href="http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response/"/>
     <updated>2011-07-26T19:55:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response</id>
+    <id>http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response</id>
     <content type="html"><![CDATA[<p>在 iPhone 或 iPad 的開發中，除了用 <code>touchesBegan</code> / <code>touchesMoved</code> / <code>touchesEnded</code> 這組方法來控制使用者的手指觸控外，也可以用 <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIGestureRecognizer_Class/Reference/Reference.html#//apple_ref/occ/cl/UIGestureRecognizer">UIGestureRecognizer</a> 的衍生類別來進行判斷。用 <code>UIGestureRecognizer</code> 的好處在於有現成的手勢，開發者不用自己計算手指移動的軌跡。<code>UIGestureRecognizer</code> 的衍生類別有以下數種：</p>
 
 <ul>
@@ -947,9 +947,9 @@ int main(void)
   
   <entry>
     <title type="html"><![CDATA[我的程式語言之路]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/07/26/my-way-as-a-coder/"/>
+    <link href="http://tzengyuxio.me/blog/2011/07/26/my-way-as-a-coder/"/>
     <updated>2011-07-26T10:54:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/07/26/my-way-as-a-coder</id>
+    <id>http://tzengyuxio.me/blog/2011/07/26/my-way-as-a-coder</id>
     <content type="html"><![CDATA[<p>從大學以來，這十幾年的工作與生活總與程式設計脫不了關係。前前後後寫了不少的 Code, 也接觸過許許多多不同的 Programming Language。這邊就來記錄一下自己現在還有印象的程式語言，也許十年之後再來回顧，又是另一種不同的想法吧。</p>
 
 <h2>QBasic</h2>
@@ -1030,9 +1030,9 @@ int main(void)
   
   <entry>
     <title type="html"><![CDATA[文明帝國 V - 文化勝利＆單城挑戰心得]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/"/>
+    <link href="http://tzengyuxio.me/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/"/>
     <updated>2011-04-01T12:46:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge</id>
+    <id>http://tzengyuxio.me/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge</id>
     <content type="html"><![CDATA[<p>原發表於 C_Chat版@PTT。Oct 10, 2010。
 以下內容與原發表內容相比有稍微做些文字與版面調整。</p>
 
@@ -1040,9 +1040,9 @@ int main(void)
 
 <p>昨天（2010/10/09）剛完成文化勝利，分享一下這次發展的心得。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-04-01-civ5-occ-berlin.jpg" alt="國土空照" /></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-04-01-civ5-occ-berlin.jpg" alt="國土空照" /></p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-04-01-civ5-occ-berlin2.jpg" alt="首都圈特寫" /></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-04-01-civ5-occ-berlin2.jpg" alt="首都圈特寫" /></p>
 
 <p>首先，這次的遊戲除了文化勝利這個目標外，還加上了「單城挑戰」的附加條件，因此能夠運用的資源少的可憐，只能全心一意投入到文化中。勝利的時候已經是 2003 年了，那時候最大的對手阿拉伯早就都進入未來時代，而我才剛發展出坦克車而已&#8230;.Orz</p>
 
@@ -1052,7 +1052,7 @@ int main(void)
 
 <h3>一、先講社會體制</h3>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-04-01-civ5-occ-social-policies.jpg" alt="文化勝利時最後的體制選擇" /></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-04-01-civ5-occ-social-policies.jpg" alt="文化勝利時最後的體制選擇" /></p>
 
 <p>文化勝利的話，Freedom (自由) 與 Piety (虔信) 必點，尤其是下列幾樣重點：</p>
 
@@ -1114,32 +1114,32 @@ int main(void)
   
   <entry>
     <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（下）]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2/"/>
+    <link href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2/"/>
     <updated>2011-03-29T13:08:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2</id>
+    <id>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2</id>
     <content type="html"><![CDATA[<p>上篇：<a href="http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></p>
 
 <p>這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。</p>
 
 <p>CamScanner 的作法有點接近理想方式。在裁剪之前，左上方的按鈕可以選擇「色彩增強」模式，有五種方案：「普通」、「增強」、「增強並銳化」、「經濟模式」、「黑白模式」，可惜這些模式的名稱不夠直覺。裁剪完之後，有提供滑軸用來調整明暗跟對比。裁剪前的「色彩增強」模式無法預覽，裁剪後才知道結果，裁剪完後的明暗對比則會即時反應在畫面上，方便掌握。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b01.jpeg" width="240" height="360">
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b02.jpeg" width="240" height="360"><br/>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b01.jpeg" width="240" height="360">
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b02.jpeg" width="240" height="360"><br/>
 （左：裁剪前的色彩增強選項；右：明亮與對比的即時調整）</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b03.jpeg" width="240" height="360">
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b04.jpeg" width="240" height="360"><br/>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b03.jpeg" width="240" height="360">
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b04.jpeg" width="240" height="360"><br/>
 （左：經濟模式；右：黑白模式）</p>
 
 <p>Genius Scan 在這方面就很陽春，後製處理只有三個選項：「不處理」、「黑白文件」、「彩色文件」。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b05.jpeg" width="240" height="360"></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b05.jpeg" width="240" height="360"></p>
 
 <p>JotNot 的後製功能全部放在一起。他的分類方式是我所喜歡的：「收據」、「黑白文件」、「彩色文件或白板」、「亮顯文本或黑板」、「攝影」。預設分類往下拉，也可以看到對比調整等選項，甚至可以控制背景與加上時間戳記，算是功能最完整的。但是這些調整功能，包含對比，都必須設定好後進行處理，才看得到結果，不滿意的話還要回頭改對比，並不是很方便。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b06.jpeg" width="240" height="360">
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b07.jpeg" width="240" height="360">
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b08.jpeg" width="240" height="360"></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b06.jpeg" width="240" height="360">
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b07.jpeg" width="240" height="360">
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b08.jpeg" width="240" height="360"></p>
 
 <p>關於文件分享與輸出部分，如果以付費版本來看，基本上我所需要的都包含了。</p>
 
@@ -1184,8 +1184,8 @@ int main(void)
 
 <ul>
 <li>標籤功能，CamScanner 與 JotNot 都可以對文件下 Tag，除了內建的 Tag 之外也可自己新增。CamScanner 的 Tag 在中文版下也是中文名稱，很貼心。 <br/>
-  <img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b09.jpeg" width="240" height="360">
-  <img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b10.jpeg" width="240" height="360"><br/>
+  <img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b09.jpeg" width="240" height="360">
+  <img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b10.jpeg" width="240" height="360"><br/>
   （左：CamScanner 的預設標籤；右：JotNot 的預設標籤）</li>
 <li>除了標籤外，JotNot 還可以對文件標示星號。</li>
 <li>關於版面大小：
@@ -1194,7 +1194,7 @@ int main(void)
 <li>JotNot 可以設定整本的預設大小，如 A4，也可以在單張處理時分別指定；</li>
 <li>CamScanner 能夠設定整本的版面大小，也可勾選「自動適應大小」，這樣每頁的圖檔掃多大就多大，比例不一。</li>
 <li>Genius Scan 我找不到可以設定版面大小的地方。它也是唯一一套以預設方式掃完上篇範例後，兩頁頁面大小不同的軟體。<br/>
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-b11.jpeg" width="240" height="360"> <br/>
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-b11.jpeg" width="240" height="360"> <br/>
 （Genius Scan 輸出後的頁面大小不一）</li>
 </ul>
 </li>
@@ -1210,9 +1210,9 @@ int main(void)
   
   <entry>
     <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-1/"/>
+    <link href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1/"/>
     <updated>2011-03-29T10:57:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-1</id>
+    <id>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1</id>
     <content type="html"><![CDATA[<p>iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 <a href="http://itunes.apple.com/tw/app/pdf-reader-file-scanner-file/id325924458?mt=8">PDF Reader</a> 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。</p>
 
 <p>當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：</p>
@@ -1249,99 +1249,81 @@ int main(void)
 
 <p>先一起來看看基本介面吧（依序為 CamScanner, Genius Scan, JotNot Scanner）這三個的介面各有各的特色，三個我都喜歡。真要挑一個最高分的，大概是就 JotNot 了吧，他的介面設計跟 iPhone 本身的 APP 很一致，但是我不喜歡那個 Logo；Genius 的介面很簡潔，一進去就知道要做什麼；CamScanner 中規中矩，初次啟動還附了兩個文件作為說明檔案與範例，算是不錯的作法。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a01.jpeg" width="240" height="360" title="CamScanner" >
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a02.jpeg" width="240" height="360" title="Genius Scan" >
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a03.jpeg" width="240" height="360" title="JotNot Scanner" ></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a01.jpeg" width="240" height="360" title="CamScanner" >
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a02.jpeg" width="240" height="360" title="Genius Scan" >
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a03.jpeg" width="240" height="360" title="JotNot Scanner" ></p>
 
 <p>接著是文件邊緣辨識的測試，為了公平起見，我用底下同樣的兩張圖作為輸入，分別看看在三款軟體中的辨識情況：</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a04.jpeg" width="240" height="360" title="Sample 1" >
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a05.jpeg" width="240" height="360" title="Sample 2" ></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a04.jpeg" width="240" height="360" title="Sample 1" >
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a05.jpeg" width="240" height="360" title="Sample 2" ></p>
 
 <p>首先是 CamScanner 的辨識結果。相對於其他兩套，CamScanner 沒有對齊的格線，只有邊緣的八個點，算是比較可惜，但是辨識的結果卻是三套中最好的。左圖有確實找到盒子邊緣，右圖的則是上方邊線錯誤。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a06.jpeg" width="240" height="360" title="CamScanner with Sample 1" >
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a07.jpeg" width="240" height="360" title="CamScanner with Sample 2" ></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a06.jpeg" width="240" height="360" title="CamScanner with Sample 1" >
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a07.jpeg" width="240" height="360" title="CamScanner with Sample 2" ></p>
 
 <p>接著看看 Genius Scan。左圖只有辨識出主圖部分，盒子上方被忽略掉了。右圖辨識到的範圍則蠻令人匪夷所思&#8230;&#8230;</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a08.jpeg" width="240" height="360" title="Genius with Sample 1" >
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a09.jpeg" width="240" height="360" title="Genius with Sample 1" ></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a08.jpeg" width="240" height="360" title="Genius with Sample 1" >
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a09.jpeg" width="240" height="360" title="Genius with Sample 1" ></p>
 
 <p>最後是 JotNot Scanner。JotNot 的辨識能力介於中間。左圖的辨識跟 Genius Scan 一樣，只有主圖；右圖的辨識跟 CamScanner 一樣，都是上邊線錯誤。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a10.jpeg" width="240" height="360" title="JotNot with Sample 1" >
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a11.jpeg" width="240" height="360" title="JotNot with Sample 1" ></p>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a10.jpeg" width="240" height="360" title="JotNot with Sample 1" >
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a11.jpeg" width="240" height="360" title="JotNot with Sample 1" ></p>
 
 <p>辨識出錯誤的範圍是難免的，因此也要順便看看調整邊界的功能方不方便。在這一點上，CamScanner 跟 JotNot 就很用心。前者在手指點下去要調整的時候，會出現小圓框特寫要調整的角角；後者點下去之後會自動針對該區域放大，以方便操作。兩種方式使用起來都很流暢。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a12.jpeg" width="240" height="360" title="CamScanner Close-up 1" >
-<img src="http://tzengyuxio.github.com/images/2011/2011-03-29-scan-app-a13.jpeg" width="240" height="360" title="JotNot Close-up" ><br/>
+<p><img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a12.jpeg" width="240" height="360" title="CamScanner Close-up 1" >
+<img src="http://tzengyuxio.me/images/2011/2011-03-29-scan-app-a13.jpeg" width="240" height="360" title="JotNot Close-up" ><br/>
 （左：CamScanner 的圓框特寫；右：JotNot 的自動放大）</p>
 
-<p>寫到這邊有點長，先休息一下。<a href="http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2/">下一篇</a>將繼續從影像處理與文件分享兩個層面去做比較。</p>
+<p>寫到這邊有點長，先休息一下。<a href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2/">下一篇</a>將繼續從影像處理與文件分享兩個層面去做比較。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[歡迎來到臥夢螺館]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2005/06/05/comics-welcome-to-gomurakan/"/>
-    <updated>2005-06-05T11:13:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2005/06/05/comics-welcome-to-gomurakan</id>
-    <content type="html"><![CDATA[<p>於是，一點一滴&#8230;&#8230;慢慢的&#8230;&#8230;破壞是件快樂的事&#8230;&#8230;破壞是件有趣的事&#8230;&#8230;看著自己的身體逐漸被破壞&#8230;&#8230;太有趣了&#8230;&#8230;</p>
+    <title type="html"><![CDATA[無印良品]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/06/30/muji/"/>
+    <updated>2005-06-30T04:55:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/06/30/muji</id>
+    <content type="html"><![CDATA[<p>昨天突然發現一間「無印良品」專賣店，於是進去逛了一下。
+蠻多想買的東西，不過現在得盡量在第一時間克制購買的慾望，所以今天就空手而歸。</p>
 
-<p><img src="http://tzengyuxio.github.com/images/2005/2005-06-05-gamurakan-1.jpeg">
-<img src="http://tzengyuxio.github.com/images/2005/2005-06-05-gamurakan-1.jpeg"></p>
-
-<p>第一眼的感覺：好厚的一本漫畫－－100出頭的定價竟然有300多頁的厚度。</p>
-
-<p>我向來對恐怖題材畫沒什麼興趣，雖然我看伊藤潤二、我玩《Bio Hazard》，但我還是對絕大多數的恐怖題材的作品，尤其是鬼故事類的，好比說《驚聲尖叫》，又例如像《鬼來電》，提不起什麼興致。</p>
-
-<p>《臥夢螺館》是少數我喜歡的恐怖題材作品，雖然我看到了一半時還不覺得這是個恐怖漫畫，但是看完了卻讓我聯想到伊藤潤二。這是部與伊藤潤二作品有著相同味道，但材料卻完全不同的漫畫；我感受到了同樣的恐懼，儘管福山庸治（《臥夢螺館》作者）與伊藤潤二的筆觸與敘述風格截然不同。</p>
-
-<p>福山的筆觸洗鍊且簡潔，畫面上不會有多餘的東西。在漫畫之後有篇日本作家津原泰水所寫的解說，裡頭這樣形容：</p>
-
-<blockquote><p>如果要說福山庸治的漫畫有什麼缺點，應該就是太過巧妙了。自在的構圖、洗鍊的線條。如果他是個「只有圖很巧妙」的漫畫家，我敢想像一定會出現無數的模仿者。但是故事情節充滿著知性的狂野，人物對白很灑脫，大量使用切除背景的技術，絕對是日本漫畫史上屈指可數的。</p></blockquote>
-
-<p>雖然劇情詭異離奇，匪夷所思，但是看了卻讓人深陷其中，放下書後仍遲遲無法跳出漫畫中的世界，好像被吸入裡頭所描述的那個<strong>人間地獄</strong>一般。</p>
-
-<p>除此之外，《臥夢螺館》還有兩個特點，一是每一話的章節都用音樂術語作為篇名，津原泰水對此的解讀相當貼切，因此我就直接引文，不野人獻曝了：</p>
-
-<blockquote><p>每個章節標題統一以音樂用語來呈現，也表示出『臥夢螺館』是個交響樂團般的故事，在吹奏主題曲的樂團團員的四週，以及後來成為故事主角的主題，事先就已經在吹奏和絃了。</p></blockquote>
-
-<p>另外一個特色即是每話的扉頁圖同時也是接續上一話最後一格故事的漫畫格。享有「恐怖漫畫之神」盛名的漫畫家楳圖一雄也有這樣的習慣，不過楳圖在扉頁漫畫格通常為前一話最後一個的放大特寫，而非有連貫接續性的漫畫格。</p>
-
-<p>想看看這本漫畫？可以到<a href="http://kodansha.cplaza.ne.jp/e-manga/club/manga/gamurakan/">這裡</a>預覽第一話，而且是以電子漫畫形式所呈現的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[思考機器 The Thinking Machine]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2005/06/05/the-thinking-machine/"/>
-    <updated>2005-06-05T03:27:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2005/06/05/the-thinking-machine</id>
-    <content type="html"><![CDATA[<p>於是，俄國西洋棋冠軍對凡杜森教授說：「老天！你不是人，你是個腦子──是機器，一部思考機器！」</p>
-
-<p><img src="http://addons.books.com.tw/G/001/3/0010291793.jpg" alt="image" /><br/>
-（圖片來源：<a href="http://www.books.com.tw/">博客來網路書店</a>）</p>
-
-<p>話說有款 PC Game 也叫做《思考機器》（Mind Rover），不過這是題外話。或許哪天想到會來介紹一下也說不定。</p>
-
-<p>不怎麼吸引人的封面，不是嗎？之所以會讓我把書拿起來翻，主要基於以下兩點原因：</p>
+<p>回到家後，想上網看看無印的產品型錄，可惜沒有中文 Official Site。不過有些有趣的收穫：</p>
 
 <ul>
-<li>她被放在推理小說區</li>
-<li>書名提到了一個迷人的字眼：思考機器</li>
+<li>原來台灣的「無印良品」也是 7-11 投資的公司……（這感覺與發現 google 又提供了一項好服務一樣，越喜歡這家公司，卻又怕自己被制約得越深。）</li>
+<li>「無印良品」的網站（日本）是 .net 而不是 .com，這倒與其「無印」的出發點有些契合。</li>
 </ul>
 
 
-<p>裡頭是幾篇關於思考機器，凡杜森教授，的短篇故事。前面還有篇很長的導讀，唐諾寫的導讀。竊以為，這本最有價值一讀的，不外乎是＜導讀＞與第一篇短篇，還有＜導讀＞與第一篇短篇之間 prelude 性質的短文。</p>
+<p>最後一項有趣的發現，來自底下兩段文字的對比：</p>
 
-<p>第一篇短篇就是＜逃出13號牢房＞，一篇有些推理小說成份的短篇（如果套用今日的定義，這篇小說少了「<strong>謀殺</strong>」的成份）。蠻有趣的一篇，講述思考機器教授跟人打賭要從死囚牢房靠邏輯推理逃出去，雖然用的方法蠻仰賴運氣的，但是凡杜森教授說就算這個方法不成功，他還有其他幾種逃出囚房的備案可以進行。至於是什麼樣的備案呢？教授就沒說下去了，而作者也就沒寫下去了。</p>
+<ul>
+<li><a href="http://www.mess-up.com/blogs/wzldk.php/2005/02/03/a_na_de_ma_muji">彼岸網友對於無印的看法（請注意第五篇 Comment）</a></li>
+<li><a href="http://mvpiverson.blog-city.com/muji.htm">此岸網友對於無印的看法（請注意第二段第一句話）</a></li>
+</ul>
 
-<p>好吧，畢竟我不是思考機器，我想不出其他可以逃出囚房的可行方案。但是我有避免進囚房的一些準則，至少至少，不要隨便跟人家打賭。</p>
 
-<p>在<a href="http://www.books.com.tw/exep/prod/booksfile.php?item=0010291793">這裡</a>可以預覽小說前幾頁的內容。</p>
+<p>住內地的覺得不貴，居島內的認為是天價。生活水準的天平已經倒轉過來了嗎？</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用耳機攀岩]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/06/23/rock-climbing-by-earphone/"/>
+    <updated>2005-06-23T09:46:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/06/23/rock-climbing-by-earphone</id>
+    <content type="html"><![CDATA[<p><a href="http://www.amadana.com/product/pe117/pe117.html">禁止將本商品（耳機）拿來攀岩</a><br/>
+－－你不講誰想得到啊 (／‵Д′)／~ ╧╧</p>
+
+<p>在上面網頁最下方有列出本商品的禁止事項，雖然是日文，不過我想應該很簡單到可以望圖生義。除了耳機外，其他像是電磁爐、計算機等商品也都有爆笑的禁止事項。</p>
+
+<p>令人懷疑該公司的主要客群是忍者眾？</p>
+
+<p>或者，也可以到該公司的<a href="http://en.amadana.com/product.html">英文</a>網站看看，不過有些敘述的英文翻譯沒有原文搞笑／傳神就是了。</p>
 ]]></content>
   </entry>
   

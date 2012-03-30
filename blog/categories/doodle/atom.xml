@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: doodle | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/doodle/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/doodle/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Starbucks 的女神]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2005/06/04/starbucks/"/>
+    <link href="http://tzengyuxio.me/blog/2005/06/04/starbucks/"/>
     <updated>2005-06-04T22:24:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2005/06/04/starbucks</id>
+    <id>http://tzengyuxio.me/blog/2005/06/04/starbucks</id>
     <content type="html"><![CDATA[<p>於是，畫了一個失敗的 Starbucks Logo......</p>
 
 <p><img src="/images/2005/2005-06-04-starbucks.jpeg" alt="image" /></p>

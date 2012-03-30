@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: app | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/app/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/app/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（下）]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2/"/>
+    <link href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2/"/>
     <updated>2011-03-29T13:08:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2</id>
+    <id>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2</id>
     <content type="html"><![CDATA[<p>上篇：<a href="http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></p>
 
 <p>這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。</p>
@@ -111,9 +111,9 @@
   
   <entry>
     <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-1/"/>
+    <link href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1/"/>
     <updated>2011-03-29T10:57:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-1</id>
+    <id>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1</id>
     <content type="html"><![CDATA[<p>iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 <a href="http://itunes.apple.com/tw/app/pdf-reader-file-scanner-file/id325924458?mt=8">PDF Reader</a> 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。</p>
 
 <p>當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：</p>

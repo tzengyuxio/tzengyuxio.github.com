@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: html | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/html/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/html/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Solarized for google-code-prettify]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/11/solarized-for-google-code-prettify/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify/"/>
     <updated>2012-03-11T07:20:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/11/solarized-for-google-code-prettify</id>
+    <id>http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify</id>
     <content type="html"><![CDATA[<p><a href="http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify/">我用 google-code-prettify 來做 blog 文章中的代碼上色</a>，google-code-prettify 本身有<a href="http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html">附上幾個 Color Scheme</a>, 然而除了預設的之外，都是以暗色背景為主。</p>
 
 <p>昨天心血來潮將 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考<a href="http://coder.aqualuna.me/2012/02/zenburn-solarized.html">這篇文章</a>。</p>
@@ -158,9 +158,9 @@ public class GetEnv {
   
   <entry>
     <title type="html"><![CDATA[在網頁中嵌入 Facebook 與 twitter 社交按鈕]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/"/>
+    <link href="http://tzengyuxio.me/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/"/>
     <updated>2011-08-09T19:02:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page</id>
+    <id>http://tzengyuxio.me/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page</id>
     <content type="html"><![CDATA[<p>Facebook 常見的社交按鈕有兩種：<strong>Facebook Share</strong> 與 <strong>Facebook Like</strong>，不過前者已經不在 Facebook 官方提供的 Plugin 列表中，連到<a href="http://developers.facebook.com/docs/share">舊的 Facebook Share 說明頁面</a>會自動導向 <a href="http://developers.facebook.com/docs/reference/plugins/like/">Facebook Like 的說明頁面</a>，看起來 Facebook 似乎有意以 Like 取代 Share 的地位。雖然如此，兩種功能還是有其不同的定位，目前也都能夠共存並用。關於兩者差異的說明，可以參考<a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">這篇文章（英文）</a>。下面則是 Facebook 與 twitter 各種社交功能與外觀的顯示範例與分享代碼。</p>
 
 <h2>Facebook Share 的分享代碼</h2>
@@ -260,9 +260,9 @@ public class GetEnv {
   
   <entry>
     <title type="html"><![CDATA[用 google-code-prettify 在網頁中嵌入代碼]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/"/>
+    <link href="http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify/"/>
     <updated>2011-08-07T09:13:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify</id>
+    <id>http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify</id>
     <content type="html"><![CDATA[<p>作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 <a href="https://github.com/">github</a> 的 <a href="http://www.gist.com/">gist</a> 服務來將程式代碼內嵌到網頁（[使用效果見此]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。</p>
 
 <p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: shell | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/shell/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/shell/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[ls Color on Mac]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac/"/>
     <updated>2012-03-29T01:44:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac</id>
+    <id>http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac</id>
     <content type="html"><![CDATA[<p><img src="/images/2012/2012-03-29-ls-color.png" alt="ls color" /></p>
 
 <p>昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。</p>
@@ -62,9 +62,9 @@
   
   <entry>
     <title type="html"><![CDATA[設定 Mac Terminal 下的 .bashrc]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/27/dot-bashrc-in-mac-terminal/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal/"/>
     <updated>2012-03-27T16:07:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/27/dot-bashrc-in-mac-terminal</id>
+    <id>http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal</id>
     <content type="html"><![CDATA[<p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
 
 <p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
@@ -105,9 +105,9 @@ fi
   
   <entry>
     <title type="html"><![CDATA[關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2012/03/11/tips-for-mac-os-x-quick-look/"/>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look/"/>
     <updated>2012-03-11T18:17:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2012/03/11/tips-for-mac-os-x-quick-look</id>
+    <id>http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look</id>
     <content type="html"><![CDATA[<p>我用了 Mac 好一段時間了才知道，原來對檔案直接按空白鍵可以開啟快速檢視 (Quick Look)；又隔了好一段時間，才又知道原來快速檢視除了內建的之外，還可以加上些外掛以增加支援檔案類型。下面是一些我所用到的 QuickLook 相關技巧整理。</p>
 
 <p><img src="/images/2012/2012-03-11-quicklook-of-zip.png" alt="BetterZip Plugin" /></p>

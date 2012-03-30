@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: book | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/book/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/book/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[思考機器 The Thinking Machine]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2005/06/05/the-thinking-machine/"/>
+    <link href="http://tzengyuxio.me/blog/2005/06/05/the-thinking-machine/"/>
     <updated>2005-06-05T03:27:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2005/06/05/the-thinking-machine</id>
+    <id>http://tzengyuxio.me/blog/2005/06/05/the-thinking-machine</id>
     <content type="html"><![CDATA[<p>於是，俄國西洋棋冠軍對凡杜森教授說：「老天！你不是人，你是個腦子──是機器，一部思考機器！」</p>
 
 <p><img src="http://addons.books.com.tw/G/001/3/0010291793.jpg" alt="image" /><br/>

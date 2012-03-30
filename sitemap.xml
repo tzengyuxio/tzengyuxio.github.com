@@ -1,107 +1,127 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2005/06/04/starbucks/</loc>
+        <loc>http://tzengyuxio.me/blog/2005/06/04/starbucks/</loc>
         <lastmod>2012-03-31T02:53:44+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2005/06/05/the-thinking-machine/</loc>
+        <loc>http://tzengyuxio.me/blog/2005/06/05/the-thinking-machine/</loc>
         <lastmod>2012-03-31T02:51:21+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2005/06/05/comics-welcome-to-gomurakan/</loc>
-        <lastmod>2012-03-31T02:53:58+08:00</lastmod>
+        <loc>http://tzengyuxio.me/blog/2005/06/05/comics-welcome-to-gomurakan/</loc>
+        <lastmod>2012-03-31T02:56:36+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-1/</loc>
+        <loc>http://tzengyuxio.me/blog/2005/06/06/sticker-map/</loc>
+        <lastmod>2012-03-31T03:44:53+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2005/06/11/more-sticker-tool/</loc>
+        <lastmod>2012-03-31T03:52:27+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2005/06/11/beta-fashion/</loc>
+        <lastmod>2012-03-31T03:50:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2005/06/12/asame-news/</loc>
+        <lastmod>2012-03-31T03:55:22+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2005/06/23/rock-climbing-by-earphone/</loc>
+        <lastmod>2012-03-31T03:58:57+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2005/06/30/muji/</loc>
+        <lastmod>2012-03-31T04:00:58+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1/</loc>
         <lastmod>2012-03-31T01:34:51+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2011/03/29/scanner-app-review-part-2/</loc>
+        <loc>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2/</loc>
         <lastmod>2012-03-31T01:34:07+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tzengyuxio.github.com/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/
+            http://tzengyuxio.me/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/
         </loc>
         <lastmod>2012-03-31T00:20:51+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2011/07/26/my-way-as-a-coder/</loc>
+        <loc>http://tzengyuxio.me/blog/2011/07/26/my-way-as-a-coder/</loc>
         <lastmod>2012-03-30T12:42:20+08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://tzengyuxio.github.com/blog/2011/07/26/which-uigesturerecognizer-will-response/
-        </loc>
+        <loc>http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response/</loc>
         <lastmod>2012-03-30T12:46:19+08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/
-        </loc>
+        <loc>http://tzengyuxio.me/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/</loc>
         <lastmod>2012-03-30T12:50:14+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2011/07/30/eclipse-common-keyboard-shortcuts/</loc>
+        <loc>http://tzengyuxio.me/blog/2011/07/30/eclipse-common-keyboard-shortcuts/</loc>
         <lastmod>2012-03-30T12:51:59+08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://tzengyuxio.github.com/blog/2011/08/07/embeded-code-with-google-code-prettify/
-        </loc>
+        <loc>http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify/</loc>
         <lastmod>2012-03-30T12:54:48+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tzengyuxio.github.com/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/
+            http://tzengyuxio.me/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/
         </loc>
         <lastmod>2012-03-30T13:09:44+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/09/bom-byte-order-mark-and-utf-8/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/</loc>
         <lastmod>2012-03-30T13:10:58+08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://tzengyuxio.github.com/blog/2012/03/11/solarized-for-google-code-prettify/
-        </loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify/</loc>
         <lastmod>2012-03-30T23:48:46+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/11/tips-for-mac-os-x-quick-look/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look/</loc>
         <lastmod>2012-03-30T13:21:18+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/26/json-for-vim/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/26/json-for-vim/</loc>
         <lastmod>2012-03-30T13:12:50+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/27/dot-bashrc-in-mac-terminal/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal/</loc>
         <lastmod>2012-03-30T13:12:03+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/29/ls-color-on-mac/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac/</loc>
         <lastmod>2012-03-30T08:41:12+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/29/install-module-in-python-and-ruby/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby/</loc>
         <lastmod>2012-03-30T12:31:51+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/29/octopress-unboxing/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/29/octopress-unboxing/</loc>
         <lastmod>2012-03-30T08:34:02+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/2012/03/30/octopress-unboxing-collections/</loc>
+        <loc>http://tzengyuxio.me/blog/2012/03/30/octopress-unboxing-collections/</loc>
         <lastmod>2012-03-30T22:39:20+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/blog/archives/</loc>
-        <lastmod>2012-03-31T02:53:58+08:00</lastmod>
+        <loc>http://tzengyuxio.me/about/</loc>
+        <lastmod>2012-03-31T03:02:33+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.github.com/</loc>
-        <lastmod>2012-03-31T02:53:58+08:00</lastmod>
+        <loc>http://tzengyuxio.me/blog/archives/</loc>
+        <lastmod>2012-03-31T04:00:58+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/</loc>
+        <lastmod>2012-03-31T04:00:58+08:00</lastmod>
     </url>
 </urlset>

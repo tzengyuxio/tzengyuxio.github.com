@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: programming | Tzeng Yuxio]]></title>
-  <link href="http://tzengyuxio.github.com/blog/categories/programming/atom.xml" rel="self"/>
-  <link href="http://tzengyuxio.github.com/"/>
-  <updated>2012-03-31T02:54:47+08:00</updated>
-  <id>http://tzengyuxio.github.com/</id>
+  <link href="http://tzengyuxio.me/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T04:07:57+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[To Iterate is Human, to Recurse, Divine]]></title>
-    <link href="http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/"/>
+    <link href="http://tzengyuxio.me/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/"/>
     <updated>2011-07-28T12:30:00+08:00</updated>
-    <id>http://tzengyuxio.github.com/blog/2011/07/28/to-iterate-is-human-to-recurse-divine</id>
+    <id>http://tzengyuxio.me/blog/2011/07/28/to-iterate-is-human-to-recurse-divine</id>
     <content type="html"><![CDATA[<p>今天偶然看到這句話，"To iterate is human, to recurse, divine."，無巧不巧，最近幾天的課程我也剛好在講解<strong>遞迴</strong>的概念。</p>
 
 <p>說這句話的老兄是 <a href="http://en.wikipedia.org/wiki/L._Peter_Deutsch">L. Peter Deutsch</a>，雖然他的姓寫作是「德意志（Deutsch）」，可是這位德意志先生卻是個道道地地的美國麻省人。Deutsch 在電腦界最主要的貢獻就是 <a href="http://zh.wikipedia.org/wiki/Ghostscript">Ghostscript</a> 和 <a href="http://en.wikipedia.org/wiki/Archie_search_engine">Archie</a>。Ghostscript 是可以用來生成 PDF 或是 Postscript 格式文件的軟體，從 1988 第一版釋出一直到今年 2011 橫跨了 23 個年頭，仍然持續開發維護中（當然維護者早已換人接手，不再是 Deutsch 了），也衍生了許多分支專案。</p>
