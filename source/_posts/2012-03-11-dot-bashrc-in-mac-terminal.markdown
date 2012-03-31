@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "設定 Mac Terminal 下的 .bashrc"
-date: 2012-03-27 16:07
+date: 2012-03-11 09:33
 comments: true
-categories: shell
+categories: [mac, shell]
 ---
 
 今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (`~/`) 下寫了個 `.bashrc`, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。

@@ -3,7 +3,7 @@ layout: post
 title: "ls Color on Mac"
 date: 2012-03-29 01:44
 comments: true
-categories: shell
+categories: [mac, shell]
 ---
 
 ![ls color](/images/2012/2012-03-29-ls-color.png)

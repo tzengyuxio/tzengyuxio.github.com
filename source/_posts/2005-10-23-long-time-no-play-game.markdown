@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: "［點滴］好久沒打電動了"
+date: 2005-10-23 04:55:00 +08:00
+comments: true
+categories: [life, game]
+---
+
+<a href="http://www.flickr.com/photos/30215143@N00/54954303/" title="Photo Sharing"><img src="http://static.flickr.com/26/54954303_c0c8f72852_m.jpg" alt="立志角色：小孟" align="right" height="179" width="240" /></a><ul><li>入手已久，但總算開始玩《<a href="http://newodin.gamer.com.tw/4/8504.html">真三四猛將傳</a>》了。立志模式蠻有趣的，新的計略 K.O. 讓戰鬥變得比以前有變化；然後勸誘來臥底去的各陣營遊走也是相當有創意的設計。右邊是我的<strong>小孟</strong>，立志角色。</li><br /><li>簡單心得：KOEI 透過一些別出心裁的小設計來克服原本系統的缺憾。例如計略 K.O. 改善單調的殺戮；勸誘與臥底則是讓立志模式的關卡組合更具變化。</li><br /><li>《<a href="http://newodin.gamer.com.tw/3/8303.html">野球魂２</a>》的自創夢幻中華隊終於完成野手部份了。投手部份除了原本已創好的吳波外，又新增了大郭、小郭、小小郭三名投手。得找時間將選手密碼放上。</li><br /><li>這遊戲的一人選手模式設計得真是出人意料地妙。特別是扮演捕手與投手的時候。扮演捕手時必須指揮投手投球；而投手時則必須依捕手決定的球種決定放球點。這使得玩家蹲捕手時不會太無聊；而投球時也不至於大權在握，而變得跟平常球賽進行沒兩樣。</li><br /><li>看了《<a href="http://newodin.gamer.com.tw/3/7133.html">God of War</a>》這款遊戲，也試玩了一下。沒想到已經一堆人玩過了，敝人真是孤陋寡聞。遊戲的感覺不錯，尤其是 BOSS 戰。雖然大家都說很難，但老實說我的感覺，還好。這遊戲讓我初玩就有想玩到破關的慾望，可惜尚未入手。</li><br /><li>最近常碰的幾款格鬥遊戲：《<a href="http://newodin.gamer.com.tw/9/1959.html">Virtual Fighter 4</a>》、《<a href="http://newodin.gamer.com.tw/1/3651.html">劍魂 2</a>》、《Dead of Alive》(不曉得幾代)。VR4 寫實歸寫實，但感覺變化不足，趣味不夠；印象最深刻的是地面的積雪。</li><br /><li>SC2 是之前有玩比較熟的，可是為什麼我老是輸呢？<s>莫非是因為這次都選 XBOX 版沒有的平八？真是藉口！</s></li><br /><li>雖然上述三款格鬥中，SC2 是我玩最多最熟的，可是卻沒有特別愛用的角色；倒是 DoA 中有我所有格鬥遊戲中最喜愛的角色：Leifang。儘管她的臉蛋與其他角色相比不是特別甜美，可是 1. 太極拳；2. 高叉旗袍；3. 辮子姑娘。<s>唉～中亂馬的毒太深。</s></li><br /><li>聽說太鼓又要有新作了？好想玩好想玩好想玩（羞）<br /></li></ul>

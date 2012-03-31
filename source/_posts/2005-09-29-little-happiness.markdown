@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: "［小確幸］賺到的睡眠時間"
+date: 2005-09-29 07:01:00 +08:00
+comments: true
+categories: life
+---
+
+回到家好累。倒頭就睡。感覺睡了好久，夢了好多。突然被一通電話鬧醒，醒來時一直以為很晚，晚到該做的事都沒時間做了。完話之後一看：咦～只睡了半個鐘頭？可是剛剛感覺睡得很充實，像是睡了四、五個小時一般。這麼說來，我是賺到了三個半小時多囉？<br /><br />嘻嘻。Lucky～<br /><hr><br /><strong>小確幸</strong>，出自《<a href="http://www.books.com.tw/exep/prod/booksfile.php?item=0010210446">蘭格斯漢島的午後</a>》／村上春樹，意指「小而確切的幸福」。

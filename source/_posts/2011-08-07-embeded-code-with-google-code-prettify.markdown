@@ -6,11 +6,11 @@ comments: true
 categories: html
 ---
 
-作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 [github][] 的 [gist][] 服務來將程式代碼內嵌到網頁（[使用效果見此]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。
+作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 [github][] 的 [gist][] 服務來將程式代碼內嵌到網頁（[使用效果見此][sample]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。
 
 [github]: https://github.com/
 [gist]: http://www.gist.com/
-[sample]: http://coder.aqualuna.me/2011/07/uigesturerecognizer.html
+[sample]: http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response/
 
 不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 [SyntaxHighlighter][sh]，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 [google-code-prettify][gcp]，看了一下立刻就變心決定改用 google-code-prettify。
 

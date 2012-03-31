@@ -3,7 +3,7 @@ layout: post
 title: "我的程式語言之路"
 date: 2011-07-26 10:54
 comments: true
-categories: [c++, java, python]
+categories: [c++, java, python, talks]
 ---
 
 從大學以來，這十幾年的工作與生活總與程式設計脫不了關係。前前後後寫了不少的 Code, 也接觸過許許多多不同的 Programming Language。這邊就來記錄一下自己現在還有印象的程式語言，也許十年之後再來回顧，又是另一種不同的想法吧。
