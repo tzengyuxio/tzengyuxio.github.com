@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="朝目新聞 是的，沒有打錯字。是「目」不是「日」。 如同站名所暗示的，這是個有趣的「偽作」網站。在這個網站中有一大堆同人漫畫，這些同人作者都對原作極盡「改造」之能事。因此在這裡可以看到肌肉派的小叮噹、耽美風的哆啦A夢、或是美少女流的機器貓。 底下列出一些直連 sample： 「ドラえ ＡＩＭ ＯＮ &hellip;">
+  <meta name="description" content="先前我的做法都依據 Clive Tong-I Lin 的 8G 經驗法則：我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。一般 server 用途, 8G 經驗法則還沒破功過 :)Windows &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,7 +83,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/06/12/asame-news/">朝目新聞</a></h1>
+      <h1 class="entry-title"><a href="/blog/2005/11/22/hard-dirve-partition/">［心得］硬碟切割</a></h1>
     
     
       <p class="meta">
@@ -99,35 +99,14 @@
   
 
 
-<time datetime="2005-06-12T13:10:00+08:00" pubdate data-updated="true">Jun 12<span>th</span>, 2005</time>
+<time datetime="2005-11-22T04:24:00+08:00" pubdate data-updated="true">Nov 22<span>nd</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><a href="http://asame.web.infoseek.co.jp/bbsgal.html">朝目新聞</a></p>
-
-<p>是的，沒有打錯字。是「目」不是「日」。</p>
-
-<p>如同站名所暗示的，這是個有趣的「偽作」網站。在這個網站中有一大堆同人漫畫，這些同人作者都對原作極盡「改造」之能事。因此在這裡可以看到肌肉派的小叮噹、耽美風的哆啦A夢、或是美少女流的機器貓。</p>
-
-<p>底下列出一些直連 sample：</p>
-
-<ul>
-<li><p><a href="http://asame.web.infoseek.co.jp/doraim.html">「ドラえ ＡＩＭ ＯＮ！」</a></p>
-
-<p>  也算是「哆啦A萌」吧 XD</p></li>
-<li><p><a href="http://asame2.web.infoseek.co.jp/dnote.html">藤子・Ｆ・不二雄　ＳＦ短編集「死神手帳」</a></p>
-
-<p>  想不到王聰明就是新世界的神</p></li>
-<li><p><a href="http://asame.web.infoseek.co.jp/tedukas.html">漫画家17人による競演！「ブラック・ジャック」</a></p>
-
-<p>  這位調布市民先生真是可怕</p></li>
-</ul>
-
-
-<p>裡頭被惡搞最多的，大概就是《哆啦A夢》跟《麵包超人》了。難不成大家都很樂於<em>破壞小朋友的夢想</em>嗎？</p>
+  <div class="entry-content"><p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：<br /><br /><blockquote>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br />至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。<br /><p>一般 server 用途, 8G 經驗法則還沒破功過 :)<br /></p><p>Windows server 我也是這樣規劃, 前 8G 畫成 C: 灌系統,<br />其它的空間全劃成 D: 有的沒的任何資料都放 D:<br /></p>儘供參考。 </blockquote><br />不過上述經驗法則主要是針對 server 用途而言。而且隨著軟體越來越龐大（尤其是安裝了 VS.NET 之後，我以前不裝這玩意兒的），以及經歷過幾次 <span style="color: rgb(0, 153, 0);">/var</span> 爆掉的慘痛教訓（FreeBSD auto 預設給的 <span style="color: rgb(0, 153, 0);">/var</span> 都不大），看來似乎得重新思索一下硬碟分割的策略。<br /><br /><ol><li>系統給 10G（目前用最多的大概用到 8.2G/Windows，5G/FreeBSD without X）</li><li>剩下的給 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span></li><li>FreeBSD 下系統的分配策略：</li><ol><li><span style="color: rgb(0, 153, 0);">/</span> : 256M</li><li><span style="color: rgb(0, 153, 0);">/tmp</span> : 不大於 ram (或乾脆 = ram 就好)<br /></li><li><span style="color: rgb(0, 153, 0);">swap</span> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</li><li><span style="color: rgb(0, 153, 0);">/var</span> 視剩餘空間與 X 的安裝與否，分配 1～2G</li><li>其餘通通給 <span style="color: rgb(0, 153, 0);">/usr</span> (至少須 6G 以上)<br /></li></ol><li>將部份資料搬移出系統分割區</li><ol><li><span style="color: rgb(153, 153, 0);">C:\Documents and Settings\username\My Documents</span> 搬到 <span style="color: rgb(0, 153, 0);">D:\HOME\username</span></li><li><span style="color: rgb(153, 153, 0);">/usr/local/www</span> 搬到 <span style="color: rgb(0, 153, 0);">/home/www</span> 下</li><li>如果 <span style="color: rgb(0, 153, 0);">/usr</span> 空間吃緊，將 <span style="color: rgb(0, 153, 0);">/usr/ports/distfiles</span> 也搬到 <span style="color: rgb(0, 153, 0);">/home</span> 底下</li></ol><li>原則：所有「有意義」的變動性檔案、文件，或需要儲存備份的資料，都往 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 底下丟</li><ol><li>像 <span style="color: rgb(153, 153, 0);">網頁cache</span> 就是屬於「無意義」的變動性檔案；反之，遊戲存檔是「有意義」的</li><li><span style="font-weight: bold;">非</span>常用的軟體的也丟到 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或個人資料夾下，如臨時安裝的程式，或是遊戲軟體</li><li>將所有系統分割區中需要備份的檔案（如設定檔）在 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 之下建立捷徑或 symbolic link<br /></li><li>此為原則，有些情況不必完全照著原則來。如資料庫檔案通常還是放在 <span style="color: rgb(0, 153, 0);">/var/db</span></li></ol><li>總之 10G 給系統，剩下的都拿來塞資料用 XD</li></ol>其實重點只需記住最後一點，至於其他的細節，那些都是個人經驗的累積，參考看看即可，不必然全部照作。</p>
 </div>
   
   
@@ -140,7 +119,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/06/11/beta-fashion/">Beta 成為一種時尚?</a></h1>
+      <h1 class="entry-title"><a href="/blog/2005/11/21/douban-dot-com/">［網際］豆瓣 douban.com</a></h1>
     
     
       <p class="meta">
@@ -156,30 +135,14 @@
   
 
 
-<time datetime="2005-06-11T22:08:00+08:00" pubdate data-updated="true">Jun 11<span>th</span>, 2005</time>
+<time datetime="2005-11-21T06:07:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><img src="/images/2005/2005-06-11-beta-1.png" alt="image" /></p>
-
-<p><img src="/images/2005/2005-06-11-beta-2.png" alt="image" /></p>
-
-<p><img src="/images/2005/2005-06-11-beta-3.png" alt="image" /></p>
-
-<p><img src="/images/2005/2005-06-11-beta-4.png" alt="image" /></p>
-
-<p><img src="/images/2005/2005-06-11-beta-5.png" alt="image" /></p>
-
-<p><img src="/images/2005/2005-06-11-beta-6.png" alt="image" /></p>
-
-<p><img src="/images/2005/2005-06-11-beta-7.png" alt="image" /></p>
-
-<p><img src="/images/2005/2005-06-11-beta-8.png" alt="image" /></p>
-
-<p>越來越多的 web application 在 logo 中加入 beta 的字樣。印象中此種 beta service 的濫觴就是 Gmail，而且到了現在還在 beta。過去如果冠上 beta 字樣，給人的感覺就是不穩定，容易出錯，還在調校中；可是現在，網站加了個 beta，似乎除了告訴人這還不是正式版外，還帶了點「<em>這是新服務、新技術、新鮮玩意兒、新</em>&#8230;&#8230;」的味道在。</p>
+  <div class="entry-content"><p>一直以為，內地的網站都是以抄襲為主，走不出自己的創新。但 <a href="http://douban.com/"><span style="color: rgb(67, 166, 90);">豆瓣 d</span><span style="color: rgb(34, 161, 208);">o</span><span style="color: rgb(255, 190, 135);">u</span><span style="color: rgb(67, 166, 90);">b</span><span style="color: rgb(34, 161, 208);">a</span><span style="color: rgb(255, 190, 135);">n</span></a> 徹徹底底改變了我的想法。<br /><br />從 <a href="http://www.baidu.com/">baidu</a> vs <a href="http://www.blogger.com/www.google.com">google</a>、<a href="http://www.aimi.cn/">爱米网</a> vs <a href="http://www.43things.com/">43 Things</a>、<a href="http://solidot.org/">slashdotcn.org</a> (註)，我們可以看到許多中國內地的網站，除了仿效國外的 web 應用 (app) 與內容 (content) 外，連使用介面與版型設計幾乎都是依樣畫葫蘆，看了實在令人倒盡胃口。雖然說模仿是成長的必經路程，我自己也很喜歡站在巨人肩膀上看遠方；但既然都站在別 人肩膀上了，要是不能看得更遠，好歹也要看到些不一樣的東西；像前面提到的幾個網站，都是站在巨人肩膀上看到跟巨人一樣的東西，甚至比巨人看到的還少。用 不客氣的話來說，這種「只學其形，不求其神」的做法，連「模仿」都稱不上，充其量只能稱作是一種「抄襲」。<br /><br />這樣的刻板印象，使得我在第一眼見到 <a href="http://douban.com/">豆瓣</a> 時，當下也懷疑這是不是又是另一個抄襲國外網站的網路服務。然而找了一陣後，發現國外並沒有類似的網站，即便是有網友在留言中指稱 <a href="http://douban.com/">豆瓣</a> 是抄襲 <a href="http://www.bookswelike.net/">Books We Like</a>的，我也覺得這兩個網站的風格與操作相差實在太遠，根本稱不上「抄襲」可言。就算 <a href="http://www.bookswelike.net/">Books We Like</a> 是  <a href="http://douban.com/">豆瓣</a> 的發想來源好了，<a href="http://douban.com/">豆瓣</a> 也成功的走出了自己的特色。甚至，<a href="http://douban.com/">豆瓣</a> 已經<a href="http://blog.douban.com/douban/2005/10/26/42/">成為其他網站抄襲的對象</a>了（<a href="http://xiaoshuomi.com/">與豆瓣同版型的網站</a>）。誠如<a href="http://douban.com/">豆瓣</a>作者阿北在其<a href="http://blog.douban.com/douban/2005/10/26/42/">文章</a>中所引述的英諺：「模仿是最真誠的讚美。」正是因為<a href="http://douban.com/">豆瓣</a>成了被模仿與抄襲的對象，故有其可敬之處。<br /><hr /><span style="color:gray;">註：<a href="http://solidot.org/">slashdotcn.org</a> 最近<a href="http://solidot.org/staticpages/index.php/about">改名成為 Solidot.org</a>，這算是嘗試走出自己風格的好的開始。不過話說回來，那「斜線點」的概念人家早就已經在用了，換了一個「Solidus Dot」其實是換湯不換藥啊～～還有那版型也得換換，光只是挪用別人的東西來用，這樣是無法「超英趕美」的啦！</span></p>
 </div>
   
   
@@ -192,7 +155,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/06/11/more-sticker-tool/">貼紙工具再來</a></h1>
+      <h1 class="entry-title"><a href="/blog/2005/11/21/two-group-of-people/">［辭海］兩群人&#8230;</a></h1>
     
     
       <p class="meta">
@@ -208,19 +171,17 @@
   
 
 
-<time datetime="2005-06-11T21:58:00+08:00" pubdate data-updated="true">Jun 11<span>th</span>, 2005</time>
+<time datetime="2005-11-21T05:11:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><a href="http://www.eoool.com/Default.aspx?TypeID=0">圖像／標籤產生器：eoool</a></p>
+  <div class="entry-content"><ul> <li style="font-weight: bold;">3 Amigo</li>   <ul> <li>Rambaugh、Booch、Jacobson</li>  <li>制定 UML 規範的傢伙</li><li>後來都聚到 Rational Software 去了</li> </ul> </ul>
 
-<p>各式各樣小圖檔，從大頭照到 email 再到 80x15 小貼紙都有。<br/>
-上傳照片編輯頭像的介面頗簡易的。</p>
 
-<p>然缺點是對 Firefox 不友善。</p>
+<p> <ul> <li style="font-weight: bold;">Gang of Four (GoF)</li> <ul>      <li>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</li>     <li>寫出 Design Patterns 這書的傢伙</li> </ul> </ul></p>
 </div>
   
   
@@ -233,7 +194,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/06/06/sticker-map/">貼紙地圖</a></h1>
+      <h1 class="entry-title"><a href="/blog/2005/11/19/revolution-frontier/">［筆記本］革命的先行者</a></h1>
     
     
       <p class="meta">
@@ -249,28 +210,17 @@
   
 
 
-<time datetime="2005-06-06T08:36:00+08:00" pubdate data-updated="true">Jun 6<span>th</span>, 2005</time>
+<time datetime="2005-11-19T16:56:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>我一直很喜歡許多網站上可以看得到的小貼紙，看到他們整整齊齊的排列在一起。一致的大小，裡頭卻有著各種不同的設計；每個人在有限的空間中飆逐無限的創意組合；若再加上各種別具特色的 logo 更顯得可愛。相信有跟我一樣感覺的人一定不少。</p>
+  <div class="entry-content"><div style="text-align: center;"><br /><a href="http://www.flickr.com/photos/30215143@N00/62824112/" title="Photo Sharing"><img src="http://static.flickr.com/33/62824112_330ca03340_m.jpg" alt="誠品 MY NOTE - 列寧" height="240" width="172" /></a> <a href="http://www.flickr.com/photos/30215143@N00/62824134/" title="Photo Sharing"><img src="http://static.flickr.com/25/62824134_c95ee674e6_m.jpg" alt="誠品 MY NOTE - 孫文" height="240" width="172" /></a><br /><a href="http://www.flickr.com/photos/30215143@N00/62824149/" title="Photo Sharing"><img src="http://static.flickr.com/26/62824149_b5368575a1_m.jpg" alt="誠品 MY NOTE - 毛澤東" height="240" width="172" /></a> <a href="http://www.flickr.com/photos/30215143@N00/62824172/" title="Photo Sharing"><img src="http://static.flickr.com/28/62824172_cedf166674_m.jpg" alt="誠品 MY NOTE - 切‧格拉瓦" height="240" width="172" /></a><br /></div>
 
-<p>如今 <a href="http://www.littleoslo.com/cnt/home/">LittleOslo</a> 作了一張<a href="http://littleoslo.com/cnt/stickermap.htm">貼紙地圖</a>。數大就是美，許多小小的貼紙拼湊在一起也頗為壯觀。喜歡貼紙的人不妨去看看。除了貼紙地圖計畫，順道一題，LittleOslo 也作了個 <a href="http://littleoslo.com/cnt/blogpoly.htm">Blogpoly</a>，是以 Internet 為背景的大富翁紙盤遊戲。這也是相當有趣的企劃呢。蠻期待哪天能看到他把 Trackback 卡與Comments 卡也做出來。說不定就真的可以拿來玩了。</p>
 
-<p>話說回來，雖然我喜歡貼紙，但是卻沒想到要替這裡加上什麼貼紙作為標誌。這裡的主架構是盡量希望減少圖片的使用。不過 email 的貼紙倒是個例外，畢竟用圖片比較不容易被直接拿去當作垃圾信發送的名單之一。</p>
-
-<p>延伸鏈結：</p>
-
-<ul>
-<li><a href="http://littleoslo.com/cnt/stickermap.htm">貼紙地圖計劃</a></li>
-<li><a href="http://littleoslo.com/cnt/blogpoly.htm">BLOGPOLY</a></li>
-<li><a href="http://www.lucazappa.com/brilliantMaker/buttonImage.php">Button Maker (小貼紙產生器)</a></li>
-<li><a href="http://antipop.gs/button/index.php">Button Maker for Japanese (小貼紙產生器 - 漢字ok)</a></li>
-<li><a href="http://www.nhacks.com/email/index.php">E-Mail Icon Generator (E-Mail 貼紙產生器)</a></li>
-</ul>
+<br /><hr />除了做遊戲外，我最想從事的工作<span style="color: rgb(255, 255, 255);">之一</span>就是<span style="font-weight: bold; color: rgb(255, 0, 0);">革命</span>！
 
 </div>
   
@@ -284,7 +234,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/06/05/comics-welcome-to-gomurakan/">歡迎來到臥夢螺館</a></h1>
+      <h1 class="entry-title"><a href="/blog/2005/11/19/if-we-fall-in-love-together-next-time/">［雋永］我總是聽你說、下次如果我們在相愛／葉良俊</a></h1>
     
     
       <p class="meta">
@@ -300,37 +250,14 @@
   
 
 
-<time datetime="2005-06-05T11:13:00+08:00" pubdate data-updated="true">Jun 5<span>th</span>, 2005</time>
+<time datetime="2005-11-19T16:11:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>於是，一點一滴&#8230;&#8230;慢慢的&#8230;&#8230;破壞是件快樂的事&#8230;&#8230;破壞是件有趣的事&#8230;&#8230;看著自己的身體逐漸被破壞&#8230;&#8230;太有趣了&#8230;&#8230;</p>
-
-<p><img src="/images/2005/2005-06-05-gamurakan-1.jpeg">
-<img src="/images/2005/2005-06-05-gamurakan-2.jpeg"></p>
-
-<p>第一眼的感覺：好厚的一本漫畫－－100出頭的定價竟然有300多頁的厚度。</p>
-
-<p>我向來對恐怖題材畫沒什麼興趣，雖然我看伊藤潤二、我玩《Bio Hazard》，但我還是對絕大多數的恐怖題材的作品，尤其是鬼故事類的，好比說《驚聲尖叫》，又例如像《鬼來電》，提不起什麼興致。</p>
-
-<p>《臥夢螺館》是少數我喜歡的恐怖題材作品，雖然我看到了一半時還不覺得這是個恐怖漫畫，但是看完了卻讓我聯想到伊藤潤二。這是部與伊藤潤二作品有著相同味道，但材料卻完全不同的漫畫；我感受到了同樣的恐懼，儘管福山庸治（《臥夢螺館》作者）與伊藤潤二的筆觸與敘述風格截然不同。</p>
-
-<p>福山的筆觸洗鍊且簡潔，畫面上不會有多餘的東西。在漫畫之後有篇日本作家津原泰水所寫的解說，裡頭這樣形容：</p>
-
-<blockquote><p>如果要說福山庸治的漫畫有什麼缺點，應該就是太過巧妙了。自在的構圖、洗鍊的線條。如果他是個「只有圖很巧妙」的漫畫家，我敢想像一定會出現無數的模仿者。但是故事情節充滿著知性的狂野，人物對白很灑脫，大量使用切除背景的技術，絕對是日本漫畫史上屈指可數的。</p></blockquote>
-
-<p>雖然劇情詭異離奇，匪夷所思，但是看了卻讓人深陷其中，放下書後仍遲遲無法跳出漫畫中的世界，好像被吸入裡頭所描述的那個<strong>人間地獄</strong>一般。</p>
-
-<p>除此之外，《臥夢螺館》還有兩個特點，一是每一話的章節都用音樂術語作為篇名，津原泰水對此的解讀相當貼切，因此我就直接引文，不野人獻曝了：</p>
-
-<blockquote><p>每個章節標題統一以音樂用語來呈現，也表示出『臥夢螺館』是個交響樂團般的故事，在吹奏主題曲的樂團團員的四週，以及後來成為故事主角的主題，事先就已經在吹奏和絃了。</p></blockquote>
-
-<p>另外一個特色即是每話的扉頁圖同時也是接續上一話最後一格故事的漫畫格。享有「恐怖漫畫之神」盛名的漫畫家楳圖一雄也有這樣的習慣，不過楳圖在扉頁漫畫格通常為前一話最後一個的放大特寫，而非有連貫接續性的漫畫格。</p>
-
-<p>想看看這本漫畫？可以到<a href="http://kodansha.cplaza.ne.jp/e-manga/club/manga/gamurakan/">這裡</a>預覽第一話，而且是以電子漫畫形式所呈現的。</p>
+  <div class="entry-content"><p><a href="http://www.flickr.com/photos/30215143@N00/62826128/" title="Photo Sharing"><img align="right" alt="葉良俊《捨得》" height="240" src="http://static.flickr.com/24/62826128_76dcedf1a9_m.jpg" width="240" style="margin:8px" /></a><br />葉良俊和<a href="/blog/2005/09/30/whole-life-to-love/">先前介紹過的倫永亮</a>一樣，也是屬於創作型的歌手。他出過的唱片不多，就《我總是聽你說》（1996）與《捨得》（1997）這兩張。不過這兩張的主打都很合我的胃口，或者說，那兩首主打＜我總是聽你說＞與＜下次如果我們再相愛＞的歌詞都讓深深地引起我的共鳴－－而戚戚焉。<br /><br />除了歌詞的意境外，曲調輕快而別具風格也是吸引我的因素之一；此外別忘了還有 Jimmy 的歌聲，他那高亢的嗓音，相當適合詮釋這類「<span style="color: #ff6666;">隱隱中透著愛情裡的無奈</span>」的歌曲。他的歌聲還有一個特色，就是偶爾會夾雜咬字不清的微捲舌音，替整首歌帶來一些有趣的變化；這項特色在周杰倫的歌聲中也有出現，而且俯拾皆是。<br /><br /><blockquote><br />我總是聽你說<br />作詞：吳慶康　作曲：葉良俊<br /><br />我總是聽你說從不敢讓你的心失落<br />我把寂寞都放在看不見的角落<br />因為你說我一定有個快樂生活<br /><br /><em>我總是聽你說從不去想你也許只是經過<br />有時後委屈疲倦也不敢對你說<br />可是你還是說我讓你傷心難過<br /><br />#你要我怎麼做　我總是聽你說<br />可是你從來不願意面對真正的我<br />每次我思索　每次我疑惑<br />到底你真正在乎的是些什麼<br /><br />@你要我怎麼做　我總是聽你說<br />可是我紛亂的情緒你有沒有懂過<br />每次的執著　每次的失措<br />這一次我們的眼神又在交錯</em>RE<br /><br />已分不清到底是誰對誰要求那麼多</blockquote><br /><br /><blockquote><br />下次如果我們再相愛<br />作詞：吳慶康　作曲：葉良俊<br /><br />我以為對妳已經沒有依賴　再次相遇才知道還有愛<br />倫敦車站交錯喜悅和無奈　再看一眼才望穿彼此的關懷<br />妳以為離開也算是種交代　忘了時間卻忘不了感慨<br />倫敦街頭來往愁緒解不開　雨落下來才明白有些愛是債<br /><br />下次如果我們再相愛　能不能夠不再猜疑只要坦白<br />把冷漠收起　把思念攤開　下次不要別離的如此草率<br />下次如果我們再相愛　可不可以堅持到底不再責怪<br />擁著妳入夢　不要有悲哀　下次就這樣好好去愛　就像現在<br /><br />My Bonnie Lies Over The Ocean<br />My Bonnie Lies Over The Sea<br />My Bonnie Lies Over The Ocean<br />So Bring Back My Bonnie To Me</blockquote></p>
 </div>
   
   
@@ -343,7 +270,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/06/05/the-thinking-machine/">思考機器 the Thinking Machine</a></h1>
+      <h1 class="entry-title"><a href="/blog/2005/11/19/comics-no-topic/">［漫畫］雜談</a></h1>
     
     
       <p class="meta">
@@ -359,35 +286,18 @@
   
 
 
-<time datetime="2005-06-05T03:27:00+08:00" pubdate data-updated="true">Jun 5<span>th</span>, 2005</time>
+<time datetime="2005-11-19T13:50:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>於是，俄國西洋棋冠軍對凡杜森教授說：「老天！你不是人，你是個腦子──是機器，一部思考機器！」</p>
-
-<p><img src="http://addons.books.com.tw/G/001/3/0010291793.jpg" alt="image" /><br/>
-（圖片來源：<a href="http://www.books.com.tw/">博客來網路書店</a>）</p>
-
-<p>話說有款 PC Game 也叫做《思考機器》（Mind Rover），不過這是題外話。或許哪天想到會來介紹一下也說不定。</p>
-
-<p>不怎麼吸引人的封面，不是嗎？之所以會讓我把書拿起來翻，主要基於以下兩點原因：</p>
-
-<ul>
-<li>她被放在推理小說區</li>
-<li>書名提到了一個迷人的字眼：思考機器</li>
-</ul>
+  <div class="entry-content"><div style="float: left; clear: left; background-color: lavender;"><a href="http://www.flickr.com/photos/30215143@N00/62823064/" title="Photo Sharing"><img src="http://static.flickr.com/29/62823064_a47d1d5ffc_m.jpg" alt="萬祝 04" align="left" height="240" width="168" style="margin-right: 8px;" /></a><br />萬祝的封面依然是那麼樣地搶眼。連書名、集數與作者都完全融入了封面圖中－－唯一的敗筆是譯者名。出版社好歹也想個辦法將譯者內嵌到海賊圖中吧。<br /><br />話說大和一行人已經出海尋找寶藏了，可是我至今還是不曉得「萬祝」一詞有什麼涵義。不過這不是重點，重點是望月峯太郎在這次的作品中畫了很多<u>露小褲褲的畫面</u>。莫非是前一部《末日》太過灰暗了，所以這次特別放了很多青春洋溢的「讀者服務」？<br /></div>
 
 
-<p>裡頭是幾篇關於思考機器，凡杜森教授，的短篇故事。前面還有篇很長的導讀，唐諾寫的導讀。竊以為，這本最有價值一讀的，不外乎是＜導讀＞與第一篇短篇，還有＜導讀＞與第一篇短篇之間 prelude 性質的短文。</p>
+<br /><div style="float: left; clear: left; background-color: lavenderblush;"><a href="http://www.flickr.com/photos/30215143@N00/62823038/" title="Photo Sharing"><img src="http://static.flickr.com/31/62823038_a2aed68b96_m.jpg" alt="蜜桃17 07" align="right" height="240" width="168" style="margin-left: 8px;" /></a><br />這部漫畫改編成日劇了。雖然說封面標了 <span style="color: rgb(255, 0, 0);">18禁</span>， 加上中文名字取那個「蜜桃」取得讓人容易想入非非，但是別害怕，不要在意周圍異樣的眼光，勇敢地拿起這漫畫到櫃檯結帳吧。《はるか 17》（我真的不想用「蜜桃」這詞）的內容主要是描寫演藝圈的生態，劇情張力夠，角色個性鮮明，作者的畫技也成熟穩定，各方面表現都在水準之上，是不可多 得的好作品；不過大概是知名度低吧，身邊沒幾個人看，感覺蠻冷門的。<br /></div><br /><div style="float: left; clear: left; background-color: lavender;"><a href="http://www.flickr.com/photos/30215143@N00/62823009/" title="Photo Sharing"><img src="http://static.flickr.com/31/62823009_e16d4f8170_m.jpg" alt="現視研 01" align="left" height="240" width="169" style="margin-right: 8px;" /></a><br />先前看過動畫，總算漫畫也在台灣出版了，真是可喜可樂，可喜可樂。動畫裡第一集一開場就是《不公正抽籤》的片頭曲，乍看還以為放錯動畫了。漫畫的口味在某些方面比動畫來得重，雖然這部漫畫沒有標上<span style="color: rgb(255, 0, 0);">18禁</span>，可是許多笑點如果沒有<u>特殊天份</u>可是參不透的。<br /><br />「<span style="font-weight: bold;">我缺少的就是這份覺悟。</span>」嗯&#8230;這是第一集裡很喜歡的一句話。好！我也要以高坂為目標！！<br /></div><br /><div style="float: left; clear: left; background-color: lavenderblush;"><a href="http://www.flickr.com/photos/30215143@N00/62822985/" title="Photo Sharing"><img src="http://static.flickr.com/29/62822985_da7e93b98f_m.jpg" alt="迷糊天使俏護士 01" align="right" height="240" width="171" /></a><br />看在佐佐木倫子的面子上而買的，對她的認識源自於《天國餐館》，除此之外我對這部漫畫一無所知。買了果然沒讓我失望，笑了一整天。<br /><br />佐佐木的漫畫在畫面處理上有一種「停格的突兀感」。她的漫畫不像許多少年漫畫會大量使用各種效果來營造動感，許多明明應該是非常動態的畫面，在她筆下看起來就像停格了一般，這種突兀反而營造出一種特別的趣味。<br /></div><br /><span style="color: rgb(153, 153, 153);">PS. 本篇是前篇 CSS 的應用實例。</span>
 
-<p>第一篇短篇就是＜逃出13號牢房＞，一篇有些推理小說成份的短篇（如果套用今日的定義，這篇小說少了「<strong>謀殺</strong>」的成份）。蠻有趣的一篇，講述思考機器教授跟人打賭要從死囚牢房靠邏輯推理逃出去，雖然用的方法蠻仰賴運氣的，但是凡杜森教授說就算這個方法不成功，他還有其他幾種逃出囚房的備案可以進行。至於是什麼樣的備案呢？教授就沒說下去了，而作者也就沒寫下去了。</p>
-
-<p>好吧，畢竟我不是思考機器，我想不出其他可以逃出囚房的可行方案。但是我有避免進囚房的一些準則，至少至少，不要隨便跟人家打賭。</p>
-
-<p>在<a href="http://www.books.com.tw/exep/prod/booksfile.php?item=0010291793">這裡</a>可以預覽小說前幾頁的內容。</p>
 </div>
   
   
@@ -400,7 +310,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/06/04/starbucks/">Starbucks 的女神</a></h1>
+      <h1 class="entry-title"><a href="/blog/2005/11/14/css-image-alignment/">［CSS］圖文對齊排列</a></h1>
     
     
       <p class="meta">
@@ -416,26 +326,122 @@
   
 
 
-<time datetime="2005-06-04T22:24:00+08:00" pubdate data-updated="true">Jun 4<span>th</span>, 2005</time>
+<time datetime="2005-11-14T01:34:00+08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>於是，畫了一個失敗的 Starbucks Logo&#8230;&#8230;</p>
+  <div class="entry-content"><p>當圖文並列時，若要讓圖片能夠對齊排列，而不是呈現出梯狀的分佈。<br />可以使用下列語法：<br /><code><br />&lt;img src="http://where.image.is/picture-01.jpg" style="float:left"&gt;<br />文字段落一&lt;br&gt;<br /><br />&lt;img src="http://where.image.is/picture-02.jpg" style="float:left; clear:left"&gt;<br />文字段落二&lt;br&gt;<br /></code><br />重點在於第二個 img 內的 &#8220;clear:left&#8221;<br />這個屬性的意思是<span style="font-weight: bold; color: rgb(255, 102, 102);">如果左邊有浮動元件的話，此元件便移到該浮動元件下方</span>。<br /><br />而 &#8220;float:left&#8221; 則是將所屬元件指定為浮動性質。<br /><br />下一篇便是應用範例。</p>
+</div>
+  
+  
 
-<p><img src="/images/2005/2005-06-04-starbucks.jpeg" alt="image" /></p>
 
-<p>今天下午在 Starbucks 查看 PDA，突然想說好久沒用 PDA 畫圖，於是拿起杯子對著上面的 Logo 畫了起來。第一次畫到一半當機，心血全毀。再接再厲。接下來就小心翼翼地、如履薄冰地，每作個滿意的動作就存檔。</p>
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/10/24/little-happiness-about-reader/">［小確幸］讀者</a></h1>
+    
+    
+      <p class="meta">
+        
 
-<p>終於畫到了最後一部份，剩下女神的臉－－嗯，臉是精神所在，這部分可馬虎不得。好，就把圖片的中間部分放大，小心的把臉給刻出來。大功告成！存檔！！</p>
 
-<p>存完檔案後趕緊打開圖片來欣賞自己的成果。什麼？怎麼只有存到放大時的中間那一部份？真該死！原來存檔就是當時畫面顯示什麼就存什麼。所以如果放大編輯後，還得先縮回原尺寸才能存到完整的圖片。</p>
 
-<p>可惜了我許多寶貴的時間。也許下次再來重新挑戰一次吧。</p>
 
-<p>附記：其實在畫 Starbucks Logo 之前，有先畫一張我的手機圖，不過也是畫到最後（都已經完工在修飾了）當機。PalmOS 其實並沒有想像中那麼可靠 ^%$#!<sup>%#$(&amp;#</sup></p>
+
+
+
+
+  
+
+
+<time datetime="2005-10-24T01:39:00+08:00" pubdate data-updated="true">Oct 24<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>偶然發現這個地方竟然有人 subcribe。或許是存在著什麼共同興趣，也或許是「一度以外，六度之內」的朋友。總言之，竊喜。以及－－感謝。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/10/23/long-time-no-play-game/">［點滴］好久沒打電動了</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-10-23T04:55:00+08:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.flickr.com/photos/30215143@N00/54954303/" title="Photo Sharing"><img src="http://static.flickr.com/26/54954303_c0c8f72852_m.jpg" alt="立志角色：小孟" align="right" height="179" width="240" /></a><ul><li>入手已久，但總算開始玩《<a href="http://newodin.gamer.com.tw/4/8504.html">真三四猛將傳</a>》了。立志模式蠻有趣的，新的計略 K.O. 讓戰鬥變得比以前有變化；然後勸誘來臥底去的各陣營遊走也是相當有創意的設計。右邊是我的<strong>小孟</strong>，立志角色。</li><br /><li>簡單心得：KOEI 透過一些別出心裁的小設計來克服原本系統的缺憾。例如計略 K.O. 改善單調的殺戮；勸誘與臥底則是讓立志模式的關卡組合更具變化。</li><br /><li>《<a href="http://newodin.gamer.com.tw/3/8303.html">野球魂２</a>》的自創夢幻中華隊終於完成野手部份了。投手部份除了原本已創好的吳波外，又新增了大郭、小郭、小小郭三名投手。得找時間將選手密碼放上。</li><br /><li>這遊戲的一人選手模式設計得真是出人意料地妙。特別是扮演捕手與投手的時候。扮演捕手時必須指揮投手投球；而投手時則必須依捕手決定的球種決定放球點。這使得玩家蹲捕手時不會太無聊；而投球時也不至於大權在握，而變得跟平常球賽進行沒兩樣。</li><br /><li>看了《<a href="http://newodin.gamer.com.tw/3/7133.html">God of War</a>》這款遊戲，也試玩了一下。沒想到已經一堆人玩過了，敝人真是孤陋寡聞。遊戲的感覺不錯，尤其是 BOSS 戰。雖然大家都說很難，但老實說我的感覺，還好。這遊戲讓我初玩就有想玩到破關的慾望，可惜尚未入手。</li><br /><li>最近常碰的幾款格鬥遊戲：《<a href="http://newodin.gamer.com.tw/9/1959.html">Virtual Fighter 4</a>》、《<a href="http://newodin.gamer.com.tw/1/3651.html">劍魂 2</a>》、《Dead of Alive》(不曉得幾代)。VR4 寫實歸寫實，但感覺變化不足，趣味不夠；印象最深刻的是地面的積雪。</li><br /><li>SC2 是之前有玩比較熟的，可是為什麼我老是輸呢？<s>莫非是因為這次都選 XBOX 版沒有的平八？真是藉口！</s></li><br /><li>雖然上述三款格鬥中，SC2 是我玩最多最熟的，可是卻沒有特別愛用的角色；倒是 DoA 中有我所有格鬥遊戲中最喜愛的角色：Leifang。儘管她的臉蛋與其他角色相比不是特別甜美，可是 1. 太極拳；2. 高叉旗袍；3. 辮子姑娘。<s>唉～中亂馬的毒太深。</s></li><br /><li>聽說太鼓又要有新作了？好想玩好想玩好想玩（羞）<br /></li></ul></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/10/23/death-note/">［感想］Death Note － 讀者與作者宿命的對決!?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-10-23T03:52:00+08:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><span style="color: gray">原發表於 DeathNote版@PTT。Feb 18, 2005。<br />寫此文的背景是Ｌ剛死：許多人認為Ｌ只是假死，並未真掛。</span><br /><hr><br />Death Note 除了是月與Ｌ的鬥智外，其實也是讀者與作者間的鬥智。<br /><br />一般的偵探故事，讀者都是站在解謎的一方，作者則是全知的犯罪者；讀者只能利用作者所提供的線索來推導出犯罪者的手法，這是標準讀者與作者鬥智的基本立場。但是 DN 不一樣，裡面提供的正反雙方，是可以讓讀者選邊站的，兩邊的角色也都絕頂聰明（註一），一些想法，或是兩邊所各自知道的資訊，也都幾乎公開給讀者知道。於是乎讀者必須在這樣的情況下，去推理主角下一步所要採取的計畫，或是遇到不利狀況時要如何解套。<br /><br />而實際上，大場也真正成功的多次擊敗了讀者。每一次的推理、每一次的解套都是讓讀者輸的心服口服，而不是像看某些失敗的推理作品一樣，會覺得作者是故意把最關鍵的鑰匙藏著不說來讓讀者無法推想出真正的手法。<br /><br />重點來了，如何在資訊公開的情況下，讓讀者無法猜到作者的真正意圖？<br /><br />陷阱。沒錯，故意在故事裡留些顯而易見的陷阱、會誘導讀者往某個方向去思考的陷阱。南空直美就是一個陷阱的例子－－南空直美的死亡相當離奇，而且也沒有直接表現出來；而許許多多的小說、電影、動漫作品中，只要沒有人確定過某個角色的死亡，而只是聽說、謠傳、報派的死亡，那麼那個角色在將來就很有可能復活，這幾乎都快成為不成文的慣例了。大場巧妙的利用了這一盲點，讓後面許多懸疑未決處，都會有讀者猜說可能南空直美其實沒死，並且現身來將劇情做個大逆轉。但這種猜測從來沒有猜對過。<br /><br />另外一個陷阱的例子，就是死亡筆記本的規則。照理說，持有死亡筆記本的人最怕的就是死亡筆記本的存在被人所知，這是人之常情。所以我們在看到火口被追殺，而且露出破綻時，都會順著「死亡筆記本被發現，月的計謀也快完蛋了」這樣的思考方向去走－－殊不知大場卻在後面告訴大家月的計謀本來就是要讓死亡筆記本被發現。後面的東西就不贅述了。<br /><br />像這樣的例子比比皆是。當月重拾記憶後越來越顯現驕傲的氣勢，按照慣例，這樣子的角色會開始露出馬腳；可是當讀者這樣子猜的時候，月非但沒露出破綻，還成功的讓雷姆陷於兩難局面。所以儘管這次 L 的死亡看似有很多疑點，但說不定都只是故意誤導讀者往「Ｌ並未死亡、Ｌ只是假死」這個方向去推理的疑陣。<br /><br /><br />註一：後面寫太長了，所以忘記要註什麼了 XD<br /><hr><br /><span style="color: gray">註二：其實並沒有忘記「註一」要寫什麼，而且都用註「一」了，想必就會有註二。這篇文章的主題是讀者與作者的對決，談到作者如何設局讓讀者跳；同樣的，本文的註一就是一個「局」，刻意讓讀者想要推文的陷阱。由於原文過於冗長且嚴肅，就算得到讀者認同，也不易令人想到要推文。因此我在結尾留了這麼一個莫名其妙的附註，試圖將讀者的注意力重新拉回。從本文發表後的推文也證明了此一策略的成功。原本想在發文之後過幾天補上註二，但後來懶了故作罷。今補上。</span></p>
 </div>
   
   
@@ -444,6 +450,8 @@
     </article>
   
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/4/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -474,15 +482,15 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/27/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
       </li>
     
       <li class="post">
         <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
       </li>
     
   </ul>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: css | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-03-31T11:32:31+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［CSS］圖文對齊排列]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/11/14/css-image-alignment/"/>
+    <updated>2005-11-14T01:34:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/11/14/css-image-alignment</id>
+    <content type="html"><![CDATA[<p>當圖文並列時，若要讓圖片能夠對齊排列，而不是呈現出梯狀的分佈。<br />可以使用下列語法：<br /><code><br />&lt;img src="http://where.image.is/picture-01.jpg" style="float:left"&gt;<br />文字段落一&lt;br&gt;<br /><br />&lt;img src="http://where.image.is/picture-02.jpg" style="float:left; clear:left"&gt;<br />文字段落二&lt;br&gt;<br /></code><br />重點在於第二個 img 內的 "clear:left"<br />這個屬性的意思是<span style="font-weight: bold; color: rgb(255, 102, 102);">如果左邊有浮動元件的話，此元件便移到該浮動元件下方</span>。<br /><br />而 "float:left" 則是將所屬元件指定為浮動性質。<br /><br />下一篇便是應用範例。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［CSS］純文字 LOGO]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/09/28/css-logo/"/>
+    <updated>2005-09-28T04:34:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/09/28/css-logo</id>
+    <content type="html"><![CDATA[<p>發覺純用文字也蠻有趣的，研究了一下，用 CSS 作出幾個感覺還不錯的 logo。用文字 logo 的話，體積也會比使用小貼紙圖片要來得省上許多吧。<br /><br /><a href="http://www.flickr.com/"><img src="http://www.flickr.com/images/flickr_logo.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: blue;">flick</span><span style="color: red;">r</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style="color: red;"&gt;r&lt;/span&gt;</code></div>※第一課：只是更改顏色，不難。沒有特地使用 flickr 自己的標準色與字體。<br /><br /><a href="http://www.43things.com"><img src="http://www.43things.com/images/nav/logo.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: #C89C19;">43</span> <span style="color: black;">Things</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: #C89C19;"&gt;43&lt;/span&gt; &lt;span style="color: black;"&gt;Things&lt;/span&gt;</code></div>※第二課：上一課的複習，重點仍是顏色。<br /><br /><a href="http://www.bloglines.com/"><img src="http://www.bloglines.com/images/blogo225x50.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: #1393C0">Blog</span><span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px">lines</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: #1393C0"&gt;Blog&lt;/span&gt;&lt;span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px"&gt;lines&lt;/span&gt;</code></div>※第三課：替後半段文字加下邊框，可以試著改變 border-width 看看不同的感覺。<br /><br /><a href="http://www.23hq.com"><img src="http://www.23hq.com/resources/um-style/frontpage-23-beta2.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;">23</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;"&gt;23&lt;/span&gt;</code></div>※第四課：將數字加框。不能作出圓角框是遺憾之處。<br /><br /><a href="http://www.livejournal.com/"><img src="http://stat.livejournal.com/xc/logocombined.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;">L<span style="color:#123466">i</span>VEJOURNAL</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;"&gt;L&lt;span style="color:#123466"&gt;i&lt;/span&gt;VEJOURNAL&lt;/span&gt;</code></div>※第五課：上底色，以及巢狀樣式定義。<br /><br /><a href="http://mail.google.com"><img src="http://mail.google.com/mail/help/images/logo.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="font-weight: bold"><span style="color:#0075BE; font-family:Palatino Linotype">G</span><span style="font-family: Verdana"><span style="color: #DA3838; font-variant: small-caps">m</span><span style="color: #FFC514">a</span><span style="color: #0075BE">i</span><span style="color: #2EB457">l</span></span></span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="font-weight: bold"&gt;&lt;span style="color:#0075BE; font-family:Palatino Linotype"&gt;G&lt;/span&gt;&lt;span style="font-family: Verdana"&gt;&lt;span style="color: #DA3838; font-variant: small-caps"&gt;m&lt;/span&gt;&lt;span style="color: #FFC514"&gt;a&lt;/span&gt;&lt;span style="color: #0075BE"&gt;i&lt;/span&gt;&lt;span style="color: #2EB457"&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</code></div>※第六課：為了更接近原 Logo，故有指定字型（均為 WinXP 內建）。關鍵之處在於 m 為小寫，但加入了 "font-variant: small-caps;"。此一樣式可將小寫字母轉為大寫，但大小略有差異；若是使用 "text-transform: uppercase;" 則是會將小寫字母以大寫表示。</p>
+]]></content>
+  </entry>
+  
+</feed>

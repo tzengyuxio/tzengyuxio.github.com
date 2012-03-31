@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>設定 Mac Terminal 下的 .bashrc - Tzeng Yuxio</title>
+  <title>一把在手，歡樂無窮 - Tzeng Yuxio</title>
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (~/) 下寫了個 .bashrc, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。 後來在家目錄下先建了個檔案 . &hellip;">
+  <meta name="description" content="從這個Revolution 神奇控制（遙控？）器的廣告，我們似乎可以看見 Revolution 真的會為遊戲界帶來些什麼，而不會僅僅只是一個遊戲主機的代號而已。在其他遊戲主機相繼在處理器、記憶體、多邊形與定價的數目字上不停向上喊價的時候，老任這次仍舊是把重心放在創新的遊戲方式上（難道這就是「 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal">
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2005/09/24/revolution-controller">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -80,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">設定 Mac Terminal 下的 .bashrc</h1>
+      <h1 class="entry-title">一把在手，歡樂無窮</h1>
     
     
       <p class="meta">
@@ -96,48 +96,14 @@
   
 
 
-<time datetime="2012-03-27T16:07:00+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2012</time>
+<time datetime="2005-09-24T08:27:00+08:00" pubdate data-updated="true">Sep 24<span>th</span>, 2005</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
-
-<p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
-
-<pre class="prettyprint"><code>if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
-fi
-</code></pre>
-
-
-<p>這樣原本寫在 <code>.bashrc</code> 裡的指令稿就會被讀取並且發揮作用了。補充說明，我的作業系統版本為 <strong>Mac OS X Lion (10.7)</strong>。</p>
-
-<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，簡述如下：</p>
-
-<h3>.bash_profile</h3>
-
-<p>輸入帳號密碼登入時，不論遠端或本地，都會執行此設定檔。</p>
-
-<h3>.bashrc</h3>
-
-<p>在已經登入的情況下，開啟終端機視窗（如 Gnome 的 xterm），在命令提示符號出現前，就會先執行 .bashrc 內的指令。</p>
-
-<p>不過 Mac OS X 的行為是上述流程的例外，詳細可參考本文最後面的連結。</p>
-
-<hr />
-
-<p>參考資訊：</p>
-
-<p><a href="http://macfidelity.de/2008/07/02/mac-customizing-terminal-in-mac-os-x-105/">Customizing Terminal in Mac OS X 10.5 | macfidelity</a></p>
-
-<p>上面這篇文章中的步驟比較多，甚至還要進 Terminal 的「偏好設定」畫面去修改打開 Shell 的指令。不過我自己的操作結果是就算沒有設定那些指令也沒關係，只要有包含文章中那段代碼的 <code>.bash_profile</code>, 就可以讀取 <code>.bashrc</code> 了。</p>
-
-<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，請見下面這篇文章。</p>
-
-<p><a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">.bash_profile vs .bashrc</a></p>
+<div class="entry-content"><p>從這個<a href="http://media.cube.ign.com/articles/651/651334/vid_1249127.html">Revolution 神奇控制（遙控？）器的廣告</a>，我們似乎可以看見 Revolution <strong>真的</strong>會為遊戲界帶來些什麼，而不會僅僅只是一個遊戲主機的代號而已。<br /><a href="http://www.flickr.com/photos/30215143@N00/45961802/" title="Photo Sharing"><img src="http://static.flickr.com/29/45961802_25be5439ea_m.jpg" width="240" height="180" alt="Revolution Teaser Video 01" align="left" style="margin:8px;"/></a>在其他遊戲主機相繼在處理器、記憶體、多邊形<s>與定價</s>的數目字上不停向上喊價的時候，老任這次仍舊是把重心放在創新的遊戲方式上<s>（難道這就是「藍海策略」嗎？）</s>。<br /><br />從以前就是這樣，任天堂不斷在遊戲花樣上推陳出新，從紅白機的2P麥克風及刷條碼、帶著跑的 Gameboy、N64 的怪物手把、雙螢幕的 NDS，都顛覆了當時我們對於遊戲本身的想像<s>（難道這就是「始終如一」嗎？）</s>。雖然說創新的遊戲玩法未必會帶來好玩的遊戲，比方說 Virtual Boy；不過話說回來，較高速的運算核心難道就是好玩的保障嗎？我恐怕這關聯性還要更遠。<br /><a href="http://www.flickr.com/photos/30215143@N00/45961803/" title="Photo Sharing"><img src="http://static.flickr.com/26/45961803_1180762b30_m.jpg" width="240" height="180" alt="Revolution Teaser Video 02" align="right" style="margin:8px;"/></a><br />姑且不論屆時推出的遊戲與這神奇遙控器是否能有完美搭配，至少這個廣告讓我們看見了更多可能性<s>（難道這就是「有夢最美」嗎？）</s>：就拿那個作菜還有看牙醫的來說－－我們之中絕大部分甚至全部都肯定壓根兒包準連作夢都沒想過，<strong>不是嗎？</strong></p>
 </div>
 
 
@@ -160,12 +126,12 @@ fi
   
 
 
-<time datetime="2012-03-27T16:07:00+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2012</time>
+<time datetime="2005-09-24T08:27:00+08:00" pubdate data-updated="true">Sep 24<span>th</span>, 2005</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/shell/'>shell</a>
+    <a class='category' href='/blog/categories/talks/'>talks</a>
   
 </span>
 
@@ -174,7 +140,7 @@ fi
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2005/09/24/revolution-controller/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2005/09/24/revolution-controller/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -187,10 +153,10 @@ fi
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/03/26/json-for-vim/" title="Previous Post: JSON for Vim">&laquo; JSON for Vim</a>
+        <a class="basic-alignment left" href="/blog/2005/09/24/bought-some-comics/" title="Previous Post: 好久沒去漫畫店">&laquo; 好久沒去漫畫店</a>
       
       
-        <a class="basic-alignment right" href="/blog/2012/03/29/ls-color-on-mac/" title="Next Post: ls Color on Mac">ls Color on Mac &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2005/09/28/css-logo/" title="Next Post: ［CSS］純文字 LOGO">［CSS］純文字 LOGO &raquo;</a>
       
     </p>
   </footer>
@@ -227,15 +193,15 @@ fi
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/27/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
       </li>
     
       <li class="post">
         <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
       </li>
     
   </ul>
@@ -319,8 +285,8 @@ fi
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal/';
-        var disqus_url = 'http://tzengyuxio.me/blog/2012/03/27/dot-bashrc-in-mac-terminal/';
+        var disqus_identifier = 'http://tzengyuxio.me/blog/2005/09/24/revolution-controller/';
+        var disqus_url = 'http://tzengyuxio.me/blog/2005/09/24/revolution-controller/';
         var disqus_script = 'embed.js';
       
     (function () {

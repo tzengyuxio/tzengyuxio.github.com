@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: alfred - Tzeng Yuxio</title>
+  <title>Mantis 惱人連結 - Tzeng Yuxio</title>
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="Category: alfred">
+  <meta name="description" content="之前用過 mantis，一個 bug tracker 系統。這套系統簡潔、方便，對中文支援也 OK，雖然中文介面翻的不夠徹底，但語系檔是純文字，自己動手改就好了。 不過有個不算問題的問題讓人煩惱，就是 mantis 會把訊息字串中包含 &#8220;@&#8221; 的 email &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://tzengyuxio.meblog/categories/alfred">
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2005/07/19/mantis_link">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -76,36 +76,115 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Alfred</h1>
+    
+      <h1 class="entry-title">Mantis 惱人連結</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-07-19T06:39:00+08:00" pubdate data-updated="true">Jul 19<span>th</span>, 2005</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>之前用過 <a href="http://www.mantisbt.org/">mantis</a>，一個 bug tracker 系統。這套系統簡潔、方便，對中文支援也 OK，雖然中文介面翻的不夠徹底，但語系檔是純文字，自己動手改就好了。</p>
 
-  
-  <h2>2012</h2>
+<p>不過有個不算問題的問題讓人煩惱，就是 mantis 會把訊息字串中包含 &#8220;@&#8221; 的 email 字串改成郵件連結，這功能原本貼心，但這麼一來只要 big5 編碼中有包括 @ 字元的中文字－－例如「世」或「一」－－就會被 mantis 把整句中文轉換為一個無意義的 email 連結。雖然無礙於系統運作，但這個偽物連結總是讓人看了心煩。</p>
 
-<article>
-  
-<h1><a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a></h1>
-<time datetime="2012-03-11T18:17:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>11</span> <span class='year'>2012</span></time>
+<p>最近重裝 mantis，自然又會看到假連結，於是下定決心解決這個問題。雖然看似小小的問題，前前後後卻花了我一個小時的時間來處理－－找到問題在哪用了快廿分鐘，解決這個問題則又耗去將近四十分鐘！</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/alfred/'>alfred</a>, <a class='category' href='/blog/categories/mac/'>mac</a>, <a class='category' href='/blog/categories/shell/'>shell</a></span>
-</footer>
+<p>照理說找問題應該要花比較多的時間，怎麼這次找到問題後卻還花了那麼久時間修正？原因都是出在<strong>正規式</strong>上面，那段有嫌疑的 code 前後用了不少又臭又長的正規式，為了搞懂這些火星文花了許多時間，結果最後搞定只加了五個字元：</p>
 
+<p><code>%mantis%/core/string_api.php:line 316</code></p>
 
-</article>
+<p><img src="/images/2005/2005-07-19-mantis-patch.png" alt="image" /></p>
 
+<p>短短五個字，花了一小時。真是「台上一分鐘，台下十年功」啊</p>
+
+<p>後記：在找資料的時候，在<a href="http://www.oreilly.com.tw/product_perl.php?id=a160">《正規式速查手冊》</a>的導讀中看到這麼一句話：</p>
+
+<blockquote><p>Regular Expression（正規式）是一種 write-only language，寫得出來，但是很難看懂！</p></blockquote>
+
+<p>真是於我心有戚戚焉（淚）</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-07-19T06:39:00+08:00" pubdate data-updated="true">Jul 19<span>th</span>, 2005</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/php/'>php</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2005/07/19/mantis_link/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2005/07/19/mantis_link/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2005/07/12/yapoo/" title="Previous Post: 《家畜人鴉俘Ⅰ》讀書筆記">&laquo; 《家畜人鴉俘Ⅰ》讀書筆記</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2005/08/19/yami-no-koe/" title="Next Post: 《闇之聲》恐怖依舊恐怖；驚喜略嫌不足">《闇之聲》恐怖依舊恐怖；驚喜略嫌不足 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -132,15 +211,15 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2012/03/27/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
       </li>
     
       <li class="post">
         <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
       </li>
     
   </ul>
@@ -223,7 +302,10 @@
       var disqus_shortname = 'tzyxblog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.me/blog/2005/07/19/mantis_link/';
+        var disqus_url = 'http://tzengyuxio.me/blog/2005/07/19/mantis_link/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
