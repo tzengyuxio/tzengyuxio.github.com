@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="在安裝 Octopress 的時候，上網找了許多資料，也發現一個有趣的現象，就是大家的第一篇文章幾乎都是要對 Octopress 說幾句話。所以乾脆就來收集一下，看看大家的第一篇都寫些什麼？ 以下按照時間順序排列： Migrate to Octopress - Blog.XDite.net Oct &hellip;">
+  <meta name="description" content="剛剛發現，Google Analytics 的「造訪」按鈕旁多了個音符記號。點下去後會有 Piano 與 Sitar 琴兩種樂器，選了之後就會看到下方折線圖的節點會按順序一個一個亮起來，並播放與節點高低對應的音階。 可惜我的折線圖不夠精采，撥出來的音樂平平淡淡，沒有直墜谷底或是步步高昇的激昂起伏 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,46 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-01T09:23:00+08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/images/2012/2012-04-01-google-analytics-piano.png" alt="image" /></p>
+
+<p>剛剛發現，Google Analytics 的「造訪」按鈕旁多了個音符記號。點下去後會有 Piano 與 Sitar 琴兩種樂器，選了之後就會看到下方折線圖的節點會按順序一個一個亮起來，並播放與節點高低對應的音階。</p>
+
+<p>可惜我的折線圖不夠精采，撥出來的音樂平平淡淡，沒有直墜谷底或是步步高昇的激昂起伏。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -914,135 +954,6 @@ public class GetEnv {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/">在網頁中嵌入 Facebook 與 Twitter 社交按鈕</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-08-09T19:02:00+08:00" pubdate data-updated="true">Aug 9<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Facebook 常見的社交按鈕有兩種：<strong>Facebook Share</strong> 與 <strong>Facebook Like</strong>，不過前者已經不在 Facebook 官方提供的 Plugin 列表中，連到<a href="http://developers.facebook.com/docs/share">舊的 Facebook Share 說明頁面</a>會自動導向 <a href="http://developers.facebook.com/docs/reference/plugins/like/">Facebook Like 的說明頁面</a>，看起來 Facebook 似乎有意以 Like 取代 Share 的地位。雖然如此，兩種功能還是有其不同的定位，目前也都能夠共存並用。關於兩者差異的說明，可以參考<a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">這篇文章（英文）</a>。下面則是 Facebook 與 twitter 各種社交功能與外觀的顯示範例與分享代碼。</p>
-
-<h2>Facebook Share 的分享代碼</h2>
-
-<h3>按鈕配置</h3>
-
-<p><a href="http://www.facebook.com/sharer.php" name="fb_share" type="button_count">分享</a></p>
-
-<pre class="prettyprint"><code>&lt;a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php"&gt;分享&lt;/a&gt;&lt;script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"&gt;&lt;/script&gt;
-</code></pre>
-
-
-<h3>方塊配置</h3>
-
-<p><a href="http://www.facebook.com/sharer.php" name="fb_share" type="box_count">分享</a></p>
-
-<pre class="prettyprint"><code>&lt;a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php"&gt;分享&lt;/a&gt;&lt;script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"&gt;&lt;/script&gt;
-</code></pre>
-
-
-
-
-<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript">
-</script>
-
-
-<h2>Facebook Like 的分享代碼</h2>
-
-<h3>標準配置</h3>
-
-<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" style="border: none; height: 20px; overflow: hidden; width: 450px;"></iframe>
-
-
-
-
-<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=standard&amp;amp;width=450&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=20&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:450px; height:20px;'&gt;&lt;/iframe&gt;
-</code></pre>
-
-
-<h3>按鈕配置</h3>
-
-<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" style="border: none; height: 20px; overflow: hidden; width: 90px;"></iframe>
-
-
-
-
-<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=button_count&amp;amp;width=90&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=20&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:90px; height:20px;'&gt;&lt;/iframe&gt;
-</code></pre>
-
-
-<h3>方塊配置</h3>
-
-<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=box_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=63" style="border: none; height: 63px; overflow: hidden; width: 90px;"></iframe>
-
-
-
-
-<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=box_count&amp;amp;width=90&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=63&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:90px; height:63px;'&gt;&lt;/iframe&gt;
-</code></pre>
-
-
-<h2>twitter 的分享代碼</h2>
-
-<h3>水平按鈕</h3>
-
-<p><a class="twitter-share-button" href="http://twitter.com/share">Tweet</a></p>
-
-<pre class="prettyprint"><code>&lt;script src='http://platform.twitter.com/widgets.js' type='text/javascript'/&gt;
-&lt;a class='twitter-share-button' href='http://twitter.com/share' expr:data-url='data:post.url' expr:data-text='data:post.title'&gt;Tweet&lt;/a&gt;
-</code></pre>
-
-
-<h3>垂直按鈕</h3>
-
-<p><a class="twitter-share-button" data-count="vertical" href="http://twitter.com/share">Tweet</a></p>
-
-<pre class="prettyprint"><code>&lt;script src='http://platform.twitter.com/widgets.js' type='text/javascript'/&gt;
-&lt;a class='twitter-share-button' href='http://twitter.com/share' expr:data-url='data:post.url' expr:data-text='data:post.title' data-count='vertical'&gt;Tweet&lt;/a&gt;
-</code></pre>
-
-
-<h2>參考資料</h2>
-
-<ul>
-<li><a href="http://developers.facebook.com/docs/reference/plugins/like/">Like Button - Facebook Developers</a></li>
-<li><a href="https://dev.twitter.com/docs/tweet-button">Tweet Button | Twitter Developers</a></li>
-<li><a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">Facebook Like Button Vs. Facebook Share: Why I’m Keeping Both</a></li>
-<li><a href="http://jinnsblog.blogspot.com/2010/12/facebook-share-link-button-widget.html">[Blogger] 臉書的「分享」、「讚」推文按扭語法分享-靖 ● 技場</a></li>
-<li><a href="http://jasonblog.tw/2010/05/add-facebook-share-button-on-blogger.html">在Blogger裝置具有計數功能的Facebook分享按鈕 | 哲生博客 Jason Blog</a></li>
-<li><a href="http://jasonblog.tw/2010/04/add-facebook-like-button-on-your.html">在Blogger嵌入Facebook的讚(Like)按鈕 | 哲生博客 Jason Blog</a></li>
-<li><a href="http://clonn.blogspot.com/2011/05/bloggerfacebook-add-facebook-like.html">[教學] Blogger當中加入facebook 讚！ Add facebook like button in Blogger template</a></li>
-<li><a href="http://www.bloggerplugins.org/2010/08/twitter-share-buttons-for-blogger-tweet.html">Official Twitter Share Button (Tweet Button) for Blogger ~ Blogger Widgets</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1056,6 +967,10 @@ public class GetEnv {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
@@ -1079,10 +994,6 @@ public class GetEnv {
     
       <li class="post">
         <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
       </li>
     
   </ul>

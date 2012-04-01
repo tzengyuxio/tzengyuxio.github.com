@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-03-31T11:32:31+08:00</updated>
+  <updated>2012-04-01T09:31:12+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -41,6 +41,15 @@
 <p>當然，所有的的遞迴都可以改寫成迴圈形式，改寫為迴圈形式通常也可以獲得效率上的提升，因為遞迴層層呼叫的過程中不停將資料塞入堆疊又從堆疊取出的手續太耗成本，遠不如迴圈以少數幾個變數就可以控制完整的流程。但是將遞迴改寫成迴圈的形式往往會失去邏輯的簡潔與結構的優雅。</p>
 
 <p>寫程式經常就是遇到這種兩難：要嘛對電腦好，讓它少算一點，少用點空間；要嘛對人好，電腦多做點工，可是人類看起 Code 來輕鬆（話說遞迴也不見得都比迴圈式的改寫好懂就是）。因此，針對同一件事情，該用遞迴解還是迴圈解好呢？我想，選擇自己與他人都<strong>容易理解的方法</strong>去做，那就對了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［lib］Freeware ODBC Library]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/23/freeware-odbc-library/"/>
+    <updated>2006-01-23T02:40:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/23/freeware-odbc-library</id>
+    <content type="html"><![CDATA[<p><span style="color: rgb(0, 153, 0);">The Code Project</span> - <a href="http://www.codeproject.com/database/DataLayer.asp">DataLayer - Freeware ODBC Library</a><br /><br />經過包裝的 ODBC 函式庫，比直接調用 ODBC API 來得簡單些。上面的網頁中包含了如何使用的範例程式碼，相當容易上手。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: app | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-03-31T11:32:31+08:00</updated>
+  <updated>2012-04-01T09:31:12+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,173 +14,47 @@
 
   
   <entry>
-    <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（下）]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2/"/>
-    <updated>2011-03-29T13:08:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-2</id>
-    <content type="html"><![CDATA[<p>上篇：<a href="http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></p>
-
-<p>這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。</p>
-
-<p>CamScanner 的作法有點接近理想方式。在裁剪之前，左上方的按鈕可以選擇「色彩增強」模式，有五種方案：「普通」、「增強」、「增強並銳化」、「經濟模式」、「黑白模式」，可惜這些模式的名稱不夠直覺。裁剪完之後，有提供滑軸用來調整明暗跟對比。裁剪前的「色彩增強」模式無法預覽，裁剪後才知道結果，裁剪完後的明暗對比則會即時反應在畫面上，方便掌握。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b01.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b02.jpeg" width="240" height="360"><br/>
-（左：裁剪前的色彩增強選項；右：明亮與對比的即時調整）</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b03.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b04.jpeg" width="240" height="360"><br/>
-（左：經濟模式；右：黑白模式）</p>
-
-<p>Genius Scan 在這方面就很陽春，後製處理只有三個選項：「不處理」、「黑白文件」、「彩色文件」。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b05.jpeg" width="240" height="360"></p>
-
-<p>JotNot 的後製功能全部放在一起。他的分類方式是我所喜歡的：「收據」、「黑白文件」、「彩色文件或白板」、「亮顯文本或黑板」、「攝影」。預設分類往下拉，也可以看到對比調整等選項，甚至可以控制背景與加上時間戳記，算是功能最完整的。但是這些調整功能，包含對比，都必須設定好後進行處理，才看得到結果，不滿意的話還要回頭改對比，並不是很方便。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b06.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b07.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b08.jpeg" width="240" height="360"></p>
-
-<p>關於文件分享與輸出部分，如果以付費版本來看，基本上我所需要的都包含了。</p>
-
-<p>CamScanner 有以下選項：</p>
-
-<ul>
-<li>打開方式 (iBooks 或其他可開啟 PDF 的 iPhone app)</li>
-<li>電子郵件</li>
-<li>Google Docs</li>
-<li>BOX.net</li>
-<li>Evernote</li>
-<li>iDisk</li>
-<li>Dropbox</li>
-</ul>
-
-
-<p>Genius Scan 可以輸出的選項有：</p>
-
-<ul>
-<li>電子郵件</li>
-<li>iBooks 或其他可開啟 PDF 的 app</li>
-<li>（付費版）Dropbox</li>
-<li>（付費版）Evernote</li>
-<li>（付費版）Google Docs</li>
-</ul>
-
-
-<p>JotNot 比較特別的是它可以直接傳真或列印，傳真好像要額外付費 In-App-Purchases，這兩個功能我都沒試過。其餘的分享功能都只有付費版才有：</p>
-
-<ul>
-<li>（付費版）可輸出成 PDFs、JPEGs、PNGs</li>
-<li>（付費版）電子郵件</li>
-<li>（付費版）Dropbox</li>
-<li>（付費版）iDisk / WebDAV</li>
-<li>（付費版）Evernote</li>
-<li>（付費版）Box.net</li>
-<li>（付費版）Google Docs</li>
-</ul>
-
-
-<p>另外一些有的沒有的雜項功能，在最後作個記錄：</p>
-
-<ul>
-<li>標籤功能，CamScanner 與 JotNot 都可以對文件下 Tag，除了內建的 Tag 之外也可自己新增。CamScanner 的 Tag 在中文版下也是中文名稱，很貼心。 <br/>
-  <img src="/images/2011/2011-03-29-scan-app-b09.jpeg" width="240" height="360">
-  <img src="/images/2011/2011-03-29-scan-app-b10.jpeg" width="240" height="360"><br/>
-  （左：CamScanner 的預設標籤；右：JotNot 的預設標籤）</li>
-<li>除了標籤外，JotNot 還可以對文件標示星號。</li>
-<li>關於版面大小：
-
-<ul>
-<li>JotNot 可以設定整本的預設大小，如 A4，也可以在單張處理時分別指定；</li>
-<li>CamScanner 能夠設定整本的版面大小，也可勾選「自動適應大小」，這樣每頁的圖檔掃多大就多大，比例不一。</li>
-<li>Genius Scan 我找不到可以設定版面大小的地方。它也是唯一一套以預設方式掃完上篇範例後，兩頁頁面大小不同的軟體。<br/>
-<img src="/images/2011/2011-03-29-scan-app-b11.jpeg" width="240" height="360"> <br/>
-（Genius Scan 輸出後的頁面大小不一）</li>
-</ul>
-</li>
-<li>JotNot 可以加入 PDF 密碼作為保護</li>
-<li>CamScanner 可以對每一頁加入筆記。輸出 PDF 時，也可決定要不要將筆記內容一起存入 PDF 中。</li>
-<li>CamScanner 有「快速批次掃描」的功能，不過我還沒試過。</li>
-</ul>
-
-
-<p>至於最後我選了哪套留在 iPhone 上呢？我只能說真的是「一分錢一分貨」了......</p>
+    <title type="html"><![CDATA[相片管理的選擇, Aperture, iPhoto, Lightroom, Picasa]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/06/aperture-iphoto-lightroom-picasa/"/>
+    <updated>2012-02-06T19:55:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/06/aperture-iphoto-lightroom-picasa</id>
+    <content type="html"><![CDATA[<p>雖然不是說很專業，其實連業餘也稱不上，不過從買了第一台數位相機（CASIO QV-2800UX）到現在，前前後後也經歷過九個年頭、五台相機，之中還被偷走了一台，而這中間所累積的相片也有數千張之譜。然而因為缺乏整理，使得這些照片散落在家中不同的電腦、不同的網路分享區、不同的外接式硬碟以及不同的隨身碟中。更有甚者，同樣的照片還有不同版本放在不同的儲存設備，有原始版的，有為了傳給朋友縮過大小的，有 retouch 過的，不仔細比對還真的想不起來到底這些照片的先後順序因果關係。<br /><br />雖然想到就覺得累人，但總歸還是得找個時間徹底好好整理下照片。去年年底狠下心來，買了 Aperture 這套軟體，然後一個一個電腦、外接硬碟、隨身碟檢查，花了好幾個禮拜終於將照片全部匯入到 Aperture 中進行管理。也才知道自己這些年到底拍了多少張照片，去過哪些地方，也不用在每次想要回憶美好時光時，都要先想辦法回憶起那些美好時光的照片到底放在哪裡。<br /><br />其實在決定買下 Aperture 之前，也有考慮與試過其他選項，像是 iPhoto, Picasa, Lightroom, 但是每個軟體都有其優勢與不足之處，沒有完美無缺的 Solution。以下就簡單記錄下我對這四個軟體的使用感想，以及最後為什麼選擇 Aperture。<br /><br /><h2>Picasa</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" width="320" /></a></div>我在自己還在以 Windows 為主要環境的時代，就裝了 Picasa 來玩－－可是裝不久就移除掉了；後來 Picasa 出了新版，我又裝了，又移掉；又過一陣子注意到改版了，又裝，這次沒移，但是我僅僅是把 Picasa 留下當做看圖軟體。我喜歡 Picasa 他那把照片凸顯，其他桌面部分暗掉的無視窗方式瀏覽介面－－然而他主打的照片管理功能，我卻壓根不想使用。<br /><br />到了換以 Mac 作為主要環境的時候後，先後也裝過兩三次 Picasa, 也試著開始用 Picasa 來管理照片，但最後怎樣就是無法習慣，可能是軟體設計思維的不同吧，總覺得跟我自己對於照片管理的想法處處格格不入。<br /><br />Picasa 充分體現了 Google 作為一家搜尋引擎公司的思維，第一次啟動 Picasa 時，就會搜尋你整個電腦裡面的圖檔，全部加入，而這正是我最討厭的一點。我想要的是照片管理，可是 Picasa 卻會試著把你電腦裡所有圖片檔案列入他的管轄範圍內。圖片檔案有太多意義了，也許是照片、也許是工作用的中間圖片、也許是網路下載的有趣漫畫、也許是文件意義比圖片意義強烈的 Infographic，我不想要 Picasa 包山包海地把這些東西都納入他的檔案庫中。我只是單純的想要一個照片管理軟體。<br /><br />其實我很希望我能用 Picasa 這套軟體來管理照片，畢竟我買了 Google 的儲存空間，如果能夠直接把照片同步 Picasa Web 上，我就不用煩惱照片備份的問題了。不過 Picasa Web 的照片管理功能也是充滿問題的設計，用手機隨手上傳一張圖檔，就會多出一個以日期為名的小資料夾，這種資料夾一多，看了也心煩。更別提 Picasa 與 Picasa Web 的同步其實設計的很不貼心，許多地方必須手動。最好是能夠像 Dropbox 一樣，讓我指定一個本機資料夾，自動把網路相簿抓到該資料夾，丟到該資料夾的也會自動上傳。<br /><h2>iPhoto</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="211" src="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" width="320" /></a></div>換到 Mac 上作業後，曾經用過一段時間的 iPhoto。剛開始不習慣他把所有圖檔都放在一個叫做 "iPhoto Library" 的黑盒子中，畢竟在長久以來習慣了用資料夾作管理的形式，突然間沒有了資料夾作為存取照片的管道，心理總覺得不踏實。<br /><br />不過黑盒子的方式用久了其實倒也還好，就像是 Gmail 剛推出時只有標籤（Tag）沒有資料夾的管理，只要用不同的方式去思考，很快就可以習慣這樣的方式。反正檔案要給別人時就直接匯出，剩下的原始檔通通藏在黑盒子中，我也樂得輕鬆，不用去煩惱到底要怎麼安排這些檔案的存放方式。<br /><br />基本上，iPhoto 的使用經驗對我而言是無懈可擊的。人臉辨識與地點標記都是相當棒的功能體驗，照片的編輯與調整我也覺得夠用了，介面簡潔，很直覺便可找到你想做的工作該怎麼進行。然而他有兩個問題使我不得不考慮其他方案。第一個是無法顯示完整的 EXIF 資訊，也許是我的使用不夠深入，總之就是找不到顯示完整 EXIF 的方法。<br /><br />第二個問題就比較令人頭痛。在 iPhoto 上調整一張照片，就會產生一份該照片的副本，也就是當你調整的照片越多，所佔去的硬碟空間就越大，對於記憶體的使用也有相當影響。然而在 Picasa 和 Aperture 中，當你進行照片的修改時，Picasa 與 Aperture 只會儲存這些照片的修改參數的 Metadata，就算一張照片有十個不同風格的修改版本，也只會多用到一點點的容量，而不會消耗掉十倍的硬碟空間。因為 iPhoto 這樣的設計，所以據說當照片數目多到一個程度時，開啟的速度像牛步一樣。我自己的照片是還沒多到能感受到牛步，但是無法接受每修一個版本就會多一份照片副本，這是我放棄 iPhoto 最主要的原因。<br /><h2>Lightroom</h2><br />老實說，其實我沒有真正使用過 Lightroom, 只有買了本 Lightroom 的書來研究數位照片的管理，加上網路上看了幾篇文章比較比較 Lightroom 與 Aperture 的異同這樣。其實我蠻想試試看 Lightroom，但是由於以下幾個因素使得 Lightroom 還沒有真正上場就在我的相片管理名單中除名了。<br /><ul><li>對 Adobe 越來越沒好感。Adobe 的軟體越來越龐大，不管是功能與價格。</li><li>在 Adobe 的官網找不到試用下載，也沒有簡便的購買方式，得透過經銷商購買。</li><li>對於 iPhoto 的良好體驗，使得我對 Aperture 更有信心。</li></ul><h2>Aperture</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="241" src="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" width="320" /></a></div>最後則是我目前在使用的 Aperture。其實剛進入 Aperture 時很不習慣，一堆術語像是 Master / Version / Folder / Album / Project 讓我如陷五里霧中，這些單字都看得懂，可是代表什麼意思、彼此間有什麼差別我卻是一竅不通。現在用了一陣子後總算明白些，但我總覺得 Apple 應該可以更簡化這些術語或關係才對，例如 Origin 就比 Master 來得容易理解；Event &nbsp;也比 Project 符合情境。<br /><br />除了術語多，介面比起 iPhoto 複雜外，用到現在倒也沒什麼好挑的，真要說的話就是希望他能早日有正體中文的介面，雖然英文介面對我不構成使用障礙，但是有熟悉的語言，情感上就大大的加分。<br /><br />另一個與 iPhoto 相比的好處，就是你的檔案可以儲存在外部文件夾，甚至是外接式硬碟，而不用一定得放在 "Aperture Library" 這個黑盒子中。如果是放在外部的文件夾，Aperture 會建立一張縮圖在黑盒子中，所以就算外接式硬碟沒有接上，也可以對該照片進行瀏覽與編輯，頂多只是匯出時無法從更精細的原始版本匯出罷了。這項特點對於習慣以文件夾進行管理與分類的人算是一項福音，不過我已經習慣 iPhoto 的方式了，所以也就索性通通丟入 Aperture 的黑盒子中去。<br /><br />另外隨著這幾個月 Aperture 的使用，也逐漸發現 Aperture 一些讓人離不開的順手好功能。例如照片的管理可以透過 Keyword, Label, Rating 與 Flag，這些機制的組合增加了不少彈性；另外像是命名、編修、調整等批次功能，也可以幫助自己省下不少寶貴的時間。有機會的話再來對自己使用 Aperture 的心得作更進一步的介紹。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1/"/>
-    <updated>2011-03-29T10:57:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1</id>
-    <content type="html"><![CDATA[<p>iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 <a href="http://itunes.apple.com/tw/app/pdf-reader-file-scanner-file/id325924458?mt=8">PDF Reader</a> 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。</p>
-
-<p>當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：</p>
-
-<ul>
-<li><a href="http://itunes.apple.com/us/app/camscanner-free/id388627783?mt=8#">CamScanner Free</a> / CamScanner+ ($4.99, a.k.a 《掃描全能王》)</li>
-<li><a href="http://itunes.apple.com/us/app/genius-scan/id377672876?mt=8">Genius Scan</a> / Genius Scan+ ($2.99)</li>
-<li><a href="http://itunes.apple.com/us/app/jotnot-scanner-free/id310789464?mt=8#">JotNot Scanner Free</a> / JotNot Scanner Pro ($0.99)</li>
-</ul>
-
-
-<p>這邊也順便說說我對掃描軟體的基本要求：</p>
-
-<ol>
-<li>自動辨識文件邊緣的功能要準確</li>
-<li>能針對不同文件類型作適當的影像調整</li>
-<li>可以輸出到 Google Docs, Evernote, Dropbox 等雲端服務</li>
-</ol>
-
-
-<p>簡單說就是要<strong>「掃的方便、掃的清楚，掃完輕鬆丟到雲端上」</strong>，至於文件管理之類的，我用其他工具，就不勞煩這些掃描軟體了。</p>
-
-<p>在進行比較之前，先說說這三款的共通之處：</p>
-
-<ol>
-<li>都有免費版與付費版，其中 CamScanner 的價格比另外兩套加起來還貴。不過 JotNot 的 $0.99 是特價，原價也是 $4.99，只是 JotNot 從去年(2010)九月開始特價到現在，不曉得還會不會調回原價？還是就這樣 0.99 下去了？</li>
-<li>三款都有「Wifi 分享」功能，也就是能透過區網內桌機端的瀏覽器連上指定的 port 來下載文件。因為我不常用這功能，所以下面就沒進一步測試比較。</li>
-<li>都可以透過直接拍照或是從相簿中載入的方式取得圖檔。</li>
-<li>CamScanner 與 JotNot 都有中文，前者甚至有中文名字 《掃描全能王》。雖然說英文不是問題，但是有中文大大加分啊！</li>
-</ol>
-
-
-<p>以下的測試都是針對免費版。至於免費跟付費版的差異這邊就不贅述了，多半都是廣告與附屬功能。對於最主要的「邊緣辨識」與「影像調整」兩個功能，免費與付費都是一樣的。</p>
-
-<p>先一起來看看基本介面吧（依序為 CamScanner, Genius Scan, JotNot Scanner）這三個的介面各有各的特色，三個我都喜歡。真要挑一個最高分的，大概是就 JotNot 了吧，他的介面設計跟 iPhone 本身的 APP 很一致，但是我不喜歡那個 Logo；Genius 的介面很簡潔，一進去就知道要做什麼；CamScanner 中規中矩，初次啟動還附了兩個文件作為說明檔案與範例，算是不錯的作法。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a01.jpeg" width="240" height="360" title="CamScanner" >
-<img src="/images/2011/2011-03-29-scan-app-a02.jpeg" width="240" height="360" title="Genius Scan" >
-<img src="/images/2011/2011-03-29-scan-app-a03.jpeg" width="240" height="360" title="JotNot Scanner" ></p>
-
-<p>接著是文件邊緣辨識的測試，為了公平起見，我用底下同樣的兩張圖作為輸入，分別看看在三款軟體中的辨識情況：</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a04.jpeg" width="240" height="360" title="Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a05.jpeg" width="240" height="360" title="Sample 2" ></p>
-
-<p>首先是 CamScanner 的辨識結果。相對於其他兩套，CamScanner 沒有對齊的格線，只有邊緣的八個點，算是比較可惜，但是辨識的結果卻是三套中最好的。左圖有確實找到盒子邊緣，右圖的則是上方邊線錯誤。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a06.jpeg" width="240" height="360" title="CamScanner with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a07.jpeg" width="240" height="360" title="CamScanner with Sample 2" ></p>
-
-<p>接著看看 Genius Scan。左圖只有辨識出主圖部分，盒子上方被忽略掉了。右圖辨識到的範圍則蠻令人匪夷所思......</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a08.jpeg" width="240" height="360" title="Genius with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a09.jpeg" width="240" height="360" title="Genius with Sample 1" ></p>
-
-<p>最後是 JotNot Scanner。JotNot 的辨識能力介於中間。左圖的辨識跟 Genius Scan 一樣，只有主圖；右圖的辨識跟 CamScanner 一樣，都是上邊線錯誤。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a10.jpeg" width="240" height="360" title="JotNot with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a11.jpeg" width="240" height="360" title="JotNot with Sample 1" ></p>
-
-<p>辨識出錯誤的範圍是難免的，因此也要順便看看調整邊界的功能方不方便。在這一點上，CamScanner 跟 JotNot 就很用心。前者在手指點下去要調整的時候，會出現小圓框特寫要調整的角角；後者點下去之後會自動針對該區域放大，以方便操作。兩種方式使用起來都很流暢。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a12.jpeg" width="240" height="360" title="CamScanner Close-up 1" >
-<img src="/images/2011/2011-03-29-scan-app-a13.jpeg" width="240" height="360" title="JotNot Close-up" ><br/>
-（左：CamScanner 的圓框特寫；右：JotNot 的自動放大）</p>
-
-<p>寫到這邊有點長，先休息一下。<a href="/blog/2011/03/29/scanner-app-review-part-2/">下一篇</a>將繼續從影像處理與文件分享兩個層面去做比較。</p>
+    <title type="html"><![CDATA[從 Launchy 到 Alfred]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred/"/>
+    <updated>2012-01-01T15:21:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred</id>
+    <content type="html"><![CDATA[<p><a href="http://www.launchy.net/index.php">Launchy</a> 是一款快速啟動軟體。只要按下熱鍵，就會跳出一個視窗讓你輸入一些文字來啟動軟體或是上網搜索，可說是圖形介面下的命令列工具，對於習慣用鍵盤工作的人，可以大大提昇電腦操作上的生產力。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="194" src="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">上為 Alfred, 下為 Launchy</td></tr></tbody></table><br />話說<a href="http://blog.aqualuna.me/2006/09/launchy.html">我用 Launchy 前前後後也有五年多的時間</a>了。這段時間裡，只要我安裝新電腦或是重灌系統，Launchy 幾乎都是最前幾個安裝的程式之一，通常裝了瀏覽器（為了抓最新版防毒軟體與防火牆）與防毒軟體（這東西在電腦越乾淨的時候裝越好）之後，就是安裝 Launchy 了。<br /><br />這一兩年，我主要的工作環境從 Windows 轉移到 Mac 上，一開始找不到滿意的快速啟動軟體。在 Mac 上曾經風雲一時的 QuickSilver, 也因為有段時間久未更新，傳出停止開發的風聲，對於新版 OS X的支援也不甚理想，讓我對於這套軟體缺乏信心。所幸，沒過多久，聽見 Launchy 推出 Mac 版的消息，我立刻就在 Mac 裡安裝了這套從 Windows 時代就一直陪伴著我的軟體，繼續享受快速啟動的樂趣。<br /><br />就這樣一直到了上個月，因為意外的緣故讓我注意到了 <a href="http://www.alfredapp.com/">Alfred</a> 這套軟體。一開始沒興趣，畢竟人家已經有了 Launchy 了（羞）。但是好死不死讓看見 Alfred 的官方網站做的很漂亮（可見門面很重要），於是想說安裝來看看吧，反正免費。結果不試則已，一試就成主顧。在預設安裝下，我都還沒作什麼設定，就可以進行許多的操作，包括啟動軟體、網路搜尋、數學計算。而且 Alfred 除了功能之外，介面與圖示比起 Launchy 也更加符合 Mac 的調性，使得我對 Launchy 的忠誠開始動搖。<br /><br />其實我對 Launchy 還是很滿意，但是 Alfred 給我的感覺卻是一整個驚艷。Launchy 有的功能，Alfred 都做到了，而且做的更好。Alfred&nbsp;讓我用沒一天就開始認真考慮購買 Power Pack 的可能性。所以，別了，Mac 上的 Launchy。不過別擔心，偶爾我們還是會在 Windows 上見面的。<br /><br /><em> * </em><br /><br />後記：<strike>其實 Launchy 還是有些 Alfred 比不上的地方。比方說 Alfred 的軟體搜尋只能從頭或是從斷字的地方開始，不能跳著搜尋，但 Launcy 可以。以 iTunes 為例，Alfred 可以透過 "itu" 或是 "tun" 找到 iTunes, 可是如果輸入 "une" 或是 "itn" 就找不到了；對於 Launchy 而言，上面四種方式都可以找到 "iTunes"。</strike><span style="color: red;">更正，Alfred 一樣可以透過輸入部分且不連續的字母來搜尋，只要到 Preference 裡勾選 "Fuzzy: Partial matching for Applications" 即可。</span></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[玩起來直覺就是好遊戲 - Drop of Life]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/12/23/drop-of-life/"/>
+    <updated>2011-12-23T00:23:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/12/23/drop-of-life</id>
+    <content type="html"><![CDATA[<p>最近新出了一款風格獨特且非常治癒的遊戲，Drop of Life。在介紹之前，先看看他的片頭動畫與遊戲畫面吧：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/aanC-KZX0-o/0.jpg"><param name="movie" value="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />遊戲的背景很簡單，玩家要扮演的就是一個水珠，要淨化地下的土壤，並讓種子開出花朵。雖然對於關卡解謎的遊戲而言，故事不是最重要，不過整個遊戲的設計都是圍繞著這個故事主題去發揮，讓人覺得耳目一新，這一點後面會再說明。遊戲最主要的操作有三種：傾斜手機來讓水珠向前或向後移動；點擊畫面讓水珠跳躍；以及對手機吹氣可以讓水珠結成冰塊，摩擦冰塊則恢復成為水珠。傾斜、點擊與吹氣，算是充分利用了 iPhone 的各種輸入方式。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s1600/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s320/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" width="213" /></a></div><br />關卡的進行有點類似 Loco Roco，基本上，玩家只要能從頭走到尾，找到最後的種子，就算過關了。不過通往終點的路上免不了有些障礙，許多設計都很有意思，必須充分利用水珠與冰塊的性質差異來進行，例如有些障礙物必須藉由冰塊的撞擊才能敲破，有些平面冰塊可以直接滑過，而水珠則是黏在上頭慢慢移動。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" width="213" /></a></div><br />另外關卡中有些地方有積水，基本上只要水珠掉到水中就會消滅，只好回到先前的 check point 繼續開始。不過遊戲的設計中沒有真正的 Game Over，水珠或冰塊破掉了，可以無限次嘗試。遊戲的關卡設計的不錯，單純要過關的話都不難，可以順利讓種子開出小白花；不過如果想要取得每關中能讓種子開出小黃花的四葉草，或是要收集散落的拼圖圖塊，就得稍稍動些腦筋，注意有沒有容易被忽略掉的路線。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" width="213" /></a></div><br />話說回來，這遊戲最讓我驚艷的地方就在於，許多遊戲裡的設計都巧妙結合了主題。例如遊戲裡沒有主選單，一開始就是讓玩家操作水珠在地面上滾動，所以選關的方式跟遊戲方式一樣。每個關卡完成的程度會用花的大小來表示，如果有找到四葉草，就是是黃色的小花，這比 Angry Bird 裡冷冰冰的一二三顆星星表示來得親切許多。最特別的是連工作人員名單都像是可以玩的關卡，只要在選關畫面移動到最右邊的懸崖跳下去，那就是了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" width="213" /></a></div><br />最後、最後，最重要的是，這款遊戲是免費下載的喔。下載完後可以玩到第一大關，如果玩了喜歡的話，只要 0.99 鎂就可以解開完整的遊戲版本。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[小螢幕裡的大世界 - 文明 变革]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/06/19/civilization-revolution/"/>
+    <updated>2011-06-19T04:39:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/06/19/civilization-revolution</id>
+    <content type="html"><![CDATA[<p>文明帝國（Civilization）這個最受歡迎的<a href="http://reading.aqualuna.me/search/label/%E5%9B%9E%E5%90%88%E5%88%B6%E7%AD%96%E7%95%A5">回合制策略</a>遊戲系列終於登陸 iPhone / iPad 了！<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-a0x0PNRwpq8/Tf0MHJLjEDI/AAAAAAAAAQw/Ebw_SmP835A/s1600/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+28+27.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://3.bp.blogspot.com/-a0x0PNRwpq8/Tf0MHJLjEDI/AAAAAAAAAQw/Ebw_SmP835A/s320/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+28+27.png" width="320" /></a></div><br />移植到 iOS 上的是先前在 360, PS3, NDS 各遊戲平台上發表的《Civilization Revolution》，這個版本與電腦版《文明帝國》的系列正傳相比，規則上與操作上都有簡化，適合以簡單與搖桿為主遊樂器領域。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-DEDET8DQbM0/Tf0MFlJLFvI/AAAAAAAAAQo/A9Rcwf15_cQ/s1600/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+27+08.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://2.bp.blogspot.com/-DEDET8DQbM0/Tf0MFlJLFvI/AAAAAAAAAQo/A9Rcwf15_cQ/s320/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+27+08.png" width="320" /></a></div><br />iOS 版本製作的團隊主要是 2K Games China 的團隊，一進入遊戲就可以見到簡體中文的介面，雖然不如習慣的正體中文親切，但比起英文至少少了些隔閡。<br /><br />雖然是中國的團隊所製作，不過為什麼「中國」這個國家會被和諧掉，變成莫名其妙的「九鼎人」，連唐太宗都成了「唐公」。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-Uq2FWn33Ndk/Tf0METOujbI/AAAAAAAAAQk/msrkgNDqODw/s1600/Photo+11-6-18+%25E4%25B8%258A%25E5%258D%258810+41+10.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://4.bp.blogspot.com/-Uq2FWn33Ndk/Tf0METOujbI/AAAAAAAAAQk/msrkgNDqODw/s320/Photo+11-6-18+%25E4%25B8%258A%25E5%258D%258810+41+10.png" width="320" /></a></div><br />以下是今天玩了一天的心得，國王難度。初期的進展真的很慢，其他國家也常常莫名其妙就有大軍可以攻過來，還因此招架不住，丟了幾座城；好在科技發展遙遙領先，到了火槍兵出來之後，基本上就可以輕鬆擋下電腦國家所派來的那些原始部隊，之後更是用坦克四處肆虐，趕在 2000 年的時候完成「統治勝利」。不過話說在那之前，其實就已經達到可以「文化勝利」的條件了，只是一直懶得蓋聯合國這個世界奇觀。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-M_0u6Ut7NFc/Tf0MGgLmytI/AAAAAAAAAQs/-kWdXh6KQRM/s1600/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+27+19.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://2.bp.blogspot.com/-M_0u6Ut7NFc/Tf0MGgLmytI/AAAAAAAAAQs/-kWdXh6KQRM/s320/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+27+19.png" width="320" /></a></div><br />最大感想就是手機的螢幕實在太小了，可以看到的畫面範圍太少。尤其像《文明帝國》這種一玩下去就會黏住好幾個小時的遊戲，要是得一直盯著小螢幕的話，對眼睛實在很傷，也很容易疲勞。螢幕小的話還有個缺點，就是手指頭在移動地圖的時候，經常會點到部隊。如果可以的話，還是用 iPad 玩會比較適合。<br />----<br /><b>文明 变革</b><br /><a href="http://itunes.apple.com/us/app/id433077147?mt=8%E6%96%87%E6%98%8E%20%E5%8F%98%E9%9D%A9">iTunes App Store 的&nbsp;文明 变革</a><br />$0.99 (2011.6.18)<br />----<br />延伸閱讀：<br /><a href="http://blog.aqualuna.me/2011/04/v.html">文明帝國V - 文化勝利與單城挑戰心得</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[企鵝爸爸大冒險 - Air Penguin]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/06/13/air-penguin/"/>
+    <updated>2011-06-13T00:15:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/06/13/air-penguin</id>
+    <content type="html"><![CDATA[<p>這款由 Gamevil 所出品的遊戲，原來只被我當成是小品遊戲，想說玩個幾關，頂多過完第一大關，大概了解一下遊戲的內容就可以把它砍了。沒想到它卻出乎意料的把我給黏住，光把故事模式（Story）破過一次不說，還一關一關重新挑戰高分，最後<b><span class="Apple-style-span" style="color: red;">甚至登上了 Game Center 世界排名第一的寶座！</span></b>這個遊戲到底有怎樣的魅力呢？底下就讓我們來看一看。<br /><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-SuTUIzvrTB0/TfThc1xwzVI/AAAAAAAAAPk/1PJkKWh7Hi4/s1600/%25E7%2585%25A7%25E7%2589%2587.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SuTUIzvrTB0/TfThc1xwzVI/AAAAAAAAAPk/1PJkKWh7Hi4/s320/%25E7%2585%25A7%25E7%2589%2587.PNG" width="213" /></a></div><br /><br />先簡單介紹一下遊戲玩法。玩家在遊戲中操作的是企鵝把拔，為了救失散的三個企鵝寶寶與企鵝馬麻，而在冰川中不停前進過關。企鵝把拔會不斷的跳躍，因此玩家必須透過前後左右的擺動 iPhone，來控制企鵝把拔的一動方向，並且確保企鵝把拔不會落至海裡。遊戲一開始分成四大關，每大關各 25 個小關卡。在上次的資料更新之後，又追加了一個新的大關，一共 5 大關，125 個小關卡。每個小關卡中會有五條小魚分布在固定的位置，玩家除了普通的過關之外，也可以順便收集小魚以增加得分，這就有點類似《新超級瑪莉兄弟》中，每個關卡都會有的三個大金幣一樣，普通的玩家追求過關，而進階的玩家則追求小魚全吃到的完美過關，可以滿足不同等級的玩家需求。<br /><br />這個遊戲之所以會吸引我一玩再玩，不停挑戰高分，最主要的原因就在於它的關卡設計。遊戲透過一些簡單的機制構成關卡，例如鯊魚、海豹、劍魚、海星、海龜等，每種個有每種的障礙或用處。光只是設計出這些機關其實稀鬆平常，但是 Gamevil 的開發人員卻利用這幾個簡單的機制，設計出一關又一關好玩的關卡，這才是遊戲設計的精髓所在；<b><span class="Apple-style-span" style="color: red;">關卡間雖然構成的元素就是那幾樣，玩起來的感覺卻是大異其趣，不會因為有限的元素而讓玩家感覺到關卡總是千篇一律。</span></b>說起來，我玩《Air Penguin》玩到後期時，遊戲有帶給我一種重溫『超級瑪莉兄弟』的感覺，雖然兩款遊戲的方式與內容截然不同，可是就是有勾起我這樣的聯想。事後回顧，其實每個小關卡最後要跳中旗桿取得加分的方式，不也是瑪莉兄弟每關最後拉旗子拿分的一種變形？<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ESGC_S0csiA/TfThzPnWH9I/AAAAAAAAAP8/wpCn54c-sB4/s1600/IMG_1027.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-ESGC_S0csiA/TfThzPnWH9I/AAAAAAAAAP8/wpCn54c-sB4/s320/IMG_1027.PNG" width="213" /></a></div><br />最後來談談我挑戰到全球最高分的心得：<br /><br /><ul><li>遊戲每關的分數理論上限為 10000 分，其中每條小魚各 1000 分，共 5000。過關所花費的時間佔 4000 分，最後的 1000 分則是過關時，企鵝離關卡旗子的距離。</li><li>由於五條小魚就 5000 分了，因此要拿高分，必須盡可能的把每個小關的小魚都吃到。</li><li>接著比較有把握要拿下的是過關旗子的 1000 分。只要不離太遠，通常都會有分數，但只有正中旗桿紅心才有可能拿到 1000。關於這部份，如果關卡不是很難，我就反覆挑戰，以拿到 800 以上甚至 1000 分為目標；如果關卡有點難度，不太容易一直挑戰，我就以拿到 400 ,500 分為目標。</li><li>在冰原上滑行的關卡比較特別，因為無法自由控制進入過關旗子的角度，基本上只要能拿到些分數就可以，有機會的話再回頭挑戰高分。</li><li>時間的 4000 分是最困難拿滿分的。前面兩大關努力一下倒還可能，後面的關卡通常都只能拿到一、兩千分。不過冰原滑行的關卡算是特例，因為滑行速度一樣，所以幾乎都可拿滿分。</li><li>要縮短過關所需時間，可以從幾個方面著手：</li><ul><li>能夠用最遠跳躍距離一口氣跳到下下下個小島就盡量跳，不用老實的一個挨著一個小島前進。</li><li>注意海星的節奏。同樣的，很多關卡會看到一堆海星排列在一起，也不要傻傻的一個接著一個跳，能越過多少往前進就越過多少。</li><li>騎了海龜雖然安全，但別忘了保持速度前進。海龜是最容易讓人放鬆而浪費時間的存在。</li><li>鯨魚可以一口氣飛到很遠的地方。不過有時候飛得最遠的不見得是最快捷徑，別忘了考慮落點處附近的海星規律，以及是否有其他的鯨魚可以做連續噴射。</li></ul><li>總之還是一句老話，就是練習、練習、再練習。一個關卡玩久了，自然就能掌握到快速過關的捷徑。</li></ul><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-AxderUIoR5U/TfThsAGve1I/AAAAAAAAAPs/KT3QQ_IRrSA/s1600/IMG_0973.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://4.bp.blogspot.com/-AxderUIoR5U/TfThsAGve1I/AAAAAAAAAPs/KT3QQ_IRrSA/s320/IMG_0973.PNG" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">2011.5.21 記錄</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-uxj2KWfo68c/TfThxi7JvYI/AAAAAAAAAP4/LzE_gqUpspo/s1600/IMG_1026.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://4.bp.blogspot.com/-uxj2KWfo68c/TfThxi7JvYI/AAAAAAAAAP4/LzE_gqUpspo/s320/IMG_1026.PNG" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">本篇截稿時 (6.13) 還有 68 名</td></tr></tbody></table><div>----</div><div><b>Air Penguin</b></div><div><a href="http://itunes.apple.com/us/app/air-penguin/id425609130?mt=8">Air Penguin for iPhone, iPod touch, and iPad on the iTunes App Store</a></div><div>$0.99 (2011.6.13)</div></p>
 ]]></content>
   </entry>
   

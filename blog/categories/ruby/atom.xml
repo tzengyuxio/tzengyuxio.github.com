@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-03-31T11:32:31+08:00</updated>
+  <updated>2012-04-01T09:31:12+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -76,6 +76,34 @@
 <h2>在 Mac 上</h2>
 
 <p>上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 <code>sudo</code> 再執行就好了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［Ruby］書單]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/22/ruby-book-list/"/>
+    <updated>2006-01-22T10:26:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/22/ruby-book-list</id>
+    <content type="html"><![CDATA[<hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/0974514055/qid=1137896714/sr=8-1/ref=pd_bbs_1/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://www.oreilly.com/catalog/covers/0974514055.s.gif" alt="book cover" align="left" height="190" width="157" /></a><br /><span style="font-weight: bold;">Programming Ruby: The Pragmatic Programmers' Guide, Second Edition</span><br /><br />蠻有名的一本，有名到跟作業系統的「恐龍書」一樣，這本被叫做「鋤頭書」（Pickaxe book）。許多人推薦，看來似乎是學 ruby 必讀的教科書。可是好貴、貴...</div><br /><hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/0596002149/ref=sib_rdr_dp/104-2563592-1328726?me=ATVPDKIKX0DER&no=283155&amp;st=books&n=283155"><img src="http://www.oreilly.com/catalog/covers/ruby.s.gif" alt="book cover" align="right" height="190" width="127" /></a><br /><span style="font-weight: bold;">Ruby in a Nutshell</span><br /><br />基於對《C++ in a Nutshell》與對「歐萊禮」的好感，想必這本應該也不錯。大概是拿來擺在桌上的案頭參考書吧。</div><br /><hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/0672328844/qid=1137896714/sr=8-5/ref=pd_bbs_5/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://images.amazon.com/images/P/0672328844.01._SCLZZZZZZZ_.jpg" alt="book cover" align="left" height="200" width="156" /></a><br /><span style="font-weight: bold;">Programming the Ruby Way (2nd Edition)</span><br /><br />本書的第一版與鋤頭書一樣，在 amazon.com 也是獲得四顆半星評價。第二版預計今年六月才會推出。左邊是二版的封面，蠻有日本風的感覺。從書名與封面看來，感覺內容好像是在講「Ruby 之道」之類的的哲學性程式設計書籍。真玄。</div><br /><hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/1592000770/qid=1137896745/sr=8-8/ref=sr_8_xs_ap_i8_xgl14/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://buy.overstock.com/images/products/muze/books/1592000770.jpg" alt="book cover" align="right" height="254" width="205" /></a><br /><span style="font-weight: bold;">Game Programming with Python, Lua, and Ruby</span><br /><br />書名不錯，主題蠻吸引人的，一次包三種語言，想必應該是蠻厚的吧。書評普普，然而這是唯一一本與遊戲相關，且跨三種腳本語言的書，還是得找來翻翻瞧瞧。</div><br /><hr style="margin: 0px; clear: left;">
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/"/>
+    <updated>2006-01-21T13:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode</id>
+    <content type="html"><![CDATA[<p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。<br /><br />然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL 連線校對設為「utf8_general_ci」，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。<br /><br />這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 config/database.yml 中加入一行設定即可：<br /><pre><code><br />development:<br />  adapter: mysql<br />  database: example_development<br /><span style="color: rgb(255, 0, 0);">  encoding: utf8</span><br />  username: root<br />  password:<br /></code></pre><br />如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［安裝］Ruby on Rails on FreeBSD]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/10/ruby-on-rails-on-freebsd/"/>
+    <updated>2006-01-10T12:34:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/10/ruby-on-rails-on-freebsd</id>
+    <content type="html"><![CDATA[<p><span style="font-weight: bold;">Step 1: Install Ruby</span><br /><br />先前不曉得裝什麼軟體就一併裝好了，所以跳過。<br /><br /><span style="font-weight: bold;">Step 2: Install RubyGems</span><br /><br />這是等一下用來安裝 Rails 的工具，在 FreeBSD 下用 ports 安裝，輕鬆方便。<br /><code><br />[freebsd] /usr/ports/devel/ruby-gems> make install clean</code><br /><br /><span style="font-weight: bold;">Step 3: Install Rails</span><br /><br />照<a href="http://www.rubyonrails.org/down">官方網站</a>上的描述，同樣一行指令搞定。<br /><code><br />[freebsd] ~> gem install rails --include-dependencies</code><br /><br />註：我連試了兩次指令都執行到一半失敗，可能是網路 timeout 關係，第三次就順利成功了。<br /><br /><span style="font-weight: bold;">Step 4: 建立應用程式</span><br /><br />基本上這也是照著前一個網頁的指示作。<sup>_<sup>&lt;br</sup></sup> /><code><br />[freebsd] ~> rails /path/to/my/new/application<br />[freebsd] ~> cd /path/to/my/new/application<br />[freebsd] ~> ruby script/server<br /></code><br />接下來開啟網址 <span style="color: rgb(51, 51, 255);">http://0.0.0.0:3000</span> 就能夠看到關於 RoR 的說明了。<br />說明頁面的最底下有 Getting Started，可以開始寫 RoR 的程式囉！<br /><br /><hr />參考網址：<br />[1] <a href="http://www.rubyonrails.org/down">Download Ruby on Rails</a><br />[2] <a href="http://www.onlamp.com/pub/a/onlamp/2005/01/20/rails.html?page=1">Rolling with Ruby on Rails</a></p>
 ]]></content>
   </entry>
   

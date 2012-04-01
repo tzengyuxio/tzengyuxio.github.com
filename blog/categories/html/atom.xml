@@ -4,7 +4,7 @@
   <title><![CDATA[Category: html | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/html/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-03-31T11:32:31+08:00</updated>
+  <updated>2012-04-01T09:31:12+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -365,6 +365,15 @@ int main(void)
 <li><a href="http://yuanfarn.blogspot.com/2009/10/syntaxhighlighter.html">幻影千瞳的部落格: 使用 SyntaxHighlighter</a></li>
 </ul>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［解決］以 IE 瀏覽 Blogger.com 時出現空白頁的問題]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie/"/>
+    <updated>2006-01-23T01:14:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie</id>
+    <content type="html"><![CDATA[<p><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://lordcolus.blogspot.com/2005/04/iebloggercom.html">Lordcolus's Blog: 避免以IE瀏覽Blogger.com時出現空白網頁</a><br /><br />這篇的用意有二：<br /><ol><li>紀錄以 IE 開啟 blogspot.com 會出現空白頁這問題的解決方式。簡言之就是將範本中的 <span style="color: rgb(255, 0, 0);">&lt;$BlogMetaData$></span> 移到 <span style="color: rgb(255, 0, 0);"> &lt;title&gt;</span> 之前。</li><li>測試一下 <span style="color: rgb(102, 0, 204); font-weight: bold;">BlogThis</span><span style="font-weight: bold;"> </span>的功能。這篇是由上述網頁下方的 <span style="color: rgb(51, 51, 255); text-decoration: underline;">Create a Link</span> 連結直接產生的。<br /></li></ol></p>
 ]]></content>
   </entry>
   

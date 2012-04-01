@@ -4,7 +4,7 @@
   <title><![CDATA[Category: memo | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/memo/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-03-31T11:32:31+08:00</updated>
+  <updated>2012-04-01T09:31:12+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,41 +14,48 @@
 
   
   <entry>
-    <title type="html"><![CDATA[［心得］硬碟切割]]></title>
-    <link href="http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition/"/>
-    <updated>2005-11-22T04:24:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition</id>
-    <content type="html"><![CDATA[<p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：<br /><br /><blockquote>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br />至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。<br /><p>一般 server 用途, 8G 經驗法則還沒破功過 :)<br /></p><p>Windows server 我也是這樣規劃, 前 8G 畫成 C: 灌系統,<br />其它的空間全劃成 D: 有的沒的任何資料都放 D:<br /></p>儘供參考。 </blockquote><br />不過上述經驗法則主要是針對 server 用途而言。而且隨著軟體越來越龐大（尤其是安裝了 VS.NET 之後，我以前不裝這玩意兒的），以及經歷過幾次 <span style="color: rgb(0, 153, 0);">/var</span> 爆掉的慘痛教訓（FreeBSD auto 預設給的 <span style="color: rgb(0, 153, 0);">/var</span> 都不大），看來似乎得重新思索一下硬碟分割的策略。<br /><br /><ol><li>系統給 10G（目前用最多的大概用到 8.2G/Windows，5G/FreeBSD without X）</li><li>剩下的給 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span></li><li>FreeBSD 下系統的分配策略：</li><ol><li><span style="color: rgb(0, 153, 0);">/</span> : 256M</li><li><span style="color: rgb(0, 153, 0);">/tmp</span> : 不大於 ram (或乾脆 = ram 就好)<br /></li><li><span style="color: rgb(0, 153, 0);">swap</span> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</li><li><span style="color: rgb(0, 153, 0);">/var</span> 視剩餘空間與 X 的安裝與否，分配 1～2G</li><li>其餘通通給 <span style="color: rgb(0, 153, 0);">/usr</span> (至少須 6G 以上)<br /></li></ol><li>將部份資料搬移出系統分割區</li><ol><li><span style="color: rgb(153, 153, 0);">C:\Documents and Settings\username\My Documents</span> 搬到 <span style="color: rgb(0, 153, 0);">D:\HOME\username</span></li><li><span style="color: rgb(153, 153, 0);">/usr/local/www</span> 搬到 <span style="color: rgb(0, 153, 0);">/home/www</span> 下</li><li>如果 <span style="color: rgb(0, 153, 0);">/usr</span> 空間吃緊，將 <span style="color: rgb(0, 153, 0);">/usr/ports/distfiles</span> 也搬到 <span style="color: rgb(0, 153, 0);">/home</span> 底下</li></ol><li>原則：所有「有意義」的變動性檔案、文件，或需要儲存備份的資料，都往 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 底下丟</li><ol><li>像 <span style="color: rgb(153, 153, 0);">網頁cache</span> 就是屬於「無意義」的變動性檔案；反之，遊戲存檔是「有意義」的</li><li><span style="font-weight: bold;">非</span>常用的軟體的也丟到 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或個人資料夾下，如臨時安裝的程式，或是遊戲軟體</li><li>將所有系統分割區中需要備份的檔案（如設定檔）在 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 之下建立捷徑或 symbolic link<br /></li><li>此為原則，有些情況不必完全照著原則來。如資料庫檔案通常還是放在 <span style="color: rgb(0, 153, 0);">/var/db</span></li></ol><li>總之 10G 給系統，剩下的都拿來塞資料用 XD</li></ol>其實重點只需記住最後一點，至於其他的細節，那些都是個人經驗的累積，參考看看即可，不必然全部照作。</p>
+    <title type="html"><![CDATA[［辭海］幾內亞豬]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/12/12/guinea-pig/"/>
+    <updated>2006-12-12T09:46:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/12/12/guinea-pig</id>
+    <content type="html"><![CDATA[<p>在<a href="http://tenyitseng.blogspot.com/2006/11/openjdk.html">這裡</a>看到的，從前後文看來像是「白老鼠」的意思，<br />找了一下，在<a href="http://www.nvri.gov.tw/faq/5/5-003.htm">家畜衛生試驗所</a>的網站找到下面這段說明：<br /><blockquote><span style="color: rgb(255, 0, 0);">3. 英文為何稱天竺鼠為（guinea pig）「幾內亞豬」？</span><br /><span style="font-weight: bold;">答</span>：  天竺鼠外觀像「豬」叫聲又近似小豬，但為何叫做「幾內亞」?有此一說是，天竺鼠剛剛引入英國時價格非常貴，要一個金幣之譜，而英國之金幣則稱為（guinea ），所以天竺鼠是一個金幣之豬。</blockquote><br />跟原本猜測的意思應該差不多吧（我也不知道「天竺鼠」跟「白老鼠」一不一樣）。<br /><br />話說回來，「<a href="http://zh.wikipedia.org/wiki/%E6%96%B0%E5%B9%BE%E5%85%A7%E4%BA%9E">新幾內亞</a>」不就是「新金幣」的意思了？</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[［辭海］兩群人...]]></title>
-    <link href="http://tzengyuxio.me/blog/2005/11/21/two-group-of-people/"/>
-    <updated>2005-11-21T05:11:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2005/11/21/two-group-of-people</id>
-    <content type="html"><![CDATA[<ul> <li style="font-weight: bold;">3 Amigo</li>   <ul> <li>Rambaugh、Booch、Jacobson</li>  <li>制定 UML 規範的傢伙</li><li>後來都聚到 Rational Software 去了</li> </ul> </ul>
+    <title type="html"><![CDATA[［辭海］TGI & G.E.D]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/07/12/tgi-and-ged/"/>
+    <updated>2006-07-12T23:57:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/07/12/tgi-and-ged</id>
+    <content type="html"><![CDATA[<ul><li>T.G.I.F - Thank Godness It's Friday</li><li>Q.E.D. - quod erat demonstrandum (拉丁文，證明完畢)<br /><a href="http://zh.wikipedia.org/wiki/Q.E.D.">Wikipedia</a>、<a href="http://zh.wikipedia.org/wiki/Q.E.D._%E8%A8%BC%E6%98%8E%E7%B5%82%E4%BA%86">同名漫畫</a><br /></li></ul>
 
-
-<p> <ul> <li style="font-weight: bold;">Gang of Four (GoF)</li> <ul>      <li>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</li>     <li>寫出 Design Patterns 這書的傢伙</li> </ul> </ul></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[［辭海］長尾理論 The Long Tail]]></title>
-    <link href="http://tzengyuxio.me/blog/2005/10/01/the-long-tail/"/>
-    <updated>2005-10-01T21:35:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2005/10/01/the-long-tail</id>
-    <content type="html"><![CDATA[<p>前一陣子經常在網路文章中看到這詞。照我的個性來講，看到的當時要是不知道其含意的話，一定會馬上搜集資料搞清楚；可是照我的記性來講，查到的當時要是沒有立刻留下筆記的話，過了不久再看到還是會不知所云。<br /><br /><u>現下就是忘記了，只好乖乖作筆記</u>：<br /><ul><br /><li><a href="http://hopesome.com/index.php?p=203">The Long Tail:长尾理论</a>（by <a href="http://hopesome.com/index.php">hopesome</a>）：<br />詳細而清楚的說明。好懂。</li><br /><li><a href="http://en.wikipedia.org/wiki/The_long_tail">The Long Tail</a> (From Wikipedia)：<br />有了上篇，我還需要啃英文嗎？這篇八成會是我永遠不會參考到的參考資料。</li><br /><li><a href="http://www.wired.com/wired/archive/12.10/tail.html">The Long Tail</a> (Wired 12.10)：<br />長尾一詞最早被提出來的出處。同樣留存、備考。</li></ul><br />相關詞彙：<strong><a href="http://www.google.com/search?q=%2280+20+%E6%B3%95%E5%89%87%22+OR+%22pareto+principle%22&hl=zh-TW&lr=&sa=G&pwst=1&start=0&pws=0">80/20 法則</a></strong>、<strong><a href="http://en.wikipedia.org/wiki/Pareto_principle">Pareto principle</a></strong></p>
+    <title type="html"><![CDATA[［辭海］abbreviation glossaries, AFAIK.]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/06/04/abbreviation-glossaries-afaik/"/>
+    <updated>2006-06-04T15:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/06/04/abbreviation-glossaries-afaik</id>
+    <content type="html"><![CDATA[<p><span style="font-weight: bold;">見過或常用的：</span><br /><ul><li>   AFAIK - As Far As I Know, 就我所知</li><li>   AFK - Away From Keyboard, 放棄吧，人不在</li><li>   BRB - Be Right Back, 馬上回來</li><li dragover="true">   BTW - By The Way, 順道一題</li><li>   FYI - For Your Information, 給你參考</li><li>   IMHO - In My Humble Opinion, 依我個人淺見</li></ul><span style="font-weight: bold;">這啥鬼？</span><br /><ul><li>   GD&amp;H - grinning, ducking, and hiding<br />(微笑、閃避，然後躲起來)</li><li>   GD&amp;R - grinning, ducking, and running<br />(微笑、閃避，然後逃走)</li><li>   GD&amp;RVVF - grinning, ducking, and running, very, very fast<br />(微笑、閃避，然後快速逃走)</li><li>     BTDT - been there, done that<br />(順利達成任務)</li><li>BTDTBTT - been there, done that, bought the tape<br />(順利達成任務，買到了錄音帶)</li><li>   BTDTGTTS - been there, done that, got the t–shirt<br />(順利達成任務，拿到了 T 恤)</li><li>   BTDTGTTSAWIO - been there, done that, got the t–shirt, and wore it out<br />(順利達成任務，拿到了 T 恤，又穿破了)</li></ul><br /><hr />參考資料：<a href="http://www.microsoft.com/taiwan/windowsxp/experiences/acronyms.htm">立即訊息中的縮寫及速記法</a></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[［辭海］The Peter Principle]]></title>
-    <link href="http://tzengyuxio.me/blog/2005/09/29/the-peter-principle/"/>
-    <updated>2005-09-29T06:22:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2005/09/29/the-peter-principle</id>
-    <content type="html"><![CDATA[<p>看新聞時看到這詞，作了一下功課：<br /><ul><li><a href="http://www.104sense.com.tw/cfdocs/jobsense/sense/isee.cfm?tit=Peter%20Principle%A9%BC%B1o%A9w%AB%DF&sr=462_8596403&so=j">《Peter Principle彼得定律》</a>：<br />其實看完說明之後還是給它模糊。</li><br /><li><a href="http://www.china-mgt.com.tw/hrm-20.htm">企業人事風險的偵測</a>：<br />對彼德的介紹不多，但是本篇對於人事風險的介紹與案例有其參考價值。</li><br /><li><a href="http://www.javaworld.com.tw/jute/post/view?bid=15&id=96855&sty=1&tpg=1&age=-1&ppg=1">毎個人都會昇到不能勝任的位置 [精華]</a>：<br />生活上所遭遇實例的討論。</li><br /><li><a href="http://chinesetrad.joelonsoftware.com/PainlessSpecs/3.html">無痛功能規格 - 第三篇: 不過...要怎麼做呢?</a>：<br />蠻有意思的最後一點，昨天才剛聽到完全相反的看法。</li><br /></ul></p>
+    <title type="html"><![CDATA[［測驗］What Gender Is Your Brain ?]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/23/what-gender-is-your-brain/"/>
+    <updated>2006-01-23T01:35:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/23/what-gender-is-your-brain</id>
+    <content type="html"><![CDATA[<p>在 <a href="http://lordcolus.blogspot.com/2005/04/blog-post_16.html">Lordcolus's Blog</a> 看到的測驗，覺得好玩也試了一下。對於結果的描述我並不驚訝，倒是關於我大腦男女特性分配的百分比以及其後的敘述跟 Lordcolus 的一模一樣這點讓我有些意外。<br /><br /><div align="center"><a href="http://www.blogthings.com/genderbrainquiz/">What Gender Is Your Brain?</a><br /></div><br /><blockquote><span style="font-weight: bold;font-size:12;color:black;">Your Brain is 73.33% Female, 26.67% Male</span><br /><br />Your brain leans female<br />You think with your heart, not your head<br />Sweet and considerate, you are a giver<br />But you're tough enough not to let anyone take advantage of you!</blockquote></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［辭海］包袱、梗、哏]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/22/baofu-geng-gen/"/>
+    <updated>2006-01-22T09:07:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/22/baofu-geng-gen</id>
+    <content type="html"><![CDATA[<p>常聽相聲的人，不難注意到相聲中對於笑點有其特殊的術語，比方說「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=3626&amp;GraphicWord=yes&QueryString=%A5%5D%B5%F6">包袱</a>」。「繫包袱兒」、「解包袱兒」、「抖包袱兒」，說的便是在相聲中醞釀、鋪陳、發展，以至最後引噱的一個過程。嚴格說來，「笑點」與「包袱」兩辭在用法與涵義上是有微妙差別的。<br /><br />「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&amp;DocNum=60305&GraphicWord=yes&amp;QueryString=%B1%F0">梗</a>」是另外一個意思與「笑點」接近的辭，所謂的「老梗」，即是指「經常用的笑點」、「老笑話」的意思。但是「梗」這個字其實是現代人的誤用，正確的用字應該是「哏」。「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=59966&amp;GraphicWord=yes&QueryString=%CD%FE">哏</a>」字本身具有「滑稽可笑」的意思；雙口相聲中，通常會有一人「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&amp;DocNum=12891&GraphicWord=yes&amp;QueryString=%CD%FE">捧哏</a>」，一人「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=32575&amp;GraphicWord=yes&amp;QueryString=%CD%FE">逗哏</a>」的角色分配。<br /><br />‧梗：ㄍㄥˇ<br />‧哏：ㄍㄣˊ<br /><hr />參考資料：<br />[1] <a href="http://big5.china.com.cn/chinese/feature/814147.htm">天津話咋就那麼哏</a><br />[2] <a href="http://www.ndcnc.gov.cn/datalib/2002/ArtKnowledge/DL/DL-175775">抖“包袱儿”</a></p>
 ]]></content>
   </entry>
   

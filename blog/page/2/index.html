@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 github 的 gist 服務來將程式代碼內嵌到網頁（使用效果見此），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。 不過有時候只是想要顯示幾行代碼， &hellip;">
+  <meta name="description" content="我發現我是編輯器控。 前些時日研究了幾個輕量級標記語言，最後情定 Markdown，結果沒多久就開始在想「Markdown 要用什麼編輯器來寫比較好？」雖然已經有了 Vim 這個強力武器，也支援 Markdown（沒有什麼語法是 Vim 支援不了的）， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,7 +83,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/08/07/embeded-code-with-google-code-prettify/">用 Google-code-prettify 在網頁中嵌入代碼</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/02/10/markdown-editor/">Byword, iA Writer 以及一些其他的</a></h1>
     
     
       <p class="meta">
@@ -99,114 +99,147 @@
   
 
 
-<time datetime="2011-08-07T09:13:00+08:00" pubdate data-updated="true">Aug 7<span>th</span>, 2011</time>
+<time datetime="2012-02-10T03:00:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 <a href="https://github.com/">github</a> 的 <a href="http://www.gist.com/">gist</a> 服務來將程式代碼內嵌到網頁（<a href="http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response/">使用效果見此</a>），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。</p>
+  <div class="entry-content"><p>我發現我是編輯器控。</p>
 
-<p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>
+<p><img src="/images/2012/2012-02-10-iawriter.png" alt="image" /></p>
 
-<p>其實就功能上而言，SyntaxHighlighter 遠遠勝過 google-code-prettify，之所以選擇了 google-code-prettify，最主要的原因就在於「<strong>簡單</strong>」。兩者的比較如下（分別簡稱為 GCP 和 SH）：</p>
+<p>前些時日<a href="http://coder.aqualuna.me/2011/10/asciidoc-markdown-restructuredtext.html">研究了幾個輕量級標記語言</a>，最後情定 Markdown，結果沒多久就開始在想「Markdown 要用什麼編輯器來寫比較好？」雖然已經有了 Vim 這個強力武器，也支援 Markdown（沒有什麼語法是 Vim 支援不了的），但總是想找個更體面點的編輯器來感受一下輕量級標記語言之美，最好是即便在純文字模式下也能清楚標示出 Markdown 的語法。</p>
 
-<ul>
-<li>遇到過長的程式碼，SH 可以顯示出 Scrollbar，維持原排版；而 GCP 則會強制換行。</li>
-<li>SH 預設有行號，GCP 也可加入行號，但不方便。</li>
-<li>兩者都支援顏色主題。包含預設的在內，SH 現有 7 種顏色主題，GCP 則有 4 種。</li>
-<li>SH 支援 23 種程式語法，GCP 預設內建的也有 20 種左右。</li>
-<li>就安裝上，GCP 只要加入兩個檔案，就可以處理大多數的語言；SH 則除了得加入核心的 CSS 與 JavaScript 檔共三個檔外，還必須加入對應使用程式語言的 JavaScript。</li>
-<li>使用上兩者差異不大。SH 除了 <code>&lt;pre&gt;</code> 標籤外也提供了 <code>&lt;script&gt;</code> 的使用方式；GCP 則是可以省略語法指定，自動判斷。</li>
-</ul>
+<p>經過簡單的搜尋，適合 Markdown 的編輯器大概鎖定了 <a href="http://bywordapp.com/">Byword</a> 與 <a href="http://www.iawriter.com/">iA Writer</a> 這兩套。然而這兩套軟體都沒有試用下載，價格也不算低，我不想兩套都買，只好上網找些比較的文章來看，看是哪一套軟體較好。這兩套軟體有個共同的特色，就是具有專注模式（focus mode），最近的編輯器市場似乎有個潮流，好幾套編輯器都強調介面的簡化，讓使用者專注在文字輸入 (distract-free writing) 上。果然分心是打文章的大敵，一不小心就會忘記寫到哪邊，然後一篇短短的文章寫個老半天這樣（笑）。</p>
 
+<p>以專注於文章撰寫為訴求的編輯器，除了 Byword 與 iA Writer 外，比較有名的還有 <a href="http://www.hogbaysoftware.com/products/writeroom">WriteRoom</a> 以及 <a href="http://www.ommwriter.com/en/">OmmWriter</a>，找資料時也跟著看了不少評論，底下就一起寫一下介紹與心得吧。</p>
 
-<p>由於我經常跨不同程式語言撰寫，因此 SH 在安裝上對我而言就顯得比較不便。雖然新版提供了 Autoloader 來動態決定要載入哪些程式語言語法的 JavaScript，不過我最後還是選擇單純一點的 GCP。GCP 對我而言最大的缺點就是沒有行號，我在 IDE 上寫 code 一定會打開行號顯示，不過反正網頁上顯示的代碼行數都不多，沒有行號這一點倒是還可以接受。</p>
+<h2>WRITEROOM</h2>
 
-<p>以下就是我的 google-code-prettify 安裝筆記：</p>
+<p>這一套應該是最早出現的專注型編輯器吧，首頁的副標寫的就是 &#8220;Distraction free writing.&#8221; 有 Mac 和 iPhone 版，Mac 版在寫這篇文章時賣 $9.99，不過在許多文章中看到他的歷史價格是 $25，也許因為是最早推出的專注型編輯器的關係吧，那時還缺乏競爭對手。</p>
 
-<h2>Step 1.</h2>
+<p>另外，WriteRoom 似乎尚未支援 Markdown 語法的樣子，我在 App Store 的敘述中和官網的介紹裡都沒有看到。這樣的話，反而有語法標記的 Vim 還來得有用些，而且 Vim 也可以切換到 WriteRoom 模式（<a href="http://www.vim.org/scripts/script.php?script_id=2231">方法一</a>, <a href="http://mutelight.org/articles/vim-is-writeroom-level-2">方法二</a>）</p>
 
-<p>到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> 首頁下載好檔案後，解壓放到自己的網路空間上。我是放到 Dropbox 的 public 資料夾下。</p>
+<h2>OMMWRITER</h2>
 
-<h2>Step 2.</h2>
+<p>這是很特別的一款編輯器，他讓使用者在輸入文字時，能夠完全進入到一個<strong>禪的境界</strong>。當使用者在打字時，除了簡單卻不擾人的打字音效外，背景同時也會播放輕柔淡雅的音樂。介面簡單，可以做些簡單的字型與背景設定，平常打字時介面則會自動隱藏。本文所介紹的編輯器都是以 MAC 為主，不過 OmmWriter 也有 PC 版本，都可以免費下載。</p>
 
-<p>然後再修改自己網頁的範本。有兩個地方要修改，一個是在 <code>&lt;/head&gt;</code> 標籤之前加上 css 與 javascript 的載入；另外一個是在 <code>&lt;body&gt;</code> 標籤內加上 onLoad 函式。</p>
+<p>不過我不喜歡他的編輯區外面有個虛線的框，除此之外，我工作通常時也不需要背景音樂。對了，這一款也沒有支援 Markdown 語法。如果不是因為 Markdown 這點，我想免費且跨平台的 OmmWriter 應該是不錯的選擇。</p>
 
-<pre class="prettyprint lang-html"><code>&lt;head&gt;
-  &lt;-- 中略 --&gt;
-  &lt;-- 1. 在 /head 標籤前加入下面兩行 --&gt;
-  &lt;link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/&gt;
-  &lt;script src="http://my.url.to/prettify.js" type="text/javascript"/&gt;
-&lt;/head&gt;
+<h2>BYWORD</h2>
 
-&lt;-- 2. 在 body 標籤內加入 onload 設定 --&gt;
-&lt;body onload='prettyPrint()'&gt;
-&lt;/body&gt;
-</code></pre>
+<p>這款在 WriteRoom 和 iA Writer for iPad 之後推出，算是結合了 WriterRoom 的專注模式與 iA Writer 優雅介面兩方面特色。售價 $9.99, 還算平易近人。我喜歡 Byword 的雙色模式，可以選擇要以白色或是黑色作背景。Byword 的 focus 模式作的也比 iA Writer 好，除了可以自己選擇 focus 的範圍（一句、一段或幾行）外，focus 模式時上下邊緣漸層淡出的設計也很別緻。</p>
 
+<p>Byword 支援 Rich Text 與 Markdown 兩種格式。不過老實說，雖然從 Windows 的小作家就有 Rich Text 了，可是我用了這麼多年電腦，真的很少見到（更不用說自己寫了）Rich Text 格式的文件，要嘛就純文字，要嘛就 Word/HTML, Rich Text 實在是個不上不下的格式。</p>
 
-<h2>Step 3.</h2>
+<p>我喜歡 Byword 的地方還有一點，就是他可以直接將 Markdown 輸出成 HTML, 這對於寫 blog 很方便，寫好後轉換貼上就好。iA Writer 雖然也可以寫 Markdown, 但就沒辦法像 Byword 這樣直接轉換。不過我最後還是選了 iA Writer, 為什麼呢？</p>
 
-<p>接下來只要在想要使用代碼的地方，用 <code>&lt;pre&gt;</code> 或 <code>&lt;code&gt;</code> 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。</p>
+<h2>IA WRITER</h2>
 
-<pre class="prettyprint lang-html"><code>&lt;pre class="prettyprint"&gt;
-#include &lt;stdio.h&gt;
- 
-int main(void)
-{
-   printf("Hello, world!\n");
-   return 0;
-}
-&lt;/pre&gt;
-</code></pre>
+<p>我對 iA Writer 第一眼的感覺就是它的 Markdown 排版是很棒的設計。與其他軟體所不同，iA Writer 利用它左邊的空白處（Margin）來處理標題與清單列表的前綴標記，相當有創意。</p>
+
+<p>在此引用一下 <a href="http://brooksreview.net/2011/05/ia-writer/">Review: iA Writer for Mac</a> 這篇文章中的一段話，作為 Byword 與 iA Writer 的比較：</p>
+
+<blockquote><p>Byword is for people that know they want to do all their writing in one app. Writer is for people that just want to open something and write.（Byword 是給那些清楚自己要在一個 app 中完成所有撰寫工作的人。而 Writer 則是設計給想要打開個什麼然後就開始寫字的人。）</p></blockquote>
+
+<p>iA Writer 看上去是個很簡單的編輯器，它也真的很簡單，簡單卻又不簡單。這話怎麼說呢？iA Writer 完全沒有任何自定項目：沒有偏好設定視窗；不能改變字型、背景、顏色；只有支援 Markdown, 還強迫一定得是 Markdown，不能取消標記功能；不管視窗拉多寬，每行固定 64 個字母寬。完全沒有妥協餘地。</p>
+
+<p>然而在這麼限制重重的環境下，iA Writer 卻能帶給我一種「嗯，就是這麼剛好。」的感覺，在 iA Writer 裡面打字似乎是天經地義極為自然的一件事，一點都不會想要去改動什麼設定。它微白又略略帶點紋路的背景，配上青藍色閃爍的游標，順眼而不搶眼。整個程式的設計都是圍繞在打字本身的體驗上，至於各種花俏功能、排版的格式樣式、巨集或是插入範本、分割視窗遠端編輯什麼的，通通都不管。</p>
+
+<p>當然沒有程式是完美的，然而 iA Writer 已經很接近完美了。前面說過，我喜歡 Byword 的雙色模式，不過用了 iA Writer 後，覺得雙色背景的選擇也是多餘。而 Byword 可以直接輸出成 HTML 這個功能，也可以透過<a href="http://coder.aqualuna.me/2012/02/os-x-markdown-html.html">在 Automator 新增服務</a>的方式，讓 iA Writer 也能直接輸出 HTML 結果。</p>
+
+<p>實際使用一陣子後，iA Writer 倒是有兩個地方我覺得可以再改進的。一個是 Markdown 的連結模式區別不夠明顯，同顏色的連結與連結文字混淆在正文中容易造成閱讀不便。另外一個可改進之處是中文與英文文字對齊方式不同，中文預設對齊字型的降部（Descenders）底緣，如果一行中有英文的話，該行內的中文字會與英文一樣對齊基線（Baseline），這使得中英夾雜的文章中看起來會有行高不同的錯覺。</p>
+
+<p>iA Writer 在 App Store 的定價 $19.99，比起 Byword 倒是高了不少。不過最近似乎是在促銷，只要 $8.99，反倒比 Byword 便宜了些。喜歡用純文字寫文章的朋友，不妨考慮看看。</p>
+</div>
+  
+  
 
 
-<p>上面這段代碼的結果如下：</p>
-
-<pre class="prettyprint"><code>#include &lt;stdio.h&gt;
- 
-int main(void)
-{
-   printf("Hello, world!\n");
-   return 0;
-}
-</code></pre>
-
-
-<p>如果想要自己指定區塊內的程式語言，可以再加上 <code>lang-*</code>，其中 * 要替換成該程式語言的代碼。</p>
-
-<pre class="prettyprint"><code>&lt;pre class="prettyprint lang-html"&gt;
-  &lt;-- HTML 的場合 --&gt;
-&lt;/pre&gt;
-&lt;pre class="prettyprint lang-c"&gt;
-  /* C 的場合 */
-&lt;/pre&gt;
-&lt;pre class="prettyprint lang-py"&gt;
-  " Python 的場合
-&lt;/pre&gt;
-</code></pre>
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/07/the-truth-is-out-there/">光鮮亮麗背後的真相</a></h1>
+    
+    
+      <p class="meta">
+        
 
 
-<p>目前支援的代碼有</p>
 
-<blockquote><p>&#8220;bsh&#8221;, &#8220;c&#8221;, &#8220;cc&#8221;, &#8220;cpp&#8221;, &#8220;cs&#8221;, &#8220;csh&#8221;, &#8220;cyc&#8221;, &#8220;cv&#8221;, &#8220;htm&#8221;, &#8220;html&#8221;, &#8220;java&#8221;, &#8220;js&#8221;, &#8220;m&#8221;, &#8220;mxml&#8221;, &#8220;perl&#8221;, &#8220;pl&#8221;, &#8220;pm&#8221;, &#8220;py&#8221;, &#8220;rb&#8221;, &#8220;sh&#8221;, &#8220;xhtml&#8221;, &#8220;xml&#8221;, &#8220;xsl&#8221;</p></blockquote>
 
-<p>看得出來是以程式碼的副檔名做區隔。基本上常見的幾乎都包含在裡面了。</p>
 
-<hr />
 
-<p>參考資訊：</p>
 
-<ul>
-<li><a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a></li>
-<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a></li>
-<li><a href="http://www.vixual.net/blog/archives/197">在 Blogger 中使用 google-code-prettify 顯示程式碼 | Vixual</a></li>
-<li><a href="http://www.vixual.net/blog/archives/198">在 Blogger 中使用 dp.SyntaxHighlighter 顯示程式碼 | Vixual</a></li>
-<li><a href="http://yuanfarn.blogspot.com/2009/10/google-code-prettify.html">幻影千瞳的部落格: 使用 google-code-prettify</a></li>
-<li><a href="http://yuanfarn.blogspot.com/2009/10/syntaxhighlighter.html">幻影千瞳的部落格: 使用 SyntaxHighlighter</a></li>
-</ul>
+
+  
+
+
+<time datetime="2012-02-07T15:28:00+08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天看到很多人都在傳這一張圖片：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td class="tr-caption" style="font-size: 13px;">source: www.7even.com.tw</td></tr></tbody></table><div style="font-size: medium; text-align: left;"></div></td></tr></tbody></table>乍看好像邪惡組織比較吸引人。但是別忘了，那些擁有偉大目標、為了實現夢想沒日沒夜地努力、即使失敗也不氣餒，能夠指揮組織行動，最後還笑容滿面的，都是<strong>邪惡組織的頭目級領導人物</strong>啊！真正加入邪惡組織後，底下就是最血淋淋的職場寫照：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/35Kc4jM2Sew/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />少年們，醒醒吧！<br /><a href="http://wiki.komica.org/wiki3/?%E6%88%90%E5%8F%A5%2F%E5%88%A5%E5%86%8D%E7%9B%B8%E4%BF%A1%E6%B2%92%E6%9C%89%E6%A0%B9%E6%93%9A%E7%9A%84%E8%AA%AA%E6%B3%95%E4%BA%86">別再相信沒有根據的說法了</a>！<br /><br /><em> * * </em><br />以下是更多誘拐有為年輕人加入邪惡組織的宣傳稿：<br /><ul><li><a href="http://n.yam.com/cardu/fn/201202/20120201058967.html">智慧科技帶動遊戲熱　逾八成想轉戰遊戲業-財經新聞-yam蕃薯藤新聞</a></li><li><a href="http://www.nownews.com/2012/01/31/91-2780266.htm">6成9上班族想進遊戲業　期望薪資37386元 | 頭條新聞 | NOWnews 今日新聞網</a></li></ul></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/07/seven-eleven/">最近的 7-ELEVEN 啊</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-07T10:48:00+08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-CMrUObFVmYE/TzCC180FvYI/AAAAAAAAJRU/_Ut6VVenz_c/s1600/IMG_2123.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="241" src="http://3.bp.blogspot.com/-CMrUObFVmYE/TzCC180FvYI/AAAAAAAAJRU/_Ut6VVenz_c/s640/IMG_2123.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">重慶南路的7-11由街角處（現為艾美麗）搬移到了巷子中。攝於2012-01-30</td></tr></tbody></table>
+
+
+<div class="separator" style="clear: both; text-align: left;"><br /></div>
+
+
+<div class="separator" style="clear: both; text-align: left;"></div>
+
+
+<div style="text-align: -webkit-auto;">最近注意到有幾家 7-11 作了同樣的事情，就是從原本的街角的黃金地帶搬到附近不遠處，距離原店址大約三四戶的地方。如果只有一家店搬，我只會單純想到是租約到期之類的原因，但短時間內同時見到數家 7-11 都有類似的搬遷動作，就不得不讓人去思考背後是否有某種經營策略上的調整？</div>
+
+
+<div style="text-align: -webkit-auto;"></div>
+
+
+<br /><div style="text-align: -webkit-auto;">顯而易見的，這樣的搬遷使得原本 7-11 店鋪的可見性降低，畢竟街角是路口四方向都可以看到的點，來往的人潮也最多，而路邊或巷邊的 7-11 則只有同條路上的人才能見到。基於以上道理，三角窗（街角）的租金向來也比周遭店面來得高，甚至會高到倍數以上。不過我不覺得 7-11 搬到非街角地段，純粹只有租金考量。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">就我看來，7-11 的搬遷，其實某種程度反應了便利商店（尤其是 7-11）在我們生活中扮演的角色，已經從「剛好、順便去一下」的商店，成為「被尋找的主體」。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">住在都市的朋友，相信都會在自己或周遭朋友上看到一個現象：就是每當前往一個風景區或新地點時，總是會下意識尋找「麥當勞」或其他熟悉的連鎖速食店的店面。就算不一定會去吃，但至少在想不到吃什麼時，也不失為一個選擇。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">前面所提到的 7-11，便是成為這樣的一個存在。我出門不是為了「去隨便一間商店買個喝的」，而是為了「要去 7-11 領博客來的書／繳水電費／去 ATM 領錢」這樣明確的目的（然後順便買個喝的）。所以 7-11 就算開在不顯目的非三角窗地帶，也不怕你不來，因為你會去找他。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">所以進一步觀察，不難發現到店址的搬遷只是變化之一，搬遷後的店面通常也會伴隨著店面空間的擴大。而空間越大，就能提供更多硬體上的服務，包括 ATM、用餐區，甚至是廁所。以往是鄉下省道旁比較容易見到有帶停車場與廁所的 7-11，作為簡易休息區的替代，而現在都會區中很多 7-11 也開始都有提供廁所了。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">寫到這邊讓我想起以前短暫待過出版社時，曾經問過上頭的編輯一個問題：「為什麼有些雜誌的 Logo 標準字體蓋在封面人物上，而有些則是封面人物蓋在 Logo 字體上？哪一種比較好？」</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">編輯告訴我，沒有哪一種比較好，純粹是考量出發點不同。至於為什麼會有不同的作法？其實答案就和 7-11 在不在街角開店是一樣的。</div>
 
 </div>
   
@@ -220,7 +253,7 @@ int main(void)
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/07/30/eclipse-common-keyboard-shortcuts/">Eclipse 的常用快速鍵</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/02/06/aperture-iphoto-lightroom-picasa/">相片管理的選擇, Aperture, iPhoto, Lightroom, Picasa</a></h1>
     
     
       <p class="meta">
@@ -236,68 +269,14 @@ int main(void)
   
 
 
-<time datetime="2011-07-30T16:09:00+08:00" pubdate data-updated="true">Jul 30<span>th</span>, 2011</time>
+<time datetime="2012-02-06T19:55:00+08:00" pubdate data-updated="true">Feb 6<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>我身為一個程式設計師，有個鍵盤在身邊，也很合邏輯。這個鍵盤呢，是我用來撰寫代碼用的，很合理吧？可話說回來，這扳子，啊不，這鍵盤如果只有拿來寫代碼，那可就浪費了；身為一個<strong>高生產力</strong>的程式設計師，應該充分活用鍵盤的各種功能，活用到甚至能夠取代大多數滑鼠的操作，那才叫<a href="http://youtu.be/yKWwrxaOxsY">專業</a>。所以說，善用功能熱鍵就很重要啦，江湖上有本武功秘笈，書名叫做<a href="http://www.anobii.com/books/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E6%8F%90%E5%8D%87%E7%94%9F%E7%94%A2%E5%8A%9B%E7%A7%98%E7%AC%88/9789866840340/01c423030629cd8ad5/">《程式設計師提昇生產力秘笈》</a>，裡頭就有一段關於「奧義，鍵盤捷徑」的心法敘述：</p>
-
-<blockquote><p>&#8230;&#8230;程式設計（除了使用者介面設計外）是文字性活動，所以，你應該儘可能把你的手放在鍵盤上。&#8230;&#8230;你一整天都使用 IDE 建立程式碼，而 IDE 有大量鍵盤捷徑。<strong>全都學！</strong>使用鍵盤捷徑在原始碼內走動，一定比使用滑鼠快。 (P.30)</p></blockquote>
-
-<p>當然，沒有必要每個人都成為一代武林宗師，因此也沒有必要像上面說的一樣將每個鍵盤捷徑全部學起來。大多數人只要學個一招半式，就可以闖蕩江湖，應付<a href="http://wiki.komica.org/wiki/?%E9%AB%98%E9%81%94%E5%85%AB%E6%88%90">高達八成</a>以上的滑鼠操作。可是，功能熱鍵百百款，到底哪些才是常用需要記得呢？底下整理一些 Eclipse 上常用的熱鍵表：</p>
-
-<h2>編輯相關</h2>
-
-<ul>
-<li><code>Ctrl + Shift + F</code> = 重新排版</li>
-<li><code>Ctrl + Shift + M</code> = 加入 import （加入游標所在類別所需的 import）</li>
-<li><code>Ctrl + Shift + O</code> = 整理 imports （掃描整個檔案，加入所需並刪除沒用的）</li>
-<li><code>Ctrl + /</code> = 切換註解（按一次加上註解，再按一次取消註解）</li>
-<li><code>Ctrl + I</code> = 修正縮排</li>
-<li><code>Alt + Shift + ↑</code> = 擴大選取</li>
-</ul>
-
-
-<h2>游標或檔案定位</h2>
-
-<ul>
-<li><code>F3</code> = 跳到定義</li>
-<li><code>Ctrl + E</code> = 已開啟檔案清單</li>
-<li><code>Ctrl + O</code> = 開啟符號清單</li>
-<li><code>Ctrl + J</code> = 漸增式搜尋</li>
-</ul>
-
-
-<h2>除錯與執行</h2>
-
-<ul>
-<li><code>F11</code> = 以除錯模式啟動 (Debug)</li>
-<li><code>Ctrl + F11</code> = 啟動 (Run)</li>
-<li><code>F5</code> = 步進，深入一層 (Step Into)</li>
-<li><code>F6</code> = 步進，往下一行 (Step Over)</li>
-<li><code>F7</code> = 步進，回上一層 (Step Return)</li>
-</ul>
-
-
-<h2>重構相關</h2>
-
-<ul>
-<li><code>Alt + Shift + R</code> = 重新命名 (Rename)</li>
-<li><code>Alt + Shift + M</code> = 提煉函式 (Extract Method)</li>
-<li><code>Alt + Shift + L</code> = 提煉區域變數 (Extract Local Variable)</li>
-</ul>
-
-
-<p>如果覺得上面這些功能熱鍵還不夠看，當然也可以自己進去 Eclipse 的設定中去挖掘更多的指上神功。查看功能熱鍵列表的途徑要從選單列的 Window → Preferences 進入，接著就可以看到下面這張圖，然後按圖索驥，找到自己常用功能的熱鍵。</p>
-
-<p><img src="http://4.bp.blogspot.com/-0Bds_glMARA/TjO3I7Q5cRI/AAAAAAAAAZw/Pn_C_vQoIYY/s400/eclipse-shortcut.png" alt="eclipse key binding" /></p>
-
-<p>好啦，上面列出這許多的熱鍵，要怎樣才能有效的背下來呢？很簡單，不用背－－最有效的記憶方法不是靠腦袋記，而是<strong>用身體去記</strong>。把常用功能熱鍵印出來貼到電腦旁邊，然後不斷的用、不停的用，直到每次要使用該功能時，腦袋想都來不及想手指就已經按出組合熱鍵，這樣就再也忘不掉了。（不過太久沒用的話，還是需要一小段時間來重新回復手感，只要一小段時間而已，真的。）</p>
-
-<p>除此之外，當每次要使用選單列（Menu Bar）或工具列（Toolbar）上某樣功能時，停下來多想兩秒鐘：不要急著按下滑鼠左鍵，先看看選單文字或按鈕的提示上有沒有快速鍵的按法，有的話將手放開滑鼠，重新以快速鍵的方式完成自己的目的。久而久之，這些操作自然都會內化成為身體上的一部分。只要持之以恆，每日精進，減少手指頭在鍵盤滑鼠上切換的次數，那麼總有一天，我想，要達到「每小時幾十萬行程式碼上下」也不再是個夢想啦！</p>
+  <div class="entry-content"><p>雖然不是說很專業，其實連業餘也稱不上，不過從買了第一台數位相機（CASIO QV-2800UX）到現在，前前後後也經歷過九個年頭、五台相機，之中還被偷走了一台，而這中間所累積的相片也有數千張之譜。然而因為缺乏整理，使得這些照片散落在家中不同的電腦、不同的網路分享區、不同的外接式硬碟以及不同的隨身碟中。更有甚者，同樣的照片還有不同版本放在不同的儲存設備，有原始版的，有為了傳給朋友縮過大小的，有 retouch 過的，不仔細比對還真的想不起來到底這些照片的先後順序因果關係。<br /><br />雖然想到就覺得累人，但總歸還是得找個時間徹底好好整理下照片。去年年底狠下心來，買了 Aperture 這套軟體，然後一個一個電腦、外接硬碟、隨身碟檢查，花了好幾個禮拜終於將照片全部匯入到 Aperture 中進行管理。也才知道自己這些年到底拍了多少張照片，去過哪些地方，也不用在每次想要回憶美好時光時，都要先想辦法回憶起那些美好時光的照片到底放在哪裡。<br /><br />其實在決定買下 Aperture 之前，也有考慮與試過其他選項，像是 iPhoto, Picasa, Lightroom, 但是每個軟體都有其優勢與不足之處，沒有完美無缺的 Solution。以下就簡單記錄下我對這四個軟體的使用感想，以及最後為什麼選擇 Aperture。<br /><br /><h2>Picasa</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" width="320" /></a></div>我在自己還在以 Windows 為主要環境的時代，就裝了 Picasa 來玩－－可是裝不久就移除掉了；後來 Picasa 出了新版，我又裝了，又移掉；又過一陣子注意到改版了，又裝，這次沒移，但是我僅僅是把 Picasa 留下當做看圖軟體。我喜歡 Picasa 他那把照片凸顯，其他桌面部分暗掉的無視窗方式瀏覽介面－－然而他主打的照片管理功能，我卻壓根不想使用。<br /><br />到了換以 Mac 作為主要環境的時候後，先後也裝過兩三次 Picasa, 也試著開始用 Picasa 來管理照片，但最後怎樣就是無法習慣，可能是軟體設計思維的不同吧，總覺得跟我自己對於照片管理的想法處處格格不入。<br /><br />Picasa 充分體現了 Google 作為一家搜尋引擎公司的思維，第一次啟動 Picasa 時，就會搜尋你整個電腦裡面的圖檔，全部加入，而這正是我最討厭的一點。我想要的是照片管理，可是 Picasa 卻會試著把你電腦裡所有圖片檔案列入他的管轄範圍內。圖片檔案有太多意義了，也許是照片、也許是工作用的中間圖片、也許是網路下載的有趣漫畫、也許是文件意義比圖片意義強烈的 Infographic，我不想要 Picasa 包山包海地把這些東西都納入他的檔案庫中。我只是單純的想要一個照片管理軟體。<br /><br />其實我很希望我能用 Picasa 這套軟體來管理照片，畢竟我買了 Google 的儲存空間，如果能夠直接把照片同步 Picasa Web 上，我就不用煩惱照片備份的問題了。不過 Picasa Web 的照片管理功能也是充滿問題的設計，用手機隨手上傳一張圖檔，就會多出一個以日期為名的小資料夾，這種資料夾一多，看了也心煩。更別提 Picasa 與 Picasa Web 的同步其實設計的很不貼心，許多地方必須手動。最好是能夠像 Dropbox 一樣，讓我指定一個本機資料夾，自動把網路相簿抓到該資料夾，丟到該資料夾的也會自動上傳。<br /><h2>iPhoto</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="211" src="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" width="320" /></a></div>換到 Mac 上作業後，曾經用過一段時間的 iPhoto。剛開始不習慣他把所有圖檔都放在一個叫做 &#8220;iPhoto Library&#8221; 的黑盒子中，畢竟在長久以來習慣了用資料夾作管理的形式，突然間沒有了資料夾作為存取照片的管道，心理總覺得不踏實。<br /><br />不過黑盒子的方式用久了其實倒也還好，就像是 Gmail 剛推出時只有標籤（Tag）沒有資料夾的管理，只要用不同的方式去思考，很快就可以習慣這樣的方式。反正檔案要給別人時就直接匯出，剩下的原始檔通通藏在黑盒子中，我也樂得輕鬆，不用去煩惱到底要怎麼安排這些檔案的存放方式。<br /><br />基本上，iPhoto 的使用經驗對我而言是無懈可擊的。人臉辨識與地點標記都是相當棒的功能體驗，照片的編輯與調整我也覺得夠用了，介面簡潔，很直覺便可找到你想做的工作該怎麼進行。然而他有兩個問題使我不得不考慮其他方案。第一個是無法顯示完整的 EXIF 資訊，也許是我的使用不夠深入，總之就是找不到顯示完整 EXIF 的方法。<br /><br />第二個問題就比較令人頭痛。在 iPhoto 上調整一張照片，就會產生一份該照片的副本，也就是當你調整的照片越多，所佔去的硬碟空間就越大，對於記憶體的使用也有相當影響。然而在 Picasa 和 Aperture 中，當你進行照片的修改時，Picasa 與 Aperture 只會儲存這些照片的修改參數的 Metadata，就算一張照片有十個不同風格的修改版本，也只會多用到一點點的容量，而不會消耗掉十倍的硬碟空間。因為 iPhoto 這樣的設計，所以據說當照片數目多到一個程度時，開啟的速度像牛步一樣。我自己的照片是還沒多到能感受到牛步，但是無法接受每修一個版本就會多一份照片副本，這是我放棄 iPhoto 最主要的原因。<br /><h2>Lightroom</h2><br />老實說，其實我沒有真正使用過 Lightroom, 只有買了本 Lightroom 的書來研究數位照片的管理，加上網路上看了幾篇文章比較比較 Lightroom 與 Aperture 的異同這樣。其實我蠻想試試看 Lightroom，但是由於以下幾個因素使得 Lightroom 還沒有真正上場就在我的相片管理名單中除名了。<br /><ul><li>對 Adobe 越來越沒好感。Adobe 的軟體越來越龐大，不管是功能與價格。</li><li>在 Adobe 的官網找不到試用下載，也沒有簡便的購買方式，得透過經銷商購買。</li><li>對於 iPhoto 的良好體驗，使得我對 Aperture 更有信心。</li></ul><h2>Aperture</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="241" src="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" width="320" /></a></div>最後則是我目前在使用的 Aperture。其實剛進入 Aperture 時很不習慣，一堆術語像是 Master / Version / Folder / Album / Project 讓我如陷五里霧中，這些單字都看得懂，可是代表什麼意思、彼此間有什麼差別我卻是一竅不通。現在用了一陣子後總算明白些，但我總覺得 Apple 應該可以更簡化這些術語或關係才對，例如 Origin 就比 Master 來得容易理解；Event &nbsp;也比 Project 符合情境。<br /><br />除了術語多，介面比起 iPhoto 複雜外，用到現在倒也沒什麼好挑的，真要說的話就是希望他能早日有正體中文的介面，雖然英文介面對我不構成使用障礙，但是有熟悉的語言，情感上就大大的加分。<br /><br />另一個與 iPhoto 相比的好處，就是你的檔案可以儲存在外部文件夾，甚至是外接式硬碟，而不用一定得放在 &#8220;Aperture Library&#8221; 這個黑盒子中。如果是放在外部的文件夾，Aperture 會建立一張縮圖在黑盒子中，所以就算外接式硬碟沒有接上，也可以對該照片進行瀏覽與編輯，頂多只是匯出時無法從更精細的原始版本匯出罷了。這項特點對於習慣以文件夾進行管理與分類的人算是一項福音，不過我已經習慣 iPhoto 的方式了，所以也就索性通通丟入 Aperture 的黑盒子中去。<br /><br />另外隨著這幾個月 Aperture 的使用，也逐漸發現 Aperture 一些讓人離不開的順手好功能。例如照片的管理可以透過 Keyword, Label, Rating 與 Flag，這些機制的組合增加了不少彈性；另外像是命名、編修、調整等批次功能，也可以幫助自己省下不少寶貴的時間。有機會的話再來對自己使用 Aperture 的心得作更進一步的介紹。</p>
 </div>
   
   
@@ -310,7 +289,7 @@ int main(void)
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/07/28/to-iterate-is-human-to-recurse-divine/">To Iterate Is Human, to Recurse, Divine</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/01/01/from-launchy-to-alfred/">從 Launchy 到 Alfred</a></h1>
     
     
       <p class="meta">
@@ -326,36 +305,14 @@ int main(void)
   
 
 
-<time datetime="2011-07-28T12:30:00+08:00" pubdate data-updated="true">Jul 28<span>th</span>, 2011</time>
+<time datetime="2012-01-01T15:21:00+08:00" pubdate data-updated="true">Jan 1<span>st</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>今天偶然看到這句話，&#8221;To iterate is human, to recurse, divine.&#8221;，無巧不巧，最近幾天的課程我也剛好在講解<strong>遞迴</strong>的概念。</p>
-
-<p>說這句話的老兄是 <a href="http://en.wikipedia.org/wiki/L._Peter_Deutsch">L. Peter Deutsch</a>，雖然他的姓寫作是「德意志（Deutsch）」，可是這位德意志先生卻是個道道地地的美國麻省人。Deutsch 在電腦界最主要的貢獻就是 <a href="http://zh.wikipedia.org/wiki/Ghostscript">Ghostscript</a> 和 <a href="http://en.wikipedia.org/wiki/Archie_search_engine">Archie</a>。Ghostscript 是可以用來生成 PDF 或是 Postscript 格式文件的軟體，從 1988 第一版釋出一直到今年 2011 橫跨了 23 個年頭，仍然持續開發維護中（當然維護者早已換人接手，不再是 Deutsch 了），也衍生了許多分支專案。</p>
-
-<p>而關於另一項成就 Archie 可能聽過的人就比較少了，因為這是早年的一項網路服務，如同 Gopher 或是 News 一樣，早已淹沒在歷史的洪流中。在大家都還是以 FTP 作為主要下載方式的年代裡，Archie 可以整合不同匿名 FTP 站台的資訊，建立各站台擁有檔案的索引，然後使用者只要上連 Archie 網站，輸入檔名進行搜尋，就可以知道自己想要的檔案可以從哪個 FTP 站台下載。聽起來很像搜尋引擎做的工作不是？沒錯，<strong>Archie 某種程度上可說是網頁搜尋引擎的前身</strong>。早在 Google 甚至 Yahoo! 出生之前，Archie 就已經在 Internet 上運作好一段時間了。對這段歷史有興趣的可以看看這篇：<a href="http://www.isrl.illinois.edu/~chip/projects/timeline/1990archie.htm">The first search engine, Archie.</a></p>
-
-<p>回頭來看看篇首這句：</p>
-
-<blockquote><p>&#8220;To iterate is human, to recurse, divine&#8221;</p></blockquote>
-
-<p>這句到底代表什麼意思，著實讓我推敲了很久。先來看看網路找來的兩個我覺得不錯的翻譯（原譯者均不明）：</p>
-
-<blockquote><p>“迭代（iterate）者为人，递归（recurse）者为神。”</p>
-
-<p>「遞迴（recurse）只應天上有, 凡人該當用迴圈（iterate）」</p></blockquote>
-
-<p>同樣一句話，將其放在不同情境下會有截然不同的解讀。這句的意思到底是要說<em>「我們應該放棄平凡的作法，盡量使用遞迴，以追求神的境界」</em>呢？還是想表達<em>「遞迴這種作法太神乎奇技了，我們應該用簡單、平凡，一般人都可以接受的作法，以迴圈來實現」</em>呢？</p>
-
-<p>我參透不出這句話到底是<em>推崇遞迴</em>還是<em>鼓勵迴圈</em>。不過以我的經驗而言，遞迴雖然一開始很容易讓人腦筋打結，可是當熟悉遞迴之後，許多複雜的處理都會變得簡單明瞭。許多程式機制的實作擺脫不了遞迴，比方說遍歷某資料夾下的所有子資料夾與檔案、迷宮路徑的搜尋，或是 AI 決策樹的判斷，使用遞迴來寫可以達到事半功倍的效果。</p>
-
-<p>當然，所有的的遞迴都可以改寫成迴圈形式，改寫為迴圈形式通常也可以獲得效率上的提升，因為遞迴層層呼叫的過程中不停將資料塞入堆疊又從堆疊取出的手續太耗成本，遠不如迴圈以少數幾個變數就可以控制完整的流程。但是將遞迴改寫成迴圈的形式往往會失去邏輯的簡潔與結構的優雅。</p>
-
-<p>寫程式經常就是遇到這種兩難：要嘛對電腦好，讓它少算一點，少用點空間；要嘛對人好，電腦多做點工，可是人類看起 Code 來輕鬆（話說遞迴也不見得都比迴圈式的改寫好懂就是）。因此，針對同一件事情，該用遞迴解還是迴圈解好呢？我想，選擇自己與他人都<strong>容易理解的方法</strong>去做，那就對了。</p>
+  <div class="entry-content"><p><a href="http://www.launchy.net/index.php">Launchy</a> 是一款快速啟動軟體。只要按下熱鍵，就會跳出一個視窗讓你輸入一些文字來啟動軟體或是上網搜索，可說是圖形介面下的命令列工具，對於習慣用鍵盤工作的人，可以大大提昇電腦操作上的生產力。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="194" src="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">上為 Alfred, 下為 Launchy</td></tr></tbody></table><br />話說<a href="http://blog.aqualuna.me/2006/09/launchy.html">我用 Launchy 前前後後也有五年多的時間</a>了。這段時間裡，只要我安裝新電腦或是重灌系統，Launchy 幾乎都是最前幾個安裝的程式之一，通常裝了瀏覽器（為了抓最新版防毒軟體與防火牆）與防毒軟體（這東西在電腦越乾淨的時候裝越好）之後，就是安裝 Launchy 了。<br /><br />這一兩年，我主要的工作環境從 Windows 轉移到 Mac 上，一開始找不到滿意的快速啟動軟體。在 Mac 上曾經風雲一時的 QuickSilver, 也因為有段時間久未更新，傳出停止開發的風聲，對於新版 OS X的支援也不甚理想，讓我對於這套軟體缺乏信心。所幸，沒過多久，聽見 Launchy 推出 Mac 版的消息，我立刻就在 Mac 裡安裝了這套從 Windows 時代就一直陪伴著我的軟體，繼續享受快速啟動的樂趣。<br /><br />就這樣一直到了上個月，因為意外的緣故讓我注意到了 <a href="http://www.alfredapp.com/">Alfred</a> 這套軟體。一開始沒興趣，畢竟人家已經有了 Launchy 了（羞）。但是好死不死讓看見 Alfred 的官方網站做的很漂亮（可見門面很重要），於是想說安裝來看看吧，反正免費。結果不試則已，一試就成主顧。在預設安裝下，我都還沒作什麼設定，就可以進行許多的操作，包括啟動軟體、網路搜尋、數學計算。而且 Alfred 除了功能之外，介面與圖示比起 Launchy 也更加符合 Mac 的調性，使得我對 Launchy 的忠誠開始動搖。<br /><br />其實我對 Launchy 還是很滿意，但是 Alfred 給我的感覺卻是一整個驚艷。Launchy 有的功能，Alfred 都做到了，而且做的更好。Alfred&nbsp;讓我用沒一天就開始認真考慮購買 Power Pack 的可能性。所以，別了，Mac 上的 Launchy。不過別擔心，偶爾我們還是會在 Windows 上見面的。<br /><br /><em> * </em><br /><br />後記：<strike>其實 Launchy 還是有些 Alfred 比不上的地方。比方說 Alfred 的軟體搜尋只能從頭或是從斷字的地方開始，不能跳著搜尋，但 Launcy 可以。以 iTunes 為例，Alfred 可以透過 &#8220;itu&#8221; 或是 &#8220;tun&#8221; 找到 iTunes, 可是如果輸入 &#8220;une&#8221; 或是 &#8220;itn&#8221; 就找不到了；對於 Launchy 而言，上面四種方式都可以找到 &#8220;iTunes&#8221;。</strike><span style="color: red;">更正，Alfred 一樣可以透過輸入部分且不連續的字母來搜尋，只要到 Preference 裡勾選 &#8220;Fuzzy: Partial matching for Applications&#8221; 即可。</span></p>
 </div>
   
   
@@ -368,7 +325,7 @@ int main(void)
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/07/26/which-uigesturerecognizer-will-response/">UIGestureRecognizer 的共存</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/12/26/the-lives-of-eccentric/">奇人異士列傳</a></h1>
     
     
       <p class="meta">
@@ -384,38 +341,14 @@ int main(void)
   
 
 
-<time datetime="2011-07-26T19:55:00+08:00" pubdate data-updated="true">Jul 26<span>th</span>, 2011</time>
+<time datetime="2011-12-26T08:17:00+08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>在 iPhone 或 iPad 的開發中，除了用 <code>touchesBegan</code> / <code>touchesMoved</code> / <code>touchesEnded</code> 這組方法來控制使用者的手指觸控外，也可以用 <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIGestureRecognizer_Class/Reference/Reference.html#//apple_ref/occ/cl/UIGestureRecognizer">UIGestureRecognizer</a> 的衍生類別來進行判斷。用 <code>UIGestureRecognizer</code> 的好處在於有現成的手勢，開發者不用自己計算手指移動的軌跡。<code>UIGestureRecognizer</code> 的衍生類別有以下數種：</p>
-
-<ul>
-<li><code>UITapGestureRecognizer</code></li>
-<li><code>UIPinchGestureRecognizer</code></li>
-<li><code>UIRotationGestureRecognizer</code></li>
-<li><code>UISwipeGestureRecognizer</code></li>
-<li><code>UIPanGestureRecognizer</code></li>
-<li><code>UILongPressGestureRecognizer</code></li>
-</ul>
-
-
-<p>從命名上不難了解這些類別所對應代表的手勢，分別是 Tap（點一下）、Pinch（二指往內或往外撥動）、Rotation（旋轉）、Swipe（滑動，快速移動）、Pan （拖移，慢速移動）以及 LongPress（長按）。這些手勢類別在使用上也很簡單，只要在使用前宣告並掛到對應的視圖（UIView）元件上即可。</p>
-
-<script src="https://gist.github.com/1106515.js?file=uigesturerecognizer.m"></script>
-
-
-<p>問題來了。有些手勢其實是互相關連的，例如 Tap 與 LongPress、Swipe 與 Pan，或是 Tap 一次與 Tap 兩次。當一個 UIView 同時掛上兩個相關連的手勢時，到底我這一下手指頭按的要算是 Tap 還是 LongPress？如果照預設作法來看，只要「先滿足條件」的就會跳出並呼叫對應方法，舉例來說，如果同時註冊了 Pan 跟 Swipe，只要手指頭一移動就會觸發 Pan 然後跳出，因而永遠都不會發生 Swipe；單點與雙點的情形也是一樣，永遠都只會觸發單點，不會有雙點。</p>
-
-<p>那麼這問題有解嗎？有的，<code>UIGestureRecognizer</code> 有個方法叫做 <code>requireGestureRecognizerToFail</code>，他可以指定某一個 recognizer，即便自己已經滿足條件了，也不會立刻觸發，會等到該指定的 recognizer 確定失敗之後才觸發。以同時支援單點擊與雙點擊的作法為例，程式碼如下：</p>
-
-<script src="https://gist.github.com/1106562.js?file=uitapgesturerecognizer.m"></script>
-
-
-<p>如此一來，在第一下點擊後，如果有迅速點擊第二下，就會觸發 <code>doubleRecognizer</code>；反之要是隔了一小段時間，造成 <code>doubleRecognizer</code> 發生 fail，就會回頭觸發 <code>singleRecognizer</code> 了。</p>
+  <div class="entry-content"><p>會買這本漫畫，主要是因為荒木飛呂彥與主題：「奇人異士」。我對荒木的畫風感覺一般，甚至有時候還覺得畫面太亂了，讀起來辛苦。但是由他來畫這些怪咖，卻是再適合不過。荒木作畫裡的詭異配色與扭曲的姿勢，與「奇人異士」這個題材配起來真是天生一對。可惜買回家拆開之後才發現，六則故事中真正由荒木操刀的不到兩篇，以篇數份量來看更是只有七分之二，實在是令人大感失望。（以下介紹有劇情洩漏）<br /><br /><div style="text-align: center;"><a href="http://www.anobii.com/books/%E5%A5%87%E4%BA%BA%E7%95%B0%E5%A3%AB%E5%88%97%E5%82%B3_%E5%85%A8/9789861038957/01d58b2de32f49b7cc/" title="More about 奇人異士列傳 (全)"><img alt="More about 奇人異士列傳 (全)" height="320" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01d58b2de32f49b7cc&amp;time=1254981167" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 奇人異士列傳 (全)" width="212" /></a></div><div style="text-align: left;"><br /></div><div style="text-align: left;">雖然說漫畫中的故事都是真人實事，不過表達的方式難免還是有些誇張，所以很多地方看看就好。底下各篇的介紹中，沒有特別註明的短篇，均為荒木飛呂彥擔任原作與構成，鬼窪浩久作畫。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">1. 泰‧柯布（Ty Cobb）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">泰‧柯布是個在上個世紀初非常極具爭議的一位棒球選手，他擁有超高水準的打擊表現，但在人際關係上卻是一敗塗地。漫畫提到柯布是個隨身會攜帶手槍進入球場的選手，要是跟人起了什麼衝突，立刻就拔槍出來。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">柯布的人緣糟糕到什麼地步呢？有一年柯布與聯盟另一位球員 N. Lajoie 在爭奪該球季打擊王時，為了不讓柯布拿下打擊王，當時的聖路易布朗隊 (St.Louis Browns) 教練甚至授意自己隊員在 Lajoie 上場打擊時，放大守備範圍，簡單的說就是故意放水給 Lajoie，寧願自己打放水球也不要讓柯布拿下打擊王。雖然如此，柯布仍舊在大聯盟中留下了許多難以抹滅的紀錄，也進了第一屆棒球名人堂，甚至還是以當年最高票入名人堂的。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">2. 康 芳夫</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">康芳夫，自稱為「虛業家」，又被稱為「傳說的製作人」（伝説のプロデューサー），是個以活動策劃為主的傳奇人物。他所策劃的活動都相當具有爭議性，例如漫畫中所介紹的「奧利佛旋風」，就是一個以具有 47 條染色體（人類為 46 條，黑猩猩為 48 條）的未知生物為主角的巡迴活動，更誇張的是康芳夫甚至懸賞一千萬，找來沒什麼名氣的女明星來與奧利佛（<a href="http://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AA%E3%83%90%E3%83%BC%E5%90%9B">オリバー君</a>）上床，看看是不是真的能夠繁衍出後代。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">康芳夫其他還策劃過的活動像是「孟加拉虎 VS 空手道家的格鬥」、「派遣探險隊尋找尼斯湖水怪」（隊長是石原慎太郎），以及出版爭議性作品<a href="http://blog.aqualuna.me/2005/07/blog-post_1155.html">《家畜人鴉俘》</a>。據說，浦沢直樹的漫畫《二十世紀少年》中的万丈目胤舟，就是以康芳夫作為角色原型。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">康芳夫至今（2011年底）仍活在世上。據維基百科上的記載，目前主要是在進行《家畜人鴉俘》的電影化工作。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">3. 傷寒瑪莉（Typhoid Mary, 本名 Mary Mallon）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">本篇由荒木飛呂彥親自作畫。內容主要是講一個傷寒的帶原者瑪莉，由於自身體質因素不會發病，但卻相當執著於從事廚房的工作，因而使得接觸到她料理的其他人都相繼染上傷寒。這在傷寒仍有 10% 致死率的二十世紀初期，可是相當令社會恐慌的不定時炸彈。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">與本書其他故事相比，其實我覺得〈傷寒瑪莉〉的故事本身相對平淡，但在荒木的作畫之下，反而顯得特別荒謬有趣。尤其是瑪莉在一戶只有老人與小孩在的屋子裡幫傭時，眼睛看不清楚的老人差點誤把小嬰兒當成火雞吃下去這一段，那種讓人為之捏一把冷汗的描寫功力實在令人印象深刻。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">4. 溫徹斯特神祕屋</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">同樣也是由荒木飛呂彥親自作畫的一篇。這篇也是我覺得故事本身比較普通的一篇，怎麼剛好荒木老師畫的都是這種比較不痛不癢的故事？這個故事主要是在講一間奇怪的房子，這間房子外表看上去美觀大方，然而裡面卻有 160 個房間，10000 個窗，2000 扇門，40 個樓梯間。房子裡頭結構怪異，有些房間甚至地上冷不防冒出個窗子，一不小心就會掉到樓下去，還有些像是有進無出或有出無進的樓梯，整個房子就是一個怪異的組合。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">是什麼樣的人基於什麼樣的理由而蓋了這麼一個房子呢？房子的主人是溫徹斯特夫人，他的丈夫是美國著名「溫徹斯特步槍」的發明人，因為「溫徹斯特步槍」而賺進了大筆的財富。溫徹斯特夫人在丈夫與女兒相繼去世之後，悲痛欲絕，這時占星師告訴夫人，由於她丈夫所發明的武器奪走了許多人的性命，使得她的家庭受到了詛咒，因此必須建造許多房間給槍下亡魂居住，以破除詛咒，而這些房間建得是越怪越好。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">迷信的溫徹斯特夫人於是開始整修原本只有八間房間的洋房。從 1884 年開始，到 1922 年夫人以 82 歲高齡去世的整整 38 年中，房子一直都是處於改建的狀態中。由於溫徹斯特夫人繼承了大筆的遺產，因此雖然房子不斷改造，但是所用的建材與設計都是當時最新的，整個屋子裡就安裝了三部電梯。這棟屋子現在已成了知名的旅遊景點，有機會去加州的話一定要過去一探究竟。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">5. 戈利亞兄弟（The Collyer Brothers）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">戈利亞兄弟沒有什麼驚人的事蹟，他們之所以出名，就是因為他們足不出戶地把自己關在家裡，可說是「繭居族」的先驅。這兩兄弟從 1929 年起，就過著與外界完全隔離的隱居生活，然而他們並不是住在杳無人跡的深山叢林裡，而是住在紐約哈林區的一戶大宅邸中。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">兩兄弟就這樣相依為命過了二、三十年，直到死去才由警察進入屋中發現。除了閉戶不出，另一個奇特之處就在於早年弟弟曾經不斷的在外面撿東西回來家裡放，這些撿回來的東西多半是垃圾，但是弟弟總想著也許有一天會用到，於是就帶回家了。也因此家中堆積了大量的垃圾，造成移動上的不便。除此之外，弟弟還在家裡安置了各種陷阱，以阻撓入侵者進入家中。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">當警察接獲通報前往兩兄弟所居住的大宅去尋找遺體時，大門根本被雜物所塞滿無法進入。之後好不容易找到一扇窗戶可以進入，但還是花了約兩個小時的時間才找到哥哥荷馬（Homer）的遺體，這時哥哥大約死去 10 個小時左右。然而弟弟蘭格雷（Langley）卻不見蹤影，警察們只好一邊清除家中雜物，一邊尋找弟弟的下落。一直過了三個星期，才終於看到弟弟的遺體，死因是因為當弟弟要拿食物給行動不便的哥哥時，誤中了自己所設下的陷阱。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">最後警察們從兩兄弟的屋子裡清出了 136 噸的垃圾，其中還包括了 14 架鋼琴。底下的連結中有些照片，是當時清除垃圾時的一些實況：</div><div style="text-align: left;"><a href="http://piperbasenji.blogspot.com/2010/07/collyer-brothers.html">Follow the Piper: The Collyer Brothers</a></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">6. 尼古拉‧特斯拉（Никола Тесла</span><span style="font-size: large;">）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">這位應該是六篇故事中最廣為人知的人物了，不過與宿敵愛迪生相比，特斯拉的知名度仍舊低了許多。今天日常生活中隨處可見的交流電，就是出自於特斯拉的發明，在許多方面可說是比愛迪生更為天才的一個科學家。當然，或許如漫畫中所描述，愛迪生的成就是辛勤努力得來，「天才是百分之一的靈感，百分之九十九的汗水」，因此對於特斯拉的天份有著嫉妒之心也說不一定。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">關於特斯拉事蹟的記載比較多，這裡就不多作介紹了。</div></p>
 </div>
   
   
@@ -428,7 +361,7 @@ int main(void)
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/07/26/my-way-as-a-coder/">我的程式語言之路</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/12/23/drop-of-life/">玩起來直覺就是好遊戲 - Drop of Life</a></h1>
     
     
       <p class="meta">
@@ -444,88 +377,14 @@ int main(void)
   
 
 
-<time datetime="2011-07-26T10:54:00+08:00" pubdate data-updated="true">Jul 26<span>th</span>, 2011</time>
+<time datetime="2011-12-23T00:23:00+08:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>從大學以來，這十幾年的工作與生活總與程式設計脫不了關係。前前後後寫了不少的 Code, 也接觸過許許多多不同的 Programming Language。這邊就來記錄一下自己現在還有印象的程式語言，也許十年之後再來回顧，又是另一種不同的想法吧。</p>
-
-<h2>QBasic</h2>
-
-<p>高中時候獲得人生的第一台電腦，當時還是 DOS 的年代，每個裝了 MS-DOS 的電腦都會內附 QBasic。還記得用 QBasic 寫過一些簡單的遊戲，像是 1A2B、迷宮產生之類的，但是真要說自己寫的其實也不是，很多都是照著當時雜誌（例如「第三波」）上的代碼 key 進電腦中而已。</p>
-
-<h2>Turbo C++</h2>
-
-<p>說真的，我已經不記得是 Turbo C 或是 Turbo C++ 了，但可以肯定的一點是，我當時一定只用到 C 的語法概念，沒有物件，只有單純的流程控制，對指標有似懂非懂的感覺。其實嚴格說起來，Turbo C++ 只能算是種 IDE，不算程式語言。</p>
-
-<h2>Borland C++ Builder</h2>
-
-<p>這也是 IDE，不過因為同樣的 C++ 語言在不同的 IDE 與不同的基本函式庫下會呈現出截然不同的個性，所以我就單列了。記得在我還是學生的時代，BCB 的出現帶來革命性的軟體開發方式，只要簡單拉一拉就可以有個像樣的視窗程式。當時蔚為風潮，我也趕流行玩了一陣子，不過也沒拿來寫過什麼東西就是。</p>
-
-<h2>Visual Basic</h2>
-
-<p>很簡單的程式語言。我曾經用 VB 寫過一個「光榮三國志臉譜瀏覽程式」的工具，可以讀取《三國志》四代、五代的頭像檔案。可惜現在原始碼與二進位檔都沒有留下，只有留下當時<a href="http://webbbs.gamer.com.tw/readSrhPost.php?brd=KOEI&amp;pos=448&amp;author=tzengyu&amp;keyword=">在巴哈姆特發佈時的帖子</a>。如果有人看到這篇文章，又碰巧有留當年的程式的話，歡迎跟我聯絡。也許哪天我心血來潮會再重寫一遍也說不定。 ;-)</p>
-
-<h2>Common Lisp &amp; ML</h2>
-
-<p>這兩個都是因為學校的課程而接觸的。剛開始學 Lisp，腦袋會打結，就是一層又一層的括號，常見的數學運算也都得換成前置式；不過作業寫到後來我還蠻喜歡寫 Lisp 的感覺。ML 也是，跟一般我們常見的 C-like 語法結構都不一樣。那時候我還蠻愛這兩個語言的，一直到畢業後的幾年間，我只要重灌電腦完要重新安裝軟體時，我就會把這兩個程式語言給裝進去，就像現在我會安裝 Python 一樣。</p>
-
-<h2>ASP</h2>
-
-<p>大四時接了一個學姊的家教網案子，那時候用的開發語言就是 ASP。不過說真的現在我對 ASP 都忘光光了。附帶一提，那個網站現在還活著，當然已經轉型了就是，不再是以媒介家教資訊為主。</p>
-
-<h2>Java</h2>
-
-<p>學生時代有寫過一些 Java applet，那時候的網頁很流行水波效果，幾乎十個個人網站有八個的 banner 都要來一下水波盪漾。Applet 也是淺嚐個大概而已，倒是 Java Servlet 因為工作的關係寫了蠻長久一段時間，從學生時代到退伍後都還有在接觸。話說事隔多年後，因為最近工作的關係，又開始跟 Java 打交道了。</p>
-
-<h2>HTML &amp; JavaScript</h2>
-
-<p>還在唸書時因為有協助維護一個購物網站，因此免不了要碰到 HTML 與 Java Script 的撰寫。當時那個購物網站使用的技術，有一部分是上面提到的 Java Servlet，另外也有用到 PHP 的部份。之後過了好幾年，有一個跟朋友合作開發 Facebook 遊戲的機會，在那次開發中又重新溫習了一次 Java Script，並且大量採用 Ajax 技術。可惜那個遊戲在發佈之前就胎死腹中了。</p>
-
-<h2>PHP</h2>
-
-<p>最主要就是上面提到的購物網站與 Facebook 遊戲這兩個案子用到，不過卻前前後後持續寫了蠻長久的一段時間。維護購物網站的時後基本上都還是程式碼硬幹，到了寫 Facebook 遊戲的時候，就有現成的框架了，我選了一個叫 CodeIgniter 的框架，大體上類似 ROR 的寫法。其實一開始選的是 CakePHP，比較完整，不過真的是太龐大了，所以才換成 CodeIgniter。此外，由於以前經常安裝討論區、部落格、Wiki、購物車等網站套件，其中許多是 PHP 寫的，常常需要 hack 部分代碼，因此對 PHP 還算蠻熟悉的，有陣子甚至拿 PHP 當 Shell Script 來使用，用來解決手邊的小問題。</p>
-
-<h2>SQL</h2>
-
-<p>說到網站程式就不能不提到資料庫。前前後後接觸過一些不同的資料庫，學生時代在 IBM 打工時是 DB2，前面提到的購物網站是 MySQL，進了遊戲公司之後，陸續又接觸到 PostgreSQL、Microsoft SQL Server，Oracle。其實單就 SQL 來看的話都大同小異，各資料庫 Server 之間最大的差異性還是在 Server 的管理與調校上，以及各種千奇百怪的程式介接函式庫寫法。</p>
-
-<h2>Shell Script</h2>
-
-<p>除了用 PHP 當 Shell Script 外，在我還在第一家遊戲公司時，由於是在 Linux 平台上開發的關係，也用 BASH 寫了不少方便日常工作或是開發的 Script。有少部分的代碼用 Perl 寫，用 Perl 寫起來很快，不過寫完看起來真的像天書一樣，真的是「寫完即丟」的語言。在 Windows 上，也曾經用 Batch 檔或是 Power Shell 寫過一些臨時性的小工具。</p>
-
-<h2>C++</h2>
-
-<p>進入遊戲公司後，幾乎就一直過著與 C++ 分不開的生活。早先是在 Linux 下寫 Server，能用的就是 Emacs 或是 Vim，後來換了公司，改用 Visual C++ 寫，一開始我還真的很不習慣，這麼複雜而多功能的介面，有時常常不曉得從哪邊開始下手。雖然在念書時學過，但我是從進遊戲公司之後，才真正重新認識了 C++，學到物件導向、Template、設計模式、重構等概念。當然，上面有些概念是跨語言通用的，不過因為 C++ 是我這幾年來長期接觸的語言，自然也成為前述幾個概念的學習媒介。</p>
-
-<p>C++ 是個頗具爭議性的語言，他使用者多，但批評者更多，C 語言的陣營批評 C++ 不夠簡潔、純粹，STL 更是把許多工作變成讓人摸不著頭的黑箱；反之 Java 或 C# 的支持者又覺得 C++ 不夠完善，要寫個功能還要到處找函式庫，同個功能可能還有好幾種不同的函式庫，不同的實作與不同的使用概念，令人眼花撩亂。我自己是覺得，C++ 雖然亂，雖然我也對此感到困擾，但是也正因為他的兼容並蓄，使得各種各樣的想法與實作都能在上面獲得實踐。不過話說回來，對於產品開發而言，有時候工具還是單純點好。</p>
-
-<h2>Auto Hotkey Script</h2>
-
-<p>為了玩 Facebook 遊戲更「方便」而去學的程式。有寫了餐城（Restaurant City）的自動撿垃圾、自動到別人家評分，以及 Farmville 的自動種植、收割、耕地等功能，Mafia Wars 的連續任務。這些工具都是自娛，沒有對外釋出。隨著社群遊戲不斷的改版，這些工具也早就失效不能使用了。</p>
-
-<h2>Lua</h2>
-
-<p>在之前待過的公司中有用過，之後自己出來做的案子也有用。雖然如此，自己還是覺得對 Lua 的使用還不夠熟。曾經有寫過一個專案，使可以整合 C++ 與 Lua / Python / Squirrel 這三種 Script Language，目的是可以從 C++ 呼叫寫在 Script 的函式，也可以反過來。不過當初只寫了一個方向（C++ 呼叫外部），反過來的方向由於各 Script 語言存在的差異較大，自己的能力也不夠，就沒繼續開發下去了。</p>
-
-<h2>Python</h2>
-
-<p>這語言已經成為我這一兩年來的最愛了。在 Script Language 的領域中，一開始我是對 Lua 比較有興趣的，畢竟公司專案在用，而且 WOW 的 Custom UI 也都是用 Lua 撰寫，有 Billizard 的光芒加持，自然讓人不得不多看 Lua 幾眼。不過自從寫過 Python 的 Code 之後，我發現寫 Python 的過程可以獲得一種純粹的程式撰寫樂趣，我面對的是「程式所要解決的問題」本身，而不再是陣列、記憶體配置、指標、堆疊等等這些瑣碎的雜事。去年開發一個簡單的動畫編輯器，就是以 Python + wxPython 作的；而最早接觸 Python 的起點呢？喔，那是為了寫一個 Travian 的找資源點的工具，比較了幾個語言後發現用 Python 來抓網頁資料進行解析最為方便，於是就一頭踏入 Python 的思考領域了。</p>
-
-<h2>NSIS (Nullsoft Scriptable Install System)</h2>
-
-<p>最近才開始摸的東西，是用來寫安裝程式的語言。除了一開始入門門檻稍高外，不算太難，只要跨進去後剩下的就簡單了。之所以說一開始稍難，是因為最簡單的安裝軟體也要做許多事情，畢竟安裝軟體可不像其他語言只要秀秀 &#8220;Hello World&#8221; 就算完成第一個程式了。NSIS 也有 function 跟 macro，不過 function 沒有傳入參數，反正所有變數都是全域，也就不用傳入什麼了；如果真的需要傳入參數的話，倒是可以用 macro，雖然意義上不是，但程式碼看起來更接近傳參數的函式。這算是最近寫 NSIS 的一個小小心得吧。</p>
-
-<h2>Objective-C</h2>
-
-<p>這是目前正在進行的專案所用的語言。如果熟悉 C++/Java/PHP 這類 C-like 的語言，要學 Objective-C 真的很快。比較大的不同在於 message 的概念，前面的幾個語言不管是 function 或是 method，都是圓括弧呼叫的方式，在 Objectiv-C 中，函式的呼叫變成了訊息的傳遞，而且每個變數都必須寫出變數名字。剛開始看的確會有些彆扭不習慣，但是徹底改用「訊息傳遞」的角度去思考理解的話，其實 Objective-C 的這種寫法還蠻可愛與口語化的。</p>
-
-<h2>後記</h2>
-
-<p>看了一下 <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">TIOBE Programming Community Index for July 2011</a>，前十名的程式語言中，除了 C# 之外，有九個我都接觸過或多或長的一段時間。其實之前為了研究 XNA，也有稍微看過 C# 的 code，不過稍微看看也不算寫過就是。但是 Windows Phone 的開發免不了得靠 C#，或許再不久的將來有機會寫 C# 也說不定？</p>
+  <div class="entry-content"><p>最近新出了一款風格獨特且非常治癒的遊戲，Drop of Life。在介紹之前，先看看他的片頭動畫與遊戲畫面吧：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/aanC-KZX0-o/0.jpg"><param name="movie" value="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />遊戲的背景很簡單，玩家要扮演的就是一個水珠，要淨化地下的土壤，並讓種子開出花朵。雖然對於關卡解謎的遊戲而言，故事不是最重要，不過整個遊戲的設計都是圍繞著這個故事主題去發揮，讓人覺得耳目一新，這一點後面會再說明。遊戲最主要的操作有三種：傾斜手機來讓水珠向前或向後移動；點擊畫面讓水珠跳躍；以及對手機吹氣可以讓水珠結成冰塊，摩擦冰塊則恢復成為水珠。傾斜、點擊與吹氣，算是充分利用了 iPhone 的各種輸入方式。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s1600/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s320/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" width="213" /></a></div><br />關卡的進行有點類似 Loco Roco，基本上，玩家只要能從頭走到尾，找到最後的種子，就算過關了。不過通往終點的路上免不了有些障礙，許多設計都很有意思，必須充分利用水珠與冰塊的性質差異來進行，例如有些障礙物必須藉由冰塊的撞擊才能敲破，有些平面冰塊可以直接滑過，而水珠則是黏在上頭慢慢移動。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" width="213" /></a></div><br />另外關卡中有些地方有積水，基本上只要水珠掉到水中就會消滅，只好回到先前的 check point 繼續開始。不過遊戲的設計中沒有真正的 Game Over，水珠或冰塊破掉了，可以無限次嘗試。遊戲的關卡設計的不錯，單純要過關的話都不難，可以順利讓種子開出小白花；不過如果想要取得每關中能讓種子開出小黃花的四葉草，或是要收集散落的拼圖圖塊，就得稍稍動些腦筋，注意有沒有容易被忽略掉的路線。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" width="213" /></a></div><br />話說回來，這遊戲最讓我驚艷的地方就在於，許多遊戲裡的設計都巧妙結合了主題。例如遊戲裡沒有主選單，一開始就是讓玩家操作水珠在地面上滾動，所以選關的方式跟遊戲方式一樣。每個關卡完成的程度會用花的大小來表示，如果有找到四葉草，就是是黃色的小花，這比 Angry Bird 裡冷冰冰的一二三顆星星表示來得親切許多。最特別的是連工作人員名單都像是可以玩的關卡，只要在選關畫面移動到最右邊的懸崖跳下去，那就是了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" width="213" /></a></div><br />最後、最後，最重要的是，這款遊戲是免費下載的喔。下載完後可以玩到第一大關，如果玩了喜歡的話，只要 0.99 鎂就可以解開完整的遊戲版本。</p>
 </div>
   
   
@@ -538,7 +397,7 @@ int main(void)
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/">文明帝國 v - 文化勝利＆單城挑戰心得</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/12/20/saru-lock-the-movie/">麻辣開鎖王 the MOVIE</a></h1>
     
     
       <p class="meta">
@@ -554,89 +413,14 @@ int main(void)
   
 
 
-<time datetime="2011-04-01T12:46:00+08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2011</time>
+<time datetime="2011-12-20T09:12:00+08:00" pubdate data-updated="true">Dec 20<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>原發表於 C_Chat版@PTT。Oct 10, 2010。
-以下內容與原發表內容相比有稍微做些文字與版面調整。</p>
-
-<hr />
-
-<p>昨天（2010/10/09）剛完成文化勝利，分享一下這次發展的心得。</p>
-
-<p><img src="/images/2011/2011-04-01-civ5-occ-berlin.jpg" alt="國土空照" /></p>
-
-<p><img src="/images/2011/2011-04-01-civ5-occ-berlin2.jpg" alt="首都圈特寫" /></p>
-
-<p>首先，這次的遊戲除了文化勝利這個目標外，還加上了「單城挑戰」的附加條件，因此能夠運用的資源少的可憐，只能全心一意投入到文化中。勝利的時候已經是 2003 年了，那時候最大的對手阿拉伯早就都進入未來時代，而我才剛發展出坦克車而已&#8230;.Orz</p>
-
-<p>先岔個題，「單城挑戰」是文明系列常有的「自虐」玩法。<strong>One City Challenge</strong>, 簡稱 OCC, 在開局設定詳細規則的畫面中也有這個選項。打開了這個選項後，不能生產 Settler, 打下別人的城也直接消失不見 (有沒有 Raize 到錢我沒注意，感覺錢沒變多，也沒訊息，打下的城直接就不見了)</p>
-
-<p>底下是趁著還有印象時寫的心得</p>
-
-<h3>一、先講社會體制</h3>
-
-<p><img src="/images/2011/2011-04-01-civ5-occ-social-policies.jpg" alt="文化勝利時最後的體制選擇" /></p>
-
-<p>文化勝利的話，Freedom (自由) 與 Piety (虔信) 必點，尤其是下列幾樣重點：</p>
-
-<ul>
-<li><p><strong>Free Religion</strong>：免費獲得兩項政策。一定要留到最後用。</p></li>
-<li><p><strong>Mandate of Heaven</strong>：50% 快樂轉文化。由於我只有一座城，人民普遍快樂，相當於每個回合多了十幾點文化。</p></li>
-<li><p><strong>Free Speech</strong>：新政策所需文化 -25%。</p></li>
-<li><p><strong>Constitution</strong>：擁有世界奇觀的程式 +100% 文化。</p></li>
-</ul>
-
-
-<p>另外，由於 <strong>Traditional</strong> (傳統) 對於首都的幫助非常大，所以 OCC 時也務必走傳統路線，畢竟首都就是國家嘛。</p>
-
-<p>OCC 時，贊助政策也是必選之一，對於科技或部隊均有幫助，只是自己往往沒有那麼多錢可以贊助。</p>
-
-<h3>二、文明的選擇</h3>
-
-<p>跟文化相關的有三個</p>
-
-<ul>
-<li>Aztec,  消滅敵方單位可獲得文化獎勵           (窮兵黷武文化)</li>
-<li>France, 獲得蒸汽機科技前，城市每回合 +2 文化 (開城種田文化)</li>
-<li>Siam,   友好城邦提供的糧食和文化 +50%        (廣結善緣文化)</li>
-</ul>
-
-
-<p>不過我是隨機選擇的，選到的是日耳曼人。雖然跟文化無關，但是實際玩的結果卻是非常推薦，尤其是對於單城玩家。</p>
-
-<p>為什麼呢？</p>
-
-<p>德國的特色是打山寨時有機會得到對方加入，一開始我就靠著最初 Warrior 到處打山寨，有了一堆兵。五代的生產超耗時間成本，我又只有一座城，建築都來不及了，根本沒法生兵，因此這些雜牌軍隊幫助很大，帝國的維持都靠他們。</p>
-
-<p>一直到了遊戲非常非常末期，蓋到沒東西蓋了，我才開始自己生兵汰舊。不過嚴格說來不是蓋到沒東西蓋了，而是因為科技太落後，沒有新的東西可蓋。</p>
-
-<h3>三、科技發展</h3>
-
-<p>由於燈泡有限，科技真的只能挑重點，到後面等個三、四十回合才有新科技都不誇張（史詩速度）</p>
-
-<p>先講來源。首都能提供的燈泡少之又少，必須把腦筋動到其他地方：</p>
-
-<ol>
-<li>一個就是盟邦，贊助政策的 <strong>Scholasticism</strong> 可以從盟邦身上搾一點科研。</li>
-<li>第二是大科學家，我的大科學家都是用來拿免費科技的，而贊助政策的 <strong>Educated Elite</strong> 可以從盟邦拿到偉人，也是機會之一。</li>
-<li>第三是外交上的共同研究, 不過這太花錢了, 所以我都不答應。錢真的很少。</li>
-</ol>
-
-
-<p>接著談研究順序。細部來說的話，進了遊戲一開始就朝 <strong>Calendar</strong> (曆法) 前進。生產的話生產工人，工人完生產紀念碑。等紀念碑蓋好, Calendar 也差不多ok了 (史詩速度)。這時候就立刻蓋 <strong>Stonehenge</strong>, 每回合 +8 文化, 要衝文明勝利，非搶到不可。</p>
-
-<p>Calendar 之後可以先點一些讓工人有事作的科技，像是捕獵、農業、採礦，請依照自己國土的情況而定。</p>
-
-<p>點了一兩項後往 <strong>Writing</strong> (書寫) 前進, Writing 完之後 <strong>Philosophy</strong> (哲學)，接著就是 <strong>Theology</strong> (神學, 前置為曆法與哲學)。研發神學的目的在於，得到神學後你的國家就進入中古世紀 (Medieval Era) 了，這時候就可以點虔信政策，越早點虔信，國家就越容易快樂，進入黃金時代。</p>
-
-<p>之後的科技主要是依照奇觀的需求而定，奇觀可以加文化又可以加偉人，因此能搶就盡量搶。</p>
-
-<p>文化勝利真的很耗時間與腦力。玩完這場死了不少腦細胞，看來得暫時封印文明五一陣子了。雖然文明很好玩，但是這樣廢寢忘時、沒日沒夜的生活已經不是這把年紀可以承受的了（攤手）。</p>
+  <div class="entry-content"><p>這部作品我最先看過的是漫畫版，看過一兩集之後，感覺開鎖這題材新鮮，故事內容有趣，此外還帶點色色的內容，算是不錯的休閒小品；然而也就僅此而已，沒有太大的動力驅使我繼續追下去。想不到事隔多年，《麻辣開鎖王》這部漫畫竟然紅到出了日劇，甚至還拍了電影版，讓人不由得好奇漫畫後來的發展。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-zwTw0T6xraA/Tu_QwT79oII/AAAAAAAAJCQ/50cyq117egU/s1600/p544531113.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-zwTw0T6xraA/Tu_QwT79oII/AAAAAAAAJCQ/50cyq117egU/s320/p544531113.jpg" width="227" /></a></div><br />日劇的部份我沒看，我就直接看電影版了，電影版看上去是獨立的故事，應該是沒影響吧。對於漫畫劇情的印象我也只記得那個老戴著頭巾滿頭銀髮的主角。不過當電影版市原隼人所飾演的主角登場時，倒是讓人覺得異常親切，真的有漫畫人物再現的感覺。<br /><br />電影的故事一般般，這邊我就不多提了，總之就是個主角像天真的傻子般地一直相信女主角，卻又一直被背叛，最後仍用真心感動了對方（但還是沒有在一起）的故事。關於電影的另一條支線劇情，小西真奈美所飾演的美女警官看似與惡人勾結，但彷彿好像似乎又懷抱著某種理想，想要改革警界的樣子。說真的，關於小西真奈美與<a href="http://reader.aqualuna.me/search/label/%E8%A5%BF%E6%9D%91%E9%9B%85%E5%BD%A5">西村雅彥</a>這條線的警察故事，也許是我看得不夠認真吧，一直到電影結束之後還是搞不太懂他們之間的關係，或是這些警察到底肚子裡懷著什麼鬼胎。<br /><br />反倒讓我覺得這電影最值得一提的，就是飾演女主角「マユミ」的比嘉愛未了。我開始知道比嘉愛未這個演員，是在《マルモのおきて》這部日劇，雖然比嘉是女主角，但是《マルモのおきて》這部戲真正的主角是那兩個小孩，比嘉可以發揮的戲份並不多，也沒有特別驚艷之處，給我的印象就是個「乾淨、可愛又耐看的女演員」。<br /><br />然而看到比嘉在《麻辣開鎖王 THE MOVIE》 中的表現，我對她的印象簡直是一整個加分到破表。比嘉在戲中有著多重扮相，又清純、又剛烈、又成熟、又性感，<span style="color: red;">如果說今天要拍一部《魯邦三世》真人版，那比嘉愛未絕對是「峰不二子」的不二人選。</span>當猿丸與マユミ偷了組織的錢溜到貨車後廂時，雖然主角還被蒙在鼓裡，不過這時看電影的觀眾應該都對於「マユミ是個騙子，想要黑吃黑」這件事情了然於心了，然而當マユミ在車上娓娓道出她之所以要偷走皮箱是因為有「淒慘的身世」時，我竟然有相信她的衝動！只能說女人真是太可怕了！<br /><br />最後，如果各位有機會看這部電影，記得當演員名單開始上的時候千萬別離席，後面還有一小段劇情。雖然不影響整個故事，可是這一小段畫面卻有畫龍點睛的效果，讓人在看完電影之後還能在心理留下一段甜甜的滋味。</p>
 </div>
   
   
@@ -649,7 +433,7 @@ int main(void)
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/03/29/scanner-app-review-part-2/">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（下）</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/12/20/wanfushujian/">讀《往復書簡》</a></h1>
     
     
       <p class="meta">
@@ -665,101 +449,14 @@ int main(void)
   
 
 
-<time datetime="2011-03-29T13:08:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2011</time>
+<time datetime="2011-12-20T06:58:00+08:00" pubdate data-updated="true">Dec 20<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>上篇：<a href="http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></p>
-
-<p>這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。</p>
-
-<p>CamScanner 的作法有點接近理想方式。在裁剪之前，左上方的按鈕可以選擇「色彩增強」模式，有五種方案：「普通」、「增強」、「增強並銳化」、「經濟模式」、「黑白模式」，可惜這些模式的名稱不夠直覺。裁剪完之後，有提供滑軸用來調整明暗跟對比。裁剪前的「色彩增強」模式無法預覽，裁剪後才知道結果，裁剪完後的明暗對比則會即時反應在畫面上，方便掌握。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b01.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b02.jpeg" width="240" height="360"><br/>
-（左：裁剪前的色彩增強選項；右：明亮與對比的即時調整）</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b03.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b04.jpeg" width="240" height="360"><br/>
-（左：經濟模式；右：黑白模式）</p>
-
-<p>Genius Scan 在這方面就很陽春，後製處理只有三個選項：「不處理」、「黑白文件」、「彩色文件」。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b05.jpeg" width="240" height="360"></p>
-
-<p>JotNot 的後製功能全部放在一起。他的分類方式是我所喜歡的：「收據」、「黑白文件」、「彩色文件或白板」、「亮顯文本或黑板」、「攝影」。預設分類往下拉，也可以看到對比調整等選項，甚至可以控制背景與加上時間戳記，算是功能最完整的。但是這些調整功能，包含對比，都必須設定好後進行處理，才看得到結果，不滿意的話還要回頭改對比，並不是很方便。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-b06.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b07.jpeg" width="240" height="360">
-<img src="/images/2011/2011-03-29-scan-app-b08.jpeg" width="240" height="360"></p>
-
-<p>關於文件分享與輸出部分，如果以付費版本來看，基本上我所需要的都包含了。</p>
-
-<p>CamScanner 有以下選項：</p>
-
-<ul>
-<li>打開方式 (iBooks 或其他可開啟 PDF 的 iPhone app)</li>
-<li>電子郵件</li>
-<li>Google Docs</li>
-<li>BOX.net</li>
-<li>Evernote</li>
-<li>iDisk</li>
-<li>Dropbox</li>
-</ul>
-
-
-<p>Genius Scan 可以輸出的選項有：</p>
-
-<ul>
-<li>電子郵件</li>
-<li>iBooks 或其他可開啟 PDF 的 app</li>
-<li>（付費版）Dropbox</li>
-<li>（付費版）Evernote</li>
-<li>（付費版）Google Docs</li>
-</ul>
-
-
-<p>JotNot 比較特別的是它可以直接傳真或列印，傳真好像要額外付費 In-App-Purchases，這兩個功能我都沒試過。其餘的分享功能都只有付費版才有：</p>
-
-<ul>
-<li>（付費版）可輸出成 PDFs、JPEGs、PNGs</li>
-<li>（付費版）電子郵件</li>
-<li>（付費版）Dropbox</li>
-<li>（付費版）iDisk / WebDAV</li>
-<li>（付費版）Evernote</li>
-<li>（付費版）Box.net</li>
-<li>（付費版）Google Docs</li>
-</ul>
-
-
-<p>另外一些有的沒有的雜項功能，在最後作個記錄：</p>
-
-<ul>
-<li>標籤功能，CamScanner 與 JotNot 都可以對文件下 Tag，除了內建的 Tag 之外也可自己新增。CamScanner 的 Tag 在中文版下也是中文名稱，很貼心。 <br/>
-  <img src="/images/2011/2011-03-29-scan-app-b09.jpeg" width="240" height="360">
-  <img src="/images/2011/2011-03-29-scan-app-b10.jpeg" width="240" height="360"><br/>
-  （左：CamScanner 的預設標籤；右：JotNot 的預設標籤）</li>
-<li>除了標籤外，JotNot 還可以對文件標示星號。</li>
-<li>關於版面大小：
-
-<ul>
-<li>JotNot 可以設定整本的預設大小，如 A4，也可以在單張處理時分別指定；</li>
-<li>CamScanner 能夠設定整本的版面大小，也可勾選「自動適應大小」，這樣每頁的圖檔掃多大就多大，比例不一。</li>
-<li>Genius Scan 我找不到可以設定版面大小的地方。它也是唯一一套以預設方式掃完上篇範例後，兩頁頁面大小不同的軟體。<br/>
-<img src="/images/2011/2011-03-29-scan-app-b11.jpeg" width="240" height="360"> <br/>
-（Genius Scan 輸出後的頁面大小不一）</li>
-</ul>
-</li>
-<li>JotNot 可以加入 PDF 密碼作為保護</li>
-<li>CamScanner 可以對每一頁加入筆記。輸出 PDF 時，也可決定要不要將筆記內容一起存入 PDF 中。</li>
-<li>CamScanner 有「快速批次掃描」的功能，不過我還沒試過。</li>
-</ul>
-
-
-<p>至於最後我選了哪套留在 iPhone 上呢？我只能說真的是「一分錢一分貨」了&#8230;&#8230;</p>
+  <div class="entry-content"><p>我很喜歡湊佳苗的《告白》。記得當初這小說的中文版剛上市時，我在書店翻了一下，當場驚為天人，二話不說，立刻就決定帶去櫃檯結帳。回家之後更是廢寢忘食地一口氣將整個故事讀完，大呼過癮。<br /><br /><div style="text-align: center;"><a href="http://www.anobii.com/books/%E5%BE%80%E5%BE%A9%E6%9B%B8%E7%B0%A1/9789571354460/018e6d7a84f1d3953a/" title="More about 往復書簡"><img alt="More about 往復書簡" src="http://image.anobii.com/anobi/image_book.php?type=4&amp;item_id=018e6d7a84f1d3953a&amp;time=1323512941" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 往復書簡" /></a></div><br /><br />不過儘管對於《告白》如此喜愛，湊佳苗的作品之後在台灣也陸續出了不少本，但我卻一本也沒再看過。原因無他，單純的是自己以為《告白》的筆法與鋪陳太過經典，即使是作者本身也難以超越。直到《往復書簡》的出現，又再次讓我在書店翻了一陣子後決定將這本書帶回家細細品嚐。<br /><br />與《告白》相比，《往復書簡》是由三篇短篇所構成，每個短篇都是經由書信往來的過程來讓讀者慢慢拼湊事實的原貌。文風依然是湊佳苗所擅長的「獨白體」，而情節發展也如同《告白》一般，隨著信件一封封的往來，事實的輪廓看似逐漸鮮明，卻又不斷地被推翻。<br /><br /><b>〈十年後的畢業文集〉</b>作為本書的第一篇，提供了相當的懸疑性與意外感。不過更讓我佩服的是，作者把學生時代同學之間相處時許多微小不易察覺卻著實存在著的細微互動與心結描寫的淋漓盡致。雖然彼此之間都是好朋友，但或多或少仍存在著看不順眼的小地方。在無憂無慮不需擔心工作、生活等瑣碎問題的學生時代，也許終日煩惱的就是這些人際關係上的小小摩擦吧。<br /><br />第二篇<b>〈二十年後的作業〉</b>主題再次圍繞著神職者－－老師－－的這個職業上，算是玩老哏吧，不過這一篇卻是三篇裡面我最喜歡的一篇。貫穿本篇的案件雖然也是一步步揭露，但卻毫不讓人意外，倒是結局的發展讓人感到相當溫馨，也是本書三篇中最讓我喜愛的一篇。<br /><br />至於最後一篇<b>〈十五年後的補習〉</b>，則完完全全是「真相→推翻真相→新的真相→再次推翻真相→更新的真相」這樣的套路。不過由於「舊的真相」與「新的真相」之間的反差並不大，故事讀起來反而比較平淡。除此之外，這篇在閱讀的過程中也不斷給我「這是愛情故事吧？」「不，這不是愛情故事。」「這還是愛情故事吧。」「這果然不是愛情故事。」「這終究還是愛情故事」這樣不斷反覆的感覺，也可以算是一種樂趣吧。<br /><br />總的來說，《往復書簡》仍舊沒有超越《告白》所帶來的震撼，但作為連續幾個陽光午後的午茶良伴，倒是毫不失職。</p>
 </div>
   
   
@@ -772,7 +469,7 @@ int main(void)
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/03/29/scanner-app-review-part-1/">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/11/01/sangoku-musou-6/">真三國無雙 6 初玩心得</a></h1>
     
     
       <p class="meta">
@@ -788,152 +485,14 @@ int main(void)
   
 
 
-<time datetime="2011-03-29T10:57:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2011</time>
+<time datetime="2011-11-01T23:52:00+08:00" pubdate data-updated="true">Nov 1<span>st</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 <a href="http://itunes.apple.com/tw/app/pdf-reader-file-scanner-file/id325924458?mt=8">PDF Reader</a> 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。</p>
-
-<p>當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：</p>
-
-<ul>
-<li><a href="http://itunes.apple.com/us/app/camscanner-free/id388627783?mt=8#">CamScanner Free</a> / CamScanner+ ($4.99, a.k.a 《掃描全能王》)</li>
-<li><a href="http://itunes.apple.com/us/app/genius-scan/id377672876?mt=8">Genius Scan</a> / Genius Scan+ ($2.99)</li>
-<li><a href="http://itunes.apple.com/us/app/jotnot-scanner-free/id310789464?mt=8#">JotNot Scanner Free</a> / JotNot Scanner Pro ($0.99)</li>
-</ul>
-
-
-<p>這邊也順便說說我對掃描軟體的基本要求：</p>
-
-<ol>
-<li>自動辨識文件邊緣的功能要準確</li>
-<li>能針對不同文件類型作適當的影像調整</li>
-<li>可以輸出到 Google Docs, Evernote, Dropbox 等雲端服務</li>
-</ol>
-
-
-<p>簡單說就是要<strong>「掃的方便、掃的清楚，掃完輕鬆丟到雲端上」</strong>，至於文件管理之類的，我用其他工具，就不勞煩這些掃描軟體了。</p>
-
-<p>在進行比較之前，先說說這三款的共通之處：</p>
-
-<ol>
-<li>都有免費版與付費版，其中 CamScanner 的價格比另外兩套加起來還貴。不過 JotNot 的 $0.99 是特價，原價也是 $4.99，只是 JotNot 從去年(2010)九月開始特價到現在，不曉得還會不會調回原價？還是就這樣 0.99 下去了？</li>
-<li>三款都有「Wifi 分享」功能，也就是能透過區網內桌機端的瀏覽器連上指定的 port 來下載文件。因為我不常用這功能，所以下面就沒進一步測試比較。</li>
-<li>都可以透過直接拍照或是從相簿中載入的方式取得圖檔。</li>
-<li>CamScanner 與 JotNot 都有中文，前者甚至有中文名字 《掃描全能王》。雖然說英文不是問題，但是有中文大大加分啊！</li>
-</ol>
-
-
-<p>以下的測試都是針對免費版。至於免費跟付費版的差異這邊就不贅述了，多半都是廣告與附屬功能。對於最主要的「邊緣辨識」與「影像調整」兩個功能，免費與付費都是一樣的。</p>
-
-<p>先一起來看看基本介面吧（依序為 CamScanner, Genius Scan, JotNot Scanner）這三個的介面各有各的特色，三個我都喜歡。真要挑一個最高分的，大概是就 JotNot 了吧，他的介面設計跟 iPhone 本身的 APP 很一致，但是我不喜歡那個 Logo；Genius 的介面很簡潔，一進去就知道要做什麼；CamScanner 中規中矩，初次啟動還附了兩個文件作為說明檔案與範例，算是不錯的作法。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a01.jpeg" width="240" height="360" title="CamScanner" >
-<img src="/images/2011/2011-03-29-scan-app-a02.jpeg" width="240" height="360" title="Genius Scan" >
-<img src="/images/2011/2011-03-29-scan-app-a03.jpeg" width="240" height="360" title="JotNot Scanner" ></p>
-
-<p>接著是文件邊緣辨識的測試，為了公平起見，我用底下同樣的兩張圖作為輸入，分別看看在三款軟體中的辨識情況：</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a04.jpeg" width="240" height="360" title="Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a05.jpeg" width="240" height="360" title="Sample 2" ></p>
-
-<p>首先是 CamScanner 的辨識結果。相對於其他兩套，CamScanner 沒有對齊的格線，只有邊緣的八個點，算是比較可惜，但是辨識的結果卻是三套中最好的。左圖有確實找到盒子邊緣，右圖的則是上方邊線錯誤。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a06.jpeg" width="240" height="360" title="CamScanner with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a07.jpeg" width="240" height="360" title="CamScanner with Sample 2" ></p>
-
-<p>接著看看 Genius Scan。左圖只有辨識出主圖部分，盒子上方被忽略掉了。右圖辨識到的範圍則蠻令人匪夷所思&#8230;&#8230;</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a08.jpeg" width="240" height="360" title="Genius with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a09.jpeg" width="240" height="360" title="Genius with Sample 1" ></p>
-
-<p>最後是 JotNot Scanner。JotNot 的辨識能力介於中間。左圖的辨識跟 Genius Scan 一樣，只有主圖；右圖的辨識跟 CamScanner 一樣，都是上邊線錯誤。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a10.jpeg" width="240" height="360" title="JotNot with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a11.jpeg" width="240" height="360" title="JotNot with Sample 1" ></p>
-
-<p>辨識出錯誤的範圍是難免的，因此也要順便看看調整邊界的功能方不方便。在這一點上，CamScanner 跟 JotNot 就很用心。前者在手指點下去要調整的時候，會出現小圓框特寫要調整的角角；後者點下去之後會自動針對該區域放大，以方便操作。兩種方式使用起來都很流暢。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a12.jpeg" width="240" height="360" title="CamScanner Close-up 1" >
-<img src="/images/2011/2011-03-29-scan-app-a13.jpeg" width="240" height="360" title="JotNot Close-up" ><br/>
-（左：CamScanner 的圓框特寫；右：JotNot 的自動放大）</p>
-
-<p>寫到這邊有點長，先休息一下。<a href="/blog/2011/03/29/scanner-app-review-part-2/">下一篇</a>將繼續從影像處理與文件分享兩個層面去做比較。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/12/18/hitotoyo-and-hirai-ken/">［無用］一青窈と平井堅</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-12-18T13:47:00+08:00" pubdate data-updated="true">Dec 18<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>將一青窈的歌聲換成平井堅的歌聲<br /><br /><ul><li><a href="http://lalingna.myweb.hinet.net/GEN.wmv">日本綜藝節目上的介紹</a></li><li><a href="http://cross-breed.com/archives/200406291823.php">flash 動畫版的介紹</a><br /></li><li>我用 <a href="http://www.adobe.com/special/products/audition/syntrillium.html">Cool Edit Pro</a> 試過，一青窈的歌轉成平井堅的嗓音來聽感覺超神奇也超新鮮。</li><li>據說 ayu 與 DAI 的歌聲也有類似的性質。還沒試過。</li></ul></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/11/26/ten-years-ago/">十年前</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-11-26T12:23:00+08:00" pubdate data-updated="true">Nov 26<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><span style="color: grey;">原載於《青年世紀》295期，1996年三月，初春號</span></span><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><hr style="font-family: Georgia, serif; font-size: 16px;" /><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><div style="font-family: Georgia, serif; font-size: 16px; writing-mode: tb-rl;"><span style="color: purple; font-weight: bold;">書</span><br /><br />沉醉在與妳的對望之中<br />陷入無法自拔的神話裏<br /><br />妳張開雙臂<br />以充滿無限可能的想像<br />誘惑著我進入妳的世界<br />我不敢遺漏<br />細細地打量妳的每一分<br />每一寸肌膚<br />動人<br />只可惜無法吞噬<br />我貪婪地咀嚼著妳<br />的每一絲情意<br /><br />朦朧中<br />聲音越來越遠<br />時間越來越遠<br />彷彿此刻<br />只有我和妳</div><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><hr style="font-family: Georgia, serif; font-size: 16px;" /><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><span style="color: grey;">現在看來沒什麼。不過十年前的環境，以及保守學校高中生的身分，這個似乎是前衛了點。尤其當年是沒交過女友的純情高中生，同學間異樣的眼光是難免的。<br /><br />那麼，十年後呢？還沒到，那是明年的事。開始醞釀了倒是。</span></span></p>
+  <div class="entry-content"><p>說是初玩，其實也已經把整個魏吳蜀晉四個勢力的故事模式全部過了一遍，加上一些戰史模式的關卡。以下是零散心得：<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://upload.wikimedia.org/wikipedia/zh/0/01/Dynasty_Warriors_7.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://upload.wikimedia.org/wikipedia/zh/0/01/Dynasty_Warriors_7.jpg" width="275" /></a></div><br /><br /><br /><ul><li>用四個字來形容這遊戲，那就是<b>「疲於奔命」</b>。</li><li>六代的故事模式加強了敘事性，不過不能改變歷史總覺得有種莫名的失落。</li><li>每個關卡都只能用同樣角色攻略，讓重玩的樂趣大大降低。</li><li>加上許多關寨不先解決重要事件就不會開門，幾乎每關都必須按照一定次序內容進行，玩過了一次就很難提得起興趣玩第二次。</li><li>大略估計一下，一個關卡平均 15 分鐘，四個勢力共 92 個關卡差不多也要 23 小時的遊戲時數。以整個故事模式的長度而言，還算可以接受。</li><li>魏國的主軸是「霸道」；吳國的主軸是「家族」；蜀國的主軸是「仁之國」；晉的主軸先是「消滅平庸之輩」，之後轉變為「消滅活在遺志中的人」。</li><li>司馬兄弟也太陽光了吧，跟老爸司馬懿完全不同調性。</li><li>本來以為故事會到鐘會反叛魏國與姜維聯手，可惜到了劉禪開城投降就結束了。</li><li>錯字還不少，特別是討伐諸葛誕這個關卡，不只錯字，還有漏字。</li><li>部分關卡開頭前要跟士兵對話這一部分有點雞肋。若不是為了獎盃我還真想直接出征。</li><li>不過雖說雞肋，有些發展還蠻有趣的。例如王元姬和司馬昭的關係，在戰場上只看得出來兩人關係匪淺，可是真正的兩人互動關係都透露在士兵的八卦耳語上。</li><li>另外蜀國劇情中一個一路跟隨劉備的士兵也很有趣，之後不但晉升到卒伯，兩個孩子都還長大成人並且從軍。我每次一可以對話一定就先想把這傢伙找出來看他的人生又有什麼進展。</li><li><strike>（話說一開始看到那個士兵說等戰爭結束要回家鄉娶媳婦這段，我還以為是死亡 flag）</strike></li><li>另外就是經常看到說人名或地名雙關語耍冷的士兵。偶一為之尚可，可是這代裡多到看到有點膩了，好煩 XD</li><li>對話模式中，有些士兵沒有對話，不過遠遠看過去會見到他在打混，走過去一靠近他就立刻精神抖擻起來。這還蠻有趣的。</li><li>弓腰姬跟劉大耳兩個人在戰爭過程中一直放閃光這是哪招？</li><li>除了 Tony さん之外，吳國也多了個 Kenny さん（應該前幾代就有，只是我沒注意到）</li><li>司馬昭的 Ex 技把人當滑板踩還蠻搞笑的啊。特別是你踩在腳上的是頭上頂著皇冠的魏帝曹髦或和蜀帝劉禪。</li><li>這一代真的很愛玩雙關語。司馬懿臨死把劍丟給司馬師，說是「我的權力就交給你運用了」；司馬師臨死也把劍丟給司馬昭，說了一樣的話。看的當下沒會意過來，事後才想到日文中的「劍」與「權」同音。</li><li>關索頭上的花到底是怎麼回事？雲長你都不管一下的嗎？</li><li>再一次佩服三國無雙系列的關卡設計，同樣一張地圖可以變出許許多多的花樣。許多關卡用到同一張地圖，可是由於使用部分不同，或是進軍路線不同，使得玩的感受也截然不同。</li><li>只有一點感受例外，那就是不管地圖怎麼變，都一樣讓人－－<b>「疲於奔命」</b>。</li><li>人生七十才開始，無雙六也是到了戰史模式才開始，開始無止盡的<a href="http://ja.wikipedia.org/wiki/%E3%82%84%E3%82%8A%E8%BE%BC%E3%81%BF">やり込み</a>。</li></ul><div>最後引一段小故事幫諸葛誕平反一下。遊戲中諸葛誕殺了文欽失了人心，於是城內軍民開城欲降。不過東晉時人干寶所著的《晉紀》有如下記載：</div><blockquote class="tr_bq">數百人拱手為列，每斬一人，輒降之，竟不變，至盡，時人比之田橫。</blockquote><div>關於這段敘述，維基百科上「<a href="http://zh.wikipedia.org/wiki/%E8%AB%B8%E8%91%9B%E8%AA%95">諸葛誕</a>」條目的記述如下：</div><blockquote class="tr_bq">&#8230;&#8230;諸葛誕率領數騎逃出壽春，被大將軍司馬胡奮手下士兵殺死。諸葛誕亦被誅滅三族。諸葛誕麾下數百人於壽春被俘，堅決不降，更說：「為諸葛公死，不恨。」行刑時排成一列，每斬一人都招降下一人，但始終無人投降。</blockquote><div>想像這畫面，其實還蠻悲壯的。</div></p>
 </div>
   
   
@@ -958,6 +517,10 @@ int main(void)
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
       </li>
     
@@ -979,10 +542,6 @@ int main(void)
     
       <li class="post">
         <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a>
       </li>
     
   </ul>

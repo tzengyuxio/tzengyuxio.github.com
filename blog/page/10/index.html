@@ -1,0 +1,618 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/page/10">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/">［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-01-21T13:19:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。<br /><br />然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL 連線校對設為「utf8_general_ci」，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。<br /><br />這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 config/database.yml 中加入一行設定即可：<br /><pre><code><br />development:<br />  adapter: mysql<br />  database: example_development<br /><span style="color: rgb(255, 0, 0);">  encoding: utf8</span><br />  username: root<br />  password:<br /></code></pre><br />如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/01/21/mysql-launch-on-boot/">［FreeBSD］MySQL 的啟動</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-01-21T10:05:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>重裝了 MySQL 後發現，當 server 整個 reboot 的時候，MySQL 並沒有被啟動。找了一下發現<a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&amp;forum=5">原因</a>。現在得像 apache 或 sendmail 等服務一樣，在 rc.conf 中加入<br /><code><br />mysql_enable="YES"<br /></code><br />另外，若要知道有哪些 server 必須透過 rc.conf 來啟動的，可以透過下列方式：<br /><code><br />cd /usr/local/etc/rc.d/<br />grep _enable *<br /></code><br />或是在安裝完套件後，view 一下 /usr/local/etc/rc.d/xxx.sh，看看要在 rc.conf 中加入什麼選項才能於開機時自動啟動。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&forum=5">The FreeBSD Network Laboratory Studio.</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/01/10/ruby-on-rails-on-freebsd/">［安裝］Ruby on Rails on FreeBSD</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-01-10T12:34:00+08:00" pubdate data-updated="true">Jan 10<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><span style="font-weight: bold;">Step 1: Install Ruby</span><br /><br />先前不曉得裝什麼軟體就一併裝好了，所以跳過。<br /><br /><span style="font-weight: bold;">Step 2: Install RubyGems</span><br /><br />這是等一下用來安裝 Rails 的工具，在 FreeBSD 下用 ports 安裝，輕鬆方便。<br /><code><br />[freebsd] /usr/ports/devel/ruby-gems> make install clean</code><br /><br /><span style="font-weight: bold;">Step 3: Install Rails</span><br /><br />照<a href="http://www.rubyonrails.org/down">官方網站</a>上的描述，同樣一行指令搞定。<br /><code><br />[freebsd] ~> gem install rails --include-dependencies</code><br /><br />註：我連試了兩次指令都執行到一半失敗，可能是網路 timeout 關係，第三次就順利成功了。<br /><br /><span style="font-weight: bold;">Step 4: 建立應用程式</span><br /><br />基本上這也是照著前一個網頁的指示作。<sup>_<sup>&lt;br</sup></sup> /><code><br />[freebsd] ~> rails /path/to/my/new/application<br />[freebsd] ~> cd /path/to/my/new/application<br />[freebsd] ~> ruby script/server<br /></code><br />接下來開啟網址 <span style="color: rgb(51, 51, 255);">http://0.0.0.0:3000</span> 就能夠看到關於 RoR 的說明了。<br />說明頁面的最底下有 Getting Started，可以開始寫 RoR 的程式囉！<br /><br /><hr />參考網址：<br />[1] <a href="http://www.rubyonrails.org/down">Download Ruby on Rails</a><br />[2] <a href="http://www.onlamp.com/pub/a/onlamp/2005/01/20/rails.html?page=1">Rolling with Ruby on Rails</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/01/05/eslite-copy/">［習作］偽誠品文案－在之間</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-01-05T22:09:00+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在五點與七點之間，我們共享晚餐。<br />在教室與課本之間，我們學習成長。<br />在地圖與行囊之間，我們旅行他鄉。<br />在酒精與音符之間，我們樂狂歡。<br />在尼采與三毛之間，我們低歎。<br />在爭吵與擁抱之間，我們相處。<br />在敦南與信義之間，我們閱讀。<br /><br />誠品信義旗艦店，2006.1.1，Brand New Open.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/12/18/hitotoyo-and-hirai-ken/">［無用］一青窈と平井堅</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-12-18T13:47:00+08:00" pubdate data-updated="true">Dec 18<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>將一青窈的歌聲換成平井堅的歌聲<br /><br /><ul><li><a href="http://lalingna.myweb.hinet.net/GEN.wmv">日本綜藝節目上的介紹</a></li><li><a href="http://cross-breed.com/archives/200406291823.php">flash 動畫版的介紹</a><br /></li><li>我用 <a href="http://www.adobe.com/special/products/audition/syntrillium.html">Cool Edit Pro</a> 試過，一青窈的歌轉成平井堅的嗓音來聽感覺超神奇也超新鮮。</li><li>據說 ayu 與 DAI 的歌聲也有類似的性質。還沒試過。</li></ul></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/26/ten-years-ago/">十年前</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-26T12:23:00+08:00" pubdate data-updated="true">Nov 26<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><span style="color: grey;">原載於《青年世紀》295期，1996年三月，初春號</span></span><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><hr style="font-family: Georgia, serif; font-size: 16px;" /><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><div style="font-family: Georgia, serif; font-size: 16px; writing-mode: tb-rl;"><span style="color: purple; font-weight: bold;">書</span><br /><br />沉醉在與妳的對望之中<br />陷入無法自拔的神話裏<br /><br />妳張開雙臂<br />以充滿無限可能的想像<br />誘惑著我進入妳的世界<br />我不敢遺漏<br />細細地打量妳的每一分<br />每一寸肌膚<br />動人<br />只可惜無法吞噬<br />我貪婪地咀嚼著妳<br />的每一絲情意<br /><br />朦朧中<br />聲音越來越遠<br />時間越來越遠<br />彷彿此刻<br />只有我和妳</div><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><hr style="font-family: Georgia, serif; font-size: 16px;" /><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><span style="color: grey;">現在看來沒什麼。不過十年前的環境，以及保守學校高中生的身分，這個似乎是前衛了點。尤其當年是沒交過女友的純情高中生，同學間異樣的眼光是難免的。<br /><br />那麼，十年後呢？還沒到，那是明年的事。開始醞釀了倒是。</span></span></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/22/hard-dirve-partition/">［心得］硬碟切割</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-22T04:24:00+08:00" pubdate data-updated="true">Nov 22<span>nd</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：<br /><br /><blockquote>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br />至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。<br /><p>一般 server 用途, 8G 經驗法則還沒破功過 :)<br /></p><p>Windows server 我也是這樣規劃, 前 8G 畫成 C: 灌系統,<br />其它的空間全劃成 D: 有的沒的任何資料都放 D:<br /></p>儘供參考。 </blockquote><br />不過上述經驗法則主要是針對 server 用途而言。而且隨著軟體越來越龐大（尤其是安裝了 VS.NET 之後，我以前不裝這玩意兒的），以及經歷過幾次 <span style="color: rgb(0, 153, 0);">/var</span> 爆掉的慘痛教訓（FreeBSD auto 預設給的 <span style="color: rgb(0, 153, 0);">/var</span> 都不大），看來似乎得重新思索一下硬碟分割的策略。<br /><br /><ol><li>系統給 10G（目前用最多的大概用到 8.2G/Windows，5G/FreeBSD without X）</li><li>剩下的給 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span></li><li>FreeBSD 下系統的分配策略：</li><ol><li><span style="color: rgb(0, 153, 0);">/</span> : 256M</li><li><span style="color: rgb(0, 153, 0);">/tmp</span> : 不大於 ram (或乾脆 = ram 就好)<br /></li><li><span style="color: rgb(0, 153, 0);">swap</span> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</li><li><span style="color: rgb(0, 153, 0);">/var</span> 視剩餘空間與 X 的安裝與否，分配 1～2G</li><li>其餘通通給 <span style="color: rgb(0, 153, 0);">/usr</span> (至少須 6G 以上)<br /></li></ol><li>將部份資料搬移出系統分割區</li><ol><li><span style="color: rgb(153, 153, 0);">C:\Documents and Settings\username\My Documents</span> 搬到 <span style="color: rgb(0, 153, 0);">D:\HOME\username</span></li><li><span style="color: rgb(153, 153, 0);">/usr/local/www</span> 搬到 <span style="color: rgb(0, 153, 0);">/home/www</span> 下</li><li>如果 <span style="color: rgb(0, 153, 0);">/usr</span> 空間吃緊，將 <span style="color: rgb(0, 153, 0);">/usr/ports/distfiles</span> 也搬到 <span style="color: rgb(0, 153, 0);">/home</span> 底下</li></ol><li>原則：所有「有意義」的變動性檔案、文件，或需要儲存備份的資料，都往 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 底下丟</li><ol><li>像 <span style="color: rgb(153, 153, 0);">網頁cache</span> 就是屬於「無意義」的變動性檔案；反之，遊戲存檔是「有意義」的</li><li><span style="font-weight: bold;">非</span>常用的軟體的也丟到 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或個人資料夾下，如臨時安裝的程式，或是遊戲軟體</li><li>將所有系統分割區中需要備份的檔案（如設定檔）在 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 之下建立捷徑或 symbolic link<br /></li><li>此為原則，有些情況不必完全照著原則來。如資料庫檔案通常還是放在 <span style="color: rgb(0, 153, 0);">/var/db</span></li></ol><li>總之 10G 給系統，剩下的都拿來塞資料用 XD</li></ol>其實重點只需記住最後一點，至於其他的細節，那些都是個人經驗的累積，參考看看即可，不必然全部照作。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/21/douban-dot-com/">［網際］豆瓣 douban.com</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-21T06:07:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一直以為，內地的網站都是以抄襲為主，走不出自己的創新。但 <a href="http://douban.com/"><span style="color: rgb(67, 166, 90);">豆瓣 d</span><span style="color: rgb(34, 161, 208);">o</span><span style="color: rgb(255, 190, 135);">u</span><span style="color: rgb(67, 166, 90);">b</span><span style="color: rgb(34, 161, 208);">a</span><span style="color: rgb(255, 190, 135);">n</span></a> 徹徹底底改變了我的想法。<br /><br />從 <a href="http://www.baidu.com/">baidu</a> vs <a href="http://www.blogger.com/www.google.com">google</a>、<a href="http://www.aimi.cn/">爱米网</a> vs <a href="http://www.43things.com/">43 Things</a>、<a href="http://solidot.org/">slashdotcn.org</a> (註)，我們可以看到許多中國內地的網站，除了仿效國外的 web 應用 (app) 與內容 (content) 外，連使用介面與版型設計幾乎都是依樣畫葫蘆，看了實在令人倒盡胃口。雖然說模仿是成長的必經路程，我自己也很喜歡站在巨人肩膀上看遠方；但既然都站在別 人肩膀上了，要是不能看得更遠，好歹也要看到些不一樣的東西；像前面提到的幾個網站，都是站在巨人肩膀上看到跟巨人一樣的東西，甚至比巨人看到的還少。用 不客氣的話來說，這種「只學其形，不求其神」的做法，連「模仿」都稱不上，充其量只能稱作是一種「抄襲」。<br /><br />這樣的刻板印象，使得我在第一眼見到 <a href="http://douban.com/">豆瓣</a> 時，當下也懷疑這是不是又是另一個抄襲國外網站的網路服務。然而找了一陣後，發現國外並沒有類似的網站，即便是有網友在留言中指稱 <a href="http://douban.com/">豆瓣</a> 是抄襲 <a href="http://www.bookswelike.net/">Books We Like</a>的，我也覺得這兩個網站的風格與操作相差實在太遠，根本稱不上「抄襲」可言。就算 <a href="http://www.bookswelike.net/">Books We Like</a> 是  <a href="http://douban.com/">豆瓣</a> 的發想來源好了，<a href="http://douban.com/">豆瓣</a> 也成功的走出了自己的特色。甚至，<a href="http://douban.com/">豆瓣</a> 已經<a href="http://blog.douban.com/douban/2005/10/26/42/">成為其他網站抄襲的對象</a>了（<a href="http://xiaoshuomi.com/">與豆瓣同版型的網站</a>）。誠如<a href="http://douban.com/">豆瓣</a>作者阿北在其<a href="http://blog.douban.com/douban/2005/10/26/42/">文章</a>中所引述的英諺：「模仿是最真誠的讚美。」正是因為<a href="http://douban.com/">豆瓣</a>成了被模仿與抄襲的對象，故有其可敬之處。<br /><hr /><span style="color:gray;">註：<a href="http://solidot.org/">slashdotcn.org</a> 最近<a href="http://solidot.org/staticpages/index.php/about">改名成為 Solidot.org</a>，這算是嘗試走出自己風格的好的開始。不過話說回來，那「斜線點」的概念人家早就已經在用了，換了一個「Solidus Dot」其實是換湯不換藥啊～～還有那版型也得換換，光只是挪用別人的東西來用，這樣是無法「超英趕美」的啦！</span></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/21/two-group-of-people/">［辭海］兩群人&#8230;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-21T05:11:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul> <li style="font-weight: bold;">3 Amigo</li>   <ul> <li>Rambaugh、Booch、Jacobson</li>  <li>制定 UML 規範的傢伙</li><li>後來都聚到 Rational Software 去了</li> </ul> </ul>
+
+
+<p> <ul> <li style="font-weight: bold;">Gang of Four (GoF)</li> <ul>      <li>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</li>     <li>寫出 Design Patterns 這書的傢伙</li> </ul> </ul></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/19/revolution-frontier/">［筆記本］革命的先行者</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-19T16:56:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div style="text-align: center;"><br /><a href="http://www.flickr.com/photos/30215143@N00/62824112/" title="Photo Sharing"><img src="http://static.flickr.com/33/62824112_330ca03340_m.jpg" alt="誠品 MY NOTE - 列寧" height="240" width="172" /></a> <a href="http://www.flickr.com/photos/30215143@N00/62824134/" title="Photo Sharing"><img src="http://static.flickr.com/25/62824134_c95ee674e6_m.jpg" alt="誠品 MY NOTE - 孫文" height="240" width="172" /></a><br /><a href="http://www.flickr.com/photos/30215143@N00/62824149/" title="Photo Sharing"><img src="http://static.flickr.com/26/62824149_b5368575a1_m.jpg" alt="誠品 MY NOTE - 毛澤東" height="240" width="172" /></a> <a href="http://www.flickr.com/photos/30215143@N00/62824172/" title="Photo Sharing"><img src="http://static.flickr.com/28/62824172_cedf166674_m.jpg" alt="誠品 MY NOTE - 切‧格拉瓦" height="240" width="172" /></a><br /></div>
+
+
+<br /><hr />除了做遊戲外，我最想從事的工作<span style="color: rgb(255, 255, 255);">之一</span>就是<span style="font-weight: bold; color: rgb(255, 0, 0);">革命</span>！
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/11/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/9/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
