@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL &hellip;">
+  <meta name="description" content="這次來介紹兩個 iPhone 上與手指反應有關的免費遊戲首先是這個：Fast Finger 2Fast Finger 2遊戲很簡單，只要在指定時間之內拼命按你的 iPhone 就行了。有分 10 秒、30 秒、60 秒三種模式。也有 Game Center 的成就可以收集，不過都很難就是。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,7 +83,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/">［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/04/01/finger-technique/">勤練指技，你也可以是加藤&#8230;喔不，是高橋名人</a></h1>
     
     
       <p class="meta">
@@ -99,14 +99,14 @@
   
 
 
-<time datetime="2006-01-21T13:19:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2006</time>
+<time datetime="2011-04-01T08:36:00+08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。<br /><br />然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL 連線校對設為「utf8_general_ci」，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。<br /><br />這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 config/database.yml 中加入一行設定即可：<br /><pre><code><br />development:<br />  adapter: mysql<br />  database: example_development<br /><span style="color: rgb(255, 0, 0);">  encoding: utf8</span><br />  username: root<br />  password:<br /></code></pre><br />如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></p>
+  <div class="entry-content"><p>這次來介紹兩個 iPhone 上與手指反應有關的免費遊戲<br /><hr>首先是這個：Fast Finger 2<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-LwTPl94DGn0/TZTQTcCAbtI/AAAAAAAAAEc/3bx6WHVPquY/s1600/%25E4%25B8%258B%25E8%25BC%2589.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/-LwTPl94DGn0/TZTQTcCAbtI/AAAAAAAAAEc/3bx6WHVPquY/s1600/%25E4%25B8%258B%25E8%25BC%2589.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Fast Finger 2</td></tr></tbody></table>遊戲很簡單，只要在指定時間之內拼命按你的 iPhone 就行了。有分 10 秒、30 秒、60 秒三種模式。也有 Game Center 的成就可以收集，不過都很難就是。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-KlgaM6dx8cY/TZTQ0K5JeTI/AAAAAAAAAFA/jAdQnXG35UI/s1600/IMG_0500.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-KlgaM6dx8cY/TZTQ0K5JeTI/AAAAAAAAAFA/jAdQnXG35UI/s320/IMG_0500.jpg" width="213" /></a></div><br />說到訣竅的話，最簡單的方式就是食指與中指兩根交錯按。同時用三、四根手指頭不見得能幫你拿高分，因為用太多手指頭，容易造成不同手指按著螢幕的時間重疊到，而會被判斷成同一次 Tap。<br /><br />最後分享一下我的紀錄，不是很高，但卻按的很累，按到快要手指抽筋 XD<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-Mx5DdgPQP0s/TZTQ1IHz1DI/AAAAAAAAAFM/vxTqT-kveM8/s1600/IMG_0503.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="200" src="http://1.bp.blogspot.com/-Mx5DdgPQP0s/TZTQ1IHz1DI/AAAAAAAAAFM/vxTqT-kveM8/s200/IMG_0503.jpg" width="133" /></a><a href="http://1.bp.blogspot.com/-GV1j-sY5dS8/TZTQ1QPOTzI/AAAAAAAAAFQ/jPDEkAWCB6A/s1600/IMG_0504.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="200" src="http://1.bp.blogspot.com/-GV1j-sY5dS8/TZTQ1QPOTzI/AAAAAAAAAFQ/jPDEkAWCB6A/s200/IMG_0504.jpg" width="133" /></a><a href="http://1.bp.blogspot.com/-MlSVoWl7eOM/TZTQ1mLUbLI/AAAAAAAAAFU/V3j9viDEyoU/s1600/IMG_0505.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="200" src="http://1.bp.blogspot.com/-MlSVoWl7eOM/TZTQ1mLUbLI/AAAAAAAAAFU/V3j9viDEyoU/s200/IMG_0505.jpg" width="133" /></a></div><div class="separator" style="clear: both; text-align: center;">(10s: 115 / 30s: 222 / 60s: 425)</div><hr>接著第二款是：123456789<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-duiYiiD7e0o/TZTQTFQ0T5I/AAAAAAAAAEY/agCTSH7vqAM/s1600/%25E4%25B8%258B%25E8%25BC%25892.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-duiYiiD7e0o/TZTQTFQ0T5I/AAAAAAAAAEY/agCTSH7vqAM/s1600/%25E4%25B8%258B%25E8%25BC%25892.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">123456789</td></tr></tbody></table>對，你沒看錯，App 就叫 123456789 這名字。這遊戲除了拼速度外，還要比反應。規則也很簡單，就是把螢幕上九宮格出現的數字按照 123456789 的順序按完一遍就行了。一樣是三種模式：一回合、三回合，與九回合。每次出現的排列都是隨機不同的。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-ksIE9LSmBgI/TZTS2z7vAPI/AAAAAAAAAF0/CnjMjunkto0/s1600/IMG_0498.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://3.bp.blogspot.com/-ksIE9LSmBgI/TZTS2z7vAPI/AAAAAAAAAF0/CnjMjunkto0/s320/IMG_0498.jpg" width="320" /></a></div><br />這個遊戲最初我是單靠右手「一陽指神功」一路點到底，後來有發展些策略，但是效果有限，重點還是要多練習：<br /><ol><li>左右手並用。我的話是左手負責左邊三格，右手負責中右兩排六格。剛開始雙手並用時，速度一定會下降，因為左手的反應還不夠快。之後可以逼近甚至偶爾快過「一陽指」。不過這個會受到數字隨機分布的影響，如果剛好一左一右一左一右的排列，按起來就很順暢，反之就會感到卡卡的。</li><li>先整個掃過一遍再開始按。原本我的手指在遊戲開始前，都會先擺在九宮格中間附近的位置，目的是要開始後能盡量縮短移動時間。可是經常會按到卡住，因為不曉得下個數字在哪邊，而通常就是在右下角被手擋住的角落。所以後來我把手拿開，先整個掃視一遍才開始按，這樣按起來會比較順暢。雖然按的時間縮短了，但是掃視的時間也會拖長總時數，因此最好能練習到一開始整個看一眼後，腦中就對手指在九宮格上的移動有模糊的大概想法，並且同一時刻手指頭也開始按下去了。</li></ol><div>我目前的「123456789」分數記錄如下：</div><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-2qqk8cPmt0w/TZTS2JH7FoI/AAAAAAAAAFs/Vca_whA1TzE/s1600/IMG_0496.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://2.bp.blogspot.com/-2qqk8cPmt0w/TZTS2JH7FoI/AAAAAAAAAFs/Vca_whA1TzE/s320/IMG_0496.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">1-Round: 2秒07</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-vzL_cVKJ35I/TZTS2t8tIFI/AAAAAAAAAFw/OwbSI2BKHS4/s1600/IMG_0497.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://3.bp.blogspot.com/-vzL_cVKJ35I/TZTS2t8tIFI/AAAAAAAAAFw/OwbSI2BKHS4/s320/IMG_0497.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">3-Rounds: 7秒02</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-KH4Np1U3NLA/TZTS1R3JGNI/AAAAAAAAAFk/29Eojf052gU/s1600/IMG_0494.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://4.bp.blogspot.com/-KH4Np1U3NLA/TZTS1R3JGNI/AAAAAAAAAFk/29Eojf052gU/s320/IMG_0494.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">9-Rounds: 24秒56</td></tr></tbody></table><div>這次沒有手指抽筋，但是也按到手指快打結了 XD</div></p>
 </div>
   
   
@@ -119,7 +119,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2006/01/21/mysql-launch-on-boot/">［FreeBSD］MySQL 的啟動</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/03/29/scanner-app-review-part-2/">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（下）</a></h1>
     
     
       <p class="meta">
@@ -135,14 +135,101 @@
   
 
 
-<time datetime="2006-01-21T10:05:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2006</time>
+<time datetime="2011-03-29T13:08:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>重裝了 MySQL 後發現，當 server 整個 reboot 的時候，MySQL 並沒有被啟動。找了一下發現<a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&amp;forum=5">原因</a>。現在得像 apache 或 sendmail 等服務一樣，在 rc.conf 中加入<br /><code><br />mysql_enable="YES"<br /></code><br />另外，若要知道有哪些 server 必須透過 rc.conf 來啟動的，可以透過下列方式：<br /><code><br />cd /usr/local/etc/rc.d/<br />grep _enable *<br /></code><br />或是在安裝完套件後，view 一下 /usr/local/etc/rc.d/xxx.sh，看看要在 rc.conf 中加入什麼選項才能於開機時自動啟動。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&forum=5">The FreeBSD Network Laboratory Studio.</a></p>
+  <div class="entry-content"><p>上篇：<a href="http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></p>
+
+<p>這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。</p>
+
+<p>CamScanner 的作法有點接近理想方式。在裁剪之前，左上方的按鈕可以選擇「色彩增強」模式，有五種方案：「普通」、「增強」、「增強並銳化」、「經濟模式」、「黑白模式」，可惜這些模式的名稱不夠直覺。裁剪完之後，有提供滑軸用來調整明暗跟對比。裁剪前的「色彩增強」模式無法預覽，裁剪後才知道結果，裁剪完後的明暗對比則會即時反應在畫面上，方便掌握。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b01.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b02.jpeg" width="240" height="360"><br/>
+（左：裁剪前的色彩增強選項；右：明亮與對比的即時調整）</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b03.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b04.jpeg" width="240" height="360"><br/>
+（左：經濟模式；右：黑白模式）</p>
+
+<p>Genius Scan 在這方面就很陽春，後製處理只有三個選項：「不處理」、「黑白文件」、「彩色文件」。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b05.jpeg" width="240" height="360"></p>
+
+<p>JotNot 的後製功能全部放在一起。他的分類方式是我所喜歡的：「收據」、「黑白文件」、「彩色文件或白板」、「亮顯文本或黑板」、「攝影」。預設分類往下拉，也可以看到對比調整等選項，甚至可以控制背景與加上時間戳記，算是功能最完整的。但是這些調整功能，包含對比，都必須設定好後進行處理，才看得到結果，不滿意的話還要回頭改對比，並不是很方便。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-b06.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b07.jpeg" width="240" height="360">
+<img src="/images/2011/2011-03-29-scan-app-b08.jpeg" width="240" height="360"></p>
+
+<p>關於文件分享與輸出部分，如果以付費版本來看，基本上我所需要的都包含了。</p>
+
+<p>CamScanner 有以下選項：</p>
+
+<ul>
+<li>打開方式 (iBooks 或其他可開啟 PDF 的 iPhone app)</li>
+<li>電子郵件</li>
+<li>Google Docs</li>
+<li>BOX.net</li>
+<li>Evernote</li>
+<li>iDisk</li>
+<li>Dropbox</li>
+</ul>
+
+
+<p>Genius Scan 可以輸出的選項有：</p>
+
+<ul>
+<li>電子郵件</li>
+<li>iBooks 或其他可開啟 PDF 的 app</li>
+<li>（付費版）Dropbox</li>
+<li>（付費版）Evernote</li>
+<li>（付費版）Google Docs</li>
+</ul>
+
+
+<p>JotNot 比較特別的是它可以直接傳真或列印，傳真好像要額外付費 In-App-Purchases，這兩個功能我都沒試過。其餘的分享功能都只有付費版才有：</p>
+
+<ul>
+<li>（付費版）可輸出成 PDFs、JPEGs、PNGs</li>
+<li>（付費版）電子郵件</li>
+<li>（付費版）Dropbox</li>
+<li>（付費版）iDisk / WebDAV</li>
+<li>（付費版）Evernote</li>
+<li>（付費版）Box.net</li>
+<li>（付費版）Google Docs</li>
+</ul>
+
+
+<p>另外一些有的沒有的雜項功能，在最後作個記錄：</p>
+
+<ul>
+<li>標籤功能，CamScanner 與 JotNot 都可以對文件下 Tag，除了內建的 Tag 之外也可自己新增。CamScanner 的 Tag 在中文版下也是中文名稱，很貼心。 <br/>
+  <img src="/images/2011/2011-03-29-scan-app-b09.jpeg" width="240" height="360">
+  <img src="/images/2011/2011-03-29-scan-app-b10.jpeg" width="240" height="360"><br/>
+  （左：CamScanner 的預設標籤；右：JotNot 的預設標籤）</li>
+<li>除了標籤外，JotNot 還可以對文件標示星號。</li>
+<li>關於版面大小：
+
+<ul>
+<li>JotNot 可以設定整本的預設大小，如 A4，也可以在單張處理時分別指定；</li>
+<li>CamScanner 能夠設定整本的版面大小，也可勾選「自動適應大小」，這樣每頁的圖檔掃多大就多大，比例不一。</li>
+<li>Genius Scan 我找不到可以設定版面大小的地方。它也是唯一一套以預設方式掃完上篇範例後，兩頁頁面大小不同的軟體。<br/>
+<img src="/images/2011/2011-03-29-scan-app-b11.jpeg" width="240" height="360"> <br/>
+（Genius Scan 輸出後的頁面大小不一）</li>
+</ul>
+</li>
+<li>JotNot 可以加入 PDF 密碼作為保護</li>
+<li>CamScanner 可以對每一頁加入筆記。輸出 PDF 時，也可決定要不要將筆記內容一起存入 PDF 中。</li>
+<li>CamScanner 有「快速批次掃描」的功能，不過我還沒試過。</li>
+</ul>
+
+
+<p>至於最後我選了哪套留在 iPhone 上呢？我只能說真的是「一分錢一分貨」了&#8230;&#8230;</p>
 </div>
   
   
@@ -155,7 +242,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2006/01/10/ruby-on-rails-on-freebsd/">［安裝］Ruby on Rails on FreeBSD</a></h1>
+      <h1 class="entry-title"><a href="/blog/2011/03/29/scanner-app-review-part-1/">iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）</a></h1>
     
     
       <p class="meta">
@@ -171,14 +258,80 @@
   
 
 
-<time datetime="2006-01-10T12:34:00+08:00" pubdate data-updated="true">Jan 10<span>th</span>, 2006</time>
+<time datetime="2011-03-29T10:57:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2011</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><span style="font-weight: bold;">Step 1: Install Ruby</span><br /><br />先前不曉得裝什麼軟體就一併裝好了，所以跳過。<br /><br /><span style="font-weight: bold;">Step 2: Install RubyGems</span><br /><br />這是等一下用來安裝 Rails 的工具，在 FreeBSD 下用 ports 安裝，輕鬆方便。<br /><code><br />[freebsd] /usr/ports/devel/ruby-gems> make install clean</code><br /><br /><span style="font-weight: bold;">Step 3: Install Rails</span><br /><br />照<a href="http://www.rubyonrails.org/down">官方網站</a>上的描述，同樣一行指令搞定。<br /><code><br />[freebsd] ~> gem install rails --include-dependencies</code><br /><br />註：我連試了兩次指令都執行到一半失敗，可能是網路 timeout 關係，第三次就順利成功了。<br /><br /><span style="font-weight: bold;">Step 4: 建立應用程式</span><br /><br />基本上這也是照著前一個網頁的指示作。<sup>_<sup>&lt;br</sup></sup> /><code><br />[freebsd] ~> rails /path/to/my/new/application<br />[freebsd] ~> cd /path/to/my/new/application<br />[freebsd] ~> ruby script/server<br /></code><br />接下來開啟網址 <span style="color: rgb(51, 51, 255);">http://0.0.0.0:3000</span> 就能夠看到關於 RoR 的說明了。<br />說明頁面的最底下有 Getting Started，可以開始寫 RoR 的程式囉！<br /><br /><hr />參考網址：<br />[1] <a href="http://www.rubyonrails.org/down">Download Ruby on Rails</a><br />[2] <a href="http://www.onlamp.com/pub/a/onlamp/2005/01/20/rails.html?page=1">Rolling with Ruby on Rails</a></p>
+  <div class="entry-content"><p>iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 <a href="http://itunes.apple.com/tw/app/pdf-reader-file-scanner-file/id325924458?mt=8">PDF Reader</a> 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。</p>
+
+<p>當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：</p>
+
+<ul>
+<li><a href="http://itunes.apple.com/us/app/camscanner-free/id388627783?mt=8#">CamScanner Free</a> / CamScanner+ ($4.99, a.k.a 《掃描全能王》)</li>
+<li><a href="http://itunes.apple.com/us/app/genius-scan/id377672876?mt=8">Genius Scan</a> / Genius Scan+ ($2.99)</li>
+<li><a href="http://itunes.apple.com/us/app/jotnot-scanner-free/id310789464?mt=8#">JotNot Scanner Free</a> / JotNot Scanner Pro ($0.99)</li>
+</ul>
+
+
+<p>這邊也順便說說我對掃描軟體的基本要求：</p>
+
+<ol>
+<li>自動辨識文件邊緣的功能要準確</li>
+<li>能針對不同文件類型作適當的影像調整</li>
+<li>可以輸出到 Google Docs, Evernote, Dropbox 等雲端服務</li>
+</ol>
+
+
+<p>簡單說就是要<strong>「掃的方便、掃的清楚，掃完輕鬆丟到雲端上」</strong>，至於文件管理之類的，我用其他工具，就不勞煩這些掃描軟體了。</p>
+
+<p>在進行比較之前，先說說這三款的共通之處：</p>
+
+<ol>
+<li>都有免費版與付費版，其中 CamScanner 的價格比另外兩套加起來還貴。不過 JotNot 的 $0.99 是特價，原價也是 $4.99，只是 JotNot 從去年(2010)九月開始特價到現在，不曉得還會不會調回原價？還是就這樣 0.99 下去了？</li>
+<li>三款都有「Wifi 分享」功能，也就是能透過區網內桌機端的瀏覽器連上指定的 port 來下載文件。因為我不常用這功能，所以下面就沒進一步測試比較。</li>
+<li>都可以透過直接拍照或是從相簿中載入的方式取得圖檔。</li>
+<li>CamScanner 與 JotNot 都有中文，前者甚至有中文名字 《掃描全能王》。雖然說英文不是問題，但是有中文大大加分啊！</li>
+</ol>
+
+
+<p>以下的測試都是針對免費版。至於免費跟付費版的差異這邊就不贅述了，多半都是廣告與附屬功能。對於最主要的「邊緣辨識」與「影像調整」兩個功能，免費與付費都是一樣的。</p>
+
+<p>先一起來看看基本介面吧（依序為 CamScanner, Genius Scan, JotNot Scanner）這三個的介面各有各的特色，三個我都喜歡。真要挑一個最高分的，大概是就 JotNot 了吧，他的介面設計跟 iPhone 本身的 APP 很一致，但是我不喜歡那個 Logo；Genius 的介面很簡潔，一進去就知道要做什麼；CamScanner 中規中矩，初次啟動還附了兩個文件作為說明檔案與範例，算是不錯的作法。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a01.jpeg" width="240" height="360" title="CamScanner" >
+<img src="/images/2011/2011-03-29-scan-app-a02.jpeg" width="240" height="360" title="Genius Scan" >
+<img src="/images/2011/2011-03-29-scan-app-a03.jpeg" width="240" height="360" title="JotNot Scanner" ></p>
+
+<p>接著是文件邊緣辨識的測試，為了公平起見，我用底下同樣的兩張圖作為輸入，分別看看在三款軟體中的辨識情況：</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a04.jpeg" width="240" height="360" title="Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a05.jpeg" width="240" height="360" title="Sample 2" ></p>
+
+<p>首先是 CamScanner 的辨識結果。相對於其他兩套，CamScanner 沒有對齊的格線，只有邊緣的八個點，算是比較可惜，但是辨識的結果卻是三套中最好的。左圖有確實找到盒子邊緣，右圖的則是上方邊線錯誤。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a06.jpeg" width="240" height="360" title="CamScanner with Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a07.jpeg" width="240" height="360" title="CamScanner with Sample 2" ></p>
+
+<p>接著看看 Genius Scan。左圖只有辨識出主圖部分，盒子上方被忽略掉了。右圖辨識到的範圍則蠻令人匪夷所思&#8230;&#8230;</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a08.jpeg" width="240" height="360" title="Genius with Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a09.jpeg" width="240" height="360" title="Genius with Sample 1" ></p>
+
+<p>最後是 JotNot Scanner。JotNot 的辨識能力介於中間。左圖的辨識跟 Genius Scan 一樣，只有主圖；右圖的辨識跟 CamScanner 一樣，都是上邊線錯誤。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a10.jpeg" width="240" height="360" title="JotNot with Sample 1" >
+<img src="/images/2011/2011-03-29-scan-app-a11.jpeg" width="240" height="360" title="JotNot with Sample 1" ></p>
+
+<p>辨識出錯誤的範圍是難免的，因此也要順便看看調整邊界的功能方不方便。在這一點上，CamScanner 跟 JotNot 就很用心。前者在手指點下去要調整的時候，會出現小圓框特寫要調整的角角；後者點下去之後會自動針對該區域放大，以方便操作。兩種方式使用起來都很流暢。</p>
+
+<p><img src="/images/2011/2011-03-29-scan-app-a12.jpeg" width="240" height="360" title="CamScanner Close-up 1" >
+<img src="/images/2011/2011-03-29-scan-app-a13.jpeg" width="240" height="360" title="JotNot Close-up" ><br/>
+（左：CamScanner 的圓框特寫；右：JotNot 的自動放大）</p>
+
+<p>寫到這邊有點長，先休息一下。<a href="/blog/2011/03/29/scanner-app-review-part-2/">下一篇</a>將繼續從影像處理與文件分享兩個層面去做比較。</p>
 </div>
   
   
@@ -191,7 +344,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2006/01/05/eslite-copy/">［習作］偽誠品文案－在之間</a></h1>
+      <h1 class="entry-title"><a href="/blog/2009/02/08/anata-ni-aete-yokatta/">あなたに会えてよかった</a></h1>
     
     
       <p class="meta">
@@ -207,14 +360,81 @@
   
 
 
-<time datetime="2006-01-05T22:09:00+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2006</time>
+<time datetime="2009-02-08T09:04:00+08:00" pubdate data-updated="true">Feb 8<span>th</span>, 2009</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>在五點與七點之間，我們共享晚餐。<br />在教室與課本之間，我們學習成長。<br />在地圖與行囊之間，我們旅行他鄉。<br />在酒精與音符之間，我們樂狂歡。<br />在尼采與三毛之間，我們低歎。<br />在爭吵與擁抱之間，我們相處。<br />在敦南與信義之間，我們閱讀。<br /><br />誠品信義旗艦店，2006.1.1，Brand New Open.</p>
+  <div class="entry-content"><div style="font-family: Georgia, serif; font-size: 16px;"><div>作詞：小泉今日子</div><div>作曲：小林武史</div></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;">在車上的廣播偶然聽到這首歌，旋律有點耳熟，卻又有更多陌生而新鮮的感覺。聽到的當下並不曉得歌名，憑著半調子的日文聽力硬是記下幾句歌詞，上網一查，才知道這是首年代久遠的歌曲。這首歌是日本 1991 年 Oricon&nbsp;年度排行第六的暢銷歌曲，這或許能解釋我剛聽到歌曲時那「遙遠的熟悉感」的由來吧，也許在我小時候曾經在什麼地方聽過這首曲子也說不定。</div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;">＜あなたに会えてよかった＞的原唱版本是小泉今日子，節奏比較輕快。這是小泉今日子最暢銷的一首，也是她唯一銷售破百萬的單曲：</div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/BVZRFFu7VlQ/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/BVZRFFu7VlQ&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/BVZRFFu7VlQ&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;">相隔 17 年，青山テルマ在 2008 年也唱了這一首，收錄在專輯《Diary》中。我在廣播中聽到的是這個版本，簡單的吉他與呢喃般的歌聲，聽了就是舒服：</div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://1.gvt0.com/vi/tCXB5cJTFJE/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/tCXB5cJTFJE&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/tCXB5cJTFJE&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;">令我意外的是，中森明菜也唱過這首歌。中森明菜的歌聲具有熟女的魅力，聽起來彷彿是經歷多次跌跌撞撞的感情後，終於遇到命中注定的那個人：</div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/OupSIKNpOMA/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/OupSIKNpOMA&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/OupSIKNpOMA&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;">另外，從 wiki 上的資料看到，冬馬由美也唱過這首。冬馬由美是我很喜歡的聲優，只可惜我找不到她的版本。</div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;">歌詞：</div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><div></div><blockquote><div>サヨナラさえ 上手に言えなかった</div><div>Ah あなたの愛を 信じられず おびえていたの</div><div>時がすぎて 今心から言える</div><div>あなたに会えてよかったねきっと私</div><div><br /></div><div>淋しい夜 そばに居てくれたね</div><div>言葉に出来ない気持ち わかってくれたね</div><div>何にも言えず ただ泣いてるだけで</div><div>本当の気持ち いつでも 言えたなら</div><div>側に居れたね ずっと</div><div><br /></div><div>サヨナラさえ 上手に言えなかった</div><div>Ah あなたの愛に 答えられず 逃げてごめんね</div><div>時が過ぎて 今心から言える</div><div>あなたに会えてよかったねきっと私</div><div><br /></div><div>切ない夜 キレイに写ったね</div><div>こわれそうで 大切に抱きしめあったね</div><div>余裕がなくて ただ自信がなくて</div><div>あなたのゆれる気持ちに気づかない</div><div>ふりをしてたのずっと</div><div><br /></div><div>追いかけてた夢が叶うようにと</div><div>ねぇどこかでそっと祈ってるあなたのために</div><div>遠い空に輝く星のように</div><div>あなたはずっと そのままで</div><div>変らないで</div><div><br /></div><div>思い出が 星になる…</div><div><br /></div><div>時が過ぎて 今心から言える</div><div>あなたに会えてよかったねきっと私</div><div>世界で一番 素敵な恋をしたね</div></blockquote><div></div></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><br /></div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;">參考資料：</div>
+
+
+<div style="font-family: Georgia, serif; font-size: 16px;"><ul><li>維基百科－<a href="http://ja.wikipedia.org/wiki/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E4%BC%9A%E3%81%88%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F">あなたに会えてよかった</a></li><li>LyricsWiki－<a href="http://lyricwiki.org/%E5%B0%8F%E6%B3%89%E4%BB%8A%E6%97%A5%E5%AD%90:%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E4%BC%9A%E3%81%88%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F">小泉今日子:あなたに会えてよかった</a></li></ul></div>
+
 </div>
   
   
@@ -227,7 +447,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/12/18/hitotoyo-and-hirai-ken/">［無用］一青窈と平井堅</a></h1>
+      <h1 class="entry-title"><a href="/blog/2009/02/04/january-report/">［近況］一月份報告</a></h1>
     
     
       <p class="meta">
@@ -243,14 +463,14 @@
   
 
 
-<time datetime="2005-12-18T13:47:00+08:00" pubdate data-updated="true">Dec 18<span>th</span>, 2005</time>
+<time datetime="2009-02-04T03:29:00+08:00" pubdate data-updated="true">Feb 4<span>th</span>, 2009</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>將一青窈的歌聲換成平井堅的歌聲<br /><br /><ul><li><a href="http://lalingna.myweb.hinet.net/GEN.wmv">日本綜藝節目上的介紹</a></li><li><a href="http://cross-breed.com/archives/200406291823.php">flash 動畫版的介紹</a><br /></li><li>我用 <a href="http://www.adobe.com/special/products/audition/syntrillium.html">Cool Edit Pro</a> 試過，一青窈的歌轉成平井堅的嗓音來聽感覺超神奇也超新鮮。</li><li>據說 ayu 與 DAI 的歌聲也有類似的性質。還沒試過。</li></ul></p>
+  <div class="entry-content"><p>這裡已經空了 2007, 2008 整整兩年了。整整兩年之多。<div><br /></div><div>這兩年斷斷續續都有想要繼續寫些什麼的念頭，奈何意志力不夠堅定，給自己太多藉口。但不管怎樣，至少現在又回來寫了。</div><div><br /></div><div>首先來看看今年第一個月是怎麼度過的吧：</div><div><br /></div><div><span class="Apple-style-span" style="font-weight: bold;">【動畫】</span></div><div><ul><li><span class="Apple-style-span" style="font-weight: bold;">かんなぎ</span>：我對<a href="http://zh.wikipedia.org/wiki/%E5%B1%B1%E6%9C%AC%E5%AF%AC">山本寬</a>的風格真是又愛又恨啊。</li></ul><span class="Apple-style-span" style="font-weight: bold;">【電影】</span><br /><ul><li><span class="Apple-style-span" style="font-weight: bold;">嫌疑犯Ｘ的獻身</span>：我只能說堤真一所演的數學家真是太入味了。</li><li><span class="Apple-style-span" style="font-weight: bold;">天方夜談</span>：拿朋友的免費票去看的。就一部不用花錢的電影而言，還蠻具娛樂效果。</li></ul><div><span class="Apple-style-span" style="font-weight: bold;">【小說】</span></div><div><ul><li><span class="Apple-style-span" style="font-weight: bold;">群</span>：前面太悶，後面太緊湊的一部科普版《鐵達尼號》。</li><li><span class="Apple-style-span" style="font-weight: bold;">大騙局</span>：接著《群》之後看，會有許多場景似曾相識的感覺。</li><li><span class="Apple-style-span" style="font-weight: bold;">數位密碼</span>：裡面關於電腦資訊安全的資訊，基本上當笑話帶過即可。</li></ul><div><span class="Apple-style-span" style="font-weight: bold;">【桌上遊戲】</span></div><div><ul><li><span class="Apple-style-span" style="font-weight: bold;">Bang!</span>：最有趣的就是大家的嘴砲。第二有趣的就是大家都被嘴砲所騙。</li><li><span class="Apple-style-span" style="font-weight: bold;">富饒之城</span>：太心機的遊戲－－我懷疑繼續玩下去總有一天我會心<span class="Apple-style-span" style="color: rgb(255, 0, 0);">機</span>梗塞。</li><li><span class="Apple-style-span" style="font-weight: bold;">卡卡頌</span>：真是簡單又有趣、可愛又迷人的多人拼圖遊戲。</li></ul><div>另外，一月份 blog 文章寫了一篇。不管怎樣，這篇寫完後，二月份在「blog 文章數」這一項至少已經打平一月份的紀錄了。之後就是多寫多賺。</div><div><br /></div><div>以上。</div><div><br /></div></div></div></div></p>
 </div>
   
   
@@ -263,7 +483,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/11/26/ten-years-ago/">十年前</a></h1>
+      <h1 class="entry-title"><a href="/blog/2006/12/12/guinea-pig/">［辭海］幾內亞豬</a></h1>
     
     
       <p class="meta">
@@ -279,14 +499,14 @@
   
 
 
-<time datetime="2005-11-26T12:23:00+08:00" pubdate data-updated="true">Nov 26<span>th</span>, 2005</time>
+<time datetime="2006-12-12T09:46:00+08:00" pubdate data-updated="true">Dec 12<span>th</span>, 2006</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><span style="color: grey;">原載於《青年世紀》295期，1996年三月，初春號</span></span><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><hr style="font-family: Georgia, serif; font-size: 16px;" /><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><div style="font-family: Georgia, serif; font-size: 16px; writing-mode: tb-rl;"><span style="color: purple; font-weight: bold;">書</span><br /><br />沉醉在與妳的對望之中<br />陷入無法自拔的神話裏<br /><br />妳張開雙臂<br />以充滿無限可能的想像<br />誘惑著我進入妳的世界<br />我不敢遺漏<br />細細地打量妳的每一分<br />每一寸肌膚<br />動人<br />只可惜無法吞噬<br />我貪婪地咀嚼著妳<br />的每一絲情意<br /><br />朦朧中<br />聲音越來越遠<br />時間越來越遠<br />彷彿此刻<br />只有我和妳</div><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><br /></span><br /><hr style="font-family: Georgia, serif; font-size: 16px;" /><span class="Apple-style-span" style="font-family: Georgia, serif; font-size: 16px;"><span style="color: grey;">現在看來沒什麼。不過十年前的環境，以及保守學校高中生的身分，這個似乎是前衛了點。尤其當年是沒交過女友的純情高中生，同學間異樣的眼光是難免的。<br /><br />那麼，十年後呢？還沒到，那是明年的事。開始醞釀了倒是。</span></span></p>
+  <div class="entry-content"><p>在<a href="http://tenyitseng.blogspot.com/2006/11/openjdk.html">這裡</a>看到的，從前後文看來像是「白老鼠」的意思，<br />找了一下，在<a href="http://www.nvri.gov.tw/faq/5/5-003.htm">家畜衛生試驗所</a>的網站找到下面這段說明：<br /><blockquote><span style="color: rgb(255, 0, 0);">3. 英文為何稱天竺鼠為（guinea pig）「幾內亞豬」？</span><br /><span style="font-weight: bold;">答</span>：  天竺鼠外觀像「豬」叫聲又近似小豬，但為何叫做「幾內亞」?有此一說是，天竺鼠剛剛引入英國時價格非常貴，要一個金幣之譜，而英國之金幣則稱為（guinea ），所以天竺鼠是一個金幣之豬。</blockquote><br />跟原本猜測的意思應該差不多吧（我也不知道「天竺鼠」跟「白老鼠」一不一樣）。<br /><br />話說回來，「<a href="http://zh.wikipedia.org/wiki/%E6%96%B0%E5%B9%BE%E5%85%A7%E4%BA%9E">新幾內亞</a>」不就是「新金幣」的意思了？</p>
 </div>
   
   
@@ -299,7 +519,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/11/22/hard-dirve-partition/">［心得］硬碟切割</a></h1>
+      <h1 class="entry-title"><a href="/blog/2006/09/23/launchy/">［情報］快速啟動軟體：Launchy</a></h1>
     
     
       <p class="meta">
@@ -315,14 +535,14 @@
   
 
 
-<time datetime="2005-11-22T04:24:00+08:00" pubdate data-updated="true">Nov 22<span>nd</span>, 2005</time>
+<time datetime="2006-09-23T20:20:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2006</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：<br /><br /><blockquote>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br />至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。<br /><p>一般 server 用途, 8G 經驗法則還沒破功過 :)<br /></p><p>Windows server 我也是這樣規劃, 前 8G 畫成 C: 灌系統,<br />其它的空間全劃成 D: 有的沒的任何資料都放 D:<br /></p>儘供參考。 </blockquote><br />不過上述經驗法則主要是針對 server 用途而言。而且隨著軟體越來越龐大（尤其是安裝了 VS.NET 之後，我以前不裝這玩意兒的），以及經歷過幾次 <span style="color: rgb(0, 153, 0);">/var</span> 爆掉的慘痛教訓（FreeBSD auto 預設給的 <span style="color: rgb(0, 153, 0);">/var</span> 都不大），看來似乎得重新思索一下硬碟分割的策略。<br /><br /><ol><li>系統給 10G（目前用最多的大概用到 8.2G/Windows，5G/FreeBSD without X）</li><li>剩下的給 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span></li><li>FreeBSD 下系統的分配策略：</li><ol><li><span style="color: rgb(0, 153, 0);">/</span> : 256M</li><li><span style="color: rgb(0, 153, 0);">/tmp</span> : 不大於 ram (或乾脆 = ram 就好)<br /></li><li><span style="color: rgb(0, 153, 0);">swap</span> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</li><li><span style="color: rgb(0, 153, 0);">/var</span> 視剩餘空間與 X 的安裝與否，分配 1～2G</li><li>其餘通通給 <span style="color: rgb(0, 153, 0);">/usr</span> (至少須 6G 以上)<br /></li></ol><li>將部份資料搬移出系統分割區</li><ol><li><span style="color: rgb(153, 153, 0);">C:\Documents and Settings\username\My Documents</span> 搬到 <span style="color: rgb(0, 153, 0);">D:\HOME\username</span></li><li><span style="color: rgb(153, 153, 0);">/usr/local/www</span> 搬到 <span style="color: rgb(0, 153, 0);">/home/www</span> 下</li><li>如果 <span style="color: rgb(0, 153, 0);">/usr</span> 空間吃緊，將 <span style="color: rgb(0, 153, 0);">/usr/ports/distfiles</span> 也搬到 <span style="color: rgb(0, 153, 0);">/home</span> 底下</li></ol><li>原則：所有「有意義」的變動性檔案、文件，或需要儲存備份的資料，都往 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 底下丟</li><ol><li>像 <span style="color: rgb(153, 153, 0);">網頁cache</span> 就是屬於「無意義」的變動性檔案；反之，遊戲存檔是「有意義」的</li><li><span style="font-weight: bold;">非</span>常用的軟體的也丟到 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或個人資料夾下，如臨時安裝的程式，或是遊戲軟體</li><li>將所有系統分割區中需要備份的檔案（如設定檔）在 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 之下建立捷徑或 symbolic link<br /></li><li>此為原則，有些情況不必完全照著原則來。如資料庫檔案通常還是放在 <span style="color: rgb(0, 153, 0);">/var/db</span></li></ol><li>總之 10G 給系統，剩下的都拿來塞資料用 XD</li></ol>其實重點只需記住最後一點，至於其他的細節，那些都是個人經驗的累積，參考看看即可，不必然全部照作。</p>
+  <div class="entry-content"><p>最近常見到 <a href="http://quicksilver.blacktree.com/">Quicksilver</a> 這詞，google 了一下，原來這是在 Mac 上快速啟動軟體（但不僅止於快速啟動軟體）的程式。<br /><br />Windows 上也有類似的軟體，我先前一直使用的是 <a href="http://pcman.ptt.cc/ko/ko.html">PCMan 的熱鍵超速啟動</a>，只要連按兩下 Caps Lock 加上熱鍵字串便可啟動程式，蠻方便順手的，不過似乎已經不再維護與更新。而且如果換電腦或是有新增軟體的話，需重新設定熱鍵字串，算是比較麻煩之處。google 後來推出 <a href="http://desktop.google.com.tw/zh/TW/">google desktop</a>，可以透過連按兩下 Ctrl 來搜尋檔案，操作上與熱鍵超速啟動有異曲同工之妙，於是我便想，若是有 plug-in 能夠讓 google desktop 也能快速啟動程式，統一在相同的操作與介面下，那就省事多了。可惜找了半天沒見到這類的 plug-in。<br /><br />回到 Quicksilver，當我在找 QuickSilver 的資料時，剛好見到<a href="http://www.11tmr.com/11tmr.nsf/d6plinks/DEVT-6A4G3G">有篇文章</a>提到 Windows 上也有類似 Quicksilver 的軟體，我分別上各軟體的首頁看了看：<br /><ul><li><a href="http://www.candylabs.com/approcket/">AppRocket</a>: 看起來似乎不錯，不過要錢，我就懶得裝了。</li><li><a href="http://www.boletrice.com/pccom/">PC-Com</a>: 網頁上的介紹與圖片吸引不了我&#8230;&#8230;</li><li><a href="http://www.launchy.net/">Launchy</a>: 看起來挺不賴，而且是 Open Source，大大的加分！</li><li><a href="http://colibri.leetspeak.org/">Colibri</a>: 好像也蠻不錯的，不過 Launchy 可以換 skin :-P</li><li><a href="http://www.bayden.com/slickrun/">SlickRun</a>: 連推薦 SlickRun 的人都說 Launchy 比較好，我還能說什麼呢？</li></ul><p>所以我就下載了 Launchy 來試了。初使用的感覺還不賴，也許我會逐漸改變習慣，讓陪伴我多年的「熱鍵超速啟動」慢慢退休吧。</p></p>
 </div>
   
   
@@ -335,7 +555,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/11/21/douban-dot-com/">［網際］豆瓣 douban.com</a></h1>
+      <h1 class="entry-title"><a href="/blog/2006/07/12/tgi-and-ged/">［辭海］TGI & G.E.D</a></h1>
     
     
       <p class="meta">
@@ -351,14 +571,15 @@
   
 
 
-<time datetime="2005-11-21T06:07:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2005</time>
+<time datetime="2006-07-12T23:57:00+08:00" pubdate data-updated="true">Jul 12<span>th</span>, 2006</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>一直以為，內地的網站都是以抄襲為主，走不出自己的創新。但 <a href="http://douban.com/"><span style="color: rgb(67, 166, 90);">豆瓣 d</span><span style="color: rgb(34, 161, 208);">o</span><span style="color: rgb(255, 190, 135);">u</span><span style="color: rgb(67, 166, 90);">b</span><span style="color: rgb(34, 161, 208);">a</span><span style="color: rgb(255, 190, 135);">n</span></a> 徹徹底底改變了我的想法。<br /><br />從 <a href="http://www.baidu.com/">baidu</a> vs <a href="http://www.blogger.com/www.google.com">google</a>、<a href="http://www.aimi.cn/">爱米网</a> vs <a href="http://www.43things.com/">43 Things</a>、<a href="http://solidot.org/">slashdotcn.org</a> (註)，我們可以看到許多中國內地的網站，除了仿效國外的 web 應用 (app) 與內容 (content) 外，連使用介面與版型設計幾乎都是依樣畫葫蘆，看了實在令人倒盡胃口。雖然說模仿是成長的必經路程，我自己也很喜歡站在巨人肩膀上看遠方；但既然都站在別 人肩膀上了，要是不能看得更遠，好歹也要看到些不一樣的東西；像前面提到的幾個網站，都是站在巨人肩膀上看到跟巨人一樣的東西，甚至比巨人看到的還少。用 不客氣的話來說，這種「只學其形，不求其神」的做法，連「模仿」都稱不上，充其量只能稱作是一種「抄襲」。<br /><br />這樣的刻板印象，使得我在第一眼見到 <a href="http://douban.com/">豆瓣</a> 時，當下也懷疑這是不是又是另一個抄襲國外網站的網路服務。然而找了一陣後，發現國外並沒有類似的網站，即便是有網友在留言中指稱 <a href="http://douban.com/">豆瓣</a> 是抄襲 <a href="http://www.bookswelike.net/">Books We Like</a>的，我也覺得這兩個網站的風格與操作相差實在太遠，根本稱不上「抄襲」可言。就算 <a href="http://www.bookswelike.net/">Books We Like</a> 是  <a href="http://douban.com/">豆瓣</a> 的發想來源好了，<a href="http://douban.com/">豆瓣</a> 也成功的走出了自己的特色。甚至，<a href="http://douban.com/">豆瓣</a> 已經<a href="http://blog.douban.com/douban/2005/10/26/42/">成為其他網站抄襲的對象</a>了（<a href="http://xiaoshuomi.com/">與豆瓣同版型的網站</a>）。誠如<a href="http://douban.com/">豆瓣</a>作者阿北在其<a href="http://blog.douban.com/douban/2005/10/26/42/">文章</a>中所引述的英諺：「模仿是最真誠的讚美。」正是因為<a href="http://douban.com/">豆瓣</a>成了被模仿與抄襲的對象，故有其可敬之處。<br /><hr /><span style="color:gray;">註：<a href="http://solidot.org/">slashdotcn.org</a> 最近<a href="http://solidot.org/staticpages/index.php/about">改名成為 Solidot.org</a>，這算是嘗試走出自己風格的好的開始。不過話說回來，那「斜線點」的概念人家早就已經在用了，換了一個「Solidus Dot」其實是換湯不換藥啊～～還有那版型也得換換，光只是挪用別人的東西來用，這樣是無法「超英趕美」的啦！</span></p>
+  <div class="entry-content"><ul><li>T.G.I.F - Thank Godness It&#8217;s Friday</li><li>Q.E.D. - quod erat demonstrandum (拉丁文，證明完畢)<br /><a href="http://zh.wikipedia.org/wiki/Q.E.D.">Wikipedia</a>、<a href="http://zh.wikipedia.org/wiki/Q.E.D._%E8%A8%BC%E6%98%8E%E7%B5%82%E4%BA%86">同名漫畫</a><br /></li></ul>
+
 </div>
   
   
@@ -371,7 +592,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/11/21/two-group-of-people/">［辭海］兩群人&#8230;</a></h1>
+      <h1 class="entry-title"><a href="/blog/2006/06/04/abbreviation-glossaries-afaik/">［辭海］abbreviation Glossaries, AFAIK.</a></h1>
     
     
       <p class="meta">
@@ -387,17 +608,14 @@
   
 
 
-<time datetime="2005-11-21T05:11:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2005</time>
+<time datetime="2006-06-04T15:19:00+08:00" pubdate data-updated="true">Jun 4<span>th</span>, 2006</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><ul> <li style="font-weight: bold;">3 Amigo</li>   <ul> <li>Rambaugh、Booch、Jacobson</li>  <li>制定 UML 規範的傢伙</li><li>後來都聚到 Rational Software 去了</li> </ul> </ul>
-
-
-<p> <ul> <li style="font-weight: bold;">Gang of Four (GoF)</li> <ul>      <li>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</li>     <li>寫出 Design Patterns 這書的傢伙</li> </ul> </ul></p>
+  <div class="entry-content"><p><span style="font-weight: bold;">見過或常用的：</span><br /><ul><li>   AFAIK - As Far As I Know, 就我所知</li><li>   AFK - Away From Keyboard, 放棄吧，人不在</li><li>   BRB - Be Right Back, 馬上回來</li><li dragover="true">   BTW - By The Way, 順道一題</li><li>   FYI - For Your Information, 給你參考</li><li>   IMHO - In My Humble Opinion, 依我個人淺見</li></ul><span style="font-weight: bold;">這啥鬼？</span><br /><ul><li>   GD&amp;H - grinning, ducking, and hiding<br />(微笑、閃避，然後躲起來)</li><li>   GD&amp;R - grinning, ducking, and running<br />(微笑、閃避，然後逃走)</li><li>   GD&amp;RVVF - grinning, ducking, and running, very, very fast<br />(微笑、閃避，然後快速逃走)</li><li>     BTDT - been there, done that<br />(順利達成任務)</li><li>BTDTBTT - been there, done that, bought the tape<br />(順利達成任務，買到了錄音帶)</li><li>   BTDTGTTS - been there, done that, got the t–shirt<br />(順利達成任務，拿到了 T 恤)</li><li>   BTDTGTTSAWIO - been there, done that, got the t–shirt, and wore it out<br />(順利達成任務，拿到了 T 恤，又穿破了)</li></ul><br /><hr />參考資料：<a href="http://www.microsoft.com/taiwan/windowsxp/experiences/acronyms.htm">立即訊息中的縮寫及速記法</a></p>
 </div>
   
   
@@ -410,7 +628,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2005/11/19/revolution-frontier/">［筆記本］革命的先行者</a></h1>
+      <h1 class="entry-title"><a href="/blog/2006/03/10/browsershots/">［網際］Browsershots - 瀏覽器呈現結果大閱兵</a></h1>
     
     
       <p class="meta">
@@ -426,18 +644,14 @@
   
 
 
-<time datetime="2005-11-19T16:56:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2005</time>
+<time datetime="2006-03-10T05:19:00+08:00" pubdate data-updated="true">Mar 10<span>th</span>, 2006</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><div style="text-align: center;"><br /><a href="http://www.flickr.com/photos/30215143@N00/62824112/" title="Photo Sharing"><img src="http://static.flickr.com/33/62824112_330ca03340_m.jpg" alt="誠品 MY NOTE - 列寧" height="240" width="172" /></a> <a href="http://www.flickr.com/photos/30215143@N00/62824134/" title="Photo Sharing"><img src="http://static.flickr.com/25/62824134_c95ee674e6_m.jpg" alt="誠品 MY NOTE - 孫文" height="240" width="172" /></a><br /><a href="http://www.flickr.com/photos/30215143@N00/62824149/" title="Photo Sharing"><img src="http://static.flickr.com/26/62824149_b5368575a1_m.jpg" alt="誠品 MY NOTE - 毛澤東" height="240" width="172" /></a> <a href="http://www.flickr.com/photos/30215143@N00/62824172/" title="Photo Sharing"><img src="http://static.flickr.com/28/62824172_cedf166674_m.jpg" alt="誠品 MY NOTE - 切‧格拉瓦" height="240" width="172" /></a><br /></div>
-
-
-<br /><hr />除了做遊戲外，我最想從事的工作<span style="color: rgb(255, 255, 255);">之一</span>就是<span style="font-weight: bold; color: rgb(255, 0, 0);">革命</span>！
-
+  <div class="entry-content"><p><a href="http://browsershots.org/">Browsershots</a><br /><br />上面這個網站可以讓你輸入一個網址，然後得知這個網站在不同的瀏覽器中（如 <a href="http://www.moztw.org/">Firefox</a>, <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a>, <a href="http://www.opera.com/">Opera</a>, <a aiotitle="Konqueror" href="http://www.konqueror.org/">Konqueror</a>&#8230;etc）的呈現結果。有個小小的不方便是不能馬上看到結果，排入工作之後得等上一陣子。但至少，比起自己動手裝上不同的作業系統與瀏覽器要來得省事多了吧。<br /><br />雖然 <a href="http://browsershots.org/">Browsershots</a> 所提供的瀏覽器種類幾乎已經涵蓋全部能想得到的了，但我看了看總覺得好像還少了什麼，仔細一想才發現，原來還缺了 <a href="http://w3m.sourceforge.net/">w3m</a> 或 <a href="http://lynx.browser.org/">lynx</a> 這類文字模式的 browser。人家偶爾也是會用 w3m 上網閒逛的嘛～～尤其是在逛網看資料卻又不能明目張膽讓人發現你在逛網路的時候……<br /><br />最後附帶一提，這個網站也用了 <a href="http://trac.edgewall.com/">Trac</a> 作為專案管理與問題回報系統；同樣有用 <a href="http://trac.edgewall.com/">Trac</a> 的還有 <a href="http://www.typosphere.org/trac/">Typo</a> 這個 Blog Engine。</p>
 </div>
   
   
@@ -462,6 +676,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
       </li>
     
@@ -483,10 +701,6 @@
     
       <li class="post">
         <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
       </li>
     
   </ul>

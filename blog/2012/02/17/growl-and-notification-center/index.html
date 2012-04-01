@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Growl 與 Notification Center 隨便聊 - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="今天聽到 OSX 下一版本 Mountain Lion 的消息，大更新不多，主要都是將 iOS 上的一些應用搬到 Mac 上來，而其中最吸引我注意的大概就是通知中心（Notification Center）了。 繼續聊下去前，先聊聊我理想中的電腦工作環境，要能提供兩個基本功能： &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Growl 與 Notification Center 隨便聊</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-17T17:39:00+08:00" pubdate data-updated="true">Feb 17<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>今天聽到 OSX 下一版本 Mountain Lion 的消息，大更新不多，主要都是將 iOS 上的一些應用搬到 Mac 上來，而其中最吸引我注意的大概就是通知中心（Notification Center）了。</p>
+
+
+<p>繼續聊下去前，先聊聊我理想中的電腦工作環境，要能提供兩個基本功能：</p>
+
+
+<ol><li>單一而簡潔的指令輸入，可以快速鍵入指令進行工作；</li><li>單一而簡潔的訊息輸出，將執行結果與事件統一一處發送通知。</li></ol>
+
+
+<p>說起來很簡單，說穿了也不過就是文字列模式下的延伸概念。關於第一點，現在已經有許多應用程式可以做到了，例如在 Windows 有 <a href="http://blog.aqualuna.me/search/label/Launchy">Launchy</a>, Mac 則有 <a href="http://blog.aqualuna.me/search/label/Alfred">Alfred</a>, 都是很棒的應用，直接熱鍵啟動執行指令，就可以開始進行工作，能有效節省時間。</p>
+
+
+<p>然而由於圖形作業系統多個視窗各自為政的關係，要建構第二點的環境其實有些困難。在 Windows，當電腦連上外接設備，或是硬碟空間時，會有小小黃色的 Tooltip 通知視窗；當 MSN 有人傳訊息來時，有 MSN 的通知泡泡；防毒軟體的病毒更新碼有段時間沒更新時，會有防毒軟體的提醒對話泡泡。每個軟體都有每個軟體自己的通知與設定，顯示停留的時間與樣式也都個不相同。假設今天如果我要進入專注模式，想要暫時關掉所有外來的通知時，我得一個一個自己去設定，然後要放鬆時還得一個一個去打開，這會是多惱人的一件事情？</p>
+
+
+<p>好在 Mac 上有 Growl, 一個第三方廠商所寫的訊息通知中心軟體。Growl 提供了公開 API, 讓軟體開發商可以支援將訊息發送到 Growl 作顯示。以我目前的電腦來看，就包含了以下程式的訊息通知：</p>
+
+
+<ul><li>1Password</li><li>Adium</li><li>Alfred</li><li>Cappuccino</li><li>Dropbox</li><li>GrowlTunes</li><li>HardwareGrowler</li><li>Insync</li><li>Pomodoro</li></ul>
+
+
+<p>這些不同的程式都可以透過相同的窗口向我報告，當我不想要干擾時，也可以很輕鬆的全部關掉。也正因為有如此多的軟體支援 Growl, 所以就算我不喜歡 Growl 他那爪子般的 icon, 不喜歡他把 GrowlTunes 與 HardwareGrowler 在 App Store 裡另外拆開來賣，但我還是購買並安裝了這套軟體。</p>
+
+
+<p>回到最初所提的，下一版的 OSX 將會把 iOS 上的訊息中心給整合進來，我想最為首當其衝的就是 Growl 了。前面所提到的「單一簡潔的輸入」與「單一簡潔的輸出」，這工作由作業系統來做自然是再合適也不過了。因此不難想像，隨著應用程式逐漸支援新的訊息中心，Growl 將逐漸失去其既有的優勢。</p>
+
+
+<p>只是就目前看來，Mountain Lion 的更新項目實在不多，如果到時候不是免費升級，而且賣得還跟 Lion 一樣貴的話，我實在很難下得了手花錢進行升級……</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-17T17:39:00+08:00" pubdate data-updated="true">Feb 17<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/mac/'>mac</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/02/13/change-folder-icon-in-mac/" title="Previous Post: Mac 更換資料夾圖示的方法">&laquo; Mac 更換資料夾圖示的方法</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/02/19/alfred-search/" title="Next Post: 幾個我常用的 Alfred 自定搜尋">幾個我常用的 Alfred 自定搜尋 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

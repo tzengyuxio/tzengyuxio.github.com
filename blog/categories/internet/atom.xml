@@ -4,7 +4,7 @@
   <title><![CDATA[Category: internet | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/internet/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-01T09:31:12+08:00</updated>
+  <updated>2012-04-02T06:00:56+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Google Map Quest]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/02/google-map-quest/"/>
+    <updated>2012-04-02T05:12:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/02/google-map-quest</id>
+    <content type="html"><![CDATA[<p>照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。</p>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的音效等。而影片中那 8-bit 風格的美術與音效，更是所有勇者迷再熟悉也不過的場景了。看完影片後我在 Google Maps 上玩了好久，到處探索這個世界，就好像自己真的是勇者一樣四處探險。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-01.png" alt="image" /><br/>
+這是離我們最近，也是我們最熟悉的建築物－－天空之塔。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-02.png" alt="image" /><br/>
+我住的附近。透過 8-bit 地圖看來，突然覺得有河流經過是個不錯的地方。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-03.png" alt="image" /><br/>
+蕃薯島 XD</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-04.png" alt="image" /><br/>
+記得這是 SEGA MD 大戰略一代中的某張地圖。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-05.png" alt="image" /><br/>
+北邊大陸上除了有冰原，還有會扣 HP 的毒沼。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-06.png" alt="image" /><br/>
+世界地、不，是勇者鬥惡龍三代的地圖。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-07.png" alt="image" /><br/>
+日邦格的富士山。這地方的樹木也跟別處不同，是楓紅色的。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-08.png" alt="image" /><br/>
+Goolge 總部，感覺怪物很多…</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Google Analytics 也可以彈鋼琴]]></title>
@@ -50,15 +88,6 @@
     <updated>2011-08-06T11:04:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2011/08/06/google-authorship</id>
     <content type="html"><![CDATA[<p><span class="Apple-style-span" style="color: red;">更新：關於 Google Authorship 的運作機制與非 Blogger 使用者的使用參考，<span id="goog_1196584250"></span><a href="http://blog.aqualuna.me/2011/08/more-on-google-authorship_09.html">請見此篇</a><span id="goog_1196584251"></span>。</span><br /><br />Google 搜尋最近新加入了一項功能，就是可以在搜尋結果中顯示作者資訊。這項技術叫做 Google Authorship，實際的呈現結果如下圖（目前只有在 Google English 的搜尋才看得到）：<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-rmPvyuZFFZg/Tjyhffmt8uI/AAAAAAAAAbY/Hya9qlYGtT0/s1600/ga_sample.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="218" src="http://4.bp.blogspot.com/-rmPvyuZFFZg/Tjyhffmt8uI/AAAAAAAAAbY/Hya9qlYGtT0/s400/ga_sample.png" width="400" /></a></div><br />透過 Google Authorship，不僅可以讓自己的文章在搜尋結果頁面中顯得更為突出，也可以在轉貼成風的網路汪洋中，更明確的顯示出某篇文章真正的原始出處，除此之外，也有助於搜尋結果排名的提升。可以想見，當越來越多的作者加入 Google Authorship 後，網路搜尋的結構也會呈現出與今日截然不同的樣貌。<br /><br />不過 Google 還沒那麼聰明，沒辦法直接把文章跟原作者作連結，所以我們還是得作些設定。如果你是用 Google 的 Blogger 在寫網誌，而且也有了一個 Google+ 帳號，那麼很簡單，只要完成下面兩個動作就好：<br /><br />一、在 Blogger Profile （個人簡介，就是下面那張圖）頁面中，加入自己的 Google+ 連結：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-k3wm9QJZSeo/TjyhfDX27ZI/AAAAAAAAAbU/C9A2u8yJ05k/s1600/ga_personalprofile.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="241" src="http://4.bp.blogspot.com/-k3wm9QJZSeo/TjyhfDX27ZI/AAAAAAAAAbU/C9A2u8yJ05k/s400/ga_personalprofile.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">點擊左上角按鈕開始編輯</td></tr></tbody></table><pre style="text-align: center;">https://plus.google.com/<span class="Apple-style-span" style="color: blue;">116861989911994383287</span><span class="Apple-style-span" style="color: red;">?rel=author</span></pre>請把上面連結藍色部分的數字，替換成自己的 Google+ ID，然後輸入在「一般」資訊區塊的「首頁URL」欄位中。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-PF823Cho9vI/TjyhevRaEXI/AAAAAAAAAbQ/zjguQ8f7604/s1600/ga_homepageurl.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="150" src="http://3.bp.blogspot.com/-PF823Cho9vI/TjyhevRaEXI/AAAAAAAAAbQ/zjguQ8f7604/s400/ga_homepageurl.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">輸入自己的 Google+ 頁面，並加上 "?rel=author"</td></tr></tbody></table><br />二、在自己的 Google+ 頁面中，加入自己的網誌連結，並開放給網路上所有的人。加入連結時，記得要勾選「這個網頁是用專門用來介紹我自己」：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-T4iLCkrSjtU/TjykdR1gOuI/AAAAAAAAAbg/TS0_o8Z3EcI/s1600/ga_gpluslink.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="112" src="http://1.bp.blogspot.com/-T4iLCkrSjtU/TjykdR1gOuI/AAAAAAAAAbg/TS0_o8Z3EcI/s400/ga_gpluslink.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">編輯自己 Google+ 「關於」頁面中的連結</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-SFz5dY69eqo/TjymI3oTdnI/AAAAAAAAAbk/6A3NZIIn7zc/s1600/ga_editlink.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SFz5dY69eqo/TjymI3oTdnI/AAAAAAAAAbk/6A3NZIIn7zc/s320/ga_editlink.png" width="300" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">除了勾選選項外，也要把開放</td></tr></tbody></table><br />像筆者有三個網誌，每個都可以勾選「這個網頁是專門用來介紹我自己」。又因為三個網誌都是使用同一份 Blogger Profile，因此三個網站的文章就同時都會與我的 Google+ 建立連結。<br /><br />到這邊就算大功告成，完成了「文章網頁」與「個人檔案」的雙向連結。接著可以到 <a href="http://www.google.com/webmasters/tools/richsnippets">Rich Snippets Testing Tool</a> 這個工具，輸入自己網站網址來檢查是否設定成功。成功的話，會顯示如下的訊息：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-zh5DI345CCo/TjyokbizBUI/AAAAAAAAAbo/PjMlpJVSGnA/s1600/ga_success.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/-zh5DI345CCo/TjyokbizBUI/AAAAAAAAAbo/PjMlpJVSGnA/s1600/ga_success.png" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">綠色文字表示設定成功</td></tr></tbody></table>不過最後我們還得告訴 Google 請把我們的文章與作者關連加入到搜尋結果中。請前往&nbsp;<a href="https://spreadsheets.google.com/a/google.com/spreadsheet/viewform?formkey=dHdCLVRwcTlvOWFKQXhNbEgtbE10QVE6MQ">Authorship Request</a>&nbsp;這個表單，填寫相關資訊後送出。送出之後通常不會立刻在搜尋結果中看到，想看得到得等上一陣子就是了。<br /><br />----<br />參考資訊：<br />以下介紹所使用的是 <span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="color: purple;">&amp;lt;a href="url" </span><span class="Apple-style-span" style="color: red;">rel="author"</span><span class="Apple-style-span" style="color: purple;">&amp;gt;</span></span> 的方式：<br />．<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1229920">Google Authorship 官方說明 (原始作法，英文)</a><br />．<a href="http://st-threath.blogspot.com/2011/08/googlegoogle-profile-google-authorship.html">Google搜尋結果出現Google+ profile? 　(如何設定Google Authorship)</a><br />．<a href="http://mynotes.org/tech/2011/08/04/5335.htm">將文章與Google+帳號連結</a><br /><br />新的作法改採 <span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="color: purple;">&amp;lt;a href="url</span><span class="Apple-style-span" style="color: red;">?rel=author</span><span class="Apple-style-span" style="color: purple;">"&amp;gt;</span></span> 的方式：<br /><a href="http://draft.blogger.com/url?rel=author"></a>．<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1408986">Google Authorship 官方說明 (新作法，英文)</a><br /><br />新的作法適用在一些只能填入連結，無法自己修改網頁 HTML 的地方。例如你是某新聞網站的作者，新聞網站提供了每個作者的個人頁面，可以編輯文字、加上連結，但卻無法自訂連結的屬性，這時候新的作法就可以派上用場。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[［網際］Browsershots - 瀏覽器呈現結果大閱兵]]></title>
-    <link href="http://tzengyuxio.me/blog/2006/03/10/browsershots/"/>
-    <updated>2006-03-10T05:19:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2006/03/10/browsershots</id>
-    <content type="html"><![CDATA[<p><a href="http://browsershots.org/">Browsershots</a><br /><br />上面這個網站可以讓你輸入一個網址，然後得知這個網站在不同的瀏覽器中（如 <a href="http://www.moztw.org/">Firefox</a>, <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a>, <a href="http://www.opera.com/">Opera</a>, <a aiotitle="Konqueror" href="http://www.konqueror.org/">Konqueror</a>...etc）的呈現結果。有個小小的不方便是不能馬上看到結果，排入工作之後得等上一陣子。但至少，比起自己動手裝上不同的作業系統與瀏覽器要來得省事多了吧。<br /><br />雖然 <a href="http://browsershots.org/">Browsershots</a> 所提供的瀏覽器種類幾乎已經涵蓋全部能想得到的了，但我看了看總覺得好像還少了什麼，仔細一想才發現，原來還缺了 <a href="http://w3m.sourceforge.net/">w3m</a> 或 <a href="http://lynx.browser.org/">lynx</a> 這類文字模式的 browser。人家偶爾也是會用 w3m 上網閒逛的嘛～～尤其是在逛網看資料卻又不能明目張膽讓人發現你在逛網路的時候……<br /><br />最後附帶一提，這個網站也用了 <a href="http://trac.edgewall.com/">Trac</a> 作為專案管理與問題回報系統；同樣有用 <a href="http://trac.edgewall.com/">Trac</a> 的還有 <a href="http://www.typosphere.org/trac/">Typo</a> 這個 Blog Engine。</p>
 ]]></content>
   </entry>
   

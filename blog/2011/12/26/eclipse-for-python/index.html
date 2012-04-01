@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>在 Eclipse 開發 Python - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：作業系統：Mac OS X 10.7.2程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers步驟流程如下1. 準備 Python 的編譯環境同樣的，這步驟在 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2011/12/26/eclipse-for-python">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">在 Eclipse 開發 Python</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-26T11:25:00+08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br />步驟流程如下<br /><br /><u>1. 準備 Python 的編譯環境</u><br /><br />同樣的，這步驟在 Mac 上可以略過。在 Windows 上要做的也很簡單，就上 Python 官網抓個 Python Binary 來安裝就好了。相對於 C++ 的準備工作來得簡單些。<br /><br /><u>2. 安裝 PyDev</u><br /><br />在 Eclipse Indigo 之後，套件的安裝變得簡單許多，只要透過滑鼠就可以搞定。首先，先上 <a href="http://marketplace.eclipse.org/">Eclipse Marketplace</a>, 一個類似 firefox Extensions 或 Android Market 的地方。搜尋「pydev」，找到後點進去套件頁面，在套件 Logo 下可以看到一個「Install」按鈕，只要將該按鈕拖曳到 Eclipse 視窗中，就可以開始安裝了。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-C_V3nxc2Z0I/TvfjPTDCbfI/AAAAAAAAJFU/ygD2IDbYz1k/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.58.51.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="205" src="http://3.bp.blogspot.com/-C_V3nxc2Z0I/TvfjPTDCbfI/AAAAAAAAJFU/ygD2IDbYz1k/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.58.51.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">拖曳圖中紫色說明區塊所指向的按鈕就能直接安裝</td></tr></tbody></table><br /><u>3. 開始寫 Python</u><br /><br />安裝完後重開 Eclipse，如果在選單「File」→「New」→「Project」的對話視窗有看到如下圖的 PyDev 選項資料夾，就表示安裝成功了，可以開始寫 Python 的程式。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-kvvmlpzhScs/TvfoxGUi98I/AAAAAAAAJFs/xaKtFOwcTQk/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.08.08.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="304" src="http://1.bp.blogspot.com/-kvvmlpzhScs/TvfoxGUi98I/AAAAAAAAJFs/xaKtFOwcTQk/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.08.08.png" width="320" /></a></div><br />不過，等等，要讓齒輪動起來，還少了點東西。CDT 可以自動找到 C++ Compiler 的所在，可是 PyDev 不行，我們得手動指定 Python 直譯器的路徑。<br /><br />從選單列開啟 Eclipse 的「偏好設定」，切到 PyDev 如下的頁面，點選上半部視窗的「New&#8230;」按鈕，輸入路徑「/usr/bin/python」，至於名字可以任意輸入，我習慣加上個版本號。完成之後，PyDev 會自動抓取 PYTHONPATH，也就是下圖中下半部份的視窗。好在這部份不用傷神輸入。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/--dQy7oHi8XU/Tvfockstk5I/AAAAAAAAJFg/s59aFMnJvZ4/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.18.55.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="200" src="http://2.bp.blogspot.com/--dQy7oHi8XU/Tvfockstk5I/AAAAAAAAJFg/s59aFMnJvZ4/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.18.55.png" width="320" /></a></div><br />
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-26T11:25:00+08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/eclipse/'>eclipse</a>, <a class='category' href='/blog/categories/python/'>python</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2011/12/26/eclipse-for-python/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2011/12/26/eclipse-for-python/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/26/eclipse-for-cplusplus/" title="Previous Post: 在 Eclipse 開發 C/C++">&laquo; 在 Eclipse 開發 C/C++</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/12/26/eclipse-with-git-and-svn/" title="Next Post: 在 Eclipse 使用 Git 與 SVN">在 Eclipse 使用 Git 與 SVN &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

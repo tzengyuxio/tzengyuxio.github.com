@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mac | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-01T09:31:12+08:00</updated>
+  <updated>2012-04-02T06:00:56+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -168,6 +168,122 @@ fi
 <p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，請見下面這篇文章。</p>
 
 <p><a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">.bash_profile vs .bashrc</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[幾個我常用的 Alfred 自定搜尋]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/19/alfred-search/"/>
+    <updated>2012-02-19T23:45:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/19/alfred-search</id>
+    <content type="html"><![CDATA[<p>雖然用了 <a href="http://tzengyuxio.me/search/label/Alfred">Alfred</a> 一段時間，但是直到最近才開始認真挖掘裡面的設定。其實 Alfred 安裝好不用特別設定，就已經很好用了，像是程式本身預設許多網頁搜尋，從常見的 Google、Yahoo!、Amazon 與維基百科，到比較少人知道但很好用的 <a href="http://www.wolframalpha.com/">wolfram</a> 等，都是現成裝好就可以用的。</p>
+
+
+<p><img src="https://lh6.googleusercontent.com/-6Z65mn0aLAo/T0EV13h5vFI/AAAAAAAAJdU/ijKmwmls5p8/s800/alfred_custom_search.png" alt="Alfred Custom Search" /></p>
+
+
+<p>不過每個人常用網站不同，在軟體的預設網站之外一定有遺珠之憾。好在 Alfred 也有提供自定搜尋選項的功能，以下就來分享我自己設定的 Alfred Custom Search。</p>
+
+
+<p>這些 Custom Search 的安裝方式很簡單，只要將底下以 alfredapp 開頭的一串文字複製起來，叫出 Alfred 的指令視窗（預設是使用 ⌥Space），貼上剛才複製的文字，按下 Enter 就好了。</p>
+
+
+<h2>奇摩字典搜尋</h2>
+
+
+<ul><li>Keyword: dict</li><li><p>說明：就是查字典。dict 後面可以接中文詞或是英文單字。</p><p>alfredapp://customsearch/Yahoo%21%E5%A5%87%E6%91%A9%E5%AD%97%E5%85%B8%E6%9F%A5%E8%A9%A2/dict/utf8/url=http://tw.dictionary.yahoo.com/dictionary?p={query}</p></li></ul>
+
+
+<h2>flickr Creative Common 搜尋</h2>
+
+
+<ul><li>Keyword: fcc</li><li><p>說明：Alfred 已經有內建 flickr 搜尋了，不過並不是任何找到的圖片都可以隨意使用。如果你有在寫 blog 並且會上 flickr 找圖片來點綴文章的話，這個搜尋可以幫助你找到合適的圖片。</p><p>alfredapp://customsearch/Search%20Flickr%20CC%20for/fcc/ascii/url=http://www.flickr.com/search/?q={query}&amp;l=commderiv&amp;ss=0&amp;ct=0&amp;mt=all&amp;w=all&amp;adv=1</p></li></ul>
+
+
+<h2>世界時間查詢</h2>
+
+
+<ul><li>Keyword: time</li><li><p>說明：Time.is 是個簡單但方便的網站，可以以城市名稱查詢該地目前時間。安裝好此 Custom Search 後，就能用 "<code>time tokyo</code>" 或 "<code>time 東京</code>" 的語法來查詢當地時間。</p><p>alfredapp://customsearch/%E7%9B%AE%E5%89%8D%E7%9A%84%E6%99%82%E9%96%93%EF%BC%8C%E5%9C%A8/time/ascii/url=http://time.is/{query}</p></li></ul>
+
+
+<h2>線上音樂搜尋</h2>
+
+
+<ul><li>Keyword: gs</li><li><p>說明：Grooveshark 是很大的線上音樂網站，找到就可以直接串流播放了，中英文搜尋都 OK。</p><p>alfredapp://customsearch/Search%20Grooveshark%20for/gs/ascii/url=http://grooveshark.com/#/search?q={query}</p></li></ul>
+
+
+<h2>Stack Overflow 搜尋</h2>
+
+
+<ul><li>Keyword: so</li><li><p>說明：寫程式的人幾乎都得拜訪的聖地。google 程式問題時幾乎都會找到這邊來，乾脆就直接在 Stack Overflow 上搜尋吧。</p><p>alfredapp://customsearch/Search%20Stack%20Overflow%20for/so/ascii/url=http://stackoverflow.com/search?q={query}</p></li></ul>
+
+
+<h2>Apple Developer Connection 搜尋</h2>
+
+
+<ul><li>Keyword: adc</li><li><p>說明：對 Apple 開發者很方便的搜尋。</p><p>alfredapp://customsearch/Search%20ADC%20for/adc/ascii/url=http://developer.apple.com/library/mac/search/?q={query}</p></li></ul>
+
+
+<h2>PChome 線上購物 搜尋</h2>
+
+
+<ul><li>Keyword: pchome</li><li><p>說明：台灣最大的購物網站......吧？我沒有數據，單純只是自己蠻常用的。</p><p>alfredapp://customsearch/Search%20PChome%20for/pchome/ascii/url=http://ecshweb.pchome.com.tw/search/v1/{query}</p></li></ul>
+
+
+<h2>Mac App Store 搜尋</h2>
+
+
+<ul><li>Keyword: mas</li><li><p>說明：尋找 Mac App Store 裡面的應用程式，也是我相當常用到的功能。</p><p>alfredapp://customsearch/%10Search%20Mac%20App%20Store%20for/mas/ascii/url=macappstore://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?q={query}</p></li></ul>
+
+
+<h2>博客來搜尋（僅書籍）</h2>
+
+
+<ul><li>Keyword: books</li><li><p>說明：博客來相信我就不用介紹了吧。以下的語法專門用來查詢書籍，如果要查包含書籍以外的物品，可以用下面的語法來查詢。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%E6%9B%B8%E7%B1%8D%20for/books/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=BKA&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
+
+
+<h2>博客來搜尋（全站）</h2>
+
+
+<ul><li>Keyword: bkl</li><li><p>說明：同上，就不另外說明了。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%20for/bkl/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=all&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Growl 與 Notification Center 隨便聊]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center/"/>
+    <updated>2012-02-17T17:39:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center</id>
+    <content type="html"><![CDATA[<p>今天聽到 OSX 下一版本 Mountain Lion 的消息，大更新不多，主要都是將 iOS 上的一些應用搬到 Mac 上來，而其中最吸引我注意的大概就是通知中心（Notification Center）了。</p>
+
+
+<p>繼續聊下去前，先聊聊我理想中的電腦工作環境，要能提供兩個基本功能：</p>
+
+
+<ol><li>單一而簡潔的指令輸入，可以快速鍵入指令進行工作；</li><li>單一而簡潔的訊息輸出，將執行結果與事件統一一處發送通知。</li></ol>
+
+
+<p>說起來很簡單，說穿了也不過就是文字列模式下的延伸概念。關於第一點，現在已經有許多應用程式可以做到了，例如在 Windows 有 <a href="http://blog.aqualuna.me/search/label/Launchy">Launchy</a>, Mac 則有 <a href="http://blog.aqualuna.me/search/label/Alfred">Alfred</a>, 都是很棒的應用，直接熱鍵啟動執行指令，就可以開始進行工作，能有效節省時間。</p>
+
+
+<p>然而由於圖形作業系統多個視窗各自為政的關係，要建構第二點的環境其實有些困難。在 Windows，當電腦連上外接設備，或是硬碟空間時，會有小小黃色的 Tooltip 通知視窗；當 MSN 有人傳訊息來時，有 MSN 的通知泡泡；防毒軟體的病毒更新碼有段時間沒更新時，會有防毒軟體的提醒對話泡泡。每個軟體都有每個軟體自己的通知與設定，顯示停留的時間與樣式也都個不相同。假設今天如果我要進入專注模式，想要暫時關掉所有外來的通知時，我得一個一個自己去設定，然後要放鬆時還得一個一個去打開，這會是多惱人的一件事情？</p>
+
+
+<p>好在 Mac 上有 Growl, 一個第三方廠商所寫的訊息通知中心軟體。Growl 提供了公開 API, 讓軟體開發商可以支援將訊息發送到 Growl 作顯示。以我目前的電腦來看，就包含了以下程式的訊息通知：</p>
+
+
+<ul><li>1Password</li><li>Adium</li><li>Alfred</li><li>Cappuccino</li><li>Dropbox</li><li>GrowlTunes</li><li>HardwareGrowler</li><li>Insync</li><li>Pomodoro</li></ul>
+
+
+<p>這些不同的程式都可以透過相同的窗口向我報告，當我不想要干擾時，也可以很輕鬆的全部關掉。也正因為有如此多的軟體支援 Growl, 所以就算我不喜歡 Growl 他那爪子般的 icon, 不喜歡他把 GrowlTunes 與 HardwareGrowler 在 App Store 裡另外拆開來賣，但我還是購買並安裝了這套軟體。</p>
+
+
+<p>回到最初所提的，下一版的 OSX 將會把 iOS 上的訊息中心給整合進來，我想最為首當其衝的就是 Growl 了。前面所提到的「單一簡潔的輸入」與「單一簡潔的輸出」，這工作由作業系統來做自然是再合適也不過了。因此不難想像，隨著應用程式逐漸支援新的訊息中心，Growl 將逐漸失去其既有的優勢。</p>
+
+
+<p>只是就目前看來，Mountain Lion 的更新項目實在不多，如果到時候不是免費升級，而且賣得還跟 Lion 一樣貴的話，我實在很難下得了手花錢進行升級……</p>
+
 ]]></content>
   </entry>
   

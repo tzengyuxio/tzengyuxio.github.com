@@ -4,7 +4,7 @@
   <title><![CDATA[Category: memo | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/memo/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-01T09:31:12+08:00</updated>
+  <updated>2012-04-02T06:00:56+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[輕量級標記語言 - AsciiDoc, Markdown, reStructuredText]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/10/18/lightweight-markup-language/"/>
+    <updated>2011-10-18T13:57:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/10/18/lightweight-markup-language</id>
+    <content type="html"><![CDATA[<p>因為最近使用 GitHub 的關係，注意到了 Markdown 這個輕量級標記語言 (<a href="http://en.wikipedia.org/wiki/Lightweight_markup_language">Lightweight markup language</a>)，跟著查了一下資料才發現原來<a href="http://superuser.com/questions/209897/text-formatter-tools/209902#209902">輕量級標記語言的選項百百款</a>，其中比較常見的有 Markdown,&nbsp;reStructuredText 以及 <a href="http://www.textism.com/tools/textile/">textile</a>，這三種語法也同時被 BitBucket 和 GitHub 所支援。<br /><br />稍微看過三者的語法比較後，覺得 textile 的語法太過接近 HTML, 使得文字檔本身無法呈現容易理解的架構。而除了前述三者之外，也另外注意到 AsciiDoc 這一款輕量級標記語言，GitHub 有支援 AsciiDoc。下面就是我對 Markdown, reStructuredText 與 AsciiDoc 的一些比較筆記：<br /><br /><a href="http://daringfireball.net/projects/markdown/">Markdown</a><br />使用最為廣泛也最簡單的輕量級標記語言。除了前面提到的 GitHub 與 BitBucket 之外，StackOverflow 的語法基本上也是 Markdown 的強化版，另外 Tumblr 與 Posterous 這兩個輕量級的 blog 也都支援 Markdown 語法。<br /><br />然而正如前面所提到的，StackOverflow 用的是修改過的 Markdown, 實際上 GitHub 用的也是 Markdown 的修改版本。Markdown 簡單卻又略顯不足，使得許多網站的應用必須增添額外的修改。另外，缺乏表格功能的支援是最大的遺憾。<br /><br /><a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a><br />以 Python 寫成，主要也使用於 Python 社群中；Python 的文件產生器 <a href="http://sphinx.pocoo.org/">Sphinx</a> 就是以 reStructuredText 為基礎。是三者之中功能最為完整的一套，事實上，即便要說是所有輕量級標記語言中功能最為完整的一套也不為過，要拿來寫論文也不成問題。腳注 (footnote) 功能讓人眼睛一亮。不過真的是太複雜了，快要脫離「輕量級」的範圍了。<br /><br /><a href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a><br />跟 reStructuredText 同樣也是 Python 寫成，不過語法上比較接近 Markdown 的簡單，但也提供了表格的功能。會讓我注意到這一套，最主要原因是因為開源遊戲<a href="http://www.wesnoth.org/">韋諾之戰</a> (The Battle for Wesnoth) 的 Manual 就是以 AsciiDoc 所寫成。<br /><br />線上工具<br /><ul><li>Markdown: Dingus<br /><a href="http://daringfireball.net/projects/markdown/dingus">http://daringfireball.net/projects/markdown/dingus</a></li><li>reStructuredText:<br /><a href="http://www.tele3.cz/jbar/rest/rest.html">http://www.tele3.cz/jbar/rest/rest.html</a></li><li>AsciiDoc:<br /><a href="http://andrewk.webfactional.com/asciidoc.php">http://andrewk.webfactional.com/asciidoc.php</a></li></ul><br />BitBucket 的 <a href="http://confluence.atlassian.com/display/BITBUCKET/Displaying+README+Text+on+your+Bitbucket+Source+Tab">README 支援列表</a>，主要就是以 reStructuredText, Markdown, Textile 這三種為主，README 和 README.txt 這兩個檔名預設為 Plain Text, 不過如果該專案所使用的語言為 Python 的話，上述兩個檔案則會以 reStructuredText 的格式去轉為網頁。<br /><br /><a href="https://github.com/github/markup#readme">GitHub 支援的格式</a>&nbsp;比較多種，其中 Markdown 應該是最優先的，從許多專案的 README 都是以 .md 作為檔名後綴不難看出。有趣的是 GitHub 是以 Ruby 開發，然而在 Ruby 社群中比較活躍的輕量標記語言其實是 textile。（順帶一提，BitBucket 是以 Python 開發，Mercurial 也是以 Python 開發的）<br /><br />10.21 補充：根據 AcsiiDoc 官網上記載，Git User's Manual 也是以 AsciiDoc 所製作。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[［辭海］幾內亞豬]]></title>
@@ -47,15 +56,6 @@
     <updated>2006-01-23T01:35:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2006/01/23/what-gender-is-your-brain</id>
     <content type="html"><![CDATA[<p>在 <a href="http://lordcolus.blogspot.com/2005/04/blog-post_16.html">Lordcolus's Blog</a> 看到的測驗，覺得好玩也試了一下。對於結果的描述我並不驚訝，倒是關於我大腦男女特性分配的百分比以及其後的敘述跟 Lordcolus 的一模一樣這點讓我有些意外。<br /><br /><div align="center"><a href="http://www.blogthings.com/genderbrainquiz/">What Gender Is Your Brain?</a><br /></div><br /><blockquote><span style="font-weight: bold;font-size:12;color:black;">Your Brain is 73.33% Female, 26.67% Male</span><br /><br />Your brain leans female<br />You think with your heart, not your head<br />Sweet and considerate, you are a giver<br />But you're tough enough not to let anyone take advantage of you!</blockquote></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[［辭海］包袱、梗、哏]]></title>
-    <link href="http://tzengyuxio.me/blog/2006/01/22/baofu-geng-gen/"/>
-    <updated>2006-01-22T09:07:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2006/01/22/baofu-geng-gen</id>
-    <content type="html"><![CDATA[<p>常聽相聲的人，不難注意到相聲中對於笑點有其特殊的術語，比方說「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=3626&amp;GraphicWord=yes&QueryString=%A5%5D%B5%F6">包袱</a>」。「繫包袱兒」、「解包袱兒」、「抖包袱兒」，說的便是在相聲中醞釀、鋪陳、發展，以至最後引噱的一個過程。嚴格說來，「笑點」與「包袱」兩辭在用法與涵義上是有微妙差別的。<br /><br />「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&amp;DocNum=60305&GraphicWord=yes&amp;QueryString=%B1%F0">梗</a>」是另外一個意思與「笑點」接近的辭，所謂的「老梗」，即是指「經常用的笑點」、「老笑話」的意思。但是「梗」這個字其實是現代人的誤用，正確的用字應該是「哏」。「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=59966&amp;GraphicWord=yes&QueryString=%CD%FE">哏</a>」字本身具有「滑稽可笑」的意思；雙口相聲中，通常會有一人「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&amp;DocNum=12891&GraphicWord=yes&amp;QueryString=%CD%FE">捧哏</a>」，一人「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=32575&amp;GraphicWord=yes&amp;QueryString=%CD%FE">逗哏</a>」的角色分配。<br /><br />‧梗：ㄍㄥˇ<br />‧哏：ㄍㄣˊ<br /><hr />參考資料：<br />[1] <a href="http://big5.china.com.cn/chinese/feature/814147.htm">天津話咋就那麼哏</a><br />[2] <a href="http://www.ndcnc.gov.cn/datalib/2002/ArtKnowledge/DL/DL-175775">抖“包袱儿”</a></p>
 ]]></content>
   </entry>
   

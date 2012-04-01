@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Blogging with Markdown - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="用 Markdown 寫部落格 前陣子比較了一些輕量級標記語言，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2012/02/10/blogging-with-markdown">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Blogging With Markdown</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-10T13:24:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>用 Markdown 寫部落格</h1>
+
+
+<p>前陣子<a href="http://coder.aqualuna.me/2011/10/asciidoc-markdown-restructuredtext.html">比較了一些輕量級標記語言</a>，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。</p>
+
+
+<p>不過比起 AsciiDoc, Markdown 的應用支援顯然要來得廣泛得多，除了 GitHub 與 BitBucket 等網站外，有相當多的工具或編輯器支援 Markdown 語法，例如 Day One, iA Writer 或是 Byword，這方面壓倒性勝過 AsciiDoc。於是乎 Markdown 便逐漸成為我的首選，至於不能製作表格的問題嘛，反正作表格的機會也不是那麼多，大部分時候也可以用清單方式來呈現資料，所以倒不是太大問題。</p>
+
+
+<p>決定用 Markdown 作為主要規範後，第一個想到的就是用 Markdown 來寫 blog。不過 blogger 本身沒有支援 Markdown 語法，也沒有外掛或工具支援直接將 Markdown 寫好的文章發佈。大部分用 Markdown 在 blogger 寫文章的方式，都與 <a href="http://notely.blogspot.com/2011/08/how-to-use-markdown-in-blogspot-posts.html">Notely: How to use Markdown in Blogspot posts</a> 這篇文章的作業流程大同小異：</p>
+
+
+<ol><li>在你的電腦中用文字編輯器撰寫文章並儲存成檔案（原作者 Joel 使用 yyyy-mm-dd post title.txt 的檔案命名方式）</li><li>開啟 <a href="http://daringfireball.net/projects/markdown/dingus">Daring Fireball: Markdown Web Dingus</a> 網站，複製貼上文章內容，進行轉換。</li><li>最後，將轉換完成的 HTML 碼貼到 blogspot 的新文章中。</li></ol>
+
+
+<p>另外，貼上時要注意以下兩點：</p>
+
+
+<ol><li>在貼上新文章時，確定文字輸入區上方的模式是在「HTML」下而非「撰寫」。</li><li>開啟右側「文章設定」最下方的選項，<ol><li>「撰寫模式」勾選<strong>解譯輸入的 HTML</strong>。</li><li>「換行符號」勾選<strong>使用 &lt;br&gt; 標記</strong>。</li></ol></li></ol>
+
+
+<p>我目前也是採用類似的流程。比較特別要提的有以下幾點：</p>
+
+
+<ol><li>標題除了作為檔名外，檔案內的第一行也會放上一級標題；最後一行則是列出這篇文章的標籤。所以在轉換為 HTML 時，要去首尾行。</li><li>檔案存放在 dropbox 空間中。這樣可以確保文章有多份備份。</li><li>文章是<a href="http://blog.aqualuna.me/2012/02/byword-ia-writer.html">用 iA Writer 寫</a>的。寫完之後用<a href="http://coder.aqualuna.me/2012/02/os-x-markdown-html.html">〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉</a>這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。</li></ol>
+
+
+<hr /><p>這篇文章就是用上述流程所寫的，你可以<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20Blogging%20with%20Markdown.md">到這邊看看原始模樣</a>。</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-10T13:24:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/html/'>html</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2012/02/10/blogging-with-markdown/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2012/02/10/blogging-with-markdown/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/02/10/from-zenburn-to-solarized/" title="Previous Post: 代碼配色，從 Zenburn 到 Solarized">&laquo; 代碼配色，從 Zenburn 到 Solarized</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/02/13/change-folder-icon-in-mac/" title="Next Post: Mac 更換資料夾圖示的方法">Mac 更換資料夾圖示的方法 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

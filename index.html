@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="剛剛發現，Google Analytics 的「造訪」按鈕旁多了個音符記號。點下去後會有 Piano 與 Sitar 琴兩種樂器，選了之後就會看到下方折線圖的節點會按順序一個一個亮起來，並播放與節點高低對應的音階。 可惜我的折線圖不夠精采，撥出來的音樂平平淡淡，沒有直墜谷底或是步步高昇的激昂起伏 &hellip;">
+  <meta name="description" content="照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。 上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的音效等。而影片中那 8-bit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,71 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-02T05:12:00+08:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。</p>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的音效等。而影片中那 8-bit 風格的美術與音效，更是所有勇者迷再熟悉也不過的場景了。看完影片後我在 Google Maps 上玩了好久，到處探索這個世界，就好像自己真的是勇者一樣四處探險。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-01.png" alt="image" /><br/>
+這是離我們最近，也是我們最熟悉的建築物－－天空之塔。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-02.png" alt="image" /><br/>
+我住的附近。透過 8-bit 地圖看來，突然覺得有河流經過是個不錯的地方。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-03.png" alt="image" /><br/>
+蕃薯島 XD</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-04.png" alt="image" /><br/>
+記得這是 SEGA MD 大戰略一代中的某張地圖。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-05.png" alt="image" /><br/>
+北邊大陸上除了有冰原，還有會扣 HP 的毒沼。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-06.png" alt="image" /><br/>
+世界地、不，是勇者鬥惡龍三代的地圖。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-07.png" alt="image" /><br/>
+日邦格的富士山。這地方的樹木也跟別處不同，是楓紅色的。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-08.png" alt="image" /><br/>
+Goolge 總部，感覺怪物很多…</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -863,97 +928,6 @@ public class GetEnv {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/03/09/bom-byte-order-mark-and-utf-8/">BOM (Byte Order Mark) 與 UTF-8</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-09T20:28:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
-
-<hr />
-
-<p>Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
-
-<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 &#8220;EF BB BF&#8221;。</p>
-
-<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
-
-<h2>在 VIM 中的 BOM 相關操作</h2>
-
-<h3>加入 BOM</h3>
-
-<pre><code>:set bomb
-</code></pre>
-
-<h3>移除 BOM</h3>
-
-<pre><code>:set nobomb
-</code></pre>
-
-<h3>查詢 BOM 狀態</h3>
-
-<pre><code>:set bomb?
-</code></pre>
-
-<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
-
-<h3>查詢包含 UTF-8 BOM 的檔案</h3>
-
-<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
-</code></pre>
-
-<h3>找出並移除 UTF-8 的 BOM</h3>
-
-<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
-</code></pre>
-
-<h3>編碼的轉換</h3>
-
-<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
-</code></pre>
-
-<p>其中 ENCODING 的部份可以是以下數值：</p>
-
-<ul>
-<li>UTF-8 UTF8</li>
-<li>UTF-16BE</li>
-<li>UTF-16LE</li>
-<li>UCS-2BE UNICODEBIG</li>
-<li>UCS-2LE UNICODELITTLE</li>
-</ul>
-
-
-<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -967,6 +941,10 @@ public class GetEnv {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
@@ -990,10 +968,6 @@ public class GetEnv {
     
       <li class="post">
         <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-01T09:31:12+08:00</updated>
+  <updated>2012-04-02T06:00:56+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Google Map Quest]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/02/google-map-quest/"/>
+    <updated>2012-04-02T05:12:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/02/google-map-quest</id>
+    <content type="html"><![CDATA[<p>照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。</p>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的音效等。而影片中那 8-bit 風格的美術與音效，更是所有勇者迷再熟悉也不過的場景了。看完影片後我在 Google Maps 上玩了好久，到處探索這個世界，就好像自己真的是勇者一樣四處探險。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-01.png" alt="image" /><br/>
+這是離我們最近，也是我們最熟悉的建築物－－天空之塔。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-02.png" alt="image" /><br/>
+我住的附近。透過 8-bit 地圖看來，突然覺得有河流經過是個不錯的地方。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-03.png" alt="image" /><br/>
+蕃薯島 XD</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-04.png" alt="image" /><br/>
+記得這是 SEGA MD 大戰略一代中的某張地圖。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-05.png" alt="image" /><br/>
+北邊大陸上除了有冰原，還有會扣 HP 的毒沼。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-06.png" alt="image" /><br/>
+世界地、不，是勇者鬥惡龍三代的地圖。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-07.png" alt="image" /><br/>
+日邦格的富士山。這地方的樹木也跟別處不同，是楓紅色的。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-08.png" alt="image" /><br/>
+Goolge 總部，感覺怪物很多…</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Google Analytics 也可以彈鋼琴]]></title>
@@ -620,6 +658,218 @@ public class GetEnv {
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[幾個我常用的 Alfred 自定搜尋]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/19/alfred-search/"/>
+    <updated>2012-02-19T23:45:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/19/alfred-search</id>
+    <content type="html"><![CDATA[<p>雖然用了 <a href="http://tzengyuxio.me/search/label/Alfred">Alfred</a> 一段時間，但是直到最近才開始認真挖掘裡面的設定。其實 Alfred 安裝好不用特別設定，就已經很好用了，像是程式本身預設許多網頁搜尋，從常見的 Google、Yahoo!、Amazon 與維基百科，到比較少人知道但很好用的 <a href="http://www.wolframalpha.com/">wolfram</a> 等，都是現成裝好就可以用的。</p>
+
+
+<p><img src="https://lh6.googleusercontent.com/-6Z65mn0aLAo/T0EV13h5vFI/AAAAAAAAJdU/ijKmwmls5p8/s800/alfred_custom_search.png" alt="Alfred Custom Search" /></p>
+
+
+<p>不過每個人常用網站不同，在軟體的預設網站之外一定有遺珠之憾。好在 Alfred 也有提供自定搜尋選項的功能，以下就來分享我自己設定的 Alfred Custom Search。</p>
+
+
+<p>這些 Custom Search 的安裝方式很簡單，只要將底下以 alfredapp 開頭的一串文字複製起來，叫出 Alfred 的指令視窗（預設是使用 ⌥Space），貼上剛才複製的文字，按下 Enter 就好了。</p>
+
+
+<h2>奇摩字典搜尋</h2>
+
+
+<ul><li>Keyword: dict</li><li><p>說明：就是查字典。dict 後面可以接中文詞或是英文單字。</p><p>alfredapp://customsearch/Yahoo%21%E5%A5%87%E6%91%A9%E5%AD%97%E5%85%B8%E6%9F%A5%E8%A9%A2/dict/utf8/url=http://tw.dictionary.yahoo.com/dictionary?p={query}</p></li></ul>
+
+
+<h2>flickr Creative Common 搜尋</h2>
+
+
+<ul><li>Keyword: fcc</li><li><p>說明：Alfred 已經有內建 flickr 搜尋了，不過並不是任何找到的圖片都可以隨意使用。如果你有在寫 blog 並且會上 flickr 找圖片來點綴文章的話，這個搜尋可以幫助你找到合適的圖片。</p><p>alfredapp://customsearch/Search%20Flickr%20CC%20for/fcc/ascii/url=http://www.flickr.com/search/?q={query}&amp;l=commderiv&amp;ss=0&amp;ct=0&amp;mt=all&amp;w=all&amp;adv=1</p></li></ul>
+
+
+<h2>世界時間查詢</h2>
+
+
+<ul><li>Keyword: time</li><li><p>說明：Time.is 是個簡單但方便的網站，可以以城市名稱查詢該地目前時間。安裝好此 Custom Search 後，就能用 &#8221;<code>time tokyo</code>&#8221; 或 &#8221;<code>time 東京</code>&#8221; 的語法來查詢當地時間。</p><p>alfredapp://customsearch/%E7%9B%AE%E5%89%8D%E7%9A%84%E6%99%82%E9%96%93%EF%BC%8C%E5%9C%A8/time/ascii/url=http://time.is/{query}</p></li></ul>
+
+
+<h2>線上音樂搜尋</h2>
+
+
+<ul><li>Keyword: gs</li><li><p>說明：Grooveshark 是很大的線上音樂網站，找到就可以直接串流播放了，中英文搜尋都 OK。</p><p>alfredapp://customsearch/Search%20Grooveshark%20for/gs/ascii/url=http://grooveshark.com/#/search?q={query}</p></li></ul>
+
+
+<h2>Stack Overflow 搜尋</h2>
+
+
+<ul><li>Keyword: so</li><li><p>說明：寫程式的人幾乎都得拜訪的聖地。google 程式問題時幾乎都會找到這邊來，乾脆就直接在 Stack Overflow 上搜尋吧。</p><p>alfredapp://customsearch/Search%20Stack%20Overflow%20for/so/ascii/url=http://stackoverflow.com/search?q={query}</p></li></ul>
+
+
+<h2>Apple Developer Connection 搜尋</h2>
+
+
+<ul><li>Keyword: adc</li><li><p>說明：對 Apple 開發者很方便的搜尋。</p><p>alfredapp://customsearch/Search%20ADC%20for/adc/ascii/url=http://developer.apple.com/library/mac/search/?q={query}</p></li></ul>
+
+
+<h2>PChome 線上購物 搜尋</h2>
+
+
+<ul><li>Keyword: pchome</li><li><p>說明：台灣最大的購物網站&#8230;&#8230;吧？我沒有數據，單純只是自己蠻常用的。</p><p>alfredapp://customsearch/Search%20PChome%20for/pchome/ascii/url=http://ecshweb.pchome.com.tw/search/v1/{query}</p></li></ul>
+
+
+<h2>Mac App Store 搜尋</h2>
+
+
+<ul><li>Keyword: mas</li><li><p>說明：尋找 Mac App Store 裡面的應用程式，也是我相當常用到的功能。</p><p>alfredapp://customsearch/%10Search%20Mac%20App%20Store%20for/mas/ascii/url=macappstore://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?q={query}</p></li></ul>
+
+
+<h2>博客來搜尋（僅書籍）</h2>
+
+
+<ul><li>Keyword: books</li><li><p>說明：博客來相信我就不用介紹了吧。以下的語法專門用來查詢書籍，如果要查包含書籍以外的物品，可以用下面的語法來查詢。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%E6%9B%B8%E7%B1%8D%20for/books/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=BKA&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
+
+
+<h2>博客來搜尋（全站）</h2>
+
+
+<ul><li>Keyword: bkl</li><li><p>說明：同上，就不另外說明了。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%20for/bkl/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=all&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Growl 與 Notification Center 隨便聊]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center/"/>
+    <updated>2012-02-17T17:39:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center</id>
+    <content type="html"><![CDATA[<p>今天聽到 OSX 下一版本 Mountain Lion 的消息，大更新不多，主要都是將 iOS 上的一些應用搬到 Mac 上來，而其中最吸引我注意的大概就是通知中心（Notification Center）了。</p>
+
+
+<p>繼續聊下去前，先聊聊我理想中的電腦工作環境，要能提供兩個基本功能：</p>
+
+
+<ol><li>單一而簡潔的指令輸入，可以快速鍵入指令進行工作；</li><li>單一而簡潔的訊息輸出，將執行結果與事件統一一處發送通知。</li></ol>
+
+
+<p>說起來很簡單，說穿了也不過就是文字列模式下的延伸概念。關於第一點，現在已經有許多應用程式可以做到了，例如在 Windows 有 <a href="http://blog.aqualuna.me/search/label/Launchy">Launchy</a>, Mac 則有 <a href="http://blog.aqualuna.me/search/label/Alfred">Alfred</a>, 都是很棒的應用，直接熱鍵啟動執行指令，就可以開始進行工作，能有效節省時間。</p>
+
+
+<p>然而由於圖形作業系統多個視窗各自為政的關係，要建構第二點的環境其實有些困難。在 Windows，當電腦連上外接設備，或是硬碟空間時，會有小小黃色的 Tooltip 通知視窗；當 MSN 有人傳訊息來時，有 MSN 的通知泡泡；防毒軟體的病毒更新碼有段時間沒更新時，會有防毒軟體的提醒對話泡泡。每個軟體都有每個軟體自己的通知與設定，顯示停留的時間與樣式也都個不相同。假設今天如果我要進入專注模式，想要暫時關掉所有外來的通知時，我得一個一個自己去設定，然後要放鬆時還得一個一個去打開，這會是多惱人的一件事情？</p>
+
+
+<p>好在 Mac 上有 Growl, 一個第三方廠商所寫的訊息通知中心軟體。Growl 提供了公開 API, 讓軟體開發商可以支援將訊息發送到 Growl 作顯示。以我目前的電腦來看，就包含了以下程式的訊息通知：</p>
+
+
+<ul><li>1Password</li><li>Adium</li><li>Alfred</li><li>Cappuccino</li><li>Dropbox</li><li>GrowlTunes</li><li>HardwareGrowler</li><li>Insync</li><li>Pomodoro</li></ul>
+
+
+<p>這些不同的程式都可以透過相同的窗口向我報告，當我不想要干擾時，也可以很輕鬆的全部關掉。也正因為有如此多的軟體支援 Growl, 所以就算我不喜歡 Growl 他那爪子般的 icon, 不喜歡他把 GrowlTunes 與 HardwareGrowler 在 App Store 裡另外拆開來賣，但我還是購買並安裝了這套軟體。</p>
+
+
+<p>回到最初所提的，下一版的 OSX 將會把 iOS 上的訊息中心給整合進來，我想最為首當其衝的就是 Growl 了。前面所提到的「單一簡潔的輸入」與「單一簡潔的輸出」，這工作由作業系統來做自然是再合適也不過了。因此不難想像，隨著應用程式逐漸支援新的訊息中心，Growl 將逐漸失去其既有的優勢。</p>
+
+
+<p>只是就目前看來，Mountain Lion 的更新項目實在不多，如果到時候不是免費升級，而且賣得還跟 Lion 一樣貴的話，我實在很難下得了手花錢進行升級……</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mac 更換資料夾圖示的方法]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/13/change-folder-icon-in-mac/"/>
+    <updated>2012-02-13T13:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/13/change-folder-icon-in-mac</id>
+    <content type="html"><![CDATA[<p>最近想把 Mac 裡一些常用的資料夾換個圖示，找到的步驟如下：</p>
+
+
+<ol><li>選取資料夾，開啟該資料夾的「簡介」視窗。</li><li>將下載好的 .icns 圖示檔拉到「簡介」視窗最上方的小圖示上，就可以換掉原有圖示了。</li></ol>
+
+
+<p>我照了這個方法作，不過從網路上下載的 .icns 圖示檔，有些拉上去後可以成功更換資料夾圖示，有些卻不行。研究了半天也搞不清楚為什麼有些成功有些不行。後來找到了另外一個換圖示的方法，不僅更簡單，而且除了 .icns 檔案外，也適用於任何圖檔。方法如下：</p>
+
+
+<ol><li>用「預覽程式」開啟你要用來當資料夾圖示的 .icns 檔，或其他圖檔。當然，尺寸最好是 512x512。</li><li>開啟後，依序按下⌘A（全選），⌘C（複製）。</li><li>然後選取想要更換圖示的資料夾，開啟該資料夾的「簡介」視窗。</li><li>點選「簡介」視窗最上方的小圖示，按下⌘V（貼上），大功告成！</li></ol>
+
+
+<p>這個方法除了資料夾外，也可以用來更改磁碟映像檔的圖示。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging with Markdown]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/10/blogging-with-markdown/"/>
+    <updated>2012-02-10T13:24:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/10/blogging-with-markdown</id>
+    <content type="html"><![CDATA[<h1>用 Markdown 寫部落格</h1>
+
+
+<p>前陣子<a href="http://coder.aqualuna.me/2011/10/asciidoc-markdown-restructuredtext.html">比較了一些輕量級標記語言</a>，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。</p>
+
+
+<p>不過比起 AsciiDoc, Markdown 的應用支援顯然要來得廣泛得多，除了 GitHub 與 BitBucket 等網站外，有相當多的工具或編輯器支援 Markdown 語法，例如 Day One, iA Writer 或是 Byword，這方面壓倒性勝過 AsciiDoc。於是乎 Markdown 便逐漸成為我的首選，至於不能製作表格的問題嘛，反正作表格的機會也不是那麼多，大部分時候也可以用清單方式來呈現資料，所以倒不是太大問題。</p>
+
+
+<p>決定用 Markdown 作為主要規範後，第一個想到的就是用 Markdown 來寫 blog。不過 blogger 本身沒有支援 Markdown 語法，也沒有外掛或工具支援直接將 Markdown 寫好的文章發佈。大部分用 Markdown 在 blogger 寫文章的方式，都與 <a href="http://notely.blogspot.com/2011/08/how-to-use-markdown-in-blogspot-posts.html">Notely: How to use Markdown in Blogspot posts</a> 這篇文章的作業流程大同小異：</p>
+
+
+<ol><li>在你的電腦中用文字編輯器撰寫文章並儲存成檔案（原作者 Joel 使用 yyyy-mm-dd post title.txt 的檔案命名方式）</li><li>開啟 <a href="http://daringfireball.net/projects/markdown/dingus">Daring Fireball: Markdown Web Dingus</a> 網站，複製貼上文章內容，進行轉換。</li><li>最後，將轉換完成的 HTML 碼貼到 blogspot 的新文章中。</li></ol>
+
+
+<p>另外，貼上時要注意以下兩點：</p>
+
+
+<ol><li>在貼上新文章時，確定文字輸入區上方的模式是在「HTML」下而非「撰寫」。</li><li>開啟右側「文章設定」最下方的選項，<ol><li>「撰寫模式」勾選<strong>解譯輸入的 HTML</strong>。</li><li>「換行符號」勾選<strong>使用 &lt;br&gt; 標記</strong>。</li></ol></li></ol>
+
+
+<p>我目前也是採用類似的流程。比較特別要提的有以下幾點：</p>
+
+
+<ol><li>標題除了作為檔名外，檔案內的第一行也會放上一級標題；最後一行則是列出這篇文章的標籤。所以在轉換為 HTML 時，要去首尾行。</li><li>檔案存放在 dropbox 空間中。這樣可以確保文章有多份備份。</li><li>文章是<a href="http://blog.aqualuna.me/2012/02/byword-ia-writer.html">用 iA Writer 寫</a>的。寫完之後用<a href="http://coder.aqualuna.me/2012/02/os-x-markdown-html.html">〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉</a>這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。</li></ol>
+
+
+<hr /><p>這篇文章就是用上述流程所寫的，你可以<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20Blogging%20with%20Markdown.md">到這邊看看原始模樣</a>。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[代碼配色，從 Zenburn 到 Solarized]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized/"/>
+    <updated>2012-02-10T08:40:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized</id>
+    <content type="html"><![CDATA[<p>這些年來，我的代碼配色方案都是以 <a href="http://coder.aqualuna.me/search/label/Zenburn">zenburn</a> 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse 再到 XCode 都可以<a href="http://slinky.imukuppi.org/zenburnpage/">找到現成的 zenburn 設定</a>。</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-m9F65JqmUDI/TzRk4vBNMkI/AAAAAAAAJVc/mShL8z4NQAc/s640/vim_zenburn.png" alt="zenburn @ vim" /></p>
+
+
+<p>上圖就是目前在用的 zenburn。由於用這麼久都已經習慣了，從沒有想過會有第二種配色讓我如此滿意，結果前天突然發現 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這一組配色，當場就被迷住了，我才認識這組配色不到 24 小時，就把 zenburn 從我的 vimrc 中換掉了。</p>
+
+
+<ul><li>官方網站：<a href="http://ethanschoonover.com/solarized">Solarized - Ethan Schoonover</a></li><li>GitHub 檔案庫：<a href="https://github.com/altercation/solarized">altercation / solarized - GitHub</a></li></ul>
+
+
+<p>說起來，會注意到 Solarized 也是無心插柳。原本是在找 markdown + blogger 的 solution, 沒有找著，倒是見到了一個以 github 為基礎的 blog framework, 叫 Octopress。我對 <a href="http://octopress.org/">Octopress</a> 沒有太多興趣，純粹好奇它的技術架構（畢竟以 SCM 作為 blog 後端，是很有趣的想法），所以研究了一下。然後意外地在<a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html">〈使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章〉</a>這篇文章中意外地注意到 Solarized 這組配色。</p>
+
+
+<p>Solarized 最令我覺得神奇的地方，就在於同一組基本色，可以任意搭配淺白色或淺黑色背景，都一樣清晰明瞭。它的色盤也控制在 16 色內，所以即使在終端機模式下使用也不會突兀。在官方網站上，也列出了 Visual Studio 與 Xcode 等 IDE 的配色支援；for eclipse 的配色網路上搜尋得到，不過官網上沒列出，不曉得是不是名字相衝的緣故（太陽 vs. 日蝕）=P</p>
+
+
+<p>我在終端機純文字模式下的 Vim 與圖形介面的 MacVim 分別指定了 Light 與 Dark 兩種配色。這樣在 Vim 中編輯時，只要瞄一下我就可以知道現在是在終端機模式下還是獨立的 Mac App。</p>
+
+
+<p><img src="https://lh3.googleusercontent.com/-wTKa4GLQKZE/TzRk46EP8GI/AAAAAAAAJVY/uhEJUnmBN14/s640/vim_solarized_yin.png" alt="solarized(yin) @ vim" /></p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-nIid_yCO9y4/TzRk4nK58FI/AAAAAAAAJVU/Sbt62oMbNAY/s640/macvim_solarized_yang.png" alt="solarized(yang) @ macvim" /></p>
+
+
+<p>另外這配色除了用在程式碼外，也有提供給一般應用程式使用的版本，例如常見的 putty, OSX 自帶的 Terminal, 以及 iTerm 2 等。一樣都可以在 Solarized 放在 GitHub 上的 Repository 上找到。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Byword, iA Writer 以及一些其他的]]></title>
     <link href="http://tzengyuxio.me/blog/2012/02/10/markdown-editor/"/>
     <updated>2012-02-10T03:00:00+08:00</updated>
@@ -675,6 +925,73 @@ public class GetEnv {
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[在 OS X 中隨時隨地將 Markdown 轉為 HTML]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/10/markdown-to-html-in-osx/"/>
+    <updated>2012-02-10T00:03:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/10/markdown-to-html-in-osx</id>
+    <content type="html"><![CDATA[<p>很多人喜歡用 Markdown 寫純文字的文件，包括我。簡單又有規範，而且幾乎所有文書軟體／編輯器都可以開啟（應該沒有不支援純文字的編輯器吧？），也可以轉成 HTML 在網路上發表。</p>
+
+
+<p>在 Markdown 作者 John Gruber 的網站上有提供了一個 perl 寫的 Markdown 轉換指令稿，可以將 Markdown 轉換成 HTML。不過每次要轉檔都要進終端機下指令也是麻煩，今天剛好看到一篇文章，可以在 OS X 中加入一項服務，透過該服務，任何只要提供文字編輯的應用程式，都可以經由右鍵選單輕鬆將 Markdown 轉換成 HTML。</p>
+
+
+<p>原始文章： <br /><a href="http://gothick.org.uk/2010/08/04/installing-markdown-as-a-os-x-service-using-automator-in-snow-leopard/">Installing Markdown as an OS X Services Menu Item Using Automator</a></p>
+
+
+<p>懶得看原文的也可以看下面步驟。原文中的作法是將轉好的 HTML 直接取代掉原始 Markdown，因為我的需求不同，所以以下的步驟還會加上將轉好的 HTML 放到剪貼簿中。</p>
+
+
+<p>先下載 John Gruber 所寫轉換指令稿：<a href="http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip">Markdown.pl</a> <br />下載後找個地方存放，我是放在 &#8220;/usr/local/bin/&#8221; 下面。</p>
+
+
+<p>然後開啟 Automator，選擇新增一項「服務」</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-4jbqH4ULE6w/TzPgHEeogEI/AAAAAAAAJSc/bgQzB6TYjgY/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%25887.51.41.jpg" alt="automator service" title="" /></p>
+
+
+<p>接著會在視窗中看到如下內容。勾選「輸出會取代所選文字」，如果你只複製到剪貼簿而不需替換掉原本文字，可以不用勾選。</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-LuRLdVga0Y4/TzPgKjA6mHI/AAAAAAAAJS8/58PItFCGXgk/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258A%25E5%258D%258811.14.07.png" alt="replace selected text" title="" /></p>
+
+
+<p>在左側程式庫列表中找到「執行 Shell 工序指令」，拉到右側。然後在文字區域中輸入 &#8220;/usr/local/bin/Markdown.pl&#8221; （請依照下載時所存放位置作適當修改）</p>
+
+
+<p><img src="https://lh5.googleusercontent.com/-Q8wzbS2X0Dw/TzPgHcbkCGI/AAAAAAAAJSo/xw4nFzqOFCA/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%25889.26.17.jpg" alt="run shell script" title="" /></p>
+
+
+<p><img src="https://lh3.googleusercontent.com/-10YQiOu5AW4/TzPgG5s0EBI/AAAAAAAAJSU/4eNQAfG3Yrg/s640/%25E6%259C%25AA%25E5%2591%25BD%25E5%2590%258D.jpg" alt="type the path" title="" /></p>
+
+
+<p>如果只是要產生 HTML 碼，到上個步驟就可以了。若還要把轉換後的 HTML 存到剪貼簿中，一樣在左側程式庫列表中找到「拷貝到剪貼板」，然後拉到右側剛剛的指令下方。</p>
+
+
+<p><img src="https://lh6.googleusercontent.com/-TJAWpA8GPnk/TzPgGgTcfwI/AAAAAAAAJSY/8PGij1g0vIk/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258812.03.42.jpg" alt="copy to clipboard" title="" /></p>
+
+
+<p>存檔，大功告成！</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-G-8wSTDEsNc/TzPgK0JVenI/AAAAAAAAJS4/96P8mzPIa9k/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258A%25E5%258D%258811.18.21.png" alt="save and finish" title="" /></p>
+
+
+<p>接下來實驗看看。打開「文字編輯」或是任何可以編寫純文字的程式，隨便打一段 Markdown 指令。輸入完後全選，叫出右鍵選單，可以看到我們剛才辛苦的結晶：</p>
+
+
+<p><img src="https://lh5.googleusercontent.com/-R9N1rdjFFw8/TzPgGUUk5TI/AAAAAAAAJSQ/Y1AvgdQZ85c/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258811.00.51.jpg" alt="markdown to html" title="" /></p>
+
+
+<p>用力給他按下去－－噹啦～全部變成 HTML 了，很方便不是？</p>
+
+
+<p><img src="https://lh3.googleusercontent.com/-Qa59zBrnckQ/TzPsFo4ZL-I/AAAAAAAAJUA/WbZnbPmarsk/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258811.03.25.png" alt="markdown to html converted" title="" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[光鮮亮麗背後的真相]]></title>
     <link href="http://tzengyuxio.me/blog/2012/02/07/the-truth-is-out-there/"/>
     <updated>2012-02-07T15:28:00+08:00</updated>
@@ -705,69 +1022,6 @@ public class GetEnv {
 
 <br /><div style="text-align: -webkit-auto;">顯而易見的，這樣的搬遷使得原本 7-11 店鋪的可見性降低，畢竟街角是路口四方向都可以看到的點，來往的人潮也最多，而路邊或巷邊的 7-11 則只有同條路上的人才能見到。基於以上道理，三角窗（街角）的租金向來也比周遭店面來得高，甚至會高到倍數以上。不過我不覺得 7-11 搬到非街角地段，純粹只有租金考量。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">就我看來，7-11 的搬遷，其實某種程度反應了便利商店（尤其是 7-11）在我們生活中扮演的角色，已經從「剛好、順便去一下」的商店，成為「被尋找的主體」。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">住在都市的朋友，相信都會在自己或周遭朋友上看到一個現象：就是每當前往一個風景區或新地點時，總是會下意識尋找「麥當勞」或其他熟悉的連鎖速食店的店面。就算不一定會去吃，但至少在想不到吃什麼時，也不失為一個選擇。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">前面所提到的 7-11，便是成為這樣的一個存在。我出門不是為了「去隨便一間商店買個喝的」，而是為了「要去 7-11 領博客來的書／繳水電費／去 ATM 領錢」這樣明確的目的（然後順便買個喝的）。所以 7-11 就算開在不顯目的非三角窗地帶，也不怕你不來，因為你會去找他。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">所以進一步觀察，不難發現到店址的搬遷只是變化之一，搬遷後的店面通常也會伴隨著店面空間的擴大。而空間越大，就能提供更多硬體上的服務，包括 ATM、用餐區，甚至是廁所。以往是鄉下省道旁比較容易見到有帶停車場與廁所的 7-11，作為簡易休息區的替代，而現在都會區中很多 7-11 也開始都有提供廁所了。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">寫到這邊讓我想起以前短暫待過出版社時，曾經問過上頭的編輯一個問題：「為什麼有些雜誌的 Logo 標準字體蓋在封面人物上，而有些則是封面人物蓋在 Logo 字體上？哪一種比較好？」</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">編輯告訴我，沒有哪一種比較好，純粹是考量出發點不同。至於為什麼會有不同的作法？其實答案就和 7-11 在不在街角開店是一樣的。</div>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[相片管理的選擇, Aperture, iPhoto, Lightroom, Picasa]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/02/06/aperture-iphoto-lightroom-picasa/"/>
-    <updated>2012-02-06T19:55:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/02/06/aperture-iphoto-lightroom-picasa</id>
-    <content type="html"><![CDATA[<p>雖然不是說很專業，其實連業餘也稱不上，不過從買了第一台數位相機（CASIO QV-2800UX）到現在，前前後後也經歷過九個年頭、五台相機，之中還被偷走了一台，而這中間所累積的相片也有數千張之譜。然而因為缺乏整理，使得這些照片散落在家中不同的電腦、不同的網路分享區、不同的外接式硬碟以及不同的隨身碟中。更有甚者，同樣的照片還有不同版本放在不同的儲存設備，有原始版的，有為了傳給朋友縮過大小的，有 retouch 過的，不仔細比對還真的想不起來到底這些照片的先後順序因果關係。<br /><br />雖然想到就覺得累人，但總歸還是得找個時間徹底好好整理下照片。去年年底狠下心來，買了 Aperture 這套軟體，然後一個一個電腦、外接硬碟、隨身碟檢查，花了好幾個禮拜終於將照片全部匯入到 Aperture 中進行管理。也才知道自己這些年到底拍了多少張照片，去過哪些地方，也不用在每次想要回憶美好時光時，都要先想辦法回憶起那些美好時光的照片到底放在哪裡。<br /><br />其實在決定買下 Aperture 之前，也有考慮與試過其他選項，像是 iPhoto, Picasa, Lightroom, 但是每個軟體都有其優勢與不足之處，沒有完美無缺的 Solution。以下就簡單記錄下我對這四個軟體的使用感想，以及最後為什麼選擇 Aperture。<br /><br /><h2>Picasa</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" width="320" /></a></div>我在自己還在以 Windows 為主要環境的時代，就裝了 Picasa 來玩－－可是裝不久就移除掉了；後來 Picasa 出了新版，我又裝了，又移掉；又過一陣子注意到改版了，又裝，這次沒移，但是我僅僅是把 Picasa 留下當做看圖軟體。我喜歡 Picasa 他那把照片凸顯，其他桌面部分暗掉的無視窗方式瀏覽介面－－然而他主打的照片管理功能，我卻壓根不想使用。<br /><br />到了換以 Mac 作為主要環境的時候後，先後也裝過兩三次 Picasa, 也試著開始用 Picasa 來管理照片，但最後怎樣就是無法習慣，可能是軟體設計思維的不同吧，總覺得跟我自己對於照片管理的想法處處格格不入。<br /><br />Picasa 充分體現了 Google 作為一家搜尋引擎公司的思維，第一次啟動 Picasa 時，就會搜尋你整個電腦裡面的圖檔，全部加入，而這正是我最討厭的一點。我想要的是照片管理，可是 Picasa 卻會試著把你電腦裡所有圖片檔案列入他的管轄範圍內。圖片檔案有太多意義了，也許是照片、也許是工作用的中間圖片、也許是網路下載的有趣漫畫、也許是文件意義比圖片意義強烈的 Infographic，我不想要 Picasa 包山包海地把這些東西都納入他的檔案庫中。我只是單純的想要一個照片管理軟體。<br /><br />其實我很希望我能用 Picasa 這套軟體來管理照片，畢竟我買了 Google 的儲存空間，如果能夠直接把照片同步 Picasa Web 上，我就不用煩惱照片備份的問題了。不過 Picasa Web 的照片管理功能也是充滿問題的設計，用手機隨手上傳一張圖檔，就會多出一個以日期為名的小資料夾，這種資料夾一多，看了也心煩。更別提 Picasa 與 Picasa Web 的同步其實設計的很不貼心，許多地方必須手動。最好是能夠像 Dropbox 一樣，讓我指定一個本機資料夾，自動把網路相簿抓到該資料夾，丟到該資料夾的也會自動上傳。<br /><h2>iPhoto</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="211" src="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" width="320" /></a></div>換到 Mac 上作業後，曾經用過一段時間的 iPhoto。剛開始不習慣他把所有圖檔都放在一個叫做 &#8220;iPhoto Library&#8221; 的黑盒子中，畢竟在長久以來習慣了用資料夾作管理的形式，突然間沒有了資料夾作為存取照片的管道，心理總覺得不踏實。<br /><br />不過黑盒子的方式用久了其實倒也還好，就像是 Gmail 剛推出時只有標籤（Tag）沒有資料夾的管理，只要用不同的方式去思考，很快就可以習慣這樣的方式。反正檔案要給別人時就直接匯出，剩下的原始檔通通藏在黑盒子中，我也樂得輕鬆，不用去煩惱到底要怎麼安排這些檔案的存放方式。<br /><br />基本上，iPhoto 的使用經驗對我而言是無懈可擊的。人臉辨識與地點標記都是相當棒的功能體驗，照片的編輯與調整我也覺得夠用了，介面簡潔，很直覺便可找到你想做的工作該怎麼進行。然而他有兩個問題使我不得不考慮其他方案。第一個是無法顯示完整的 EXIF 資訊，也許是我的使用不夠深入，總之就是找不到顯示完整 EXIF 的方法。<br /><br />第二個問題就比較令人頭痛。在 iPhoto 上調整一張照片，就會產生一份該照片的副本，也就是當你調整的照片越多，所佔去的硬碟空間就越大，對於記憶體的使用也有相當影響。然而在 Picasa 和 Aperture 中，當你進行照片的修改時，Picasa 與 Aperture 只會儲存這些照片的修改參數的 Metadata，就算一張照片有十個不同風格的修改版本，也只會多用到一點點的容量，而不會消耗掉十倍的硬碟空間。因為 iPhoto 這樣的設計，所以據說當照片數目多到一個程度時，開啟的速度像牛步一樣。我自己的照片是還沒多到能感受到牛步，但是無法接受每修一個版本就會多一份照片副本，這是我放棄 iPhoto 最主要的原因。<br /><h2>Lightroom</h2><br />老實說，其實我沒有真正使用過 Lightroom, 只有買了本 Lightroom 的書來研究數位照片的管理，加上網路上看了幾篇文章比較比較 Lightroom 與 Aperture 的異同這樣。其實我蠻想試試看 Lightroom，但是由於以下幾個因素使得 Lightroom 還沒有真正上場就在我的相片管理名單中除名了。<br /><ul><li>對 Adobe 越來越沒好感。Adobe 的軟體越來越龐大，不管是功能與價格。</li><li>在 Adobe 的官網找不到試用下載，也沒有簡便的購買方式，得透過經銷商購買。</li><li>對於 iPhoto 的良好體驗，使得我對 Aperture 更有信心。</li></ul><h2>Aperture</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="241" src="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" width="320" /></a></div>最後則是我目前在使用的 Aperture。其實剛進入 Aperture 時很不習慣，一堆術語像是 Master / Version / Folder / Album / Project 讓我如陷五里霧中，這些單字都看得懂，可是代表什麼意思、彼此間有什麼差別我卻是一竅不通。現在用了一陣子後總算明白些，但我總覺得 Apple 應該可以更簡化這些術語或關係才對，例如 Origin 就比 Master 來得容易理解；Event &nbsp;也比 Project 符合情境。<br /><br />除了術語多，介面比起 iPhoto 複雜外，用到現在倒也沒什麼好挑的，真要說的話就是希望他能早日有正體中文的介面，雖然英文介面對我不構成使用障礙，但是有熟悉的語言，情感上就大大的加分。<br /><br />另一個與 iPhoto 相比的好處，就是你的檔案可以儲存在外部文件夾，甚至是外接式硬碟，而不用一定得放在 &#8220;Aperture Library&#8221; 這個黑盒子中。如果是放在外部的文件夾，Aperture 會建立一張縮圖在黑盒子中，所以就算外接式硬碟沒有接上，也可以對該照片進行瀏覽與編輯，頂多只是匯出時無法從更精細的原始版本匯出罷了。這項特點對於習慣以文件夾進行管理與分類的人算是一項福音，不過我已經習慣 iPhoto 的方式了，所以也就索性通通丟入 Aperture 的黑盒子中去。<br /><br />另外隨著這幾個月 Aperture 的使用，也逐漸發現 Aperture 一些讓人離不開的順手好功能。例如照片的管理可以透過 Keyword, Label, Rating 與 Flag，這些機制的組合增加了不少彈性；另外像是命名、編修、調整等批次功能，也可以幫助自己省下不少寶貴的時間。有機會的話再來對自己使用 Aperture 的心得作更進一步的介紹。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[從 Launchy 到 Alfred]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred/"/>
-    <updated>2012-01-01T15:21:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred</id>
-    <content type="html"><![CDATA[<p><a href="http://www.launchy.net/index.php">Launchy</a> 是一款快速啟動軟體。只要按下熱鍵，就會跳出一個視窗讓你輸入一些文字來啟動軟體或是上網搜索，可說是圖形介面下的命令列工具，對於習慣用鍵盤工作的人，可以大大提昇電腦操作上的生產力。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="194" src="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">上為 Alfred, 下為 Launchy</td></tr></tbody></table><br />話說<a href="http://blog.aqualuna.me/2006/09/launchy.html">我用 Launchy 前前後後也有五年多的時間</a>了。這段時間裡，只要我安裝新電腦或是重灌系統，Launchy 幾乎都是最前幾個安裝的程式之一，通常裝了瀏覽器（為了抓最新版防毒軟體與防火牆）與防毒軟體（這東西在電腦越乾淨的時候裝越好）之後，就是安裝 Launchy 了。<br /><br />這一兩年，我主要的工作環境從 Windows 轉移到 Mac 上，一開始找不到滿意的快速啟動軟體。在 Mac 上曾經風雲一時的 QuickSilver, 也因為有段時間久未更新，傳出停止開發的風聲，對於新版 OS X的支援也不甚理想，讓我對於這套軟體缺乏信心。所幸，沒過多久，聽見 Launchy 推出 Mac 版的消息，我立刻就在 Mac 裡安裝了這套從 Windows 時代就一直陪伴著我的軟體，繼續享受快速啟動的樂趣。<br /><br />就這樣一直到了上個月，因為意外的緣故讓我注意到了 <a href="http://www.alfredapp.com/">Alfred</a> 這套軟體。一開始沒興趣，畢竟人家已經有了 Launchy 了（羞）。但是好死不死讓看見 Alfred 的官方網站做的很漂亮（可見門面很重要），於是想說安裝來看看吧，反正免費。結果不試則已，一試就成主顧。在預設安裝下，我都還沒作什麼設定，就可以進行許多的操作，包括啟動軟體、網路搜尋、數學計算。而且 Alfred 除了功能之外，介面與圖示比起 Launchy 也更加符合 Mac 的調性，使得我對 Launchy 的忠誠開始動搖。<br /><br />其實我對 Launchy 還是很滿意，但是 Alfred 給我的感覺卻是一整個驚艷。Launchy 有的功能，Alfred 都做到了，而且做的更好。Alfred&nbsp;讓我用沒一天就開始認真考慮購買 Power Pack 的可能性。所以，別了，Mac 上的 Launchy。不過別擔心，偶爾我們還是會在 Windows 上見面的。<br /><br /><em> * </em><br /><br />後記：<strike>其實 Launchy 還是有些 Alfred 比不上的地方。比方說 Alfred 的軟體搜尋只能從頭或是從斷字的地方開始，不能跳著搜尋，但 Launcy 可以。以 iTunes 為例，Alfred 可以透過 &#8220;itu&#8221; 或是 &#8220;tun&#8221; 找到 iTunes, 可是如果輸入 &#8220;une&#8221; 或是 &#8220;itn&#8221; 就找不到了；對於 Launchy 而言，上面四種方式都可以找到 &#8220;iTunes&#8221;。</strike><span style="color: red;">更正，Alfred 一樣可以透過輸入部分且不連續的字母來搜尋，只要到 Preference 裡勾選 &#8220;Fuzzy: Partial matching for Applications&#8221; 即可。</span></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[奇人異士列傳]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/12/26/the-lives-of-eccentric/"/>
-    <updated>2011-12-26T08:17:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/12/26/the-lives-of-eccentric</id>
-    <content type="html"><![CDATA[<p>會買這本漫畫，主要是因為荒木飛呂彥與主題：「奇人異士」。我對荒木的畫風感覺一般，甚至有時候還覺得畫面太亂了，讀起來辛苦。但是由他來畫這些怪咖，卻是再適合不過。荒木作畫裡的詭異配色與扭曲的姿勢，與「奇人異士」這個題材配起來真是天生一對。可惜買回家拆開之後才發現，六則故事中真正由荒木操刀的不到兩篇，以篇數份量來看更是只有七分之二，實在是令人大感失望。（以下介紹有劇情洩漏）<br /><br /><div style="text-align: center;"><a href="http://www.anobii.com/books/%E5%A5%87%E4%BA%BA%E7%95%B0%E5%A3%AB%E5%88%97%E5%82%B3_%E5%85%A8/9789861038957/01d58b2de32f49b7cc/" title="More about 奇人異士列傳 (全)"><img alt="More about 奇人異士列傳 (全)" height="320" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01d58b2de32f49b7cc&amp;time=1254981167" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 奇人異士列傳 (全)" width="212" /></a></div><div style="text-align: left;"><br /></div><div style="text-align: left;">雖然說漫畫中的故事都是真人實事，不過表達的方式難免還是有些誇張，所以很多地方看看就好。底下各篇的介紹中，沒有特別註明的短篇，均為荒木飛呂彥擔任原作與構成，鬼窪浩久作畫。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">1. 泰‧柯布（Ty Cobb）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">泰‧柯布是個在上個世紀初非常極具爭議的一位棒球選手，他擁有超高水準的打擊表現，但在人際關係上卻是一敗塗地。漫畫提到柯布是個隨身會攜帶手槍進入球場的選手，要是跟人起了什麼衝突，立刻就拔槍出來。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">柯布的人緣糟糕到什麼地步呢？有一年柯布與聯盟另一位球員 N. Lajoie 在爭奪該球季打擊王時，為了不讓柯布拿下打擊王，當時的聖路易布朗隊 (St.Louis Browns) 教練甚至授意自己隊員在 Lajoie 上場打擊時，放大守備範圍，簡單的說就是故意放水給 Lajoie，寧願自己打放水球也不要讓柯布拿下打擊王。雖然如此，柯布仍舊在大聯盟中留下了許多難以抹滅的紀錄，也進了第一屆棒球名人堂，甚至還是以當年最高票入名人堂的。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">2. 康 芳夫</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">康芳夫，自稱為「虛業家」，又被稱為「傳說的製作人」（伝説のプロデューサー），是個以活動策劃為主的傳奇人物。他所策劃的活動都相當具有爭議性，例如漫畫中所介紹的「奧利佛旋風」，就是一個以具有 47 條染色體（人類為 46 條，黑猩猩為 48 條）的未知生物為主角的巡迴活動，更誇張的是康芳夫甚至懸賞一千萬，找來沒什麼名氣的女明星來與奧利佛（<a href="http://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AA%E3%83%90%E3%83%BC%E5%90%9B">オリバー君</a>）上床，看看是不是真的能夠繁衍出後代。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">康芳夫其他還策劃過的活動像是「孟加拉虎 VS 空手道家的格鬥」、「派遣探險隊尋找尼斯湖水怪」（隊長是石原慎太郎），以及出版爭議性作品<a href="http://blog.aqualuna.me/2005/07/blog-post_1155.html">《家畜人鴉俘》</a>。據說，浦沢直樹的漫畫《二十世紀少年》中的万丈目胤舟，就是以康芳夫作為角色原型。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">康芳夫至今（2011年底）仍活在世上。據維基百科上的記載，目前主要是在進行《家畜人鴉俘》的電影化工作。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">3. 傷寒瑪莉（Typhoid Mary, 本名 Mary Mallon）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">本篇由荒木飛呂彥親自作畫。內容主要是講一個傷寒的帶原者瑪莉，由於自身體質因素不會發病，但卻相當執著於從事廚房的工作，因而使得接觸到她料理的其他人都相繼染上傷寒。這在傷寒仍有 10% 致死率的二十世紀初期，可是相當令社會恐慌的不定時炸彈。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">與本書其他故事相比，其實我覺得〈傷寒瑪莉〉的故事本身相對平淡，但在荒木的作畫之下，反而顯得特別荒謬有趣。尤其是瑪莉在一戶只有老人與小孩在的屋子裡幫傭時，眼睛看不清楚的老人差點誤把小嬰兒當成火雞吃下去這一段，那種讓人為之捏一把冷汗的描寫功力實在令人印象深刻。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">4. 溫徹斯特神祕屋</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">同樣也是由荒木飛呂彥親自作畫的一篇。這篇也是我覺得故事本身比較普通的一篇，怎麼剛好荒木老師畫的都是這種比較不痛不癢的故事？這個故事主要是在講一間奇怪的房子，這間房子外表看上去美觀大方，然而裡面卻有 160 個房間，10000 個窗，2000 扇門，40 個樓梯間。房子裡頭結構怪異，有些房間甚至地上冷不防冒出個窗子，一不小心就會掉到樓下去，還有些像是有進無出或有出無進的樓梯，整個房子就是一個怪異的組合。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">是什麼樣的人基於什麼樣的理由而蓋了這麼一個房子呢？房子的主人是溫徹斯特夫人，他的丈夫是美國著名「溫徹斯特步槍」的發明人，因為「溫徹斯特步槍」而賺進了大筆的財富。溫徹斯特夫人在丈夫與女兒相繼去世之後，悲痛欲絕，這時占星師告訴夫人，由於她丈夫所發明的武器奪走了許多人的性命，使得她的家庭受到了詛咒，因此必須建造許多房間給槍下亡魂居住，以破除詛咒，而這些房間建得是越怪越好。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">迷信的溫徹斯特夫人於是開始整修原本只有八間房間的洋房。從 1884 年開始，到 1922 年夫人以 82 歲高齡去世的整整 38 年中，房子一直都是處於改建的狀態中。由於溫徹斯特夫人繼承了大筆的遺產，因此雖然房子不斷改造，但是所用的建材與設計都是當時最新的，整個屋子裡就安裝了三部電梯。這棟屋子現在已成了知名的旅遊景點，有機會去加州的話一定要過去一探究竟。</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">5. 戈利亞兄弟（The Collyer Brothers）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">戈利亞兄弟沒有什麼驚人的事蹟，他們之所以出名，就是因為他們足不出戶地把自己關在家裡，可說是「繭居族」的先驅。這兩兄弟從 1929 年起，就過著與外界完全隔離的隱居生活，然而他們並不是住在杳無人跡的深山叢林裡，而是住在紐約哈林區的一戶大宅邸中。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">兩兄弟就這樣相依為命過了二、三十年，直到死去才由警察進入屋中發現。除了閉戶不出，另一個奇特之處就在於早年弟弟曾經不斷的在外面撿東西回來家裡放，這些撿回來的東西多半是垃圾，但是弟弟總想著也許有一天會用到，於是就帶回家了。也因此家中堆積了大量的垃圾，造成移動上的不便。除此之外，弟弟還在家裡安置了各種陷阱，以阻撓入侵者進入家中。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">當警察接獲通報前往兩兄弟所居住的大宅去尋找遺體時，大門根本被雜物所塞滿無法進入。之後好不容易找到一扇窗戶可以進入，但還是花了約兩個小時的時間才找到哥哥荷馬（Homer）的遺體，這時哥哥大約死去 10 個小時左右。然而弟弟蘭格雷（Langley）卻不見蹤影，警察們只好一邊清除家中雜物，一邊尋找弟弟的下落。一直過了三個星期，才終於看到弟弟的遺體，死因是因為當弟弟要拿食物給行動不便的哥哥時，誤中了自己所設下的陷阱。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">最後警察們從兩兄弟的屋子裡清出了 136 噸的垃圾，其中還包括了 14 架鋼琴。底下的連結中有些照片，是當時清除垃圾時的一些實況：</div><div style="text-align: left;"><a href="http://piperbasenji.blogspot.com/2010/07/collyer-brothers.html">Follow the Piper: The Collyer Brothers</a></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="font-size: large;">6. 尼古拉‧特斯拉（Никола Тесла</span><span style="font-size: large;">）</span></div><div style="text-align: left;"><br /></div><div style="text-align: left;">這位應該是六篇故事中最廣為人知的人物了，不過與宿敵愛迪生相比，特斯拉的知名度仍舊低了許多。今天日常生活中隨處可見的交流電，就是出自於特斯拉的發明，在許多方面可說是比愛迪生更為天才的一個科學家。當然，或許如漫畫中所描述，愛迪生的成就是辛勤努力得來，「天才是百分之一的靈感，百分之九十九的汗水」，因此對於特斯拉的天份有著嫉妒之心也說不一定。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">關於特斯拉事蹟的記載比較多，這裡就不多作介紹了。</div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[玩起來直覺就是好遊戲 - Drop of Life]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/12/23/drop-of-life/"/>
-    <updated>2011-12-23T00:23:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/12/23/drop-of-life</id>
-    <content type="html"><![CDATA[<p>最近新出了一款風格獨特且非常治癒的遊戲，Drop of Life。在介紹之前，先看看他的片頭動畫與遊戲畫面吧：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/aanC-KZX0-o/0.jpg"><param name="movie" value="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />遊戲的背景很簡單，玩家要扮演的就是一個水珠，要淨化地下的土壤，並讓種子開出花朵。雖然對於關卡解謎的遊戲而言，故事不是最重要，不過整個遊戲的設計都是圍繞著這個故事主題去發揮，讓人覺得耳目一新，這一點後面會再說明。遊戲最主要的操作有三種：傾斜手機來讓水珠向前或向後移動；點擊畫面讓水珠跳躍；以及對手機吹氣可以讓水珠結成冰塊，摩擦冰塊則恢復成為水珠。傾斜、點擊與吹氣，算是充分利用了 iPhone 的各種輸入方式。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s1600/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s320/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" width="213" /></a></div><br />關卡的進行有點類似 Loco Roco，基本上，玩家只要能從頭走到尾，找到最後的種子，就算過關了。不過通往終點的路上免不了有些障礙，許多設計都很有意思，必須充分利用水珠與冰塊的性質差異來進行，例如有些障礙物必須藉由冰塊的撞擊才能敲破，有些平面冰塊可以直接滑過，而水珠則是黏在上頭慢慢移動。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" width="213" /></a></div><br />另外關卡中有些地方有積水，基本上只要水珠掉到水中就會消滅，只好回到先前的 check point 繼續開始。不過遊戲的設計中沒有真正的 Game Over，水珠或冰塊破掉了，可以無限次嘗試。遊戲的關卡設計的不錯，單純要過關的話都不難，可以順利讓種子開出小白花；不過如果想要取得每關中能讓種子開出小黃花的四葉草，或是要收集散落的拼圖圖塊，就得稍稍動些腦筋，注意有沒有容易被忽略掉的路線。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" width="213" /></a></div><br />話說回來，這遊戲最讓我驚艷的地方就在於，許多遊戲裡的設計都巧妙結合了主題。例如遊戲裡沒有主選單，一開始就是讓玩家操作水珠在地面上滾動，所以選關的方式跟遊戲方式一樣。每個關卡完成的程度會用花的大小來表示，如果有找到四葉草，就是是黃色的小花，這比 Angry Bird 裡冷冰冰的一二三顆星星表示來得親切許多。最特別的是連工作人員名單都像是可以玩的關卡，只要在選關畫面移動到最右邊的懸崖跳下去，那就是了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" width="213" /></a></div><br />最後、最後，最重要的是，這款遊戲是免費下載的喔。下載完後可以玩到第一大關，如果玩了喜歡的話，只要 0.99 鎂就可以解開完整的遊戲版本。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[麻辣開鎖王 THE MOVIE]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/12/20/saru-lock-the-movie/"/>
-    <updated>2011-12-20T09:12:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/12/20/saru-lock-the-movie</id>
-    <content type="html"><![CDATA[<p>這部作品我最先看過的是漫畫版，看過一兩集之後，感覺開鎖這題材新鮮，故事內容有趣，此外還帶點色色的內容，算是不錯的休閒小品；然而也就僅此而已，沒有太大的動力驅使我繼續追下去。想不到事隔多年，《麻辣開鎖王》這部漫畫竟然紅到出了日劇，甚至還拍了電影版，讓人不由得好奇漫畫後來的發展。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-zwTw0T6xraA/Tu_QwT79oII/AAAAAAAAJCQ/50cyq117egU/s1600/p544531113.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-zwTw0T6xraA/Tu_QwT79oII/AAAAAAAAJCQ/50cyq117egU/s320/p544531113.jpg" width="227" /></a></div><br />日劇的部份我沒看，我就直接看電影版了，電影版看上去是獨立的故事，應該是沒影響吧。對於漫畫劇情的印象我也只記得那個老戴著頭巾滿頭銀髮的主角。不過當電影版市原隼人所飾演的主角登場時，倒是讓人覺得異常親切，真的有漫畫人物再現的感覺。<br /><br />電影的故事一般般，這邊我就不多提了，總之就是個主角像天真的傻子般地一直相信女主角，卻又一直被背叛，最後仍用真心感動了對方（但還是沒有在一起）的故事。關於電影的另一條支線劇情，小西真奈美所飾演的美女警官看似與惡人勾結，但彷彿好像似乎又懷抱著某種理想，想要改革警界的樣子。說真的，關於小西真奈美與<a href="http://reader.aqualuna.me/search/label/%E8%A5%BF%E6%9D%91%E9%9B%85%E5%BD%A5">西村雅彥</a>這條線的警察故事，也許是我看得不夠認真吧，一直到電影結束之後還是搞不太懂他們之間的關係，或是這些警察到底肚子裡懷著什麼鬼胎。<br /><br />反倒讓我覺得這電影最值得一提的，就是飾演女主角「マユミ」的比嘉愛未了。我開始知道比嘉愛未這個演員，是在《マルモのおきて》這部日劇，雖然比嘉是女主角，但是《マルモのおきて》這部戲真正的主角是那兩個小孩，比嘉可以發揮的戲份並不多，也沒有特別驚艷之處，給我的印象就是個「乾淨、可愛又耐看的女演員」。<br /><br />然而看到比嘉在《麻辣開鎖王 THE MOVIE》 中的表現，我對她的印象簡直是一整個加分到破表。比嘉在戲中有著多重扮相，又清純、又剛烈、又成熟、又性感，<span style="color: red;">如果說今天要拍一部《魯邦三世》真人版，那比嘉愛未絕對是「峰不二子」的不二人選。</span>當猿丸與マユミ偷了組織的錢溜到貨車後廂時，雖然主角還被蒙在鼓裡，不過這時看電影的觀眾應該都對於「マユミ是個騙子，想要黑吃黑」這件事情了然於心了，然而當マユミ在車上娓娓道出她之所以要偷走皮箱是因為有「淒慘的身世」時，我竟然有相信她的衝動！只能說女人真是太可怕了！<br /><br />最後，如果各位有機會看這部電影，記得當演員名單開始上的時候千萬別離席，後面還有一小段劇情。雖然不影響整個故事，可是這一小段畫面卻有畫龍點睛的效果，讓人在看完電影之後還能在心理留下一段甜甜的滋味。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[讀《往復書簡》]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/12/20/wanfushujian/"/>
-    <updated>2011-12-20T06:58:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/12/20/wanfushujian</id>
-    <content type="html"><![CDATA[<p>我很喜歡湊佳苗的《告白》。記得當初這小說的中文版剛上市時，我在書店翻了一下，當場驚為天人，二話不說，立刻就決定帶去櫃檯結帳。回家之後更是廢寢忘食地一口氣將整個故事讀完，大呼過癮。<br /><br /><div style="text-align: center;"><a href="http://www.anobii.com/books/%E5%BE%80%E5%BE%A9%E6%9B%B8%E7%B0%A1/9789571354460/018e6d7a84f1d3953a/" title="More about 往復書簡"><img alt="More about 往復書簡" src="http://image.anobii.com/anobi/image_book.php?type=4&amp;item_id=018e6d7a84f1d3953a&amp;time=1323512941" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 往復書簡" /></a></div><br /><br />不過儘管對於《告白》如此喜愛，湊佳苗的作品之後在台灣也陸續出了不少本，但我卻一本也沒再看過。原因無他，單純的是自己以為《告白》的筆法與鋪陳太過經典，即使是作者本身也難以超越。直到《往復書簡》的出現，又再次讓我在書店翻了一陣子後決定將這本書帶回家細細品嚐。<br /><br />與《告白》相比，《往復書簡》是由三篇短篇所構成，每個短篇都是經由書信往來的過程來讓讀者慢慢拼湊事實的原貌。文風依然是湊佳苗所擅長的「獨白體」，而情節發展也如同《告白》一般，隨著信件一封封的往來，事實的輪廓看似逐漸鮮明，卻又不斷地被推翻。<br /><br /><b>〈十年後的畢業文集〉</b>作為本書的第一篇，提供了相當的懸疑性與意外感。不過更讓我佩服的是，作者把學生時代同學之間相處時許多微小不易察覺卻著實存在著的細微互動與心結描寫的淋漓盡致。雖然彼此之間都是好朋友，但或多或少仍存在著看不順眼的小地方。在無憂無慮不需擔心工作、生活等瑣碎問題的學生時代，也許終日煩惱的就是這些人際關係上的小小摩擦吧。<br /><br />第二篇<b>〈二十年後的作業〉</b>主題再次圍繞著神職者－－老師－－的這個職業上，算是玩老哏吧，不過這一篇卻是三篇裡面我最喜歡的一篇。貫穿本篇的案件雖然也是一步步揭露，但卻毫不讓人意外，倒是結局的發展讓人感到相當溫馨，也是本書三篇中最讓我喜愛的一篇。<br /><br />至於最後一篇<b>〈十五年後的補習〉</b>，則完完全全是「真相→推翻真相→新的真相→再次推翻真相→更新的真相」這樣的套路。不過由於「舊的真相」與「新的真相」之間的反差並不大，故事讀起來反而比較平淡。除此之外，這篇在閱讀的過程中也不斷給我「這是愛情故事吧？」「不，這不是愛情故事。」「這還是愛情故事吧。」「這果然不是愛情故事。」「這終究還是愛情故事」這樣不斷反覆的感覺，也可以算是一種樂趣吧。<br /><br />總的來說，《往復書簡》仍舊沒有超越《告白》所帶來的震撼，但作為連續幾個陽光午後的午茶良伴，倒是毫不失職。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[真三國無雙 6 初玩心得]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/11/01/sangoku-musou-6/"/>
-    <updated>2011-11-01T23:52:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/11/01/sangoku-musou-6</id>
-    <content type="html"><![CDATA[<p>說是初玩，其實也已經把整個魏吳蜀晉四個勢力的故事模式全部過了一遍，加上一些戰史模式的關卡。以下是零散心得：<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://upload.wikimedia.org/wikipedia/zh/0/01/Dynasty_Warriors_7.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://upload.wikimedia.org/wikipedia/zh/0/01/Dynasty_Warriors_7.jpg" width="275" /></a></div><br /><br /><br /><ul><li>用四個字來形容這遊戲，那就是<b>「疲於奔命」</b>。</li><li>六代的故事模式加強了敘事性，不過不能改變歷史總覺得有種莫名的失落。</li><li>每個關卡都只能用同樣角色攻略，讓重玩的樂趣大大降低。</li><li>加上許多關寨不先解決重要事件就不會開門，幾乎每關都必須按照一定次序內容進行，玩過了一次就很難提得起興趣玩第二次。</li><li>大略估計一下，一個關卡平均 15 分鐘，四個勢力共 92 個關卡差不多也要 23 小時的遊戲時數。以整個故事模式的長度而言，還算可以接受。</li><li>魏國的主軸是「霸道」；吳國的主軸是「家族」；蜀國的主軸是「仁之國」；晉的主軸先是「消滅平庸之輩」，之後轉變為「消滅活在遺志中的人」。</li><li>司馬兄弟也太陽光了吧，跟老爸司馬懿完全不同調性。</li><li>本來以為故事會到鐘會反叛魏國與姜維聯手，可惜到了劉禪開城投降就結束了。</li><li>錯字還不少，特別是討伐諸葛誕這個關卡，不只錯字，還有漏字。</li><li>部分關卡開頭前要跟士兵對話這一部分有點雞肋。若不是為了獎盃我還真想直接出征。</li><li>不過雖說雞肋，有些發展還蠻有趣的。例如王元姬和司馬昭的關係，在戰場上只看得出來兩人關係匪淺，可是真正的兩人互動關係都透露在士兵的八卦耳語上。</li><li>另外蜀國劇情中一個一路跟隨劉備的士兵也很有趣，之後不但晉升到卒伯，兩個孩子都還長大成人並且從軍。我每次一可以對話一定就先想把這傢伙找出來看他的人生又有什麼進展。</li><li><strike>（話說一開始看到那個士兵說等戰爭結束要回家鄉娶媳婦這段，我還以為是死亡 flag）</strike></li><li>另外就是經常看到說人名或地名雙關語耍冷的士兵。偶一為之尚可，可是這代裡多到看到有點膩了，好煩 XD</li><li>對話模式中，有些士兵沒有對話，不過遠遠看過去會見到他在打混，走過去一靠近他就立刻精神抖擻起來。這還蠻有趣的。</li><li>弓腰姬跟劉大耳兩個人在戰爭過程中一直放閃光這是哪招？</li><li>除了 Tony さん之外，吳國也多了個 Kenny さん（應該前幾代就有，只是我沒注意到）</li><li>司馬昭的 Ex 技把人當滑板踩還蠻搞笑的啊。特別是你踩在腳上的是頭上頂著皇冠的魏帝曹髦或和蜀帝劉禪。</li><li>這一代真的很愛玩雙關語。司馬懿臨死把劍丟給司馬師，說是「我的權力就交給你運用了」；司馬師臨死也把劍丟給司馬昭，說了一樣的話。看的當下沒會意過來，事後才想到日文中的「劍」與「權」同音。</li><li>關索頭上的花到底是怎麼回事？雲長你都不管一下的嗎？</li><li>再一次佩服三國無雙系列的關卡設計，同樣一張地圖可以變出許許多多的花樣。許多關卡用到同一張地圖，可是由於使用部分不同，或是進軍路線不同，使得玩的感受也截然不同。</li><li>只有一點感受例外，那就是不管地圖怎麼變，都一樣讓人－－<b>「疲於奔命」</b>。</li><li>人生七十才開始，無雙六也是到了戰史模式才開始，開始無止盡的<a href="http://ja.wikipedia.org/wiki/%E3%82%84%E3%82%8A%E8%BE%BC%E3%81%BF">やり込み</a>。</li></ul><div>最後引一段小故事幫諸葛誕平反一下。遊戲中諸葛誕殺了文欽失了人心，於是城內軍民開城欲降。不過東晉時人干寶所著的《晉紀》有如下記載：</div><blockquote class="tr_bq">數百人拱手為列，每斬一人，輒降之，竟不變，至盡，時人比之田橫。</blockquote><div>關於這段敘述，維基百科上「<a href="http://zh.wikipedia.org/wiki/%E8%AB%B8%E8%91%9B%E8%AA%95">諸葛誕</a>」條目的記述如下：</div><blockquote class="tr_bq">&#8230;&#8230;諸葛誕率領數騎逃出壽春，被大將軍司馬胡奮手下士兵殺死。諸葛誕亦被誅滅三族。諸葛誕麾下數百人於壽春被俘，堅決不降，更說：「為諸葛公死，不恨。」行刑時排成一列，每斬一人都招降下一人，但始終無人投降。</blockquote><div>想像這畫面，其實還蠻悲壯的。</div></p>
 ]]></content>
   </entry>
   

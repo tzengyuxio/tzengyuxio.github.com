@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>我的 Eclipse 初始設定調教 - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="* 12/30 更新：追加了行號、跳格字元等相關項目這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：作業系統：Mac OS X 10.7.2程式版本：Eclipse Indigo 3.7.1,IDE for Java &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2011/12/27/my-eclipse-settings">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">我的 Eclipse 初始設定調教</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-27T07:30:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><br />* 12/30 更新：追加了行號、跳格字元等相關項目<br /><br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br />雖說初始設定調教，不過其實要改的地方也不多。現在對於工具的想法我是抱持著盡量不要改太多，以免花太多時間在調整工具上。<br /><br />以前在不同的軟體間，可能還會改些快速鍵，希望跨不同的軟體時有一致的快速鍵操作，現在都直接讓自己適應。畢竟最常用的快速鍵：剪下、複製、貼上、存檔，所佔用的使用比率高達八成，而這些操作的快速鍵幾乎各軟體平台適用，這就夠了。剩下的<a href="http://widget5.linkwithin.com/redirect?url=http%3A//coder.aqualuna.me/2011/07/eclipse.html&amp;vars=%5B%22http%3A//coder.aqualuna.me/%22%2C%20808611%2C%201%2C%20%22http%3A//coder.aqualuna.me/2011/12/eclipse-git-svn.html%22%2C%20null%2C%200%2C%20129957287%5D&amp;ts=1324942435763">查查 cheat sheet 吧</a>，反正真的常用的一定會讓身體記起來的。<br /><br />所以要做的設定調整很簡單，就是<u>配色</u>、<u>編碼</u>、<u>行號</u>和<u>跳格字元</u>。就這樣。<br /><br /><br />## 配色 ##<br /><br />關於配色我習慣用 <a href="http://slinky.imukuppi.org/zenburn/">Zenburn</a>，這組配色採用低對比色，看上去很舒服，以暗色為背景，看久了眼睛也比較不會累。基本上，只要支援 Color Syntax 的編輯器，幾乎都可以找到 zenburn 的配色腳本。<br /><br />要使用 zenburn, 只要安裝 <a href="http://marketplace.eclipse.org/content/eclipse-color-theme">Eclipse Color Theme</a>，之後就可以在「偏好設定」中指定 zenburn 的配色了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="226" src="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" width="320" /></a></div><br />## 編碼 ##<br /><br />小地方可是卻很容易忘記的步驟。將 Text file encoding 指定為 UTF-8, 可以省下之後關於文字編碼上的許多麻煩，特別是程式碼中不小心塞了些中文在註解或字串中－－雖然這是不好的作法，但有時候你就是避不了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="260" src="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" width="320" /></a></div><br />## 行號 ##<br /><br />我寫程式喜歡有行號，有時候 Compiler 或 Log 告訴你哪一行出錯了，有行號的話便立刻能在畫面上定位。除了行號顯示的設定（Show line numbers）之外，在同個設定頁面中的顯示列印邊界（Show print margin）最好也一起勾上，有了這個提示，可以督促自己不要寫出一行太長的代碼。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s1600/line_and_colmargin.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="290" src="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s320/line_and_colmargin.png" width="320" /></a></div><br />## 跳格字元（Tab） ##<br /><br />Tab 用來對齊程式代碼很好用，可是隨著每台電腦設定的不同，在自己電腦上看起來整整齊齊的 Code, 到了別人電腦上一看可能歪七扭八。所以我偏好用空白來取代 Tab 字元（Insert spaces for tabs），雖然有時候 backspace 時要多按個幾下，不過至少可以確定這邊看到的跟其他電腦上看到的是一致的。 設定「空白取代跳格字元」的地方跟設定「行號顯示」是同一個頁面，就在上面而已。<br /><br /><br />## 字型 ##<br /><br />這部份算是個補充。寫程式的字型我偏好使用 <a href="http://www.donationcoder.com/Software/Jibz/Dina/">Dina Programming Font</a>, 這是個有 8pt, 9pt, 10pt 三種大小的點陣字型。這個字型的「數字1, 小寫l, 大寫I」以及「字母O, 數字0」均有相當清楚的分別。它曾在 Visual Studio 跟 Vim 上陪伴了我好幾年的歲月。不過這一兩年以來，我也漸漸可以接受 Microsoft 的 Consolas 與 Apple 的 Monaco/Menlo 等向量字作為 Coding 字型，所以也逐漸放棄將預設字型改成自己偏好的 Dina 了。謹以此處一小段文章紀念一下 Dina Programming Font。
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-27T07:30:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/eclipse/'>eclipse</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2011/12/27/my-eclipse-settings/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2011/12/27/my-eclipse-settings/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/26/eclipse-with-git-and-svn/" title="Previous Post: 在 Eclipse 使用 Git 與 SVN">&laquo; 在 Eclipse 使用 Git 與 SVN</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/12/30/my-vimrc/" title="Next Post: 我的 vimrc 配置">我的 vimrc 配置 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
