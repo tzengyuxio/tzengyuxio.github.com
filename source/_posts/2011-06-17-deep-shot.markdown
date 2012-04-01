@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: "用手機鏡頭傳送網頁 - DeepShot"
+date: 2011-06-17 10:31:00 +08:00
+comments: true
+categories: talks
+tags:
+---
+
+今天看到這個東西，像是魔法一樣。只要把手機鏡頭對著電腦螢幕，就可以把現在電腦上的網頁傳到手機上，反之也行。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/odjSlKO0YsY/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/odjSlKO0YsY&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/odjSlKO0YsY&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />之前要在手機跟電腦間傳送觀看的網頁，我在 iPhone 上只能透過 email 的方式，一堆步驟顯得麻煩。在 Android 上要好一點，我是用 <a href="https://chrome.google.com/webstore/detail/oadboiipflhobonjjffjbfekfjcgkhco">Chrome to Phone</a> 這個 Chrome 的擴充功能，可以避開打開信箱這個中間步驟。不過要用 Chrome to Phone 有幾個先決條件：<br /><br /><ol><li>使用 Android 手機 2.2 (Froyo) 之後版本</li><li>在手機上安裝 Chrome to Phone 應用程式</li><li>使用 Chrome 瀏覽器</li><li>在瀏覽器上安裝 Chrome to Phone 擴充功能</li></ol><br />上面有關安裝程式的部分或許是免不了的，但是使用平台只有 Android 與 Chrome 這種搭配，就多了許多限制。<br /><br />另外關於&nbsp;Deep Shot 支援的網站，剛剛看了 <a href="http://www.engadget.com/2011/06/16/deep-shot-transfers-open-websites-from-desktop-to-mobile-sans-w/">Engadget 的報導</a>，目前只有 Google Map 跟 <a href="http://www.yelp.com/">Yelp</a> （評論網站，類似台灣的愛評網）兩個，不過理論上只要有支援 URIs 的網站便可以支援。不過這樣聽起來，雖然比起 Chrome to Phone 方便，但是又不像 Chrome to Phone 那樣到處通用。<br /><br />最後附帶一題，Deep Shot 的開發者之一是目前正在 MIT 就讀博士班的 vgod。之前有個<a href="http://www.techbang.com.tw/posts/1907-drawings-to-write-programs-sikuli-will-change-the-world">用抓圖寫程式的 Sikuli</a>，也是 vgod 的作品。<br />----<br />延伸閱讀：<br /><a href="http://blog.vgod.tw/">vgod's blog</a>
