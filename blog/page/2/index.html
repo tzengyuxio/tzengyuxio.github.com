@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。 Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC &hellip;">
+  <meta name="description" content="我用 google-code-prettify 來做 blog 文章中的代碼上色，google-code-prettify 本身有附上幾個 Color Scheme, 然而除了預設的之外，都是以暗色背景為主。 昨天心血來潮將 Solarized 這個 Color Scheme 移植到 google &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,176 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/03/11/solarized-for-google-code-prettify/">Solarized for Google-code-prettify</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-11T07:20:00+08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify/">我用 google-code-prettify 來做 blog 文章中的代碼上色</a>，google-code-prettify 本身有<a href="http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html">附上幾個 Color Scheme</a>, 然而除了預設的之外，都是以暗色背景為主。</p>
+
+<p>昨天心血來潮將 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考<a href="http://coder.aqualuna.me/2012/02/zenburn-solarized.html">這篇文章</a>。</p>
+
+<h2>下載 / Download</h2>
+
+<ul>
+<li>Solarized Light
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">Minified version</a></li>
+</ul>
+</li>
+<li>Solarized Dark
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">Minified version</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>代碼 / Code</h2>
+
+<h3>Solarized Light</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">download</a>)：</p>
+
+<pre class="prettyprint lang-html"><code>.pln{color:#657b83}
+@media screen{
+    .str{color:#2aa198}
+    .kwd{color:#859900}
+    .com{color:#93a1a1}
+    .typ{color:#b58900}
+    .lit{color:#2aa198}
+    .pun,.opn,.clo{color:#657b83}
+    .tag{color:#268bd2}
+    .atn{color:#93a1a1}
+    .atv{color:#2aa198}
+    .dec,.var{color:#268bd2}
+    .fun{color:red}
+}
+@media print,projection{
+    .str{color:#060}
+    .kwd{color:#006;font-weight:bold}
+    .com{color:#600;font-style:italic}
+    .typ{color:#404;font-weight:bold}
+    .lit{color:#044}
+    .pun{color:#440}
+    .tag{color:#006;font-weight:bold}
+    .atn{color:#404}
+    .atv{color:#060}
+}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+</code></pre>
+
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">download</a>)：</p>
+
+<pre class="prettyprint lang-html"><code>.pln{color:#657b83}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#93a1a1}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#657b83}.tag{color:#268bd2}.atn{color:#93a1a1}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+</code></pre>
+
+
+<h3>Solarized Dark</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">download</a>)：</p>
+
+<pre class="prettyprint lang-html"><code>.pln{color:#839496}
+@media screen{
+    .str{color:#2aa198}
+    .kwd{color:#859900}
+    .com{color:#586175}
+    .typ{color:#b58900}
+    .lit{color:#2aa198}
+    .pun,.opn,.clo{color:#839496}
+    .tag{color:#268bd2}
+    .atn{color:#586175}
+    .atv{color:#2aa198}
+    .dec,.var{color:#268bd2}
+    .fun{color:red}
+}
+@media print,projection{
+    .str{color:#060}
+    .kwd{color:#006;font-weight:bold}
+    .com{color:#600;font-style:italic}
+    .typ{color:#404;font-weight:bold}
+    .lit{color:#044}
+    .pun{color:#440}
+    .tag{color:#006;font-weight:bold}
+    .atn{color:#404}
+    .atv{color:#060}
+}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+</code></pre>
+
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">download</a>)：</p>
+
+<pre class="prettyprint lang-html"><code>.pln{color:#839496}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#586175}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#839496}.tag{color:#268bd2}.atn{color:#586175}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+</code></pre>
+
+
+<h2>範例 / Example (in dark version)</h2>
+
+<pre class="prettyprint lang-java"><code>import java.util.Map;
+import java.util.TreeSet;
+
+public class GetEnv {
+  /**
+   * let's test generics
+   * @param args the command line arguments
+   */
+  public static void main(String[] args) {
+    // get a map of environment variables
+    Map&lt;String, String&gt; env = System.getenv();
+    // build a sorted set out of the keys and iterate
+    for(String k: new TreeSet&lt;String&gt;(env.keySet())) {
+      System.out.printf("%s = %s\n", k, env.get(k));
+    }
+  }    
+}
+</code></pre>
+
+
+<hr />
+
+<p>網路上有找到<a href="http://subtech.g.hatena.ne.jp/h2u/20110408/1302198319">這篇也有 solarized color for google-pretty-code</a>, 不過只有暗色背景的版本。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -728,58 +898,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/07/seven-eleven/">最近的 7-ELEVEN 啊</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-07T10:48:00+08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-CMrUObFVmYE/TzCC180FvYI/AAAAAAAAJRU/_Ut6VVenz_c/s1600/IMG_2123.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="241" src="http://3.bp.blogspot.com/-CMrUObFVmYE/TzCC180FvYI/AAAAAAAAJRU/_Ut6VVenz_c/s640/IMG_2123.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">重慶南路的7-11由街角處（現為艾美麗）搬移到了巷子中。攝於2012-01-30</td></tr></tbody></table>
-
-
-<div class="separator" style="clear: both; text-align: left;"><br /></div>
-
-
-<div class="separator" style="clear: both; text-align: left;"></div>
-
-
-<div style="text-align: -webkit-auto;">最近注意到有幾家 7-11 作了同樣的事情，就是從原本的街角的黃金地帶搬到附近不遠處，距離原店址大約三四戶的地方。如果只有一家店搬，我只會單純想到是租約到期之類的原因，但短時間內同時見到數家 7-11 都有類似的搬遷動作，就不得不讓人去思考背後是否有某種經營策略上的調整？</div>
-
-
-<div style="text-align: -webkit-auto;"></div>
-
-
-<br /><div style="text-align: -webkit-auto;">顯而易見的，這樣的搬遷使得原本 7-11 店鋪的可見性降低，畢竟街角是路口四方向都可以看到的點，來往的人潮也最多，而路邊或巷邊的 7-11 則只有同條路上的人才能見到。基於以上道理，三角窗（街角）的租金向來也比周遭店面來得高，甚至會高到倍數以上。不過我不覺得 7-11 搬到非街角地段，純粹只有租金考量。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">就我看來，7-11 的搬遷，其實某種程度反應了便利商店（尤其是 7-11）在我們生活中扮演的角色，已經從「剛好、順便去一下」的商店，成為「被尋找的主體」。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">住在都市的朋友，相信都會在自己或周遭朋友上看到一個現象：就是每當前往一個風景區或新地點時，總是會下意識尋找「麥當勞」或其他熟悉的連鎖速食店的店面。就算不一定會去吃，但至少在想不到吃什麼時，也不失為一個選擇。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">前面所提到的 7-11，便是成為這樣的一個存在。我出門不是為了「去隨便一間商店買個喝的」，而是為了「要去 7-11 領博客來的書／繳水電費／去 ATM 領錢」這樣明確的目的（然後順便買個喝的）。所以 7-11 就算開在不顯目的非三角窗地帶，也不怕你不來，因為你會去找他。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">所以進一步觀察，不難發現到店址的搬遷只是變化之一，搬遷後的店面通常也會伴隨著店面空間的擴大。而空間越大，就能提供更多硬體上的服務，包括 ATM、用餐區，甚至是廁所。以往是鄉下省道旁比較容易見到有帶停車場與廁所的 7-11，作為簡易休息區的替代，而現在都會區中很多 7-11 也開始都有提供廁所了。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">寫到這邊讓我想起以前短暫待過出版社時，曾經問過上頭的編輯一個問題：「為什麼有些雜誌的 Logo 標準字體蓋在封面人物上，而有些則是封面人物蓋在 Logo 字體上？哪一種比較好？」</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">編輯告訴我，沒有哪一種比較好，純粹是考量出發點不同。至於為什麼會有不同的作法？其實答案就和 7-11 在不在街角開店是一樣的。</div>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -797,7 +915,11 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/04/02/google-map-quest/">Google Map Quest</a>
+        <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
       </li>
     
       <li class="post">
@@ -818,10 +940,6 @@
     
       <li class="post">
         <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/26/json-for-vim/">JSON for Vim</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-02T06:00:56+08:00</updated>
+  <updated>2012-04-05T09:52:29+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,40 +14,105 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Google Map Quest]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/04/02/google-map-quest/"/>
+    <title type="html"><![CDATA[在 Mac 輸入特殊文字符號]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac/"/>
+    <updated>2012-04-05T08:12:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac</id>
+    <content type="html"><![CDATA[<p>有時候在網路上會看到像「㍿」這樣的文字符號，有沒有好奇這是怎麼打出來的呢？這可不是把四個字打在一個格子裡面，而是這原本就是一個作為符號使用的 Unicode 文字。就好像英文中的 Trade Mark 可以用「™」表示一樣。類似的文字還有（如果底下只看到方框看不到字，表示你瀏覽器所用的字型沒有包含到下面這些 Unicode 字碼）：</p>
+
+<h3>英文</h3>
+
+<ul>
+<li>℡ ℻ №</li>
+</ul>
+
+
+<h3>日本年號</h3>
+
+<ul>
+<li>㍻ ㍼ ㍽ ㍾</li>
+</ul>
+
+
+<h3>日期時間</h3>
+
+<ul>
+<li>㋀ ㋁ ㋂ ㋃ ㋄ ㋅ ㋆ ㋇ ㋈ ㋉ ㋊ ㋋</li>
+<li>㏠ ㏡ ㏢ ㏣ ㏤ ㏥ ㏦ ㏧ ㏨ ㏩ ㏪ ㏫ ㏬ ㏭ ㏮ ㏯ ㏰ ㏱ ㏲ ㏳ ㏴ ㏵ ㏶ ㏷ ㏸ ㏹ ㏺ ㏻ ㏼ ㏽ ㏾</li>
+<li>㍘ ㍙ ㍚ ㍛ ㍜ ㍝ ㍞ ㍟ ㍠ ㍡ ㍢ ㍣ ㍤ ㍥ ㍦ ㍧ ㍨ ㍩ ㍪ ㍫ ㍬ ㍭ ㍮ ㍯ ㍰</li>
+</ul>
+
+
+<h3>星期</h3>
+
+<ul>
+<li>㈪ ㈫ ㈬ ㈭ ㈮ ㈯ ㈰</li>
+<li>㈠ ㈡ ㈢ ㈣ ㈤ ㈥ ㈰</li>
+</ul>
+
+
+<h3>加框字</h3>
+
+<ul>
+<li>㈱ ㈲ ㈶ ㈳ ㈸ ㈾ ㉀ ㉁ ㈻</li>
+<li>㊙ ㊚ ㊛ ㊞ ㊣ ㊤ ㊥ ㊦ ㊧ ㊨ ㊩ ㊰</li>
+</ul>
+
+
+<hr />
+
+<p>那麼，要如何輸入這些特殊符號呢？在 Mac 中很簡單，只要開啟「特殊字元」的輸入視窗。絕大多數 Mac 下的應用程式都可以在選單列的「編輯」或「Edit」最下方找到「特殊字元&#8230;」或「Special Characters…」；通常也可以透過快捷鍵「⌥⌘T」來開啟特殊字元視窗。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-05-special-characters.png" alt="image" /></p>
+
+<p>上面就是特殊字元的輸入視窗。到這邊已經可以輸入各種奇奇怪怪的符號了，不過如果想要輸入像「㍿」或「㊙」則還不夠，得要進「自定列表」加入新的類別。點左上角的齒輪便可開啟自定列表，然後選取以下類別：</p>
+
+<ul>
+<li>數字 - 全部</li>
+<li>類字母符號 - 全部</li>
+<li>框住的字元</li>
+</ul>
+
+
+<p>這樣子就可以輸入上文中提到的文字符號囉！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Maps Quest]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/02/google-maps-quest/"/>
     <updated>2012-04-02T05:12:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/04/02/google-map-quest</id>
+    <id>http://tzengyuxio.me/blog/2012/04/02/google-maps-quest</id>
     <content type="html"><![CDATA[<p>照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。</p>
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
-<p>上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的音效等。而影片中那 8-bit 風格的美術與音效，更是所有勇者迷再熟悉也不過的場景了。看完影片後我在 Google Maps 上玩了好久，到處探索這個世界，就好像自己真的是勇者一樣四處探險。</p>
+<p>上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的噪音等等。而影片中那 8-bit 風格的美術與音效，更是所有勇者迷再熟悉也不過的場景了。看完影片後我立刻連上 Google Maps，在 8-bit 的世界中玩了好久，到處探索，就好像自己真的是個勇者一樣四處探險。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-01.png" alt="image" /><br/>
 這是離我們最近，也是我們最熟悉的建築物－－天空之塔。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-02.png" alt="image" /><br/>
-我住的附近。透過 8-bit 地圖看來，突然覺得有河流經過是個不錯的地方。</p>
+我所在的位置。透過 8-bit 地圖看來，突然覺得有河流經過是個不錯的地方。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-03.png" alt="image" /><br/>
 蕃薯島 XD</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-04.png" alt="image" /><br/>
-記得這是 SEGA MD 大戰略一代中的某張地圖。</p>
+SEGA MD 大戰略一代中的「遠東（Far East）」地圖就是長這樣。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-05.png" alt="image" /><br/>
 北邊大陸上除了有冰原，還有會扣 HP 的毒沼。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-06.png" alt="image" /><br/>
-世界地、不，是勇者鬥惡龍三代的地圖。</p>
+世界地、不，是勇者鬥惡龍三代的地圖。(<a href="http://www.nesmaps.com/maps/DragonWarrior3/DragonWarrior3OverworldMapBG.html">對照版</a>)</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-07.png" alt="image" /><br/>
-日邦格的富士山。這地方的樹木也跟別處不同，是楓紅色的。</p>
+日邦格的富士山。日邦格這地方的樹木也跟別處不同，是楓紅色的。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-maps-quest-08.png" alt="image" /><br/>
-Goolge 總部，感覺怪物很多…</p>
+Goolge 總部，感覺怪物很多……</p>
 ]]></content>
   </entry>
   
@@ -58,7 +123,7 @@ Goolge 總部，感覺怪物很多…</p>
     <id>http://tzengyuxio.me/blog/2012/04/01/google-analytics-play-music-for-you</id>
     <content type="html"><![CDATA[<p><img src="http://tzengyuxio.me/images/2012/2012-04-01-google-analytics-piano.png" alt="image" /></p>
 
-<p>剛剛發現，Google Analytics 的「造訪」按鈕旁多了個音符記號。點下去後會有 Piano 與 Sitar 琴兩種樂器，選了之後就會看到下方折線圖的節點會按順序一個一個亮起來，並播放與節點高低對應的音階。</p>
+<p>剛剛發現，Google Analytics 的「造訪」按鈕旁多了個音符記號。點下去後會出現 Piano 與 Sitar 兩種樂器可以選，選了之後就會看到下方折線圖的節點會按順序一個一個亮起來，並播放與節點高低對應的音階。</p>
 
 <p>可惜我的折線圖不夠精采，撥出來的音樂平平淡淡，沒有直墜谷底或是步步高昇的激昂起伏。</p>
 ]]></content>
@@ -997,31 +1062,6 @@ public class GetEnv {
     <updated>2012-02-07T15:28:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/02/07/the-truth-is-out-there</id>
     <content type="html"><![CDATA[<p>今天看到很多人都在傳這一張圖片：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td class="tr-caption" style="font-size: 13px;">source: www.7even.com.tw</td></tr></tbody></table><div style="font-size: medium; text-align: left;"></div></td></tr></tbody></table>乍看好像邪惡組織比較吸引人。但是別忘了，那些擁有偉大目標、為了實現夢想沒日沒夜地努力、即使失敗也不氣餒，能夠指揮組織行動，最後還笑容滿面的，都是<strong>邪惡組織的頭目級領導人物</strong>啊！真正加入邪惡組織後，底下就是最血淋淋的職場寫照：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/35Kc4jM2Sew/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />少年們，醒醒吧！<br /><a href="http://wiki.komica.org/wiki3/?%E6%88%90%E5%8F%A5%2F%E5%88%A5%E5%86%8D%E7%9B%B8%E4%BF%A1%E6%B2%92%E6%9C%89%E6%A0%B9%E6%93%9A%E7%9A%84%E8%AA%AA%E6%B3%95%E4%BA%86">別再相信沒有根據的說法了</a>！<br /><br /><em> * * </em><br />以下是更多誘拐有為年輕人加入邪惡組織的宣傳稿：<br /><ul><li><a href="http://n.yam.com/cardu/fn/201202/20120201058967.html">智慧科技帶動遊戲熱　逾八成想轉戰遊戲業-財經新聞-yam蕃薯藤新聞</a></li><li><a href="http://www.nownews.com/2012/01/31/91-2780266.htm">6成9上班族想進遊戲業　期望薪資37386元 | 頭條新聞 | NOWnews 今日新聞網</a></li></ul></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[最近的 7-ELEVEN 啊]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/02/07/seven-eleven/"/>
-    <updated>2012-02-07T10:48:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/02/07/seven-eleven</id>
-    <content type="html"><![CDATA[<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-CMrUObFVmYE/TzCC180FvYI/AAAAAAAAJRU/_Ut6VVenz_c/s1600/IMG_2123.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="241" src="http://3.bp.blogspot.com/-CMrUObFVmYE/TzCC180FvYI/AAAAAAAAJRU/_Ut6VVenz_c/s640/IMG_2123.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">重慶南路的7-11由街角處（現為艾美麗）搬移到了巷子中。攝於2012-01-30</td></tr></tbody></table>
-
-
-<div class="separator" style="clear: both; text-align: left;"><br /></div>
-
-
-<div class="separator" style="clear: both; text-align: left;"></div>
-
-
-<div style="text-align: -webkit-auto;">最近注意到有幾家 7-11 作了同樣的事情，就是從原本的街角的黃金地帶搬到附近不遠處，距離原店址大約三四戶的地方。如果只有一家店搬，我只會單純想到是租約到期之類的原因，但短時間內同時見到數家 7-11 都有類似的搬遷動作，就不得不讓人去思考背後是否有某種經營策略上的調整？</div>
-
-
-<div style="text-align: -webkit-auto;"></div>
-
-
-<br /><div style="text-align: -webkit-auto;">顯而易見的，這樣的搬遷使得原本 7-11 店鋪的可見性降低，畢竟街角是路口四方向都可以看到的點，來往的人潮也最多，而路邊或巷邊的 7-11 則只有同條路上的人才能見到。基於以上道理，三角窗（街角）的租金向來也比周遭店面來得高，甚至會高到倍數以上。不過我不覺得 7-11 搬到非街角地段，純粹只有租金考量。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">就我看來，7-11 的搬遷，其實某種程度反應了便利商店（尤其是 7-11）在我們生活中扮演的角色，已經從「剛好、順便去一下」的商店，成為「被尋找的主體」。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">住在都市的朋友，相信都會在自己或周遭朋友上看到一個現象：就是每當前往一個風景區或新地點時，總是會下意識尋找「麥當勞」或其他熟悉的連鎖速食店的店面。就算不一定會去吃，但至少在想不到吃什麼時，也不失為一個選擇。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">前面所提到的 7-11，便是成為這樣的一個存在。我出門不是為了「去隨便一間商店買個喝的」，而是為了「要去 7-11 領博客來的書／繳水電費／去 ATM 領錢」這樣明確的目的（然後順便買個喝的）。所以 7-11 就算開在不顯目的非三角窗地帶，也不怕你不來，因為你會去找他。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">所以進一步觀察，不難發現到店址的搬遷只是變化之一，搬遷後的店面通常也會伴隨著店面空間的擴大。而空間越大，就能提供更多硬體上的服務，包括 ATM、用餐區，甚至是廁所。以往是鄉下省道旁比較容易見到有帶停車場與廁所的 7-11，作為簡易休息區的替代，而現在都會區中很多 7-11 也開始都有提供廁所了。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">寫到這邊讓我想起以前短暫待過出版社時，曾經問過上頭的編輯一個問題：「為什麼有些雜誌的 Logo 標準字體蓋在封面人物上，而有些則是封面人物蓋在 Logo 字體上？哪一種比較好？」</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">編輯告訴我，沒有哪一種比較好，純粹是考量出發點不同。至於為什麼會有不同的作法？其實答案就和 7-11 在不在街角開店是一樣的。</div>
-
 ]]></content>
   </entry>
   
