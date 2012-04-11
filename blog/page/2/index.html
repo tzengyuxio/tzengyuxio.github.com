@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="我用 google-code-prettify 來做 blog 文章中的代碼上色，google-code-prettify 本身有附上幾個 Color Scheme, 然而除了預設的之外，都是以暗色背景為主。 昨天心血來潮將 Solarized 這個 Color Scheme 移植到 google &hellip;">
+  <meta name="description" content="我用了 Mac 好一段時間了才知道，原來對檔案直接按空白鍵可以開啟快速檢視 (Quick Look)；又隔了好一段時間，才又知道原來快速檢視除了內建的之外，還可以加上些外掛以增加支援檔案類型。下面是一些我所用到的 QuickLook 相關技巧整理。 在 Terminal 下開啟快速檢視 除了在 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,171 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-11T18:17:00+08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我用了 Mac 好一段時間了才知道，原來對檔案直接按空白鍵可以開啟快速檢視 (Quick Look)；又隔了好一段時間，才又知道原來快速檢視除了內建的之外，還可以加上些外掛以增加支援檔案類型。下面是一些我所用到的 QuickLook 相關技巧整理。</p>
+
+<p><img src="/images/2012/2012-03-11-quicklook-of-zip.png" alt="BetterZip Plugin" /></p>
+
+<h2>在 Terminal 下開啟快速檢視</h2>
+
+<p>除了在 Finder 中按空白鍵外，有時候在 Terminal 底下工作時，也可以利用指令來開啟快速檢視，這樣可以減少鍵盤滑鼠的切換以提升效率。開啟的指令如下：</p>
+
+<pre><code>$ qlmanage -p [FILE]
+</code></pre>
+
+<p>把 [FILE] 替換成要開啟的檔名即可。不過這指令也不算短，要更方便的話，可以在 <code>~/.bashrc</code> 中加入以下指令別名 (alias)，這樣只要輸入 <code>ql [FILE]</code> 就可以立刻檢視了：</p>
+
+<pre><code>alias ql='qlmanage -p'
+</code></pre>
+
+<p>對了，設定檔 .bashrc 預設在 Mac OS X 中是不起作用的，可以參考<a href="http://coder.aqualuna.me/2012/03/bashrc-in-mac-terminal-os-x-lion.html">這篇文章</a>來讓 .bashrc work。</p>
+
+<h2>增加支援檔案類型的 Plugin</h2>
+
+<p>快速檢視本身支援文字、圖片、音樂、影片等基本檔案格式，至於其他不支援的格式則只會顯示一個大大的檔案 icon。透過以下 Plugin 可以增加快速檢視支援的檔案格式，安裝很簡單，只要將下載下來的 <code>*.qlgenerator</code> 檔案放到下面路徑之一：</p>
+
+<ul>
+<li><code>(Macintosh HD)/Library/QuickLook/</code> 安裝給本機的所有使用者</li>
+<li><code>~/Library/QuickLook/</code> 只安裝給自己使用</li>
+</ul>
+
+
+<h3>壓縮檔 (Archives)</h3>
+
+<p><a href="http://macitbetter.com/BetterZip-Quick-Look-Generator/">BetterZip 2 - The Next Generation of Archiving</a></p>
+
+<p>上面這個外掛預設是暗色背景的，如果喜歡白色背景的（如同文章開頭那張圖），可以考慮下面這個修改版本：</p>
+
+<p><a href="https://github.com/farfanoide/BetterZ-QuickLook-plugin-theme-for-Lion">farfanoide/BetterZ-QuickLook-plugin-theme-for-Lion</a></p>
+
+<h3>程式碼 (Code)</h3>
+
+<p><a href="http://code.google.com/p/qlcolorcode/">qlcolorcode - A Quick Look plugin for source code with syntax highlighting - Google Project Hosting</a></p>
+
+<h3>CSV 檔案</h3>
+
+<p><a href="http://code.google.com/p/quicklook-csv/">quicklook-csv - A QuickLook plugin to quick look CSV files for Mac OS X 10.5+ - Google Project Hosting</a></p>
+
+<h2>快速檢視文字檔案時，可以複製文字</h2>
+
+<p>按空白鍵檢視文字檔案內容很方便，可是有時候如果想要複製文字，就得另外再開啟文字編輯，相當麻煩。在 Terminal 下輸入以下指令，可以讓你在快速檢視文字檔時，也能選取想要的片段，然後按 Cmd+C 複製出來。</p>
+
+<pre><code>$ defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+</code></pre>
+
+<h2>用不同的應用程式開啟</h2>
+
+<p>在快速檢視時，右上方會有個按鈕讓你以預設關連的應用程式開啟。如果你想要用其他的應用程式開啟，例如用 Photoshop 開啟圖檔，那麼只要按著右上方按鈕不放，就會出現選單供你選擇想要開啟的應用程式。</p>
+
+<h2>以全螢幕開啟快速檢視</h2>
+
+<p>選取檔案，然後按下 <code>Cmd+Opt+Y</code>，就可以直接以全螢幕方式進入快速檢視，這對影像或是影片格式相當有用。</p>
+
+<p>其實也可以在按著 Opt 的狀態下按空白鍵進入全螢幕的快速檢視，不過像我有安裝 Alfred, <code>Opt+空白鍵</code> 預設會啟動 Alfred 的輸入視窗，因此就沒辦法用來開啟快速檢視了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-11T09:33:00+08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
+
+<p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
+
+<pre class="prettyprint"><code>if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+</code></pre>
+
+
+<p>這樣原本寫在 <code>.bashrc</code> 裡的指令稿就會被讀取並且發揮作用了。補充說明，我的作業系統版本為 <strong>Mac OS X Lion (10.7)</strong>。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，簡述如下：</p>
+
+<h3>.bash_profile</h3>
+
+<p>輸入帳號密碼登入時，不論遠端或本地，都會執行此設定檔。</p>
+
+<h3>.bashrc</h3>
+
+<p>在已經登入的情況下，開啟終端機視窗（如 Gnome 的 xterm），在命令提示符號出現前，就會先執行 .bashrc 內的指令。</p>
+
+<p>不過 Mac OS X 的行為是上述流程的例外，詳細可參考本文最後面的連結。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<p><a href="http://macfidelity.de/2008/07/02/mac-customizing-terminal-in-mac-os-x-105/">Customizing Terminal in Mac OS X 10.5 | macfidelity</a></p>
+
+<p>上面這篇文章中的步驟比較多，甚至還要進 Terminal 的「偏好設定」畫面去修改打開 Shell 的指令。不過我自己的操作結果是就算沒有設定那些指令也沒關係，只要有包含文章中那段代碼的 <code>.bash_profile</code>, 就可以讀取 <code>.bashrc</code> 了。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，請見下面這篇文章。</p>
+
+<p><a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">.bash_profile vs .bashrc</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -768,136 +933,6 @@ public class GetEnv {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/10/markdown-to-html-in-osx/">在 OS X 中隨時隨地將 Markdown 轉為 HTML</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-10T00:03:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>很多人喜歡用 Markdown 寫純文字的文件，包括我。簡單又有規範，而且幾乎所有文書軟體／編輯器都可以開啟（應該沒有不支援純文字的編輯器吧？），也可以轉成 HTML 在網路上發表。</p>
-
-
-<p>在 Markdown 作者 John Gruber 的網站上有提供了一個 perl 寫的 Markdown 轉換指令稿，可以將 Markdown 轉換成 HTML。不過每次要轉檔都要進終端機下指令也是麻煩，今天剛好看到一篇文章，可以在 OS X 中加入一項服務，透過該服務，任何只要提供文字編輯的應用程式，都可以經由右鍵選單輕鬆將 Markdown 轉換成 HTML。</p>
-
-
-<p>原始文章： <br /><a href="http://gothick.org.uk/2010/08/04/installing-markdown-as-a-os-x-service-using-automator-in-snow-leopard/">Installing Markdown as an OS X Services Menu Item Using Automator</a></p>
-
-
-<p>懶得看原文的也可以看下面步驟。原文中的作法是將轉好的 HTML 直接取代掉原始 Markdown，因為我的需求不同，所以以下的步驟還會加上將轉好的 HTML 放到剪貼簿中。</p>
-
-
-<p>先下載 John Gruber 所寫轉換指令稿：<a href="http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip">Markdown.pl</a> <br />下載後找個地方存放，我是放在 &#8220;/usr/local/bin/&#8221; 下面。</p>
-
-
-<p>然後開啟 Automator，選擇新增一項「服務」</p>
-
-
-<p><img src="https://lh4.googleusercontent.com/-4jbqH4ULE6w/TzPgHEeogEI/AAAAAAAAJSc/bgQzB6TYjgY/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%25887.51.41.jpg" alt="automator service" title="" /></p>
-
-
-<p>接著會在視窗中看到如下內容。勾選「輸出會取代所選文字」，如果你只複製到剪貼簿而不需替換掉原本文字，可以不用勾選。</p>
-
-
-<p><img src="https://lh4.googleusercontent.com/-LuRLdVga0Y4/TzPgKjA6mHI/AAAAAAAAJS8/58PItFCGXgk/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258A%25E5%258D%258811.14.07.png" alt="replace selected text" title="" /></p>
-
-
-<p>在左側程式庫列表中找到「執行 Shell 工序指令」，拉到右側。然後在文字區域中輸入 &#8220;/usr/local/bin/Markdown.pl&#8221; （請依照下載時所存放位置作適當修改）</p>
-
-
-<p><img src="https://lh5.googleusercontent.com/-Q8wzbS2X0Dw/TzPgHcbkCGI/AAAAAAAAJSo/xw4nFzqOFCA/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%25889.26.17.jpg" alt="run shell script" title="" /></p>
-
-
-<p><img src="https://lh3.googleusercontent.com/-10YQiOu5AW4/TzPgG5s0EBI/AAAAAAAAJSU/4eNQAfG3Yrg/s640/%25E6%259C%25AA%25E5%2591%25BD%25E5%2590%258D.jpg" alt="type the path" title="" /></p>
-
-
-<p>如果只是要產生 HTML 碼，到上個步驟就可以了。若還要把轉換後的 HTML 存到剪貼簿中，一樣在左側程式庫列表中找到「拷貝到剪貼板」，然後拉到右側剛剛的指令下方。</p>
-
-
-<p><img src="https://lh6.googleusercontent.com/-TJAWpA8GPnk/TzPgGgTcfwI/AAAAAAAAJSY/8PGij1g0vIk/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258812.03.42.jpg" alt="copy to clipboard" title="" /></p>
-
-
-<p>存檔，大功告成！</p>
-
-
-<p><img src="https://lh4.googleusercontent.com/-G-8wSTDEsNc/TzPgK0JVenI/AAAAAAAAJS4/96P8mzPIa9k/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258A%25E5%258D%258811.18.21.png" alt="save and finish" title="" /></p>
-
-
-<p>接下來實驗看看。打開「文字編輯」或是任何可以編寫純文字的程式，隨便打一段 Markdown 指令。輸入完後全選，叫出右鍵選單，可以看到我們剛才辛苦的結晶：</p>
-
-
-<p><img src="https://lh5.googleusercontent.com/-R9N1rdjFFw8/TzPgGUUk5TI/AAAAAAAAJSQ/Y1AvgdQZ85c/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258811.00.51.jpg" alt="markdown to html" title="" /></p>
-
-
-<p>用力給他按下去－－噹啦～全部變成 HTML 了，很方便不是？</p>
-
-
-<p><img src="https://lh3.googleusercontent.com/-Qa59zBrnckQ/TzPsFo4ZL-I/AAAAAAAAJUA/WbZnbPmarsk/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258811.03.25.png" alt="markdown to html converted" title="" /></p>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/07/the-truth-is-out-there/">光鮮亮麗背後的真相</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-07T15:28:00+08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天看到很多人都在傳這一張圖片：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td class="tr-caption" style="font-size: 13px;">source: www.7even.com.tw</td></tr></tbody></table><div style="font-size: medium; text-align: left;"></div></td></tr></tbody></table>乍看好像邪惡組織比較吸引人。但是別忘了，那些擁有偉大目標、為了實現夢想沒日沒夜地努力、即使失敗也不氣餒，能夠指揮組織行動，最後還笑容滿面的，都是<strong>邪惡組織的頭目級領導人物</strong>啊！真正加入邪惡組織後，底下就是最血淋淋的職場寫照：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/35Kc4jM2Sew/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />少年們，醒醒吧！<br /><a href="http://wiki.komica.org/wiki3/?%E6%88%90%E5%8F%A5%2F%E5%88%A5%E5%86%8D%E7%9B%B8%E4%BF%A1%E6%B2%92%E6%9C%89%E6%A0%B9%E6%93%9A%E7%9A%84%E8%AA%AA%E6%B3%95%E4%BA%86">別再相信沒有根據的說法了</a>！<br /><br /><em> * * </em><br />以下是更多誘拐有為年輕人加入邪惡組織的宣傳稿：<br /><ul><li><a href="http://n.yam.com/cardu/fn/201202/20120201058967.html">智慧科技帶動遊戲熱　逾八成想轉戰遊戲業-財經新聞-yam蕃薯藤新聞</a></li><li><a href="http://www.nownews.com/2012/01/31/91-2780266.htm">6成9上班族想進遊戲業　期望薪資37386元 | 頭條新聞 | NOWnews 今日新聞網</a></li></ul></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -913,6 +948,14 @@ public class GetEnv {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
@@ -932,14 +975,6 @@ public class GetEnv {
     
       <li class="post">
         <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
       </li>
     
   </ul>

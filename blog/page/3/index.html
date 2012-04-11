@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="重慶南路的7-11由街角處（現為艾美麗）搬移到了巷子中。攝於2012-01-30 最近注意到有幾家 7-11 作了同樣的事情，就是從原本的街角的黃金地帶搬到附近不遠處，距離原店址大約三四戶的地方。如果只有一家店搬，我只會單純想到是租約到期之類的原因，但短時間內同時見到數家 7-11 &hellip;">
+  <meta name="description" content="很多人喜歡用 Markdown 寫純文字的文件，包括我。簡單又有規範，而且幾乎所有文書軟體／編輯器都可以開啟（應該沒有不支援純文字的編輯器吧？），也可以轉成 HTML 在網路上發表。 在 Markdown 作者 John Gruber 的網站上有提供了一個 perl 寫的 Markdown &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,136 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/10/markdown-to-html-in-osx/">在 OS X 中隨時隨地將 Markdown 轉為 HTML</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-10T00:03:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>很多人喜歡用 Markdown 寫純文字的文件，包括我。簡單又有規範，而且幾乎所有文書軟體／編輯器都可以開啟（應該沒有不支援純文字的編輯器吧？），也可以轉成 HTML 在網路上發表。</p>
+
+
+<p>在 Markdown 作者 John Gruber 的網站上有提供了一個 perl 寫的 Markdown 轉換指令稿，可以將 Markdown 轉換成 HTML。不過每次要轉檔都要進終端機下指令也是麻煩，今天剛好看到一篇文章，可以在 OS X 中加入一項服務，透過該服務，任何只要提供文字編輯的應用程式，都可以經由右鍵選單輕鬆將 Markdown 轉換成 HTML。</p>
+
+
+<p>原始文章： <br /><a href="http://gothick.org.uk/2010/08/04/installing-markdown-as-a-os-x-service-using-automator-in-snow-leopard/">Installing Markdown as an OS X Services Menu Item Using Automator</a></p>
+
+
+<p>懶得看原文的也可以看下面步驟。原文中的作法是將轉好的 HTML 直接取代掉原始 Markdown，因為我的需求不同，所以以下的步驟還會加上將轉好的 HTML 放到剪貼簿中。</p>
+
+
+<p>先下載 John Gruber 所寫轉換指令稿：<a href="http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip">Markdown.pl</a> <br />下載後找個地方存放，我是放在 &#8220;/usr/local/bin/&#8221; 下面。</p>
+
+
+<p>然後開啟 Automator，選擇新增一項「服務」</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-4jbqH4ULE6w/TzPgHEeogEI/AAAAAAAAJSc/bgQzB6TYjgY/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%25887.51.41.jpg" alt="automator service" title="" /></p>
+
+
+<p>接著會在視窗中看到如下內容。勾選「輸出會取代所選文字」，如果你只複製到剪貼簿而不需替換掉原本文字，可以不用勾選。</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-LuRLdVga0Y4/TzPgKjA6mHI/AAAAAAAAJS8/58PItFCGXgk/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258A%25E5%258D%258811.14.07.png" alt="replace selected text" title="" /></p>
+
+
+<p>在左側程式庫列表中找到「執行 Shell 工序指令」，拉到右側。然後在文字區域中輸入 &#8220;/usr/local/bin/Markdown.pl&#8221; （請依照下載時所存放位置作適當修改）</p>
+
+
+<p><img src="https://lh5.googleusercontent.com/-Q8wzbS2X0Dw/TzPgHcbkCGI/AAAAAAAAJSo/xw4nFzqOFCA/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%25889.26.17.jpg" alt="run shell script" title="" /></p>
+
+
+<p><img src="https://lh3.googleusercontent.com/-10YQiOu5AW4/TzPgG5s0EBI/AAAAAAAAJSU/4eNQAfG3Yrg/s640/%25E6%259C%25AA%25E5%2591%25BD%25E5%2590%258D.jpg" alt="type the path" title="" /></p>
+
+
+<p>如果只是要產生 HTML 碼，到上個步驟就可以了。若還要把轉換後的 HTML 存到剪貼簿中，一樣在左側程式庫列表中找到「拷貝到剪貼板」，然後拉到右側剛剛的指令下方。</p>
+
+
+<p><img src="https://lh6.googleusercontent.com/-TJAWpA8GPnk/TzPgGgTcfwI/AAAAAAAAJSY/8PGij1g0vIk/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258812.03.42.jpg" alt="copy to clipboard" title="" /></p>
+
+
+<p>存檔，大功告成！</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-G-8wSTDEsNc/TzPgK0JVenI/AAAAAAAAJS4/96P8mzPIa9k/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258A%25E5%258D%258811.18.21.png" alt="save and finish" title="" /></p>
+
+
+<p>接下來實驗看看。打開「文字編輯」或是任何可以編寫純文字的程式，隨便打一段 Markdown 指令。輸入完後全選，叫出右鍵選單，可以看到我們剛才辛苦的結晶：</p>
+
+
+<p><img src="https://lh5.googleusercontent.com/-R9N1rdjFFw8/TzPgGUUk5TI/AAAAAAAAJSQ/Y1AvgdQZ85c/s640/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258811.00.51.jpg" alt="markdown to html" title="" /></p>
+
+
+<p>用力給他按下去－－噹啦～全部變成 HTML 了，很方便不是？</p>
+
+
+<p><img src="https://lh3.googleusercontent.com/-Qa59zBrnckQ/TzPsFo4ZL-I/AAAAAAAAJUA/WbZnbPmarsk/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7%25202012-02-09%2520%25E4%25B8%258B%25E5%258D%258811.03.25.png" alt="markdown to html converted" title="" /></p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/07/the-truth-is-out-there/">光鮮亮麗背後的真相</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-07T15:28:00+08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天看到很多人都在傳這一張圖片：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-nNDkxbLYxhE/TzDT_oeil8I/AAAAAAAAJR0/pAl3R9IUK_g/s1600/340307_265973053470862_147881708613331_595080_640973686_o.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td class="tr-caption" style="font-size: 13px;">source: www.7even.com.tw</td></tr></tbody></table><div style="font-size: medium; text-align: left;"></div></td></tr></tbody></table>乍看好像邪惡組織比較吸引人。但是別忘了，那些擁有偉大目標、為了實現夢想沒日沒夜地努力、即使失敗也不氣餒，能夠指揮組織行動，最後還笑容滿面的，都是<strong>邪惡組織的頭目級領導人物</strong>啊！真正加入邪惡組織後，底下就是最血淋淋的職場寫照：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/35Kc4jM2Sew/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/35Kc4jM2Sew&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />少年們，醒醒吧！<br /><a href="http://wiki.komica.org/wiki3/?%E6%88%90%E5%8F%A5%2F%E5%88%A5%E5%86%8D%E7%9B%B8%E4%BF%A1%E6%B2%92%E6%9C%89%E6%A0%B9%E6%93%9A%E7%9A%84%E8%AA%AA%E6%B3%95%E4%BA%86">別再相信沒有根據的說法了</a>！<br /><br /><em> * * </em><br />以下是更多誘拐有為年輕人加入邪惡組織的宣傳稿：<br /><ul><li><a href="http://n.yam.com/cardu/fn/201202/20120201058967.html">智慧科技帶動遊戲熱　逾八成想轉戰遊戲業-財經新聞-yam蕃薯藤新聞</a></li><li><a href="http://www.nownews.com/2012/01/31/91-2780266.htm">6成9上班族想進遊戲業　期望薪資37386元 | 頭條新聞 | NOWnews 今日新聞網</a></li></ul></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -382,78 +512,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/05/more-on-christmas-eve/">續聊山下達郎的 Christmas Eve 與廣告</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-01-05T00:30:00+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在<a href="http://reader.aqualuna.me/search/label/%E5%B1%B1%E4%B8%8B%E9%81%94%E9%83%8E">山下達郎</a>的<a href="http://reader.aqualuna.me/2012/01/xmas-express.html">〈クリスマス・イブ〉</a>這張單曲 CD 中，另外也收錄了同名歌曲的英文版。英文版本由&nbsp;Alan O&#8217;Day 作詞。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/_aOyI8kp4CY/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/_aOyI8kp4CY&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/_aOyI8kp4CY&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />Suzuki 在 2007 年推出了 雪佛蘭‧MW 的廣告，女主角為森泉，這支廣告的配樂用的就是英文版的〈クリスマス・イブ〉。<br /><br /><div style="text-align: center;">&nbsp;<iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/T_YXMI1pnN4" width="420"></iframe></div><div style="text-align: left;"><br /></div><div style="text-align: left;">不過在次年由谷村奈南所代言，同樣的雪佛蘭廣告中，就改為日文版的配樂。<br /><br /></div><div style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/jBp0IDiPhmg" width="420"></iframe></div><br />最後則是在去年（2011）由<a href="http://reader.aqualuna.me/search/label/%E6%96%B0%E5%9E%A3%E7%B5%90%E8%A1%A3">新垣結衣</a>所代言的 Mobage 廣告。Mobage 是日本的行動遊戲平台，廣告中，新垣結衣站在聖誕樹前，一邊等著人，一邊玩著手機遊戲，雖然從白天等到黑夜，但這廣告的感覺就比二十年前的電車廣告弱了許多啊。畢竟現代人的生活有了手機，少了無法聯絡的距離感，就少了點感動味道。<br /><br /><div style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/clbSLTxRLoQ" width="560"></iframe></div><br />倒是看完這廣告後讓我對這手機的電池續航力印象深刻。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/04/princess-punt/">Princess Punt - 公主的高跟鞋穿幾號?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-01-04T18:55:00+08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>簡單來個重點作為結論。在所有 &#8220;Angry Birds&#8221;-like 的遊戲中，這款遊戲的出發點是最有創意的，但在我玩過所有 &#8220;Angry Birds&#8221;-like 的遊戲中，這款是最難玩的一款。好奇這款遊戲值不值得下載來玩的，現在就可以離開了；而想知道怎麼樣才能做出一款令玩家討厭的 Freemium 遊戲，則歡迎繼續看下去。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-IOVZpWQEiB8/TwQtBqjWesI/AAAAAAAAJLk/sMo4EgY_96Q/s1600/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+34+04.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://2.bp.blogspot.com/-IOVZpWQEiB8/TwQtBqjWesI/AAAAAAAAJLk/sMo4EgY_96Q/s320/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+34+04.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">遊戲到處要花錢，標題畫面還是放了廣告</td></tr></tbody></table><br />先說說這款遊戲。Princess Punt 第一眼看上去最大的特點，就是它是以公主踢飛護衛的方式進行攻擊，這比起其他用彈弓（Angry Birds）、丟手榴彈（Frapper）、汽車發射台（Trucks and Skulls NITRO）來得有意思多了。跟前面幾款比起來，Princess Punt 也有一個比較完整的故事，因此它在關卡設計上可以結合劇情，讓玩家對遊戲有更多的投入感，想好奇接下來的故事發展。比起前面幾款各自獨立毫無關連的關卡層次設計，其實是能給玩家帶來更大的粘性。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-SW0ru_teHYA/TwQtEFzHYOI/AAAAAAAAJL0/u2tnjM5L6Ok/s1600/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+35+28.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://3.bp.blogspot.com/-SW0ru_teHYA/TwQtEFzHYOI/AAAAAAAAJL0/u2tnjM5L6Ok/s320/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+35+28.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">好奇公主最後是否會情歸主角？可惜我已經放棄看到結局了</td></tr></tbody></table>然而，有好的創意與好的出發點，不代表就會有好的遊戲。首先是技術上的問題，這遊戲到處充滿了 Loading：過個關卡、進入商店或是回到選單，全部都要 Loading。過多的 Loading 使得遊戲的節奏感被破壞殆盡。這種兩三分鐘就發生一次的 break，使人玩沒幾場就想跳出，很難讓玩家在玩遊戲時進入到 Flow 般的投入狀態。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-LsQDrEmoiFQ/TwQtDJTCbbI/AAAAAAAAJLs/ZF-zkP0D2Mk/s1600/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+34+22.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://3.bp.blogspot.com/-LsQDrEmoiFQ/TwQtDJTCbbI/AAAAAAAAJLs/ZF-zkP0D2Mk/s320/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+34+22.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Loading, Loading, Loading&#8230;</td></tr></tbody></table>再來，這遊戲雖然故事有趣，但串連故事章節之間的關卡設計卻頗為無聊。遊戲一共有 8 個 Area，每個 Area 分成 6 個 Level，每個 Level 裡還有 5 小關，這樣算下來一共是 240 關，加上每個 Area 可能會隨機遇上的 Boss 關卡，248 關，看上去還蠻豐富的。但是每個 Level 中的 5 小關長得幾乎都一樣，只有怪物強弱差別；而每個 Area 中的 6 個 Level，多半都只是地形與怪物的配置位置不同，Level 間的差異甚至比 Angry Birds 小關和小關之間的差異來得小。所以就算沒有 Loading 問題，與 Angry Birds 或 Frapper 等遊戲相比，Princess Punt 的關卡也顯得單調而枯燥。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-or027-3nUDs/TwQtF8ktwnI/AAAAAAAAJL8/r0qpTSTE0sU/s1600/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+36+51.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://3.bp.blogspot.com/-or027-3nUDs/TwQtF8ktwnI/AAAAAAAAJL8/r0qpTSTE0sU/s320/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+36+51.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">拿到三星的關鍵不在踢的次數少，而是賺得錢要多</td></tr></tbody></table>不過對 RPG 遊戲而言，枯燥的戰鬥偶爾是可以容忍的，因為玩家可以從戰鬥結束後的角色成長獲得樂趣，這時候就不得不提一下這款遊戲的成長方式了。玩家在每場戰鬥結束後，可以獲得金錢與不同類型的經驗值玉，使用這些經驗值玉可以提昇角色或道具的等級－－問題就在這邊，使用經驗值玉是要花錢的，一場戰鬥賺到的錢往往還不夠你用來消費這些經驗值玉，更別提買武器或是升級技能也要花錢了。遊戲中有收費的設計這合情合理，但是一款遊戲做到從標題開始就到處都充滿向玩家伸手要錢的訊息，那就太令人反感了。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-RsHbBDm56eI/TwQuRZJKidI/AAAAAAAAJMI/1l_cCGPort4/s1600/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+36+16.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://4.bp.blogspot.com/-RsHbBDm56eI/TwQuRZJKidI/AAAAAAAAJMI/1l_cCGPort4/s320/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+36+16.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">遊戲中的裝備不少，但裝備的升級都是要花錢使用經驗值玉的</td></tr></tbody></table>對了，就算是有這麼多需要玩家購買的項目，這款遊戲還不是完整版呢。免費下載的玩家可以玩完前兩大關（Area），從第三大關起就得付費購買了，而且一次只有買一關，還不是後面的關卡整個解鎖。不過之後在一次改版後，免費的關卡增加到第四大關，只可惜我已經沒有動力繼續玩下去了。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -469,6 +527,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
@@ -488,14 +554,6 @@
     
       <li class="post">
         <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
       </li>
     
   </ul>

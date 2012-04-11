@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="這季原本沒有特別在追的日劇，在好友的介紹下開始看這部《全開女孩》（全開ガール）。朋友對這部的推薦語是：「就是2011年版的大和拜金女」－－什麼？大和拜金女！想當年，大和拜金女可是創下 34% 之高的收視率，堪稱日劇經典中的經典。就連那陣子沒什麼在看日劇的我，也聽過這部戲， &hellip;">
+  <meta name="description" content="在前一篇文章中筆者介紹了 Google Authorship，並且也針對 Blogger 的使用者說明該如何設定來替自己的文章與個人檔案建立連結。今天讓我們更進一步來看看 Google Authorship 的運作機制，以及非 Blogger 的使用者應該如何設定 Google &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,78 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/08/09/more-on-google-authorship/">More on Google Authorship</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-09T01:17:00+08:00" pubdate data-updated="true">Aug 9<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在<a href="http://blog.aqualuna.me/2011/08/google-authorship.html">前一篇文章</a>中筆者介紹了 Google Authorship，並且也針對 Blogger 的使用者說明該如何設定來替自己的文章與個人檔案建立連結。今天讓我們更進一步來看看 Google Authorship 的運作機制，以及非 Blogger 的使用者應該如何設定 Google Authorship 來幫助自己的文章曝光。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-eY0vKmYBfVo/TkAdC64IdKI/AAAAAAAAAcU/hEdDx2YEYdg/s1600/google_auth.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="184" src="http://4.bp.blogspot.com/-eY0vKmYBfVo/TkAdC64IdKI/AAAAAAAAAcU/hEdDx2YEYdg/s400/google_auth.png" width="400" /></a></div><br /><br />目前與 Google Authorship 相關的官方文件有這兩篇，以下的內容均以這兩篇為主：<br /><div><ul><li><a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1229920">舊版作法</a>，使用 &lt;a href=&#8221;url&#8221; <span class="Apple-style-span" style="color: red;">rel=&#8221;author&#8221;</span>&gt; 語法</li><li><a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1408986">新版作法</a>，使用 &lt;a href=&#8221;url<span class="Apple-style-span" style="color: red;">?rel=author</span>&#8220;&gt; 語法（08/05/2011更新）</li></ul><div><hr />讓我們先簡單看看舊作法的機制，之後再進入新版作法的實際說明。舊的作法將網站分成兩大類，單一作者（例如個人網誌）或是複數作者（例如新聞網站）。</div><div><br /></div><div>在單一作者的網站中，只要在每篇文章（Content）裡加入下面形式的連結（藍色為替換字串）：</div></div><div><div style="text-align: center;"><span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&lt;a <span class="Apple-style-span" style="color: red;">rel=&#8221;author&#8221;</span> href=&#8221;<span class="Apple-style-span" style="white-space: pre;"><span class="Apple-style-span" style="color: blue;">[profile_url]</span></span>&#8220;&gt;<span class="Apple-style-span" style="color: blue;">About Matt Cutts</span>&lt;/a&gt;</span></div><div style="text-align: center;"><span class="Apple-style-span" style="color: #666666; font-family: 'Courier New', Courier, monospace;">[profile_url] 類似這樣：</span></div><div style="text-align: center;"><span class="Apple-style-span" style="color: #666666; font-family: 'Courier New', Courier, monospace;">https://plus.google.com/109412257237874861202</span></div></div><div><div style="text-align: left;"><br /></div><div style="text-align: left;">然後在 Google Profile（通常是自己的 Google+ ）的「關於」頁面加入自己網誌的連結即可。關連的形式如下圖：<br /><br /></div></div><div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-8bGcC2QfT5I/TkAT1Oi5lII/AAAAAAAAAcM/mYxc4rjtsOc/s1600/link1.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-8bGcC2QfT5I/TkAT1Oi5lII/AAAAAAAAAcM/mYxc4rjtsOc/s1600/link1.gif" /></a></div></div><div><br />在多重作者的網站中，則先要讓自己寫的文章（Content）中有連結以「<span class="Apple-style-span" style="color: red; font-family: 'Trebuchet MS', sans-serif;">rel=&#8221;author&#8221;</span>」指向自己位於該網站的作者頁面（Author Page）；然後作者頁面有連結以「<span class="Apple-style-span" style="color: red; font-family: 'Trebuchet MS', sans-serif;">rel=&#8221;me&#8221;</span>」指向自己的 Google Profile。關連的形式如下圖：<br /><br /></div><div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-ZEFIg-hDuGc/TkAT1VFwfmI/AAAAAAAAAcQ/kdeLV1bDVec/s1600/link2.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-ZEFIg-hDuGc/TkAT1VFwfmI/AAAAAAAAAcQ/kdeLV1bDVec/s1600/link2.gif" /></a></div><br /></div><div>之所以會有這兩種差異，我猜是考慮到多作者平台的環境中，作者本身可能沒有權限對文章頁面做 HTML 的屬性修改，因此先讓文章與作者頁面建立連結，作者頁面再與 Google Profile 建立連結。<br /><hr />不過這樣的作法太過麻煩，因此又有了改進過後的新作法。新作法中，要替自己的文章（Content）與 Google Profile 建立關連，首先在每個文章頁面加入以下形式的 Google Profile 的連結：<br /><br /><div style="text-align: center;"><span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&lt;a href=&#8221;<span class="Apple-style-span" style="color: blue;">[profile_url]</span><span class="Apple-style-span" style="color: red;">?rel=author</span></span><span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace;">&#8220;&gt;<span class="Apple-style-span" style="color: blue;">Google</span>+&lt;/a&gt;</span></div><div style="text-align: center;"><span class="Apple-style-span" style="font-family: 'Times New Roman'; white-space: normal;"><span class="Apple-style-span" style="color: #666666;">官方說明提到，連結文字可以使用任意文字，但必須以 + 號作結尾。</span></span></div><br />接著在 Google Profile 的「關於」頁面加入網站連結，不用針對每一篇文章，只要針對首頁即可。關連的形式如同舊做法的單人網站，不過因為需要修改的僅是 <span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">&lt;a&gt;</span> 標籤內的網址本身，而非 <span class="Apple-style-span" style="font-family: 'Trebuchet MS', sans-serif;">rel </span>屬性，因此對大多數多重作者的網站也適用。當然，要先以<span class="Apple-style-span" style="color: red; font-family: 'Trebuchet MS', sans-serif;"> rel=&#8221;author&#8221;</span> 指向作者頁面再與 Google Profile 建立關連也是可以的。<br /><br />對於 WordPress、痞客邦等其他 Blog 使用者而言，要在每篇文章中加入上述連結，不見得真的要在文章中加入，只要在文章出現的頁面中有該連結即可。有幾個地方適合加入自己的 Google Profile 連結：<br /><br /><ul><li>每篇共通的頁首、頁尾，或是頁面小工具（Widgets）</li><li>文章結尾處，例如把作者名字加上 Google Profile 連結</li><li>使用作者頁面（Author Page）的方式</li></ul><br />至於<a href="http://blog.aqualuna.me/2011/08/google-authorship.html">前篇文章</a>中的做法，便是利用 Blogger 本身會替每篇文章加上 <span class="Apple-style-span" style="color: red; font-family: 'Trebuchet MS', sans-serif;">rel=&#8221;author&#8221;</span> 連結到 <a href="http://www.blogger.com/profile/14386691974182836637">Blogger Profile 頁面</a>的特性，如此一來，只要再替 Google Profile 與 Blogger Profile 兩者建立關連即可。</div></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/08/08/yo-no-kimyou-2010-fall-sp/">世界奇妙物語 2010 秋季SP (20週年)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-08T13:24:00+08:00" pubdate data-updated="true">Aug 8<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我很喜歡各式各樣稀奇古怪的小故事，所以像《世界奇妙物語》這樣的戲劇就很合我的胃口。為了紀念 20 週年（這麼久了啊），富士電視台在 2010 年特別找來人氣作家來同台競演。這次的五個故事中，不乏台灣讀者所熟悉的日本知名作家操刀演出，相當令人期待。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-HY2M8b9RYH0/Tj-TqnvbeBI/AAAAAAAAAcI/-kXDf50CGxw/s1600/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_154148.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="225" src="http://1.bp.blogspot.com/-HY2M8b9RYH0/Tj-TqnvbeBI/AAAAAAAAAcI/-kXDf50CGxw/s400/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_154148.jpg" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">這次的世界奇妙物語片頭竟然找了洋人串場&#8230;&#8230;</td></tr></tbody></table><br /><br /><span class="Apple-style-span" style="font-size: large;"><b>厭な扉</b></span><br />原作：京極夏彥<br />主演：江口洋介<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-fLASJUcnzG8/Tj9tJls9rEI/AAAAAAAAAcA/Vcbimk3q7uE/s1600/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_111052.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="http://3.bp.blogspot.com/-fLASJUcnzG8/Tj9tJls9rEI/AAAAAAAAAcA/Vcbimk3q7uE/s400/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_111052.jpg" width="400" /></a></div><br />敘述一個因為事業失敗而家庭破碎、流浪街頭的遊民，為了追求幸福的人生，而墜入了「<b>無窮迴圈</b>」的人生循環中。真的是無「窮」迴圈。由於我在看之前就已經在網路上被雷過劇情大綱，所以看完倒沒有太大驚奇，但是當江口洋介最後說出「我想起來了，這是第165回&#8230;&#8230;」時，心理還是稍微震驚了一下。<br /><br />不得不說江口洋介真的是戲精，不管是演流浪漢或是演事業有成的商人一樣都入木三分。<br /><br /><br /><b><span class="Apple-style-span" style="font-size: large;">はじめの一歩</span></b><br />原作：萬城目學<br />主演：大野智<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-OakxW3IL7rc/Tj9tHgs3CQI/AAAAAAAAAbw/g8c-iTPOETs/s1600/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_110621.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="http://4.bp.blogspot.com/-OakxW3IL7rc/Tj9tHgs3CQI/AAAAAAAAAbw/g8c-iTPOETs/s400/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_110621.jpg" width="400" /></a></div><br />跟《第一神拳》漫畫同名，但是故事內容截然不同，我猜萬城目學應該是先定了名字然後開始從名字掰故事的吧（笑）。故事的主角是個講話必先從「首先呢」作為開頭的碎碎唸上班族。後來有次遇到神明，幫他改掉了這個口癖，之後男主角講話都直接切入重點，侃侃而談，也獲得了身旁眾人的注目，從此事業愛情兩得意。<br /><br />看到大野智很認真地演著搞笑角色還蠻有趣的。第一次認識這個演員是在日劇<a href="http://reader.aqualuna.me/2012/01/blog-post.html">《魔王》</a>中，記得他是演個冷酷的殺人兇手，當時覺得還好。不過後來看到他都是搞笑的演出，我個人也覺得他適合走搞笑路線，而且是要以認真的模樣在搞笑這樣。本篇大致上算是還蠻溫馨有趣的一篇短篇。<br /><br /><br /><b><span class="Apple-style-span" style="font-size: large;">栞の恋</span></b><br />原作：朱川湊人<br />主演：<a href="http://reader.aqualuna.me/search/label/%E5%A0%80%E5%8C%97%E7%9C%9F%E5%B8%8C">堀北真希</a>、岸部一德<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-Rwx3XefGimQ/Tj9tIJPVlFI/AAAAAAAAAb0/t7mH-toI5rU/s1600/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_110729.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="http://1.bp.blogspot.com/-Rwx3XefGimQ/Tj9tIJPVlFI/AAAAAAAAAb0/t7mH-toI5rU/s400/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_110729.jpg" width="400" /></a></div><br />這次系列五篇中，我覺得最不奇妙的一篇。不過整體的氣氛營造得相當成功，讓人完完全全融入昭和時代的懷舊氛圍中。堀北真希演出情竇初開的少女，對著暗戀的對象偷偷以書籤傳情，對於少女「又期待又怕受傷害」的心態詮釋的相當入味。<br /><br />另外關於少女所喜愛的那個五人團體，The Tigers，我好奇去查了一下，還真有<a href="http://zh.wikipedia.org/wiki/%E8%80%81%E8%99%8E%E6%A8%82%E9%9A%8A">這個樂團</a>。更令人震驚的還在後面，少女最喜歡的那個團員 Sally（怎會是個女性化名字？），竟然就是演書店老闆的那個岸部一德。我很難想像這位老奸巨滑的近畿商事第二把交椅，竟然年輕時候是個搖滾樂團偶像？這篇的主題果然是「<span class="Apple-style-span" style="color: red;">跨越時空的愛戀</span>」啊。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/--K-fmwcQO7Y/Tj9tKDLBIyI/AAAAAAAAAcE/_s4_tk8ntzk/s1600/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_120217.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="247" src="http://3.bp.blogspot.com/--K-fmwcQO7Y/Tj9tKDLBIyI/AAAAAAAAAcE/_s4_tk8ntzk/s400/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_120217.jpg" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">中間那位便是 Sally, 年輕時的岸部一德</td></tr></tbody></table><br /><br /><b><span class="Apple-style-span" style="font-size: large;">殺意取扱説明書</span></b><br />原作：東野圭吾<br />主演：玉木宏<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-MPDFwRldaNA/Tj9tIinG-DI/AAAAAAAAAb4/5DR--L_7a10/s1600/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_110951.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="http://3.bp.blogspot.com/-MPDFwRldaNA/Tj9tIinG-DI/AAAAAAAAAb4/5DR--L_7a10/s400/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_110951.jpg" width="400" /></a></div><br />很東野圭吾風的一個故事，把生活中的小事情換個角度、誇大而認真的去說明，達到諷刺的效果。這故事也很適合玉木宏，完完全全就是一個<b>衰人</b>的故事－－不曉得為什麼，自從《交響情人夢》的千秋王子之後，我每次看到玉木宏總是一副很衰的樣子，不管是鹿男還是《Love Shuffle》，都是一副苦瓜臉，可是很好笑，跟陳昭榮的苦瓜臉有截然不同的意義。<br /><br />最後的一幕有點出很多說明書的毛病：「怎麼裡面都講些無關緊要的事，最重要的反而用小字寫在看不到的地方」。另外，主角臨死前看到對手手上也有一本〈殺意說明書〉的這幕，也是一絕：玉木宏只是拿來翻翻而已，對手的書上可是作了筆記，貼了便利貼，認真地作了許多功課呢。回頭來看主角一直對於自己的點子被盜用一事耿耿於懷，也不能說他冤了，畢竟點子這東西不值錢啊。<u>有創意是沒用的，重點還要有執行力。</u><br /><br />另外要特別一提的是我很佩服日本的道具製作，〈殺意使用說明書〉這樣一個虛構的東西，在劇中竟然被完完全全的實體化，還有雙色印刷，每一頁的文字跟插圖也都不是隨隨便便剪上去的，這真是太認真了。根本就是完整的出了一本書嘛，不曉得 amazon.com 上有沒有得賣？<br /><br /><br /><b><span class="Apple-style-span" style="font-size: large;">燔祭</span></b><br />原作：宮部美幸<br />主演：廣末涼子、<a href="http://reader.aqualuna.me/search/label/%E9%A6%99%E5%B7%9D%E7%85%A7%E4%B9%8B">香川照之</a><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-J5jQqSwXiCM/Tj9tJGNh_aI/AAAAAAAAAb8/l7e26a_VefY/s1600/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_111026.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="225" src="http://2.bp.blogspot.com/-J5jQqSwXiCM/Tj9tJGNh_aI/AAAAAAAAAb8/l7e26a_VefY/s400/%255B%25E6%2597%25A5%25E5%258A%2587+2010+SP%255D+%25E4%25B8%2596%25E7%2595%258C%25E5%25A5%2587%25E5%25A6%2599%25E7%2589%25A9%25E8%25AA%259E+2010+%25E7%25A7%258B+20%25E5%2591%25A8%25E5%25B9%25B4.rmvb_20110808_111026.jpg" width="400" /></a></div><br />故事主要是敘述一個擁有超能力的少女，想要以自己的能力幫助男主角完成復仇。不過男主角不希望她把能力用在殺人這樣的事情上，女主角又覺得自己生而具有這種能力，肯定是為了某個特殊目的而存在，而幫助男主角復仇便是這麼一個目的。男女主角之間有著淡淡的情愫。<br /><br />對我而言感覺很悶的一篇。雖然我很喜歡廣末與香川這兩位演員，不過這部戲兩個人的特寫也太多了，特別是廣末，多到有點像是個人映像 Video 的感覺。特寫多加上對話少，故事進展不快，看得我不小心睡著好幾次。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -641,78 +713,6 @@ int main(void)
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/07/11/parallels-final-crossed/">相交會的兩條平行線</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-07-11T16:58:00+08:00" pubdate data-updated="true">Jul 11<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天看到這一部短片，是 Nokia 2011 短片競賽的優勝，全程是以 Nokia N8 所拍攝。影片不長，卻很有創意，能讓人會心一笑。<br /><br /><div style="text-align: center;"><iframe frameborder="0" height="225" src="http://player.vimeo.com/video/25451551?title=0&amp;byline=0&amp;portrait=0" width="400"></iframe><br /><a href="http://vimeo.com/25451551">Splitscreen: A Love Story</a> from <a href="http://vimeo.com/jwgriffiths">JW Griffiths</a> on <a href="http://vimeo.com/">Vimeo</a>.</div><br />這部影片也讓我聯想到兩段 Music Video。第一段是 Daniel Powter 的〈Bad Day〉，同樣是個愛情故事，也同樣是相交會的兩條平行線。<br /><br /><div style="text-align: center;"><a href="http://youtu.be/gH476CxJxfg">官方影片，已依要求停用嵌入。請點此連結觀看。</a></div><div style="text-align: center;"><br /></div>另外這個影片有點詭異，卻不得不說是個神作。這首歌是 Cibo Matto 的〈Sugar Water〉，MV 的導演是我很欣賞的 Michel Gondry，這部作品不僅用到分割畫面，兩邊的故事平行進行卻又互相交錯，同時也是一鏡到底，看到中間還會發現，兩邊根本就是同樣一段影片以前後顛倒、左右相反的方式播放。（為避免影響觀看樂趣，上述文字以背景色顯示，請看過影片後再反白）<br /><br /><div style="text-align: center;"><a href="http://youtu.be/EN9auBn6Jys">官方影片，已依要求停用嵌入。請點此連結觀看。</a></div><br />除了上面兩段 Music Video，幾米的繪本《向左走，向右走》也是類似架構的故事。可惜電影主題曲的 MV 沒有採用類似的方式拍攝。話說回來，金城武和梁詠琪的搭配真的很登對，也很符合繪本中的形象。可惜他們兩人在這部電影之後就沒有其他合作的作品了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://1.gvt0.com/vi/tHizEjsc_6k/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/tHizEjsc_6k&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/tHizEjsc_6k&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><a href="http://draft.blogger.com/"></a><br />最後附上開頭〈Splitscreen: A Love Story〉的製作花絮：<br /><br /><div style="text-align: center;"><iframe frameborder="0" height="225" src="http://player.vimeo.com/video/24235508?title=0&amp;byline=0&amp;portrait=0" width="400"></iframe><br /><a href="http://vimeo.com/24235508">Splitscreen: A Making Of - Part 1</a> from <a href="http://vimeo.com/jwgriffiths">JW Griffiths</a> on <a href="http://vimeo.com/">Vimeo</a>.</div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/07/11/bie-han-muoshenren-taiowu/">一失足成千古恨－別和陌生人跳舞</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-07-11T07:10:00+08:00" pubdate data-updated="true">Jul 11<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>對岸的戲劇我看的不多，有的話，也多半是像《三國演義》、《走向共和》之類的歷史片，或是金庸的武俠改編。古裝或是歷史這類的戲劇，這幾年來還是對岸拍的比較到味，以前台灣拍得也不錯，但已經好幾年沒有電視台或製作單位願意砸錢投資這類戲劇了，煞是可惜。近年來看到台灣拍的比較認真的古裝戲，也只有《戲說台灣》而已了，可惜題材太過講忠孝節義，劇情也千篇一律，雖然不呆板，但是不合我胃口－－或者說，我不是《戲說台灣》主打的收視族群吧。<br /><br />而至於時裝劇的部份，原本以為由於社會風氣的關係，對岸的時裝劇比起港臺戲劇會來得教條呆板，所以總是沒有興趣接觸。不過這陣子（其實是從去年斷斷續續看到今年）看了《別和陌生人跳舞》（2006）後，卻讓我對於對岸的時裝劇帶來很大的改觀。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-7B6JWXBHlTQ/ThoqhtSuACI/AAAAAAAAATQ/NYgfPDy8sAw/s1600/a0.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-7B6JWXBHlTQ/ThoqhtSuACI/AAAAAAAAATQ/NYgfPDy8sAw/s320/a0.jpg" width="209" /></a></div><br /><br />《別和陌生人跳舞》（以下簡稱《別》）一共 24 集，劇情的大綱這邊就不詳述，百度百科有劇情簡介。開頭前幾集所切入的點是頗具爭議性與話題性的「換妻」題材。當然，礙於國情，最後免不了還是虛晃一招罷了。不過光是對岸在電視劇集上能出現這種題材，就讓我覺得意外了，也讓我發現我一直對著對岸拍的戲劇留有「保守、和諧」的刻板印象。<br /><br />與《別》劇的緊急煞車相比，美劇《Swingtown》同樣也是討論換妻議題，就不是那麼點到為止了（不過這部我看了兩三集就沒繼續追了）。而日劇《Love Shuffle》也有類似交換伴侶的劇情結構，卻在一層包裝之下，劇情反而顯得清新有趣，跳脫出了「交換伴侶」這字面上令人感覺不道德的第一印象。由此可見中美日三種不同文化環境下，對於同一素材的不同料理方式，是種相當有趣的比較。<br /><br />除了換妻話題外，《別》劇中探討了許多社會問題，例如性騷擾與各種騷擾、婚外情、偷拍的議題、醫生的對於患者的醫療道德等等。不過劇情中很多對於社會問題的探討免不了還是擦邊球，沒有真正深入到問題的核心。就拿醫生收紅包這件事來說，收了紅包的醫生在劇中被檢舉賄賂，那位醫生受到了懲罰，從腦科主任降為住院醫師；而在多年的努力之後，該醫生總算又獲得信任，並且改過向善，替病人提供義診。像這樣的角色就顯得教條而平面，而不像日劇《白色巨塔》中的財前醫生那樣，在慾望與權力的腐蝕下逐漸走向墮落，來得更為深刻而讓人震撼。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-LTXVDfVDaGI/ThoqKWlHbHI/AAAAAAAAATM/lGZsLwjdiak/s1600/200611161534142811309.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://4.bp.blogspot.com/-LTXVDfVDaGI/ThoqKWlHbHI/AAAAAAAAATM/lGZsLwjdiak/s320/200611161534142811309.jpg" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">于萍萍（温峥嵘 飾）</td></tr></tbody></table>不過即便如此，《別》劇的劇情鋪陳仍舊有其高低起伏，會讓人想要看下去，想要知道後續的發展。劇情的展開也是有其脈絡，不像某些鄉土劇演到哪，故事就編到哪，完全沒一個邏輯可尋。幾個主要角色的演出也相當讓我印象深刻，一個是飾演于萍萍的温峥嵘，另一个則是演乔方方的丁柳元。于萍萍在戲中本就亮眼，從頭到尾都是鏡頭的焦點，故不多言；倒是乔方方這角色一開始感覺像個為愛無條件付出一切的傻子，但到最後卻完全展現出獨立而自主的一面，一反前期的自虐形象，讓人徹底刮目相看。<br /><br />另外讓我覺得有趣的一點是，劇中一個身為女主角于萍萍後輩的角色（张晶 飾），一直希望自己的廣播節目「道德熱線」能夠走紅，甚至取代于萍萍的「法制熱線」。這恰恰代表了「道德」與「法治」兩股力量在社會上的互相拉扯，有些事情，法律沒有禁止，而只能從道德上去譴責，但是道德的譴責是好事嗎？劇中不斷以性騷擾為題，指出騷擾雖然目前沒有太重的刑責，只有道德上的瑕疵，但是要遏止這樣的行為不能光靠譴責，而必須需要有關單位的立法。在劇情最後，作為「道德熱線」代表的後輩，雖然最後成功取代了女主角的「法制熱線」，但我想這只是一種「政治正確」的妥協表達，以那位後輩在劇中咄咄逼人的模樣，反而令觀眾反感，無法取得共鳴。<br /><br />道德與法治的衝突也隱含在另一小段劇情中，雖然並未被明顯提出。劇中有個偷拍的慣犯，於劇情逐漸接近尾聲時，該慣犯在百貨公司偷偷裝設偷窺鏡頭時失風被發現，逃跑到大街上後被眾人逮住，並活活被人群給踢死。這個慣犯死了之後也沒人同情，警方也表示，由於警察到了現場之後，踢死慣犯的人群早已散去，無從得知是哪些人下的手，也就無法可辦。這段劇情凸顯了「道德上正確，卻毫無法治」的一種荒謬現象。至於這樣的安排是否是編劇刻意藉此諷刺政府對於社會的作為，那就不得而知了。<br />&#8212;-<br />別和陌生人跳舞<br />導演：柳国庆<br />主演：何政军、温峥嵘、姚刚、柳渊、张晶<br />首播時間：2006年11月<br />&#8212;-<br />延伸閱讀：<br /><a href="http://baike.baidu.com/view/607507.htm">別和陌生人跳舞<em>百度百科</a><br /><a href="http://baike.baidu.com/view/330925.htm">温峥嵘</em>百度百科</a><br /><a href="http://baike.baidu.com/view/1231867.htm">丁柳元_百度百科</a>&nbsp;（原名 柳渊）<br /><a href="http://www.imdb.com/title/tt0928173/">Swingtown (TV Series 2008) - IMDb</a><br /><a href="http://dorama.info/drama-2159.html">電視劇：交換戀人、戀愛洗牌=ラブシャッフル-日本偶像劇場</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/7/">&larr; Older</a>
@@ -728,6 +728,14 @@ int main(void)
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
@@ -747,14 +755,6 @@ int main(void)
     
       <li class="post">
         <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/ls-color-on-mac/">ls Color on Mac</a>
       </li>
     
   </ul>
