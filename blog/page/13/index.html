@@ -9,8 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="在五點與七點之間，我們共享晚餐。在教室與課本之間，我們學習成長。在地圖與行囊之間，我們旅行他鄉。在酒精與音符之間，我們樂狂歡。在尼采與三毛之間，我們低歎。在爭吵與擁抱之間，我們相處。在敦南與信義之間，我們閱讀。誠品信義旗艦店，2006.1.1，Brand New Open.
-">
+  <meta name="description" content="Step 1: Install Ruby先前不曉得裝什麼軟體就一併裝好了，所以跳過。Step 2: Install RubyGems這是等一下用來安裝 Rails 的工具，在 FreeBSD 下用 ports 安裝，輕鬆方便。[freebsd] /usr/ports/devel/ruby-gems &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/01/10/ruby-on-rails-on-freebsd/">［安裝］Ruby on Rails on FreeBSD</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-01-10T12:34:00+08:00" pubdate data-updated="true">Jan 10<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><span style="font-weight: bold;">Step 1: Install Ruby</span><br /><br />先前不曉得裝什麼軟體就一併裝好了，所以跳過。<br /><br /><span style="font-weight: bold;">Step 2: Install RubyGems</span><br /><br />這是等一下用來安裝 Rails 的工具，在 FreeBSD 下用 ports 安裝，輕鬆方便。<br /><code><br />[freebsd] /usr/ports/devel/ruby-gems> make install clean</code><br /><br /><span style="font-weight: bold;">Step 3: Install Rails</span><br /><br />照<a href="http://www.rubyonrails.org/down">官方網站</a>上的描述，同樣一行指令搞定。<br /><code><br />[freebsd] ~> gem install rails --include-dependencies</code><br /><br />註：我連試了兩次指令都執行到一半失敗，可能是網路 timeout 關係，第三次就順利成功了。<br /><br /><span style="font-weight: bold;">Step 4: 建立應用程式</span><br /><br />基本上這也是照著前一個網頁的指示作。<sup>_<sup>&lt;br</sup></sup> /><code><br />[freebsd] ~> rails /path/to/my/new/application<br />[freebsd] ~> cd /path/to/my/new/application<br />[freebsd] ~> ruby script/server<br /></code><br />接下來開啟網址 <span style="color: rgb(51, 51, 255);">http://0.0.0.0:3000</span> 就能夠看到關於 RoR 的說明了。<br />說明頁面的最底下有 Getting Started，可以開始寫 RoR 的程式囉！<br /><br /><hr />參考網址：<br />[1] <a href="http://www.rubyonrails.org/down">Download Ruby on Rails</a><br />[2] <a href="http://www.onlamp.com/pub/a/onlamp/2005/01/20/rails.html?page=1">Rolling with Ruby on Rails</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -414,42 +449,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/11/14/css-image-alignment/">［CSS］圖文對齊排列</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-11-14T01:34:00+08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>當圖文並列時，若要讓圖片能夠對齊排列，而不是呈現出梯狀的分佈。<br />可以使用下列語法：<br /><code><br />&lt;img src="http://where.image.is/picture-01.jpg" style="float:left"&gt;<br />文字段落一&lt;br&gt;<br /><br />&lt;img src="http://where.image.is/picture-02.jpg" style="float:left; clear:left"&gt;<br />文字段落二&lt;br&gt;<br /></code><br />重點在於第二個 img 內的 &#8220;clear:left&#8221;<br />這個屬性的意思是<span style="font-weight: bold; color: rgb(255, 102, 102);">如果左邊有浮動元件的話，此元件便移到該浮動元件下方</span>。<br /><br />而 &#8220;float:left&#8221; 則是將所屬元件指定為浮動性質。<br /><br />下一篇便是應用範例。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/14/">&larr; Older</a>
@@ -465,6 +464,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
@@ -488,10 +491,6 @@
     
       <li class="post">
         <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: talks | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/talks/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-11T10:58:56+08:00</updated>
+  <updated>2012-04-18T07:12:33+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,128 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[我不和運氣差的人合作，嗎？]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/"/>
+    <updated>2012-04-11T10:44:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question</id>
+    <content type="html"><![CDATA[<p>最近讀到 <a href="http://raganwald.posterous.com/i-dont-hire-unlucky-people">I don't hire unlucky people - raganwald's posterous</a> 這篇文章，有些想法跟 <a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a> 這一篇所寫的不太一樣。想法不同也就算了，文章本來就是個別讀者與單一作者之間的心靈互動，讀者不同，互動不同，激發出的想法自然也不同，這無可厚非。</p>
+
+<p>不過對於文章內容的解讀也不一樣，這讓我不由得想寫一篇文章來談談 "I don't hire unlucky…" 這篇的內容。這篇文章很長，以對話小說式的方式來描述，講述如何節省 hire people 的時間與 hiring 時的考量，我懶得逐字翻譯，所以會簡單帶過故事內容。</p>
+
+<h2>Part 1</h2>
+
+<p>故事可以分成上下兩部分。第一個部分有兩個主角，Bertram 和 Ernestine，Bertram 負責招募零售商店的學徒，Ernestine 的工作則是在招募軟體開發的 programmer。Ernestine 有天問 Bertram，她手上有上百份履歷，要怎麼減少不必要的電話與面試呢？</p>
+
+<p>Bertram 說很簡單，他拿起一整疊履歷，丟掉一半，然後回答，<strong>「不要雇用運氣不好的人就好啦。」</strong>Ernestine 聽了之後想要試試看，於是回去問 Mark 意見，Mark 是她公司的 CFO 以及天使投資人，對於軟體產業也有些瞭解。Mark 點出了 Ernestine 與 Bertram 環境的不同。</p>
+
+<blockquote><p>Bert 那邊有相當多符合條件的人 (qualified people) 在應徵他的工作，假設 100 個裡面有 50 個好了，就算他刪去一半的人，平均來講，剩下的 50 個裡也還有 25 個符合條件的人可以挑選。而妳在招募的 programmer, 可能一百份履歷裡面只有一兩個符合資格的，<strong>妳如果一口氣刷掉一半的履歷，妳可能在剩下的那 50 份裡完全找不到半個合適的人。</strong></p></blockquote>
+
+<p>於是 Ernestine 放棄了 Bertram 告訴她的方法。開始不斷嘗試、調整，試著去找出自己的方法。</p>
+
+<h2>Part 2</h2>
+
+<p>故事來到兩年後。Oscar 是 Ernestine 公司裡的程式主管，他也有面對一堆履歷不知從何著手的問題，於是像她的上司 Ernestine 請教。</p>
+
+<p>Ernestine 告訴 Oscar，首先，她不再去注意<strong>一份履歷是否「專業」</strong>，比方說履歷的格式或是文字中是否有錯字等等。因為去在意這些東西，其實<strong>跟隨機丟掉一半運氣不好的履歷，是沒什麼兩樣的</strong>。</p>
+
+<p>於是 Oscar 提出質疑，Oscar 的質疑也是我們一般會有的想法：「可是從履歷的完整度，我們可以看出求職者的用心，知道對方是不是有熱誠想要進我們的公司不是嗎？」</p>
+
+<p>Ernestine 的回答點出了重點。如果我們今天有 50 個不錯的人才，那我很樂意找出到底哪一半的人有進公司的熱誠，哪一半沒有。但如果我們今天的履歷裡有 99 個庸才跟一個天才，<strong>那我的首要目標是要想辦法找出這一個天才是誰，至於誰比較有進公司的熱誠則是次要的了</strong>。</p>
+
+<p>Ernestine 繼續說下去，她用同樣的想法貫穿整個人才的挑選：她挑或不挑一個人，是決定於與工作技能本身相關的直接或間接衡量 (direct measurement or indirect measurement)，例如學歷算是間接衡量指標。</p>
+
+<p>講到這邊，Oscar 又打斷，並且說明了學歷的重要，學歷反應許多資訊，不應該只是間接衡量。Ernestine 大致上同意 Oscar 的看法：</p>
+
+<blockquote><p>幾乎每一個我們所雇用的都有大學學歷，但我在看履歷時不會依照他們的學位或學校排出優劣。我只是看他們的工作經驗或是提供的代碼範例。而結果就是，我們所想要的每個有經驗的人才都具有大學學歷。</p></blockquote>
+
+<p>但是她接下來的回答很有意思，值得令人多加思考：</p>
+
+<blockquote><p>然而把「關連性 (correlation)」與「因果關係 (causation)」兩件事搞混是非常危險的。而更糟糕的則是把「關連性」跟「必要性 (necessity)」搞混。如果說，有念過大學對 programmer 來說是一件好事，那麼我們在看他的經歷、程式代碼，或是與之面談時，也可以發現他的能力優秀。</p></blockquote>
+
+<p>所以我的理解是，念過大學可以幫助一個程式設計師成長，但這些成長會表現在他的工作經歷或是代碼上。所以經歷或是代碼是直接的衡量標準。大學教育與優秀的程式設計師有關連性，但不是必然的因果，更不是必要的條件。</p>
+
+<p>Ernestine 繼續說到，當她在看求職者的 blog 時也用同樣的標準去檢視。比如說有個求職者喜歡攀岩，聽起來不錯，公司裡也有許多同事喜歡攀岩，不過 Ernestine 會忽略掉興趣這項訊息。</p>
+
+<blockquote><p>畢竟，如果因為興趣不對就被刷掉，是非常不走運 (unlucky) 的。而我不想僅僅只是因為一份履歷不走運就把它刷掉。</p></blockquote>
+
+<p>這裡有句重點：</p>
+
+<p><strong>hiring programmers, not ascetics or rock stars</strong></p>
+
+<p>Ernestine 甚至會抗拒去查看求職者在社交媒體上分享的資訊。她不想因為求職者在政治、興趣等觀點上與她志趣相投或是理念不同，而產生偏見，進而影響求職者被錄用與不錄用（這在美國也是違法的），同時這對公司也不是件好事。她雇用時，<strong>單純只考量求職者在專業技能上是否滿足條件</strong>。從招聘的觀點來看，去考慮對方是否跟你合不合得來，其實就只是種運氣的問題，而非適任不適任的問題。</p>
+
+<p>Ernestine 最後提到招募廣告，她現在開始使用平舖直敘的文字廣告來招募。她之前也曾使用過「徵求忍者！搖滾巨星！」之類的誇張廣告。但她發現這類的廣告也許會吸引到喝 Dry Martini 的人（意指比較外向積極），但是那些不喝 Dry Martini 不見得就不適合這份工作。所以登「我們需要忍者！需要超級巨星！」這類廣告，跟單單只是因為不喜歡沒運氣的人而刷掉一半，其實沒什麼兩樣。</p>
+
+<p>接下來的問答很有趣，programmer 應該都會有更深的體會。Oscar 問到：「要是如果忍者廣告比起直白廣告真的能吸引到更多符合條件 (qualified) 的人前來應徵呢？」</p>
+
+<p>Ernestine 的回答相當妙了：「當你寫程式時，你怎麼知道哪一段 code 需要最佳化呢？」Oscar 回答：「我會去測量（measure）, Premature optimization is the—Oh, I get it!」這邊 Oscar 的話雖然講到一半，但是這句話相信 programmer 都應該熟悉：</p>
+
+<blockquote><p>Premature optimization is the root of all evil.</p>
+
+<p>過早優化是萬惡之源。</p>
+
+<p>-- Donald Knuth</p></blockquote>
+
+<p>所以 Ernestine 會有這樣的結論也是測量過後的結果。她說，登廣告找人，跟登廣告賣東西都是一樣的，你必須追蹤測量所有數據 (track &amp; measure everything)，你才能分析，知道有沒有效果。</p>
+
+<h2>結論</h2>
+
+<p>所以，Ernestine 減少處理上百份履歷時間的方式，並不是用什麼隨機丟掉一半，把運氣不好的人排除掉。也不是什麼像下面這段所說的尋找一個點，一個感動、注意、雙眼為之一亮的點。不是尋找什麼鳳毛麟角。</p>
+
+<blockquote><p>作者建議，當100選1的時候，應該直接隨便看一張履歷表，看看此人是否有哪個「點」讓你感動、讓你注意、讓你雙眼為之一亮？不是想辦法刪去，而是「尋找」那個鳳毛麟角之特色。</p></blockquote>
+
+<p>Ernestine 的方法很簡單。今天如果我要找程式設計師，<strong>我就只專注在相關的技能、經驗或作品上。而不是看著履歷表上洋洋灑灑一大堆與適任與否無關的資訊或情報。</strong></p>
+
+<hr />
+
+<p>看完了這個故事，是不是覺得英文閱讀能力很重要呢？多培養自己的英文閱讀，直接吸收第一手資訊，才能夠間接提高自己的好運度喔！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[你怎麼知道如何判斷運氣好壞？]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/"/>
+    <updated>2012-04-11T08:53:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way</id>
+    <content type="html"><![CDATA[<p>這幾天在 Facebook 出現一篇分享率很高的文章，叫做〈<a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a>〉，帶給我很多想法，在這裡分享一下。</p>
+
+<p>什麼叫做「不和運氣差的人合作」？</p>
+
+<p>這位作者舉了一個例子，如果你是某間店的店主，現在要找店員，現在收到了 100 份履歷，但你很忙，沒有時間一個一個看。最簡單的方式就是索性從 100 份中<strong>隨機挑出 10 份</strong>，然後從 10 份中挑出一個最棒的。至於那些被過濾掉的 90 份，只能怪他們<strong>運氣不好啦</strong>！</p>
+
+<p>聽起來很帥氣，不是嗎？</p>
+
+<p>這過濾的方法真是簡單、漂亮又優雅－－但我深深覺得還有哪裡不夠。</p>
+
+<p>「你怎麼確定被挑出的代表運氣好？萬一，我是說萬一，你的店下個月突然發生意外，週轉不靈發不出薪水，那麼<strong>被挑出的反而都是倒楣的人</strong>，真正運氣好的人早在你挑的時候成為漏網之魚，從你手中逃掉啦！」</p>
+
+<p>是的，華生，你突破盲點了。</p>
+
+<p>我相信，運氣好的人是會互相吸引的。所以在我使用這個「隨機運氣過濾法」之前，我得要先確定一下自己的運氣到底是好是壞：如果我運氣好，那麼被我挑到的人他們也都是具有好運的；如果我生來就是不走運，那麼沒被我挑到的人才是真正運氣好的人。只要我能夠知道自己的運氣是好或壞，我就能夠知道到底我要從被我挑出的那 10 份裡面去挑人，還是從被我放棄的那 90 份裡面去挑人。</p>
+
+<p>那麼要怎麼確定自己的運氣是好或壞呢？我想到兩個方法。第一方法呢，就是如法炮製，我把我的履歷寄到另外一間採用同樣「隨機運氣過濾法」的公司，如果有被挑上，那我就是運氣好；如果沒被挑上，那我就是壞運氣－－等等，不對，我怎麼知道另外一間公司負責挑選員工的雇主也是好運氣呢？如果我被挑上，但是另外一間公司的雇主是壞運氣的，那不就表示我被挑上但其實是壞運氣的？這豈不成了無窮迴圈？</p>
+
+<p>好吧，看來第一個方法行不通，換下一個。第二個方案就比較簡單了：<strong>去買樂透</strong>。中了就中了，沒中就沒中，一翻兩瞪眼，多乾脆。不過要是我今天運氣好，中了樂透，我索性就把店收了，退休度假去，何必還在那邊辛辛苦苦地煩惱到底要雇用什麼樣的員工呢？</p>
+
+<hr />
+
+<p>每個人都想要和「運氣好」的人一起合作，但問題就出在於什麼叫做「運氣好」？成為「在 100 份履歷中被挑出的 10 份中的其中之一」就算運氣好嗎？我不以為然。即便是中了樂透，也未必是就真的是運氣好的人－－對於許多心理尚未做好準備的人，中了樂透往往是人生悲劇的開始：中了樂透之後到達人生最高潮，然後朋友反目、妻離子散、揮霍度日、散盡家產這樣的故事俯拾皆是，我也懶得舉例了。所謂<strong>「塞翁失馬，焉知非福？」</strong>一件事情究竟是好是壞，其實是沒辦法從當下發生的事情本身來判斷的。</p>
+
+<p>所以到底什麼算是「運氣好」的人呢？我覺得只要「有做好準備」的人，就很容易遇到好運氣。運氣這東西，不外乎就是種機率。即使單一事件成功的機率極低，然而當你準備的越多，準備的越周全，這個極低機率發生成功的可能性就越大，成功的可能性比其他人來得大，自然就可以看做是「運氣好」的人了。</p>
+
+<p>讓我們這樣來看：假設開發一百款遊戲中只有一款會成功，也就是說，成功的機率是百分之一，失敗的機率是 0.99。那麼，<a href="http://www.rovio.com/">作了 52 款遊戲的公司</a>，至少有一款成功的機率是多少？換個角度想或許會比較簡單，52 款遊戲全部都失敗的機率是多少？</p>
+
+<p>答案是，52 款遊戲都失敗的機率是 59%，所以相反的，有逾四成的機率這家公司能夠有一款以上的成功遊戲。<strong>四成</strong>跟<strong>百分之一</strong>，很大的差距不是？而只要能有一款成功的遊戲，這家公司就能夠開始踏上好運的高速公路，吸引到更多「運氣好」的員工一起加入，進入正向循環。</p>
+
+<p>所以，運氣人人都有，但你準備的越多越充分，你就能夠比其他人來得更強運。</p>
+
+<hr />
+
+<p>關於給六先生帶來許多想法的這篇 <a href="http://raganwald.posterous.com/i-dont-hire-unlucky-people">I don't hire unlucky people - raganwald's posterous</a>，我運氣很好，剛好也看了。有一些不太一樣的解讀。可惜這裡空白的地方太小，寫不下，只好<a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">另外寫一篇來討論</a>了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[最近的 7-ELEVEN 啊]]></title>
@@ -127,24 +249,6 @@
     <updated>2011-06-19T07:01:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2011/06/19/seven-lip-dup</id>
     <content type="html"><![CDATA[<p>好爛的標題，實在是懶得想標題了，索性用個最常見且無腦的 "Top-List" Style。最近有段交大電子所拍攝的畢業影片超熱門，不但一鏡到底，而且還「倒映如流」。據說這叫「LIPDUB風」，上 YouTube 一找，果然還不少。底下就來紀錄一下我看過且覺得不錯的 LIPDUB 影片吧。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-6pFVGMTM2S8/Tf0ccdkvxOI/AAAAAAAAAQ0/3XehEFUWquU/s1600/%25E4%25BA%25A4%25E5%25A4%25A7%25E9%259B%25BB%25E5%25AD%2590100%25E7%25B4%259A%25E7%2595%25A2%25E6%25A5%25AD%25E5%25BD%25B1%25E7%2589%2587+LIPDUB.1080p.mp4_20110619_052846.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="http://3.bp.blogspot.com/-6pFVGMTM2S8/Tf0ccdkvxOI/AAAAAAAAAQ0/3XehEFUWquU/s320/%25E4%25BA%25A4%25E5%25A4%25A7%25E9%259B%25BB%25E5%25AD%2590100%25E7%25B4%259A%25E7%2595%25A2%25E6%25A5%25AD%25E5%25BD%25B1%25E7%2589%2587+LIPDUB.1080p.mp4_20110619_052846.jpg" width="320" /></a></div><br />在看影片前先來認識一下「什麼是 LIPDUB？」根據維基百科上的敘述，LIPDUB 應該寫作 Lip dub，代表 Lip synching (對嘴) 與 Audio dubbing (配音) 兩個縮寫字。也就是影片中的人物對嘴唱歌，錄製完成後，再把歌曲的原聲作為配音取代掉錄製影片中的聲音。<br /><br />這種形式曾經在國外形成一股風潮，許多學校的畢業影片都是採用 Lip dub 風格製作。這種影片看似簡單，實際上呢，也還不難就是－－如果只有對嘴配音的部份的話；不過其實很多以 Lip dub 風格製作的畢業影片都會在校舍之間走來走去，動員大量人力，甚至像交大學生一樣，還用倒拍的方式進行。要規劃設計、並且將這些想法付諸實現，那就真的不簡單、而且很不簡單了。<br /><br />1. <b><span class="Apple-style-span" style="color: red;">交大電子100級畢業影片 LIPDUB。</span></b>雖然是 Lip dub，但是沒什麼對嘴，不過倒著拍本來就不好對嘴，這也無可厚非。這支影片最神奇的地方，就是一路逆向播放的影片到了結尾時竟然變成正向播放了，如果看了幾遍看不出端倪的話，可以把後面括號內的字反白，裡頭有提示（<span class="Apple-style-span" style="color: white;">仔細注意 4:40 秒處，這不是真的一鏡到底</span>）。這段影片據說拍了 12 次（引用自 YouTube 影片下方評論），光想到要是拍失敗，地上的紙屑道具或黑板等東西就得清理掉後重新來過，就讓人不得不佩服這群學生的毅力與精神。<br /><br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/tMjTYfebIRY/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/tMjTYfebIRY&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/tMjTYfebIRY&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />附帶一題，2010 台大藝術季也有拍過一段五分多鐘的影片，據稱是全球第一支華文 Lip dub，可惜台大那支影片裡學生的表情動作都顯得生澀僵硬，較感覺不到歡樂氣息，鏡頭的晃動幅度也很大，看起來有點不舒服，所以這裡就不附影片了。<br /><br />2. <b><span class="Apple-style-span" style="color: red;">Shorewood Lip Dub。</span></b>Shorewood 是華盛頓州的一間高中，這個影片原本是同屬華盛頓州的 Shorewood 與 Shorecrest 兩所高中學生的一項挑戰，要看看誰做的 Lib dub MV 更棒。從結果上來看當然是 Shorewood 勝出了。<br /><br />這部影片也是用「倒映法」的方式播放，同樣一鏡到底，更難能可貴的是，負責每個鏡頭主要角色的學生們，都很努力的在對嘴。要知道，在倒著拍的時後，你根本不知道你念的是什麼鬼。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://3.gvt0.com/vi/T7TI-AJi2O8/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/T7TI-AJi2O8&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/T7TI-AJi2O8&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />對於他們倒拍影片過程有興趣的，還可以看看下面這段製作花絮（其實就是順向播放的影片啦）。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/2bAWFWG8eYw/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/2bAWFWG8eYw&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/2bAWFWG8eYw&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />3.&nbsp;<b><span class="Apple-style-span" style="color: red;">LIPDUB - I Gotta Feeling (Comm-UQAM 2009)。</span></b>這是 UQAM (加拿大魁北克大學蒙特羅分校) 學生所拍的畢業影片。Lip dub 風格的畢業影片就是由這段影片所掀起的一股風潮，在這影片推出後，日本、西班牙、巴西、西班牙等國家都有學生使用同一首歌（I Gotta Feeling）來製作 Lip dub 影片<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/-zcOFN_VBVo/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/-zcOFN_VBVo&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/-zcOFN_VBVo&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />4.&nbsp;<b><span class="Apple-style-span" style="color: red;">Train - Hey, Soul Sister - LIPDUB UVic University (Official)。</span></b>這個是加拿大維多利亞大學拍攝的 Lip dub 影片，這支影片是讓我看了覺得最開心的一支。色彩明亮鮮豔，大家臉上都掛著笑容，感覺像是一場校園內的嘉年華會。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/EeGDRSWB46w/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/EeGDRSWB46w&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/EeGDRSWB46w&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />5.&nbsp;<b><span class="Apple-style-span" style="color: red;">LIP DUB UPF "Wake me up before you go-go" (Barcelona, 2010)。</span></b>接下來這個是西班牙 Pompeu Fabra University (查不到正式中文我就不翻了) 製作的 Lip dub 影片。這隻影片裡每個參與的人表情都很豐富，而且很多帥哥正妹，歌曲也好聽，是大家都耳熟能詳的曲子。中間有段坐電梯的插曲很有意思。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/V1ZqSyqORX4/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/V1ZqSyqORX4&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/V1ZqSyqORX4&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />6.&nbsp;<b><span class="Apple-style-span" style="color: red;">University LipDub #1。</span></b>根據維基百科上的紀錄，這是最早在大學校園中使用 Lip dub 方式拍攝的影片，可以看到學生們一個接著一個地（對嘴）唱歌。由德國的富特旺根應用科學大學，數位媒體系學生所製作。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://1.gvt0.com/vi/tVRrjxtm9Pk/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/tVRrjxtm9Pk&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/tVRrjxtm9Pk&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />7.&nbsp;<b><span class="Apple-style-span" style="color: red;">The Grand Rapids LipDub (NEW WORLD RECORD)。</span></b>最後壓軸的可了不起了，是世界金氏紀錄最多人參與拍攝的 Lip dub 音樂影片。這影片剛開始看我覺得沒什麼，只是一堆人在路上邊走邊唱歌罷了，耐著性子看到 1:30 之後，我發現我錯了，這根本是整個城市的人下去拍的影片，前面的幾個影片都是在校園裡、教室中走走逛逛，相比之下都太小家子氣了。這段近九分鐘的影片有五千名市民參與拍攝，想想看，有許多大專院校搞不好學生和教職員加一加都不到五千人呢！<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/ZPjjZCO67WI/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/ZPjjZCO67WI&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/ZPjjZCO67WI&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />----<br />延伸閱讀<br /><a href="http://en.wikipedia.org/wiki/Lip_dub">Lip dub - Wikipedia, the free encyclopedia</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[用手機鏡頭傳送網頁 - DeepShot]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/06/17/deep-shot/"/>
-    <updated>2011-06-17T10:31:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/06/17/deep-shot</id>
-    <content type="html"><![CDATA[<p>今天看到這個東西，像是魔法一樣。只要把手機鏡頭對著電腦螢幕，就可以把現在電腦上的網頁傳到手機上，反之也行。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/odjSlKO0YsY/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/odjSlKO0YsY&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/odjSlKO0YsY&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />之前要在手機跟電腦間傳送觀看的網頁，我在 iPhone 上只能透過 email 的方式，一堆步驟顯得麻煩。在 Android 上要好一點，我是用 <a href="https://chrome.google.com/webstore/detail/oadboiipflhobonjjffjbfekfjcgkhco">Chrome to Phone</a> 這個 Chrome 的擴充功能，可以避開打開信箱這個中間步驟。不過要用 Chrome to Phone 有幾個先決條件：<br /><br /><ol><li>使用 Android 手機 2.2 (Froyo) 之後版本</li><li>在手機上安裝 Chrome to Phone 應用程式</li><li>使用 Chrome 瀏覽器</li><li>在瀏覽器上安裝 Chrome to Phone 擴充功能</li></ol><br />上面有關安裝程式的部分或許是免不了的，但是使用平台只有 Android 與 Chrome 這種搭配，就多了許多限制。<br /><br />另外關於&nbsp;Deep Shot 支援的網站，剛剛看了 <a href="http://www.engadget.com/2011/06/16/deep-shot-transfers-open-websites-from-desktop-to-mobile-sans-w/">Engadget 的報導</a>，目前只有 Google Map 跟 <a href="http://www.yelp.com/">Yelp</a> （評論網站，類似台灣的愛評網）兩個，不過理論上只要有支援 URIs 的網站便可以支援。不過這樣聽起來，雖然比起 Chrome to Phone 方便，但是又不像 Chrome to Phone 那樣到處通用。<br /><br />最後附帶一題，Deep Shot 的開發者之一是目前正在 MIT 就讀博士班的 vgod。之前有個<a href="http://www.techbang.com.tw/posts/1907-drawings-to-write-programs-sikuli-will-change-the-world">用抓圖寫程式的 Sikuli</a>，也是 vgod 的作品。<br />----<br />延伸閱讀：<br /><a href="http://blog.vgod.tw/">vgod's blog</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[我看 Oracle 將 OpenOffice.org 移交 Apache 管理]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/06/16/oracle-migrate-oo-dot-o-to-apache/"/>
-    <updated>2011-06-16T12:57:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/06/16/oracle-migrate-oo-dot-o-to-apache</id>
-    <content type="html"><![CDATA[<p>本月初新聞，Oracle 宣布將 OpenOffice.org 捐贈給 Apache 基金會，並表示未來將由 Apache 基金會主導 OpenOffice.org 的發展。許多人認為將 OpenOffice.org 回歸社群，特別是投入頗負盛名的 Apache 基金會，是再好也不過的發展了，但我卻覺得，這樣的發展也許會為未來開源辦公室套裝軟體的發展埋下隱憂。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-kD0LcC00e-M/TfmNDriHHmI/AAAAAAAAAQQ/9qoWpwd71iw/s1600/ooo-vs-libre.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-kD0LcC00e-M/TfmNDriHHmI/AAAAAAAAAQQ/9qoWpwd71iw/s1600/ooo-vs-libre.png" /></a></div><br />早在 2009 年，Oracle 併購了 SUN 之後，同樣跟著嫁入豪門的 OpenOffice.org (以下簡稱 OOo)&nbsp;其未來發展就不斷令人擔心。到了 2010 年，一部份參與 OOo 專案開發的成員更是另起爐灶，成立一個名為 The Document Foundation (以下簡稱 TDF) 的基金會，並且開發另外一個新的辦公室套裝軟體專案，叫做 LibreOffice，希望能夠取代 OOo 原本在開放源碼社群中的地位。而 Oracle 對此事也不手軟，以利益上衝突為由，要求同時參與開發 LibreOffice 的 OOo 開發者離職。因為這個動作，使得原本對於 Oracle 就沒什麼好感的開放源碼社群，變得更為敵視。雙方勢同水火。<br /><br />到了今年四月，大概是 Oracle 發現抱著 OOo 也沒太大幫助吧，於是宣布要把 OOo 完全社群化，也就是說 OOo 的維護與管理都將交由社群負責，Oracle 自己也放棄技術支援的商業版本。從另外一個方面解讀，其實就是 Oracle 決定放棄 OOo 的發展，打算任由其自生自滅。接下來的故事就是大家都已經知道的，Oracle 替 OOo 找到了新歸宿－－他把 OOo 捐給了 Apache 軟體基金會。<br /><br />接著聊聊為什麼我會對這樣的發展感到擔憂。誠如前言，OOo 對於 Oracle 是個燙手山芋，與其抱著不如拋出，而拋出的對象是誰，就很有學問了。如果真有誠意，那麼將 OOo 交給 TDF，讓 LibreOffce 與 OOo 這分家的兄弟又重新歸流於一；另一方面，對 TDF 拋出善意，又可與之盡釋前嫌，豈不甚美？然而今天 OOo 給的對象是是 Apache 基金會，如果 Oracle 將 OOo 隨便給個阿貓阿狗那也就算了，Apache 基金會並不是阿貓阿狗，他們有能力也有資源能夠將專案維護下去，甚至搞得有聲有色。<br /><br />那麼，這有什麼不好的？交付 Apache 基金會管理一事，本身是沒什麼不好，不好的是開源的辦公室軟件發展自此分裂成兩支，力量分散。當然，開源社群中，原本就不乏專案分裂的情況，分裂後的專案也通常不會是競爭者，而會彼此技術交流，互通有無。例如從 FreeBSD 4.8 分支出去的 DragonFly BSD，在其獨立之後，與原 FreeBSD 兩邊的團隊仍然進行密切的合作，幫助對方修補漏洞或是更新驅動程式。對於開發社群而言，或許分裂，但即便分裂也有可能維持互惠關係。<br /><br />不過對於使用者而言就不是這樣了，過多的選擇會增加進入的障礙。當有個使用者想要捨棄商用軟體的辦公室套件，改選擇開源的替代方案時，最早以前他可以簡單挑出 OOo，但是將來他會面臨到 OOo 與 LibreOffice，再加上分開的兩方聲勢一定被分散弱化，也許那個使用者看了看後（可能也沒做太多功課），就又回頭使用商用軟體了。<br /><br />寫到這邊讓我想到「二桃殺三士」這個表面施恩，實則牽制的歷史故事。這個故事出自《晏子春秋》，以下直接引用維基百科上的敘述：<br /><blockquote>春秋時代齊景公帳下有三員大將：公孫接、田開疆、古冶子，他們戰功彪炳，但也因此恃功而驕，晏子為避免造成未來可能的傷害，建議齊景公早日消除禍患。&nbsp;</blockquote><blockquote>晏子設了一個局：讓齊景公把三位勇士請來，要賞賜他們三位兩顆珍貴的桃子；而三個人無法平分兩顆桃子，晏子便提出協調辦法——三人比功勞，功勞大的就可以取一顆桃。公孫接與田開疆都先報出他們自己的功績，分別各拿了一個桃子。這時，古冶子認為自己功勞更大，氣得拔劍指責前二者；而公孫接與田開疆聽到古冶子報出自己的功勞之後，也自覺不如，羞愧之餘便將桃子讓出並自盡。儘管如此，古冶子卻對先前羞辱別人吹捧自己以及讓別人為自己犧牲的醜態感到羞恥，因此也拔劍自刎——就這樣，只靠著兩顆桃子，兵不血刃地去掉三個威脅。</blockquote>Oracle 對於 OOo 與 LibreOffice 所抱持的想法，是不是如同晏子一般？我想倒不至於。畢竟 OOo 與 LibreOffice 的互爭，Oracle 並無法從中獲得漁翁之利，他單純只是不想碰了，又對 LibreOffice 背後的 TDF 心存芥蒂，因此將 OOo 送給了 Apache 基金會。不過這麼一來，在一旁啥也沒幹的微軟，反而成了最大受益者。<br /><br />話說回來，我之前有好長一段時間也是 OOo 的忠實用戶。不過現在我的主要工作都移到 Google 文件上了，這次重灌電腦有想說再來灌個 Office 套件，畢竟偶爾處理大量資料的試算表時，本機端還是比線上來得快速方便。只是看到目前這樣局勢未明的狀態，我還是先觀望一陣子，等之後有需要時再來看看要裝哪套好了。</p>
 ]]></content>
   </entry>
   

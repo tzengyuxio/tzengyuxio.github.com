@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="會買這本漫畫，主要是因為荒木飛呂彥與主題：「奇人異士」。我對荒木的畫風感覺一般，甚至有時候還覺得畫面太亂了，讀起來辛苦。但是由他來畫這些怪咖，卻是再適合不過。荒木作畫裡的詭異配色與扭曲的姿勢，與「奇人異士」這個題材配起來真是天生一對。可惜買回家拆開之後才發現，六則故事中真正由荒木操刀的不到兩篇， &hellip;">
+  <meta name="description" content="這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：作業系統：Mac OS X 10.7.2程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers步驟流程如下1. 準備 C/C++ 的編譯環境這步驟在 Mac &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/26/eclipse-for-cplusplus/">在 Eclipse 開發 C/C++</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-26T10:15:00+08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br />步驟流程如下<br /><br /><u>1. 準備 C/C++ 的編譯環境</u><br /><br />這步驟在 Mac 上可以略過。在 Windows 上的話則要安裝 MinGW, 關於 MinGW 的安裝可以參考<a href="http://nknush.kh.edu.tw/~johnsirhp/Eclipse+CDT+MinGW.htm">這篇文章</a>。<br /><br /><br /><u>2. 將 CDT (C/C++ Development Tooling) 加入 Software Sites 列表</u><br /><br />由於 CDT 是由 Eclipse 官方提供的，因此在預設的「Available Software Sites」列表中可以找到。開啟 Eclipse 的「偏好設定」，並切到「Available Software Sites」頁面，可以看到如下畫面。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-QayvoraAzKA/TvfV9NUGZ1I/AAAAAAAAJEE/q12pUzYG1co/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%25889.57.14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" height="203" src="http://3.bp.blogspot.com/-QayvoraAzKA/TvfV9NUGZ1I/AAAAAAAAJEE/q12pUzYG1co/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%25889.57.14.png" width="320" /></a></div><br />如果看到的畫面沒有像上圖那麼多的空白選項，那麼應該是剛安裝好 Eclipse, 還在從 Server 上抓取清單。放著 Eclipse 幾分鐘不動，它會自動於背景抓取選項清單，再打開「Available Software Sites」就可以看到如上畫面了。<br /><br />接著在「type filter text」的欄位中輸入「cdt」，可以過濾出 CDT 的軟體網址，在前面的格子中打個勾，按「OK」鈕關閉視窗，就完成了這一步驟。<br /><br /><br /><u>3. 安裝 CDT</u><br /><br />完成上一個步驟後，點選單列的「Help」→「Install New Software」開啟 Install 對話視窗。這時候可以在「Work with:」的下拉選單中找到剛剛加入的 CDT Site，如下圖。選取之後會出現安裝內容，我只勾選了「CDT Main Features」，按視窗右下角的「Finish」按鈕，接著就是照著畫面的提示操作了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-1dcgAwlIcSU/TvfcWB5tVrI/AAAAAAAAJEw/ToSvE_LSGfo/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.15.14-1.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="284" src="http://3.bp.blogspot.com/-1dcgAwlIcSU/TvfcWB5tVrI/AAAAAAAAJEw/ToSvE_LSGfo/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.15.14-1.jpg" width="320" /></a></div><br />安裝完後會要求重新啟動 Eclipse，就給它重開吧！<br /><br /><br /><u>4. 開始寫 C++</u><br /><br />重開後在選單「File」→「New」→「Project」的對話視窗如果有看到如下的 C++ 專案選項，就表示安裝完成，可以開始寫 C/C++ 囉～<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-iEQbEUewMEA/TvfdRQJFckI/AAAAAAAAJE8/Ndosd3iUtyE/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.32.42.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="305" src="http://4.bp.blogspot.com/-iEQbEUewMEA/TvfdRQJFckI/AAAAAAAAJE8/Ndosd3iUtyE/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.32.42.png" width="320" /></a></div><br />等等，這個世界沒有那麼美好。當你建了一個 C++ 專案之後，一編譯下去你會看到 Eclipse 跳出一個 Unable To Launch 的錯誤訊息。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-3mwVlb3DwUA/Tvffz3ugo2I/AAAAAAAAJFI/3Nl35p7xKw0/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.36.13.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="242" src="http://2.bp.blogspot.com/-3mwVlb3DwUA/Tvffz3ugo2I/AAAAAAAAJFI/3Nl35p7xKw0/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.36.13.png" width="320" /></a></div><br />會出現這個錯誤，主要是因為 Eclipse 編譯完要輸出可執行檔，可是卻沒有對應的資料夾可以輸出，輸出失敗，因此會找不到執行檔來 Launch。解決的方式是在左側的 Project Explorer 對專案按右鍵叫出選單，選擇「Build Configurations」→「Build All」，這個動作可以讓 Eclipse 生成對應的輸出資料夾，這樣下次直接 Run 時便可正確產生編譯好的執行檔了。<br /><ol></ol></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -402,135 +438,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/08/09/embeded-facebook-and-twitter-button-in-page/">在網頁中嵌入 Facebook 與 Twitter 社交按鈕</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-08-09T19:02:00+08:00" pubdate data-updated="true">Aug 9<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Facebook 常見的社交按鈕有兩種：<strong>Facebook Share</strong> 與 <strong>Facebook Like</strong>，不過前者已經不在 Facebook 官方提供的 Plugin 列表中，連到<a href="http://developers.facebook.com/docs/share">舊的 Facebook Share 說明頁面</a>會自動導向 <a href="http://developers.facebook.com/docs/reference/plugins/like/">Facebook Like 的說明頁面</a>，看起來 Facebook 似乎有意以 Like 取代 Share 的地位。雖然如此，兩種功能還是有其不同的定位，目前也都能夠共存並用。關於兩者差異的說明，可以參考<a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">這篇文章（英文）</a>。下面則是 Facebook 與 twitter 各種社交功能與外觀的顯示範例與分享代碼。</p>
-
-<h2>Facebook Share 的分享代碼</h2>
-
-<h3>按鈕配置</h3>
-
-<p><a href="http://www.facebook.com/sharer.php" name="fb_share" type="button_count">分享</a></p>
-
-<pre class="prettyprint"><code>&lt;a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php"&gt;分享&lt;/a&gt;&lt;script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"&gt;&lt;/script&gt;
-</code></pre>
-
-
-<h3>方塊配置</h3>
-
-<p><a href="http://www.facebook.com/sharer.php" name="fb_share" type="box_count">分享</a></p>
-
-<pre class="prettyprint"><code>&lt;a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php"&gt;分享&lt;/a&gt;&lt;script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"&gt;&lt;/script&gt;
-</code></pre>
-
-
-
-
-<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript">
-</script>
-
-
-<h2>Facebook Like 的分享代碼</h2>
-
-<h3>標準配置</h3>
-
-<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" style="border: none; height: 20px; overflow: hidden; width: 450px;"></iframe>
-
-
-
-
-<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=standard&amp;amp;width=450&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=20&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:450px; height:20px;'&gt;&lt;/iframe&gt;
-</code></pre>
-
-
-<h3>按鈕配置</h3>
-
-<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" style="border: none; height: 20px; overflow: hidden; width: 90px;"></iframe>
-
-
-
-
-<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=button_count&amp;amp;width=90&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=20&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:90px; height:20px;'&gt;&lt;/iframe&gt;
-</code></pre>
-
-
-<h3>方塊配置</h3>
-
-<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?app_id=147491145332691&amp;href=http://coder.aqualuna.me/2011/08/facebook-twitter.html&amp;send=false&amp;layout=box_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=63" style="border: none; height: 63px; overflow: hidden; width: 90px;"></iframe>
-
-
-
-
-<pre class="prettyprint"><code>&lt;iframe allowTransparency='true' expr:src='&amp;quot;http://www.facebook.com/plugins/like.php?href=&amp;quot; + data:post.url + &amp;quot;&amp;amp;send=false&amp;amp;layout=box_count&amp;amp;width=90&amp;amp;show_faces=false&amp;amp;action=like&amp;amp;colorscheme=light&amp;amp;font=tahoma&amp;amp;height=63&amp;quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:90px; height:63px;'&gt;&lt;/iframe&gt;
-</code></pre>
-
-
-<h2>twitter 的分享代碼</h2>
-
-<h3>水平按鈕</h3>
-
-<p><a class="twitter-share-button" href="http://twitter.com/share">Tweet</a></p>
-
-<pre class="prettyprint"><code>&lt;script src='http://platform.twitter.com/widgets.js' type='text/javascript'/&gt;
-&lt;a class='twitter-share-button' href='http://twitter.com/share' expr:data-url='data:post.url' expr:data-text='data:post.title'&gt;Tweet&lt;/a&gt;
-</code></pre>
-
-
-<h3>垂直按鈕</h3>
-
-<p><a class="twitter-share-button" data-count="vertical" href="http://twitter.com/share">Tweet</a></p>
-
-<pre class="prettyprint"><code>&lt;script src='http://platform.twitter.com/widgets.js' type='text/javascript'/&gt;
-&lt;a class='twitter-share-button' href='http://twitter.com/share' expr:data-url='data:post.url' expr:data-text='data:post.title' data-count='vertical'&gt;Tweet&lt;/a&gt;
-</code></pre>
-
-
-<h2>參考資料</h2>
-
-<ul>
-<li><a href="http://developers.facebook.com/docs/reference/plugins/like/">Like Button - Facebook Developers</a></li>
-<li><a href="https://dev.twitter.com/docs/tweet-button">Tweet Button | Twitter Developers</a></li>
-<li><a href="http://daggle.com/facebook-button-facebook-share-keeping-1792">Facebook Like Button Vs. Facebook Share: Why I’m Keeping Both</a></li>
-<li><a href="http://jinnsblog.blogspot.com/2010/12/facebook-share-link-button-widget.html">[Blogger] 臉書的「分享」、「讚」推文按扭語法分享-靖 ● 技場</a></li>
-<li><a href="http://jasonblog.tw/2010/05/add-facebook-share-button-on-blogger.html">在Blogger裝置具有計數功能的Facebook分享按鈕 | 哲生博客 Jason Blog</a></li>
-<li><a href="http://jasonblog.tw/2010/04/add-facebook-like-button-on-your.html">在Blogger嵌入Facebook的讚(Like)按鈕 | 哲生博客 Jason Blog</a></li>
-<li><a href="http://clonn.blogspot.com/2011/05/bloggerfacebook-add-facebook-like.html">[教學] Blogger當中加入facebook 讚！ Add facebook like button in Blogger template</a></li>
-<li><a href="http://www.bloggerplugins.org/2010/08/twitter-share-buttons-for-blogger-tweet.html">Official Twitter Share Button (Tweet Button) for Blogger ~ Blogger Widgets</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -546,6 +453,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
@@ -569,10 +480,6 @@
     
       <li class="post">
         <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
       </li>
     
   </ul>

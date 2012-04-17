@@ -9,8 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="偶然發現這個地方竟然有人 subcribe。或許是存在著什麼共同興趣，也或許是「一度以外，六度之內」的朋友。總言之，竊喜。以及－－感謝。
-">
+  <meta name="description" content="當圖文並列時，若要讓圖片能夠對齊排列，而不是呈現出梯狀的分佈。可以使用下列語法：&lt;img src="http://where.image.is/picture-01.jpg" style="float:left"&gt;文字段落一&lt;br&gt;&lt;img src="http:// &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/14/css-image-alignment/">［CSS］圖文對齊排列</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-14T01:34:00+08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>當圖文並列時，若要讓圖片能夠對齊排列，而不是呈現出梯狀的分佈。<br />可以使用下列語法：<br /><code><br />&lt;img src="http://where.image.is/picture-01.jpg" style="float:left"&gt;<br />文字段落一&lt;br&gt;<br /><br />&lt;img src="http://where.image.is/picture-02.jpg" style="float:left; clear:left"&gt;<br />文字段落二&lt;br&gt;<br /></code><br />重點在於第二個 img 內的 &#8220;clear:left&#8221;<br />這個屬性的意思是<span style="font-weight: bold; color: rgb(255, 102, 102);">如果左邊有浮動元件的話，此元件便移到該浮動元件下方</span>。<br /><br />而 &#8220;float:left&#8221; 則是將所屬元件指定為浮動性質。<br /><br />下一篇便是應用範例。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -405,46 +440,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/10/06/xiao-lu-luan/">［小鹿乱］無題</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-10-06T06:37:00+08:00" pubdate data-updated="true">Oct 6<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol><li>被找去其他樓層代表開會。各部門派出一個。她的部門與會議似乎沒有直接關係。正想說她應該不會去吧，就聽到她也是同樓層代表之一的宣布。</li><li>進到會議室內大家找位置坐。進得較晚以致她的身旁已沒有空位。拉了一張椅子遠離人群坐著，沒想到要開始前她也把椅子拉到自己的座位旁邊。</li><li>儘管兩人相鄰而坐，還是沒有對話，沒有相視而談。他只是自顧自地注意她動作的小細節，默默地跟著她一起翹著腿，換腿，打呵欠；<u>學生般青澀靦腆的暗戀</u>。</li><li>與男同事下班後一同到公司附近吃晚餐，她意外地與其他女同事出現同一間小吃店買晚餐。他們在店裡用餐；她們買完了先走。不久他接到她電話，說是要請他跟老闆多拿碗湯帶回公司。<u>這是她給他的第一通電話</u>。</li></ol>
-
-
-<hr><span style="color: gray;">先這樣吧，想不出會怎麼發展。</span>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/15/">&larr; Older</a>
@@ -460,6 +455,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
@@ -483,10 +482,6 @@
     
       <li class="post">
         <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/29/octopress-unboxing/">Octopress 開箱首發文</a>
       </li>
     
   </ul>

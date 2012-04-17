@@ -323,8 +323,8 @@
         <lastmod>2012-04-01T07:59:10+08:00</lastmod>
     </url>
     <url>
-        <loc>http://tzengyuxio.me/blog/2011/06/02/roald-dahl/</loc>
-        <lastmod>2012-04-01T07:59:10+08:00</lastmod>
+        <loc>http://tzengyuxio.me/blog/2011/06/02/the-best-of-roald-dahl/</loc>
+        <lastmod>2012-04-18T04:47:30+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2011/06/03/four-four/</loc>
@@ -618,7 +618,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/03/26/json-for-vim/</loc>
-        <lastmod>2012-03-30T13:12:50+08:00</lastmod>
+        <lastmod>2012-04-18T01:35:13+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac/</loc>
@@ -626,7 +626,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby/</loc>
-        <lastmod>2012-03-30T12:31:51+08:00</lastmod>
+        <lastmod>2012-04-18T01:37:58+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/03/29/octopress-unboxing/</loc>
@@ -652,11 +652,15 @@
         <loc>
             http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/
         </loc>
-        <lastmod>2012-04-11T10:58:20+08:00</lastmod>
+        <lastmod>2012-04-18T01:31:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/</loc>
-        <lastmod>2012-04-11T10:56:21+08:00</lastmod>
+        <lastmod>2012-04-18T01:32:19+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2012/04/18/saigo-kara-nibanme-no-koi/</loc>
+        <lastmod>2012-04-18T07:11:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/about/</loc>
@@ -664,10 +668,10 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/archives/</loc>
-        <lastmod>2012-04-11T10:58:20+08:00</lastmod>
+        <lastmod>2012-04-18T07:11:23+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/</loc>
-        <lastmod>2012-04-11T10:58:20+08:00</lastmod>
+        <lastmod>2012-04-18T07:11:23+08:00</lastmod>
     </url>
 </urlset>
