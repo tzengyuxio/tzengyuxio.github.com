@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>形形色色的標籤機制 - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如： tag: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣
+label: Gmail, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">形形色色的標籤機制</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-18T09:53:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img src="/images/2012/2012-04-18-inconsistency-of-tags.jpg" alt="inconsistency of tags" /></p>
+
+<p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
+
+<ul>
+<li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>
+<li><code>label</code>: Gmail, Blogger</li>
+<li><code>keyword</code>: iPhoto, Aperture</li>
+<li><code>hashtag</code>: Twitter, Google+</li>
+<li><code>category</code>: Anobii, WordPress</li>
+</ul>
+
+
+<p>考慮到中文翻譯的話，又更加混亂：</p>
+
+<ul>
+<li><strong>標籤</strong>：Flickr, Gmail, Blogger, 豆瓣, WordPress</li>
+<li><strong>標記</strong>：Picasa, YouTube</li>
+<li><strong>關鍵字</strong>：iPhoto</li>
+<li><strong>分類</strong>：Anobii, WordPress</li>
+</ul>
+
+
+<p>針對以上的清單進行耙梳，我們可以得到下面幾個觀察：</p>
+
+<ol>
+<li><p>這些類似的功能中，最常見的英文名字是 &#8220;tag&#8221;，中文名字是「標籤／标签」。</p></li>
+<li><p>然而在 Google 的產品中，&#8221;tag&#8221; 通常翻作「標記」；「標籤」這詞則是用在 &#8220;label&#8221; 上（儘管他們兩者功能接近）。</p></li>
+<li><p>hashtag 有其自有的形式：<code>#somewordswithoutspace</code>, 不過其使用的方式與目的和單純的標籤（tag）並無太大差別。</p></li>
+<li><p>有些應用服務存在著 category 與 tag 兩種機制，一個物件（例如部落格文章）可能只隸屬於單一分類（category）但可擁有多個標籤（tag）。但是現在越來越多的應用服務都可以讓使用者將單一物件同時歸屬於多個分類之下，使得分類與標籤的界線漸趨模糊。</p></li>
+<li><p>可以從另外一個角度來釐清分類與標籤的不同：分類屬於事先規劃好的清單，標籤則是依照物件內容隨意添加的清單。</p></li>
+<li><p>不過在只有「分類」沒有「標籤」機制的網站中（如 Anobii），「分類」的使用方式其實跟「標籤」是沒有兩樣的。</p></li>
+<li><p>反之，只有標籤機制的網站，如 Blogger, 某種程度上也可以透過標籤來模擬分類的機制（可以參考<a href="http://reader.aqualuna.me/">此網站</a>的右側選單）。</p></li>
+</ol>
+
+
+<p>蠻混亂的，不是嗎？為了方便起見，我這邊用「<strong>分類 (category)</strong>」、「<strong>標籤 (tag)</strong>」與「<strong>Hashtag</strong>」來稱呼上面一大堆名字所代表的功能，其中「標籤 (tag)」同時也代表了 <em>label</em> 與 <em>keyword</em>。</p>
+
+<p>分類、標籤與 Hashtag 三者的功能接近又互相重疊，命名也是各家網站各自為政，沒有個準。不過混亂還沒結束，讓我們針對「標籤」的部份，繼續深入研究下去。</p>
+
+<h3>標籤格式</h3>
+
+<p>標籤的格式牽扯的問題既廣且深，它不僅決定了使用者在輸入欄位中填入標籤的方法，也涉及到了資料儲存在資料庫中的方式。標籤的格式有以下幾個考量層面：</p>
+
+<ol>
+<li><p>間隔方式</p>
+
+<p> 常見的間隔方式分兩種：<strong>空白</strong>與<strong>逗號</strong>。Flickr 採用空白間隔，Blogger 與 YouTube 則是逗號間隔。這邊還看不出什麼大問題，請接著看下去。</p></li>
+<li><p>允許空白與否</p>
+
+<p> 基本上，大多數的標籤功能都允許標籤內含空白，我們免不了會遇到例如 <code>"White House"</code> 或 <code>"Windows Vista"</code> 這樣的標籤。這時候不同的間隔方式就會帶來不同的考量了。</p>
+
+<ol>
+<li><p><strong>以空白間隔的標籤</strong>，為了要允許空白字元作為標籤的一部分，所以必須引入引號，被引號包住的詞算做一個標籤，這是 Flickr 的作法。所以一張有「<code>white</code> <code>house</code>」標籤的照片，也許是張白色的房子；而一張有「<code>"white house"</code>」標籤的照片，則可能是美國白宮。不過這樣會使得引號無法作為標籤的一部分，比方說「<code>5'7"</code>」（五呎七吋）這樣的詞就不能拿來當標籤了。</p></li>
+<li><p><strong>以逗號間隔的標籤</strong>，在含有空白間隔的標籤問題上看起來比較單純。但實作上其實有一點要注意，就是真正的間隔符號並非單單只有逗號，而是<strong>逗號加上一個空白</strong>。因為人們在輸入時習慣在逗號後面加入空白，如果說空白是合法標籤字元的話，那麼為什麼只有單字間的空白才被記入，單字前後的空白都被忽略呢？</p></li>
+</ol>
+</li>
+<li><p>大小寫</p>
+
+<p> 這邊再以 Flickr 與 YouTube 為例子作比較。YouTube 對於標籤的大小寫是照單全收，所以 <code>"TREE"</code> 標籤點下去的搜尋就是 &#8220;TREE&#8221;，而反之全小寫標籤的搜尋文字就是小寫的，反正搜尋結果無視大小寫，所以不成問題。</p>
+
+<p> Flickr 的作法稍微複雜些，除了你所輸入的之外，Flickr 還會另外將標籤簡化，然後儲存。你可以在三張照片分別使用 <code>"TREE"</code> 與 <code>"Tree"</code> 與 <code>"tree"</code>  這三種大小不同的標籤名，顯示時也是顯示各自不同的大小寫，然而他們都是代表著同樣的一個標籤。所以，如果你在一張照片中使用了 <code>"TREE"</code> 的標籤後，接著再輸入 <code>"tree"</code> 標籤，會發現沒有任何反應，因為標籤重複了。</p></li>
+<li><p>內部處理</p>
+
+<p> Flickr 在輸入標籤時所做的處理，除了大小寫外，也套用在空白上。因此，<code>"White House"</code>, <code>"whitehouse"</code>, <code>"WhiteHouse"</code> 這三個標籤同樣都是指向 <code>"whitehouse"</code> 這個內部處理的標籤。Flickr 內部運作時的標籤，是會把空白去掉並且全部轉為小寫字母。</p>
+
+<p> Youtube 就不同了，如前所述，你輸入什麼標籤它就存什麼，所以 <code>"White House"</code> 跟 <code>"whitehouse"</code> 是不同的。事實上，你用這兩組字串去 YouTube 搜尋，也會得到不一樣的結果。</p></li>
+</ol>
+
+
+<hr />
+
+<p>延伸閱讀：<a href="http://37signals.com/svn/archives2/tag_formats_cant_we_all_just_get_along.php">Tag formats: Can&#8217;t we all just get along? - Signal vs. Noise (by 37signals)</a></p>
+
+<p>2005 年的文章。估計是 37signals 要實作標籤系統時，研究了當時幾個主流網站的標籤機制，對象包括 del.icio.us, 43things, Yahoo’s My Web, flickr 與 Amazon。這篇文章底下也有頗多值得一看的討論。文章的最後提到：</p>
+
+<blockquote><p>當新科技剛出現時，不一致是免不了的。然而這些不同的格式是否會持續下去，或是終將會有個標準一統天下呢？</p></blockquote>
+
+<p>2005 到現在，都六、七年了，標籤功能其實仍舊處於混沌未明的時代。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-18T09:53:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/talks/'>talks</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/" title="Previous Post: 最後から二番目の恋（日劇）">&laquo; 最後から二番目の恋（日劇）</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/';
+        var disqus_url = 'http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

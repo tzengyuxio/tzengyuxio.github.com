@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="剛剛在 Terminal 下開了個新檔要來寫 JSON, 發現 Vim 竟然沒有支援 JSON 的 FileType 與 syntax highlight。想說這問題應該很多人遇過，因此上網找了一下，找到這個 script: JSON.vim。 不過看了下安裝說明，感覺麻煩了點。 &hellip;">
+  <meta name="description" content="昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。 是說原本預設的也夠我用了就是，不過有個多采多姿的 ls &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,80 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/03/29/ls-color-on-mac/">Ls Color on Mac</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-29T01:44:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="/images/2012/2012-03-29-ls-color.png" alt="ls color" /></p>
+
+<p>昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。</p>
+
+<p>是說原本預設的也夠我用了就是，不過有個多采多姿的 ls 輸出不僅能提昇工作效率，光看著心情也會好起來。</p>
+
+<h2>開啟顏色輸出</h2>
+
+<p>在 Linux 要開啟顏色輸出是透過 <code>ls --color</code> 指令。而在 Mac 或 BSD 上則是使用 <code>ls -G</code>。</p>
+
+<p>當然，每次都加這參數也是麻煩。寫程式的都是懶人，所以我在 <code>~/.bashrc</code> 檔案中加入下面這行設定：</p>
+
+<pre><code>alias ls='ls -GF'
+</code></pre>
+
+<p>要說明一下的是，上面的設定除了開啟顏色輸出外，還加了 <code>-F</code> 這個能夠在 ls 輸出中加入識別符號的參數。像是目錄的名字後面會加上 &#8216;/&#8217;, 可執行檔會加上 &#8216;*&#8217;,  符號連結 (symbolic link) 會加上 &#8216;@&#8217; 等等。</p>
+
+<h2>顏色的指定</h2>
+
+<p>關於顏色的指定，Linux 使用 <code>LS_COLORS</code> 環境變數，BSD 則是使用 <code>LSCOLORS</code>。兩者的設定方式也不同，這部份網路上資料很好找，就不贅述。</p>
+
+<p>直接說結果，我所使用的顏色組合如下：</p>
+
+<pre><code>export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+</code></pre>
+
+<p>將這行加入 <code>~/.bash_profile</code> 就可以享受美美的 ls 了。這個配色設定是從 <a href="https://github.com/seebi/dircolors-solarized/issues/10">LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD</a> 這網頁參考來的。</p>
+
+<p>附帶一提，Mac 或 BSD 的 <code>LSCOLORS</code> 參數只能指定預設檔案類型的顏色，比較常見的類型只有檔案、可執行檔、符號連結三種。Linux 的 <code>LS_COLORS</code> 除了上述這些之外，還可以針對附檔名作指定，像是把 .zip .rar .tgz 等壓縮檔設成黃色；然後 .avi .m4v .mov 等影片檔設成洋紅色之類的。</p>
+
+<h2>補充資訊</h2>
+
+<ol>
+<li>BSD 下還有一個環境變數 <code>CLICOLOR</code>, 在 <code>~/.bash_profile</code> 中加入 <code>export CLICOLOR=1</code> 可以得到跟 <code>ls -G</code> 一樣的效果。</li>
+<li>如果想要自己配色的，<a href="http://geoff.greer.fm/lscolors/">LSCOLORS Generator</a> 這個網頁提供了一個方便的配色小工具。</li>
+<li>喜歡 Solarized 的話，<a href="https://github.com/seebi/dircolors-solarized">seebi/dircolors-solarized</a> 是一個將 Solarized 延伸到 ls color 的專案。可惜只適用在 <strong>GNU ls</strong>, 也就是 Linux 系統上的 ls。</li>
+<li>如果你無論如何也想在 Mac 上看到壓縮檔、影片檔、音樂檔等不同類型檔案也有不同顏色，或是想要使用上面提到的 Solarized ls 配色，那麼可以考慮安裝 <a href="http://www.gnu.org/software/coreutils/">Coreutils - GNU core utilities</a> 這套件。</li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -747,18 +821,23 @@ public class GetEnv {
 
   <div class="entry-content"><p>最近想把 Mac 裡一些常用的資料夾換個圖示，找到的步驟如下：</p>
 
-
-<ol><li>選取資料夾，開啟該資料夾的「簡介」視窗。</li><li>將下載好的 .icns 圖示檔拉到「簡介」視窗最上方的小圖示上，就可以換掉原有圖示了。</li></ol>
+<ol>
+<li>選取資料夾，開啟該資料夾的「簡介」視窗。</li>
+<li>將下載好的 .icns 圖示檔拉到「簡介」視窗最上方的小圖示上，就可以換掉原有圖示了。</li>
+</ol>
 
 
 <p>我照了這個方法作，不過從網路上下載的 .icns 圖示檔，有些拉上去後可以成功更換資料夾圖示，有些卻不行。研究了半天也搞不清楚為什麼有些成功有些不行。後來找到了另外一個換圖示的方法，不僅更簡單，而且除了 .icns 檔案外，也適用於任何圖檔。方法如下：</p>
 
-
-<ol><li>用「預覽程式」開啟你要用來當資料夾圖示的 .icns 檔，或其他圖檔。當然，尺寸最好是 512x512。</li><li>開啟後，依序按下⌘A（全選），⌘C（複製）。</li><li>然後選取想要更換圖示的資料夾，開啟該資料夾的「簡介」視窗。</li><li>點選「簡介」視窗最上方的小圖示，按下⌘V（貼上），大功告成！</li></ol>
+<ol>
+<li>用「預覽程式」開啟你要用來當資料夾圖示的 .icns 檔，或其他圖檔。當然，尺寸最好是 512x512。</li>
+<li>開啟後，依序按下⌘A（全選），⌘C（複製）。</li>
+<li>然後選取想要更換圖示的資料夾，開啟該資料夾的「簡介」視窗。</li>
+<li>點選「簡介」視窗最上方的小圖示，按下⌘V（貼上），大功告成！</li>
+</ol>
 
 
 <p>這個方法除了資料夾外，也可以用來更改磁碟映像檔的圖示。</p>
-
 </div>
   
   
@@ -830,70 +909,6 @@ public class GetEnv {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/10/from-zenburn-to-solarized/">代碼配色，從 Zenburn 到 Solarized</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-10T08:40:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>這些年來，我的代碼配色方案都是以 <a href="http://coder.aqualuna.me/search/label/Zenburn">zenburn</a> 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse 再到 XCode 都可以<a href="http://slinky.imukuppi.org/zenburnpage/">找到現成的 zenburn 設定</a>。</p>
-
-
-<p><img src="https://lh4.googleusercontent.com/-m9F65JqmUDI/TzRk4vBNMkI/AAAAAAAAJVc/mShL8z4NQAc/s640/vim_zenburn.png" alt="zenburn @ vim" /></p>
-
-
-<p>上圖就是目前在用的 zenburn。由於用這麼久都已經習慣了，從沒有想過會有第二種配色讓我如此滿意，結果前天突然發現 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這一組配色，當場就被迷住了，我才認識這組配色不到 24 小時，就把 zenburn 從我的 vimrc 中換掉了。</p>
-
-
-<ul><li>官方網站：<a href="http://ethanschoonover.com/solarized">Solarized - Ethan Schoonover</a></li><li>GitHub 檔案庫：<a href="https://github.com/altercation/solarized">altercation / solarized - GitHub</a></li></ul>
-
-
-<p>說起來，會注意到 Solarized 也是無心插柳。原本是在找 markdown + blogger 的 solution, 沒有找著，倒是見到了一個以 github 為基礎的 blog framework, 叫 Octopress。我對 <a href="http://octopress.org/">Octopress</a> 沒有太多興趣，純粹好奇它的技術架構（畢竟以 SCM 作為 blog 後端，是很有趣的想法），所以研究了一下。然後意外地在<a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html">〈使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章〉</a>這篇文章中意外地注意到 Solarized 這組配色。</p>
-
-
-<p>Solarized 最令我覺得神奇的地方，就在於同一組基本色，可以任意搭配淺白色或淺黑色背景，都一樣清晰明瞭。它的色盤也控制在 16 色內，所以即使在終端機模式下使用也不會突兀。在官方網站上，也列出了 Visual Studio 與 Xcode 等 IDE 的配色支援；for eclipse 的配色網路上搜尋得到，不過官網上沒列出，不曉得是不是名字相衝的緣故（太陽 vs. 日蝕）=P</p>
-
-
-<p>我在終端機純文字模式下的 Vim 與圖形介面的 MacVim 分別指定了 Light 與 Dark 兩種配色。這樣在 Vim 中編輯時，只要瞄一下我就可以知道現在是在終端機模式下還是獨立的 Mac App。</p>
-
-
-<p><img src="https://lh3.googleusercontent.com/-wTKa4GLQKZE/TzRk46EP8GI/AAAAAAAAJVY/uhEJUnmBN14/s640/vim_solarized_yin.png" alt="solarized(yin) @ vim" /></p>
-
-
-<p><img src="https://lh4.googleusercontent.com/-nIid_yCO9y4/TzRk4nK58FI/AAAAAAAAJVU/Sbt62oMbNAY/s640/macvim_solarized_yang.png" alt="solarized(yang) @ macvim" /></p>
-
-
-<p>另外這配色除了用在程式碼外，也有提供給一般應用程式使用的版本，例如常見的 putty, OSX 自帶的 Terminal, 以及 iTerm 2 等。一樣都可以在 Solarized 放在 GitHub 上的 Repository 上找到。</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -909,6 +924,10 @@ public class GetEnv {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
@@ -932,10 +951,6 @@ public class GetEnv {
     
       <li class="post">
         <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
       </li>
     
   </ul>

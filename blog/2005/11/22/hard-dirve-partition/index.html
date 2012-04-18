@@ -9,7 +9,8 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="先前我的做法都依據 Clive Tong-I Lin 的 8G 經驗法則：我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。一般 server 用途, 8G 經驗法則還沒破功過 :)Windows &hellip;">
+  <meta name="description" content="先前我的做法都依據 Clive Tong-I Lin 的 8G 經驗法則： 我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。
+至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。 一般 server 用途, 8G 經驗法則還沒破功過 :) Windows &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -103,7 +104,55 @@
   </header>
 
 
-<div class="entry-content"><p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：<br /><br /><blockquote>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br />至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。<br /><p>一般 server 用途, 8G 經驗法則還沒破功過 :)<br /></p><p>Windows server 我也是這樣規劃, 前 8G 畫成 C: 灌系統,<br />其它的空間全劃成 D: 有的沒的任何資料都放 D:<br /></p>儘供參考。 </blockquote><br />不過上述經驗法則主要是針對 server 用途而言。而且隨著軟體越來越龐大（尤其是安裝了 VS.NET 之後，我以前不裝這玩意兒的），以及經歷過幾次 <span style="color: rgb(0, 153, 0);">/var</span> 爆掉的慘痛教訓（FreeBSD auto 預設給的 <span style="color: rgb(0, 153, 0);">/var</span> 都不大），看來似乎得重新思索一下硬碟分割的策略。<br /><br /><ol><li>系統給 10G（目前用最多的大概用到 8.2G/Windows，5G/FreeBSD without X）</li><li>剩下的給 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span></li><li>FreeBSD 下系統的分配策略：</li><ol><li><span style="color: rgb(0, 153, 0);">/</span> : 256M</li><li><span style="color: rgb(0, 153, 0);">/tmp</span> : 不大於 ram (或乾脆 = ram 就好)<br /></li><li><span style="color: rgb(0, 153, 0);">swap</span> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</li><li><span style="color: rgb(0, 153, 0);">/var</span> 視剩餘空間與 X 的安裝與否，分配 1～2G</li><li>其餘通通給 <span style="color: rgb(0, 153, 0);">/usr</span> (至少須 6G 以上)<br /></li></ol><li>將部份資料搬移出系統分割區</li><ol><li><span style="color: rgb(153, 153, 0);">C:\Documents and Settings\username\My Documents</span> 搬到 <span style="color: rgb(0, 153, 0);">D:\HOME\username</span></li><li><span style="color: rgb(153, 153, 0);">/usr/local/www</span> 搬到 <span style="color: rgb(0, 153, 0);">/home/www</span> 下</li><li>如果 <span style="color: rgb(0, 153, 0);">/usr</span> 空間吃緊，將 <span style="color: rgb(0, 153, 0);">/usr/ports/distfiles</span> 也搬到 <span style="color: rgb(0, 153, 0);">/home</span> 底下</li></ol><li>原則：所有「有意義」的變動性檔案、文件，或需要儲存備份的資料，都往 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 底下丟</li><ol><li>像 <span style="color: rgb(153, 153, 0);">網頁cache</span> 就是屬於「無意義」的變動性檔案；反之，遊戲存檔是「有意義」的</li><li><span style="font-weight: bold;">非</span>常用的軟體的也丟到 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或個人資料夾下，如臨時安裝的程式，或是遊戲軟體</li><li>將所有系統分割區中需要備份的檔案（如設定檔）在 <span style="color: rgb(0, 153, 0);">D:&lt;/span> 或 <span style="color: rgb(0, 153, 0);">/home</span> 之下建立捷徑或 symbolic link<br /></li><li>此為原則，有些情況不必完全照著原則來。如資料庫檔案通常還是放在 <span style="color: rgb(0, 153, 0);">/var/db</span></li></ol><li>總之 10G 給系統，剩下的都拿來塞資料用 XD</li></ol>其實重點只需記住最後一點，至於其他的細節，那些都是個人經驗的累積，參考看看即可，不必然全部照作。</p>
+<div class="entry-content"><p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+
+<blockquote><p>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br/>
+至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。</p>
+
+<p>一般 server 用途, 8G 經驗法則還沒破功過 :)</p>
+
+<p>Windows server 我也是這樣規劃, 前 8G 畫成 C: 灌系統,<br/>
+其它的空間全劃成 D: 有的沒的任何資料都放 D:</p>
+
+<p>儘供參考。</p></blockquote>
+
+<p>不過上述經驗法則主要是針對 server 用途而言。而且隨著軟體越來越龐大（尤其是安裝了 VS.NET 之後，我以前不裝這玩意兒的），以及經歷過幾次 <code>/var</code> 爆掉的慘痛教訓（FreeBSD auto 預設給的 <code>/var</code> 都不大），看來似乎得重新思索一下硬碟分割的策略。</p>
+
+<ol>
+<li><p>系統給 10G（目前用最多的大概用到 8.2G/Windows，5G/FreeBSD without X）</p></li>
+<li><p>剩下的給 <code>D:</code> 或 <code>/home</code></p></li>
+<li><p>FreeBSD 下系統的分配策略：</p>
+
+<ol>
+<li><p><code>/</code> : 256M</p></li>
+<li><p><code>/tmp</code> : 不大於 ram (或乾脆 = ram 就好)</p></li>
+<li><p><code>swap</code> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</p></li>
+<li><p><code>/var</code> 視剩餘空間與 X 的安裝與否，分配 1～2G</p></li>
+<li><p>其餘通通給 <code>/usr</code> (至少須 6G 以上)</p></li>
+</ol>
+</li>
+<li><p>將部份資料搬移出系統分割區</p>
+
+<ol>
+<li><p><code>C:\Documents and Settings\username\My Documents</code> 搬到 <code>D:\HOME\username</code></p></li>
+<li><p><code>/usr/local/www</code> 搬到 <code>/home/www</code> 下</p></li>
+<li><p>如果 <code>/usr</code> 空間吃緊，將 <code>/usr/ports/distfiles</code> 也搬到 <code>/home</code> 底下</p></li>
+</ol>
+</li>
+<li><p>原則：所有「有意義」的變動性檔案、文件，或需要儲存備份的資料，都往 <code>D:</code> 或 <code>/home</code> 底下丟</p>
+
+<ol>
+<li><p>像「網頁 cache」就是屬於<strong>無意義的</strong>變動性檔案；反之，「遊戲存檔」是<strong>有意義的</strong></p></li>
+<li><p>非常用的軟體的也丟到 <code>D:</code> 或個人資料夾下，如臨時安裝的程式，或是遊戲軟體</p></li>
+<li><p>將所有系統分割區中需要備份的檔案（如設定檔）在 <code>D:</code> 或 <code>/home</code> 之下建立捷徑或 symbolic link</p></li>
+<li><p>此為原則，有些情況不必完全照著原則來。如資料庫檔案通常還是放在 <code>/var/db</code></p></li>
+</ol>
+</li>
+<li><p><strong>總之 10G 給系統，剩下的都拿來塞資料用</strong> XD</p></li>
+</ol>
+
+
+<p>其實重點只需記住最後一點，至於其他的細節，那些都是個人經驗的累積，參考看看即可，不必然全部照作。</p>
 </div>
 
 
@@ -177,6 +226,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
       </li>
     
@@ -198,10 +251,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/30/octopress-unboxing-collections/">Octopress 的開箱文系列</a>
       </li>
     
   </ul>

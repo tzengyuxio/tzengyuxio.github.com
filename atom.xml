@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-18T07:12:33+08:00</updated>
+  <updated>2012-04-18T18:46:47+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,93 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[形形色色的標籤機制]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/"/>
+    <updated>2012-04-18T09:53:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats</id>
+    <content type="html"><![CDATA[<p><img src="http://tzengyuxio.me/images/2012/2012-04-18-inconsistency-of-tags.jpg" alt="inconsistency of tags" /></p>
+
+<p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
+
+<ul>
+<li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>
+<li><code>label</code>: Gmail, Blogger</li>
+<li><code>keyword</code>: iPhoto, Aperture</li>
+<li><code>hashtag</code>: Twitter, Google+</li>
+<li><code>category</code>: Anobii, WordPress</li>
+</ul>
+
+
+<p>考慮到中文翻譯的話，又更加混亂：</p>
+
+<ul>
+<li><strong>標籤</strong>：Flickr, Gmail, Blogger, 豆瓣, WordPress</li>
+<li><strong>標記</strong>：Picasa, YouTube</li>
+<li><strong>關鍵字</strong>：iPhoto</li>
+<li><strong>分類</strong>：Anobii, WordPress</li>
+</ul>
+
+
+<p>針對以上的清單進行耙梳，我們可以得到下面幾個觀察：</p>
+
+<ol>
+<li><p>這些類似的功能中，最常見的英文名字是 &#8220;tag&#8221;，中文名字是「標籤／标签」。</p></li>
+<li><p>然而在 Google 的產品中，&#8221;tag&#8221; 通常翻作「標記」；「標籤」這詞則是用在 &#8220;label&#8221; 上（儘管他們兩者功能接近）。</p></li>
+<li><p>hashtag 有其自有的形式：<code>#somewordswithoutspace</code>, 不過其使用的方式與目的和單純的標籤（tag）並無太大差別。</p></li>
+<li><p>有些應用服務存在著 category 與 tag 兩種機制，一個物件（例如部落格文章）可能只隸屬於單一分類（category）但可擁有多個標籤（tag）。但是現在越來越多的應用服務都可以讓使用者將單一物件同時歸屬於多個分類之下，使得分類與標籤的界線漸趨模糊。</p></li>
+<li><p>可以從另外一個角度來釐清分類與標籤的不同：分類屬於事先規劃好的清單，標籤則是依照物件內容隨意添加的清單。</p></li>
+<li><p>不過在只有「分類」沒有「標籤」機制的網站中（如 Anobii），「分類」的使用方式其實跟「標籤」是沒有兩樣的。</p></li>
+<li><p>反之，只有標籤機制的網站，如 Blogger, 某種程度上也可以透過標籤來模擬分類的機制（可以參考<a href="http://reader.aqualuna.me/">此網站</a>的右側選單）。</p></li>
+</ol>
+
+
+<p>蠻混亂的，不是嗎？為了方便起見，我這邊用「<strong>分類 (category)</strong>」、「<strong>標籤 (tag)</strong>」與「<strong>Hashtag</strong>」來稱呼上面一大堆名字所代表的功能，其中「標籤 (tag)」同時也代表了 <em>label</em> 與 <em>keyword</em>。</p>
+
+<p>分類、標籤與 Hashtag 三者的功能接近又互相重疊，命名也是各家網站各自為政，沒有個準。不過混亂還沒結束，讓我們針對「標籤」的部份，繼續深入研究下去。</p>
+
+<h3>標籤格式</h3>
+
+<p>標籤的格式牽扯的問題既廣且深，它不僅決定了使用者在輸入欄位中填入標籤的方法，也涉及到了資料儲存在資料庫中的方式。標籤的格式有以下幾個考量層面：</p>
+
+<ol>
+<li><p>間隔方式</p>
+
+<p> 常見的間隔方式分兩種：<strong>空白</strong>與<strong>逗號</strong>。Flickr 採用空白間隔，Blogger 與 YouTube 則是逗號間隔。這邊還看不出什麼大問題，請接著看下去。</p></li>
+<li><p>允許空白與否</p>
+
+<p> 基本上，大多數的標籤功能都允許標籤內含空白，我們免不了會遇到例如 <code>"White House"</code> 或 <code>"Windows Vista"</code> 這樣的標籤。這時候不同的間隔方式就會帶來不同的考量了。</p>
+
+<ol>
+<li><p><strong>以空白間隔的標籤</strong>，為了要允許空白字元作為標籤的一部分，所以必須引入引號，被引號包住的詞算做一個標籤，這是 Flickr 的作法。所以一張有「<code>white</code> <code>house</code>」標籤的照片，也許是張白色的房子；而一張有「<code>"white house"</code>」標籤的照片，則可能是美國白宮。不過這樣會使得引號無法作為標籤的一部分，比方說「<code>5'7"</code>」（五呎七吋）這樣的詞就不能拿來當標籤了。</p></li>
+<li><p><strong>以逗號間隔的標籤</strong>，在含有空白間隔的標籤問題上看起來比較單純。但實作上其實有一點要注意，就是真正的間隔符號並非單單只有逗號，而是<strong>逗號加上一個空白</strong>。因為人們在輸入時習慣在逗號後面加入空白，如果說空白是合法標籤字元的話，那麼為什麼只有單字間的空白才被記入，單字前後的空白都被忽略呢？</p></li>
+</ol>
+</li>
+<li><p>大小寫</p>
+
+<p> 這邊再以 Flickr 與 YouTube 為例子作比較。YouTube 對於標籤的大小寫是照單全收，所以 <code>"TREE"</code> 標籤點下去的搜尋就是 &#8220;TREE&#8221;，而反之全小寫標籤的搜尋文字就是小寫的，反正搜尋結果無視大小寫，所以不成問題。</p>
+
+<p> Flickr 的作法稍微複雜些，除了你所輸入的之外，Flickr 還會另外將標籤簡化，然後儲存。你可以在三張照片分別使用 <code>"TREE"</code> 與 <code>"Tree"</code> 與 <code>"tree"</code>  這三種大小不同的標籤名，顯示時也是顯示各自不同的大小寫，然而他們都是代表著同樣的一個標籤。所以，如果你在一張照片中使用了 <code>"TREE"</code> 的標籤後，接著再輸入 <code>"tree"</code> 標籤，會發現沒有任何反應，因為標籤重複了。</p></li>
+<li><p>內部處理</p>
+
+<p> Flickr 在輸入標籤時所做的處理，除了大小寫外，也套用在空白上。因此，<code>"White House"</code>, <code>"whitehouse"</code>, <code>"WhiteHouse"</code> 這三個標籤同樣都是指向 <code>"whitehouse"</code> 這個內部處理的標籤。Flickr 內部運作時的標籤，是會把空白去掉並且全部轉為小寫字母。</p>
+
+<p> Youtube 就不同了，如前所述，你輸入什麼標籤它就存什麼，所以 <code>"White House"</code> 跟 <code>"whitehouse"</code> 是不同的。事實上，你用這兩組字串去 YouTube 搜尋，也會得到不一樣的結果。</p></li>
+</ol>
+
+
+<hr />
+
+<p>延伸閱讀：<a href="http://37signals.com/svn/archives2/tag_formats_cant_we_all_just_get_along.php">Tag formats: Can&#8217;t we all just get along? - Signal vs. Noise (by 37signals)</a></p>
+
+<p>2005 年的文章。估計是 37signals 要實作標籤系統時，研究了當時幾個主流網站的標籤機制，對象包括 del.icio.us, 43things, Yahoo’s My Web, flickr 與 Amazon。這篇文章底下也有頗多值得一看的討論。文章的最後提到：</p>
+
+<blockquote><p>當新科技剛出現時，不一致是免不了的。然而這些不同的格式是否會持續下去，或是終將會有個標準一統天下呢？</p></blockquote>
+
+<p>2005 到現在，都六、七年了，標籤功能其實仍舊處於混沌未明的時代。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[最後から二番目の恋（日劇）]]></title>
@@ -999,18 +1086,23 @@ public class GetEnv {
     <id>http://tzengyuxio.me/blog/2012/02/13/change-folder-icon-in-mac</id>
     <content type="html"><![CDATA[<p>最近想把 Mac 裡一些常用的資料夾換個圖示，找到的步驟如下：</p>
 
-
-<ol><li>選取資料夾，開啟該資料夾的「簡介」視窗。</li><li>將下載好的 .icns 圖示檔拉到「簡介」視窗最上方的小圖示上，就可以換掉原有圖示了。</li></ol>
+<ol>
+<li>選取資料夾，開啟該資料夾的「簡介」視窗。</li>
+<li>將下載好的 .icns 圖示檔拉到「簡介」視窗最上方的小圖示上，就可以換掉原有圖示了。</li>
+</ol>
 
 
 <p>我照了這個方法作，不過從網路上下載的 .icns 圖示檔，有些拉上去後可以成功更換資料夾圖示，有些卻不行。研究了半天也搞不清楚為什麼有些成功有些不行。後來找到了另外一個換圖示的方法，不僅更簡單，而且除了 .icns 檔案外，也適用於任何圖檔。方法如下：</p>
 
-
-<ol><li>用「預覽程式」開啟你要用來當資料夾圖示的 .icns 檔，或其他圖檔。當然，尺寸最好是 512x512。</li><li>開啟後，依序按下⌘A（全選），⌘C（複製）。</li><li>然後選取想要更換圖示的資料夾，開啟該資料夾的「簡介」視窗。</li><li>點選「簡介」視窗最上方的小圖示，按下⌘V（貼上），大功告成！</li></ol>
+<ol>
+<li>用「預覽程式」開啟你要用來當資料夾圖示的 .icns 檔，或其他圖檔。當然，尺寸最好是 512x512。</li>
+<li>開啟後，依序按下⌘A（全選），⌘C（複製）。</li>
+<li>然後選取想要更換圖示的資料夾，開啟該資料夾的「簡介」視窗。</li>
+<li>點選「簡介」視窗最上方的小圖示，按下⌘V（貼上），大功告成！</li>
+</ol>
 
 
 <p>這個方法除了資料夾外，也可以用來更改磁碟映像檔的圖示。</p>
-
 ]]></content>
   </entry>
   
@@ -1047,43 +1139,6 @@ public class GetEnv {
 
 
 <hr /><p>這篇文章就是用上述流程所寫的，你可以<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20Blogging%20with%20Markdown.md">到這邊看看原始模樣</a>。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[代碼配色，從 Zenburn 到 Solarized]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized/"/>
-    <updated>2012-02-10T08:40:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized</id>
-    <content type="html"><![CDATA[<p>這些年來，我的代碼配色方案都是以 <a href="http://coder.aqualuna.me/search/label/Zenburn">zenburn</a> 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse 再到 XCode 都可以<a href="http://slinky.imukuppi.org/zenburnpage/">找到現成的 zenburn 設定</a>。</p>
-
-
-<p><img src="https://lh4.googleusercontent.com/-m9F65JqmUDI/TzRk4vBNMkI/AAAAAAAAJVc/mShL8z4NQAc/s640/vim_zenburn.png" alt="zenburn @ vim" /></p>
-
-
-<p>上圖就是目前在用的 zenburn。由於用這麼久都已經習慣了，從沒有想過會有第二種配色讓我如此滿意，結果前天突然發現 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這一組配色，當場就被迷住了，我才認識這組配色不到 24 小時，就把 zenburn 從我的 vimrc 中換掉了。</p>
-
-
-<ul><li>官方網站：<a href="http://ethanschoonover.com/solarized">Solarized - Ethan Schoonover</a></li><li>GitHub 檔案庫：<a href="https://github.com/altercation/solarized">altercation / solarized - GitHub</a></li></ul>
-
-
-<p>說起來，會注意到 Solarized 也是無心插柳。原本是在找 markdown + blogger 的 solution, 沒有找著，倒是見到了一個以 github 為基礎的 blog framework, 叫 Octopress。我對 <a href="http://octopress.org/">Octopress</a> 沒有太多興趣，純粹好奇它的技術架構（畢竟以 SCM 作為 blog 後端，是很有趣的想法），所以研究了一下。然後意外地在<a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html">〈使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章〉</a>這篇文章中意外地注意到 Solarized 這組配色。</p>
-
-
-<p>Solarized 最令我覺得神奇的地方，就在於同一組基本色，可以任意搭配淺白色或淺黑色背景，都一樣清晰明瞭。它的色盤也控制在 16 色內，所以即使在終端機模式下使用也不會突兀。在官方網站上，也列出了 Visual Studio 與 Xcode 等 IDE 的配色支援；for eclipse 的配色網路上搜尋得到，不過官網上沒列出，不曉得是不是名字相衝的緣故（太陽 vs. 日蝕）=P</p>
-
-
-<p>我在終端機純文字模式下的 Vim 與圖形介面的 MacVim 分別指定了 Light 與 Dark 兩種配色。這樣在 Vim 中編輯時，只要瞄一下我就可以知道現在是在終端機模式下還是獨立的 Mac App。</p>
-
-
-<p><img src="https://lh3.googleusercontent.com/-wTKa4GLQKZE/TzRk46EP8GI/AAAAAAAAJVY/uhEJUnmBN14/s640/vim_solarized_yin.png" alt="solarized(yin) @ vim" /></p>
-
-
-<p><img src="https://lh4.googleusercontent.com/-nIid_yCO9y4/TzRk4nK58FI/AAAAAAAAJVU/Sbt62oMbNAY/s640/macvim_solarized_yang.png" alt="solarized(yang) @ macvim" /></p>
-
-
-<p>另外這配色除了用在程式碼外，也有提供給一般應用程式使用的版本，例如常見的 putty, OSX 自帶的 Terminal, 以及 iTerm 2 等。一樣都可以在 Solarized 放在 GitHub 上的 Repository 上找到。</p>
 
 ]]></content>
   </entry>

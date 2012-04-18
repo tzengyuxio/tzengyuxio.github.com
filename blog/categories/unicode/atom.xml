@@ -4,7 +4,7 @@
   <title><![CDATA[Category: unicode | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/unicode/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-18T07:12:33+08:00</updated>
+  <updated>2012-04-18T18:46:47+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,70 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
-    <updated>2012-03-09T20:28:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
-    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
-
-<hr />
-
-<p>Byte Order Mark 在 UTF-16 Big Endian 是 "FE FF"，Little Endian 是 "FF FE"。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
-
-<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 "EF BB BF"。</p>
-
-<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
-
-<h2>在 VIM 中的 BOM 相關操作</h2>
-
-<h3>加入 BOM</h3>
-
-<pre><code>:set bomb
-</code></pre>
-
-<h3>移除 BOM</h3>
-
-<pre><code>:set nobomb
-</code></pre>
-
-<h3>查詢 BOM 狀態</h3>
-
-<pre><code>:set bomb?
-</code></pre>
-
-<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
-
-<h3>查詢包含 UTF-8 BOM 的檔案</h3>
-
-<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
-</code></pre>
-
-<h3>找出並移除 UTF-8 的 BOM</h3>
-
-<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
-</code></pre>
-
-<h3>編碼的轉換</h3>
-
-<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
-</code></pre>
-
-<p>其中 ENCODING 的部份可以是以下數值：</p>
-
-<ul>
-<li>UTF-8 UTF8</li>
-<li>UTF-16BE</li>
-<li>UTF-16LE</li>
-<li>UCS-2BE UNICODEBIG</li>
-<li>UCS-2LE UNICODELITTLE</li>
-</ul>
-
-
-<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼]]></title>
