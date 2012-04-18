@@ -3,7 +3,8 @@ layout: post
 title: "BOM (Byte Order Mark) 與 UTF-8"
 date: 2012-03-09 20:28
 comments: true
-categories: [vim, unicode]
+categories: [memo]
+tags: [vim, unicode, endian, bom]
 ---
 
 一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。

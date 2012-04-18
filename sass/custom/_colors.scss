@@ -3,8 +3,10 @@
 // If you need a handy color picker try http://hslpicker.com
 
 //$header-bg: #263347;
+$header-bg: #34302B;
 //$subtitle-color: lighten($header-bg, 58);
 //$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
+$nav-bg: desaturate(lighten(#b8b8c4, 18), 5);
 //$nav-bg-front: image-url('noise.png');
 //$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
 //$sidebar-bg: desaturate(#eceff5, 8);
@@ -13,6 +15,7 @@
 //$footer-bg: #ccc !default;
 //$footer-bg-front: image-url('noise.png');
 //$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
+$page-bg: #f4f4f4 !default;
 
 
 /* To use the light Solarized highlighting theme uncomment the following line */
@@ -41,3 +44,8 @@
 //$pre-bg: $base03;
 //$pre-border: darken($base02, 5);
 //$pre-color: $base1;
+
+$link-color: #3af;
+$link-color-hover: #f83;
+$link-color-visited: #369;
+$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;

@@ -29,7 +29,7 @@ body > header h2 {
 body {
   line-height: 1.5em;
   color: $text-color;
-  @extend .serif;
+  @extend .sans;
 }
 h1 {
   font-size: 2.2em;
@@ -37,7 +37,7 @@ h1 {
 }
 
 @media only screen and (min-width: 992px) {
-  body { font-size: 1.15em; }
+  body { font-size: 1.0em; }
   h1 { font-size: 2.6em; line-height: 1.2em; }
 }
 
@@ -109,7 +109,7 @@ blockquote {
   $bq-margin: 1.2em;
   font-style: italic;
   position: relative;
-  font-size: 1.2em;
+  font-size: 1.0em;
   line-height: 1.5em;
   padding-left: 1em;
   border-left: 4px solid rgba($text-color-light, .5);
@@ -122,6 +122,7 @@ blockquote {
     padding-left: 1.5em;
     border-left-width: 4px;
   }
+  @extend .serif;
 }
 
 .pullquote-right:before,

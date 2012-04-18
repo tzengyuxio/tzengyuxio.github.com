@@ -3,7 +3,8 @@ layout: post
 title: "JSON for Vim"
 date: 2012-03-26 10:42
 comments: true
-categories: vim
+categories: [editor]
+tags: [json, vim]
 ---
 
 剛剛在 Terminal 下開了個新檔要來寫 JSON, 發現 Vim 竟然沒有支援 JSON 的 FileType 與 syntax highlight。想說這問題應該很多人遇過，因此上網找了一下，找到這個 script: [JSON.vim][1]。
