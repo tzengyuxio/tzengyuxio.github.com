@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：作業系統：Mac OS X 10.7.2程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers步驟流程如下1. 準備 Python 的編譯環境同樣的，這步驟在 &hellip;">
+  <meta name="description" content="這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：作業系統：Mac OS X 10.7.2程式版本：Eclipse Indigo 3.7.1,IDE for Java DevelopersEclipse 的 Git 功能相關套件是官方所提供的 EGit &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,43 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/26/eclipse-with-git-and-svn/">在 Eclipse 使用 Git 與 SVN</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-26T21:16:00+08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-J0Sk2f21i5E/TvhxTRKpZLI/AAAAAAAAJGA/B2rKcoejSu4/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25888.51.13.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-J0Sk2f21i5E/TvhxTRKpZLI/AAAAAAAAJGA/B2rKcoejSu4/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25888.51.13.png" width="305" /></a></div><br />Eclipse 的 Git 功能相關套件是官方所提供的 EGit，在預設的「Available Software Sites」中可以找到，安裝方法可以參考〈<a href="http://coder.aqualuna.me/2011/12/eclipse-cc.html">在 Eclipse 開發 C/C++</a>〉這篇，唯一的差別是在第 2 步驟中，原本在「type filter text」欄位輸入「cdt」作為過濾字元，改成輸入「git」，這樣就可以找到 EGit 的 Software Site 了。<br /><br />Subversion 的部份稍微複雜點，但也不難，就是二選一的問題而已。Eclipse 的 Subversion 套件有兩個：Subclipse 和 Subversive。簡單的說，Subclipse 是 Subversion 官方出的套件，Subversive 是 Eclipse 官方出的套件，而為什麼兩邊的官方各自推出套件，這我就不想深究了，我也懶得同時裝起來測試看看哪個順手，所以就找了一下資料，以下的內容引用自〈<a href="http://www.akii.org/eclipse-svn-plugins-subclipse-vs-subversive.html">Eclipse SVN插件比较 Subclipse vs Subversive</a>〉這篇文章：<br /><br /><blockquote class="tr_bq">如何选择？我想可以从这几方面考虑：&nbsp;</blockquote><blockquote class="tr_bq">Eclipse 是否是你操作 SVN 的唯一途径？如果是，偏向于选择 Subversive；如果不是，比如说像我，还要经常使用 TortoiseSVN ，则偏向与选择 Subclipse 。Subclipse 的操作更倾向于与 TortoiseSVN 习惯，而 Subversive 的操作更倾向于 Eclipse 习惯操作。&nbsp;</blockquote><blockquote class="tr_bq">SVN是否是你的唯一版本管理系统（或最重要的管理系统），你是否对 SVN 的新功能、新特性比较感兴趣？如果是，偏向于选择 Subclipse ；否则，偏向于选择 Subversive。&nbsp;</blockquote><blockquote class="tr_bq">你的 SVN 操作是否会比较简单？比如你是否仅仅使用的仅仅是简单的检出/提交，等等操作，也不愿意把时间花费在研究 SVN 的高级特性上。如果是，偏向于选择 Subversive，如果否，则建议选择 Subclipse 。&nbsp;</blockquote><blockquote class="tr_bq">以上几点是否可以对你选择那个插件有所帮助呢？其实这两个插件都很不错，对于我们日常使用来说，哪个都能很好完成我们的任务，如果你还是不能确定， 就别再费神在这上面花工夫了，也不用再在网上寻找两者比较了，随便选一个就行了。</blockquote><br />我自己偶爾也會用用 TortoiseSVN, 或是直接用命令列，所以就選了 Subclipse。Subclipse 由於是非官方套件，安裝方式其實與 PyDev 一樣，所以只要參考〈<a href="http://coder.aqualuna.me/2011/12/eclipse-python.html">在 Eclipse 開發 Python</a>〉這篇即可，唯一的差別是第 2 步驟中在 Market 進行搜尋時的關鍵字，要把「pydev」換成「subclipse」。<br /><br />當然，如果你想裝 Subversive 的話，因為 Subversive 是 Eclipse 官方推出的套件，所以安裝方式跟 EGit 一樣，只要進「Available Software Sites」尋找預設選項即可。至於細節我就不再多加贅述了。<br /><br />後記：寫這篇文章的過程中發現，Eclipse Marketplace 除了直接連到<a href="http://marketplace.eclipse.org/">該網站</a>外，也可以透過 Eclipse 的選單列「Help」→「Eclipse Marketplace&#8230;」進入作搜尋，更加方便。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ouIbMPNwUJg/TvhzVdqADQI/AAAAAAAAJGM/GF2NZwcbOMA/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.14.36.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-ouIbMPNwUJg/TvhzVdqADQI/AAAAAAAAJGM/GF2NZwcbOMA/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.14.36.png" width="223" /></a></div><br />
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -403,42 +440,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/08/21/google-close-health-and-powermeter/">Google 關掉的 Health, PowerMeter 與字典</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-08-21T19:26:00+08:00" pubdate data-updated="true">Aug 21<span>st</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>雖然今年 <a href="http://blog.aqualuna.me/search/label/Google">Google</a>&nbsp;推出了熱門的社交應用，Google+，但相對的也關閉了幾個服務：一個是只有英文版，但我覺得很好用的 <a href="https://health.google.com/health/p/">Google Health</a>，可以用來記錄個人或家庭的健康狀態；一個是 Google.org 旗下專案之一的 <a href="http://www.google.com/powermeter/about/">Google PowerMeter</a>，用來追蹤電量使用，以協助電費與能源節約；一個則是台灣大多數人所熟悉也經常使用的 <a href="http://www.google.com.tw/dictionary">Google 字典</a>。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-OfuUXSaIkQA/TlDXKm5haWI/AAAAAAAAAeY/xfYkXe4igBk/s1600/google_service.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="211" src="http://1.bp.blogspot.com/-OfuUXSaIkQA/TlDXKm5haWI/AAAAAAAAAeY/xfYkXe4igBk/s400/google_service.png" width="400" /></a></div><br />這三個服務都是我覺得關了很可惜的服務，比 Google Wave 被關了還可惜好幾百倍。<br /><br />Google Health 可以用來記錄一些個人的生理狀況，像是身高、體重、血壓、心跳速等，當然也可以記錄各種健康檢查報表上所看到的數據，透過這些資料的記錄，以及由這些記錄所產生的報表，我可以瞭解自己身體健康隨著時間的變化。除了記錄自己的資料外，也可以建立家人的 Profile，這對於家裡有不用電腦的長者的人來說，算是很方便的設計。不過不曉得為什麼，Google 決定自 2012 年起停掉這個服務。我覺得隨著人們的壽命越來越長，社會越來越高齡化，對於健康的相關議題也會更加重視，Google 放棄這一塊市場真的是相當可惜。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-5f0Wi3vjLXQ/TlDgWC3HenI/AAAAAAAAAec/L9zNw9-q4d4/s1600/ms_health.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="295" id=":current_picnik_image" src="http://4.bp.blogspot.com/-5f0Wi3vjLXQ/TlDgWC3HenI/AAAAAAAAAec/L9zNw9-q4d4/s400/ms_health.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">微軟的 HealthVault，首頁右下方歡迎 Google Health User 的搬家</td></tr></tbody></table><br />至於 Google PowerMeter 之前我沒用過，但也沒得使用，因為這是一項必須搭配「支援 Google PowerMeter 的電器用品」使用的服務。這個服務可以讓你追蹤記錄家裡的用電情形，從而改善平日用電習慣，進一步達到節約能源與節省電費的效果。我覺得這概念比起在那邊吵著「要不要使用核能」的問題來得更加關鍵與重要，畢竟如果不能改善人們浪費電的習慣（我自己就經常在各方面浪費），那麼不管是用核能、燃煤、太陽能、風力還是水力，永遠都無法填補人們對於能源的無盡需求。<br /><br /><div style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="345" src="http://www.youtube.com/embed/6Dx38hzRWDQ" width="560"></iframe><a href="http://draft.blogger.com/"></a><span id="goog_308855211"></span><span id="goog_308855212"></span></div><br />題外話，我很喜歡上面影片開頭的這句話：<br /><blockquote><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">If you cannot measure it,<br />you cannot improve it.</span><div style="text-align: right;"><span class="Apple-style-span" style="font-family: Georgia, 'Times New Roman', serif;">&#8211; Lord Kelvin</span></div></blockquote><div style="text-align: left;">比起前面兩項，Google 字典的命運就更加悲慘－－字典是在毫無預警的情況下就被宣布停止服務的－－Google Health 和 Google PowerMeter 至少都還保留一段期間讓人下載資料，可是 Google 字典說關就關，連讓使用者把存在裡頭的單字匯出都來不及。雖然 Google 建議使用者可以改用他們的 <a href="http://translate.google.com/">Google 翻譯</a>，不過 Google 翻譯在資料的齊全程度上還是遠遠不及字典，這也難怪有眾多的使用者在 Google 產品說明論壇上<a href="http://www.google.com/support/forum/p/other/thread?tid=41c633a6520bb76c&amp;hl=zh-TW&amp;start=360">連署要求重新開放 Google 字典的使用</a>。不過目前看來這項服務應該已經是覆水難收了，誠為可惜。</div><div style="text-align: left;"><br /></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -454,6 +455,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
@@ -477,10 +482,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
       </li>
     
   </ul>

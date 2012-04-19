@@ -9,7 +9,8 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="過個年，Google 的消息與動作絲毫沒減少。GOOGLE HACKS 简体中文版简中版都有了，希望不久之後能夠看到繁中版。Google Redux - 重新設計 Google 介面作者 Andy Rutledge，重點是他所提出的這個概念，我很喜歡：In design, if you don&# &hellip;">
+  <meta name="description" content="2005 年 12 月 防毒軟體評比25. ClamWin version 0.87.1 - 48.45%ClamWin 加油啊，連 60% 都還不到，這樣可是不及格的。
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +78,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/02/11/anti-virus-comparation/">［情報］防毒軟體評比</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-02-11T07:58:00+08:00" pubdate data-updated="true">Feb 11<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.virus.gr/english/fullxml/default.asp?id=72&amp;mnu=72">2005 年 12 月 防毒軟體評比</a><br /><br /><blockquote>25. ClamWin version 0.87.1 - <span style="COLOR: rgb(255,0,0)">48.45%</span></blockquote><span style="COLOR: rgb(255,0,0)"></span><br />ClamWin 加油啊，連 60% 都還不到，這樣可是不及格的。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -403,42 +440,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/">［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-21T13:19:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。<br /><br />然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL 連線校對設為「utf8_general_ci」，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。<br /><br />這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 config/database.yml 中加入一行設定即可：<br /><pre><code><br />development:<br />  adapter: mysql<br />  database: example_development<br /><span style="color: rgb(255, 0, 0);">  encoding: utf8</span><br />  username: root<br />  password:<br /></code></pre><br />如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/13/">&larr; Older</a>
@@ -454,6 +455,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
@@ -477,10 +482,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
       </li>
     
   </ul>

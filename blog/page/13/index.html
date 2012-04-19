@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="重裝了 MySQL 後發現，當 server 整個 reboot 的時候，MySQL 並沒有被啟動。找了一下發現原因。現在得像 apache 或 sendmail 等服務一樣，在 rc.conf 中加入mysql_enable="YES"另外，若要知道有哪些 server 必須透過 rc.conf &hellip;">
+  <meta name="description" content="Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/">［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-01-21T13:19:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。<br /><br />然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL 連線校對設為「utf8_general_ci」，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。<br /><br />這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 config/database.yml 中加入一行設定即可：<br /><pre><code><br />development:<br />  adapter: mysql<br />  database: example_development<br /><span style="color: rgb(255, 0, 0);">  encoding: utf8</span><br />  username: root<br />  password:<br /></code></pre><br />如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -457,42 +493,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/11/19/if-we-fall-in-love-together-next-time/">［雋永］我總是聽你說、下次如果我們在相愛／葉良俊</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-11-19T16:11:00+08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.flickr.com/photos/30215143@N00/62826128/" title="Photo Sharing"><img align="right" alt="葉良俊《捨得》" height="240" src="http://static.flickr.com/24/62826128_76dcedf1a9_m.jpg" width="240" style="margin:8px" /></a><br />葉良俊和<a href="/blog/2005/09/30/whole-life-to-love/">先前介紹過的倫永亮</a>一樣，也是屬於創作型的歌手。他出過的唱片不多，就《我總是聽你說》（1996）與《捨得》（1997）這兩張。不過這兩張的主打都很合我的胃口，或者說，那兩首主打＜我總是聽你說＞與＜下次如果我們再相愛＞的歌詞都讓深深地引起我的共鳴－－而戚戚焉。<br /><br />除了歌詞的意境外，曲調輕快而別具風格也是吸引我的因素之一；此外別忘了還有 Jimmy 的歌聲，他那高亢的嗓音，相當適合詮釋這類「<span style="color: #ff6666;">隱隱中透著愛情裡的無奈</span>」的歌曲。他的歌聲還有一個特色，就是偶爾會夾雜咬字不清的微捲舌音，替整首歌帶來一些有趣的變化；這項特色在周杰倫的歌聲中也有出現，而且俯拾皆是。<br /><br /><blockquote><br />我總是聽你說<br />作詞：吳慶康　作曲：葉良俊<br /><br />我總是聽你說從不敢讓你的心失落<br />我把寂寞都放在看不見的角落<br />因為你說我一定有個快樂生活<br /><br /><em>我總是聽你說從不去想你也許只是經過<br />有時後委屈疲倦也不敢對你說<br />可是你還是說我讓你傷心難過<br /><br />#你要我怎麼做　我總是聽你說<br />可是你從來不願意面對真正的我<br />每次我思索　每次我疑惑<br />到底你真正在乎的是些什麼<br /><br />@你要我怎麼做　我總是聽你說<br />可是我紛亂的情緒你有沒有懂過<br />每次的執著　每次的失措<br />這一次我們的眼神又在交錯</em>RE<br /><br />已分不清到底是誰對誰要求那麼多</blockquote><br /><br /><blockquote><br />下次如果我們再相愛<br />作詞：吳慶康　作曲：葉良俊<br /><br />我以為對妳已經沒有依賴　再次相遇才知道還有愛<br />倫敦車站交錯喜悅和無奈　再看一眼才望穿彼此的關懷<br />妳以為離開也算是種交代　忘了時間卻忘不了感慨<br />倫敦街頭來往愁緒解不開　雨落下來才明白有些愛是債<br /><br />下次如果我們再相愛　能不能夠不再猜疑只要坦白<br />把冷漠收起　把思念攤開　下次不要別離的如此草率<br />下次如果我們再相愛　可不可以堅持到底不再責怪<br />擁著妳入夢　不要有悲哀　下次就這樣好好去愛　就像現在<br /><br />My Bonnie Lies Over The Ocean<br />My Bonnie Lies Over The Sea<br />My Bonnie Lies Over The Ocean<br />So Bring Back My Bonnie To Me</blockquote></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/14/">&larr; Older</a>
@@ -508,6 +508,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
@@ -531,10 +535,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
       </li>
     
   </ul>

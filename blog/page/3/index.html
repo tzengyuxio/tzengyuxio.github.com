@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="這些年來，我的代碼配色方案都是以 zenburn 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse &hellip;">
+  <meta name="description" content="用 Markdown 寫部落格 前陣子比較了一些輕量級標記語言，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/10/blogging-with-markdown/">Blogging With Markdown</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-10T13:24:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>用 Markdown 寫部落格</h1>
+
+
+<p>前陣子<a href="http://coder.aqualuna.me/2011/10/asciidoc-markdown-restructuredtext.html">比較了一些輕量級標記語言</a>，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。</p>
+
+
+<p>不過比起 AsciiDoc, Markdown 的應用支援顯然要來得廣泛得多，除了 GitHub 與 BitBucket 等網站外，有相當多的工具或編輯器支援 Markdown 語法，例如 Day One, iA Writer 或是 Byword，這方面壓倒性勝過 AsciiDoc。於是乎 Markdown 便逐漸成為我的首選，至於不能製作表格的問題嘛，反正作表格的機會也不是那麼多，大部分時候也可以用清單方式來呈現資料，所以倒不是太大問題。</p>
+
+
+<p>決定用 Markdown 作為主要規範後，第一個想到的就是用 Markdown 來寫 blog。不過 blogger 本身沒有支援 Markdown 語法，也沒有外掛或工具支援直接將 Markdown 寫好的文章發佈。大部分用 Markdown 在 blogger 寫文章的方式，都與 <a href="http://notely.blogspot.com/2011/08/how-to-use-markdown-in-blogspot-posts.html">Notely: How to use Markdown in Blogspot posts</a> 這篇文章的作業流程大同小異：</p>
+
+
+<ol><li>在你的電腦中用文字編輯器撰寫文章並儲存成檔案（原作者 Joel 使用 yyyy-mm-dd post title.txt 的檔案命名方式）</li><li>開啟 <a href="http://daringfireball.net/projects/markdown/dingus">Daring Fireball: Markdown Web Dingus</a> 網站，複製貼上文章內容，進行轉換。</li><li>最後，將轉換完成的 HTML 碼貼到 blogspot 的新文章中。</li></ol>
+
+
+<p>另外，貼上時要注意以下兩點：</p>
+
+
+<ol><li>在貼上新文章時，確定文字輸入區上方的模式是在「HTML」下而非「撰寫」。</li><li>開啟右側「文章設定」最下方的選項，<ol><li>「撰寫模式」勾選<strong>解譯輸入的 HTML</strong>。</li><li>「換行符號」勾選<strong>使用 &lt;br&gt; 標記</strong>。</li></ol></li></ol>
+
+
+<p>我目前也是採用類似的流程。比較特別要提的有以下幾點：</p>
+
+
+<ol><li>標題除了作為檔名外，檔案內的第一行也會放上一級標題；最後一行則是列出這篇文章的標籤。所以在轉換為 HTML 時，要去首尾行。</li><li>檔案存放在 dropbox 空間中。這樣可以確保文章有多份備份。</li><li>文章是<a href="http://blog.aqualuna.me/2012/02/byword-ia-writer.html">用 iA Writer 寫</a>的。寫完之後用<a href="http://coder.aqualuna.me/2012/02/os-x-markdown-html.html">〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉</a>這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。</li></ol>
+
+
+<hr /><p>這篇文章就是用上述流程所寫的，你可以<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20Blogging%20with%20Markdown.md">到這邊看看原始模樣</a>。</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -570,42 +634,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/21/fragger/">Fragger - 更殺腦細胞的 Angry Birds</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-01-21T08:21:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>簡單的說，Fragger 也是一款 &#8220;Angry Birds&#8221;-like 的遊戲。稍微岔個題，話說雖然我用 &#8220;Angry Birds&#8221;-like 這詞，不過類似的「拋物線物理打擊」玩法的遊戲，在 Angry Birds 發表之前我就有在網路上玩過同性質的 flash 遊戲，<a href="http://armorgames.com/play/3614/crush-the-castle">Crush The Castle</a>。照理以時間先後來看，應該得稱作 &#8220;Crush The Castle&#8221;-like 才對；不過說到底還是 Angry Birds 有名，那款 flash 遊戲就先別下不表，有機會的話再多做介紹。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-Ke-sDWQrSLw/TxoEHsH1dyI/AAAAAAAAJNA/CSf2uaIYr2g/s1600/IMG_4711.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://1.bp.blogspot.com/-Ke-sDWQrSLw/TxoEHsH1dyI/AAAAAAAAJNA/CSf2uaIYr2g/s320/IMG_4711.PNG" width="320" /></a></div><br />既然已經說了是 &#8220;Angry Birds&#8221;-like，Fragger 的玩法自然就不難想像，最主要差別的就是題材換成了拋手榴彈，然後炸恐怖份子炸外星人炸木乃伊等等等。與用彈弓發射憤怒鳥所不同的是，憤怒鳥砸過去就開始破壞了，可手榴彈丟過去還不一定立刻爆炸，得滾個一小段時間，所以時機與力道的拿捏就更為重要。<br /><br />在關卡的玩法上另外一個主要差別就是憤怒鳥的種類多樣，各有不同飛行方式與功能；但是在 Fragger 中，你能丟的就只有手榴彈。因此 Fragger 的重心就完全放在關卡場景上的設計，玩家必須透過每一關中的場景物件，如箱子、炸藥、木棍等，來完成把敵人炸成碎片的任務。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-599d5WB7eh4/TxoEIuzCN1I/AAAAAAAAJNI/PLWhiWbpxb0/s1600/IMG_4712.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://3.bp.blogspot.com/-599d5WB7eh4/TxoEIuzCN1I/AAAAAAAAJNI/PLWhiWbpxb0/s320/IMG_4712.PNG" width="320" /></a></div><br />Fragger 有分 Lite 版與正式版，我是先玩了 Lite 版之後，便立刻決定購買正式版。正式版只有 &nbsp;0.99 美金，但是 Fragger 經常有更新，所以相當物超所值。Fragger 的更新有些是搭配聖誕節、復活節等節慶，還有些是以同公司其他遊戲為主題，例如 Monster Dash。到這篇文章撰寫為止，正式版中共有十二大關卡，每個大關卡有 30~40 關左右，就遊戲內容而言其實是相當豐富的。<br /><br />平心而論，Fragger 的關卡設計比起 Angry Birds 來得有挑戰性，難度相對較高；兩者相比，我個人對於 Fragger 的評價與喜好要勝過 Angry Birds, 但是面對大眾玩家時，Fragger 的題材與內容反而是不如 Angry Birds 來得討喜。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-CPZ9pauDY1E/TxoEKPbCIyI/AAAAAAAAJNQ/_L5_P_cnPMg/s1600/IMG_4713.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://2.bp.blogspot.com/-CPZ9pauDY1E/TxoEKPbCIyI/AAAAAAAAJNQ/_L5_P_cnPMg/s320/IMG_4713.PNG" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">復活節彩蛋關</td></tr></tbody></table></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -621,6 +649,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
@@ -644,10 +676,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
       </li>
     
   </ul>

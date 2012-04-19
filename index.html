@@ -9,8 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如： tag: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣
-label: Gmail, &hellip;">
+  <meta name="description" content="今天心血來潮，想知道自己這幾年到底寫了多少文章，多少字數，於是寫了這麼一個小工具。 這小工具很簡單，按年份分別列出該年寫了幾篇文章，總共多少字數。由於 Octopress 的文章其實就是一個個 markdown 純文字檔，所以要做統計並不困難，我不用想盡辦法連到資料庫或是將網站匯出 XML &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,76 @@ label: Gmail, &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-19T10:29:00+08:00" pubdate data-updated="true">Apr 19<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天心血來潮，想知道自己這幾年到底寫了多少文章，多少字數，於是寫了這麼一個小工具。</p>
+
+<p><img src="/images/2012/2012-04-19-stats-of-my-blog-posts.png" alt="Stats of My Blog Posts" /></p>
+
+<p>這小工具很簡單，按年份分別列出該年寫了幾篇文章，總共多少字數。由於 Octopress 的文章其實就是一個個 markdown 純文字檔，所以要做統計並不困難，我不用想盡辦法連到資料庫或是將網站匯出 XML 來做分析。不過這個工具使用到 *nix shell 環境，Linux 與 Mac OSX 的使用者可以無痛使用，Windows 的話可能就要安裝一下 cygwin 或其他類似套件了。</p>
+
+<p>工具的代碼如下，使用前，請先自行修改代碼中 <code>SYEAR</code> 與 <code>POSTPATH</code> 這兩個變數，以符合自己的需求：</p>
+
+<div><script src='https://gist.github.com/2417859.js?file=blogstats.sh'></script>
+<noscript><pre><code>#!/bin/bash 
+
+# start year and end year
+SYEAR=2005
+EYEAR=`date &quot;+%Y&quot;`
+
+POSTPATH=~/github/octopress/source/_posts/
+
+echo
+echo &quot;YEAR      File #    Word Count&quot;
+echo &quot;==============================&quot;
+for (( i=$SYEAR; i&lt;=$EYEAR; i=i+1 ))
+do
+    NUMFILES=`ls -l $POSTPATH$i* 2&gt; /dev/null | wc -l`
+    NUMWORDS=&quot;       0&quot;
+    test $NUMFILES != &quot;0&quot; &amp;&amp; NUMWORDS=`wc -m $POSTPATH$i-* | tail -n 1 | sed 's/ total//'`
+    echo &quot;$i    $NUMFILES      $NUMWORDS&quot;
+done
+echo &quot;==============================&quot;
+NUMFILES=`ls -1 $POSTPATH* | wc -l`
+NUMWORDS=`wc -m $POSTPATH* | tail -n 1 | sed 's/ total//'`
+echo &quot;Total   $NUMFILES      $NUMWORDS&quot;
+echo</code></pre></noscript></div>
+
+
+<p>附帶一提：字數的統計是直接使用 <code>wc -m</code>，也沒有去掉 YAML 檔頭，所以不是很精確，大概參考參考就好。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -825,99 +894,6 @@ Goolge 總部，感覺怪物很多……</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-29T08:39:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。</p>
-
-<p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
-
-<p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
-
-<h2>Python 的 easy_install</h2>
-
-<p>Python 的 easy_install 人如其名，真的很 easy。比方說我看到 <a href="http://pypi.python.org/pypi/Markdown">Markdown 2.1.1 : Python Package Index</a> 這個套件想要安裝，我只要到終端機輸入下面指令就行了：</p>
-
-<pre><code>$ easy_install markdown
-</code></pre>
-
-<p>要刪除模組的話則是輸入：</p>
-
-<pre><code>$ easy_install -m markdown
-</code></pre>
-
-<p>easy_install 主要的功能就是安裝，如果需要進一步說明，可以參考</p>
-
-<pre><code>$ easy_install --help
-</code></pre>
-
-<h2>Ruby 的 gem</h2>
-
-<p>相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的<strong>套件管理工具</strong>。例如我想安裝一個叫 <a href="http://toodledo.rubyforge.org/toodledo/">toodledo</a> 的套件，可以這麼輸入：</p>
-
-<pre><code>$ gem install toodledo
-</code></pre>
-
-<p>或是指定版本號：</p>
-
-<pre><code>$ gem install toodledo --version 1.3.8
-</code></pre>
-
-<p>移除的話是：</p>
-
-<pre><code>$ gem uninstall toodledo
-</code></pre>
-
-<p>我想知道有沒有跟 markdown 相關的套件，我可以用如下方式尋找：</p>
-
-<pre><code>$ gem list markdown --remote
-</code></pre>
-
-<p>如果沒有加上 <code>--remote</code>, 則會列出本機已經安裝的套件。</p>
-
-<pre><code>$ gem list
-</code></pre>
-
-<p>更詳細的說明可以參考線上說明。</p>
-
-<pre><code>$ gem help
-</code></pre>
-
-<h2>在 Mac 上</h2>
-
-<p>上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 <code>sudo</code> 再執行就好了。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -931,6 +907,10 @@ Goolge 總部，感覺怪物很多……</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
@@ -954,10 +934,6 @@ Goolge 總部，感覺怪物很多……</p>
     
       <li class="post">
         <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
       </li>
     
   </ul>

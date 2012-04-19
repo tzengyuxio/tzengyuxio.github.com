@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。 是說原本預設的也夠我用了就是，不過有個多采多姿的 ls &hellip;">
+  <meta name="description" content="其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。 雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。 更重要的是， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,99 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/03/29/install-module-in-python-and-ruby/">Python 與 Ruby 的模組安裝</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-29T08:39:00+08:00" pubdate data-updated="true">Mar 29<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。</p>
+
+<p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
+
+<p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
+
+<h2>Python 的 easy_install</h2>
+
+<p>Python 的 easy_install 人如其名，真的很 easy。比方說我看到 <a href="http://pypi.python.org/pypi/Markdown">Markdown 2.1.1 : Python Package Index</a> 這個套件想要安裝，我只要到終端機輸入下面指令就行了：</p>
+
+<pre><code>$ easy_install markdown
+</code></pre>
+
+<p>要刪除模組的話則是輸入：</p>
+
+<pre><code>$ easy_install -m markdown
+</code></pre>
+
+<p>easy_install 主要的功能就是安裝，如果需要進一步說明，可以參考</p>
+
+<pre><code>$ easy_install --help
+</code></pre>
+
+<h2>Ruby 的 gem</h2>
+
+<p>相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的<strong>套件管理工具</strong>。例如我想安裝一個叫 <a href="http://toodledo.rubyforge.org/toodledo/">toodledo</a> 的套件，可以這麼輸入：</p>
+
+<pre><code>$ gem install toodledo
+</code></pre>
+
+<p>或是指定版本號：</p>
+
+<pre><code>$ gem install toodledo --version 1.3.8
+</code></pre>
+
+<p>移除的話是：</p>
+
+<pre><code>$ gem uninstall toodledo
+</code></pre>
+
+<p>我想知道有沒有跟 markdown 相關的套件，我可以用如下方式尋找：</p>
+
+<pre><code>$ gem list markdown --remote
+</code></pre>
+
+<p>如果沒有加上 <code>--remote</code>, 則會列出本機已經安裝的套件。</p>
+
+<pre><code>$ gem list
+</code></pre>
+
+<p>更詳細的說明可以參考線上說明。</p>
+
+<pre><code>$ gem help
+</code></pre>
+
+<h2>在 Mac 上</h2>
+
+<p>上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 <code>sudo</code> 再執行就好了。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -845,70 +938,6 @@ public class GetEnv {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/10/blogging-with-markdown/">Blogging With Markdown</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-10T13:24:00+08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>用 Markdown 寫部落格</h1>
-
-
-<p>前陣子<a href="http://coder.aqualuna.me/2011/10/asciidoc-markdown-restructuredtext.html">比較了一些輕量級標記語言</a>，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。</p>
-
-
-<p>不過比起 AsciiDoc, Markdown 的應用支援顯然要來得廣泛得多，除了 GitHub 與 BitBucket 等網站外，有相當多的工具或編輯器支援 Markdown 語法，例如 Day One, iA Writer 或是 Byword，這方面壓倒性勝過 AsciiDoc。於是乎 Markdown 便逐漸成為我的首選，至於不能製作表格的問題嘛，反正作表格的機會也不是那麼多，大部分時候也可以用清單方式來呈現資料，所以倒不是太大問題。</p>
-
-
-<p>決定用 Markdown 作為主要規範後，第一個想到的就是用 Markdown 來寫 blog。不過 blogger 本身沒有支援 Markdown 語法，也沒有外掛或工具支援直接將 Markdown 寫好的文章發佈。大部分用 Markdown 在 blogger 寫文章的方式，都與 <a href="http://notely.blogspot.com/2011/08/how-to-use-markdown-in-blogspot-posts.html">Notely: How to use Markdown in Blogspot posts</a> 這篇文章的作業流程大同小異：</p>
-
-
-<ol><li>在你的電腦中用文字編輯器撰寫文章並儲存成檔案（原作者 Joel 使用 yyyy-mm-dd post title.txt 的檔案命名方式）</li><li>開啟 <a href="http://daringfireball.net/projects/markdown/dingus">Daring Fireball: Markdown Web Dingus</a> 網站，複製貼上文章內容，進行轉換。</li><li>最後，將轉換完成的 HTML 碼貼到 blogspot 的新文章中。</li></ol>
-
-
-<p>另外，貼上時要注意以下兩點：</p>
-
-
-<ol><li>在貼上新文章時，確定文字輸入區上方的模式是在「HTML」下而非「撰寫」。</li><li>開啟右側「文章設定」最下方的選項，<ol><li>「撰寫模式」勾選<strong>解譯輸入的 HTML</strong>。</li><li>「換行符號」勾選<strong>使用 &lt;br&gt; 標記</strong>。</li></ol></li></ol>
-
-
-<p>我目前也是採用類似的流程。比較特別要提的有以下幾點：</p>
-
-
-<ol><li>標題除了作為檔名外，檔案內的第一行也會放上一級標題；最後一行則是列出這篇文章的標籤。所以在轉換為 HTML 時，要去首尾行。</li><li>檔案存放在 dropbox 空間中。這樣可以確保文章有多份備份。</li><li>文章是<a href="http://blog.aqualuna.me/2012/02/byword-ia-writer.html">用 iA Writer 寫</a>的。寫完之後用<a href="http://coder.aqualuna.me/2012/02/os-x-markdown-html.html">〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉</a>這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。</li></ol>
-
-
-<hr /><p>這篇文章就是用上述流程所寫的，你可以<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20Blogging%20with%20Markdown.md">到這邊看看原始模樣</a>。</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -924,6 +953,10 @@ public class GetEnv {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
@@ -947,10 +980,6 @@ public class GetEnv {
     
       <li class="post">
         <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a>
       </li>
     
   </ul>
