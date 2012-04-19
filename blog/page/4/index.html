@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="簡單的說，Fragger 也是一款 &#8220;Angry Birds&#8221;-like 的遊戲。稍微岔個題，話說雖然我用 &#8220;Angry Birds&#8221;-like 這詞，不過類似的「拋物線物理打擊」玩法的遊戲，在 Angry Birds &hellip;">
+  <meta name="description" content="用 Python 計算 CRC32 很簡單，只要使用內建的 binascii 模組即可。import binasciiprint binascii.crc32("hello world")要反覆計算的話，可以用：crc = binascii.crc32("hello")crc = binascii &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,78 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/01/24/python-crc32/">Python 計算檔案的 CRC32 驗證碼</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-24T17:02:00+08:00" pubdate data-updated="true">Jan 24<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>用 Python 計算 CRC32 很簡單，只要使用內建的 binascii 模組即可。<br /><pre class="prettyprint lang-py">import binascii<br />print binascii.crc32("hello world")<br /></pre>要反覆計算的話，可以用：<br /><pre class="prettyprint lang-py">crc = binascii.crc32("hello")<br />crc = binascii.crc32(" world", crc)<br /></pre>其中的第二行，將前一步驟所計算的 CRC 結果作為參數再次傳入函式中。<br /><br /><br />如果要計算檔案的 CRC32，可以透過以下函式來計算：<br /><pre class="prettyprint lang-py">import binascii<br />def computeFileCRC(filename):<br />    try:<br />        blocksize = 1024 * 64<br />        f = open(filename, "rb")<br />        str = f.read(blocksize)<br />        crc = 0<br />        while len(str) != 0:<br />            crc = binascii.crc32(str,crc) &amp; 0xffffffff<br />            str = f.read(blocksize)<br />        f.close()<br />    except:<br />        print "compute file crc failed!"<br />        return 0<br />    return crc<br /></pre><br />上面比較特別要注意的是這行：<br /><pre class="prettyprint lang-py">crc = binascii.crc32(str,crc) &amp; 0xffffffff<br /></pre>根據官方文件，在 Python 2.x 的版本中，binascii.crc32 所計算出來的 CRC 值域為 [-2<sup>31,</sup> 2<sup>31-1]</sup> 之間的有號整數，為了要與一般 C 所實作的 CRC 結果作比對，需要將其轉為無號整數，所以加上「<span style="font-family: 'Courier New', Courier, monospace;">&amp; 0xffffffff</span>」這段來做轉換。如果是 Python 3.x 的版本，其計算結果為 [0, 2<sup>32-1]</sup> 間的無號整數，因此不需額外加上修正。<br /><br /><br />另外，上述 <span style="font-family: 'Courier New', Courier, monospace;">computeFileCRC</span> 計算的結果為十進位整數，而通常見到的 CRC32 字串會以 16 進位方式表示，所以可以這樣轉換：<br /><pre class="prettyprint lang-py">crcstr = hex(computeFileCRC("somefile"))[2:]<br /></pre>或是，如果要直接使用在字串中，也可以用 format 的方式轉換成 16 進位格式：<br /><pre class="prettyprint lang-py">print ("crc32: %08x" % computeFileCRC("somefile"))<br /></pre></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/01/21/whynot-1995/">WHYNOT 無法度按奈 (1995)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-21T10:27:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>還記得那些等到半夜就為了電視台結束播放前的 MV 節目上能夠聽到這首歌曲的歲月。那是個沒有網路，第四台還沒開放，資訊傳播相對不發達的時代。自己的零用錢不夠買唱片，為了能聽到這首歌，總是會在電視機前守到當日最後一刻。<br /><br /><div style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="344" src="http://www.youtube.com/embed/1RXovN3BoHY?fs=1" width="459"></iframe></div><div style="text-align: left;"></div><br />台語歌曲在林強之後有了新的面貌，在那之前，我不太喜歡聽台語歌曲，雖然母語是台語，但台語歌曲多半都給我一種悲情的感覺，不是在那邊愛到最後被拋棄離開，就是欠了一屁股債還不起。這些歌曲對於青春期的我一點共鳴也沒有。然而林強 1990 年推出的〈向前行〉給台語歌曲注入了一股新的活力，一種新的台語搖滾風格，歌詞內容也更貼近於生活、更反應年輕一代的想法。<br /><div style="text-align: left;"><br /></div><div style="text-align: left;">到了 1995 年出了個新團體－－WHYNOT，他們的主打歌〈無法度按奈〉我第一次聽到就立刻愛上。還想說「太好了！台語樂團終於要有屬於年輕人的偶像團體了！」雖然後來的樂團發展真的出了一個台語天團，只可惜那不是 WHYNOT，而是更後來的五月天。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">對於年輕時期經常聽日本歌曲的我，WHYNOT 的這首〈無法度按奈〉真的超對我胃口。當時的日本流行歌曲或動畫歌曲經常在歌詞中穿插幾句沒什麼意義也沒什麼文法但求朗朗上口的英文，〈無法度按奈〉中也有這麼樣的一句「Can we making love tonight?」當時不求甚解的我，隱隱約約知道大概意思，但也覺得沒什麼，反倒認為「寫這歌詞的人很前衛，然後歌曲中有英文歌詞真是酷」這樣。事隔十幾年後回頭來看，即便有如此露骨描寫的歌曲，在今日的華語樂壇中，仍舊是鳳毛麟角。</div><div style="text-align: left;"><br /></div><div style="text-align: left;">這首歌曲真的是好歌，即便放到今日仍舊可以打趴一片年輕歌手。可惜 WHYNOT 出了這張專輯之後就解散了，成員之一的諺明就是現在五月天的鼓手冠佑。最後來聽聽另外一個版本的詮釋吧！男女合唱的〈無法度按奈〉也別有一番不同的風味。<br /><br /></div><div style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/hDhkURqB2vw" width="420"></iframe></div></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -366,79 +438,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/30/my-vimrc/">我的 Vimrc 配置</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-30T05:10:00+08:00" pubdate data-updated="true">Dec 30<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>我的 vimrc 配置 @ GitHub:&nbsp;<a href="https://github.com/tzengyuxio/vimrc">https://github.com/tzengyuxio/vimrc</a><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-SoWAf_kGFPo/TvzTjBvAFQI/AAAAAAAAJG4/clbERtQVV9s/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.49.11.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="224" src="http://4.bp.blogspot.com/-SoWAf_kGFPo/TvzTjBvAFQI/AAAAAAAAJG4/clbERtQVV9s/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.49.11.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Vim in Terminal (Mac)</td></tr></tbody></table>我一直在用的 vimrc 配置是在我還在以 WinXP 作為主要工作電腦時所配置的， 有超過一年多沒動過了。現在的主要工作電腦以 Mac OS X 為主，當初寫的配置如今有些不合用，然而這好些個日子以來也都是一直將就著用，懶得動手改。終於今天決定要趁著年底來個大掃除，整理一下 vimrc，順便也把程式碼從原本的自家用 SVN 轉移到 GitHub 上。<br /><br />這次最大的修補就是狀態列了。原本狀態列的配色只有寫了 GUI 模式下的版本，因此在 Terminal 的純文字模式下，只會見到模糊不清的文字配色，要看清楚狀態列訊息得特別花眼力。今天重新調整了狀態列在 GUI 模式與純文字模式下的配色，另外也加上了隨著視窗寬度調整，能夠自動增減狀態列訊息的功能。<br /><br /><div class="separator" style="clear: both; text-align: center;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-tO5LBggCPPE/TvzTj2R8bmI/AAAAAAAAJHA/bb3vgwSzoNY/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.50.02.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="276" src="http://1.bp.blogspot.com/-tO5LBggCPPE/TvzTj2R8bmI/AAAAAAAAJHA/bb3vgwSzoNY/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.50.02.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">MacVim</td></tr></tbody></table><div style="text-align: left;">另外一個比較大的改變不在於程式碼本身，而在於 vimrc 與相關外掛的管理方式。這次加入了 <a href="http://www.vim.org/scripts/script.php?script_id=2332">pathogen</a> 來做為外掛套件管理。另外，除了將專案移到了 GitHub 外，也特別研究了 &#8220;git submodule&#8221; 的使用方式，把 NERD tree 等外掛的 git 加入到自己的 git repository 中，而不是單純地把檔案加進來。關於 &#8220;git submodule&#8221; 的進一步介紹與說明，可以參考<a href="http://josephjiang.com/entry.php?id=342">〈Git Submodule 的認識與正確使用！〉</a>這篇文章，講解的非常清楚。<br /><br />有時間的話再來寫幾篇文章來對自己 vimrc 中的設定作個詳細的說明。</div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/27/my-eclipse-settings/">我的 Eclipse 初始設定調教</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-27T07:30:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><br />* 12/30 更新：追加了行號、跳格字元等相關項目<br /><br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br />雖說初始設定調教，不過其實要改的地方也不多。現在對於工具的想法我是抱持著盡量不要改太多，以免花太多時間在調整工具上。<br /><br />以前在不同的軟體間，可能還會改些快速鍵，希望跨不同的軟體時有一致的快速鍵操作，現在都直接讓自己適應。畢竟最常用的快速鍵：剪下、複製、貼上、存檔，所佔用的使用比率高達八成，而這些操作的快速鍵幾乎各軟體平台適用，這就夠了。剩下的<a href="http://widget5.linkwithin.com/redirect?url=http%3A//coder.aqualuna.me/2011/07/eclipse.html&amp;vars=%5B%22http%3A//coder.aqualuna.me/%22%2C%20808611%2C%201%2C%20%22http%3A//coder.aqualuna.me/2011/12/eclipse-git-svn.html%22%2C%20null%2C%200%2C%20129957287%5D&amp;ts=1324942435763">查查 cheat sheet 吧</a>，反正真的常用的一定會讓身體記起來的。<br /><br />所以要做的設定調整很簡單，就是<u>配色</u>、<u>編碼</u>、<u>行號</u>和<u>跳格字元</u>。就這樣。<br /><br /><br />## 配色 ##<br /><br />關於配色我習慣用 <a href="http://slinky.imukuppi.org/zenburn/">Zenburn</a>，這組配色採用低對比色，看上去很舒服，以暗色為背景，看久了眼睛也比較不會累。基本上，只要支援 Color Syntax 的編輯器，幾乎都可以找到 zenburn 的配色腳本。<br /><br />要使用 zenburn, 只要安裝 <a href="http://marketplace.eclipse.org/content/eclipse-color-theme">Eclipse Color Theme</a>，之後就可以在「偏好設定」中指定 zenburn 的配色了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="226" src="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" width="320" /></a></div><br />## 編碼 ##<br /><br />小地方可是卻很容易忘記的步驟。將 Text file encoding 指定為 UTF-8, 可以省下之後關於文字編碼上的許多麻煩，特別是程式碼中不小心塞了些中文在註解或字串中－－雖然這是不好的作法，但有時候你就是避不了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="260" src="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" width="320" /></a></div><br />## 行號 ##<br /><br />我寫程式喜歡有行號，有時候 Compiler 或 Log 告訴你哪一行出錯了，有行號的話便立刻能在畫面上定位。除了行號顯示的設定（Show line numbers）之外，在同個設定頁面中的顯示列印邊界（Show print margin）最好也一起勾上，有了這個提示，可以督促自己不要寫出一行太長的代碼。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s1600/line_and_colmargin.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="290" src="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s320/line_and_colmargin.png" width="320" /></a></div><br />## 跳格字元（Tab） ##<br /><br />Tab 用來對齊程式代碼很好用，可是隨著每台電腦設定的不同，在自己電腦上看起來整整齊齊的 Code, 到了別人電腦上一看可能歪七扭八。所以我偏好用空白來取代 Tab 字元（Insert spaces for tabs），雖然有時候 backspace 時要多按個幾下，不過至少可以確定這邊看到的跟其他電腦上看到的是一致的。 設定「空白取代跳格字元」的地方跟設定「行號顯示」是同一個頁面，就在上面而已。<br /><br /><br />## 字型 ##<br /><br />這部份算是個補充。寫程式的字型我偏好使用 <a href="http://www.donationcoder.com/Software/Jibz/Dina/">Dina Programming Font</a>, 這是個有 8pt, 9pt, 10pt 三種大小的點陣字型。這個字型的「數字1, 小寫l, 大寫I」以及「字母O, 數字0」均有相當清楚的分別。它曾在 Visual Studio 跟 Vim 上陪伴了我好幾年的歲月。不過這一兩年以來，我也漸漸可以接受 Microsoft 的 Consolas 與 Apple 的 Monaco/Menlo 等向量字作為 Coding 字型，所以也逐漸放棄將預設字型改成自己偏好的 Dina 了。謹以此處一小段文章紀念一下 Dina Programming Font。
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -454,6 +453,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/">用 Vim 將不斷行文章轉為 BBS 格式</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
@@ -473,14 +480,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
       </li>
     
   </ul>

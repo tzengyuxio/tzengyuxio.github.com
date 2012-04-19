@@ -4,7 +4,7 @@
   <title><![CDATA[Category: app | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-19T11:03:35+08:00</updated>
+  <updated>2012-04-19T21:17:21+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone 主畫面的使用統計]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats/"/>
+    <updated>2012-04-19T11:27:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats</id>
+    <content type="html"><![CDATA[<p>大家 iPhone 上的 Home Screen 都放了哪些 App 呢？</p>
+
+<p><img src="/images/2012/2012-04-19-my-iphone-home-screen.jpg" alt="My iPhone Home Screen" /></p>
+
+<p>我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈<a href="http://iphone.appstorm.net/roundups/lifestyle-roundups/45-iphone-home-screens/">45 Unique iPhone Home Screens Explained</a>〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。</p>
+
+<p>不過光這樣看完還不過癮，我決定做個統計。雖然上面那篇是去年八月的文章了，至今過了半年，不過大部分 App 現在還都蠻流行的。統計的結果如下，可以參考看看。</p>
+
+<h2>Home Screen 的應用方式</h2>
+
+<ul>
+<li>首頁中有 16 個格子（不考慮 dock）。這 45 個人平均放了 13.09 個 app 與 1.38 個 folder 在首頁。</li>
+<li>最少的甚至有完全不放任何 app，只在首頁留 dock 與一個 folder 的人 (Robin A.)。</li>
+<li>有 48.89% 的人在首頁有放 folder，也就是有五成多一點的人在首頁不放 folder。</li>
+<li>Dock 在每一頁都會出現，是最方便點選的地方。不過仍有 7 個人，15.56% 的比例，沒有在 dock 上放滿四格。</li>
+<li>有 4 個人在 dock 上放 folder（這我之前真的沒想過），比例為 8.89%。</li>
+<li>有 35.56% 的人沒有把首頁填滿。</li>
+</ul>
+
+
+<h2>App in Dock</h2>
+
+<p>最多人放在 Dock 上的 App 排名如下：<br/>
+（不包含 folder 以及 folder 中的 App。括號中數字為人數）</p>
+
+<ol>
+<li><strong>電話</strong> (33)</li>
+<li><strong>Mail</strong> (30)</li>
+<li><strong>Safari</strong> (21)</li>
+<li><strong>訊息</strong> (17)</li>
+<li><strong>音樂</strong> (17=13+4, iPod+Music, 新版 iOS 中這兩個合併了)</li>
+<li>設定 (9)</li>
+<li>相機 (6)</li>
+<li>Camera+ (4)</li>
+<li>Tweetbot (4)</li>
+</ol>
+
+
+<p>人數在 3 以下的我就省略不列了。另外，上表中的前七名就已經包辦 45 支 iPhone 裡八成以上的 dock 空格了。</p>
+
+<h2>App in Home Screen</h2>
+
+<p>不分 dock 與否，首頁最常看到的前 20 個 App 分別是：<br/>
+（不包含 folder 以及 folder 中的 App。括號數字中為人數）</p>
+
+<ol>
+<li>Mail (41)</li>
+<li>Safari (38)</li>
+<li>電話 (36)</li>
+<li>訊息 (30)</li>
+<li>設定 (28)</li>
+<li>行事曆 (26)</li>
+<li>音樂 (26=22+4, iPod+Music)</li>
+<li>照片 (22)</li>
+<li>相機 (18)</li>
+<li>時間 (17)</li>
+<li>Camera+ (16, <strong>非官方 App 中的第一名</strong>)</li>
+<li>地圖 (16)</li>
+<li>App Store (16)</li>
+<li>Facebook (14)</li>
+<li>Tweetbot (13)</li>
+<li>備忘錄 (13)</li>
+<li>聯絡資訊 (13)</li>
+<li>Twitter (12)</li>
+<li>Reeder (12)</li>
+<li>Instagram (10)</li>
+</ol>
+
+
+<p>再來的 App 就是少於 10 個人放在首頁的，分別是 Instapaper(9), Hipstamatic(9), Google+(7), Wunderlist(7), Evernote(7), Things(6), 天氣(6), Remote(6), iTunes(6), iBooks(6), 1Password(6), 計算機(5), Skype(5), Simplenote(5), Dropbox(5)。</p>
+
+<p>低於 4 以下的我就不列出了。</p>
+
+<h2>其他</h2>
+
+<ul>
+<li>大家平均放 App 的頁數為 4.56 頁（這個算得我眼睛好累）。最少的只有一頁（Zach）。</li>
+<li>除了官方的「相機」外，最常使用的拍照程式為 Camera+(16), 其次為 Instagram(10), Hipstamatic(9)。</li>
+<li>有四個人在首頁放了兩個以上的拍照App。其中一個放了三個，一個放了四個。</li>
+<li>Naceron 在首頁放了 6 個遊戲 App。</li>
+<li>Weid 說他的首頁只放 Universal（iPhone, iPad 均可使用）的 App。</li>
+<li>Sivil 和 Garrett G. 都把常用聯絡人作成 icon 放在首頁。</li>
+<li>Garrett G. 提供的圖片仔細看的話蠻奇怪的，為什麼他的首頁其實是第二頁？另外，他也是 Scan 這個 App 的開發者，在他的首頁中可以找到 Scan。</li>
+<li>Iynque 的 Dock 上放的都是有 '+' 號的 App，連 folder 也是！</li>
+<li>Shaun K 首頁左邊排了綠色一整排。</li>
+<li>Robin A. 的首頁最乾淨；Brad M. 只有首頁一頁。</li>
+</ul>
+
+
+<hr />
+
+<p>你怎麼運用你的主畫面呢？有任何的點子都歡迎與大家一起分享！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[相片管理的選擇, Aperture, iPhoto, Lightroom, Picasa]]></title>
@@ -46,15 +146,6 @@
     <updated>2012-01-01T15:21:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred</id>
     <content type="html"><![CDATA[<p><a href="http://www.launchy.net/index.php">Launchy</a> 是一款快速啟動軟體。只要按下熱鍵，就會跳出一個視窗讓你輸入一些文字來啟動軟體或是上網搜索，可說是圖形介面下的命令列工具，對於習慣用鍵盤工作的人，可以大大提昇電腦操作上的生產力。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="194" src="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">上為 Alfred, 下為 Launchy</td></tr></tbody></table><br />話說<a href="http://blog.aqualuna.me/2006/09/launchy.html">我用 Launchy 前前後後也有五年多的時間</a>了。這段時間裡，只要我安裝新電腦或是重灌系統，Launchy 幾乎都是最前幾個安裝的程式之一，通常裝了瀏覽器（為了抓最新版防毒軟體與防火牆）與防毒軟體（這東西在電腦越乾淨的時候裝越好）之後，就是安裝 Launchy 了。<br /><br />這一兩年，我主要的工作環境從 Windows 轉移到 Mac 上，一開始找不到滿意的快速啟動軟體。在 Mac 上曾經風雲一時的 QuickSilver, 也因為有段時間久未更新，傳出停止開發的風聲，對於新版 OS X的支援也不甚理想，讓我對於這套軟體缺乏信心。所幸，沒過多久，聽見 Launchy 推出 Mac 版的消息，我立刻就在 Mac 裡安裝了這套從 Windows 時代就一直陪伴著我的軟體，繼續享受快速啟動的樂趣。<br /><br />就這樣一直到了上個月，因為意外的緣故讓我注意到了 <a href="http://www.alfredapp.com/">Alfred</a> 這套軟體。一開始沒興趣，畢竟人家已經有了 Launchy 了（羞）。但是好死不死讓看見 Alfred 的官方網站做的很漂亮（可見門面很重要），於是想說安裝來看看吧，反正免費。結果不試則已，一試就成主顧。在預設安裝下，我都還沒作什麼設定，就可以進行許多的操作，包括啟動軟體、網路搜尋、數學計算。而且 Alfred 除了功能之外，介面與圖示比起 Launchy 也更加符合 Mac 的調性，使得我對 Launchy 的忠誠開始動搖。<br /><br />其實我對 Launchy 還是很滿意，但是 Alfred 給我的感覺卻是一整個驚艷。Launchy 有的功能，Alfred 都做到了，而且做的更好。Alfred&nbsp;讓我用沒一天就開始認真考慮購買 Power Pack 的可能性。所以，別了，Mac 上的 Launchy。不過別擔心，偶爾我們還是會在 Windows 上見面的。<br /><br /><em> * </em><br /><br />後記：<strike>其實 Launchy 還是有些 Alfred 比不上的地方。比方說 Alfred 的軟體搜尋只能從頭或是從斷字的地方開始，不能跳著搜尋，但 Launcy 可以。以 iTunes 為例，Alfred 可以透過 "itu" 或是 "tun" 找到 iTunes, 可是如果輸入 "une" 或是 "itn" 就找不到了；對於 Launchy 而言，上面四種方式都可以找到 "iTunes"。</strike><span style="color: red;">更正，Alfred 一樣可以透過輸入部分且不連續的字母來搜尋，只要到 Preference 裡勾選 "Fuzzy: Partial matching for Applications" 即可。</span></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[玩起來直覺就是好遊戲 - Drop of Life]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/12/23/drop-of-life/"/>
-    <updated>2011-12-23T00:23:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/12/23/drop-of-life</id>
-    <content type="html"><![CDATA[<p>最近新出了一款風格獨特且非常治癒的遊戲，Drop of Life。在介紹之前，先看看他的片頭動畫與遊戲畫面吧：<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/aanC-KZX0-o/0.jpg"><param name="movie" value="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/aanC-KZX0-o&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br /><br />遊戲的背景很簡單，玩家要扮演的就是一個水珠，要淨化地下的土壤，並讓種子開出花朵。雖然對於關卡解謎的遊戲而言，故事不是最重要，不過整個遊戲的設計都是圍繞著這個故事主題去發揮，讓人覺得耳目一新，這一點後面會再說明。遊戲最主要的操作有三種：傾斜手機來讓水珠向前或向後移動；點擊畫面讓水珠跳躍；以及對手機吹氣可以讓水珠結成冰塊，摩擦冰塊則恢復成為水珠。傾斜、點擊與吹氣，算是充分利用了 iPhone 的各種輸入方式。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s1600/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s320/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" width="213" /></a></div><br />關卡的進行有點類似 Loco Roco，基本上，玩家只要能從頭走到尾，找到最後的種子，就算過關了。不過通往終點的路上免不了有些障礙，許多設計都很有意思，必須充分利用水珠與冰塊的性質差異來進行，例如有些障礙物必須藉由冰塊的撞擊才能敲破，有些平面冰塊可以直接滑過，而水珠則是黏在上頭慢慢移動。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" width="213" /></a></div><br />另外關卡中有些地方有積水，基本上只要水珠掉到水中就會消滅，只好回到先前的 check point 繼續開始。不過遊戲的設計中沒有真正的 Game Over，水珠或冰塊破掉了，可以無限次嘗試。遊戲的關卡設計的不錯，單純要過關的話都不難，可以順利讓種子開出小白花；不過如果想要取得每關中能讓種子開出小黃花的四葉草，或是要收集散落的拼圖圖塊，就得稍稍動些腦筋，注意有沒有容易被忽略掉的路線。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" width="213" /></a></div><br />話說回來，這遊戲最讓我驚艷的地方就在於，許多遊戲裡的設計都巧妙結合了主題。例如遊戲裡沒有主選單，一開始就是讓玩家操作水珠在地面上滾動，所以選關的方式跟遊戲方式一樣。每個關卡完成的程度會用花的大小來表示，如果有找到四葉草，就是是黃色的小花，這比 Angry Bird 裡冷冰冰的一二三顆星星表示來得親切許多。最特別的是連工作人員名單都像是可以玩的關卡，只要在選關畫面移動到最右邊的懸崖跳下去，那就是了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" width="213" /></a></div><br />最後、最後，最重要的是，這款遊戲是免費下載的喔。下載完後可以玩到第一大關，如果玩了喜歡的話，只要 0.99 鎂就可以解開完整的遊戲版本。</p>
 ]]></content>
   </entry>
   

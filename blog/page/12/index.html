@@ -9,8 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="2005 年 12 月 防毒軟體評比25. ClamWin version 0.87.1 - 48.45%ClamWin 加油啊，連 60% 都還不到，這樣可是不及格的。
-">
+  <meta name="description" content="引用自：[分享]Firefox v1.5.0.1 with extension pack (02/10) 第十版 新增選用套件 （也許需登入）使用 Firefox 最大的困擾就是記憶體越吃越大，跑久一點，幾百 Mega 的 Memory 就被火狐吃掉了。下面的方法可以限制 Firefox &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,78 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/02/15/hack-for-firefox-memmory-leak/">［HACK］Firefox Memmory Leak 調整方法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-02-15T06:14:00+08:00" pubdate data-updated="true">Feb 15<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>引用自：<a class="maintitle" href="http://www.cyndi.idv.tw/forum/viewtopic.php?t=109643&start=0&amp;postdays=0&postorder=asc&amp;highlight=&sid=5d5c625eb48de617ee62cac1242b03ee">[分享]Firefox v1.5.0.1 with extension pack (02/10) 第十版 新增選用套件 </a><span style="color: rgb(153, 153, 153);" class="maintitle">（也許需登入）</span><br /><br />使用 Firefox 最大的困擾就是記憶體越吃越大，跑久一點，幾百 Mega 的 Memory 就被火狐吃掉了。下面的方法可以限制 Firefox 的記憶體運用，避免 Memory 狂掉的問題：<br /><br /><span class="postbody"><blockquote>Firefox v1.5 Memory Leaks調整方法<br />1.開啟一個新分頁，鍵入about:config<br />2.在這個顯示頁面上，隨意空白處點取「<span style="color:blue;">新增(New)</span>」，選擇「<span style="color:blue;">整數(Integer)</span>」<br />3.跳出對話框中輸入：<span style="color:blue;">browser.cache.memory.capacity</span><br />4.輸入想限制的記憶體大小：如16MB就打「<span style="color:red;">16384</span>」，32MB就打「<span style="color:red;">32768</span>」，64MB就打「<span style="color:red;">65536</span>」，以此類推。<br />5.再加入一個真假值，取名：<span style="color:blue;">config.trim_on_minimize</span>，數值：<span style="color:red;">true</span><br />6.按OK後關掉此分頁，並關掉整個Firefox後新新啟動<br />7.使用Windows工作管理員監看記憶體使用情形有無下降<br /></blockquote></span><br />從字面意義來看，新增的兩個設定值的涵義分別為：<br /><ul><li><span class="postbody"><span style="color:blue;">browser.cache.memory.capacity<span style="color: rgb(0, 0, 0);">：瀏覽器的記憶體使用上限</span></span></span></li><li><span class="postbody"><span style="color:blue;">config.trim_on_minimize<span style="color: rgb(0, 0, 0);">：視窗最小化時清除不必要的記憶體使用</span></span></span></li></ul><span class="postbody"><span style="color:blue;"><span style="color: rgb(0, 0, 0);">實際實驗的結果，因為我分頁一開就是開一堆，所以偶爾還是會有超過 </span></span></span><span class="postbody"><span style="color:blue;">browser.cache.memory.capacity</span></span><span class="postbody"><span style="color:blue;"><span style="color: rgb(0, 0, 0);"> 設定值的情況；不過當視窗最小化時，記憶體的佔用就會大幅釋放。加入這兩個設定後，除了記憶體的使用變得更有效率之外，Firefox 也變得比較穩定，不會有過去狂吃記憶體到最後整個當掉的情況了。<br /></span></span></span></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/02/15/internet-explorer-7/">［廣告］Internet Explorer 7</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-02-15T05:53:00+08:00" pubdate data-updated="true">Feb 15<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://mediaaddict.members.winisp.net/video/IE/IE7_big.wmv">IE7 Commercial</a><br /><br />這廣告超有創意，理想生活啊～<br /><br />而且完全沒有用到電腦，甚至沒有出現任何科技產品，卻把網頁瀏覽器能處理大小雜事的精神給表現出來了。這點子真棒。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -368,78 +439,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/22/last-dot-fm/">［網際］last.fm : 線上音樂</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-22T10:18:00+08:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>我喜歡聽音樂廣播，因為有一種不曉得會聽到什麼好聽歌曲的挖到寶的樂趣。有時一個不留神，沒注意到歌名或歌手，就只能靠著腦中依稀模糊的旋律去找歌；雖然未必找得到，但是過程有趣，再次聽到時也會有種莫名的興奮。<br /><br />由於平常生活離不開電腦，透過網際網路聽音樂廣播就成了我的習慣之一。最早先聽的是 <a href="http://music.yahoo.com/launchcast/member.asp">LAUNCHcast</a>，LAUNCHcast 開站很早，而且在那時就有了個人化推薦的功能，有點類似 amazon.com 的「購買此書的人同時也購買了下列書籍」的特色：當你聽到一首歌時，你可以針對那首歌給予 1～5 分的評分，LAUNCHcast 會依照你所給的分數，與其他會員對各種歌曲所給的分數作比較分析，找出最符合你胃口的歌來播放。這種 SNS（Social Network Service）性的推薦功能如今比比皆是，但在當時卻是相當特別的應用，也因此 LAUNCHcast 推出不久後，就被 Yahoo! 給買下了。<br /><br />雖然 LAUNCHcast 在選歌上的的確確抓到了我的胃口，但它有個該死的致命缺點：只有英文歌曲。這是許多國外網站無可避免的致命原罪（好吧，只有對我們東方人而言才是原罪）。在 LAUNCHcast 之後，我經常用 Winamp 聽線上廣播。Winamp 的媒體庫（Winamp library）中可以搜尋出許多線上廣播的站台，而且曲風一應俱全，可以隨著心情變化，選擇今天到底是要聽 anime, classic, new age, jpop, 60s, 抑或是 asia pop。<br /><br /><a href="http://www.last.fm/" aiotitle="Photo Sharing" aiotarget="false"><img height="133" alt="last.fm" src="http://static.flickr.com/41/84892568_c5801c6c11_m.jpg" width="240" align="right" /></a>與 LAUNCHcast 相比，用 Winamp 聽線上音樂就少了個人化的功能，沒辦法逐步訓練它知道自己喜歡哪些歌曲。不過 <a href="http://www.last.fm/">last.fm</a> 這個新成立不久的網站就可以，而且作的比 LAUNCHcast 好。last.fm 這網站是 Unicode base 的，站上的音樂也不侷限於西方樂壇，除了線上播放外，它也提供了用來統計你聽歌資訊的 plugins，只要在你的播放軟體上安裝這些 plugins，就算你不是在線上聽音樂，它也會紀錄你聽過的音樂，藉以找出你喜好的歌曲類型，下次線上隨機收聽時，就能夠準確找出適合你的音樂。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/22/baofu-geng-gen/">［辭海］包袱、梗、哏</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-22T09:07:00+08:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>常聽相聲的人，不難注意到相聲中對於笑點有其特殊的術語，比方說「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=3626&amp;GraphicWord=yes&QueryString=%A5%5D%B5%F6">包袱</a>」。「繫包袱兒」、「解包袱兒」、「抖包袱兒」，說的便是在相聲中醞釀、鋪陳、發展，以至最後引噱的一個過程。嚴格說來，「笑點」與「包袱」兩辭在用法與涵義上是有微妙差別的。<br /><br />「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&amp;DocNum=60305&GraphicWord=yes&amp;QueryString=%B1%F0">梗</a>」是另外一個意思與「笑點」接近的辭，所謂的「老梗」，即是指「經常用的笑點」、「老笑話」的意思。但是「梗」這個字其實是現代人的誤用，正確的用字應該是「哏」。「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=59966&amp;GraphicWord=yes&QueryString=%CD%FE">哏</a>」字本身具有「滑稽可笑」的意思；雙口相聲中，通常會有一人「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&amp;DocNum=12891&GraphicWord=yes&amp;QueryString=%CD%FE">捧哏</a>」，一人「<a href="http://140.111.34.46/cgi-bin/dict/GetContent.cgi?Database=dict&DocNum=32575&amp;GraphicWord=yes&amp;QueryString=%CD%FE">逗哏</a>」的角色分配。<br /><br />‧梗：ㄍㄥˇ<br />‧哏：ㄍㄣˊ<br /><hr />參考資料：<br />[1] <a href="http://big5.china.com.cn/chinese/feature/814147.htm">天津話咋就那麼哏</a><br />[2] <a href="http://www.ndcnc.gov.cn/datalib/2002/ArtKnowledge/DL/DL-175775">抖“包袱儿”</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/13/">&larr; Older</a>
@@ -455,6 +454,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/">用 Vim 將不斷行文章轉為 BBS 格式</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
@@ -474,14 +481,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
       </li>
     
   </ul>

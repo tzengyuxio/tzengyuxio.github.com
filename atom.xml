@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-19T11:03:35+08:00</updated>
+  <updated>2012-04-19T21:17:21+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,147 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone 主畫面的使用統計]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats/"/>
+    <updated>2012-04-19T11:27:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats</id>
+    <content type="html"><![CDATA[<p>大家 iPhone 上的 Home Screen 都放了哪些 App 呢？</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-19-my-iphone-home-screen.jpg" alt="My iPhone Home Screen" /></p>
+
+<p>我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈<a href="http://iphone.appstorm.net/roundups/lifestyle-roundups/45-iphone-home-screens/">45 Unique iPhone Home Screens Explained</a>〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。</p>
+
+<p>不過光這樣看完還不過癮，我決定做個統計。雖然上面那篇是去年八月的文章了，至今過了半年，不過大部分 App 現在還都蠻流行的。統計的結果如下，可以參考看看。</p>
+
+<h2>Home Screen 的應用方式</h2>
+
+<ul>
+<li>首頁中有 16 個格子（不考慮 dock）。這 45 個人平均放了 13.09 個 app 與 1.38 個 folder 在首頁。</li>
+<li>最少的甚至有完全不放任何 app，只在首頁留 dock 與一個 folder 的人 (Robin A.)。</li>
+<li>有 48.89% 的人在首頁有放 folder，也就是有五成多一點的人在首頁不放 folder。</li>
+<li>Dock 在每一頁都會出現，是最方便點選的地方。不過仍有 7 個人，15.56% 的比例，沒有在 dock 上放滿四格。</li>
+<li>有 4 個人在 dock 上放 folder（這我之前真的沒想過），比例為 8.89%。</li>
+<li>有 35.56% 的人沒有把首頁填滿。</li>
+</ul>
+
+
+<h2>App in Dock</h2>
+
+<p>最多人放在 Dock 上的 App 排名如下：<br/>
+（不包含 folder 以及 folder 中的 App。括號中數字為人數）</p>
+
+<ol>
+<li><strong>電話</strong> (33)</li>
+<li><strong>Mail</strong> (30)</li>
+<li><strong>Safari</strong> (21)</li>
+<li><strong>訊息</strong> (17)</li>
+<li><strong>音樂</strong> (17=13+4, iPod+Music, 新版 iOS 中這兩個合併了)</li>
+<li>設定 (9)</li>
+<li>相機 (6)</li>
+<li>Camera+ (4)</li>
+<li>Tweetbot (4)</li>
+</ol>
+
+
+<p>人數在 3 以下的我就省略不列了。另外，上表中的前七名就已經包辦 45 支 iPhone 裡八成以上的 dock 空格了。</p>
+
+<h2>App in Home Screen</h2>
+
+<p>不分 dock 與否，首頁最常看到的前 20 個 App 分別是：<br/>
+（不包含 folder 以及 folder 中的 App。括號數字中為人數）</p>
+
+<ol>
+<li>Mail (41)</li>
+<li>Safari (38)</li>
+<li>電話 (36)</li>
+<li>訊息 (30)</li>
+<li>設定 (28)</li>
+<li>行事曆 (26)</li>
+<li>音樂 (26=22+4, iPod+Music)</li>
+<li>照片 (22)</li>
+<li>相機 (18)</li>
+<li>時間 (17)</li>
+<li>Camera+ (16, <strong>非官方 App 中的第一名</strong>)</li>
+<li>地圖 (16)</li>
+<li>App Store (16)</li>
+<li>Facebook (14)</li>
+<li>Tweetbot (13)</li>
+<li>備忘錄 (13)</li>
+<li>聯絡資訊 (13)</li>
+<li>Twitter (12)</li>
+<li>Reeder (12)</li>
+<li>Instagram (10)</li>
+</ol>
+
+
+<p>再來的 App 就是少於 10 個人放在首頁的，分別是 Instapaper(9), Hipstamatic(9), Google+(7), Wunderlist(7), Evernote(7), Things(6), 天氣(6), Remote(6), iTunes(6), iBooks(6), 1Password(6), 計算機(5), Skype(5), Simplenote(5), Dropbox(5)。</p>
+
+<p>低於 4 以下的我就不列出了。</p>
+
+<h2>其他</h2>
+
+<ul>
+<li>大家平均放 App 的頁數為 4.56 頁（這個算得我眼睛好累）。最少的只有一頁（Zach）。</li>
+<li>除了官方的「相機」外，最常使用的拍照程式為 Camera+(16), 其次為 Instagram(10), Hipstamatic(9)。</li>
+<li>有四個人在首頁放了兩個以上的拍照App。其中一個放了三個，一個放了四個。</li>
+<li>Naceron 在首頁放了 6 個遊戲 App。</li>
+<li>Weid 說他的首頁只放 Universal（iPhone, iPad 均可使用）的 App。</li>
+<li>Sivil 和 Garrett G. 都把常用聯絡人作成 icon 放在首頁。</li>
+<li>Garrett G. 提供的圖片仔細看的話蠻奇怪的，為什麼他的首頁其實是第二頁？另外，他也是 Scan 這個 App 的開發者，在他的首頁中可以找到 Scan。</li>
+<li>Iynque 的 Dock 上放的都是有 &#8216;+&#8217; 號的 App，連 folder 也是！</li>
+<li>Shaun K 首頁左邊排了綠色一整排。</li>
+<li>Robin A. 的首頁最乾淨；Brad M. 只有首頁一頁。</li>
+</ul>
+
+
+<hr />
+
+<p>你怎麼運用你的主畫面呢？有任何的點子都歡迎與大家一起分享！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用 Vim 將不斷行文章轉為 BBS 格式]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/"/>
+    <updated>2012-04-19T11:27:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim</id>
+    <content type="html"><![CDATA[<p>我是一個鄉民。雖然大多數時間都在潛水，但偶爾也會浮上來寫些東西。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-04-19-ugly-format-in-bbs.png" alt="ugly format in bbs" /></p>
+
+<p>我不常在 BBS 上直接編輯，多半都是在習慣的編輯器上寫好再貼過去。不過問題來了，我寫文章的習慣都是一直打字一直打字，直到段落結束才換行，這樣的文字如果複製起來直接貼到 BBS 上發表，雖然還是能夠正常顯示，但在編輯與回文時就會出現過長的文字而造成如上圖般糟糕的版面效果。</p>
+
+<p>所以我在把文章貼到 BBS 上前，會先進行排版，將每行的字數限制在 72 字元以下。一開始我還乖乖手動一行一行按 Enter，可是這勤勞樸實的作風太不符合以 Lazy Easy 為最高指導原則的程式設計師身分了。經過一番研究後，我用 Vim 來做為我文章自動排版的工具。</p>
+
+<p>要完成任務，首先得在 <code>.vimrc</code> 檔案裡加入以下設定：</p>
+
+<pre><code>set fo+=Mm
+set tw=72
+</code></pre>
+
+<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Mm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
+
+<p>接著，為了讓事情更方便些，可以加入以下的按鍵映射：</p>
+
+<pre><code>noremap &lt;silent&gt; &lt;F7&gt; gggqG
+</code></pre>
+
+<p>我把 F7 按鈕對應到 <code>gggqG</code>，這串指令可以分成三個部分：<code>gg</code>, <code>gq</code>, <code>G</code>。</p>
+
+<ul>
+<li><code>gg</code>: 將游標移至檔案最前頭</li>
+<li><code>gq</code>：從游標開始處進行格式重排</li>
+<li><code>G</code>：將游標移至檔案最尾端</li>
+</ul>
+
+
+<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 <F7>，就可以立刻排成 BBS 所需要的格式囉。</p>
+
+<p>只剩下一個問題&#8230;&#8230;如果文章中有太長的連結，要是能自動縮網址那就更完美了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 發表文章的統計工具]]></title>
@@ -1082,70 +1223,6 @@ public class GetEnv {
 
 <ul><li>Keyword: bkl</li><li><p>說明：同上，就不另外說明了。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%20for/bkl/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=all&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Growl 與 Notification Center 隨便聊]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center/"/>
-    <updated>2012-02-17T17:39:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/02/17/growl-and-notification-center</id>
-    <content type="html"><![CDATA[<p>今天聽到 OSX 下一版本 Mountain Lion 的消息，大更新不多，主要都是將 iOS 上的一些應用搬到 Mac 上來，而其中最吸引我注意的大概就是通知中心（Notification Center）了。</p>
-
-
-<p>繼續聊下去前，先聊聊我理想中的電腦工作環境，要能提供兩個基本功能：</p>
-
-
-<ol><li>單一而簡潔的指令輸入，可以快速鍵入指令進行工作；</li><li>單一而簡潔的訊息輸出，將執行結果與事件統一一處發送通知。</li></ol>
-
-
-<p>說起來很簡單，說穿了也不過就是文字列模式下的延伸概念。關於第一點，現在已經有許多應用程式可以做到了，例如在 Windows 有 <a href="http://blog.aqualuna.me/search/label/Launchy">Launchy</a>, Mac 則有 <a href="http://blog.aqualuna.me/search/label/Alfred">Alfred</a>, 都是很棒的應用，直接熱鍵啟動執行指令，就可以開始進行工作，能有效節省時間。</p>
-
-
-<p>然而由於圖形作業系統多個視窗各自為政的關係，要建構第二點的環境其實有些困難。在 Windows，當電腦連上外接設備，或是硬碟空間時，會有小小黃色的 Tooltip 通知視窗；當 MSN 有人傳訊息來時，有 MSN 的通知泡泡；防毒軟體的病毒更新碼有段時間沒更新時，會有防毒軟體的提醒對話泡泡。每個軟體都有每個軟體自己的通知與設定，顯示停留的時間與樣式也都個不相同。假設今天如果我要進入專注模式，想要暫時關掉所有外來的通知時，我得一個一個自己去設定，然後要放鬆時還得一個一個去打開，這會是多惱人的一件事情？</p>
-
-
-<p>好在 Mac 上有 Growl, 一個第三方廠商所寫的訊息通知中心軟體。Growl 提供了公開 API, 讓軟體開發商可以支援將訊息發送到 Growl 作顯示。以我目前的電腦來看，就包含了以下程式的訊息通知：</p>
-
-
-<ul><li>1Password</li><li>Adium</li><li>Alfred</li><li>Cappuccino</li><li>Dropbox</li><li>GrowlTunes</li><li>HardwareGrowler</li><li>Insync</li><li>Pomodoro</li></ul>
-
-
-<p>這些不同的程式都可以透過相同的窗口向我報告，當我不想要干擾時，也可以很輕鬆的全部關掉。也正因為有如此多的軟體支援 Growl, 所以就算我不喜歡 Growl 他那爪子般的 icon, 不喜歡他把 GrowlTunes 與 HardwareGrowler 在 App Store 裡另外拆開來賣，但我還是購買並安裝了這套軟體。</p>
-
-
-<p>回到最初所提的，下一版的 OSX 將會把 iOS 上的訊息中心給整合進來，我想最為首當其衝的就是 Growl 了。前面所提到的「單一簡潔的輸入」與「單一簡潔的輸出」，這工作由作業系統來做自然是再合適也不過了。因此不難想像，隨著應用程式逐漸支援新的訊息中心，Growl 將逐漸失去其既有的優勢。</p>
-
-
-<p>只是就目前看來，Mountain Lion 的更新項目實在不多，如果到時候不是免費升級，而且賣得還跟 Lion 一樣貴的話，我實在很難下得了手花錢進行升級……</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mac 更換資料夾圖示的方法]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/02/13/change-folder-icon-in-mac/"/>
-    <updated>2012-02-13T13:19:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/02/13/change-folder-icon-in-mac</id>
-    <content type="html"><![CDATA[<p>最近想把 Mac 裡一些常用的資料夾換個圖示，找到的步驟如下：</p>
-
-<ol>
-<li>選取資料夾，開啟該資料夾的「簡介」視窗。</li>
-<li>將下載好的 .icns 圖示檔拉到「簡介」視窗最上方的小圖示上，就可以換掉原有圖示了。</li>
-</ol>
-
-
-<p>我照了這個方法作，不過從網路上下載的 .icns 圖示檔，有些拉上去後可以成功更換資料夾圖示，有些卻不行。研究了半天也搞不清楚為什麼有些成功有些不行。後來找到了另外一個換圖示的方法，不僅更簡單，而且除了 .icns 檔案外，也適用於任何圖檔。方法如下：</p>
-
-<ol>
-<li>用「預覽程式」開啟你要用來當資料夾圖示的 .icns 檔，或其他圖檔。當然，尺寸最好是 512x512。</li>
-<li>開啟後，依序按下⌘A（全選），⌘C（複製）。</li>
-<li>然後選取想要更換圖示的資料夾，開啟該資料夾的「簡介」視窗。</li>
-<li>點選「簡介」視窗最上方的小圖示，按下⌘V（貼上），大功告成！</li>
-</ol>
-
-
-<p>這個方法除了資料夾外，也可以用來更改磁碟映像檔的圖示。</p>
 ]]></content>
   </entry>
   

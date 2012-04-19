@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：作業系統：Mac OS X 10.7.2程式版本：Eclipse Indigo 3.7.1,IDE for Java DevelopersEclipse 的 Git 功能相關套件是官方所提供的 EGit &hellip;">
+  <meta name="description" content="我的 vimrc 配置 @ GitHub:&nbsp;https://github.com/tzengyuxio/vimrcVim in Terminal (Mac)我一直在用的 vimrc 配置是在我還在以 WinXP 作為主要工作電腦時所配置的， 有超過一年多沒動過了。現在的主要工作電腦以 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,79 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/30/my-vimrc/">我的 Vimrc 配置</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-30T05:10:00+08:00" pubdate data-updated="true">Dec 30<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我的 vimrc 配置 @ GitHub:&nbsp;<a href="https://github.com/tzengyuxio/vimrc">https://github.com/tzengyuxio/vimrc</a><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-SoWAf_kGFPo/TvzTjBvAFQI/AAAAAAAAJG4/clbERtQVV9s/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.49.11.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="224" src="http://4.bp.blogspot.com/-SoWAf_kGFPo/TvzTjBvAFQI/AAAAAAAAJG4/clbERtQVV9s/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.49.11.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Vim in Terminal (Mac)</td></tr></tbody></table>我一直在用的 vimrc 配置是在我還在以 WinXP 作為主要工作電腦時所配置的， 有超過一年多沒動過了。現在的主要工作電腦以 Mac OS X 為主，當初寫的配置如今有些不合用，然而這好些個日子以來也都是一直將就著用，懶得動手改。終於今天決定要趁著年底來個大掃除，整理一下 vimrc，順便也把程式碼從原本的自家用 SVN 轉移到 GitHub 上。<br /><br />這次最大的修補就是狀態列了。原本狀態列的配色只有寫了 GUI 模式下的版本，因此在 Terminal 的純文字模式下，只會見到模糊不清的文字配色，要看清楚狀態列訊息得特別花眼力。今天重新調整了狀態列在 GUI 模式與純文字模式下的配色，另外也加上了隨著視窗寬度調整，能夠自動增減狀態列訊息的功能。<br /><br /><div class="separator" style="clear: both; text-align: center;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-tO5LBggCPPE/TvzTj2R8bmI/AAAAAAAAJHA/bb3vgwSzoNY/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.50.02.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="276" src="http://1.bp.blogspot.com/-tO5LBggCPPE/TvzTj2R8bmI/AAAAAAAAJHA/bb3vgwSzoNY/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.50.02.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">MacVim</td></tr></tbody></table><div style="text-align: left;">另外一個比較大的改變不在於程式碼本身，而在於 vimrc 與相關外掛的管理方式。這次加入了 <a href="http://www.vim.org/scripts/script.php?script_id=2332">pathogen</a> 來做為外掛套件管理。另外，除了將專案移到了 GitHub 外，也特別研究了 &#8220;git submodule&#8221; 的使用方式，把 NERD tree 等外掛的 git 加入到自己的 git repository 中，而不是單純地把檔案加進來。關於 &#8220;git submodule&#8221; 的進一步介紹與說明，可以參考<a href="http://josephjiang.com/entry.php?id=342">〈Git Submodule 的認識與正確使用！〉</a>這篇文章，講解的非常清楚。<br /><br />有時間的話再來寫幾篇文章來對自己 vimrc 中的設定作個詳細的說明。</div></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/27/my-eclipse-settings/">我的 Eclipse 初始設定調教</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-27T07:30:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><br />* 12/30 更新：追加了行號、跳格字元等相關項目<br /><br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br />雖說初始設定調教，不過其實要改的地方也不多。現在對於工具的想法我是抱持著盡量不要改太多，以免花太多時間在調整工具上。<br /><br />以前在不同的軟體間，可能還會改些快速鍵，希望跨不同的軟體時有一致的快速鍵操作，現在都直接讓自己適應。畢竟最常用的快速鍵：剪下、複製、貼上、存檔，所佔用的使用比率高達八成，而這些操作的快速鍵幾乎各軟體平台適用，這就夠了。剩下的<a href="http://widget5.linkwithin.com/redirect?url=http%3A//coder.aqualuna.me/2011/07/eclipse.html&amp;vars=%5B%22http%3A//coder.aqualuna.me/%22%2C%20808611%2C%201%2C%20%22http%3A//coder.aqualuna.me/2011/12/eclipse-git-svn.html%22%2C%20null%2C%200%2C%20129957287%5D&amp;ts=1324942435763">查查 cheat sheet 吧</a>，反正真的常用的一定會讓身體記起來的。<br /><br />所以要做的設定調整很簡單，就是<u>配色</u>、<u>編碼</u>、<u>行號</u>和<u>跳格字元</u>。就這樣。<br /><br /><br />## 配色 ##<br /><br />關於配色我習慣用 <a href="http://slinky.imukuppi.org/zenburn/">Zenburn</a>，這組配色採用低對比色，看上去很舒服，以暗色為背景，看久了眼睛也比較不會累。基本上，只要支援 Color Syntax 的編輯器，幾乎都可以找到 zenburn 的配色腳本。<br /><br />要使用 zenburn, 只要安裝 <a href="http://marketplace.eclipse.org/content/eclipse-color-theme">Eclipse Color Theme</a>，之後就可以在「偏好設定」中指定 zenburn 的配色了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="226" src="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" width="320" /></a></div><br />## 編碼 ##<br /><br />小地方可是卻很容易忘記的步驟。將 Text file encoding 指定為 UTF-8, 可以省下之後關於文字編碼上的許多麻煩，特別是程式碼中不小心塞了些中文在註解或字串中－－雖然這是不好的作法，但有時候你就是避不了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="260" src="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" width="320" /></a></div><br />## 行號 ##<br /><br />我寫程式喜歡有行號，有時候 Compiler 或 Log 告訴你哪一行出錯了，有行號的話便立刻能在畫面上定位。除了行號顯示的設定（Show line numbers）之外，在同個設定頁面中的顯示列印邊界（Show print margin）最好也一起勾上，有了這個提示，可以督促自己不要寫出一行太長的代碼。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s1600/line_and_colmargin.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="290" src="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s320/line_and_colmargin.png" width="320" /></a></div><br />## 跳格字元（Tab） ##<br /><br />Tab 用來對齊程式代碼很好用，可是隨著每台電腦設定的不同，在自己電腦上看起來整整齊齊的 Code, 到了別人電腦上一看可能歪七扭八。所以我偏好用空白來取代 Tab 字元（Insert spaces for tabs），雖然有時候 backspace 時要多按個幾下，不過至少可以確定這邊看到的跟其他電腦上看到的是一致的。 設定「空白取代跳格字元」的地方跟設定「行號顯示」是同一個頁面，就在上面而已。<br /><br /><br />## 字型 ##<br /><br />這部份算是個補充。寫程式的字型我偏好使用 <a href="http://www.donationcoder.com/Software/Jibz/Dina/">Dina Programming Font</a>, 這是個有 8pt, 9pt, 10pt 三種大小的點陣字型。這個字型的「數字1, 小寫l, 大寫I」以及「字母O, 數字0」均有相當清楚的分別。它曾在 Visual Studio 跟 Vim 上陪伴了我好幾年的歲月。不過這一兩年以來，我也漸漸可以接受 Microsoft 的 Consolas 與 Apple 的 Monaco/Menlo 等向量字作為 Coding 字型，所以也逐漸放棄將預設字型改成自己偏好的 Dina 了。謹以此處一小段文章紀念一下 Dina Programming Font。
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -368,78 +441,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/01/sangoku-musou-6/">真三國無雙 6 初玩心得</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-01T23:52:00+08:00" pubdate data-updated="true">Nov 1<span>st</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>說是初玩，其實也已經把整個魏吳蜀晉四個勢力的故事模式全部過了一遍，加上一些戰史模式的關卡。以下是零散心得：<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://upload.wikimedia.org/wikipedia/zh/0/01/Dynasty_Warriors_7.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://upload.wikimedia.org/wikipedia/zh/0/01/Dynasty_Warriors_7.jpg" width="275" /></a></div><br /><br /><br /><ul><li>用四個字來形容這遊戲，那就是<b>「疲於奔命」</b>。</li><li>六代的故事模式加強了敘事性，不過不能改變歷史總覺得有種莫名的失落。</li><li>每個關卡都只能用同樣角色攻略，讓重玩的樂趣大大降低。</li><li>加上許多關寨不先解決重要事件就不會開門，幾乎每關都必須按照一定次序內容進行，玩過了一次就很難提得起興趣玩第二次。</li><li>大略估計一下，一個關卡平均 15 分鐘，四個勢力共 92 個關卡差不多也要 23 小時的遊戲時數。以整個故事模式的長度而言，還算可以接受。</li><li>魏國的主軸是「霸道」；吳國的主軸是「家族」；蜀國的主軸是「仁之國」；晉的主軸先是「消滅平庸之輩」，之後轉變為「消滅活在遺志中的人」。</li><li>司馬兄弟也太陽光了吧，跟老爸司馬懿完全不同調性。</li><li>本來以為故事會到鐘會反叛魏國與姜維聯手，可惜到了劉禪開城投降就結束了。</li><li>錯字還不少，特別是討伐諸葛誕這個關卡，不只錯字，還有漏字。</li><li>部分關卡開頭前要跟士兵對話這一部分有點雞肋。若不是為了獎盃我還真想直接出征。</li><li>不過雖說雞肋，有些發展還蠻有趣的。例如王元姬和司馬昭的關係，在戰場上只看得出來兩人關係匪淺，可是真正的兩人互動關係都透露在士兵的八卦耳語上。</li><li>另外蜀國劇情中一個一路跟隨劉備的士兵也很有趣，之後不但晉升到卒伯，兩個孩子都還長大成人並且從軍。我每次一可以對話一定就先想把這傢伙找出來看他的人生又有什麼進展。</li><li><strike>（話說一開始看到那個士兵說等戰爭結束要回家鄉娶媳婦這段，我還以為是死亡 flag）</strike></li><li>另外就是經常看到說人名或地名雙關語耍冷的士兵。偶一為之尚可，可是這代裡多到看到有點膩了，好煩 XD</li><li>對話模式中，有些士兵沒有對話，不過遠遠看過去會見到他在打混，走過去一靠近他就立刻精神抖擻起來。這還蠻有趣的。</li><li>弓腰姬跟劉大耳兩個人在戰爭過程中一直放閃光這是哪招？</li><li>除了 Tony さん之外，吳國也多了個 Kenny さん（應該前幾代就有，只是我沒注意到）</li><li>司馬昭的 Ex 技把人當滑板踩還蠻搞笑的啊。特別是你踩在腳上的是頭上頂著皇冠的魏帝曹髦或和蜀帝劉禪。</li><li>這一代真的很愛玩雙關語。司馬懿臨死把劍丟給司馬師，說是「我的權力就交給你運用了」；司馬師臨死也把劍丟給司馬昭，說了一樣的話。看的當下沒會意過來，事後才想到日文中的「劍」與「權」同音。</li><li>關索頭上的花到底是怎麼回事？雲長你都不管一下的嗎？</li><li>再一次佩服三國無雙系列的關卡設計，同樣一張地圖可以變出許許多多的花樣。許多關卡用到同一張地圖，可是由於使用部分不同，或是進軍路線不同，使得玩的感受也截然不同。</li><li>只有一點感受例外，那就是不管地圖怎麼變，都一樣讓人－－<b>「疲於奔命」</b>。</li><li>人生七十才開始，無雙六也是到了戰史模式才開始，開始無止盡的<a href="http://ja.wikipedia.org/wiki/%E3%82%84%E3%82%8A%E8%BE%BC%E3%81%BF">やり込み</a>。</li></ul><div>最後引一段小故事幫諸葛誕平反一下。遊戲中諸葛誕殺了文欽失了人心，於是城內軍民開城欲降。不過東晉時人干寶所著的《晉紀》有如下記載：</div><blockquote class="tr_bq">數百人拱手為列，每斬一人，輒降之，竟不變，至盡，時人比之田橫。</blockquote><div>關於這段敘述，維基百科上「<a href="http://zh.wikipedia.org/wiki/%E8%AB%B8%E8%91%9B%E8%AA%95">諸葛誕</a>」條目的記述如下：</div><blockquote class="tr_bq">&#8230;&#8230;諸葛誕率領數騎逃出壽春，被大將軍司馬胡奮手下士兵殺死。諸葛誕亦被誅滅三族。諸葛誕麾下數百人於壽春被俘，堅決不降，更說：「為諸葛公死，不恨。」行刑時排成一列，每斬一人都招降下一人，但始終無人投降。</blockquote><div>想像這畫面，其實還蠻悲壯的。</div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/18/lightweight-markup-language/">輕量級標記語言 - AsciiDoc, Markdown, reStructuredText</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-18T13:57:00+08:00" pubdate data-updated="true">Oct 18<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>因為最近使用 GitHub 的關係，注意到了 Markdown 這個輕量級標記語言 (<a href="http://en.wikipedia.org/wiki/Lightweight_markup_language">Lightweight markup language</a>)，跟著查了一下資料才發現原來<a href="http://superuser.com/questions/209897/text-formatter-tools/209902#209902">輕量級標記語言的選項百百款</a>，其中比較常見的有 Markdown,&nbsp;reStructuredText 以及 <a href="http://www.textism.com/tools/textile/">textile</a>，這三種語法也同時被 BitBucket 和 GitHub 所支援。<br /><br />稍微看過三者的語法比較後，覺得 textile 的語法太過接近 HTML, 使得文字檔本身無法呈現容易理解的架構。而除了前述三者之外，也另外注意到 AsciiDoc 這一款輕量級標記語言，GitHub 有支援 AsciiDoc。下面就是我對 Markdown, reStructuredText 與 AsciiDoc 的一些比較筆記：<br /><br /><a href="http://daringfireball.net/projects/markdown/">Markdown</a><br />使用最為廣泛也最簡單的輕量級標記語言。除了前面提到的 GitHub 與 BitBucket 之外，StackOverflow 的語法基本上也是 Markdown 的強化版，另外 Tumblr 與 Posterous 這兩個輕量級的 blog 也都支援 Markdown 語法。<br /><br />然而正如前面所提到的，StackOverflow 用的是修改過的 Markdown, 實際上 GitHub 用的也是 Markdown 的修改版本。Markdown 簡單卻又略顯不足，使得許多網站的應用必須增添額外的修改。另外，缺乏表格功能的支援是最大的遺憾。<br /><br /><a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a><br />以 Python 寫成，主要也使用於 Python 社群中；Python 的文件產生器 <a href="http://sphinx.pocoo.org/">Sphinx</a> 就是以 reStructuredText 為基礎。是三者之中功能最為完整的一套，事實上，即便要說是所有輕量級標記語言中功能最為完整的一套也不為過，要拿來寫論文也不成問題。腳注 (footnote) 功能讓人眼睛一亮。不過真的是太複雜了，快要脫離「輕量級」的範圍了。<br /><br /><a href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a><br />跟 reStructuredText 同樣也是 Python 寫成，不過語法上比較接近 Markdown 的簡單，但也提供了表格的功能。會讓我注意到這一套，最主要原因是因為開源遊戲<a href="http://www.wesnoth.org/">韋諾之戰</a> (The Battle for Wesnoth) 的 Manual 就是以 AsciiDoc 所寫成。<br /><br />線上工具<br /><ul><li>Markdown: Dingus<br /><a href="http://daringfireball.net/projects/markdown/dingus">http://daringfireball.net/projects/markdown/dingus</a></li><li>reStructuredText:<br /><a href="http://www.tele3.cz/jbar/rest/rest.html">http://www.tele3.cz/jbar/rest/rest.html</a></li><li>AsciiDoc:<br /><a href="http://andrewk.webfactional.com/asciidoc.php">http://andrewk.webfactional.com/asciidoc.php</a></li></ul><br />BitBucket 的 <a href="http://confluence.atlassian.com/display/BITBUCKET/Displaying+README+Text+on+your+Bitbucket+Source+Tab">README 支援列表</a>，主要就是以 reStructuredText, Markdown, Textile 這三種為主，README 和 README.txt 這兩個檔名預設為 Plain Text, 不過如果該專案所使用的語言為 Python 的話，上述兩個檔案則會以 reStructuredText 的格式去轉為網頁。<br /><br /><a href="https://github.com/github/markup#readme">GitHub 支援的格式</a>&nbsp;比較多種，其中 Markdown 應該是最優先的，從許多專案的 README 都是以 .md 作為檔名後綴不難看出。有趣的是 GitHub 是以 Ruby 開發，然而在 Ruby 社群中比較活躍的輕量標記語言其實是 textile。（順帶一提，BitBucket 是以 Python 開發，Mercurial 也是以 Python 開發的）<br /><br />10.21 補充：根據 AcsiiDoc 官網上記載，Git User&#8217;s Manual 也是以 AsciiDoc 所製作。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -455,6 +456,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/">用 Vim 將不斷行文章轉為 BBS 格式</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
@@ -474,14 +483,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/05/how-to-input-character-symbol-in-mac/">在 Mac 輸入特殊文字符號</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a>
       </li>
     
   </ul>
