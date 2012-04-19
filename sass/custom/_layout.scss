@@ -19,3 +19,22 @@ $indented-lists: true;
 //$sidebar-pad-medium: 15px;
 //$sidebar-pad-wide: 20px;
 //$sidebar-width-wide: 300px;
+
+div.sharing {
+  padding:0;
+}
+
+div.sharing ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  height:30px;
+  margin-top:10px;
+}
+
+div.sharing ul li {
+  margin: 3px 5px 0 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+}
