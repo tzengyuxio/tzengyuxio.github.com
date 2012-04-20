@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>我的貼標籤規範 - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="前幾天討論了目前各家網站標籤功能的混亂，即便有這些混亂，「標籤」仍是訊息管理非常重要的一個工具，也是落實真正語義網（semantic web）的一個基礎。 然而正由於目前沒有一致性的標籤標準，人們對於標籤的使用也很隨興，所以會常常看到下面三種情形： 同一個概念以不同的詞語組合方式標籤 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">我的貼標籤規範</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-21T06:33:00+08:00" pubdate data-updated="true">Apr 21<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>前幾天討論了<a href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/">目前各家網站標籤功能的混亂</a>，即便有這些混亂，「標籤」仍是訊息管理非常重要的一個工具，也是落實真正<a href="http://zh.wikipedia.org/wiki/%E8%AF%AD%E4%B9%89Web">語義網</a>（semantic web）的一個基礎。</p>
+
+<p><img src="/images/2012/2012-04-21-too-many-tags.png" alt="too many tags!" /></p>
+
+<p>然而正由於目前沒有一致性的標籤標準，人們對於標籤的使用也很隨興，所以會常常看到下面三種情形：</p>
+
+<ol>
+<li><p>同一個概念以不同的詞語組合方式標籤</p>
+
+<p> 例如一篇文章中同時加入了 <code>win7</code>, <code>Windows 7</code>, <code>MS windows 7</code>, <code>windows-7</code> 等標籤，有縮寫、有全名、有各種不同的連接詞。這種現象在以搜尋流量為主的媒體網站中尤為常見。上面的圖就是一個活生生血淋淋（？）的例子，這組關鍵字取自 Engadget 的<a href="http://chinese.engadget.com/2012/04/20/sony-patent-application-aims-to-put-names-to-faceless-mmo-player/">這篇文章</a>。</p></li>
+<li><p>同一個概念以不同的單字形式標籤</p>
+
+<p> 以英文做標籤的網站中很容易發生這種情形，因為一個概念在不同的詞性表現下就是不同的單字，因而成為不同的標籤關鍵字。例如我想要加上「部落格」這個標籤，用英文寫時就可能同時把名詞、動詞、動名詞，還有單數型複數型全部通通填上去，像這樣： <code>blog</code>, <code>blogging</code>, <code>blogs</code>。</p></li>
+<li><p>同一個概念以不同的語言標籤</p>
+
+<p> 這個就是多語言使用者的苦惱了。例如像我這樣的宅宅就會因為以下 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 等標籤到底要用哪個好而苦惱，而最後的結果通常就是全部都用。</p></li>
+</ol>
+
+
+<p>這三種情形都是用不同的方式去標籤同一個概念，雖然初衷是為了將來方便搜尋，但往往反而導致搜尋時的困難。考慮以下情形：假設我的一篇部落格文章用了 <code>win7</code> 與 <code>Window 7</code> 作為標籤，另一篇主題近似的文章卻是用了 <code>Windows 7</code> 與 <code>win-7</code> 作為標籤。這種不一致性會讓讀者在前篇文章中點下 <code>win7</code> 這個標籤連結時，無法將所有主題相關的文章列出。</p>
+
+<p>另外一個問題則是製造不必要的心力浪費。因為沒有一個標準來選擇用哪個單詞做標籤，因此也不知道自己將來要回頭找資料時，會用哪個單詞來做搜尋，只好想辦法把所有自己想得到的所有相關字一股腦兒全部填入。</p>
+
+<p>為了避免上述問題，雖然目前每個網站的標籤機制如同多頭馬車各行其道，制定一個自己個人使用的標籤習慣（或規範）倒是可行的一個作法。這個問題相信困擾的不只是我，上網找了一下，有兩篇值得參考的文章，第一個是 Calvin C. Yu 所寫的 <a href="http://www.slideshare.net/calvinyu/hitech-hi-tag">Taggin Guidelines</a> （在投影片中的第 13 頁），主要原則如下：</p>
+
+<blockquote><ul>
+<li>簡練</li>
+<li>小寫</li>
+<li>單數</li>
+</ul>
+</blockquote>
+
+<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong>複數詞組，逗號分隔</strong> (Multi Word, Comma Seperated)。</p>
+
+<hr />
+
+<p>而我自己所使用標籤的標準如下：</p>
+
+<ol>
+<li><p><strong>簡便性</strong></p>
+
+<ol>
+<li><p><strong>盡量簡單。</strong></p></li>
+<li><p><strong>方便輸入。</strong>所以標籤時會以英文為主，例如用 <code>browser</code> 而不用 <code>瀏覽器</code>。</p></li>
+<li><p><strong>自己容易想起。</strong>通常第一個想到的字詞就是了。</p></li>
+<li><p><strong>使用容易理解的詞。</strong></p></li>
+</ol>
+</li>
+<li><p><strong>一致性</strong></p>
+
+<ol>
+<li><p><strong>一個概念一個詞。</strong>所以 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 就只剩下用一個 <code>anime</code>。</p></li>
+<li><p><strong>小寫。</strong>同樣是為了方便輸入。</p></li>
+<li><p><strong>用單數，用名詞。</strong>當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。</p></li>
+<li><p><strong>人名的標記從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
+<li><p><strong>除非是自己口語常用的縮寫，不然不使用縮寫作標記。</strong><code>nds</code> <code>win7</code> <code>xbox360</code> 都很好理解，可是用 <code>resp</code> <code>req</code> 來做為 <code>response</code> <code>request</code> 標籤的替代，就太過頭了。現在連寫程式都不鼓勵這種縮寫了。</p></li>
+</ol>
+</li>
+<li><p><strong>格式</strong></p>
+
+<ol>
+<li><p><strong>省略單字間空白。</strong>也就是說用 <code>macosx</code> 而非 <code>mac os x</code>。不過英文人名是例外；日常用字如 <code>smartphone</code> 我們容易斷字，相對的人名如果省略空白有時候就不容易逆推。其他如果空白省略會造成歧異的話，也應該保留空白於關鍵字中。</p></li>
+<li><p><strong>以逗號區隔關鍵字。</strong>正確來說應該是以「逗號加空白」區隔關鍵字。</p></li>
+</ol>
+</li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-21T06:33:00+08:00" pubdate data-updated="true">Apr 21<span>st</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    [<a class='category' href='/blog/categories/personal/'>personal</a>]
+  
+</span>
+
+
+      
+
+<br \>
+<span class="tags">
+  
+    #<a class='tag' href='/blog/tags/keyword/'>keyword</a>, #<a class='tag' href='/blog/tags/label/'>label</a>, #<a class='tag' href='/blog/tags/tag/'>tag</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+<ul>
+  
+  <li id="social-media-button-twitter">
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/" >Tweet</a>
+  </li>
+  
+  
+  <li id="social-media-button-google">
+  <div class="g-plusone" data-size="medium"></div>
+  </li>
+  
+  
+  <li id="social-media-button-facebook">
+  <div class="fb-like" data-send="true" data-width="420" data-show-faces="false"></div>
+  </li>
+  
+</ul>
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/04/20/refinements-of-my-octopress/" title="Previous Post: Octopress 調教筆記">&laquo; Octopress 調教筆記</a>
+      
+      
+    </p>
+  </footer>
+</article>
+  <section>
+    <div class="linkwithin_div"></div>
+  </section>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/21/my-tagging-guideline/">我的貼標籤規範</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/">用 Vim 將不斷行文章轉為 BBS 格式</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/';
+        var disqus_url = 'http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+  <script>
+    var linkwithin_site_id = 1254157;
+  </script>
+  <script src="http://www.linkwithin.com/widget.js"></script>
+  <a href="http://linkwithin.com/"><img
+    src="http://www.linkwithin.com/pixel.png" alt="Related Posts Plugin
+    for WordPress, Blogger..." style="border: 0" /></a>
+</body>
+</html>
