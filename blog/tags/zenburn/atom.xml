@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: zenburn | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/zenburn/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[代碼配色，從 Zenburn 到 Solarized]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized/"/>
+    <updated>2012-02-10T08:40:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized</id>
+    <content type="html"><![CDATA[<p>這些年來，我的代碼配色方案都是以 <a href="http://coder.aqualuna.me/search/label/Zenburn">zenburn</a> 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse 再到 XCode 都可以<a href="http://slinky.imukuppi.org/zenburnpage/">找到現成的 zenburn 設定</a>。</p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-m9F65JqmUDI/TzRk4vBNMkI/AAAAAAAAJVc/mShL8z4NQAc/s640/vim_zenburn.png" alt="zenburn @ vim" /></p>
+
+
+<p>上圖就是目前在用的 zenburn。由於用這麼久都已經習慣了，從沒有想過會有第二種配色讓我如此滿意，結果前天突然發現 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這一組配色，當場就被迷住了，我才認識這組配色不到 24 小時，就把 zenburn 從我的 vimrc 中換掉了。</p>
+
+
+<ul><li>官方網站：<a href="http://ethanschoonover.com/solarized">Solarized - Ethan Schoonover</a></li><li>GitHub 檔案庫：<a href="https://github.com/altercation/solarized">altercation / solarized - GitHub</a></li></ul>
+
+
+<p>說起來，會注意到 Solarized 也是無心插柳。原本是在找 markdown + blogger 的 solution, 沒有找著，倒是見到了一個以 github 為基礎的 blog framework, 叫 Octopress。我對 <a href="http://octopress.org/">Octopress</a> 沒有太多興趣，純粹好奇它的技術架構（畢竟以 SCM 作為 blog 後端，是很有趣的想法），所以研究了一下。然後意外地在<a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html">〈使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章〉</a>這篇文章中意外地注意到 Solarized 這組配色。</p>
+
+
+<p>Solarized 最令我覺得神奇的地方，就在於同一組基本色，可以任意搭配淺白色或淺黑色背景，都一樣清晰明瞭。它的色盤也控制在 16 色內，所以即使在終端機模式下使用也不會突兀。在官方網站上，也列出了 Visual Studio 與 Xcode 等 IDE 的配色支援；for eclipse 的配色網路上搜尋得到，不過官網上沒列出，不曉得是不是名字相衝的緣故（太陽 vs. 日蝕）=P</p>
+
+
+<p>我在終端機純文字模式下的 Vim 與圖形介面的 MacVim 分別指定了 Light 與 Dark 兩種配色。這樣在 Vim 中編輯時，只要瞄一下我就可以知道現在是在終端機模式下還是獨立的 Mac App。</p>
+
+
+<p><img src="https://lh3.googleusercontent.com/-wTKa4GLQKZE/TzRk46EP8GI/AAAAAAAAJVY/uhEJUnmBN14/s640/vim_solarized_yin.png" alt="solarized(yin) @ vim" /></p>
+
+
+<p><img src="https://lh4.googleusercontent.com/-nIid_yCO9y4/TzRk4nK58FI/AAAAAAAAJVU/Sbt62oMbNAY/s640/macvim_solarized_yang.png" alt="solarized(yang) @ macvim" /></p>
+
+
+<p>另外這配色除了用在程式碼外，也有提供給一般應用程式使用的版本，例如常見的 putty, OSX 自帶的 Terminal, 以及 iTerm 2 等。一樣都可以在 Solarized 放在 GitHub 上的 Repository 上找到。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的 vimrc 配置]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/12/30/my-vimrc/"/>
+    <updated>2011-12-30T05:10:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/12/30/my-vimrc</id>
+    <content type="html"><![CDATA[<p>我的 vimrc 配置 @ GitHub:&nbsp;<a href="https://github.com/tzengyuxio/vimrc">https://github.com/tzengyuxio/vimrc</a><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-SoWAf_kGFPo/TvzTjBvAFQI/AAAAAAAAJG4/clbERtQVV9s/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.49.11.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="224" src="http://4.bp.blogspot.com/-SoWAf_kGFPo/TvzTjBvAFQI/AAAAAAAAJG4/clbERtQVV9s/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.49.11.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Vim in Terminal (Mac)</td></tr></tbody></table>我一直在用的 vimrc 配置是在我還在以 WinXP 作為主要工作電腦時所配置的， 有超過一年多沒動過了。現在的主要工作電腦以 Mac OS X 為主，當初寫的配置如今有些不合用，然而這好些個日子以來也都是一直將就著用，懶得動手改。終於今天決定要趁著年底來個大掃除，整理一下 vimrc，順便也把程式碼從原本的自家用 SVN 轉移到 GitHub 上。<br /><br />這次最大的修補就是狀態列了。原本狀態列的配色只有寫了 GUI 模式下的版本，因此在 Terminal 的純文字模式下，只會見到模糊不清的文字配色，要看清楚狀態列訊息得特別花眼力。今天重新調整了狀態列在 GUI 模式與純文字模式下的配色，另外也加上了隨著視窗寬度調整，能夠自動增減狀態列訊息的功能。<br /><br /><div class="separator" style="clear: both; text-align: center;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-tO5LBggCPPE/TvzTj2R8bmI/AAAAAAAAJHA/bb3vgwSzoNY/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.50.02.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="276" src="http://1.bp.blogspot.com/-tO5LBggCPPE/TvzTj2R8bmI/AAAAAAAAJHA/bb3vgwSzoNY/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.50.02.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">MacVim</td></tr></tbody></table><div style="text-align: left;">另外一個比較大的改變不在於程式碼本身，而在於 vimrc 與相關外掛的管理方式。這次加入了 <a href="http://www.vim.org/scripts/script.php?script_id=2332">pathogen</a> 來做為外掛套件管理。另外，除了將專案移到了 GitHub 外，也特別研究了 "git submodule" 的使用方式，把 NERD tree 等外掛的 git 加入到自己的 git repository 中，而不是單純地把檔案加進來。關於 "git submodule" 的進一步介紹與說明，可以參考<a href="http://josephjiang.com/entry.php?id=342">〈Git Submodule 的認識與正確使用！〉</a>這篇文章，講解的非常清楚。<br /><br />有時間的話再來寫幾篇文章來對自己 vimrc 中的設定作個詳細的說明。</div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的 Eclipse 初始設定調教]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/12/27/my-eclipse-settings/"/>
+    <updated>2011-12-27T07:30:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/12/27/my-eclipse-settings</id>
+    <content type="html"><![CDATA[<br />* 12/30 更新：追加了行號、跳格字元等相關項目<br /><br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br />雖說初始設定調教，不過其實要改的地方也不多。現在對於工具的想法我是抱持著盡量不要改太多，以免花太多時間在調整工具上。<br /><br />以前在不同的軟體間，可能還會改些快速鍵，希望跨不同的軟體時有一致的快速鍵操作，現在都直接讓自己適應。畢竟最常用的快速鍵：剪下、複製、貼上、存檔，所佔用的使用比率高達八成，而這些操作的快速鍵幾乎各軟體平台適用，這就夠了。剩下的<a href="http://widget5.linkwithin.com/redirect?url=http%3A//coder.aqualuna.me/2011/07/eclipse.html&amp;vars=%5B%22http%3A//coder.aqualuna.me/%22%2C%20808611%2C%201%2C%20%22http%3A//coder.aqualuna.me/2011/12/eclipse-git-svn.html%22%2C%20null%2C%200%2C%20129957287%5D&amp;ts=1324942435763">查查 cheat sheet 吧</a>，反正真的常用的一定會讓身體記起來的。<br /><br />所以要做的設定調整很簡單，就是<u>配色</u>、<u>編碼</u>、<u>行號</u>和<u>跳格字元</u>。就這樣。<br /><br /><br />## 配色 ##<br /><br />關於配色我習慣用 <a href="http://slinky.imukuppi.org/zenburn/">Zenburn</a>，這組配色採用低對比色，看上去很舒服，以暗色為背景，看久了眼睛也比較不會累。基本上，只要支援 Color Syntax 的編輯器，幾乎都可以找到 zenburn 的配色腳本。<br /><br />要使用 zenburn, 只要安裝 <a href="http://marketplace.eclipse.org/content/eclipse-color-theme">Eclipse Color Theme</a>，之後就可以在「偏好設定」中指定 zenburn 的配色了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="226" src="http://4.bp.blogspot.com/-NiL2SO1-6fk/TvkACwIt5nI/AAAAAAAAJGY/L9UowM5D3IY/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.35.15.png" width="320" /></a></div><br />## 編碼 ##<br /><br />小地方可是卻很容易忘記的步驟。將 Text file encoding 指定為 UTF-8, 可以省下之後關於文字編碼上的許多麻煩，特別是程式碼中不小心塞了些中文在註解或字串中－－雖然這是不好的作法，但有時候你就是避不了。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="260" src="http://4.bp.blogspot.com/-MpDUemc3nJk/TvkApe5KSQI/AAAAAAAAJGk/N77filTQSo0/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.36.41.png" width="320" /></a></div><br />## 行號 ##<br /><br />我寫程式喜歡有行號，有時候 Compiler 或 Log 告訴你哪一行出錯了，有行號的話便立刻能在畫面上定位。除了行號顯示的設定（Show line numbers）之外，在同個設定頁面中的顯示列印邊界（Show print margin）最好也一起勾上，有了這個提示，可以督促自己不要寫出一行太長的代碼。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s1600/line_and_colmargin.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="290" src="http://2.bp.blogspot.com/-DkSNa3h45Hg/TvzZmcDu9kI/AAAAAAAAJHM/JBq5gPfho7w/s320/line_and_colmargin.png" width="320" /></a></div><br />## 跳格字元（Tab） ##<br /><br />Tab 用來對齊程式代碼很好用，可是隨著每台電腦設定的不同，在自己電腦上看起來整整齊齊的 Code, 到了別人電腦上一看可能歪七扭八。所以我偏好用空白來取代 Tab 字元（Insert spaces for tabs），雖然有時候 backspace 時要多按個幾下，不過至少可以確定這邊看到的跟其他電腦上看到的是一致的。 設定「空白取代跳格字元」的地方跟設定「行號顯示」是同一個頁面，就在上面而已。<br /><br /><br />## 字型 ##<br /><br />這部份算是個補充。寫程式的字型我偏好使用 <a href="http://www.donationcoder.com/Software/Jibz/Dina/">Dina Programming Font</a>, 這是個有 8pt, 9pt, 10pt 三種大小的點陣字型。這個字型的「數字1, 小寫l, 大寫I」以及「字母O, 數字0」均有相當清楚的分別。它曾在 Visual Studio 跟 Vim 上陪伴了我好幾年的歲月。不過這一兩年以來，我也漸漸可以接受 Microsoft 的 Consolas 與 Apple 的 Monaco/Menlo 等向量字作為 Coding 字型，所以也逐漸放棄將預設字型改成自己偏好的 Dina 了。謹以此處一小段文章紀念一下 Dina Programming Font。
+
+]]></content>
+  </entry>
+  
+</feed>

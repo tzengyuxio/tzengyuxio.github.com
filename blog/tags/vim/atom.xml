@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: vim | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/vim/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[用 Vim 將不斷行文章轉為 BBS 格式]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/"/>
+    <updated>2012-04-19T11:27:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim</id>
+    <content type="html"><![CDATA[<p>我是一個鄉民。雖然大多數時間都在潛水，但偶爾也會浮上來寫些東西。</p>
+
+<p><img src="/images/2012/2012-04-19-ugly-format-in-bbs.png" alt="ugly format in bbs" /></p>
+
+<p>我不常在 BBS 上直接編輯，多半都是在習慣的編輯器上寫好再貼過去。不過問題來了，我寫文章的習慣都是一直打字一直打字，直到段落結束才換行，這樣的文字如果複製起來直接貼到 BBS 上發表，雖然還是能夠正常顯示，但在編輯與回文時就會出現過長的文字而造成如上圖般糟糕的版面效果。</p>
+
+<p>所以我在把文章貼到 BBS 上前，會先進行排版，將每行的字數限制在 72 字元以下。一開始我還乖乖手動一行一行按 Enter，可是這勤勞樸實的作風太不符合以 Lazy Easy 為最高指導原則的程式設計師身分了。經過一番研究後，我用 Vim 來做為我文章自動排版的工具。</p>
+
+<p>要完成任務，首先得在 <code>.vimrc</code> 檔案裡加入以下設定：</p>
+
+<pre><code>set fo+=Mm
+set tw=72
+</code></pre>
+
+<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Mm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
+
+<p>接著，為了讓事情更方便些，可以加入以下的按鍵映射：</p>
+
+<pre><code>noremap &lt;silent&gt; &lt;F7&gt; gggqG
+</code></pre>
+
+<p>我把 F7 按鈕對應到 <code>gggqG</code>，這串指令可以分成三個部分：<code>gg</code>, <code>gq</code>, <code>G</code>。</p>
+
+<ul>
+<li><code>gg</code>: 將游標移至檔案最前頭</li>
+<li><code>gq</code>：從游標開始處進行格式重排</li>
+<li><code>G</code>：將游標移至檔案最尾端</li>
+</ul>
+
+
+<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 F7，就可以立刻排成 BBS 所需要的格式囉。</p>
+
+<p>只剩下一個問題......如果文章中有太長的連結，要是能自動縮網址那就更完美了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JSON for Vim]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/26/json-for-vim/"/>
+    <updated>2012-03-26T10:42:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/26/json-for-vim</id>
+    <content type="html"><![CDATA[<p>剛剛在 Terminal 下開了個新檔要來寫 JSON, 發現 Vim 竟然沒有支援 JSON 的 FileType 與 syntax highlight。想說這問題應該很多人遇過，因此上網找了一下，找到這個 script: <a href="http://www.vim.org/scripts/script.php?script_id=1945">JSON.vim</a>。</p>
+
+<p>不過看了下安裝說明，感覺麻煩了點。於是又找到了<a href="http://www.codeography.com/2010/07/13/json-syntax-highlighting-in-vim.html">這篇文章</a>，只要到 <code>~/.vimrc</code> 加入下面這行，就可以讓 JSON 檔案套用 JavaScript 的 syntax highlight, 簡單明瞭。</p>
+
+<pre class="prettyprint"><code>autocmd BufNewFile,BufRead *.json set ft=javascript</code></pre>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
+    <updated>2012-03-09T20:28:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
+    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<hr />
+
+<p>Byte Order Mark 在 UTF-16 Big Endian 是 "FE FF"，Little Endian 是 "FF FE"。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
+
+<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 "EF BB BF"。</p>
+
+<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
+
+<h2>在 VIM 中的 BOM 相關操作</h2>
+
+<h3>加入 BOM</h3>
+
+<pre><code>:set bomb
+</code></pre>
+
+<h3>移除 BOM</h3>
+
+<pre><code>:set nobomb
+</code></pre>
+
+<h3>查詢 BOM 狀態</h3>
+
+<pre><code>:set bomb?
+</code></pre>
+
+<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
+
+<h3>查詢包含 UTF-8 BOM 的檔案</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+</code></pre>
+
+<h3>找出並移除 UTF-8 的 BOM</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+</code></pre>
+
+<h3>編碼的轉換</h3>
+
+<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+</code></pre>
+
+<p>其中 ENCODING 的部份可以是以下數值：</p>
+
+<ul>
+<li>UTF-8 UTF8</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UCS-2BE UNICODEBIG</li>
+<li>UCS-2LE UNICODELITTLE</li>
+</ul>
+
+
+<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
+]]></content>
+  </entry>
+  
+</feed>

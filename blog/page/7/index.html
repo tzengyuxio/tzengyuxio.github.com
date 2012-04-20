@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="很喜歡シーブリーズ&nbsp;(SEABREEZE) 的這兩支廣告。喜歡廣告裡不顧一切奔跑的感覺。2007, 2008 年的シーブリーズ是由堀北真希代言。下面是2008年的 CM。北乃きい和林遣都共同代言2009年的シーブリーズ，廣告裡不停追逐學長的高校少女，跑得甚至比參加馬拉松的學長還快， &hellip;">
+  <meta name="description" content="作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 github 的 gist 服務來將程式代碼內嵌到網頁（使用效果見此），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。 不過有時候只是想要顯示幾行代碼， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,179 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/08/07/embeded-code-with-google-code-prettify/">用 Google-code-prettify 在網頁中嵌入代碼</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-07T09:13:00+08:00" pubdate data-updated="true">Aug 7<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 <a href="https://github.com/">github</a> 的 <a href="http://www.gist.com/">gist</a> 服務來將程式代碼內嵌到網頁（<a href="http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response/">使用效果見此</a>），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。</p>
+
+<p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>
+
+<p>其實就功能上而言，SyntaxHighlighter 遠遠勝過 google-code-prettify，之所以選擇了 google-code-prettify，最主要的原因就在於「<strong>簡單</strong>」。兩者的比較如下（分別簡稱為 GCP 和 SH）：</p>
+
+<ul>
+<li>遇到過長的程式碼，SH 可以顯示出 Scrollbar，維持原排版；而 GCP 則會強制換行。</li>
+<li>SH 預設有行號，GCP 也可加入行號，但不方便。</li>
+<li>兩者都支援顏色主題。包含預設的在內，SH 現有 7 種顏色主題，GCP 則有 4 種。</li>
+<li>SH 支援 23 種程式語法，GCP 預設內建的也有 20 種左右。</li>
+<li>就安裝上，GCP 只要加入兩個檔案，就可以處理大多數的語言；SH 則除了得加入核心的 CSS 與 JavaScript 檔共三個檔外，還必須加入對應使用程式語言的 JavaScript。</li>
+<li>使用上兩者差異不大。SH 除了 <code>&lt;pre&gt;</code> 標籤外也提供了 <code>&lt;script&gt;</code> 的使用方式；GCP 則是可以省略語法指定，自動判斷。</li>
+</ul>
+
+
+<p>由於我經常跨不同程式語言撰寫，因此 SH 在安裝上對我而言就顯得比較不便。雖然新版提供了 Autoloader 來動態決定要載入哪些程式語言語法的 JavaScript，不過我最後還是選擇單純一點的 GCP。GCP 對我而言最大的缺點就是沒有行號，我在 IDE 上寫 code 一定會打開行號顯示，不過反正網頁上顯示的代碼行數都不多，沒有行號這一點倒是還可以接受。</p>
+
+<p>以下就是我的 google-code-prettify 安裝筆記：</p>
+
+<h2>Step 1.</h2>
+
+<p>到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> 首頁下載好檔案後，解壓放到自己的網路空間上。我是放到 Dropbox 的 public 資料夾下。</p>
+
+<h2>Step 2.</h2>
+
+<p>然後再修改自己網頁的範本。有兩個地方要修改，一個是在 <code>&lt;/head&gt;</code> 標籤之前加上 css 與 javascript 的載入；另外一個是在 <code>&lt;body&gt;</code> 標籤內加上 onLoad 函式。</p>
+
+<pre class="prettyprint lang-html"><code>&lt;head&gt;
+  &lt;-- 中略 --&gt;
+  &lt;-- 1. 在 /head 標籤前加入下面兩行 --&gt;
+  &lt;link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/&gt;
+  &lt;script src="http://my.url.to/prettify.js" type="text/javascript"/&gt;
+&lt;/head&gt;
+
+&lt;-- 2. 在 body 標籤內加入 onload 設定 --&gt;
+&lt;body onload='prettyPrint()'&gt;
+&lt;/body&gt;
+</code></pre>
+
+
+<h2>Step 3.</h2>
+
+<p>接下來只要在想要使用代碼的地方，用 <code>&lt;pre&gt;</code> 或 <code>&lt;code&gt;</code> 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。</p>
+
+<pre class="prettyprint lang-html"><code>&lt;pre class="prettyprint"&gt;
+#include &lt;stdio.h&gt;
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+&lt;/pre&gt;
+</code></pre>
+
+
+<p>上面這段代碼的結果如下：</p>
+
+<pre class="prettyprint"><code>#include &lt;stdio.h&gt;
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+</code></pre>
+
+
+<p>如果想要自己指定區塊內的程式語言，可以再加上 <code>lang-*</code>，其中 * 要替換成該程式語言的代碼。</p>
+
+<pre class="prettyprint"><code>&lt;pre class="prettyprint lang-html"&gt;
+  &lt;-- HTML 的場合 --&gt;
+&lt;/pre&gt;
+&lt;pre class="prettyprint lang-c"&gt;
+  /* C 的場合 */
+&lt;/pre&gt;
+&lt;pre class="prettyprint lang-py"&gt;
+  " Python 的場合
+&lt;/pre&gt;
+</code></pre>
+
+
+<p>目前支援的代碼有</p>
+
+<blockquote><p>&#8220;bsh&#8221;, &#8220;c&#8221;, &#8220;cc&#8221;, &#8220;cpp&#8221;, &#8220;cs&#8221;, &#8220;csh&#8221;, &#8220;cyc&#8221;, &#8220;cv&#8221;, &#8220;htm&#8221;, &#8220;html&#8221;, &#8220;java&#8221;, &#8220;js&#8221;, &#8220;m&#8221;, &#8220;mxml&#8221;, &#8220;perl&#8221;, &#8220;pl&#8221;, &#8220;pm&#8221;, &#8220;py&#8221;, &#8220;rb&#8221;, &#8220;sh&#8221;, &#8220;xhtml&#8221;, &#8220;xml&#8221;, &#8220;xsl&#8221;</p></blockquote>
+
+<p>看得出來是以程式碼的副檔名做區隔。基本上常見的幾乎都包含在裡面了。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<ul>
+<li><a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a></li>
+<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a></li>
+<li><a href="http://www.vixual.net/blog/archives/197">在 Blogger 中使用 google-code-prettify 顯示程式碼 | Vixual</a></li>
+<li><a href="http://www.vixual.net/blog/archives/198">在 Blogger 中使用 dp.SyntaxHighlighter 顯示程式碼 | Vixual</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/google-code-prettify.html">幻影千瞳的部落格: 使用 google-code-prettify</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/syntaxhighlighter.html">幻影千瞳的部落格: 使用 SyntaxHighlighter</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/08/06/google-authorship/">Google Authorship (著作者身分)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-06T11:04:00+08:00" pubdate data-updated="true">Aug 6<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><span class="Apple-style-span" style="color: red;">更新：關於 Google Authorship 的運作機制與非 Blogger 使用者的使用參考，<span id="goog_1196584250"></span><a href="http://blog.aqualuna.me/2011/08/more-on-google-authorship_09.html">請見此篇</a><span id="goog_1196584251"></span>。</span><br /><br />Google 搜尋最近新加入了一項功能，就是可以在搜尋結果中顯示作者資訊。這項技術叫做 Google Authorship，實際的呈現結果如下圖（目前只有在 Google English 的搜尋才看得到）：<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-rmPvyuZFFZg/Tjyhffmt8uI/AAAAAAAAAbY/Hya9qlYGtT0/s1600/ga_sample.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="218" src="http://4.bp.blogspot.com/-rmPvyuZFFZg/Tjyhffmt8uI/AAAAAAAAAbY/Hya9qlYGtT0/s400/ga_sample.png" width="400" /></a></div><br />透過 Google Authorship，不僅可以讓自己的文章在搜尋結果頁面中顯得更為突出，也可以在轉貼成風的網路汪洋中，更明確的顯示出某篇文章真正的原始出處，除此之外，也有助於搜尋結果排名的提升。可以想見，當越來越多的作者加入 Google Authorship 後，網路搜尋的結構也會呈現出與今日截然不同的樣貌。<br /><br />不過 Google 還沒那麼聰明，沒辦法直接把文章跟原作者作連結，所以我們還是得作些設定。如果你是用 Google 的 Blogger 在寫網誌，而且也有了一個 Google+ 帳號，那麼很簡單，只要完成下面兩個動作就好：<br /><br />一、在 Blogger Profile （個人簡介，就是下面那張圖）頁面中，加入自己的 Google+ 連結：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-k3wm9QJZSeo/TjyhfDX27ZI/AAAAAAAAAbU/C9A2u8yJ05k/s1600/ga_personalprofile.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="241" src="http://4.bp.blogspot.com/-k3wm9QJZSeo/TjyhfDX27ZI/AAAAAAAAAbU/C9A2u8yJ05k/s400/ga_personalprofile.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">點擊左上角按鈕開始編輯</td></tr></tbody></table><pre style="text-align: center;">https://plus.google.com/<span class="Apple-style-span" style="color: blue;">116861989911994383287</span><span class="Apple-style-span" style="color: red;">?rel=author</span></pre>請把上面連結藍色部分的數字，替換成自己的 Google+ ID，然後輸入在「一般」資訊區塊的「首頁URL」欄位中。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-PF823Cho9vI/TjyhevRaEXI/AAAAAAAAAbQ/zjguQ8f7604/s1600/ga_homepageurl.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="150" src="http://3.bp.blogspot.com/-PF823Cho9vI/TjyhevRaEXI/AAAAAAAAAbQ/zjguQ8f7604/s400/ga_homepageurl.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">輸入自己的 Google+ 頁面，並加上 &#8220;?rel=author&#8221;</td></tr></tbody></table><br />二、在自己的 Google+ 頁面中，加入自己的網誌連結，並開放給網路上所有的人。加入連結時，記得要勾選「這個網頁是用專門用來介紹我自己」：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-T4iLCkrSjtU/TjykdR1gOuI/AAAAAAAAAbg/TS0_o8Z3EcI/s1600/ga_gpluslink.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="112" src="http://1.bp.blogspot.com/-T4iLCkrSjtU/TjykdR1gOuI/AAAAAAAAAbg/TS0_o8Z3EcI/s400/ga_gpluslink.png" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">編輯自己 Google+ 「關於」頁面中的連結</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-SFz5dY69eqo/TjymI3oTdnI/AAAAAAAAAbk/6A3NZIIn7zc/s1600/ga_editlink.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SFz5dY69eqo/TjymI3oTdnI/AAAAAAAAAbk/6A3NZIIn7zc/s320/ga_editlink.png" width="300" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">除了勾選選項外，也要把開放</td></tr></tbody></table><br />像筆者有三個網誌，每個都可以勾選「這個網頁是專門用來介紹我自己」。又因為三個網誌都是使用同一份 Blogger Profile，因此三個網站的文章就同時都會與我的 Google+ 建立連結。<br /><br />到這邊就算大功告成，完成了「文章網頁」與「個人檔案」的雙向連結。接著可以到 <a href="http://www.google.com/webmasters/tools/richsnippets">Rich Snippets Testing Tool</a> 這個工具，輸入自己網站網址來檢查是否設定成功。成功的話，會顯示如下的訊息：<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-zh5DI345CCo/TjyokbizBUI/AAAAAAAAAbo/PjMlpJVSGnA/s1600/ga_success.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/-zh5DI345CCo/TjyokbizBUI/AAAAAAAAAbo/PjMlpJVSGnA/s1600/ga_success.png" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">綠色文字表示設定成功</td></tr></tbody></table>不過最後我們還得告訴 Google 請把我們的文章與作者關連加入到搜尋結果中。請前往&nbsp;<a href="https://spreadsheets.google.com/a/google.com/spreadsheet/viewform?formkey=dHdCLVRwcTlvOWFKQXhNbEgtbE10QVE6MQ">Authorship Request</a>&nbsp;這個表單，填寫相關資訊後送出。送出之後通常不會立刻在搜尋結果中看到，想看得到得等上一陣子就是了。<br /><br />&#8212;-<br />參考資訊：<br />以下介紹所使用的是 <span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="color: purple;">&amp;lt;a href=&#8221;url&#8221; </span><span class="Apple-style-span" style="color: red;">rel=&#8221;author&#8221;</span><span class="Apple-style-span" style="color: purple;">&amp;gt;</span></span> 的方式：<br />．<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1229920">Google Authorship 官方說明 (原始作法，英文)</a><br />．<a href="http://st-threath.blogspot.com/2011/08/googlegoogle-profile-google-authorship.html">Google搜尋結果出現Google+ profile? 　(如何設定Google Authorship)</a><br />．<a href="http://mynotes.org/tech/2011/08/04/5335.htm">將文章與Google+帳號連結</a><br /><br />新的作法改採 <span class="Apple-style-span" style="font-family: Verdana, sans-serif;"><span class="Apple-style-span" style="color: purple;">&amp;lt;a href=&#8221;url</span><span class="Apple-style-span" style="color: red;">?rel=author</span><span class="Apple-style-span" style="color: purple;">&#8220;&amp;gt;</span></span> 的方式：<br /><a href="http://draft.blogger.com/url?rel=author"></a>．<a href="http://www.google.com/support/webmasters/bin/answer.py?answer=1408986">Google Authorship 官方說明 (新作法，英文)</a><br /><br />新的作法適用在一些只能填入連結，無法自己修改網頁 HTML 的地方。例如你是某新聞網站的作者，新聞網站提供了每個作者的個人頁面，可以編輯文字、加上連結，但卻無法自訂連結的屬性，這時候新的作法就可以派上用場。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -540,78 +713,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/06/19/tante/">聽一萬遍也學不會 - 神曲〈忐忑〉</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-06-19T13:49:00+08:00" pubdate data-updated="true">Jun 19<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天偶然聽到這首歌，驚為天人！網路上封此歌為「神曲」，果然名不虛傳。這首歌有著「聽一萬遍也學不會」的網路評價，其實我就是因為看到「連王菲也翻唱失敗」這樣的敘述，才對〈忐忑〉這首歌起了興趣。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://1.gvt0.com/vi/h_U5yPK4g-E/0.jpg"><param name="movie" value="http://www.youtube.com/v/h_U5yPK4g-E&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/h_U5yPK4g-E&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />上面這段〈忐忑〉的影片，是在 2010 北京新春音樂會的演出。演唱者龚琳娜是貴州貴陽人，嫁給了德國的作曲家老公，Robert Zollitsch，Robert 有個親切的中文稱呼，叫老鑼。這首〈忐忑〉就是由老鑼作曲的，很有中國民間戲曲風，完全想像不到這曲子的創作是出自德國人之手。<br /><br />不過「聽一萬遍也學不會」這句倒是有些誇張，雖然王菲在微博上說「眼珠子都轉丟了也沒找着內忐忑勁兒~ 擦肩而過吧~」（2010.10.18），不過網路上還有其他人的翻唱嘗試。其中我覺得比較好聽的就是林凡在康熙上的演出。（話說這陳漢典是在模仿巧克力男孩吧 XD）<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/p2mhglGdJzA/0.jpg"><param name="movie" value="http://www.youtube.com/v/p2mhglGdJzA&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/p2mhglGdJzA&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />〈忐忑〉之所以在網路上引起一股熱潮，除了這歌本身有趣的曲調與龚琳娜即興的歌詞詮釋外，龚的表情演出也是一絕。下面是龚琳娜在台灣演出（客家之歌，大型電視晚會）的影片，有更多的表情變化特寫。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://3.gvt0.com/vi/XJD3RT1jXMc/0.jpg"><param name="movie" value="http://www.youtube.com/v/XJD3RT1jXMc&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/XJD3RT1jXMc&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />當然，由於要翻唱這種歌詞完全隨興所至的歌曲有它一定的難度，有些人就捨歌聲，乾脆只模仿龚琳娜的表情了。上面的陳漢典就是一個，不過我覺得底下杨迪的表情更是誇張到一個極致。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object width="320" height="266" class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/zB-bc2kkQTA/0.jpg"><param name="movie" value="http://www.youtube.com/v/zB-bc2kkQTA&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/zB-bc2kkQTA&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/06/19/seven-lip-dup/">七段你非看不可的 Lip Dup 影片</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-06-19T07:01:00+08:00" pubdate data-updated="true">Jun 19<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>好爛的標題，實在是懶得想標題了，索性用個最常見且無腦的 &#8220;Top-List&#8221; Style。最近有段交大電子所拍攝的畢業影片超熱門，不但一鏡到底，而且還「倒映如流」。據說這叫「LIPDUB風」，上 YouTube 一找，果然還不少。底下就來紀錄一下我看過且覺得不錯的 LIPDUB 影片吧。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-6pFVGMTM2S8/Tf0ccdkvxOI/AAAAAAAAAQ0/3XehEFUWquU/s1600/%25E4%25BA%25A4%25E5%25A4%25A7%25E9%259B%25BB%25E5%25AD%2590100%25E7%25B4%259A%25E7%2595%25A2%25E6%25A5%25AD%25E5%25BD%25B1%25E7%2589%2587+LIPDUB.1080p.mp4_20110619_052846.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="http://3.bp.blogspot.com/-6pFVGMTM2S8/Tf0ccdkvxOI/AAAAAAAAAQ0/3XehEFUWquU/s320/%25E4%25BA%25A4%25E5%25A4%25A7%25E9%259B%25BB%25E5%25AD%2590100%25E7%25B4%259A%25E7%2595%25A2%25E6%25A5%25AD%25E5%25BD%25B1%25E7%2589%2587+LIPDUB.1080p.mp4_20110619_052846.jpg" width="320" /></a></div><br />在看影片前先來認識一下「什麼是 LIPDUB？」根據維基百科上的敘述，LIPDUB 應該寫作 Lip dub，代表 Lip synching (對嘴) 與 Audio dubbing (配音) 兩個縮寫字。也就是影片中的人物對嘴唱歌，錄製完成後，再把歌曲的原聲作為配音取代掉錄製影片中的聲音。<br /><br />這種形式曾經在國外形成一股風潮，許多學校的畢業影片都是採用 Lip dub 風格製作。這種影片看似簡單，實際上呢，也還不難就是－－如果只有對嘴配音的部份的話；不過其實很多以 Lip dub 風格製作的畢業影片都會在校舍之間走來走去，動員大量人力，甚至像交大學生一樣，還用倒拍的方式進行。要規劃設計、並且將這些想法付諸實現，那就真的不簡單、而且很不簡單了。<br /><br />1. <b><span class="Apple-style-span" style="color: red;">交大電子100級畢業影片 LIPDUB。</span></b>雖然是 Lip dub，但是沒什麼對嘴，不過倒著拍本來就不好對嘴，這也無可厚非。這支影片最神奇的地方，就是一路逆向播放的影片到了結尾時竟然變成正向播放了，如果看了幾遍看不出端倪的話，可以把後面括號內的字反白，裡頭有提示（<span class="Apple-style-span" style="color: white;">仔細注意 4:40 秒處，這不是真的一鏡到底</span>）。這段影片據說拍了 12 次（引用自 YouTube 影片下方評論），光想到要是拍失敗，地上的紙屑道具或黑板等東西就得清理掉後重新來過，就讓人不得不佩服這群學生的毅力與精神。<br /><br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/tMjTYfebIRY/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/tMjTYfebIRY&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/tMjTYfebIRY&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />附帶一題，2010 台大藝術季也有拍過一段五分多鐘的影片，據稱是全球第一支華文 Lip dub，可惜台大那支影片裡學生的表情動作都顯得生澀僵硬，較感覺不到歡樂氣息，鏡頭的晃動幅度也很大，看起來有點不舒服，所以這裡就不附影片了。<br /><br />2. <b><span class="Apple-style-span" style="color: red;">Shorewood Lip Dub。</span></b>Shorewood 是華盛頓州的一間高中，這個影片原本是同屬華盛頓州的 Shorewood 與 Shorecrest 兩所高中學生的一項挑戰，要看看誰做的 Lib dub MV 更棒。從結果上來看當然是 Shorewood 勝出了。<br /><br />這部影片也是用「倒映法」的方式播放，同樣一鏡到底，更難能可貴的是，負責每個鏡頭主要角色的學生們，都很努力的在對嘴。要知道，在倒著拍的時後，你根本不知道你念的是什麼鬼。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://3.gvt0.com/vi/T7TI-AJi2O8/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/T7TI-AJi2O8&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/T7TI-AJi2O8&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />對於他們倒拍影片過程有興趣的，還可以看看下面這段製作花絮（其實就是順向播放的影片啦）。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/2bAWFWG8eYw/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/2bAWFWG8eYw&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/2bAWFWG8eYw&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />3.&nbsp;<b><span class="Apple-style-span" style="color: red;">LIPDUB - I Gotta Feeling (Comm-UQAM 2009)。</span></b>這是 UQAM (加拿大魁北克大學蒙特羅分校) 學生所拍的畢業影片。Lip dub 風格的畢業影片就是由這段影片所掀起的一股風潮，在這影片推出後，日本、西班牙、巴西、西班牙等國家都有學生使用同一首歌（I Gotta Feeling）來製作 Lip dub 影片<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/-zcOFN_VBVo/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/-zcOFN_VBVo&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/-zcOFN_VBVo&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />4.&nbsp;<b><span class="Apple-style-span" style="color: red;">Train - Hey, Soul Sister - LIPDUB UVic University (Official)。</span></b>這個是加拿大維多利亞大學拍攝的 Lip dub 影片，這支影片是讓我看了覺得最開心的一支。色彩明亮鮮豔，大家臉上都掛著笑容，感覺像是一場校園內的嘉年華會。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/EeGDRSWB46w/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/EeGDRSWB46w&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/EeGDRSWB46w&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />5.&nbsp;<b><span class="Apple-style-span" style="color: red;">LIP DUB UPF &#8220;Wake me up before you go-go&#8221; (Barcelona, 2010)。</span></b>接下來這個是西班牙 Pompeu Fabra University (查不到正式中文我就不翻了) 製作的 Lip dub 影片。這隻影片裡每個參與的人表情都很豐富，而且很多帥哥正妹，歌曲也好聽，是大家都耳熟能詳的曲子。中間有段坐電梯的插曲很有意思。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/V1ZqSyqORX4/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/V1ZqSyqORX4&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/V1ZqSyqORX4&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />6.&nbsp;<b><span class="Apple-style-span" style="color: red;">University LipDub #1。</span></b>根據維基百科上的紀錄，這是最早在大學校園中使用 Lip dub 方式拍攝的影片，可以看到學生們一個接著一個地（對嘴）唱歌。由德國的富特旺根應用科學大學，數位媒體系學生所製作。<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://1.gvt0.com/vi/tVRrjxtm9Pk/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/tVRrjxtm9Pk&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/tVRrjxtm9Pk&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />7.&nbsp;<b><span class="Apple-style-span" style="color: red;">The Grand Rapids LipDub (NEW WORLD RECORD)。</span></b>最後壓軸的可了不起了，是世界金氏紀錄最多人參與拍攝的 Lip dub 音樂影片。這影片剛開始看我覺得沒什麼，只是一堆人在路上邊走邊唱歌罷了，耐著性子看到 1:30 之後，我發現我錯了，這根本是整個城市的人下去拍的影片，前面的幾個影片都是在校園裡、教室中走走逛逛，相比之下都太小家子氣了。這段近九分鐘的影片有五千名市民參與拍攝，想想看，有許多大專院校搞不好學生和教職員加一加都不到五千人呢！<br /><br /><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://2.gvt0.com/vi/ZPjjZCO67WI/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/ZPjjZCO67WI&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266"  src="http://www.youtube.com/v/ZPjjZCO67WI&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><br />&#8212;-<br />延伸閱讀<br /><a href="http://en.wikipedia.org/wiki/Lip_dub">Lip dub - Wikipedia, the free encyclopedia</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/8/">&larr; Older</a>
@@ -627,6 +728,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/my-tagging-guideline/">My tagging guideline</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
@@ -646,14 +755,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
       </li>
     
   </ul>

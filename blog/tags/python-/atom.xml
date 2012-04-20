@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: python, | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/python-/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[輕量級標記語言 - AsciiDoc, Markdown, reStructuredText]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/10/18/lightweight-markup-language/"/>
+    <updated>2011-10-18T13:57:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/10/18/lightweight-markup-language</id>
+    <content type="html"><![CDATA[<p>因為最近使用 GitHub 的關係，注意到了 Markdown 這個輕量級標記語言 (<a href="http://en.wikipedia.org/wiki/Lightweight_markup_language">Lightweight markup language</a>)，跟著查了一下資料才發現原來<a href="http://superuser.com/questions/209897/text-formatter-tools/209902#209902">輕量級標記語言的選項百百款</a>，其中比較常見的有 Markdown,&nbsp;reStructuredText 以及 <a href="http://www.textism.com/tools/textile/">textile</a>，這三種語法也同時被 BitBucket 和 GitHub 所支援。<br /><br />稍微看過三者的語法比較後，覺得 textile 的語法太過接近 HTML, 使得文字檔本身無法呈現容易理解的架構。而除了前述三者之外，也另外注意到 AsciiDoc 這一款輕量級標記語言，GitHub 有支援 AsciiDoc。下面就是我對 Markdown, reStructuredText 與 AsciiDoc 的一些比較筆記：<br /><br /><a href="http://daringfireball.net/projects/markdown/">Markdown</a><br />使用最為廣泛也最簡單的輕量級標記語言。除了前面提到的 GitHub 與 BitBucket 之外，StackOverflow 的語法基本上也是 Markdown 的強化版，另外 Tumblr 與 Posterous 這兩個輕量級的 blog 也都支援 Markdown 語法。<br /><br />然而正如前面所提到的，StackOverflow 用的是修改過的 Markdown, 實際上 GitHub 用的也是 Markdown 的修改版本。Markdown 簡單卻又略顯不足，使得許多網站的應用必須增添額外的修改。另外，缺乏表格功能的支援是最大的遺憾。<br /><br /><a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a><br />以 Python 寫成，主要也使用於 Python 社群中；Python 的文件產生器 <a href="http://sphinx.pocoo.org/">Sphinx</a> 就是以 reStructuredText 為基礎。是三者之中功能最為完整的一套，事實上，即便要說是所有輕量級標記語言中功能最為完整的一套也不為過，要拿來寫論文也不成問題。腳注 (footnote) 功能讓人眼睛一亮。不過真的是太複雜了，快要脫離「輕量級」的範圍了。<br /><br /><a href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a><br />跟 reStructuredText 同樣也是 Python 寫成，不過語法上比較接近 Markdown 的簡單，但也提供了表格的功能。會讓我注意到這一套，最主要原因是因為開源遊戲<a href="http://www.wesnoth.org/">韋諾之戰</a> (The Battle for Wesnoth) 的 Manual 就是以 AsciiDoc 所寫成。<br /><br />線上工具<br /><ul><li>Markdown: Dingus<br /><a href="http://daringfireball.net/projects/markdown/dingus">http://daringfireball.net/projects/markdown/dingus</a></li><li>reStructuredText:<br /><a href="http://www.tele3.cz/jbar/rest/rest.html">http://www.tele3.cz/jbar/rest/rest.html</a></li><li>AsciiDoc:<br /><a href="http://andrewk.webfactional.com/asciidoc.php">http://andrewk.webfactional.com/asciidoc.php</a></li></ul><br />BitBucket 的 <a href="http://confluence.atlassian.com/display/BITBUCKET/Displaying+README+Text+on+your+Bitbucket+Source+Tab">README 支援列表</a>，主要就是以 reStructuredText, Markdown, Textile 這三種為主，README 和 README.txt 這兩個檔名預設為 Plain Text, 不過如果該專案所使用的語言為 Python 的話，上述兩個檔案則會以 reStructuredText 的格式去轉為網頁。<br /><br /><a href="https://github.com/github/markup#readme">GitHub 支援的格式</a>&nbsp;比較多種，其中 Markdown 應該是最優先的，從許多專案的 README 都是以 .md 作為檔名後綴不難看出。有趣的是 GitHub 是以 Ruby 開發，然而在 Ruby 社群中比較活躍的輕量標記語言其實是 textile。（順帶一提，BitBucket 是以 Python 開發，Mercurial 也是以 Python 開發的）<br /><br />10.21 補充：根據 AcsiiDoc 官網上記載，Git User's Manual 也是以 AsciiDoc 所製作。</p>
+]]></content>
+  </entry>
+  
+</feed>

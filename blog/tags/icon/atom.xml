@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: icon | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/icon/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mac 更換資料夾圖示的方法]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/13/change-folder-icon-in-mac/"/>
+    <updated>2012-02-13T13:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/13/change-folder-icon-in-mac</id>
+    <content type="html"><![CDATA[<p>最近想把 Mac 裡一些常用的資料夾換個圖示，找到的步驟如下：</p>
+
+<ol>
+<li>選取資料夾，開啟該資料夾的「簡介」視窗。</li>
+<li>將下載好的 .icns 圖示檔拉到「簡介」視窗最上方的小圖示上，就可以換掉原有圖示了。</li>
+</ol>
+
+
+<p>我照了這個方法作，不過從網路上下載的 .icns 圖示檔，有些拉上去後可以成功更換資料夾圖示，有些卻不行。研究了半天也搞不清楚為什麼有些成功有些不行。後來找到了另外一個換圖示的方法，不僅更簡單，而且除了 .icns 檔案外，也適用於任何圖檔。方法如下：</p>
+
+<ol>
+<li>用「預覽程式」開啟你要用來當資料夾圖示的 .icns 檔，或其他圖檔。當然，尺寸最好是 512x512。</li>
+<li>開啟後，依序按下⌘A（全選），⌘C（複製）。</li>
+<li>然後選取想要更換圖示的資料夾，開啟該資料夾的「簡介」視窗。</li>
+<li>點選「簡介」視窗最上方的小圖示，按下⌘V（貼上），大功告成！</li>
+</ol>
+
+
+<p>這個方法除了資料夾外，也可以用來更改磁碟映像檔的圖示。</p>
+]]></content>
+  </entry>
+  
+</feed>

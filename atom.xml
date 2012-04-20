@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-19T21:17:21+08:00</updated>
+  <updated>2012-04-20T17:10:49+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My tagging guideline]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/20/my-tagging-guideline/"/>
+    <updated>2012-04-20T10:20:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/20/my-tagging-guideline</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 調教筆記]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress/"/>
+    <updated>2012-04-20T08:52:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress</id>
+    <content type="html"><![CDATA[<p>花了一個晚上沒睡覺，調整了一下這個 Octopress 的一些功能與設定。現在還懶得記詳細步驟，就先簡單寫個筆記吧，以防將來自己看 Source Repository 也看不出到底為什麼要這麼改。</p>
+
+<h3>一、加入 LinkWithin 功能</h3>
+
+<p>原本以為 Octopress 沒辦法加，不過實際嘗試後發現並不難。要修改的地方主要有 <code>source/_layouts/default.html</code> 和 <code>source/_layouts/post.html</code> 這兩個檔案。</p>
+
+<h3>二、文章下方分享功能的版面調整</h3>
+
+<p>Octopress 內建的 twitter, google plus, facebook 三項文章分享功能如果全部打開，會佔掉約 680px 左右的畫面寬度。當文章區塊的寬度小於這個數值時，facebook 的按鈕會跳到下一行。這邊可以透過修改 <code>source/_includes/post/sharing.html</code> 的方式來稍微縮減 facebook 區塊的寬度，以符合需求。</p>
+
+<p>同區塊另外一個問題則是在預設版面中， twitter, google plus, facebook 三者按鈕的高度不同，尤其 facebook 的位置比較偏下。這邊我參考 <a href="https://stacksocial.com/">StackSocial</a> 頁面最下方區塊的作法，將三個按鈕改成 <code>ul → li</code> 格式。</p>
+
+<h3>三、加入標籤 (tag) 功能</h3>
+
+<p>這是花最多時間與腦力的一部分，尤其是我沒有 Ruby 基礎，好在 Ruby 的程式碼不難看懂，我雖然寫不出來，但是我看現有的 code 依樣畫葫蘆，一樣生出功能。這邊主要參考了 Octopress 內建的 Category Plugin，稍作修改，便得到了標籤功能。</p>
+
+<p>透過這次修改，同時也對 <a href="https://github.com/mojombo/jekyll">Jekyll</a> 所使用的 <a href="http://wiki.github.com/shopify/liquid/liquid-for-designers">Liquid Template System</a> 有更深入的了解。想想要整一個 Octopress 網站也真折騰，除了要懂 HTML, CSS, JavaScript 這些基本的之外，還得會摸 Ruby, Sass, Liquid Template，滿滿都是術語與新東西，真不是件簡單任務。</p>
+
+<p>話說既然加入了標籤功能，接下來就是找個時間好好整理每篇文章的「分類」和「標籤」了……嗯，這讓我想到一句老話：</p>
+
+<blockquote><p>要改的東西太多，那就改天吧。</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iPhone 主畫面的使用統計]]></title>
@@ -148,7 +186,7 @@ set tw=72
 </ul>
 
 
-<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 <F7>，就可以立刻排成 BBS 所需要的格式囉。</p>
+<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 F7，就可以立刻排成 BBS 所需要的格式囉。</p>
 
 <p>只剩下一個問題&#8230;&#8230;如果文章中有太長的連結，要是能自動縮網址那就更完美了。</p>
 ]]></content>
@@ -1080,149 +1118,6 @@ public class GetEnv {
 <hr />
 
 <p>網路上有找到<a href="http://subtech.g.hatena.ne.jp/h2u/20110408/1302198319">這篇也有 solarized color for google-pretty-code</a>, 不過只有暗色背景的版本。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
-    <updated>2012-03-09T20:28:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
-    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
-
-<hr />
-
-<p>Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
-
-<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 &#8220;EF BB BF&#8221;。</p>
-
-<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
-
-<h2>在 VIM 中的 BOM 相關操作</h2>
-
-<h3>加入 BOM</h3>
-
-<pre><code>:set bomb
-</code></pre>
-
-<h3>移除 BOM</h3>
-
-<pre><code>:set nobomb
-</code></pre>
-
-<h3>查詢 BOM 狀態</h3>
-
-<pre><code>:set bomb?
-</code></pre>
-
-<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
-
-<h3>查詢包含 UTF-8 BOM 的檔案</h3>
-
-<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
-</code></pre>
-
-<h3>找出並移除 UTF-8 的 BOM</h3>
-
-<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
-</code></pre>
-
-<h3>編碼的轉換</h3>
-
-<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
-</code></pre>
-
-<p>其中 ENCODING 的部份可以是以下數值：</p>
-
-<ul>
-<li>UTF-8 UTF8</li>
-<li>UTF-16BE</li>
-<li>UTF-16LE</li>
-<li>UCS-2BE UNICODEBIG</li>
-<li>UCS-2LE UNICODELITTLE</li>
-</ul>
-
-
-<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[幾個我常用的 Alfred 自定搜尋]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/02/19/alfred-search/"/>
-    <updated>2012-02-19T23:45:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/02/19/alfred-search</id>
-    <content type="html"><![CDATA[<p>雖然用了 <a href="http://tzengyuxio.me/search/label/Alfred">Alfred</a> 一段時間，但是直到最近才開始認真挖掘裡面的設定。其實 Alfred 安裝好不用特別設定，就已經很好用了，像是程式本身預設許多網頁搜尋，從常見的 Google、Yahoo!、Amazon 與維基百科，到比較少人知道但很好用的 <a href="http://www.wolframalpha.com/">wolfram</a> 等，都是現成裝好就可以用的。</p>
-
-
-<p><img src="https://lh6.googleusercontent.com/-6Z65mn0aLAo/T0EV13h5vFI/AAAAAAAAJdU/ijKmwmls5p8/s800/alfred_custom_search.png" alt="Alfred Custom Search" /></p>
-
-
-<p>不過每個人常用網站不同，在軟體的預設網站之外一定有遺珠之憾。好在 Alfred 也有提供自定搜尋選項的功能，以下就來分享我自己設定的 Alfred Custom Search。</p>
-
-
-<p>這些 Custom Search 的安裝方式很簡單，只要將底下以 alfredapp 開頭的一串文字複製起來，叫出 Alfred 的指令視窗（預設是使用 ⌥Space），貼上剛才複製的文字，按下 Enter 就好了。</p>
-
-
-<h2>奇摩字典搜尋</h2>
-
-
-<ul><li>Keyword: dict</li><li><p>說明：就是查字典。dict 後面可以接中文詞或是英文單字。</p><p>alfredapp://customsearch/Yahoo%21%E5%A5%87%E6%91%A9%E5%AD%97%E5%85%B8%E6%9F%A5%E8%A9%A2/dict/utf8/url=http://tw.dictionary.yahoo.com/dictionary?p={query}</p></li></ul>
-
-
-<h2>flickr Creative Common 搜尋</h2>
-
-
-<ul><li>Keyword: fcc</li><li><p>說明：Alfred 已經有內建 flickr 搜尋了，不過並不是任何找到的圖片都可以隨意使用。如果你有在寫 blog 並且會上 flickr 找圖片來點綴文章的話，這個搜尋可以幫助你找到合適的圖片。</p><p>alfredapp://customsearch/Search%20Flickr%20CC%20for/fcc/ascii/url=http://www.flickr.com/search/?q={query}&amp;l=commderiv&amp;ss=0&amp;ct=0&amp;mt=all&amp;w=all&amp;adv=1</p></li></ul>
-
-
-<h2>世界時間查詢</h2>
-
-
-<ul><li>Keyword: time</li><li><p>說明：Time.is 是個簡單但方便的網站，可以以城市名稱查詢該地目前時間。安裝好此 Custom Search 後，就能用 &#8221;<code>time tokyo</code>&#8221; 或 &#8221;<code>time 東京</code>&#8221; 的語法來查詢當地時間。</p><p>alfredapp://customsearch/%E7%9B%AE%E5%89%8D%E7%9A%84%E6%99%82%E9%96%93%EF%BC%8C%E5%9C%A8/time/ascii/url=http://time.is/{query}</p></li></ul>
-
-
-<h2>線上音樂搜尋</h2>
-
-
-<ul><li>Keyword: gs</li><li><p>說明：Grooveshark 是很大的線上音樂網站，找到就可以直接串流播放了，中英文搜尋都 OK。</p><p>alfredapp://customsearch/Search%20Grooveshark%20for/gs/ascii/url=http://grooveshark.com/#/search?q={query}</p></li></ul>
-
-
-<h2>Stack Overflow 搜尋</h2>
-
-
-<ul><li>Keyword: so</li><li><p>說明：寫程式的人幾乎都得拜訪的聖地。google 程式問題時幾乎都會找到這邊來，乾脆就直接在 Stack Overflow 上搜尋吧。</p><p>alfredapp://customsearch/Search%20Stack%20Overflow%20for/so/ascii/url=http://stackoverflow.com/search?q={query}</p></li></ul>
-
-
-<h2>Apple Developer Connection 搜尋</h2>
-
-
-<ul><li>Keyword: adc</li><li><p>說明：對 Apple 開發者很方便的搜尋。</p><p>alfredapp://customsearch/Search%20ADC%20for/adc/ascii/url=http://developer.apple.com/library/mac/search/?q={query}</p></li></ul>
-
-
-<h2>PChome 線上購物 搜尋</h2>
-
-
-<ul><li>Keyword: pchome</li><li><p>說明：台灣最大的購物網站&#8230;&#8230;吧？我沒有數據，單純只是自己蠻常用的。</p><p>alfredapp://customsearch/Search%20PChome%20for/pchome/ascii/url=http://ecshweb.pchome.com.tw/search/v1/{query}</p></li></ul>
-
-
-<h2>Mac App Store 搜尋</h2>
-
-
-<ul><li>Keyword: mas</li><li><p>說明：尋找 Mac App Store 裡面的應用程式，也是我相當常用到的功能。</p><p>alfredapp://customsearch/%10Search%20Mac%20App%20Store%20for/mas/ascii/url=macappstore://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?q={query}</p></li></ul>
-
-
-<h2>博客來搜尋（僅書籍）</h2>
-
-
-<ul><li>Keyword: books</li><li><p>說明：博客來相信我就不用介紹了吧。以下的語法專門用來查詢書籍，如果要查包含書籍以外的物品，可以用下面的語法來查詢。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%E6%9B%B8%E7%B1%8D%20for/books/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=BKA&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
-
-
-<h2>博客來搜尋（全站）</h2>
-
-
-<ul><li>Keyword: bkl</li><li><p>說明：同上，就不另外說明了。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%20for/bkl/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=all&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
-
 ]]></content>
   </entry>
   

@@ -9,7 +9,8 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="大家 iPhone 上的 Home Screen 都放了哪些 App 呢？ 我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈45 Unique iPhone Home Screens Explained〉，有 &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +78,98 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/20/my-tagging-guideline/">My Tagging Guideline</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-20T10:20:00+08:00" pubdate data-updated="true">Apr 20<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-20T08:52:00+08:00" pubdate data-updated="true">Apr 20<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>花了一個晚上沒睡覺，調整了一下這個 Octopress 的一些功能與設定。現在還懶得記詳細步驟，就先簡單寫個筆記吧，以防將來自己看 Source Repository 也看不出到底為什麼要這麼改。</p>
+
+<h3>一、加入 LinkWithin 功能</h3>
+
+<p>原本以為 Octopress 沒辦法加，不過實際嘗試後發現並不難。要修改的地方主要有 <code>source/_layouts/default.html</code> 和 <code>source/_layouts/post.html</code> 這兩個檔案。</p>
+
+<h3>二、文章下方分享功能的版面調整</h3>
+
+<p>Octopress 內建的 twitter, google plus, facebook 三項文章分享功能如果全部打開，會佔掉約 680px 左右的畫面寬度。當文章區塊的寬度小於這個數值時，facebook 的按鈕會跳到下一行。這邊可以透過修改 <code>source/_includes/post/sharing.html</code> 的方式來稍微縮減 facebook 區塊的寬度，以符合需求。</p>
+
+<p>同區塊另外一個問題則是在預設版面中， twitter, google plus, facebook 三者按鈕的高度不同，尤其 facebook 的位置比較偏下。這邊我參考 <a href="https://stacksocial.com/">StackSocial</a> 頁面最下方區塊的作法，將三個按鈕改成 <code>ul → li</code> 格式。</p>
+
+<h3>三、加入標籤 (tag) 功能</h3>
+
+<p>這是花最多時間與腦力的一部分，尤其是我沒有 Ruby 基礎，好在 Ruby 的程式碼不難看懂，我雖然寫不出來，但是我看現有的 code 依樣畫葫蘆，一樣生出功能。這邊主要參考了 Octopress 內建的 Category Plugin，稍作修改，便得到了標籤功能。</p>
+
+<p>透過這次修改，同時也對 <a href="https://github.com/mojombo/jekyll">Jekyll</a> 所使用的 <a href="http://wiki.github.com/shopify/liquid/liquid-for-designers">Liquid Template System</a> 有更深入的了解。想想要整一個 Octopress 網站也真折騰，除了要懂 HTML, CSS, JavaScript 這些基本的之外，還得會摸 Ruby, Sass, Liquid Template，滿滿都是術語與新東西，真不是件簡單任務。</p>
+
+<p>話說既然加入了標籤功能，接下來就是找個時間好好整理每篇文章的「分類」和「標籤」了……嗯，這讓我想到一句老話：</p>
+
+<blockquote><p>要改的東西太多，那就改天吧。</p></blockquote>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -263,7 +356,7 @@ set tw=72
 </ul>
 
 
-<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 <F7>，就可以立刻排成 BBS 所需要的格式囉。</p>
+<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 F7，就可以立刻排成 BBS 所需要的格式囉。</p>
 
 <p>只剩下一個問題&#8230;&#8230;如果文章中有太長的連結，要是能自動縮網址那就更完美了。</p>
 </div>
@@ -784,111 +877,6 @@ echo</code></pre></noscript></div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/04/02/google-maps-quest/">Google Maps Quest</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-04-02T05:12:00+08:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。</p>
-
-<iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的噪音等等。而影片中那 8-bit 風格的美術與音效，更是所有勇者迷再熟悉也不過的場景了。看完影片後我立刻連上 Google Maps，在 8-bit 的世界中玩了好久，到處探索，就好像自己真的是個勇者一樣四處探險。</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-01.png" alt="image" /><br/>
-這是離我們最近，也是我們最熟悉的建築物－－天空之塔。</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-02.png" alt="image" /><br/>
-我所在的位置。透過 8-bit 地圖看來，突然覺得有河流經過是個不錯的地方。</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-03.png" alt="image" /><br/>
-蕃薯島 XD</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-04.png" alt="image" /><br/>
-SEGA MD 大戰略一代中的「遠東（Far East）」地圖就是長這樣。</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-05.png" alt="image" /><br/>
-北邊大陸上除了有冰原，還有會扣 HP 的毒沼。</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-06.png" alt="image" /><br/>
-世界地、不，是勇者鬥惡龍三代的地圖。(<a href="http://www.nesmaps.com/maps/DragonWarrior3/DragonWarrior3OverworldMapBG.html">對照版</a>)</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-07.png" alt="image" /><br/>
-日邦格的富士山。日邦格這地方的樹木也跟別處不同，是楓紅色的。</p>
-
-<p><img src="/images/2012/2012-04-01-google-maps-quest-08.png" alt="image" /><br/>
-Goolge 總部，感覺怪物很多……</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/04/01/google-analytics-play-music-for-you/">Google Analytics 也可以彈鋼琴</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-04-01T09:23:00+08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="/images/2012/2012-04-01-google-analytics-piano.png" alt="image" /></p>
-
-<p>剛剛發現，Google Analytics 的「造訪」按鈕旁多了個音符記號。點下去後會出現 Piano 與 Sitar 兩種樂器可以選，選了之後就會看到下方折線圖的節點會按順序一個一個亮起來，並播放與節點高低對應的音階。</p>
-
-<p>可惜我的折線圖不夠精采，撥出來的音樂平平淡淡，沒有直墜谷底或是步步高昇的激昂起伏。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -902,6 +890,14 @@ Goolge 總部，感覺怪物很多……</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/my-tagging-guideline/">My tagging guideline</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
@@ -921,14 +917,6 @@ Goolge 總部，感覺怪物很多……</p>
     
       <li class="post">
         <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
       </li>
     
   </ul>

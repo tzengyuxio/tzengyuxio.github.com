@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: unicode | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/unicode/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[在 Mac 輸入特殊文字符號]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac/"/>
+    <updated>2012-04-05T08:12:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac</id>
+    <content type="html"><![CDATA[<p>有時候在網路上會看到像「㍿」這樣的文字符號，有沒有好奇這是怎麼打出來的呢？這可不是把四個字打在一個格子裡面，而是這原本就是一個作為符號使用的 Unicode 文字。就好像英文中的 Trade Mark 可以用「™」表示一樣。類似的文字還有（如果底下只看到方框看不到字，表示你瀏覽器所用的字型沒有包含到下面這些 Unicode 字碼）：</p>
+
+<h3>英文</h3>
+
+<ul>
+<li>℡ ℻ №</li>
+</ul>
+
+
+<h3>日本年號</h3>
+
+<ul>
+<li>㍻ ㍼ ㍽ ㍾</li>
+</ul>
+
+
+<h3>日期時間</h3>
+
+<ul>
+<li>㋀ ㋁ ㋂ ㋃ ㋄ ㋅ ㋆ ㋇ ㋈ ㋉ ㋊ ㋋</li>
+<li>㏠ ㏡ ㏢ ㏣ ㏤ ㏥ ㏦ ㏧ ㏨ ㏩ ㏪ ㏫ ㏬ ㏭ ㏮ ㏯ ㏰ ㏱ ㏲ ㏳ ㏴ ㏵ ㏶ ㏷ ㏸ ㏹ ㏺ ㏻ ㏼ ㏽ ㏾</li>
+<li>㍘ ㍙ ㍚ ㍛ ㍜ ㍝ ㍞ ㍟ ㍠ ㍡ ㍢ ㍣ ㍤ ㍥ ㍦ ㍧ ㍨ ㍩ ㍪ ㍫ ㍬ ㍭ ㍮ ㍯ ㍰</li>
+</ul>
+
+
+<h3>星期</h3>
+
+<ul>
+<li>㈪ ㈫ ㈬ ㈭ ㈮ ㈯ ㈰</li>
+<li>㈠ ㈡ ㈢ ㈣ ㈤ ㈥ ㈰</li>
+</ul>
+
+
+<h3>加框字</h3>
+
+<ul>
+<li>㈱ ㈲ ㈶ ㈳ ㈸ ㈾ ㉀ ㉁ ㈻</li>
+<li>㊙ ㊚ ㊛ ㊞ ㊣ ㊤ ㊥ ㊦ ㊧ ㊨ ㊩ ㊰</li>
+</ul>
+
+
+<hr />
+
+<p>那麼，要如何輸入這些特殊符號呢？在 Mac 中很簡單，只要開啟「特殊字元」的輸入視窗。絕大多數 Mac 下的應用程式都可以在選單列的「編輯」或「Edit」最下方找到「特殊字元...」或「Special Characters…」；通常也可以透過快捷鍵「⌥⌘T」來開啟特殊字元視窗。</p>
+
+<p><img src="/images/2012/2012-04-05-special-characters.png" alt="image" /></p>
+
+<p>上面就是特殊字元的輸入視窗。到這邊已經可以輸入各種奇奇怪怪的符號了，不過如果想要輸入像「㍿」或「㊙」這類的特殊字則還不夠，得要進「自定列表」加入新的類別。點左上角的齒輪便可開啟自定列表，然後選取以下類別：</p>
+
+<ul>
+<li>數字 - 全部</li>
+<li>類字母符號 - 全部</li>
+<li>框住的字元</li>
+</ul>
+
+
+<p>這樣子就可以輸入上文中提到的文字符號囉！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
+    <updated>2012-03-09T20:28:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
+    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<hr />
+
+<p>Byte Order Mark 在 UTF-16 Big Endian 是 "FE FF"，Little Endian 是 "FF FE"。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
+
+<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 "EF BB BF"。</p>
+
+<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
+
+<h2>在 VIM 中的 BOM 相關操作</h2>
+
+<h3>加入 BOM</h3>
+
+<pre><code>:set bomb
+</code></pre>
+
+<h3>移除 BOM</h3>
+
+<pre><code>:set nobomb
+</code></pre>
+
+<h3>查詢 BOM 狀態</h3>
+
+<pre><code>:set bomb?
+</code></pre>
+
+<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
+
+<h3>查詢包含 UTF-8 BOM 的檔案</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+</code></pre>
+
+<h3>找出並移除 UTF-8 的 BOM</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+</code></pre>
+
+<h3>編碼的轉換</h3>
+
+<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+</code></pre>
+
+<p>其中 ENCODING 的部份可以是以下數值：</p>
+
+<ul>
+<li>UTF-8 UTF8</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UCS-2BE UNICODEBIG</li>
+<li>UCS-2LE UNICODELITTLE</li>
+</ul>
+
+
+<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
+]]></content>
+  </entry>
+  
+</feed>

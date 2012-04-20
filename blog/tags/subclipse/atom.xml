@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: subclipse | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/subclipse/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[在 Eclipse 使用 Git 與 SVN]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/12/26/eclipse-with-git-and-svn/"/>
+    <updated>2011-12-26T21:16:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/12/26/eclipse-with-git-and-svn</id>
+    <content type="html"><![CDATA[<br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-J0Sk2f21i5E/TvhxTRKpZLI/AAAAAAAAJGA/B2rKcoejSu4/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25888.51.13.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-J0Sk2f21i5E/TvhxTRKpZLI/AAAAAAAAJGA/B2rKcoejSu4/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25888.51.13.png" width="305" /></a></div><br />Eclipse 的 Git 功能相關套件是官方所提供的 EGit，在預設的「Available Software Sites」中可以找到，安裝方法可以參考〈<a href="http://coder.aqualuna.me/2011/12/eclipse-cc.html">在 Eclipse 開發 C/C++</a>〉這篇，唯一的差別是在第 2 步驟中，原本在「type filter text」欄位輸入「cdt」作為過濾字元，改成輸入「git」，這樣就可以找到 EGit 的 Software Site 了。<br /><br />Subversion 的部份稍微複雜點，但也不難，就是二選一的問題而已。Eclipse 的 Subversion 套件有兩個：Subclipse 和 Subversive。簡單的說，Subclipse 是 Subversion 官方出的套件，Subversive 是 Eclipse 官方出的套件，而為什麼兩邊的官方各自推出套件，這我就不想深究了，我也懶得同時裝起來測試看看哪個順手，所以就找了一下資料，以下的內容引用自〈<a href="http://www.akii.org/eclipse-svn-plugins-subclipse-vs-subversive.html">Eclipse SVN插件比较 Subclipse vs Subversive</a>〉這篇文章：<br /><br /><blockquote class="tr_bq">如何选择？我想可以从这几方面考虑：&nbsp;</blockquote><blockquote class="tr_bq">Eclipse 是否是你操作 SVN 的唯一途径？如果是，偏向于选择 Subversive；如果不是，比如说像我，还要经常使用 TortoiseSVN ，则偏向与选择 Subclipse 。Subclipse 的操作更倾向于与 TortoiseSVN 习惯，而 Subversive 的操作更倾向于 Eclipse 习惯操作。&nbsp;</blockquote><blockquote class="tr_bq">SVN是否是你的唯一版本管理系统（或最重要的管理系统），你是否对 SVN 的新功能、新特性比较感兴趣？如果是，偏向于选择 Subclipse ；否则，偏向于选择 Subversive。&nbsp;</blockquote><blockquote class="tr_bq">你的 SVN 操作是否会比较简单？比如你是否仅仅使用的仅仅是简单的检出/提交，等等操作，也不愿意把时间花费在研究 SVN 的高级特性上。如果是，偏向于选择 Subversive，如果否，则建议选择 Subclipse 。&nbsp;</blockquote><blockquote class="tr_bq">以上几点是否可以对你选择那个插件有所帮助呢？其实这两个插件都很不错，对于我们日常使用来说，哪个都能很好完成我们的任务，如果你还是不能确定， 就别再费神在这上面花工夫了，也不用再在网上寻找两者比较了，随便选一个就行了。</blockquote><br />我自己偶爾也會用用 TortoiseSVN, 或是直接用命令列，所以就選了 Subclipse。Subclipse 由於是非官方套件，安裝方式其實與 PyDev 一樣，所以只要參考〈<a href="http://coder.aqualuna.me/2011/12/eclipse-python.html">在 Eclipse 開發 Python</a>〉這篇即可，唯一的差別是第 2 步驟中在 Market 進行搜尋時的關鍵字，要把「pydev」換成「subclipse」。<br /><br />當然，如果你想裝 Subversive 的話，因為 Subversive 是 Eclipse 官方推出的套件，所以安裝方式跟 EGit 一樣，只要進「Available Software Sites」尋找預設選項即可。至於細節我就不再多加贅述了。<br /><br />後記：寫這篇文章的過程中發現，Eclipse Marketplace 除了直接連到<a href="http://marketplace.eclipse.org/">該網站</a>外，也可以透過 Eclipse 的選單列「Help」→「Eclipse Marketplace...」進入作搜尋，更加方便。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ouIbMPNwUJg/TvhzVdqADQI/AAAAAAAAJGM/GF2NZwcbOMA/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.14.36.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-ouIbMPNwUJg/TvhzVdqADQI/AAAAAAAAJGM/GF2NZwcbOMA/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258B%25E5%258D%25889.14.36.png" width="223" /></a></div><br />
+
+]]></content>
+  </entry>
+  
+</feed>

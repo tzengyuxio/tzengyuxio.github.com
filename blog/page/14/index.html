@@ -9,7 +9,8 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="3 Amigo Rambaugh、Booch、Jacobson 制定 UML 規範的傢伙後來都聚到 Rational Software 去了 Gang of Four (GoF) Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides &hellip;">
+  <meta name="description" content="先前我的做法都依據 Clive Tong-I Lin 的 8G 經驗法則： 我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。
+至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。 一般 server 用途, 8G 經驗法則還沒破功過 :) Windows &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +78,126 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/22/hard-dirve-partition/">［心得］硬碟切割</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-22T04:24:00+08:00" pubdate data-updated="true">Nov 22<span>nd</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+
+<blockquote><p>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br/>
+至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。</p>
+
+<p>一般 server 用途, 8G 經驗法則還沒破功過 :)</p>
+
+<p>Windows server 我也是這樣規劃, 前 8G 畫成 C: 灌系統,<br/>
+其它的空間全劃成 D: 有的沒的任何資料都放 D:</p>
+
+<p>儘供參考。</p></blockquote>
+
+<p>不過上述經驗法則主要是針對 server 用途而言。而且隨著軟體越來越龐大（尤其是安裝了 VS.NET 之後，我以前不裝這玩意兒的），以及經歷過幾次 <code>/var</code> 爆掉的慘痛教訓（FreeBSD auto 預設給的 <code>/var</code> 都不大），看來似乎得重新思索一下硬碟分割的策略。</p>
+
+<ol>
+<li><p>系統給 10G（目前用最多的大概用到 8.2G/Windows，5G/FreeBSD without X）</p></li>
+<li><p>剩下的給 <code>D:</code> 或 <code>/home</code></p></li>
+<li><p>FreeBSD 下系統的分配策略：</p>
+
+<ol>
+<li><p><code>/</code> : 256M</p></li>
+<li><p><code>/tmp</code> : 不大於 ram (或乾脆 = ram 就好)</p></li>
+<li><p><code>swap</code> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</p></li>
+<li><p><code>/var</code> 視剩餘空間與 X 的安裝與否，分配 1～2G</p></li>
+<li><p>其餘通通給 <code>/usr</code> (至少須 6G 以上)</p></li>
+</ol>
+</li>
+<li><p>將部份資料搬移出系統分割區</p>
+
+<ol>
+<li><p><code>C:\Documents and Settings\username\My Documents</code> 搬到 <code>D:\HOME\username</code></p></li>
+<li><p><code>/usr/local/www</code> 搬到 <code>/home/www</code> 下</p></li>
+<li><p>如果 <code>/usr</code> 空間吃緊，將 <code>/usr/ports/distfiles</code> 也搬到 <code>/home</code> 底下</p></li>
+</ol>
+</li>
+<li><p>原則：所有「有意義」的變動性檔案、文件，或需要儲存備份的資料，都往 <code>D:</code> 或 <code>/home</code> 底下丟</p>
+
+<ol>
+<li><p>像「網頁 cache」就是屬於<strong>無意義的</strong>變動性檔案；反之，「遊戲存檔」是<strong>有意義的</strong></p></li>
+<li><p>非常用的軟體的也丟到 <code>D:</code> 或個人資料夾下，如臨時安裝的程式，或是遊戲軟體</p></li>
+<li><p>將所有系統分割區中需要備份的檔案（如設定檔）在 <code>D:</code> 或 <code>/home</code> 之下建立捷徑或 symbolic link</p></li>
+<li><p>此為原則，有些情況不必完全照著原則來。如資料庫檔案通常還是放在 <code>/var/db</code></p></li>
+</ol>
+</li>
+<li><p><strong>總之 10G 給系統，剩下的都拿來塞資料用</strong> XD</p></li>
+</ol>
+
+
+<p>其實重點只需記住最後一點，至於其他的細節，那些都是個人經驗的累積，參考看看即可，不必然全部照作。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/21/douban-dot-com/">［網際］豆瓣 douban.com</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-21T06:07:00+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一直以為，內地的網站都是以抄襲為主，走不出自己的創新。但 <a href="http://douban.com/"><span style="color: rgb(67, 166, 90);">豆瓣 d</span><span style="color: rgb(34, 161, 208);">o</span><span style="color: rgb(255, 190, 135);">u</span><span style="color: rgb(67, 166, 90);">b</span><span style="color: rgb(34, 161, 208);">a</span><span style="color: rgb(255, 190, 135);">n</span></a> 徹徹底底改變了我的想法。<br /><br />從 <a href="http://www.baidu.com/">baidu</a> vs <a href="http://www.blogger.com/www.google.com">google</a>、<a href="http://www.aimi.cn/">爱米网</a> vs <a href="http://www.43things.com/">43 Things</a>、<a href="http://solidot.org/">slashdotcn.org</a> (註)，我們可以看到許多中國內地的網站，除了仿效國外的 web 應用 (app) 與內容 (content) 外，連使用介面與版型設計幾乎都是依樣畫葫蘆，看了實在令人倒盡胃口。雖然說模仿是成長的必經路程，我自己也很喜歡站在巨人肩膀上看遠方；但既然都站在別 人肩膀上了，要是不能看得更遠，好歹也要看到些不一樣的東西；像前面提到的幾個網站，都是站在巨人肩膀上看到跟巨人一樣的東西，甚至比巨人看到的還少。用 不客氣的話來說，這種「只學其形，不求其神」的做法，連「模仿」都稱不上，充其量只能稱作是一種「抄襲」。<br /><br />這樣的刻板印象，使得我在第一眼見到 <a href="http://douban.com/">豆瓣</a> 時，當下也懷疑這是不是又是另一個抄襲國外網站的網路服務。然而找了一陣後，發現國外並沒有類似的網站，即便是有網友在留言中指稱 <a href="http://douban.com/">豆瓣</a> 是抄襲 <a href="http://www.bookswelike.net/">Books We Like</a>的，我也覺得這兩個網站的風格與操作相差實在太遠，根本稱不上「抄襲」可言。就算 <a href="http://www.bookswelike.net/">Books We Like</a> 是  <a href="http://douban.com/">豆瓣</a> 的發想來源好了，<a href="http://douban.com/">豆瓣</a> 也成功的走出了自己的特色。甚至，<a href="http://douban.com/">豆瓣</a> 已經<a href="http://blog.douban.com/douban/2005/10/26/42/">成為其他網站抄襲的對象</a>了（<a href="http://xiaoshuomi.com/">與豆瓣同版型的網站</a>）。誠如<a href="http://douban.com/">豆瓣</a>作者阿北在其<a href="http://blog.douban.com/douban/2005/10/26/42/">文章</a>中所引述的英諺：「模仿是最真誠的讚美。」正是因為<a href="http://douban.com/">豆瓣</a>成了被模仿與抄襲的對象，故有其可敬之處。<br /><hr /><span style="color:gray;">註：<a href="http://solidot.org/">slashdotcn.org</a> 最近<a href="http://solidot.org/staticpages/index.php/about">改名成為 Solidot.org</a>，這算是嘗試走出自己風格的好的開始。不過話說回來，那「斜線點」的概念人家早就已經在用了，換了一個「Solidus Dot」其實是換湯不換藥啊～～還有那版型也得換換，光只是挪用別人的東西來用，這樣是無法「超英趕美」的啦！</span></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -377,79 +498,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/10/23/no-matter-how-early-i-get-up/">［點滴］不論我多麼早起</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-10-23T01:17:00+08:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul><li>不論我多麼早起，運動場上總是早已一堆人在。即使天還沒亮。即使跑完步後天仍漆黑。</li><li>不論我多麼早起，運動場上總是看不到比我更年輕的。</li><li>或許他們都在運動場對面那間燈火通明的網咖內。</li><li>說到網咖，想到線上遊戲；說到線上遊戲，我該不該玩台版魔獸？</li><li>每個人都在不同的伺服器是我不知該不該玩魔獸的主因。</li><li>煩惱著要和誰一起練功、一起成長。<br /></li><li>話說有時候孤單一人也不錯。</li><li>下班後大家相約聚餐時，我孤單一人吃著微波便當。</li><li>不知為何，打開微波爐開關後，突然爆炸一下。砰！的一聲。還好沒死。</li><li>那聲爆炸一直在我耳際縈繞著。想到就整個頭發麻。</li><li>難過時，都會不自主的將頭往上抬一下，將這想哭的感覺壓下去。</li><li>中文裡「一股悲傷湧了上來」，這「湧上」一詞下的真妙。<br /><span style="color: white;"><s>逝者如斯夫，不舍晝夜。我的目標何在？<br /></s></span></li><li>話說我玩到了《真三四猛將傳》。</li></ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/10/09/triple-dialogue/">［習作］三人對話</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-10-09T02:24:00+08:00" pubdate data-updated="true">Oct 9<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>喬治拍了拍我的肩膀，「走吧！」<br /><br />我搖搖頭。約翰滿臉疑惑：「幹嘛不走？」「我不想跟佐治一起走。」「可是他是喬治不是佐治。」「是啊，我是喬治。」「但是會讓我聯想到佐治嘛。最最討厭佐治了，那個人想到就教人噁心。」「再怎麼聯想，喬治、佐治他們畢竟還是不同的人吧。」「但是光名字念起來就像啊。」「拜託，除了名字外，我跟佐治一點共同點都沒有好不好。」「沒錯。更何況你也沒必要那麼討厭佐治吧。」「嗯……他的心情我倒可以體會。其實我也有點不滿佐治。」「是吧，覺得佐治討人厭的不只我一個。」「可是我覺得你討厭佐治的程度有點太過了，連名字有點接近的喬治都被你討厭，這不是過分嗎？」「我也覺得自己無辜，只是因為名字像就……」「我知道這是我不對，我也不是討厭喬治；但是如果我和你一起走，每當我要叫你名字的時候，我就會聯想到佐治啊！」「你這傢伙實在是太無理取鬧了！」「約翰，冷靜一點吧。」「就算是我無理取鬧好了，誰叫我就是會克制不住將他們聯想在一起。我也沒辦法啊。」「不然這樣好了，我換個跟佐治無關的名字。」「名字哪是說改就改的，你不用為了這傢伙犧牲啦－－」「這傢伙這傢伙地喊，你好歹也對我尊重點好不好。我也是有名字的！」「別吵了啦，我沒差。不然以後你改叫我保羅好了，這不就跟佐治一點關係也沒有了？」「你不用改名字了，現在我最討厭的人不是佐治了，是‧約‧翰，哼！」「哼！」約翰也別過頭去。<br /><br /><hr /><span style="color: gray;">三人連續交錯對話不加任何對話外姓名與動作揭示而不致造成混淆的對話撰寫練習。</span></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/15/">&larr; Older</a>
@@ -465,6 +513,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/my-tagging-guideline/">My tagging guideline</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
@@ -484,14 +540,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
       </li>
     
   </ul>

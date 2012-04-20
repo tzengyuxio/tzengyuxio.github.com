@@ -4,7 +4,7 @@
   <title><![CDATA[Category: editor | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/editor/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-19T21:17:21+08:00</updated>
+  <updated>2012-04-20T17:10:49+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -48,7 +48,7 @@ set tw=72
 </ul>
 
 
-<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 <F7>，就可以立刻排成 BBS 所需要的格式囉。</p>
+<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 F7，就可以立刻排成 BBS 所需要的格式囉。</p>
 
 <p>只剩下一個問題......如果文章中有太長的連結，要是能自動縮網址那就更完美了。</p>
 ]]></content>

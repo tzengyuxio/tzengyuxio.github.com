@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: apache | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/apache/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我看 Oracle 將 OpenOffice.org 移交 Apache 管理]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/06/16/oracle-migrate-oo-dot-o-to-apache/"/>
+    <updated>2011-06-16T12:57:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/06/16/oracle-migrate-oo-dot-o-to-apache</id>
+    <content type="html"><![CDATA[<p>本月初新聞，Oracle 宣布將 OpenOffice.org 捐贈給 Apache 基金會，並表示未來將由 Apache 基金會主導 OpenOffice.org 的發展。許多人認為將 OpenOffice.org 回歸社群，特別是投入頗負盛名的 Apache 基金會，是再好也不過的發展了，但我卻覺得，這樣的發展也許會為未來開源辦公室套裝軟體的發展埋下隱憂。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-kD0LcC00e-M/TfmNDriHHmI/AAAAAAAAAQQ/9qoWpwd71iw/s1600/ooo-vs-libre.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-kD0LcC00e-M/TfmNDriHHmI/AAAAAAAAAQQ/9qoWpwd71iw/s1600/ooo-vs-libre.png" /></a></div><br />早在 2009 年，Oracle 併購了 SUN 之後，同樣跟著嫁入豪門的 OpenOffice.org (以下簡稱 OOo)&nbsp;其未來發展就不斷令人擔心。到了 2010 年，一部份參與 OOo 專案開發的成員更是另起爐灶，成立一個名為 The Document Foundation (以下簡稱 TDF) 的基金會，並且開發另外一個新的辦公室套裝軟體專案，叫做 LibreOffice，希望能夠取代 OOo 原本在開放源碼社群中的地位。而 Oracle 對此事也不手軟，以利益上衝突為由，要求同時參與開發 LibreOffice 的 OOo 開發者離職。因為這個動作，使得原本對於 Oracle 就沒什麼好感的開放源碼社群，變得更為敵視。雙方勢同水火。<br /><br />到了今年四月，大概是 Oracle 發現抱著 OOo 也沒太大幫助吧，於是宣布要把 OOo 完全社群化，也就是說 OOo 的維護與管理都將交由社群負責，Oracle 自己也放棄技術支援的商業版本。從另外一個方面解讀，其實就是 Oracle 決定放棄 OOo 的發展，打算任由其自生自滅。接下來的故事就是大家都已經知道的，Oracle 替 OOo 找到了新歸宿－－他把 OOo 捐給了 Apache 軟體基金會。<br /><br />接著聊聊為什麼我會對這樣的發展感到擔憂。誠如前言，OOo 對於 Oracle 是個燙手山芋，與其抱著不如拋出，而拋出的對象是誰，就很有學問了。如果真有誠意，那麼將 OOo 交給 TDF，讓 LibreOffce 與 OOo 這分家的兄弟又重新歸流於一；另一方面，對 TDF 拋出善意，又可與之盡釋前嫌，豈不甚美？然而今天 OOo 給的對象是是 Apache 基金會，如果 Oracle 將 OOo 隨便給個阿貓阿狗那也就算了，Apache 基金會並不是阿貓阿狗，他們有能力也有資源能夠將專案維護下去，甚至搞得有聲有色。<br /><br />那麼，這有什麼不好的？交付 Apache 基金會管理一事，本身是沒什麼不好，不好的是開源的辦公室軟件發展自此分裂成兩支，力量分散。當然，開源社群中，原本就不乏專案分裂的情況，分裂後的專案也通常不會是競爭者，而會彼此技術交流，互通有無。例如從 FreeBSD 4.8 分支出去的 DragonFly BSD，在其獨立之後，與原 FreeBSD 兩邊的團隊仍然進行密切的合作，幫助對方修補漏洞或是更新驅動程式。對於開發社群而言，或許分裂，但即便分裂也有可能維持互惠關係。<br /><br />不過對於使用者而言就不是這樣了，過多的選擇會增加進入的障礙。當有個使用者想要捨棄商用軟體的辦公室套件，改選擇開源的替代方案時，最早以前他可以簡單挑出 OOo，但是將來他會面臨到 OOo 與 LibreOffice，再加上分開的兩方聲勢一定被分散弱化，也許那個使用者看了看後（可能也沒做太多功課），就又回頭使用商用軟體了。<br /><br />寫到這邊讓我想到「二桃殺三士」這個表面施恩，實則牽制的歷史故事。這個故事出自《晏子春秋》，以下直接引用維基百科上的敘述：<br /><blockquote>春秋時代齊景公帳下有三員大將：公孫接、田開疆、古冶子，他們戰功彪炳，但也因此恃功而驕，晏子為避免造成未來可能的傷害，建議齊景公早日消除禍患。&nbsp;</blockquote><blockquote>晏子設了一個局：讓齊景公把三位勇士請來，要賞賜他們三位兩顆珍貴的桃子；而三個人無法平分兩顆桃子，晏子便提出協調辦法——三人比功勞，功勞大的就可以取一顆桃。公孫接與田開疆都先報出他們自己的功績，分別各拿了一個桃子。這時，古冶子認為自己功勞更大，氣得拔劍指責前二者；而公孫接與田開疆聽到古冶子報出自己的功勞之後，也自覺不如，羞愧之餘便將桃子讓出並自盡。儘管如此，古冶子卻對先前羞辱別人吹捧自己以及讓別人為自己犧牲的醜態感到羞恥，因此也拔劍自刎——就這樣，只靠著兩顆桃子，兵不血刃地去掉三個威脅。</blockquote>Oracle 對於 OOo 與 LibreOffice 所抱持的想法，是不是如同晏子一般？我想倒不至於。畢竟 OOo 與 LibreOffice 的互爭，Oracle 並無法從中獲得漁翁之利，他單純只是不想碰了，又對 LibreOffice 背後的 TDF 心存芥蒂，因此將 OOo 送給了 Apache 基金會。不過這麼一來，在一旁啥也沒幹的微軟，反而成了最大受益者。<br /><br />話說回來，我之前有好長一段時間也是 OOo 的忠實用戶。不過現在我的主要工作都移到 Google 文件上了，這次重灌電腦有想說再來灌個 Office 套件，畢竟偶爾處理大量資料的試算表時，本機端還是比線上來得快速方便。只是看到目前這樣局勢未明的狀態，我還是先觀望一陣子，等之後有需要時再來看看要裝哪套好了。</p>
+]]></content>
+  </entry>
+  
+</feed>

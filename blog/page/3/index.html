@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="今天聽到 OSX 下一版本 Mountain Lion 的消息，大更新不多，主要都是將 iOS 上的一些應用搬到 Mac 上來，而其中最吸引我注意的大概就是通知中心（Notification Center）了。 繼續聊下去前，先聊聊我理想中的電腦工作環境，要能提供兩個基本功能： &hellip;">
+  <meta name="description" content="一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。 Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,203 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/03/09/bom-byte-order-mark-and-utf-8/">BOM (Byte Order Mark) 與 UTF-8</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-09T20:28:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<hr />
+
+<p>Byte Order Mark 在 UTF-16 Big Endian 是 &#8220;FE FF&#8221;，Little Endian 是 &#8220;FF FE&#8221;。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
+
+<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 &#8220;EF BB BF&#8221;。</p>
+
+<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
+
+<h2>在 VIM 中的 BOM 相關操作</h2>
+
+<h3>加入 BOM</h3>
+
+<pre><code>:set bomb
+</code></pre>
+
+<h3>移除 BOM</h3>
+
+<pre><code>:set nobomb
+</code></pre>
+
+<h3>查詢 BOM 狀態</h3>
+
+<pre><code>:set bomb?
+</code></pre>
+
+<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
+
+<h3>查詢包含 UTF-8 BOM 的檔案</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+</code></pre>
+
+<h3>找出並移除 UTF-8 的 BOM</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+</code></pre>
+
+<h3>編碼的轉換</h3>
+
+<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+</code></pre>
+
+<p>其中 ENCODING 的部份可以是以下數值：</p>
+
+<ul>
+<li>UTF-8 UTF8</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UCS-2BE UNICODEBIG</li>
+<li>UCS-2LE UNICODELITTLE</li>
+</ul>
+
+
+<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/19/alfred-search/">幾個我常用的 Alfred 自定搜尋</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-19T23:45:00+08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>雖然用了 <a href="/search/label/Alfred">Alfred</a> 一段時間，但是直到最近才開始認真挖掘裡面的設定。其實 Alfred 安裝好不用特別設定，就已經很好用了，像是程式本身預設許多網頁搜尋，從常見的 Google、Yahoo!、Amazon 與維基百科，到比較少人知道但很好用的 <a href="http://www.wolframalpha.com/">wolfram</a> 等，都是現成裝好就可以用的。</p>
+
+
+<p><img src="https://lh6.googleusercontent.com/-6Z65mn0aLAo/T0EV13h5vFI/AAAAAAAAJdU/ijKmwmls5p8/s800/alfred_custom_search.png" alt="Alfred Custom Search" /></p>
+
+
+<p>不過每個人常用網站不同，在軟體的預設網站之外一定有遺珠之憾。好在 Alfred 也有提供自定搜尋選項的功能，以下就來分享我自己設定的 Alfred Custom Search。</p>
+
+
+<p>這些 Custom Search 的安裝方式很簡單，只要將底下以 alfredapp 開頭的一串文字複製起來，叫出 Alfred 的指令視窗（預設是使用 ⌥Space），貼上剛才複製的文字，按下 Enter 就好了。</p>
+
+
+<h2>奇摩字典搜尋</h2>
+
+
+<ul><li>Keyword: dict</li><li><p>說明：就是查字典。dict 後面可以接中文詞或是英文單字。</p><p>alfredapp://customsearch/Yahoo%21%E5%A5%87%E6%91%A9%E5%AD%97%E5%85%B8%E6%9F%A5%E8%A9%A2/dict/utf8/url=http://tw.dictionary.yahoo.com/dictionary?p={query}</p></li></ul>
+
+
+<h2>flickr Creative Common 搜尋</h2>
+
+
+<ul><li>Keyword: fcc</li><li><p>說明：Alfred 已經有內建 flickr 搜尋了，不過並不是任何找到的圖片都可以隨意使用。如果你有在寫 blog 並且會上 flickr 找圖片來點綴文章的話，這個搜尋可以幫助你找到合適的圖片。</p><p>alfredapp://customsearch/Search%20Flickr%20CC%20for/fcc/ascii/url=http://www.flickr.com/search/?q={query}&amp;l=commderiv&amp;ss=0&amp;ct=0&amp;mt=all&amp;w=all&amp;adv=1</p></li></ul>
+
+
+<h2>世界時間查詢</h2>
+
+
+<ul><li>Keyword: time</li><li><p>說明：Time.is 是個簡單但方便的網站，可以以城市名稱查詢該地目前時間。安裝好此 Custom Search 後，就能用 &#8221;<code>time tokyo</code>&#8221; 或 &#8221;<code>time 東京</code>&#8221; 的語法來查詢當地時間。</p><p>alfredapp://customsearch/%E7%9B%AE%E5%89%8D%E7%9A%84%E6%99%82%E9%96%93%EF%BC%8C%E5%9C%A8/time/ascii/url=http://time.is/{query}</p></li></ul>
+
+
+<h2>線上音樂搜尋</h2>
+
+
+<ul><li>Keyword: gs</li><li><p>說明：Grooveshark 是很大的線上音樂網站，找到就可以直接串流播放了，中英文搜尋都 OK。</p><p>alfredapp://customsearch/Search%20Grooveshark%20for/gs/ascii/url=http://grooveshark.com/#/search?q={query}</p></li></ul>
+
+
+<h2>Stack Overflow 搜尋</h2>
+
+
+<ul><li>Keyword: so</li><li><p>說明：寫程式的人幾乎都得拜訪的聖地。google 程式問題時幾乎都會找到這邊來，乾脆就直接在 Stack Overflow 上搜尋吧。</p><p>alfredapp://customsearch/Search%20Stack%20Overflow%20for/so/ascii/url=http://stackoverflow.com/search?q={query}</p></li></ul>
+
+
+<h2>Apple Developer Connection 搜尋</h2>
+
+
+<ul><li>Keyword: adc</li><li><p>說明：對 Apple 開發者很方便的搜尋。</p><p>alfredapp://customsearch/Search%20ADC%20for/adc/ascii/url=http://developer.apple.com/library/mac/search/?q={query}</p></li></ul>
+
+
+<h2>PChome 線上購物 搜尋</h2>
+
+
+<ul><li>Keyword: pchome</li><li><p>說明：台灣最大的購物網站&#8230;&#8230;吧？我沒有數據，單純只是自己蠻常用的。</p><p>alfredapp://customsearch/Search%20PChome%20for/pchome/ascii/url=http://ecshweb.pchome.com.tw/search/v1/{query}</p></li></ul>
+
+
+<h2>Mac App Store 搜尋</h2>
+
+
+<ul><li>Keyword: mas</li><li><p>說明：尋找 Mac App Store 裡面的應用程式，也是我相當常用到的功能。</p><p>alfredapp://customsearch/%10Search%20Mac%20App%20Store%20for/mas/ascii/url=macappstore://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?q={query}</p></li></ul>
+
+
+<h2>博客來搜尋（僅書籍）</h2>
+
+
+<ul><li>Keyword: books</li><li><p>說明：博客來相信我就不用介紹了吧。以下的語法專門用來查詢書籍，如果要查包含書籍以外的物品，可以用下面的語法來查詢。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%E6%9B%B8%E7%B1%8D%20for/books/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=BKA&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
+
+
+<h2>博客來搜尋（全站）</h2>
+
+
+<ul><li>Keyword: bkl</li><li><p>說明：同上，就不另外說明了。</p><p>alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%20for/bkl/ascii/url=http://search.books.com.tw/exep/prod<em>search.php?cat=all&amp;key={query}&amp;apid=books&amp;areaid=head</em>wel_search</p></li></ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -608,78 +805,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/06/aperture-iphoto-lightroom-picasa/">相片管理的選擇, Aperture, iPhoto, Lightroom, Picasa</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-06T19:55:00+08:00" pubdate data-updated="true">Feb 6<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>雖然不是說很專業，其實連業餘也稱不上，不過從買了第一台數位相機（CASIO QV-2800UX）到現在，前前後後也經歷過九個年頭、五台相機，之中還被偷走了一台，而這中間所累積的相片也有數千張之譜。然而因為缺乏整理，使得這些照片散落在家中不同的電腦、不同的網路分享區、不同的外接式硬碟以及不同的隨身碟中。更有甚者，同樣的照片還有不同版本放在不同的儲存設備，有原始版的，有為了傳給朋友縮過大小的，有 retouch 過的，不仔細比對還真的想不起來到底這些照片的先後順序因果關係。<br /><br />雖然想到就覺得累人，但總歸還是得找個時間徹底好好整理下照片。去年年底狠下心來，買了 Aperture 這套軟體，然後一個一個電腦、外接硬碟、隨身碟檢查，花了好幾個禮拜終於將照片全部匯入到 Aperture 中進行管理。也才知道自己這些年到底拍了多少張照片，去過哪些地方，也不用在每次想要回憶美好時光時，都要先想辦法回憶起那些美好時光的照片到底放在哪裡。<br /><br />其實在決定買下 Aperture 之前，也有考慮與試過其他選項，像是 iPhoto, Picasa, Lightroom, 但是每個軟體都有其優勢與不足之處，沒有完美無缺的 Solution。以下就簡單記錄下我對這四個軟體的使用感想，以及最後為什麼選擇 Aperture。<br /><br /><h2>Picasa</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" width="320" /></a></div>我在自己還在以 Windows 為主要環境的時代，就裝了 Picasa 來玩－－可是裝不久就移除掉了；後來 Picasa 出了新版，我又裝了，又移掉；又過一陣子注意到改版了，又裝，這次沒移，但是我僅僅是把 Picasa 留下當做看圖軟體。我喜歡 Picasa 他那把照片凸顯，其他桌面部分暗掉的無視窗方式瀏覽介面－－然而他主打的照片管理功能，我卻壓根不想使用。<br /><br />到了換以 Mac 作為主要環境的時候後，先後也裝過兩三次 Picasa, 也試著開始用 Picasa 來管理照片，但最後怎樣就是無法習慣，可能是軟體設計思維的不同吧，總覺得跟我自己對於照片管理的想法處處格格不入。<br /><br />Picasa 充分體現了 Google 作為一家搜尋引擎公司的思維，第一次啟動 Picasa 時，就會搜尋你整個電腦裡面的圖檔，全部加入，而這正是我最討厭的一點。我想要的是照片管理，可是 Picasa 卻會試著把你電腦裡所有圖片檔案列入他的管轄範圍內。圖片檔案有太多意義了，也許是照片、也許是工作用的中間圖片、也許是網路下載的有趣漫畫、也許是文件意義比圖片意義強烈的 Infographic，我不想要 Picasa 包山包海地把這些東西都納入他的檔案庫中。我只是單純的想要一個照片管理軟體。<br /><br />其實我很希望我能用 Picasa 這套軟體來管理照片，畢竟我買了 Google 的儲存空間，如果能夠直接把照片同步 Picasa Web 上，我就不用煩惱照片備份的問題了。不過 Picasa Web 的照片管理功能也是充滿問題的設計，用手機隨手上傳一張圖檔，就會多出一個以日期為名的小資料夾，這種資料夾一多，看了也心煩。更別提 Picasa 與 Picasa Web 的同步其實設計的很不貼心，許多地方必須手動。最好是能夠像 Dropbox 一樣，讓我指定一個本機資料夾，自動把網路相簿抓到該資料夾，丟到該資料夾的也會自動上傳。<br /><h2>iPhoto</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="211" src="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" width="320" /></a></div>換到 Mac 上作業後，曾經用過一段時間的 iPhoto。剛開始不習慣他把所有圖檔都放在一個叫做 &#8220;iPhoto Library&#8221; 的黑盒子中，畢竟在長久以來習慣了用資料夾作管理的形式，突然間沒有了資料夾作為存取照片的管道，心理總覺得不踏實。<br /><br />不過黑盒子的方式用久了其實倒也還好，就像是 Gmail 剛推出時只有標籤（Tag）沒有資料夾的管理，只要用不同的方式去思考，很快就可以習慣這樣的方式。反正檔案要給別人時就直接匯出，剩下的原始檔通通藏在黑盒子中，我也樂得輕鬆，不用去煩惱到底要怎麼安排這些檔案的存放方式。<br /><br />基本上，iPhoto 的使用經驗對我而言是無懈可擊的。人臉辨識與地點標記都是相當棒的功能體驗，照片的編輯與調整我也覺得夠用了，介面簡潔，很直覺便可找到你想做的工作該怎麼進行。然而他有兩個問題使我不得不考慮其他方案。第一個是無法顯示完整的 EXIF 資訊，也許是我的使用不夠深入，總之就是找不到顯示完整 EXIF 的方法。<br /><br />第二個問題就比較令人頭痛。在 iPhoto 上調整一張照片，就會產生一份該照片的副本，也就是當你調整的照片越多，所佔去的硬碟空間就越大，對於記憶體的使用也有相當影響。然而在 Picasa 和 Aperture 中，當你進行照片的修改時，Picasa 與 Aperture 只會儲存這些照片的修改參數的 Metadata，就算一張照片有十個不同風格的修改版本，也只會多用到一點點的容量，而不會消耗掉十倍的硬碟空間。因為 iPhoto 這樣的設計，所以據說當照片數目多到一個程度時，開啟的速度像牛步一樣。我自己的照片是還沒多到能感受到牛步，但是無法接受每修一個版本就會多一份照片副本，這是我放棄 iPhoto 最主要的原因。<br /><h2>Lightroom</h2><br />老實說，其實我沒有真正使用過 Lightroom, 只有買了本 Lightroom 的書來研究數位照片的管理，加上網路上看了幾篇文章比較比較 Lightroom 與 Aperture 的異同這樣。其實我蠻想試試看 Lightroom，但是由於以下幾個因素使得 Lightroom 還沒有真正上場就在我的相片管理名單中除名了。<br /><ul><li>對 Adobe 越來越沒好感。Adobe 的軟體越來越龐大，不管是功能與價格。</li><li>在 Adobe 的官網找不到試用下載，也沒有簡便的購買方式，得透過經銷商購買。</li><li>對於 iPhoto 的良好體驗，使得我對 Aperture 更有信心。</li></ul><h2>Aperture</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="241" src="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" width="320" /></a></div>最後則是我目前在使用的 Aperture。其實剛進入 Aperture 時很不習慣，一堆術語像是 Master / Version / Folder / Album / Project 讓我如陷五里霧中，這些單字都看得懂，可是代表什麼意思、彼此間有什麼差別我卻是一竅不通。現在用了一陣子後總算明白些，但我總覺得 Apple 應該可以更簡化這些術語或關係才對，例如 Origin 就比 Master 來得容易理解；Event &nbsp;也比 Project 符合情境。<br /><br />除了術語多，介面比起 iPhoto 複雜外，用到現在倒也沒什麼好挑的，真要說的話就是希望他能早日有正體中文的介面，雖然英文介面對我不構成使用障礙，但是有熟悉的語言，情感上就大大的加分。<br /><br />另一個與 iPhoto 相比的好處，就是你的檔案可以儲存在外部文件夾，甚至是外接式硬碟，而不用一定得放在 &#8220;Aperture Library&#8221; 這個黑盒子中。如果是放在外部的文件夾，Aperture 會建立一張縮圖在黑盒子中，所以就算外接式硬碟沒有接上，也可以對該照片進行瀏覽與編輯，頂多只是匯出時無法從更精細的原始版本匯出罷了。這項特點對於習慣以文件夾進行管理與分類的人算是一項福音，不過我已經習慣 iPhoto 的方式了，所以也就索性通通丟入 Aperture 的黑盒子中去。<br /><br />另外隨著這幾個月 Aperture 的使用，也逐漸發現 Aperture 一些讓人離不開的順手好功能。例如照片的管理可以透過 Keyword, Label, Rating 與 Flag，這些機制的組合增加了不少彈性；另外像是命名、編修、調整等批次功能，也可以幫助自己省下不少寶貴的時間。有機會的話再來對自己使用 Aperture 的心得作更進一步的介紹。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/30/python-path-walk/">Python 遞迴處理路徑下檔案與資料夾</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-01-30T16:13:00+08:00" pubdate data-updated="true">Jan 30<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>取得某個路徑下的所有檔案與資料夾是經常會使用到的功能，尤其是在寫一些小工具來處理硬碟上的檔案時。早先我都是用傳統寫 C++ 的方式來思考，所以在 Python 的文件中找到了 listdir() 這個函式，然後寫了類似以下的代碼：<br /><br /><pre class="prettyprint lang-py">import os<br /><br />def doInDir(somedir):<br />    print somedir<br />    fileList = os.listdir(somedir)<br />    for f in fileList:<br />        fullpath = os.path.join(somedir, f)<br />        if os.path.isdir(fullpath):<br />            doInDir(fullpath)<br />        elif os.path.isfile(fullpath):<br />            print fullpath<br /><br />doInDir("/tmp/")<br /></pre><br />不過最近發現在 Python 下做事其實可以更簡單，內建的 os.walk() 就提供了非常強大的功能，使用的方式如下：<br /><br /><pre class="prettyprint lang-py">import os<br /><br />for root, dirs, files in os.walk("/tmp/"):<br />    print root<br />    for f in files:<br />        print os.path.join(root, f)<br /></pre><br />相比之下，同樣的功能用 os.walk() 就精簡了許多。上面兩段程式碼做的事情基本上是一樣的，都是列出指定資料夾下的所有檔案與子資料夾；不過有個小小地方需要注意一下，就是用兩種方法索處理的內部順序並不相同。listdir() 會按照深度優先搜索的順序，一層一層往下深入，其中檔案與資料夾的先後順序是交替穿插的；而 os.walk() 因為把檔案與文件夾都歸類好放在各自的 list 中，因此兩者的處理是分開的。以下是上面兩段程式針對同一個範例資料夾的輸出，可以看出處理順序的不同。<br /><br />os.walk()<br /><pre>/testtree/<br />/testtree/1file<br />/testtree/3file<br />/testtree/2dir<br />/testtree/2dir/21file<br />/testtree/2dir/24file<br />/testtree/2dir/22dir<br />/testtree/2dir/22dir/221file<br />/testtree/2dir/23dir<br />/testtree/4dir<br /></pre><br />os.listdir()<br /><pre>/testtree/<br />/testtree/1file<br />/testtree/2dir<br />/testtree/2dir/21file<br />/testtree/2dir/22dir<br />/testtree/2dir/22dir/221file<br />/testtree/2dir/23dir<br />/testtree/2dir/24file<br />/testtree/3file<br />/testtree/4dir<br /></pre></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -695,6 +820,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/my-tagging-guideline/">My tagging guideline</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
@@ -714,14 +847,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">我不和運氣差的人合作，嗎？</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/">你怎麼知道如何判斷運氣好壞？</a>
       </li>
     
   </ul>

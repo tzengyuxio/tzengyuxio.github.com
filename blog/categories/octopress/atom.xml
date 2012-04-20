@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-19T21:17:21+08:00</updated>
+  <updated>2012-04-20T17:10:49+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 調教筆記]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress/"/>
+    <updated>2012-04-20T08:52:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress</id>
+    <content type="html"><![CDATA[<p>花了一個晚上沒睡覺，調整了一下這個 Octopress 的一些功能與設定。現在還懶得記詳細步驟，就先簡單寫個筆記吧，以防將來自己看 Source Repository 也看不出到底為什麼要這麼改。</p>
+
+<h3>一、加入 LinkWithin 功能</h3>
+
+<p>原本以為 Octopress 沒辦法加，不過實際嘗試後發現並不難。要修改的地方主要有 <code>source/_layouts/default.html</code> 和 <code>source/_layouts/post.html</code> 這兩個檔案。</p>
+
+<h3>二、文章下方分享功能的版面調整</h3>
+
+<p>Octopress 內建的 twitter, google plus, facebook 三項文章分享功能如果全部打開，會佔掉約 680px 左右的畫面寬度。當文章區塊的寬度小於這個數值時，facebook 的按鈕會跳到下一行。這邊可以透過修改 <code>source/_includes/post/sharing.html</code> 的方式來稍微縮減 facebook 區塊的寬度，以符合需求。</p>
+
+<p>同區塊另外一個問題則是在預設版面中， twitter, google plus, facebook 三者按鈕的高度不同，尤其 facebook 的位置比較偏下。這邊我參考 <a href="https://stacksocial.com/">StackSocial</a> 頁面最下方區塊的作法，將三個按鈕改成 <code>ul → li</code> 格式。</p>
+
+<h3>三、加入標籤 (tag) 功能</h3>
+
+<p>這是花最多時間與腦力的一部分，尤其是我沒有 Ruby 基礎，好在 Ruby 的程式碼不難看懂，我雖然寫不出來，但是我看現有的 code 依樣畫葫蘆，一樣生出功能。這邊主要參考了 Octopress 內建的 Category Plugin，稍作修改，便得到了標籤功能。</p>
+
+<p>透過這次修改，同時也對 <a href="https://github.com/mojombo/jekyll">Jekyll</a> 所使用的 <a href="http://wiki.github.com/shopify/liquid/liquid-for-designers">Liquid Template System</a> 有更深入的了解。想想要整一個 Octopress 網站也真折騰，除了要懂 HTML, CSS, JavaScript 這些基本的之外，還得會摸 Ruby, Sass, Liquid Template，滿滿都是術語與新東西，真不是件簡單任務。</p>
+
+<p>話說既然加入了標籤功能，接下來就是找個時間好好整理每篇文章的「分類」和「標籤」了……嗯，這讓我想到一句老話：</p>
+
+<blockquote><p>要改的東西太多，那就改天吧。</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 發表文章的統計工具]]></title>

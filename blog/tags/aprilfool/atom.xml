@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: aprilfool | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/aprilfool/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-04-20T17:10:49+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Google Maps Quest]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/02/google-maps-quest/"/>
+    <updated>2012-04-02T05:12:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/02/google-maps-quest</id>
+    <content type="html"><![CDATA[<p>照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。</p>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>上面影片中的許多元素，相信都是目前三、四十歲這一代的共同回憶。像是吹卡匣或是撥接時的噪音等等。而影片中那 8-bit 風格的美術與音效，更是所有勇者迷再熟悉也不過的場景了。看完影片後我立刻連上 Google Maps，在 8-bit 的世界中玩了好久，到處探索，就好像自己真的是個勇者一樣四處探險。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-01.png" alt="image" /><br/>
+這是離我們最近，也是我們最熟悉的建築物－－天空之塔。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-02.png" alt="image" /><br/>
+我所在的位置。透過 8-bit 地圖看來，突然覺得有河流經過是個不錯的地方。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-03.png" alt="image" /><br/>
+蕃薯島 XD</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-04.png" alt="image" /><br/>
+SEGA MD 大戰略一代中的「遠東（Far East）」地圖就是長這樣。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-05.png" alt="image" /><br/>
+北邊大陸上除了有冰原，還有會扣 HP 的毒沼。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-06.png" alt="image" /><br/>
+世界地、不，是勇者鬥惡龍三代的地圖。(<a href="http://www.nesmaps.com/maps/DragonWarrior3/DragonWarrior3OverworldMapBG.html">對照版</a>)</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-07.png" alt="image" /><br/>
+日邦格的富士山。日邦格這地方的樹木也跟別處不同，是楓紅色的。</p>
+
+<p><img src="/images/2012/2012-04-01-google-maps-quest-08.png" alt="image" /><br/>
+Goolge 總部，感覺怪物很多……</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Analytics 也可以彈鋼琴]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/01/google-analytics-play-music-for-you/"/>
+    <updated>2012-04-01T09:23:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/01/google-analytics-play-music-for-you</id>
+    <content type="html"><![CDATA[<p><img src="/images/2012/2012-04-01-google-analytics-piano.png" alt="image" /></p>
+
+<p>剛剛發現，Google Analytics 的「造訪」按鈕旁多了個音符記號。點下去後會出現 Piano 與 Sitar 兩種樂器可以選，選了之後就會看到下方折線圖的節點會按順序一個一個亮起來，並播放與節點高低對應的音階。</p>
+
+<p>可惜我的折線圖不夠精采，撥出來的音樂平平淡淡，沒有直墜谷底或是步步高昇的激昂起伏。</p>
+]]></content>
+  </entry>
+  
+</feed>
