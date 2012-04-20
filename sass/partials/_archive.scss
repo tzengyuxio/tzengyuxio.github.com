@@ -23,7 +23,7 @@
       display: inline-block;
     }
   }
-  a.category, time {
+  a.category, a.tag, time {
     @extend .sans;
     color: $text-color-light;
   }
@@ -58,12 +58,12 @@
     article {
       padding:{left: 4.5em; bottom: .7em;}
     }
-  a.category {
+  a.category, a.tag {
     line-height: 1.1em;
     }
   }
 }
-#content > .category {
+#content > .category, #content > .tag {
   article {
     margin-left: 0;
     padding-left: 6.8em;

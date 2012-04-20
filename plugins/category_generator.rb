@@ -48,6 +48,33 @@ module Jekyll
 
   end
 
+  # The TagIndex class creates a single tag page for the specified tag.
+  class TagIndex < Page
+
+    # Initializes a new TagIndex.
+    #
+    #  +base+         is the String path to the <source>.
+    #  +tag_dir+ is the String path between <source> and the tag folder.
+    #  +tag+     is the tag currently being processed.
+    def initialize(site, base, tag_dir, tag)
+      @site = site
+      @base = base
+      @dir  = tag_dir
+      @name = 'index.html'
+      self.process(@name)
+      # Read the YAML data from the layout page.
+      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
+      self.data['tag']    = tag
+      # Set the title for this page.
+      title_prefix             = site.config['tag_title_prefix'] || 'Tag: '
+      self.data['title']       = "#{title_prefix}#{tag}"
+      # Set the meta-description for this page.
+      meta_description_prefix  = site.config['tag_meta_description_prefix'] || 'Tag: '
+      self.data['description'] = "#{meta_description_prefix}#{tag}"
+    end
+
+  end
+
   # The CategoryFeed class creates an Atom feed for the specified category.
   class CategoryFeed < Page
 
@@ -78,6 +105,36 @@ module Jekyll
 
   end
 
+  # The TagFeed class creates an Atom feed for the specified tag.
+  class TagFeed < Page
+
+    # Initializes a new TagFeed.
+    #
+    #  +base+         is the String path to the <source>.
+    #  +tag_dir+ is the String path between <source> and the tag folder.
+    #  +tag+     is the tag currently being processed.
+    def initialize(site, base, tag_dir, tag)
+      @site = site
+      @base = base
+      @dir  = tag_dir
+      @name = 'atom.xml'
+      self.process(@name)
+      # Read the YAML data from the layout page.
+      self.read_yaml(File.join(base, '_includes/custom'), 'tag_feed.xml')
+      self.data['tag']    = tag
+      # Set the title for this page.
+      title_prefix             = site.config['tag_title_prefix'] || 'Tag: '
+      self.data['title']       = "#{title_prefix}#{tag}"
+      # Set the meta-description for this page.
+      meta_description_prefix  = site.config['tag_meta_description_prefix'] || 'Tag: '
+      self.data['description'] = "#{meta_description_prefix}#{tag}"
+
+      # Set the correct feed URL.
+      self.data['feed_url'] = "#{tag_dir}/#{name}"
+    end
+
+  end
+
   # The Site class is a built-in Jekyll class with access to global site config information.
   class Site
 
@@ -101,6 +158,21 @@ module Jekyll
       self.pages << feed
     end
 
+    def write_tag_index(tag_dir, tag)
+      index = TagIndex.new(self, self.source, tag_dir, tag)
+      index.render(self.layouts, site_payload)
+      index.write(self.dest)
+      # Record the fact that this page has been added, otherwise Site::cleanup will remove it.
+      self.pages << index
+
+      # Create an Atom-feed for each index.
+      feed = TagFeed.new(self, self.source, tag_dir, tag)
+      feed.render(self.layouts, site_payload)
+      feed.write(self.dest)
+      # Record the fact that this page has been added, otherwise Site::cleanup will remove it.
+      self.pages << feed
+    end
+
     # Loops through the list of category pages and processes each one.
     def write_category_indexes
       if self.layouts.key? 'category_index'
@@ -115,6 +187,20 @@ module Jekyll
       end
     end
 
+    # Loops through the list of tag pages and processes each one.
+    def write_tag_indexes
+      if self.layouts.key? 'tag_index'
+        dir = self.config['tag_dir'] || 'tags'
+        self.tags.keys.each do |tag|
+          self.write_tag_index(File.join(dir, tag.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase), tag)
+        end
+
+      # Throw an exception if the layout couldn't be found.
+      else
+        throw "No 'tag_index' layout found."
+      end
+    end
+
   end
 
 
@@ -125,6 +211,7 @@ module Jekyll
 
     def generate(site)
       site.write_category_indexes
+      site.write_tag_indexes
     end
 
   end
@@ -143,7 +230,7 @@ module Jekyll
     def category_links(categories)
       dir = @context.registers[:site].config['category_dir']
       categories = categories.sort!.map do |item|
-        "<a class='category' href='/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{item}</a>"
+        "[<a class='category' href='/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{item}</a>]"
       end
 
       case categories.length
@@ -152,7 +239,23 @@ module Jekyll
       when 1
         categories[0].to_s
       else
-        "#{categories[0...-1].join(', ')}, #{categories[-1]}"
+        "#{categories[0...-1].join(' ')} #{categories[-1]}"
+      end
+    end
+
+    def tag_links(tags)
+      dir = @context.registers[:site].config['tag_dir']
+      tags = tags.sort!.map do |item|
+        "#<a class='tag' href='/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{item}</a>"
+      end
+
+      case tags.length
+      when 0
+        ""
+      when 1
+        tags[0].to_s
+      else
+        "#{tags[0...-1].join(', ')}, #{tags[-1]}"
       end
     end
 
