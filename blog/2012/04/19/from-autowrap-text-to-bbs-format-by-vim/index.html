@@ -113,11 +113,11 @@
 
 <p>要完成任務，首先得在 <code>.vimrc</code> 檔案裡加入以下設定：</p>
 
-<pre><code>set fo+=Mm
+<pre><code>set fo+=Bm
 set tw=72
 </code></pre>
 
-<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Mm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
+<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Bm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
 
 <p>接著，為了讓事情更方便些，可以加入以下的按鍵映射：</p>
 
@@ -184,17 +184,18 @@ set tw=72
 <ul>
   
   <li id="social-media-button-twitter">
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/" data-count="none">Tweet</a>
   </li>
   
   
   <li id="social-media-button-google">
-  <div class="g-plusone" data-size="medium"></div>
+  <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+  <div class="g-plus" data-action="share" data-annotation="none"></div>
   </li>
   
   
   <li id="social-media-button-facebook">
-  <div class="fb-like" data-send="true" data-width="420" data-show-faces="false"></div>
+  <div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
   </li>
   
 </ul>
@@ -230,6 +231,10 @@ set tw=72
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/26/game-of-dimension-transformation/">次元轉換遊戲介紹</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/04/21/my-tagging-guideline/">我的貼標籤規範</a>
       </li>
     
@@ -251,10 +256,6 @@ set tw=72
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
       </li>
     
   </ul>
@@ -363,10 +364,11 @@ set tw=72
 
 
   <script type="text/javascript">
+    window.___gcfg = {parsetags: 'onload'};
     (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
   </script>
 

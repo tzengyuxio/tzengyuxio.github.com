@@ -9,9 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="封面對於書名的斷句是「家畜／人鴉俘」。封面設計者可能沒看過小說，正確的斷句應該是「家畜人／鴉俘」
-＜第一章 第1節‧家畜的調教問答＞中，克萊兒說過的幾句話： 「同情馬是調教的大忌啊！」
-「同情這種東西，只能用來對待自己的同類。&#8230;&#8230;」（按：之後， &hellip;">
+  <meta name="description" content="之前用過 mantis，一個 bug tracker 系統。這套系統簡潔、方便，對中文支援也 OK，雖然中文介面翻的不夠徹底，但語系檔是純文字，自己動手改就好了。 不過有個不算問題的問題讓人煩惱，就是 mantis 會把訊息字串中包含 &#8220;@&#8221; 的 email &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +77,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/07/19/mantis_link/">Mantis 惱人連結</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-07-19T06:39:00+08:00" pubdate data-updated="true">Jul 19<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>之前用過 <a href="http://www.mantisbt.org/">mantis</a>，一個 bug tracker 系統。這套系統簡潔、方便，對中文支援也 OK，雖然中文介面翻的不夠徹底，但語系檔是純文字，自己動手改就好了。</p>
+
+<p>不過有個不算問題的問題讓人煩惱，就是 mantis 會把訊息字串中包含 &#8220;@&#8221; 的 email 字串改成郵件連結，這功能原本貼心，但這麼一來只要 big5 編碼中有包括 @ 字元的中文字－－例如「世」或「一」－－就會被 mantis 把整句中文轉換為一個無意義的 email 連結。雖然無礙於系統運作，但這個偽物連結總是讓人看了心煩。</p>
+
+<p>最近重裝 mantis，自然又會看到假連結，於是下定決心解決這個問題。雖然看似小小的問題，前前後後卻花了我一個小時的時間來處理－－找到問題在哪用了快廿分鐘，解決這個問題則又耗去將近四十分鐘！</p>
+
+<p>照理說找問題應該要花比較多的時間，怎麼這次找到問題後卻還花了那麼久時間修正？原因都是出在<strong>正規式</strong>上面，那段有嫌疑的 code 前後用了不少又臭又長的正規式，為了搞懂這些火星文花了許多時間，結果最後搞定只加了五個字元：</p>
+
+<p><code>%mantis%/core/string_api.php:line 316</code></p>
+
+<p><img src="/images/2005/2005-07-19-mantis-patch.png" alt="image" /></p>
+
+<p>短短五個字，花了一小時。真是「台上一分鐘，台下十年功」啊</p>
+
+<p>後記：在找資料的時候，在<a href="http://www.oreilly.com.tw/product_perl.php?id=a160">《正規式速查手冊》</a>的導讀中看到這麼一句話：</p>
+
+<blockquote><p>Regular Expression（正規式）是一種 write-only language，寫得出來，但是很難看懂！</p></blockquote>
+
+<p>真是於我心有戚戚焉（淚）</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -549,55 +601,9 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/06/04/starbucks/">Starbucks 的女神</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-06-04T22:24:00+08:00" pubdate data-updated="true">Jun 4<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>於是，畫了一個失敗的 Starbucks Logo&#8230;&#8230;</p>
-
-<p><img src="/images/2005/2005-06-04-starbucks.jpeg" alt="image" /></p>
-
-<p>今天下午在 Starbucks 查看 PDA，突然想說好久沒用 PDA 畫圖，於是拿起杯子對著上面的 Logo 畫了起來。第一次畫到一半當機，心血全毀。再接再厲。接下來就小心翼翼地、如履薄冰地，每作個滿意的動作就存檔。</p>
-
-<p>終於畫到了最後一部份，剩下女神的臉－－嗯，臉是精神所在，這部分可馬虎不得。好，就把圖片的中間部分放大，小心的把臉給刻出來。大功告成！存檔！！</p>
-
-<p>存完檔案後趕緊打開圖片來欣賞自己的成果。什麼？怎麼只有存到放大時的中間那一部份？真該死！原來存檔就是當時畫面顯示什麼就存什麼。所以如果放大編輯後，還得先縮回原尺寸才能存到完整的圖片。</p>
-
-<p>可惜了我許多寶貴的時間。也許下次再來重新挑戰一次吧。</p>
-
-<p>附記：其實在畫 Starbucks Logo 之前，有先畫一張我的手機圖，不過也是畫到最後（都已經完工在修飾了）當機。PalmOS 其實並沒有想像中那麼可靠 ^%$#!<sup>%#$(&amp;#</sup></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/18/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -610,6 +616,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/04/26/game-of-dimension-transformation/">次元轉換遊戲介紹</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/21/my-tagging-guideline/">我的貼標籤規範</a>
@@ -633,10 +643,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">最後から二番目の恋（日劇）</a>
       </li>
     
   </ul>
@@ -741,10 +747,11 @@
 
 
   <script type="text/javascript">
+    window.___gcfg = {parsetags: 'onload'};
     (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
   </script>
 

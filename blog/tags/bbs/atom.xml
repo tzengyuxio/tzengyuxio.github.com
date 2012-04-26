@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: bbs | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/bbs/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-04-21T06:58:31+08:00</updated>
+  <updated>2012-04-26T20:26:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -28,11 +28,11 @@
 
 <p>要完成任務，首先得在 <code>.vimrc</code> 檔案裡加入以下設定：</p>
 
-<pre><code>set fo+=Mm
+<pre><code>set fo+=Bm
 set tw=72
 </code></pre>
 
-<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Mm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
+<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Bm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
 
 <p>接著，為了讓事情更方便些，可以加入以下的按鍵映射：</p>
 
