@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="我用 google-code-prettify 來做 blog 文章中的代碼上色，google-code-prettify 本身有附上幾個 Color Scheme, 然而除了預設的之外，都是以暗色背景為主。 昨天心血來潮將 Solarized 這個 Color Scheme 移植到 google &hellip;">
+  <meta name="description" content="今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (~/) 下寫了個 .bashrc, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。 後來在家目錄下先建了個檔案 . &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,76 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">設定 Mac Terminal 下的 .bashrc</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-11T09:33:00+08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
+
+<p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
+
+<pre class="prettyprint"><code>if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+</code></pre>
+
+
+<p>這樣原本寫在 <code>.bashrc</code> 裡的指令稿就會被讀取並且發揮作用了。補充說明，我的作業系統版本為 <strong>Mac OS X Lion (10.7)</strong>。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，簡述如下：</p>
+
+<h3>.bash_profile</h3>
+
+<p>輸入帳號密碼登入時，不論遠端或本地，都會執行此設定檔。</p>
+
+<h3>.bashrc</h3>
+
+<p>在已經登入的情況下，開啟終端機視窗（如 Gnome 的 xterm），在命令提示符號出現前，就會先執行 .bashrc 內的指令。</p>
+
+<p>不過 Mac OS X 的行為是上述流程的例外，詳細可參考本文最後面的連結。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<p><a href="http://macfidelity.de/2008/07/02/mac-customizing-terminal-in-mac-os-x-105/">Customizing Terminal in Mac OS X 10.5 | macfidelity</a></p>
+
+<p>上面這篇文章中的步驟比較多，甚至還要進 Terminal 的「偏好設定」畫面去修改打開 Shell 的指令。不過我自己的操作結果是就算沒有設定那些指令也沒關係，只要有包含文章中那段代碼的 <code>.bash_profile</code>, 就可以讀取 <code>.bashrc</code> 了。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，請見下面這篇文章。</p>
+
+<p><a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">.bash_profile vs .bashrc</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -867,62 +937,6 @@ public class GetEnv {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/07/the-truth-is-out-there/">光鮮亮麗背後的真相</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-07T15:28:00+08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天看到很多人都在傳這一張圖片：</p>
-
-<p><img class="center" src="/images/2012/2012-02-07-hero-vs-evil.jpeg" title="[source: www.7even.com.tw]" ></p>
-
-<p>乍看好像邪惡組織比較吸引人。但是別忘了，那些擁有偉大目標、為了實現夢想沒日沒夜地努力、即使失敗也不氣餒，能夠指揮組織行動，最後還笑容滿面的，都是<strong>邪惡組織的頭目級領導人物</strong>啊！真正加入邪惡組織後，底下就是最血淋淋的職場寫照：</p>
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/35Kc4jM2Sew?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>少年們，醒醒吧！<br/>
-<a href="http://wiki.komica.org/wiki3/?%E6%88%90%E5%8F%A5%2F%E5%88%A5%E5%86%8D%E7%9B%B8%E4%BF%A1%E6%B2%92%E6%9C%89%E6%A0%B9%E6%93%9A%E7%9A%84%E8%AA%AA%E6%B3%95%E4%BA%86">別再相信沒有根據的說法了</a>！</p>
-
-<hr />
-
-<p>以下是更多誘拐有為年輕人加入邪惡組織的宣傳稿：</p>
-
-<ul>
-<li><a href="http://n.yam.com/cardu/fn/201202/20120201058967.html">智慧科技帶動遊戲熱　逾八成想轉戰遊戲業-財經新聞-yam蕃薯藤新聞</a></li>
-<li><a href="http://www.nownews.com/2012/01/31/91-2780266.htm">6成9上班族想進遊戲業　期望薪資37386元 | 頭條新聞 | NOWnews 今日新聞網</a></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -938,6 +952,10 @@ public class GetEnv {
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/05/01/mit-game-jam-dora/">四個人兩天開發的《Dora》</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/04/26/game-of-dimension-transformation/">次元轉換遊戲介紹</a>
@@ -961,10 +979,6 @@ public class GetEnv {
     
       <li class="post">
         <a href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Octopress 發表文章的統計工具</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/18/inconsistency-of-tagging-formats/">形形色色的標籤機制</a>
       </li>
     
   </ul>
