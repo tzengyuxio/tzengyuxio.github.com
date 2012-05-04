@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: blogger | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/blogger/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-01T08:30:31+08:00</updated>
+  <updated>2012-05-04T15:43:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -46,6 +46,23 @@
 
 
 <hr /><p>這篇文章就是用上述流程所寫的，你可以<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20Blogging%20with%20Markdown.md">到這邊看看原始模樣</a>。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［解決］以 IE 瀏覽 Blogger.com 時出現空白頁的問題]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie/"/>
+    <updated>2006-01-23T01:14:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie</id>
+    <content type="html"><![CDATA[<p><span style="color:gray;">參考自：<a href="http://lordcolus.blogspot.com/2005/04/iebloggercom.html">Lordcolus’s Blog: 避免以IE瀏覽Blogger.com時出現空白網頁</a></span></p>
+
+<p>這篇的用意有二：</p>
+
+<ol>
+<li>紀錄以 IE 開啟 blogspot.com 會出現空白頁這問題的解決方式。簡言之就是將範本中的 <code>&lt;$BlogMetaData$&gt;</code> 移到 <code>&lt;title&gt;</code> 之前。</li>
+<li>測試一下 <strong>BlogThis</strong> 的功能。這篇是由上述網頁下方的 <u>Create a Link</u> 連結直接產生的。</li>
+</ol>
 
 ]]></content>
   </entry>

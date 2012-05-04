@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: software | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/software/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［情報］快速啟動軟體：Launchy]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/09/23/launchy/"/>
+    <updated>2006-09-23T20:20:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/09/23/launchy</id>
+    <content type="html"><![CDATA[<p>最近常見到 <a href="http://quicksilver.blacktree.com/">Quicksilver</a> 這詞，google 了一下，原來這是在 Mac 上快速啟動軟體（但不僅止於快速啟動軟體）的程式。</p>
+
+<!-- more -->
+
+
+<p>Windows 上也有類似的軟體，我先前一直使用的是 <a href="http://pcman.ptt.cc/ko/ko.html">PCMan 的熱鍵超速啟動</a>，只要連按兩下 Caps Lock 加上熱鍵字串便可啟動程式，蠻方便順手的，不過似乎已經不再維護與更新。而且如果換電腦或是有新增軟體的話，需重新設定熱鍵字串，算是比較麻煩之處。google 後來推出 <a href="http://desktop.google.com.tw/zh/TW/">google desktop</a>，可以透過連按兩下 Ctrl 來搜尋檔案，操作上與熱鍵超速啟動有異曲同工之妙，於是我便想，若是有 plug-in 能夠讓 google desktop 也能快速啟動程式，統一在相同的操作與介面下，那就省事多了。可惜找了半天沒見到這類的 plug-in。</p>
+
+<p>回到 Quicksilver，當我在找 QuickSilver 的資料時，剛好見到<a href="http://www.11tmr.com/11tmr.nsf/d6plinks/DEVT-6A4G3G">有篇文章</a>提到 Windows 上也有類似 Quicksilver 的軟體，我分別上各軟體的首頁看了看：</p>
+
+<ul>
+<li><a href="http://www.candylabs.com/approcket/">AppRocket</a>: 看起來似乎不錯，不過要錢，我就懶得裝了。</li>
+<li><a href="http://www.boletrice.com/pccom/">PC-Com</a>: 網頁上的介紹與圖片吸引不了我……</li>
+<li><a href="http://www.launchy.net/">Launchy</a>: 看起來挺不賴，而且是 Open Source，大大的加分！</li>
+<li><a href="http://www.bayden.com/slickrun/">Colibri</a>: 好像也蠻不錯的，不過 Launchy 可以換 skin :-P</li>
+<li><a href="http://colibri.leetspeak.org/">SlickRun</a>: 連推薦 SlickRun 的人都說 Launchy 比較好，我還能說什麼呢？</li>
+</ul>
+
+
+<p>所以我就下載了 Launchy 來試了。初使用的感覺還不賴，也許我會逐漸改變習慣，讓陪伴我多年的「熱鍵超速啟動」慢慢退休吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［情報］VNC 軟體比較]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/02/28/vnc-comparation/"/>
+    <updated>2006-02-28T09:55:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/02/28/vnc-comparation</id>
+    <content type="html"><![CDATA[<p><a href="http://www.masternewmedia.org/news/2004/10/23/best_vncbased_screen_sharing_solutions.htm">Best VNC-Based Screen Sharing Solutions: Slashdot Reports</a><br/>
+(October 23, 2004)</p>
+
+<p>想挑一套 VNC 來裝，因此找了幾篇 <code>Ultr@VNC</code> 與 <code>TightVNC</code> 的比較，不重要的文章我就不貼了，只留一篇作為結論放在上面。懶得直接看全文的就直接看各款間的主要特色吧：</p>
+
+<!-- more -->
+
+
+<blockquote><ul>
+<li><a href="http://www.realvnc.com/">RealVNC</a>: the original.</li>
+<li><a href="http://www.tightvnc.com/">TightVNC</a>: optimized for low-bandwidth</li>
+<li><a href="http://ultravnc.sourceforge.net/">UltraVNC</a>: tons of extras - file transfer, chat, video driver, NT/AD security</li>
+<li><a href="http://www.tridiavnc.com/">TridiaVNC</a>: get around firewalls, more management features</li>
+<li><a href="http://sourceforge.net/projects/win2vnc/">Win2VNC</a>: One virtual desktop across two computers</li>
+</ul>
+</blockquote>
+
+<p>以及最重要的，總評：</p>
+
+<blockquote><p>and from the over 500 user contributed opinions, which you can access all on Slashdot, I have selected these few ultra-synthetic snippets:</p>
+
+<blockquote><p>"UltraVNC is miles ahead of the others when used with the video driver on Windows on a broadband or better connection.</p>
+
+<p><strong>It is smooth</strong>, very usable for most office applications.</p>
+
+<p>Personally, I find file transfer to be useful too. The client side has some nice GUI touches for fullscreen mode - a little control bar that is very similar to the one in Remote Desktop.</p>
+
+<p><strong>On the other hand</strong>, RealVNC is the "gold standard".</p>
+
+<p>If you're using VNC, you probably notice how slow it is.</p>
+
+<p>UltraVNC/TightVNC is a big improvement over regular VNC ... <strong>but they're all dog slow</strong>."</p></blockquote></blockquote>
+
+<p>所以得獎的是－－<strong>Ultr@VNC</strong>！恭喜 Ultra，妳可以獲得我的硬碟住宿券一張，無限期的唷！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［情報］防毒軟體評比]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/02/11/anti-virus-comparation/"/>
+    <updated>2006-02-11T07:58:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/02/11/anti-virus-comparation</id>
+    <content type="html"><![CDATA[<p><a href="http://www.virus.gr/english/fullxml/default.asp?id=72&amp;mnu=72">2005 年 12 月 防毒軟體評比</a></p>
+
+<blockquote><p>25. ClamWin version 0.87.1 - <span style="color:red;">48.45%</span></p></blockquote>
+
+<p>ClamWin 加油啊，連 60% 都還不到，這樣可是不及格的。</p>
+]]></content>
+  </entry>
+  
+</feed>

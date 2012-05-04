@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: translation | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/translation/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[六十分的翻譯]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/09/22/translation-score-60/"/>
+    <updated>2005-09-22T08:04:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/09/22/translation-score-60</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/2005/2005-09-22-translation-score-60.jpeg"></p>
+
+<p>再四個就一百分了。</p>
+]]></content>
+  </entry>
+  
+</feed>

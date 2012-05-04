@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: irc | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/irc/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［網際］IRC 笑話 - QDB]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/22/irc-joke/"/>
+    <updated>2006-01-22T12:01:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/22/irc-joke</id>
+    <content type="html"><![CDATA[<p><a href="http://www.bash.org/">QDB: Quote Database Home</a></p>
+
+<p>IRC 上龍蛇雜處，正所謂人多的地方就有小白，因此上頭各種奇奇怪怪的對話都會出現。這個網站就收錄了一大堆 IRC 的笑話，有些不僅白目而且好笑，有些則是讓人看了會心一笑，不過更多的是讓一般人看了丈二金剛摸不著頭，畢竟 IRC 這領域跟 PTT 一樣，充滿鄉民，如果身為一個鄉民的等級不足，恐怕是不太容易搞懂到底「<a href="/blog/2006/01/22/baofu-geng-gen/">哏</a>」在哪裡。BTW，這網站也是了解英文口語用法的好地方，不過就像中文有注音文一樣，IRC 所出現的英文裡也有許多亂七八糟的縮寫與誤拼。底下就引幾個例子來瞧瞧唄（附上翻譯）：</p>
+
+<!-- more -->
+
+
+<hr />
+
+<pre><code>#77904 +(5907)- [X]
+
+&lt;Sui88&gt; 67% of girls are stupid
+&lt;Sui88&gt; 67% 的女生是笨蛋
+&lt;V-girl&gt; i belong with the other 13%
+&lt;V-girl&gt; 我屬於那剩下的 13%
+</code></pre>
+
+<p>按：這不是自打嘴巴嗎？</p>
+
+<hr />
+
+<pre><code>#9322 +(7791)- [X]
+
+&lt;tag&gt; Ouroboros: lets play Pong
+&lt;tag&gt; Ouroboros: 來玩乒乓吧
+&lt;Ouroboros&gt; Ok.
+&lt;Ouroboros&gt; 好啊。
+&lt;tag&gt; |    .
+&lt;Ouroboros&gt; .    |
+&lt;tag&gt; |  .
+&lt;Ouroboros&gt;    . |
+&lt;tag&gt; | .
+&lt;Ouroboros&gt;      | .
+&lt;Ouroboros&gt; Whoops
+&lt;Ouroboros&gt; 哎呀
+</code></pre>
+
+<p>按：蠻幽默且頗自得其樂的兩人 :-D</p>
+
+<hr />
+
+<pre><code>#25464 +(7421)- [X]
+
+&lt;kow&gt; "There are 10 types of people in the world...
+those who understand binary and those who don't."
+&lt;kow&gt; 可以把所有人類分為 10 種… 懂二進位的，與不懂二進位的。
+&lt;SpaceRain&gt; That’s only 2 types of people, kow.
+&lt;SpaceRain&gt; 這樣只分了 2 種, kow.
+&lt;SpaceRain&gt; STUPID
+&lt;SpaceRain&gt; 笨
+</code></pre>
+
+<p>按：顯然第二位老兄是屬於不懂二進位的。</p>
+]]></content>
+  </entry>
+  
+</feed>

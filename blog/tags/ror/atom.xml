@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: ror | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/ror/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/"/>
+    <updated>2006-01-21T13:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode</id>
+    <content type="html"><![CDATA[<p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。</p>
+
+<p>然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為 <code>UTF-8 Unicode (utf8)</code>，MySQL 連線校對設為 <code>utf8_general_ci</code>，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。</p>
+
+<p>這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 <code>config/database.yml</code> 中加入一行設定即可：</p>
+
+<pre><code>development:
+  adapter: mysql
+  database: example_development
+  encoding: utf8    # add this line
+  username: root
+  password:
+</code></pre>
+
+<p>如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。</p>
+
+<hr />
+
+<p><span style="color:gray;">參考自：<a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></span></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［安裝］Ruby on Rails on FreeBSD]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/10/ruby-on-rails-on-freebsd/"/>
+    <updated>2006-01-10T12:34:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/10/ruby-on-rails-on-freebsd</id>
+    <content type="html"><![CDATA[<h3>Step 1: Install Ruby</h3>
+
+<p>先前不曉得裝什麼軟體就一併裝好了，所以跳過。</p>
+
+<h3>Step 2: Install RubyGems</h3>
+
+<p>這是等一下用來安裝 Rails 的工具，在 FreeBSD 下用 ports 安裝，輕鬆方便。</p>
+
+<pre><code>[freebsd] /usr/ports/devel/ruby-gems&gt; make install clean
+</code></pre>
+
+<h3>Step 3: Install Rails</h3>
+
+<p>照<a href="http://www.rubyonrails.org/down">官方網站</a>上的描述，同樣一行指令搞定。</p>
+
+<pre><code>[freebsd] ~&gt; gem install rails --include-dependencies
+</code></pre>
+
+<p>註：我連試了兩次指令都執行到一半失敗，可能是網路 timeout 關係，第三次就順利成功了。</p>
+
+<h3>Step 4: 建立應用程式</h3>
+
+<p>基本上這也是照著前一個網頁的指示作。</p>
+
+<pre><code>[freebsd] ~&gt; rails /path/to/my/new/application
+[freebsd] ~&gt; cd /path/to/my/new/application
+[freebsd] ~&gt; ruby script/server
+</code></pre>
+
+<p>接下來開啟網址 <code>http://0.0.0.0:3000</code> 就能夠看到關於 RoR 的說明了。<br/>
+說明頁面的最底下有 Getting Started，可以開始寫 RoR 的程式囉！</p>
+
+<hr />
+
+<p>參考網址：</p>
+
+<ol>
+<li><a href="http://www.rubyonrails.org/down">Download Ruby on Rails</a></li>
+<li><a href="http://www.onlamp.com/pub/a/onlamp/2005/01/20/rails.html?page=1">Rolling with Ruby on Rails</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: msn | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/msn/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[一些個人入口首頁]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/09/23/personal-portal/"/>
+    <updated>2005-09-23T07:33:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/09/23/personal-portal</id>
+    <content type="html"><![CDATA[<ul>
+<li><p>Google：<a href="http://www.google.com/ig">www.google.com/ig</a></p>
+
+<p>  <img src="/images/2005/2005-09-23-google.jpeg" alt="image" /></p>
+
+<p>  沒有台北的天氣啊...</p></li>
+<li><p>msn start.com：<a href="http://www.start.com/3/">www.start.com/3/</a></p>
+
+<p>  <img src="/images/2005/2005-09-23-start.jpeg" alt="image" /></p>
+
+<p>  另外還有較早公開過的舊版版面：</p>
+
+<p>  <a href="http://www.start.com/1/">www.start.com/1/</a></p>
+
+<p>  <a href="http://www.start.com/2/default.aspx">www.start.com/2/</a></p></li>
+<li><p>Netvibes：<a href="http://www.netvibes.com/">www.netvibes.com/</a></p>
+
+<p>  <img src="/images/2005/2005-09-23-netvibes.jpeg" alt="image" /></p>
+
+<p>  版面很清爽乾淨，也有台北的天氣</p></li>
+<li><p>PROTOPAGE：<a href="http://www.protopage.com/">www.protopage.com/</a></p>
+
+<p>  <img src="/images/2005/2005-09-23-protopage.jpeg" alt="image" /></p>
+
+<p>  可以做出非常大的自訂調整</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

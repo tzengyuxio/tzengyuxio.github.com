@@ -4,7 +4,7 @@
   <title><![CDATA[Category: book | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/book/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-01T08:30:31+08:00</updated>
+  <updated>2012-05-04T15:43:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -39,6 +39,9 @@
     <content type="html"><![CDATA[<p>我喜歡各種稀奇古怪的故事，對於簡短俐落又詭異的故事更是沒有抵抗力。這本書的封面就這樣吸引了我，在我壓根還不知道誰是 Roald Dahl 的時候，就把書帶回家了。雖然如此，回家之後還是放在書架上供了許多年，直到前幾個禮拜才被我從書堆中挖出來拜讀。（下文有劇情透露）</p>
 
 <p><a href="http://www.anobii.com/books/%E5%B9%BB%E6%83%B3%E5%A4%A7%E5%B8%ABRoald_Dahl%E7%9A%84%E7%95%B0%E6%83%B3%E4%B8%96%E7%95%8C/9789570519204/008f8125b4c89fc15c/" style="margin-left: 1em; margin-right: 1em;" title="More about 幻想大師Roald Dahl的異想世界"><img alt="More about 幻想大師Roald Dahl的異想世界" src="http://image.anobii.com/anobi/image_book.php?type=4&amp;item_id=008f8125b4c89fc15c&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 幻想大師Roald Dahl的異想世界" /></a></p>
+
+<!-- more -->
+
 
 <p>我在翻閱了作者簡介後才知道，原來 Roald Dahl 是《怪桃歷險記》(James and the Giant Peach)、《巧克力工廠的秘密》(Charlie and the Chocolate Factory) 等知名電影原著小說的作者。這讓我在閱讀前更多添了幾份期待。雖說是短篇故事集，但這本書還是挺厚一本，裡頭收錄了 20 篇短篇小說。不過最後兩篇〈訪客〉與〈克勞德的狗〉分別超過五十頁與一百頁，佔了將近全書三成的比例，姑且可以算的上是兩篇中篇小說了吧。</p>
 
@@ -99,23 +102,115 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[［Ruby］書單]]></title>
-    <link href="http://tzengyuxio.me/blog/2006/01/22/ruby-book-list/"/>
-    <updated>2006-01-22T10:26:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2006/01/22/ruby-book-list</id>
-    <content type="html"><![CDATA[<hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/0974514055/qid=1137896714/sr=8-1/ref=pd_bbs_1/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://www.oreilly.com/catalog/covers/0974514055.s.gif" alt="book cover" align="left" height="190" width="157" /></a><br /><span style="font-weight: bold;">Programming Ruby: The Pragmatic Programmers' Guide, Second Edition</span><br /><br />蠻有名的一本，有名到跟作業系統的「恐龍書」一樣，這本被叫做「鋤頭書」（Pickaxe book）。許多人推薦，看來似乎是學 ruby 必讀的教科書。可是好貴、貴...</div><br /><hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/0596002149/ref=sib_rdr_dp/104-2563592-1328726?me=ATVPDKIKX0DER&no=283155&amp;st=books&n=283155"><img src="http://www.oreilly.com/catalog/covers/ruby.s.gif" alt="book cover" align="right" height="190" width="127" /></a><br /><span style="font-weight: bold;">Ruby in a Nutshell</span><br /><br />基於對《C++ in a Nutshell》與對「歐萊禮」的好感，想必這本應該也不錯。大概是拿來擺在桌上的案頭參考書吧。</div><br /><hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/0672328844/qid=1137896714/sr=8-5/ref=pd_bbs_5/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://images.amazon.com/images/P/0672328844.01._SCLZZZZZZZ_.jpg" alt="book cover" align="left" height="200" width="156" /></a><br /><span style="font-weight: bold;">Programming the Ruby Way (2nd Edition)</span><br /><br />本書的第一版與鋤頭書一樣，在 amazon.com 也是獲得四顆半星評價。第二版預計今年六月才會推出。左邊是二版的封面，蠻有日本風的感覺。從書名與封面看來，感覺內容好像是在講「Ruby 之道」之類的的哲學性程式設計書籍。真玄。</div><br /><hr style="margin: 0px; clear: left;"><div style="float: left; clear: left;"><a href="http://www.amazon.com/gp/product/1592000770/qid=1137896745/sr=8-8/ref=sr_8_xs_ap_i8_xgl14/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://buy.overstock.com/images/products/muze/books/1592000770.jpg" alt="book cover" align="right" height="254" width="205" /></a><br /><span style="font-weight: bold;">Game Programming with Python, Lua, and Ruby</span><br /><br />書名不錯，主題蠻吸引人的，一次包三種語言，想必應該是蠻厚的吧。書評普普，然而這是唯一一本與遊戲相關，且跨三種腳本語言的書，還是得找來翻翻瞧瞧。</div><br /><hr style="margin: 0px; clear: left;">
+    <title type="html"><![CDATA[［近況］一月份報告]]></title>
+    <link href="http://tzengyuxio.me/blog/2009/02/04/january-report/"/>
+    <updated>2009-02-04T03:29:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2009/02/04/january-report</id>
+    <content type="html"><![CDATA[<p>這裡已經空了 2007, 2008 整整兩年了。整整兩年之多。</p>
 
+<p>這兩年斷斷續續都有想要繼續寫些什麼的念頭，奈何意志力不夠堅定，給自己太多藉口。但不管怎樣，至少現在又回來寫了。</p>
+
+<p>首先來看看今年第一個月是怎麼度過的吧：</p>
+
+<!-- more -->
+
+
+<h3>動畫</h3>
+
+<ul>
+<li><p>かんなぎ</p>
+
+<p>  我對<a href="http://zh.wikipedia.org/wiki/%E5%B1%B1%E6%9C%AC%E5%AF%AC">山本寬</a>的風格真是又愛又恨啊。</p></li>
+</ul>
+
+
+<h3>電影</h3>
+
+<ul>
+<li><p>嫌疑犯Ｘ的獻身</p>
+
+<p>  我只能說堤真一所演的數學家真是太入味了。</p></li>
+<li><p>天方夜談</p>
+
+<p>  拿朋友的免費票去看的。就一部不用花錢的電影而言，還蠻具娛樂效果。</p></li>
+</ul>
+
+
+<h3>小說</h3>
+
+<ul>
+<li><p>群</p>
+
+<p>  前面太悶，後面太緊湊的一部科普版《鐵達尼號》。</p></li>
+<li><p>大騙局</p>
+
+<p>  接著《群》之後看，會有許多場景似曾相識的感覺。</p></li>
+<li><p>數位密碼</p>
+
+<p>  裡面關於電腦資訊安全的資訊，基本上當笑話帶過即可。</p></li>
+</ul>
+
+
+<h3>桌上遊戲</h3>
+
+<ul>
+<li><p>Bang!</p>
+
+<p>  最有趣的就是大家的嘴砲。第二有趣的就是大家都被嘴砲所騙。</p></li>
+<li><p>富饒之城</p>
+
+<p>  太心機的遊戲－－我懷疑繼續玩下去總有一天我會心<strong>機</strong>梗塞。</p></li>
+<li><p>卡卡頌</p>
+
+<p>  真是簡單又有趣、可愛又迷人的多人拼圖遊戲。</p></li>
+</ul>
+
+
+<hr />
+
+<p>另外，一月份 blog 文章寫了一篇。不管怎樣，這篇寫完後，二月份在「blog 文章數」這一項至少已經打平一月份的紀錄了。之後就是多寫多賺。</p>
+
+<p>以上。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[六十分的翻譯]]></title>
-    <link href="http://tzengyuxio.me/blog/2005/09/22/translation-score-60/"/>
-    <updated>2005-09-22T08:04:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2005/09/22/translation-score-60</id>
-    <content type="html"><![CDATA[<p><img class="right" src="/images/2005/2005-09-22-translation-score-60.jpeg"></p>
+    <title type="html"><![CDATA[［Ruby］書單]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/22/ruby-book-list/"/>
+    <updated>2006-01-22T10:26:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/22/ruby-book-list</id>
+    <content type="html"><![CDATA[<h3>Programming Ruby: The Pragmatic Programmers’ Guide, Second Edition</h3>
 
-<p>再四個就一百分了。</p>
+<p><a href="http://www.amazon.com/gp/product/0974514055/qid=1137896714/sr=8-1/ref=pd_bbs_1/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://www.oreilly.com/catalog/covers/0974514055.s.gif" alt="book cover" align="left" height="190" width="157" /></a></p>
+
+<p>蠻有名的一本，有名到跟作業系統的「恐龍書」一樣，這本被叫做「鋤頭書」（Pickaxe book）。許多人推薦，看來似乎是學 ruby 必讀的教科書。可是好貴、貴…</p>
+
+<hr style="clear:left;" />
+
+
+<h3>Ruby in a Nutshell</h3>
+
+<p><a href="http://www.amazon.com/gp/product/0596002149/ref=sib_rdr_dp/104-2563592-1328726?me=ATVPDKIKX0DER&no=283155&amp;st=books&n=283155"><img src="http://www.oreilly.com/catalog/covers/ruby.s.gif" alt="book cover" align="right" height="190" width="127" /></a></p>
+
+<p>基於對《C++ in a Nutshell》與對「歐萊禮」的好感，想必這本應該也不錯。大概是拿來擺在桌上的案頭參考書吧。</p>
+
+<hr style="clear:right;" />
+
+
+<h3>Programming the Ruby Way (2nd Edition)</h3>
+
+<p><a href="http://www.amazon.com/gp/product/0672328844/qid=1137896714/sr=8-5/ref=pd_bbs_5/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://images.amazon.com/images/P/0672328844.01._SCLZZZZZZZ_.jpg" alt="book cover" align="left" height="200" width="156" /></a></p>
+
+<p>本書的第一版與鋤頭書一樣，在 amazon.com 也是獲得四顆半星評價。第二版預計今年六月才會推出。左邊是二版的封面，蠻有日本風的感覺。從書名與封面看來，感覺內容好像是在講「Ruby 之道」之類的的哲學性程式設計書籍。真玄。</p>
+
+<hr style="clear:left;" />
+
+
+<h3>Game Programming with Python, Lua, and Ruby</h3>
+
+<p><a href="http://www.amazon.com/gp/product/1592000770/qid=1137896745/sr=8-8/ref=sr_8_xs_ap_i8_xgl14/104-2563592-1328726?n=507846&s=books&amp;v=glance"><img src="http://buy.overstock.com/images/products/muze/books/1592000770.jpg" alt="book cover" align="right" height="254" width="205" /></a></p>
+
+<p>書名不錯，主題蠻吸引人的，一次包三種語言，想必應該是蠻厚的吧。書評普普，然而這是唯一一本與遊戲相關，且跨三種腳本語言的書，還是得找來翻翻瞧瞧。</p>
 ]]></content>
   </entry>
   

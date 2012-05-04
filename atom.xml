@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-01T08:30:31+08:00</updated>
+  <updated>2012-05-04T15:43:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -26,10 +26,10 @@
 
 <h2>關於遊戲</h2>
 
-<p>我們做的遊戲叫做《Dora》，遊戲以 Objective-C + <a href="http://www.cocos2d-iphone.org/">cocos2d</a> 開發，在 iOS 上運作。活動結束後會放到 App Store 上。除了遊戲本體外，程式碼也完全開放，兩天內兩名程式累積了 55 次 commit，有興趣的人可以點下面連結看看。不過真的是看看就好，Game Jam 時所寫的程式碼品質是非常慘不忍睹的…</p>
+<p>我們做的遊戲叫做《Dora》，遊戲以 Objective-C + <a href="http://www.cocos2d-iphone.org/">cocos2d</a> 開發，在 iOS 上運作。活動結束後會放到 App Store 上供<strong>免費下載</strong>。除了遊戲本體外，程式碼也<strong>完全開放</strong>，兩天內兩名程式累積了 55 次 commit，有興趣的人可以點下面連結看看。不過真的是看看就好，Game Jam 時所寫的程式碼品質是非常慘不忍睹的…</p>
 
 <ul>
-<li>Dora Repository at [<a href="https://bitbucket.org/ninjitaru/dora/overview">bitbucket</a>]</li>
+<li>Source Code Repository at [<a href="https://bitbucket.org/ninjitaru/dora/overview">bitbucket</a>]</li>
 <li>App Store 下載：[審核中&#8230;]</li>
 <li>活動實況影片：[<a href="http://www.twitch.tv/igdshare">Link</a>]</li>
 <li>遊戲實際畫面可以<a href="http://www.twitch.tv/igdshare/b/316542229">看此實況影片</a>，從 <code>44:00</code> 到 <code>47:00</code>。影片中也有其他組的成果發表。</li>

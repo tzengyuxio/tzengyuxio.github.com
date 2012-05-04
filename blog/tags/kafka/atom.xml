@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: kafka | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/kafka/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［習作］偽卡夫卡－暴露]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/10/07/not-kafka/"/>
+    <updated>2005-10-07T22:12:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/10/07/not-kafka</id>
+    <content type="html"><![CDATA[<p>我站在舞台中間，赤身露體。我知道這畫面很奇怪，但事實上一點也不奇怪，嗯，該說是我心裡不覺得奇怪吧；但我知道你乍看這畫面一定感到很奇怪。為什麼我不覺得奇怪？這是有原因的，可是原因，啊，請原諒我，我說不太上來，不知道怎麼說好。</p>
+
+<p>一個穿著燕尾服的男士氣質彬彬地向我走來，「先生，可以麻煩您穿上衣服嗎？」他有著銀白的髭鬚，「您這樣子讓我們很困擾。」「我想也是，可是我不知道該穿什麼好。」「在下認為，至少打個領結，可盡到最起碼的禮節。」「你說的對，但我要上哪找領結呢？」「若您不嫌棄，就不妨先用在下的。」說著他將自己的領結解下。我邊接過領結邊納悶著，正要將領結繫上時，他也從口袋中取出另一個領結，同我一起繫上。十幾雙眼睛看著我們，不，也許只有看著我。「好了，您還有什麼需要嗎？」</p>
+
+<p>「我想沒有了，謝謝－－啊，抱歉，請稍等，我還有個問題－－與其說是問題，該說是困擾或許比較貼切吧……」「您盡管說，別在意。」「我現在繫了領結，可是卻反而讓我感到格格不入，其他人－－其他人都是如此赤身露體的模樣。」</p>
+]]></content>
+  </entry>
+  
+</feed>

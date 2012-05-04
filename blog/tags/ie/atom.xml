@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: ie | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/ie/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［網際］Browsershots - 瀏覽器呈現結果大閱兵]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/03/10/browsershots/"/>
+    <updated>2006-03-10T05:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/03/10/browsershots</id>
+    <content type="html"><![CDATA[<p><a href="http://browsershots.org/">Browsershots</a></p>
+
+<p>上面這個網站可以讓你輸入一個網址，然後得知這個網站在不同的瀏覽器中（如 <a href="http://www.moztw.org/">Firefox</a>, <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a>, <a href="http://www.opera.com/">Opera</a>, <a href="http://www.konqueror.org/">Konqueror</a>…etc）的呈現結果。有個小小的不方便是不能馬上看到結果，排入工作之後得等上一陣子。但至少，比起自己動手裝上不同的作業系統與瀏覽器要來得省事多了吧。</p>
+
+<p>雖然 <a href="http://browsershots.org/">Browsershots</a> 所提供的瀏覽器種類幾乎已經涵蓋全部能想得到的了，但我看了看總覺得好像還少了什麼，仔細一想才發現，原來還缺了 <a href="http://w3m.sourceforge.net/">w3m</a> 或 <a href="http://lynx.browser.org/">lynx</a> 這類文字模式的 browser。人家偶爾也是會用 w3m 上網閒逛的嘛～～尤其是在逛網看資料卻又不能明目張膽讓人發現你在逛網路的時候……</p>
+
+<p>最後附帶一提，這個網站也用了 <a href="http://trac.edgewall.com/">Trac</a> 作為專案管理與問題回報系統；同樣有用 Trac 的還有 <a href="http://www.typosphere.org/trac/">Typo</a> 這個 Blog Engine。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［廣告］Internet Explorer 7]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/02/15/internet-explorer-7/"/>
+    <updated>2006-02-15T05:53:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/02/15/internet-explorer-7</id>
+    <content type="html"><![CDATA[<p><a href="http://mediaaddict.members.winisp.net/video/IE/IE7_big.wmv">IE7 Commercial</a></p>
+
+<p>這廣告超有創意，理想生活啊～</p>
+
+<p>而且完全沒有用到電腦，甚至沒有出現任何科技產品，卻把網頁瀏覽器能處理大小雜事的精神給表現出來了。這點子真棒。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［解決］以 IE 瀏覽 Blogger.com 時出現空白頁的問題]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie/"/>
+    <updated>2006-01-23T01:14:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie</id>
+    <content type="html"><![CDATA[<p><span style="color:gray;">參考自：<a href="http://lordcolus.blogspot.com/2005/04/iebloggercom.html">Lordcolus’s Blog: 避免以IE瀏覽Blogger.com時出現空白網頁</a></span></p>
+
+<p>這篇的用意有二：</p>
+
+<ol>
+<li>紀錄以 IE 開啟 blogspot.com 會出現空白頁這問題的解決方式。簡言之就是將範本中的 <code>&lt;$BlogMetaData$&gt;</code> 移到 <code>&lt;title&gt;</code> 之前。</li>
+<li>測試一下 <strong>BlogThis</strong> 的功能。這篇是由上述網頁下方的 <u>Create a Link</u> 連結直接產生的。</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

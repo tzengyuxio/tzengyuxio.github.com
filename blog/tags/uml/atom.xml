@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: uml | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/uml/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［辭海］兩群人...]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/11/21/two-group-of-people/"/>
+    <updated>2005-11-21T05:11:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/11/21/two-group-of-people</id>
+    <content type="html"><![CDATA[<ul>
+<li><p>3 Amigo</p>
+
+<ul>
+<li><p>Rambaugh、Booch、Jacobson</p></li>
+<li><p>制定 UML 規範的傢伙</p></li>
+<li><p>後來都聚到 Rational Software 去了</p></li>
+</ul>
+</li>
+<li><p>Gang of Four (GoF)</p>
+
+<ul>
+<li><p>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</p></li>
+<li><p>寫出 Design Patterns 這書的傢伙</p></li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

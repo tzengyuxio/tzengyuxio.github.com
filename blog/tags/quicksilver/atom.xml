@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: quicksilver | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/quicksilver/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［情報］快速啟動軟體：Launchy]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/09/23/launchy/"/>
+    <updated>2006-09-23T20:20:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/09/23/launchy</id>
+    <content type="html"><![CDATA[<p>最近常見到 <a href="http://quicksilver.blacktree.com/">Quicksilver</a> 這詞，google 了一下，原來這是在 Mac 上快速啟動軟體（但不僅止於快速啟動軟體）的程式。</p>
+
+<!-- more -->
+
+
+<p>Windows 上也有類似的軟體，我先前一直使用的是 <a href="http://pcman.ptt.cc/ko/ko.html">PCMan 的熱鍵超速啟動</a>，只要連按兩下 Caps Lock 加上熱鍵字串便可啟動程式，蠻方便順手的，不過似乎已經不再維護與更新。而且如果換電腦或是有新增軟體的話，需重新設定熱鍵字串，算是比較麻煩之處。google 後來推出 <a href="http://desktop.google.com.tw/zh/TW/">google desktop</a>，可以透過連按兩下 Ctrl 來搜尋檔案，操作上與熱鍵超速啟動有異曲同工之妙，於是我便想，若是有 plug-in 能夠讓 google desktop 也能快速啟動程式，統一在相同的操作與介面下，那就省事多了。可惜找了半天沒見到這類的 plug-in。</p>
+
+<p>回到 Quicksilver，當我在找 QuickSilver 的資料時，剛好見到<a href="http://www.11tmr.com/11tmr.nsf/d6plinks/DEVT-6A4G3G">有篇文章</a>提到 Windows 上也有類似 Quicksilver 的軟體，我分別上各軟體的首頁看了看：</p>
+
+<ul>
+<li><a href="http://www.candylabs.com/approcket/">AppRocket</a>: 看起來似乎不錯，不過要錢，我就懶得裝了。</li>
+<li><a href="http://www.boletrice.com/pccom/">PC-Com</a>: 網頁上的介紹與圖片吸引不了我……</li>
+<li><a href="http://www.launchy.net/">Launchy</a>: 看起來挺不賴，而且是 Open Source，大大的加分！</li>
+<li><a href="http://www.bayden.com/slickrun/">Colibri</a>: 好像也蠻不錯的，不過 Launchy 可以換 skin :-P</li>
+<li><a href="http://colibri.leetspeak.org/">SlickRun</a>: 連推薦 SlickRun 的人都說 Launchy 比較好，我還能說什麼呢？</li>
+</ul>
+
+
+<p>所以我就下載了 Launchy 來試了。初使用的感覺還不賴，也許我會逐漸改變習慣，讓陪伴我多年的「熱鍵超速啟動」慢慢退休吧。</p>
+]]></content>
+  </entry>
+  
+</feed>

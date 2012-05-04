@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: antivirus | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/antivirus/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［情報］防毒軟體評比]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/02/11/anti-virus-comparation/"/>
+    <updated>2006-02-11T07:58:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/02/11/anti-virus-comparation</id>
+    <content type="html"><![CDATA[<p><a href="http://www.virus.gr/english/fullxml/default.asp?id=72&amp;mnu=72">2005 年 12 月 防毒軟體評比</a></p>
+
+<blockquote><p>25. ClamWin version 0.87.1 - <span style="color:red;">48.45%</span></p></blockquote>
+
+<p>ClamWin 加油啊，連 60% 都還不到，這樣可是不及格的。</p>
+]]></content>
+  </entry>
+  
+</feed>

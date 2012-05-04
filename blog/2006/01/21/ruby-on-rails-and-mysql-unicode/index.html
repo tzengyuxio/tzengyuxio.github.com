@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL &hellip;">
+  <meta name="description" content="Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。 然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為 UTF-8 Unicode (utf8)，MySQL &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,31 @@
   <div id="main">
     <div id="content">
       <div>
+<style type="text/css">
+  #floating {
+    float:left;position:fixed;
+    top:25%;margin-left:-64px;
+    text-align:left;
+    background:#f8f8f8 url('/images/noise.png?1333026006') top left;
+    box-shadow:-5px 0 7px rgba(0,0,0,0.45);
+    padding:8px 5px 0 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index:10;
+  }
+  #floating div {border:0;display:block;}
+</style>
+<div id="floating">
+  <!--div class="g-plusone" data-size="tall" data-annotation="bubble"></div-->
+  <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="tzengyuxio" data-count="vertical" data-lang="zh-tw" data-size="medium">Tweet</a></div>
+  <div class="g-plus" data-action="share" data-annotation="vertical-bubble"></div>
+  <div class="fb-like" data-send="false" data-layout="box_count" data-width="50" data-show-faces="true"></div>
+</div>
+
 <article class="hentry" role="article">
   
   <header>
@@ -103,7 +128,25 @@
   </header>
 
 
-<div class="entry-content"><p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。<br /><br />然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為「UTF-8 Unicode (utf8)」，MySQL 連線校對設為「utf8_general_ci」，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。<br /><br />這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 config/database.yml 中加入一行設定即可：<br /><pre><code><br />development:<br />  adapter: mysql<br />  database: example_development<br /><span style="color: rgb(255, 0, 0);">  encoding: utf8</span><br />  username: root<br />  password:<br /></code></pre><br />如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。<br /><br /><hr /><span style="color: rgb(153, 153, 153);">參考自：</span><a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></p>
+<div class="entry-content"><p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。</p>
+
+<p>然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為 <code>UTF-8 Unicode (utf8)</code>，MySQL 連線校對設為 <code>utf8_general_ci</code>，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。</p>
+
+<p>這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 <code>config/database.yml</code> 中加入一行設定即可：</p>
+
+<pre><code>development:
+  adapter: mysql
+  database: example_development
+  encoding: utf8    # add this line
+  username: root
+  password:
+</code></pre>
+
+<p>如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。</p>
+
+<hr />
+
+<p><span style="color:gray;">參考自：<a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></span></p>
 </div>
 
 
@@ -131,35 +174,30 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/ruby/'>ruby</a>] [<a class='category' href='/blog/categories/unicode/'>unicode</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 
 
       
 
+<span class="tags">
+  
+    #<a class='tag' href='/blog/tags/mysql/'>mysql</a> #<a class='tag' href='/blog/tags/ror/'>ror</a> #<a class='tag' href='/blog/tags/ruby/'>ruby</a> #<a class='tag' href='/blog/tags/unicode/'>unicode</a>
+  
+</span>
+
 
     </p>
     
       <div class="sharing">
-<ul>
-  
-  <li id="social-media-button-twitter">
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/" data-count="none">Tweet</a>
-  </li>
   
   
-  <li id="social-media-button-google">
-  <div class="g-plusone" data-size="medium" data-annotation="none"></div>
-  <div class="g-plus" data-action="share" data-annotation="none"></div>
-  </li>
+  <div class="g-plusone" data-size="medium" data-annotation="inline"></div>
   
   
-  <li id="social-media-button-facebook">
-  <div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
-  </li>
+  <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
   
-</ul>
 </div>
 
     
@@ -318,14 +356,14 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {return;}
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  js.src = "//connect.facebook.net/zh_TW/all.js#appId=212934732101925&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
 
   <script type="text/javascript">
-    window.___gcfg = {parsetags: 'onload'};
+    window.___gcfg = {lang: 'zh-TW', parsetags: 'onload'};
     (function() {
        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
        po.src = 'https://apis.google.com/js/plusone.js';

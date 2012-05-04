@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: firefox | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/firefox/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［網際］Browsershots - 瀏覽器呈現結果大閱兵]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/03/10/browsershots/"/>
+    <updated>2006-03-10T05:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/03/10/browsershots</id>
+    <content type="html"><![CDATA[<p><a href="http://browsershots.org/">Browsershots</a></p>
+
+<p>上面這個網站可以讓你輸入一個網址，然後得知這個網站在不同的瀏覽器中（如 <a href="http://www.moztw.org/">Firefox</a>, <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer</a>, <a href="http://www.opera.com/">Opera</a>, <a href="http://www.konqueror.org/">Konqueror</a>…etc）的呈現結果。有個小小的不方便是不能馬上看到結果，排入工作之後得等上一陣子。但至少，比起自己動手裝上不同的作業系統與瀏覽器要來得省事多了吧。</p>
+
+<p>雖然 <a href="http://browsershots.org/">Browsershots</a> 所提供的瀏覽器種類幾乎已經涵蓋全部能想得到的了，但我看了看總覺得好像還少了什麼，仔細一想才發現，原來還缺了 <a href="http://w3m.sourceforge.net/">w3m</a> 或 <a href="http://lynx.browser.org/">lynx</a> 這類文字模式的 browser。人家偶爾也是會用 w3m 上網閒逛的嘛～～尤其是在逛網看資料卻又不能明目張膽讓人發現你在逛網路的時候……</p>
+
+<p>最後附帶一提，這個網站也用了 <a href="http://trac.edgewall.com/">Trac</a> 作為專案管理與問題回報系統；同樣有用 Trac 的還有 <a href="http://www.typosphere.org/trac/">Typo</a> 這個 Blog Engine。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［HACK］Firefox Memmory Leak 調整方法]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/02/15/hack-for-firefox-memmory-leak/"/>
+    <updated>2006-02-15T06:14:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/02/15/hack-for-firefox-memmory-leak</id>
+    <content type="html"><![CDATA[<p><span style="color:gray;">引用自：<a href="http://www.cyndi.idv.tw/forum/viewtopic.php?t=109643&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=&amp;sid=5d5c625eb48de617ee62cac1242b03ee">[分享]Firefox v1.5.0.1 with extension pack (02/10) 第十版 新增選用套件</a> （也許需登入）</span></p>
+
+<p>使用 Firefox 最大的困擾就是記憶體越吃越大，跑久一點，幾百 Mega 的 Memory 就被火狐吃掉了。下面的方法可以限制 Firefox 的記憶體運用，避免 Memory 狂掉的問題：</p>
+
+<!-- more -->
+
+
+<blockquote><p>Firefox v1.5 Memory Leaks調整方法</p>
+
+<ol>
+<li>開啟一個新分頁，鍵入about:config</li>
+<li>在這個顯示頁面上，隨意空白處點取「新增(New)」，選擇「整數(Integer)」</li>
+<li>跳出對話框中輸入：browser.cache.memory.capacity</li>
+<li>輸入想限制的記憶體大小：如16MB就打「16384」，32MB就打「32768」，64MB就打「65536」，以此類推。</li>
+<li>再加入一個真假值，取名：config.trim_on_minimize，數值：true</li>
+<li>按OK後關掉此分頁，並關掉整個Firefox後新新啟動</li>
+<li>使用Windows工作管理員監看記憶體使用情形有無下降</li>
+</ol>
+</blockquote>
+
+<p>從字面意義來看，新增的兩個設定值的涵義分別為：</p>
+
+<ul>
+<li><code>browser.cache.memory.capacity</code>：瀏覽器的記憶體使用上限</li>
+<li><code>config.trim_on_minimize</code>：視窗最小化時清除不必要的記憶體使用</li>
+</ul>
+
+
+<p>實際實驗的結果，因為我分頁一開就是開一堆，所以偶爾還是會有超過 <code>browser.cache.memory.capacity</code> 設定值的情況；不過當視窗最小化時，記憶體的佔用就會大幅釋放。加入這兩個設定後，除了記憶體的使用變得更有效率之外，Firefox 也變得比較穩定，不會有過去狂吃記憶體到最後整個當掉的情況了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[集 Google 之大成]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/09/23/google-all-in-one/"/>
+    <updated>2005-09-23T05:32:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/09/23/google-all-in-one</id>
+    <content type="html"><![CDATA[<p>簡單的說，就是把所有 Google 的功能都收錄在一個頁面之下。</p>
+
+<p><a href="http://www.flickr.com/photos/30215143@N00/45665523/" title="Photo Sharing"><img src="http://static.flickr.com/26/45665523_c3563cb5b2_m.jpg" width="240" height="173" alt="Google Total" /></a><br/>
+<a href="http://goototal.blogspot.com/">Google Total</a>：這玩意兒竟然是架在 Blogger 上</p>
+
+<p><a href="http://www.flickr.com/photos/30215143@N00/45665525/" title="Photo Sharing"><img src="http://static.flickr.com/31/45665525_f34669ca35_m.jpg" width="240" height="173" alt="Xtra Google" /></a><br/>
+<a href="http://www.xtragoogle.com/">Xtra Google</a>：可以一次看遍所有 Google Logo</p>
+
+<p>另一點特別的是，這兩個網頁都以 firefox 為主要支援對象。</p>
+]]></content>
+  </entry>
+  
+</feed>

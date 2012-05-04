@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: html | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/html/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［解決］以 IE 瀏覽 Blogger.com 時出現空白頁的問題]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie/"/>
+    <updated>2006-01-23T01:14:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie</id>
+    <content type="html"><![CDATA[<p><span style="color:gray;">參考自：<a href="http://lordcolus.blogspot.com/2005/04/iebloggercom.html">Lordcolus’s Blog: 避免以IE瀏覽Blogger.com時出現空白網頁</a></span></p>
+
+<p>這篇的用意有二：</p>
+
+<ol>
+<li>紀錄以 IE 開啟 blogspot.com 會出現空白頁這問題的解決方式。簡言之就是將範本中的 <code>&lt;$BlogMetaData$&gt;</code> 移到 <code>&lt;title&gt;</code> 之前。</li>
+<li>測試一下 <strong>BlogThis</strong> 的功能。這篇是由上述網頁下方的 <u>Create a Link</u> 連結直接產生的。</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［CSS］純文字 LOGO]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/09/28/css-logo/"/>
+    <updated>2005-09-28T04:34:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/09/28/css-logo</id>
+    <content type="html"><![CDATA[<p>發覺純用文字也蠻有趣的，研究了一下，用 CSS 作出幾個感覺還不錯的 logo。用文字 logo 的話，體積也會比使用小貼紙圖片要來得省上許多吧。</p>
+
+<hr />
+
+<p><a href="http://www.flickr.com/"><img src="http://www.flickr.com/images/flickr_logo.gif" /></a></p>
+
+<p><span style="color: blue;">flick</span><span style="color: red;">r</span></p>
+
+<pre><code>&lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style="color: red;"&gt;r&lt;/span&gt;
+</code></pre>
+
+<p>※第一課：只是更改顏色，不難。沒有特地使用 flickr 自己的標準色與字體。</p>
+
+<!-- more -->
+
+
+<hr />
+
+<p><a href="http://www.43things.com"><img src="http://www.43things.com/images/nav/logo.gif" /></a></p>
+
+<p><span style="color: #C89C19;">43</span> <span style="color: black;">Things</span></p>
+
+<pre><code>&lt;span style="color: #C89C19;"&gt;43&lt;/span&gt; &lt;span style="color: black;"&gt;Things&lt;/span&gt;
+</code></pre>
+
+<p>※第二課：上一課的複習，重點仍是顏色。</p>
+
+<hr />
+
+<p><a href="http://www.bloglines.com/"><img src="http://www.bloglines.com/images/blogo225x50.gif" /></a></p>
+
+<p><span style="color: #1393C0">Blog</span><span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px">lines</span></p>
+
+<pre><code>&lt;span style="color: #1393C0"&gt;Blog&lt;/span&gt;&lt;span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px"&gt;lines&lt;/span&gt;
+</code></pre>
+
+<p>※第三課：替後半段文字加下邊框，可以試著改變 border-width 看看不同的感覺。</p>
+
+<hr />
+
+<p><a href="http://www.23hq.com"><img src="http://www.23hq.com/resources/um-style/frontpage-23-beta2.gif" /></a></p>
+
+<p><span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;">23</span></p>
+
+<pre><code>&lt;span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;"&gt;23&lt;/span&gt;
+</code></pre>
+
+<p>※第四課：將數字加框。不能作出圓角框是遺憾之處。</p>
+
+<hr />
+
+<p><a href="http://www.livejournal.com/"><img src="http://stat.livejournal.com/xc/logocombined.gif" /></a></p>
+
+<p><span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;">L<span style="color:#123466">i</span>VEJOURNAL</span></p>
+
+<pre><code>&lt;span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;"&gt;L&lt;span style="color:#123466"&gt;i&lt;/span&gt;VEJOURNAL&lt;/span&gt;
+</code></pre>
+
+<p>※第五課：上底色，以及巢狀樣式定義。</p>
+
+<hr />
+
+<p><a href="http://mail.google.com"><img src="http://mail.google.com/mail/help/images/logo.gif" /></a></p>
+
+<p><span style="font-weight: bold"><span style="color:#0075BE; font-family:Palatino Linotype">G</span><span style="font-family: Verdana"><span style="color: #DA3838; font-variant: small-caps">m</span><span style="color: #FFC514">a</span><span style="color: #0075BE">i</span><span style="color: #2EB457">l</span></span></span></p>
+
+<pre><code>&lt;span style="font-weight: bold"&gt;&lt;span style="color:#0075BE; font-family:Palatino Linotype"&gt;G&lt;/span&gt;&lt;span style="font-family: Verdana"&gt;&lt;span style="color: #DA3838; font-variant: small-caps"&gt;m&lt;/span&gt;&lt;span style="color: #FFC514"&gt;a&lt;/span&gt;&lt;span style="color: #0075BE"&gt;i&lt;/span&gt;&lt;span style="color: #2EB457"&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+</code></pre>
+
+<p>※第六課：為了更接近原 Logo，故有指定字型（均為 WinXP 內建）。關鍵之處在於 m 為小寫，但加入了 “font-variant: small-caps;”。此一樣式可將小寫字母轉為大寫，但大小略有差異；若是使用 “text-transform: uppercase;” 則是會將小寫字母以大寫表示。</p>
+]]></content>
+  </entry>
+  
+</feed>

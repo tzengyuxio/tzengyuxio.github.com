@@ -9,8 +9,8 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="先前我的做法都依據 Clive Tong-I Lin 的 8G 經驗法則： 我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。
-至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。 一般 server 用途, 8G 經驗法則還沒破功過 :) Windows &hellip;">
+  <meta name="description" content="每次安裝新電腦或重灌時，總要為硬碟分割的大小傷一下腦筋。先前我的做法都依據 Clive Tong-I Lin 的 8G 經驗法則： 我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。
+至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。 一般 server &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,31 @@
   <div id="main">
     <div id="content">
       <div>
+<style type="text/css">
+  #floating {
+    float:left;position:fixed;
+    top:25%;margin-left:-64px;
+    text-align:left;
+    background:#f8f8f8 url('/images/noise.png?1333026006') top left;
+    box-shadow:-5px 0 7px rgba(0,0,0,0.45);
+    padding:8px 5px 0 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index:10;
+  }
+  #floating div {border:0;display:block;}
+</style>
+<div id="floating">
+  <!--div class="g-plusone" data-size="tall" data-annotation="bubble"></div-->
+  <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="tzengyuxio" data-count="vertical" data-lang="zh-tw" data-size="medium">Tweet</a></div>
+  <div class="g-plus" data-action="share" data-annotation="vertical-bubble"></div>
+  <div class="fb-like" data-send="false" data-layout="box_count" data-width="50" data-show-faces="true"></div>
+</div>
+
 <article class="hentry" role="article">
   
   <header>
@@ -104,7 +129,10 @@
   </header>
 
 
-<div class="entry-content"><p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+<div class="entry-content"><p>每次安裝新電腦或重灌時，總要為硬碟分割的大小傷一下腦筋。先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+
+<!-- more -->
+
 
 <blockquote><p>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br/>
 至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。</p>
@@ -125,8 +153,8 @@
 
 <ol>
 <li><p><code>/</code> : 256M</p></li>
-<li><p><code>/tmp</code> : 不大於 ram (或乾脆 = ram 就好)</p></li>
-<li><p><code>swap</code> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</p></li>
+<li><p><code>/tmp</code> : 不大於 RAM (或乾脆 =RAM 就好)</p></li>
+<li><p><code>swap</code> : 不小於 RAM，RAM 越小給越多，但不超過兩倍 (或乾脆 =RAM 就好)</p></li>
 <li><p><code>/var</code> 視剩餘空間與 X 的安裝與否，分配 1～2G</p></li>
 <li><p>其餘通通給 <code>/usr</code> (至少須 6G 以上)</p></li>
 </ol>
@@ -180,17 +208,16 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/memo/'>memo</a>]
+    [<a class='category' href='/blog/categories/productivity/'>productivity</a>]
   
 </span>
 
 
       
 
-<br \>
 <span class="tags">
   
-    #<a class='tag' href='/blog/tags/freebsd/'>freebsd</a>, #<a class='tag' href='/blog/tags/windows/'>windows</a>
+    #<a class='tag' href='/blog/tags/freebsd/'>freebsd</a> #<a class='tag' href='/blog/tags/windows/'>windows</a>
   
 </span>
 
@@ -198,24 +225,13 @@
     </p>
     
       <div class="sharing">
-<ul>
-  
-  <li id="social-media-button-twitter">
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition/" data-count="none">Tweet</a>
-  </li>
   
   
-  <li id="social-media-button-google">
-  <div class="g-plusone" data-size="medium" data-annotation="none"></div>
-  <div class="g-plus" data-action="share" data-annotation="none"></div>
-  </li>
+  <div class="g-plusone" data-size="medium" data-annotation="inline"></div>
   
   
-  <li id="social-media-button-facebook">
-  <div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
-  </li>
+  <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
   
-</ul>
 </div>
 
     
@@ -374,14 +390,14 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {return;}
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  js.src = "//connect.facebook.net/zh_TW/all.js#appId=212934732101925&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
 
   <script type="text/javascript">
-    window.___gcfg = {parsetags: 'onload'};
+    window.___gcfg = {lang: 'zh-TW', parsetags: 'onload'};
     (function() {
        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
        po.src = 'https://apis.google.com/js/plusone.js';

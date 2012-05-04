@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="發覺純用文字也蠻有趣的，研究了一下，用 CSS 作出幾個感覺還不錯的 logo。用文字 logo 的話，體積也會比使用小貼紙圖片要來得省上許多吧。flickr&lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style=" &hellip;">
+  <meta name="description" content="發覺純用文字也蠻有趣的，研究了一下，用 CSS 作出幾個感覺還不錯的 logo。用文字 logo 的話，體積也會比使用小貼紙圖片要來得省上許多吧。 flickr &lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style=" &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,31 @@
   <div id="main">
     <div id="content">
       <div>
+<style type="text/css">
+  #floating {
+    float:left;position:fixed;
+    top:25%;margin-left:-64px;
+    text-align:left;
+    background:#f8f8f8 url('/images/noise.png?1333026006') top left;
+    box-shadow:-5px 0 7px rgba(0,0,0,0.45);
+    padding:8px 5px 0 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index:10;
+  }
+  #floating div {border:0;display:block;}
+</style>
+<div id="floating">
+  <!--div class="g-plusone" data-size="tall" data-annotation="bubble"></div-->
+  <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="tzengyuxio" data-count="vertical" data-lang="zh-tw" data-size="medium">Tweet</a></div>
+  <div class="g-plus" data-action="share" data-annotation="vertical-bubble"></div>
+  <div class="fb-like" data-send="false" data-layout="box_count" data-width="50" data-show-faces="true"></div>
+</div>
+
 <article class="hentry" role="article">
   
   <header>
@@ -103,7 +128,76 @@
   </header>
 
 
-<div class="entry-content"><p>發覺純用文字也蠻有趣的，研究了一下，用 CSS 作出幾個感覺還不錯的 logo。用文字 logo 的話，體積也會比使用小貼紙圖片要來得省上許多吧。<br /><br /><a href="http://www.flickr.com/"><img src="http://www.flickr.com/images/flickr_logo.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: blue;">flick</span><span style="color: red;">r</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style="color: red;"&gt;r&lt;/span&gt;</code></div>※第一課：只是更改顏色，不難。沒有特地使用 flickr 自己的標準色與字體。<br /><br /><a href="http://www.43things.com"><img src="http://www.43things.com/images/nav/logo.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: #C89C19;">43</span> <span style="color: black;">Things</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: #C89C19;"&gt;43&lt;/span&gt; &lt;span style="color: black;"&gt;Things&lt;/span&gt;</code></div>※第二課：上一課的複習，重點仍是顏色。<br /><br /><a href="http://www.bloglines.com/"><img src="http://www.bloglines.com/images/blogo225x50.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: #1393C0">Blog</span><span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px">lines</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: #1393C0"&gt;Blog&lt;/span&gt;&lt;span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px"&gt;lines&lt;/span&gt;</code></div>※第三課：替後半段文字加下邊框，可以試著改變 border-width 看看不同的感覺。<br /><br /><a href="http://www.23hq.com"><img src="http://www.23hq.com/resources/um-style/frontpage-23-beta2.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;">23</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;"&gt;23&lt;/span&gt;</code></div>※第四課：將數字加框。不能作出圓角框是遺憾之處。<br /><br /><a href="http://www.livejournal.com/"><img src="http://stat.livejournal.com/xc/logocombined.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;">L<span style="color:#123466">i</span>VEJOURNAL</span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;"&gt;L&lt;span style="color:#123466"&gt;i&lt;/span&gt;VEJOURNAL&lt;/span&gt;</code></div>※第五課：上底色，以及巢狀樣式定義。<br /><br /><a href="http://mail.google.com"><img src="http://mail.google.com/mail/help/images/logo.gif" /></a><br /><hr style="margin-top: -4px;" /><br /><span style="font-weight: bold"><span style="color:#0075BE; font-family:Palatino Linotype">G</span><span style="font-family: Verdana"><span style="color: #DA3838; font-variant: small-caps">m</span><span style="color: #FFC514">a</span><span style="color: #0075BE">i</span><span style="color: #2EB457">l</span></span></span><br /><div style="background-color: #FFD; border-color: black; border-width: 1px; padding: 4px;"><code>&lt;span style="font-weight: bold"&gt;&lt;span style="color:#0075BE; font-family:Palatino Linotype"&gt;G&lt;/span&gt;&lt;span style="font-family: Verdana"&gt;&lt;span style="color: #DA3838; font-variant: small-caps"&gt;m&lt;/span&gt;&lt;span style="color: #FFC514"&gt;a&lt;/span&gt;&lt;span style="color: #0075BE"&gt;i&lt;/span&gt;&lt;span style="color: #2EB457"&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</code></div>※第六課：為了更接近原 Logo，故有指定字型（均為 WinXP 內建）。關鍵之處在於 m 為小寫，但加入了 &#8220;font-variant: small-caps;&#8221;。此一樣式可將小寫字母轉為大寫，但大小略有差異；若是使用 &#8220;text-transform: uppercase;&#8221; 則是會將小寫字母以大寫表示。</p>
+<div class="entry-content"><p>發覺純用文字也蠻有趣的，研究了一下，用 CSS 作出幾個感覺還不錯的 logo。用文字 logo 的話，體積也會比使用小貼紙圖片要來得省上許多吧。</p>
+
+<hr />
+
+<p><a href="http://www.flickr.com/"><img src="http://www.flickr.com/images/flickr_logo.gif" /></a></p>
+
+<p><span style="color: blue;">flick</span><span style="color: red;">r</span></p>
+
+<pre><code>&lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style="color: red;"&gt;r&lt;/span&gt;
+</code></pre>
+
+<p>※第一課：只是更改顏色，不難。沒有特地使用 flickr 自己的標準色與字體。</p>
+
+<!-- more -->
+
+
+<hr />
+
+<p><a href="http://www.43things.com"><img src="http://www.43things.com/images/nav/logo.gif" /></a></p>
+
+<p><span style="color: #C89C19;">43</span> <span style="color: black;">Things</span></p>
+
+<pre><code>&lt;span style="color: #C89C19;"&gt;43&lt;/span&gt; &lt;span style="color: black;"&gt;Things&lt;/span&gt;
+</code></pre>
+
+<p>※第二課：上一課的複習，重點仍是顏色。</p>
+
+<hr />
+
+<p><a href="http://www.bloglines.com/"><img src="http://www.bloglines.com/images/blogo225x50.gif" /></a></p>
+
+<p><span style="color: #1393C0">Blog</span><span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px">lines</span></p>
+
+<pre><code>&lt;span style="color: #1393C0"&gt;Blog&lt;/span&gt;&lt;span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px"&gt;lines&lt;/span&gt;
+</code></pre>
+
+<p>※第三課：替後半段文字加下邊框，可以試著改變 border-width 看看不同的感覺。</p>
+
+<hr />
+
+<p><a href="http://www.23hq.com"><img src="http://www.23hq.com/resources/um-style/frontpage-23-beta2.gif" /></a></p>
+
+<p><span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;">23</span></p>
+
+<pre><code>&lt;span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;"&gt;23&lt;/span&gt;
+</code></pre>
+
+<p>※第四課：將數字加框。不能作出圓角框是遺憾之處。</p>
+
+<hr />
+
+<p><a href="http://www.livejournal.com/"><img src="http://stat.livejournal.com/xc/logocombined.gif" /></a></p>
+
+<p><span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;">L<span style="color:#123466">i</span>VEJOURNAL</span></p>
+
+<pre><code>&lt;span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;"&gt;L&lt;span style="color:#123466"&gt;i&lt;/span&gt;VEJOURNAL&lt;/span&gt;
+</code></pre>
+
+<p>※第五課：上底色，以及巢狀樣式定義。</p>
+
+<hr />
+
+<p><a href="http://mail.google.com"><img src="http://mail.google.com/mail/help/images/logo.gif" /></a></p>
+
+<p><span style="font-weight: bold"><span style="color:#0075BE; font-family:Palatino Linotype">G</span><span style="font-family: Verdana"><span style="color: #DA3838; font-variant: small-caps">m</span><span style="color: #FFC514">a</span><span style="color: #0075BE">i</span><span style="color: #2EB457">l</span></span></span></p>
+
+<pre><code>&lt;span style="font-weight: bold"&gt;&lt;span style="color:#0075BE; font-family:Palatino Linotype"&gt;G&lt;/span&gt;&lt;span style="font-family: Verdana"&gt;&lt;span style="color: #DA3838; font-variant: small-caps"&gt;m&lt;/span&gt;&lt;span style="color: #FFC514"&gt;a&lt;/span&gt;&lt;span style="color: #0075BE"&gt;i&lt;/span&gt;&lt;span style="color: #2EB457"&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+</code></pre>
+
+<p>※第六課：為了更接近原 Logo，故有指定字型（均為 WinXP 內建）。關鍵之處在於 m 為小寫，但加入了 “font-variant: small-caps;”。此一樣式可將小寫字母轉為大寫，但大小略有差異；若是使用 “text-transform: uppercase;” 則是會將小寫字母以大寫表示。</p>
 </div>
 
 
@@ -131,35 +225,30 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/css/'>css</a>] [<a class='category' href='/blog/categories/html/'>html</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 
 
       
 
+<span class="tags">
+  
+    #<a class='tag' href='/blog/tags/css/'>css</a> #<a class='tag' href='/blog/tags/html/'>html</a>
+  
+</span>
+
 
     </p>
     
       <div class="sharing">
-<ul>
-  
-  <li id="social-media-button-twitter">
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tzengyuxio.me/blog/2005/09/28/css-logo/" data-via="tzengyuxio" data-counturl="http://tzengyuxio.me/blog/2005/09/28/css-logo/" data-count="none">Tweet</a>
-  </li>
   
   
-  <li id="social-media-button-google">
-  <div class="g-plusone" data-size="medium" data-annotation="none"></div>
-  <div class="g-plus" data-action="share" data-annotation="none"></div>
-  </li>
+  <div class="g-plusone" data-size="medium" data-annotation="inline"></div>
   
   
-  <li id="social-media-button-facebook">
-  <div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
-  </li>
+  <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
   
-</ul>
 </div>
 
     
@@ -318,14 +407,14 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) {return;}
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  js.src = "//connect.facebook.net/zh_TW/all.js#appId=212934732101925&xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
 
   <script type="text/javascript">
-    window.___gcfg = {parsetags: 'onload'};
+    window.___gcfg = {lang: 'zh-TW', parsetags: 'onload'};
     (function() {
        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
        po.src = 'https://apis.google.com/js/plusone.js';

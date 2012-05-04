@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: freebsd | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/freebsd/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-01T08:30:31+08:00</updated>
+  <updated>2012-05-04T15:43:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,11 +14,87 @@
 
   
   <entry>
+    <title type="html"><![CDATA[［FreeBSD］MySQL 的啟動]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/21/mysql-launch-on-boot/"/>
+    <updated>2006-01-21T10:05:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/21/mysql-launch-on-boot</id>
+    <content type="html"><![CDATA[<p>重裝了 MySQL 後發現，當 server 整個 reboot 的時候，MySQL 並沒有被啟動。找了一下發現<a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&amp;forum=5">原因</a>。現在得像 apache 或 sendmail 等服務一樣，在 <code>rc.conf</code> 中加入</p>
+
+<pre><code>mysql_enable="YES"
+</code></pre>
+
+<p>另外，若要知道有哪些 server 必須透過 <code>rc.conf</code> 來啟動的，可以透過下列方式：</p>
+
+<pre><code>cd /usr/local/etc/rc.d/
+grep _enable *
+</code></pre>
+
+<p>或是在安裝完套件後，view 一下 <code>/usr/local/etc/rc.d/xxx.sh</code>，看看要在 <code>rc.conf</code> 中加入什麼選項才能於開機時自動啟動。</p>
+
+<hr />
+
+<p><span style="color:gray;">參考自：<a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&amp;forum=5">The FreeBSD Network Laboratory Studio</a>.</span></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［安裝］Ruby on Rails on FreeBSD]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/10/ruby-on-rails-on-freebsd/"/>
+    <updated>2006-01-10T12:34:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/10/ruby-on-rails-on-freebsd</id>
+    <content type="html"><![CDATA[<h3>Step 1: Install Ruby</h3>
+
+<p>先前不曉得裝什麼軟體就一併裝好了，所以跳過。</p>
+
+<h3>Step 2: Install RubyGems</h3>
+
+<p>這是等一下用來安裝 Rails 的工具，在 FreeBSD 下用 ports 安裝，輕鬆方便。</p>
+
+<pre><code>[freebsd] /usr/ports/devel/ruby-gems&gt; make install clean
+</code></pre>
+
+<h3>Step 3: Install Rails</h3>
+
+<p>照<a href="http://www.rubyonrails.org/down">官方網站</a>上的描述，同樣一行指令搞定。</p>
+
+<pre><code>[freebsd] ~&gt; gem install rails --include-dependencies
+</code></pre>
+
+<p>註：我連試了兩次指令都執行到一半失敗，可能是網路 timeout 關係，第三次就順利成功了。</p>
+
+<h3>Step 4: 建立應用程式</h3>
+
+<p>基本上這也是照著前一個網頁的指示作。</p>
+
+<pre><code>[freebsd] ~&gt; rails /path/to/my/new/application
+[freebsd] ~&gt; cd /path/to/my/new/application
+[freebsd] ~&gt; ruby script/server
+</code></pre>
+
+<p>接下來開啟網址 <code>http://0.0.0.0:3000</code> 就能夠看到關於 RoR 的說明了。<br/>
+說明頁面的最底下有 Getting Started，可以開始寫 RoR 的程式囉！</p>
+
+<hr />
+
+<p>參考網址：</p>
+
+<ol>
+<li><a href="http://www.rubyonrails.org/down">Download Ruby on Rails</a></li>
+<li><a href="http://www.onlamp.com/pub/a/onlamp/2005/01/20/rails.html?page=1">Rolling with Ruby on Rails</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[［心得］硬碟切割]]></title>
     <link href="http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition/"/>
     <updated>2005-11-22T04:24:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition</id>
-    <content type="html"><![CDATA[<p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+    <content type="html"><![CDATA[<p>每次安裝新電腦或重灌時，總要為硬碟分割的大小傷一下腦筋。先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+
+<!-- more -->
+
 
 <blockquote><p>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br/>
 至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。</p>
@@ -39,8 +115,8 @@
 
 <ol>
 <li><p><code>/</code> : 256M</p></li>
-<li><p><code>/tmp</code> : 不大於 ram (或乾脆 = ram 就好)</p></li>
-<li><p><code>swap</code> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</p></li>
+<li><p><code>/tmp</code> : 不大於 RAM (或乾脆 =RAM 就好)</p></li>
+<li><p><code>swap</code> : 不小於 RAM，RAM 越小給越多，但不超過兩倍 (或乾脆 =RAM 就好)</p></li>
 <li><p><code>/var</code> 視剩餘空間與 X 的安裝與否，分配 1～2G</p></li>
 <li><p>其餘通通給 <code>/usr</code> (至少須 6G 以上)</p></li>
 </ol>

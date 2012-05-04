@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: odbc | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/odbc/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-04T15:43:54+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［lib］Freeware ODBC Library]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/23/freeware-odbc-library/"/>
+    <updated>2006-01-23T02:40:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/23/freeware-odbc-library</id>
+    <content type="html"><![CDATA[<p><strong>The Code Project</strong> - <a href="http://www.codeproject.com/database/DataLayer.asp">DataLayer - Freeware ODBC Library</a></p>
+
+<p>經過包裝的 ODBC 函式庫，比直接調用 ODBC API 來得簡單些。上面的網頁中包含了如何使用的範例程式碼，相當容易上手。</p>
+]]></content>
+  </entry>
+  
+</feed>

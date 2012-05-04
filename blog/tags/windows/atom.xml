@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: windows | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/windows/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-01T08:30:31+08:00</updated>
+  <updated>2012-05-04T15:43:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -18,7 +18,10 @@
     <link href="http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition/"/>
     <updated>2005-11-22T04:24:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2005/11/22/hard-dirve-partition</id>
-    <content type="html"><![CDATA[<p>先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+    <content type="html"><![CDATA[<p>每次安裝新電腦或重灌時，總要為硬碟分割的大小傷一下腦筋。先前我的做法都依據 Clive Tong-I Lin 的 <a href="http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4">8G 經驗法則</a>：</p>
+
+<!-- more -->
+
 
 <blockquote><p>我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。<br/>
 至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。</p>
@@ -39,8 +42,8 @@
 
 <ol>
 <li><p><code>/</code> : 256M</p></li>
-<li><p><code>/tmp</code> : 不大於 ram (或乾脆 = ram 就好)</p></li>
-<li><p><code>swap</code> : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)</p></li>
+<li><p><code>/tmp</code> : 不大於 RAM (或乾脆 =RAM 就好)</p></li>
+<li><p><code>swap</code> : 不小於 RAM，RAM 越小給越多，但不超過兩倍 (或乾脆 =RAM 就好)</p></li>
 <li><p><code>/var</code> 視剩餘空間與 X 的安裝與否，分配 1～2G</p></li>
 <li><p>其餘通通給 <code>/usr</code> (至少須 6G 以上)</p></li>
 </ol>
