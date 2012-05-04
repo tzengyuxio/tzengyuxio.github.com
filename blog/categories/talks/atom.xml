@@ -4,7 +4,7 @@
   <title><![CDATA[Category: talks | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/talks/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-04T15:43:54+08:00</updated>
+  <updated>2012-05-05T07:53:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,98 +14,14 @@
 
   
   <entry>
-    <title type="html"><![CDATA[形形色色的標籤機制]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/"/>
-    <updated>2012-04-18T09:53:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats</id>
-    <content type="html"><![CDATA[<p><img src="/images/2012/2012-04-18-inconsistency-of-tags.jpg" alt="inconsistency of tags" /></p>
-
-<p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
-
-<ul>
-<li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>
-<li><code>label</code>: Gmail, Blogger</li>
-<li><code>keyword</code>: iPhoto, Aperture</li>
-<li><code>hashtag</code>: Twitter, Google+</li>
-<li><code>category</code>: Anobii, WordPress</li>
-</ul>
-
-
-<p>考慮到中文翻譯的話，又更加混亂：</p>
-
-<ul>
-<li><strong>標籤</strong>：Flickr, Gmail, Blogger, 豆瓣, WordPress</li>
-<li><strong>標記</strong>：Picasa, YouTube</li>
-<li><strong>關鍵字</strong>：iPhoto</li>
-<li><strong>分類</strong>：Anobii, WordPress</li>
-</ul>
-
-
-<p>針對以上的清單進行耙梳，我們可以得到下面幾個觀察：</p>
-
-<ol>
-<li><p>這些類似的功能中，最常見的英文名字是 "tag"，中文名字是「標籤／标签」。</p></li>
-<li><p>然而在 Google 的產品中，"tag" 通常翻作「標記」；「標籤」這詞則是用在 "label" 上（儘管他們兩者功能接近）。</p></li>
-<li><p>hashtag 有其自有的形式：<code>#somewordswithoutspace</code>, 不過其使用的方式與目的和單純的標籤（tag）並無太大差別。</p></li>
-<li><p>有些應用服務存在著 category 與 tag 兩種機制，一個物件（例如部落格文章）可能只隸屬於單一分類（category）但可擁有多個標籤（tag）。但是現在越來越多的應用服務都可以讓使用者將單一物件同時歸屬於多個分類之下，使得分類與標籤的界線漸趨模糊。</p></li>
-<li><p>可以從另外一個角度來釐清分類與標籤的不同：分類屬於事先規劃好的清單，標籤則是依照物件內容隨意添加的清單。</p></li>
-<li><p>不過在只有「分類」沒有「標籤」機制的網站中（如 Anobii），「分類」的使用方式其實跟「標籤」是沒有兩樣的。</p></li>
-<li><p>反之，只有標籤機制的網站，如 Blogger, 某種程度上也可以透過標籤來模擬分類的機制（可以參考<a href="http://reader.aqualuna.me/">此網站</a>的右側選單）。</p></li>
-</ol>
-
-
-<p>蠻混亂的，不是嗎？為了方便起見，我這邊用「<strong>分類 (category)</strong>」、「<strong>標籤 (tag)</strong>」與「<strong>Hashtag</strong>」來稱呼上面一大堆名字所代表的功能，其中「標籤 (tag)」同時也代表了 <em>label</em> 與 <em>keyword</em>。</p>
-
-<p>分類、標籤與 Hashtag 三者的功能接近又互相重疊，命名也是各家網站各自為政，沒有個準。不過混亂還沒結束，讓我們針對「標籤」的部份，繼續深入研究下去。</p>
-
-<h3>標籤格式</h3>
-
-<p>標籤的格式牽扯的問題既廣且深，它不僅決定了使用者在輸入欄位中填入標籤的方法，也涉及到了資料儲存在資料庫中的方式。標籤的格式有以下幾個考量層面：</p>
-
-<ol>
-<li><p>間隔方式</p>
-
-<p> 常見的間隔方式分兩種：<strong>空白</strong>與<strong>逗號</strong>。Flickr 採用空白間隔，Blogger 與 YouTube 則是逗號間隔。這邊還看不出什麼大問題，請接著看下去。</p></li>
-<li><p>允許空白與否</p>
-
-<p> 基本上，大多數的標籤功能都允許標籤內含空白，我們免不了會遇到例如 <code>"White House"</code> 或 <code>"Windows Vista"</code> 這樣的標籤。這時候不同的間隔方式就會帶來不同的考量了。</p>
-
-<ol>
-<li><p><strong>以空白間隔的標籤</strong>，為了要允許空白字元作為標籤的一部分，所以必須引入引號，被引號包住的詞算做一個標籤，這是 Flickr 的作法。所以一張有「<code>white</code> <code>house</code>」標籤的照片，也許是張白色的房子；而一張有「<code>"white house"</code>」標籤的照片，則可能是美國白宮。不過這樣會使得引號無法作為標籤的一部分，比方說「<code>5'7"</code>」（五呎七吋）這樣的詞就不能拿來當標籤了。</p></li>
-<li><p><strong>以逗號間隔的標籤</strong>，在含有空白間隔的標籤問題上看起來比較單純。但實作上其實有一點要注意，就是真正的間隔符號並非單單只有逗號，而是<strong>逗號加上一個空白</strong>。因為人們在輸入時習慣在逗號後面加入空白，如果說空白是合法標籤字元的話，那麼為什麼只有單字間的空白才被記入，單字前後的空白都被忽略呢？</p></li>
-</ol>
-</li>
-<li><p>大小寫</p>
-
-<p> 這邊再以 Flickr 與 YouTube 為例子作比較。YouTube 對於標籤的大小寫是照單全收，所以 <code>"TREE"</code> 標籤點下去的搜尋就是 "TREE"，而反之全小寫標籤的搜尋文字就是小寫的，反正搜尋結果無視大小寫，所以不成問題。</p>
-
-<p> Flickr 的作法稍微複雜些，除了你所輸入的之外，Flickr 還會另外將標籤簡化，然後儲存。你可以在三張照片分別使用 <code>"TREE"</code> 與 <code>"Tree"</code> 與 <code>"tree"</code>  這三種大小不同的標籤名，顯示時也是顯示各自不同的大小寫，然而他們都是代表著同樣的一個標籤。所以，如果你在一張照片中使用了 <code>"TREE"</code> 的標籤後，接著再輸入 <code>"tree"</code> 標籤，會發現沒有任何反應，因為標籤重複了。</p></li>
-<li><p>內部處理</p>
-
-<p> Flickr 在輸入標籤時所做的處理，除了大小寫外，也套用在空白上。因此，<code>"White House"</code>, <code>"whitehouse"</code>, <code>"WhiteHouse"</code> 這三個標籤同樣都是指向 <code>"whitehouse"</code> 這個內部處理的標籤。Flickr 內部運作時的標籤，是會把空白去掉並且全部轉為小寫字母。</p>
-
-<p> Youtube 就不同了，如前所述，你輸入什麼標籤它就存什麼，所以 <code>"White House"</code> 跟 <code>"whitehouse"</code> 是不同的。事實上，你用這兩組字串去 YouTube 搜尋，也會得到不一樣的結果。</p></li>
-</ol>
-
-
-<hr />
-
-<p>延伸閱讀：<a href="http://37signals.com/svn/archives2/tag_formats_cant_we_all_just_get_along.php">Tag formats: Can't we all just get along? - Signal vs. Noise (by 37signals)</a></p>
-
-<p>2005 年的文章。估計是 37signals 要實作標籤系統時，研究了當時幾個主流網站的標籤機制，對象包括 del.icio.us, 43things, Yahoo’s My Web, flickr 與 Amazon。這篇文章底下也有頗多值得一看的討論。文章的最後提到：</p>
-
-<blockquote><p>當新科技剛出現時，不一致是免不了的。然而這些不同的格式是否會持續下去，或是終將會有個標準一統天下呢？</p></blockquote>
-
-<p>2005 到現在，都六、七年了，標籤功能其實仍舊處於混沌未明的時代。</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[我不和運氣差的人合作，嗎？]]></title>
     <link href="http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/"/>
     <updated>2012-04-11T10:44:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question</id>
     <content type="html"><![CDATA[<p>最近讀到 <a href="http://raganwald.posterous.com/i-dont-hire-unlucky-people">I don't hire unlucky people - raganwald's posterous</a> 這篇文章，有些想法跟 <a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a> 這一篇所寫的不太一樣。想法不同也就算了，文章本來就是個別讀者與單一作者之間的心靈互動，讀者不同，互動不同，激發出的想法自然也不同，這無可厚非。</p>
+
+<!-- more -->
+
 
 <p>不過對於文章內容的解讀也不一樣，這讓我不由得想寫一篇文章來談談 "I don't hire unlucky…" 這篇的內容。這篇文章很長，以對話小說式的方式來描述，講述如何節省 hire people 的時間與 hiring 時的考量，我懶得逐字翻譯，所以會簡單帶過故事內容。</p>
 
@@ -187,6 +103,9 @@
     <content type="html"><![CDATA[<p>這幾天在 Facebook 出現一篇分享率很高的文章，叫做〈<a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a>〉，帶給我很多想法，在這裡分享一下。</p>
 
 <p>什麼叫做「不和運氣差的人合作」？</p>
+
+<!-- more -->
+
 
 <p>這位作者舉了一個例子，如果你是某間店的店主，現在要找店員，現在收到了 100 份履歷，但你很忙，沒有時間一個一個看。最簡單的方式就是索性從 100 份中<strong>隨機挑出 10 份</strong>，然後從 10 份中挑出一個最棒的。至於那些被過濾掉的 90 份，只能怪他們<strong>運氣不好啦</strong>！</p>
 
@@ -273,6 +192,89 @@
 
 <br /><div style="text-align: -webkit-auto;">顯而易見的，這樣的搬遷使得原本 7-11 店鋪的可見性降低，畢竟街角是路口四方向都可以看到的點，來往的人潮也最多，而路邊或巷邊的 7-11 則只有同條路上的人才能見到。基於以上道理，三角窗（街角）的租金向來也比周遭店面來得高，甚至會高到倍數以上。不過我不覺得 7-11 搬到非街角地段，純粹只有租金考量。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">就我看來，7-11 的搬遷，其實某種程度反應了便利商店（尤其是 7-11）在我們生活中扮演的角色，已經從「剛好、順便去一下」的商店，成為「被尋找的主體」。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">住在都市的朋友，相信都會在自己或周遭朋友上看到一個現象：就是每當前往一個風景區或新地點時，總是會下意識尋找「麥當勞」或其他熟悉的連鎖速食店的店面。就算不一定會去吃，但至少在想不到吃什麼時，也不失為一個選擇。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">前面所提到的 7-11，便是成為這樣的一個存在。我出門不是為了「去隨便一間商店買個喝的」，而是為了「要去 7-11 領博客來的書／繳水電費／去 ATM 領錢」這樣明確的目的（然後順便買個喝的）。所以 7-11 就算開在不顯目的非三角窗地帶，也不怕你不來，因為你會去找他。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">所以進一步觀察，不難發現到店址的搬遷只是變化之一，搬遷後的店面通常也會伴隨著店面空間的擴大。而空間越大，就能提供更多硬體上的服務，包括 ATM、用餐區，甚至是廁所。以往是鄉下省道旁比較容易見到有帶停車場與廁所的 7-11，作為簡易休息區的替代，而現在都會區中很多 7-11 也開始都有提供廁所了。</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">寫到這邊讓我想起以前短暫待過出版社時，曾經問過上頭的編輯一個問題：「為什麼有些雜誌的 Logo 標準字體蓋在封面人物上，而有些則是封面人物蓋在 Logo 字體上？哪一種比較好？」</div><div style="text-align: -webkit-auto;"><br /></div><div style="text-align: -webkit-auto;">編輯告訴我，沒有哪一種比較好，純粹是考量出發點不同。至於為什麼會有不同的作法？其實答案就和 7-11 在不在街角開店是一樣的。</div>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的程式語言之路]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/07/26/my-way-as-a-coder/"/>
+    <updated>2011-07-26T10:54:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/07/26/my-way-as-a-coder</id>
+    <content type="html"><![CDATA[<p>從大學以來，這十幾年的工作與生活總與程式設計脫不了關係。前前後後寫了不少的 Code, 也接觸過許許多多不同的 Programming Language。這邊就來記錄一下自己現在還有印象的程式語言，也許十年之後再來回顧，又是另一種不同的想法吧。</p>
+
+<h2>QBasic</h2>
+
+<p>高中時候獲得人生的第一台電腦，當時還是 DOS 的年代，每個裝了 MS-DOS 的電腦都會內附 QBasic。還記得用 QBasic 寫過一些簡單的遊戲，像是 1A2B、迷宮產生之類的，但是真要說自己寫的其實也不是，很多都是照著當時雜誌（例如「第三波」）上的代碼 key 進電腦中而已。</p>
+
+<h2>Turbo C++</h2>
+
+<p>說真的，我已經不記得是 Turbo C 或是 Turbo C++ 了，但可以肯定的一點是，我當時一定只用到 C 的語法概念，沒有物件，只有單純的流程控制，對指標有似懂非懂的感覺。其實嚴格說起來，Turbo C++ 只能算是種 IDE，不算程式語言。</p>
+
+<h2>Borland C++ Builder</h2>
+
+<p>這也是 IDE，不過因為同樣的 C++ 語言在不同的 IDE 與不同的基本函式庫下會呈現出截然不同的個性，所以我就單列了。記得在我還是學生的時代，BCB 的出現帶來革命性的軟體開發方式，只要簡單拉一拉就可以有個像樣的視窗程式。當時蔚為風潮，我也趕流行玩了一陣子，不過也沒拿來寫過什麼東西就是。</p>
+
+<h2>Visual Basic</h2>
+
+<p>很簡單的程式語言。我曾經用 VB 寫過一個「光榮三國志臉譜瀏覽程式」的工具，可以讀取《三國志》四代、五代的頭像檔案。可惜現在原始碼與二進位檔都沒有留下，只有留下當時<a href="http://webbbs.gamer.com.tw/readSrhPost.php?brd=KOEI&amp;pos=448&amp;author=tzengyu&amp;keyword=">在巴哈姆特發佈時的帖子</a>。如果有人看到這篇文章，又碰巧有留當年的程式的話，歡迎跟我聯絡。也許哪天我心血來潮會再重寫一遍也說不定。 ;-)</p>
+
+<h2>Common Lisp &amp; ML</h2>
+
+<p>這兩個都是因為學校的課程而接觸的。剛開始學 Lisp，腦袋會打結，就是一層又一層的括號，常見的數學運算也都得換成前置式；不過作業寫到後來我還蠻喜歡寫 Lisp 的感覺。ML 也是，跟一般我們常見的 C-like 語法結構都不一樣。那時候我還蠻愛這兩個語言的，一直到畢業後的幾年間，我只要重灌電腦完要重新安裝軟體時，我就會把這兩個程式語言給裝進去，就像現在我會安裝 Python 一樣。</p>
+
+<h2>ASP</h2>
+
+<p>大四時接了一個學姊的家教網案子，那時候用的開發語言就是 ASP。不過說真的現在我對 ASP 都忘光光了。附帶一提，那個網站現在還活著，當然已經轉型了就是，不再是以媒介家教資訊為主。</p>
+
+<h2>Java</h2>
+
+<p>學生時代有寫過一些 Java applet，那時候的網頁很流行水波效果，幾乎十個個人網站有八個的 banner 都要來一下水波盪漾。Applet 也是淺嚐個大概而已，倒是 Java Servlet 因為工作的關係寫了蠻長久一段時間，從學生時代到退伍後都還有在接觸。話說事隔多年後，因為最近工作的關係，又開始跟 Java 打交道了。</p>
+
+<h2>HTML &amp; JavaScript</h2>
+
+<p>還在唸書時因為有協助維護一個購物網站，因此免不了要碰到 HTML 與 Java Script 的撰寫。當時那個購物網站使用的技術，有一部分是上面提到的 Java Servlet，另外也有用到 PHP 的部份。之後過了好幾年，有一個跟朋友合作開發 Facebook 遊戲的機會，在那次開發中又重新溫習了一次 Java Script，並且大量採用 Ajax 技術。可惜那個遊戲在發佈之前就胎死腹中了。</p>
+
+<h2>PHP</h2>
+
+<p>最主要就是上面提到的購物網站與 Facebook 遊戲這兩個案子用到，不過卻前前後後持續寫了蠻長久的一段時間。維護購物網站的時後基本上都還是程式碼硬幹，到了寫 Facebook 遊戲的時候，就有現成的框架了，我選了一個叫 CodeIgniter 的框架，大體上類似 ROR 的寫法。其實一開始選的是 CakePHP，比較完整，不過真的是太龐大了，所以才換成 CodeIgniter。此外，由於以前經常安裝討論區、部落格、Wiki、購物車等網站套件，其中許多是 PHP 寫的，常常需要 hack 部分代碼，因此對 PHP 還算蠻熟悉的，有陣子甚至拿 PHP 當 Shell Script 來使用，用來解決手邊的小問題。</p>
+
+<h2>SQL</h2>
+
+<p>說到網站程式就不能不提到資料庫。前前後後接觸過一些不同的資料庫，學生時代在 IBM 打工時是 DB2，前面提到的購物網站是 MySQL，進了遊戲公司之後，陸續又接觸到 PostgreSQL、Microsoft SQL Server，Oracle。其實單就 SQL 來看的話都大同小異，各資料庫 Server 之間最大的差異性還是在 Server 的管理與調校上，以及各種千奇百怪的程式介接函式庫寫法。</p>
+
+<h2>Shell Script</h2>
+
+<p>除了用 PHP 當 Shell Script 外，在我還在第一家遊戲公司時，由於是在 Linux 平台上開發的關係，也用 BASH 寫了不少方便日常工作或是開發的 Script。有少部分的代碼用 Perl 寫，用 Perl 寫起來很快，不過寫完看起來真的像天書一樣，真的是「寫完即丟」的語言。在 Windows 上，也曾經用 Batch 檔或是 Power Shell 寫過一些臨時性的小工具。</p>
+
+<h2>C++</h2>
+
+<p>進入遊戲公司後，幾乎就一直過著與 C++ 分不開的生活。早先是在 Linux 下寫 Server，能用的就是 Emacs 或是 Vim，後來換了公司，改用 Visual C++ 寫，一開始我還真的很不習慣，這麼複雜而多功能的介面，有時常常不曉得從哪邊開始下手。雖然在念書時學過，但我是從進遊戲公司之後，才真正重新認識了 C++，學到物件導向、Template、設計模式、重構等概念。當然，上面有些概念是跨語言通用的，不過因為 C++ 是我這幾年來長期接觸的語言，自然也成為前述幾個概念的學習媒介。</p>
+
+<p>C++ 是個頗具爭議性的語言，他使用者多，但批評者更多，C 語言的陣營批評 C++ 不夠簡潔、純粹，STL 更是把許多工作變成讓人摸不著頭的黑箱；反之 Java 或 C# 的支持者又覺得 C++ 不夠完善，要寫個功能還要到處找函式庫，同個功能可能還有好幾種不同的函式庫，不同的實作與不同的使用概念，令人眼花撩亂。我自己是覺得，C++ 雖然亂，雖然我也對此感到困擾，但是也正因為他的兼容並蓄，使得各種各樣的想法與實作都能在上面獲得實踐。不過話說回來，對於產品開發而言，有時候工具還是單純點好。</p>
+
+<h2>Auto Hotkey Script</h2>
+
+<p>為了玩 Facebook 遊戲更「方便」而去學的程式。有寫了餐城（Restaurant City）的自動撿垃圾、自動到別人家評分，以及 Farmville 的自動種植、收割、耕地等功能，Mafia Wars 的連續任務。這些工具都是自娛，沒有對外釋出。隨著社群遊戲不斷的改版，這些工具也早就失效不能使用了。</p>
+
+<h2>Lua</h2>
+
+<p>在之前待過的公司中有用過，之後自己出來做的案子也有用。雖然如此，自己還是覺得對 Lua 的使用還不夠熟。曾經有寫過一個專案，使可以整合 C++ 與 Lua / Python / Squirrel 這三種 Script Language，目的是可以從 C++ 呼叫寫在 Script 的函式，也可以反過來。不過當初只寫了一個方向（C++ 呼叫外部），反過來的方向由於各 Script 語言存在的差異較大，自己的能力也不夠，就沒繼續開發下去了。</p>
+
+<h2>Python</h2>
+
+<p>這語言已經成為我這一兩年來的最愛了。在 Script Language 的領域中，一開始我是對 Lua 比較有興趣的，畢竟公司專案在用，而且 WOW 的 Custom UI 也都是用 Lua 撰寫，有 Billizard 的光芒加持，自然讓人不得不多看 Lua 幾眼。不過自從寫過 Python 的 Code 之後，我發現寫 Python 的過程可以獲得一種純粹的程式撰寫樂趣，我面對的是「程式所要解決的問題」本身，而不再是陣列、記憶體配置、指標、堆疊等等這些瑣碎的雜事。去年開發一個簡單的動畫編輯器，就是以 Python + wxPython 作的；而最早接觸 Python 的起點呢？喔，那是為了寫一個 Travian 的找資源點的工具，比較了幾個語言後發現用 Python 來抓網頁資料進行解析最為方便，於是就一頭踏入 Python 的思考領域了。</p>
+
+<h2>NSIS (Nullsoft Scriptable Install System)</h2>
+
+<p>最近才開始摸的東西，是用來寫安裝程式的語言。除了一開始入門門檻稍高外，不算太難，只要跨進去後剩下的就簡單了。之所以說一開始稍難，是因為最簡單的安裝軟體也要做許多事情，畢竟安裝軟體可不像其他語言只要秀秀 "Hello World" 就算完成第一個程式了。NSIS 也有 function 跟 macro，不過 function 沒有傳入參數，反正所有變數都是全域，也就不用傳入什麼了；如果真的需要傳入參數的話，倒是可以用 macro，雖然意義上不是，但程式碼看起來更接近傳參數的函式。這算是最近寫 NSIS 的一個小小心得吧。</p>
+
+<h2>Objective-C</h2>
+
+<p>這是目前正在進行的專案所用的語言。如果熟悉 C++/Java/PHP 這類 C-like 的語言，要學 Objective-C 真的很快。比較大的不同在於 message 的概念，前面的幾個語言不管是 function 或是 method，都是圓括弧呼叫的方式，在 Objectiv-C 中，函式的呼叫變成了訊息的傳遞，而且每個變數都必須寫出變數名字。剛開始看的確會有些彆扭不習慣，但是徹底改用「訊息傳遞」的角度去思考理解的話，其實 Objective-C 的這種寫法還蠻可愛與口語化的。</p>
+
+<h2>後記</h2>
+
+<p>看了一下 <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">TIOBE Programming Community Index for July 2011</a>，前十名的程式語言中，除了 C# 之外，有九個我都接觸過或多或長的一段時間。其實之前為了研究 XNA，也有稍微看過 C# 的 code，不過稍微看看也不算寫過就是。但是 Windows Phone 的開發免不了得靠 C#，或許再不久的將來有機會寫 C# 也說不定？</p>
 ]]></content>
   </entry>
   

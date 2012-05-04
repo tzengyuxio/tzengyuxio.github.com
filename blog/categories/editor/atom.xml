@@ -4,7 +4,7 @@
   <title><![CDATA[Category: editor | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/editor/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-04T15:43:54+08:00</updated>
+  <updated>2012-05-05T07:53:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>我是一個鄉民。雖然大多數時間都在潛水，但偶爾也會浮上來寫些東西。</p>
 
 <p><img src="/images/2012/2012-04-19-ugly-format-in-bbs.png" alt="ugly format in bbs" /></p>
+
+<!-- more -->
+
 
 <p>我不常在 BBS 上直接編輯，多半都是在習慣的編輯器上寫好再貼過去。不過問題來了，我寫文章的習慣都是一直打字一直打字，直到段落結束才換行，這樣的文字如果複製起來直接貼到 BBS 上發表，雖然還是能夠正常顯示，但在編輯與回文時就會出現過長的文字而造成如上圖般糟糕的版面效果。</p>
 

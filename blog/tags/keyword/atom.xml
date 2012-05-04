@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: keyword | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/keyword/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-04T15:43:54+08:00</updated>
+  <updated>2012-05-05T07:53:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>前幾天討論了<a href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/">目前各家網站標籤功能的混亂</a>，即便有這些混亂，「標籤」仍是訊息管理非常重要的一個工具，也是落實真正<a href="http://zh.wikipedia.org/wiki/%E8%AF%AD%E4%B9%89Web">語義網</a>（semantic web）的一個基礎。</p>
 
 <p><img src="/images/2012/2012-04-21-too-many-tags.png" alt="too many tags!" /></p>
+
+<!-- more -->
+
 
 <p>然而正由於目前沒有一致性的標籤標準，人們對於標籤的使用也很隨興，所以會常常看到下面三種情形：</p>
 
@@ -50,11 +53,11 @@
 </ul>
 </blockquote>
 
-<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong>複數詞組，逗號分隔</strong> (Multi Word, Comma Seperated)。</p>
+<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong><a href="http://bhc3.com/2008/08/22/why-isnt-this-the-tag-standard-multi-word-comma-separated/">複數詞組，逗號分隔</a></strong> (Multi Word, Comma Seperated)。</p>
 
 <hr />
 
-<p>而我自己所使用標籤的標準如下：</p>
+<p>以上便是我個人使用標籤的一些而我自己所使用標籤的標準如下：</p>
 
 <ol>
 <li><p><strong>簡便性</strong></p>
@@ -72,7 +75,7 @@
 <li><p><strong>一個概念一個詞。</strong>所以 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 就只剩下用一個 <code>anime</code>。</p></li>
 <li><p><strong>小寫。</strong>同樣是為了方便輸入。</p></li>
 <li><p><strong>用單數，用名詞。</strong>當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。</p></li>
-<li><p><strong>人名的標記從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
+<li><p><strong>人名的標記盡可能從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
 <li><p><strong>除非是自己口語常用的縮寫，不然不使用縮寫作標記。</strong><code>nds</code> <code>win7</code> <code>xbox360</code> 都很好理解，可是用 <code>resp</code> <code>req</code> 來做為 <code>response</code> <code>request</code> 標籤的替代，就太過頭了。現在連寫程式都不鼓勵這種縮寫了。</p></li>
 </ol>
 </li>
@@ -85,6 +88,10 @@
 </li>
 </ol>
 
+
+<hr />
+
+<p>以上便是我個人使用的標籤規則。如果你有不錯的標籤習慣，也歡迎一起討論分享。</p>
 ]]></content>
   </entry>
   
@@ -96,6 +103,9 @@
     <content type="html"><![CDATA[<p><img src="/images/2012/2012-04-18-inconsistency-of-tags.jpg" alt="inconsistency of tags" /></p>
 
 <p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
+
+<!-- more -->
+
 
 <ul>
 <li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>

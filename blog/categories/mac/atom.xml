@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mac | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-04T15:43:54+08:00</updated>
+  <updated>2012-05-05T07:53:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -19,6 +19,9 @@
     <updated>2012-04-05T08:12:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac</id>
     <content type="html"><![CDATA[<p>有時候在網路上會看到像「㍿」這樣的文字符號，有沒有好奇這是怎麼打出來的呢？這可不是把四個字打在一個格子裡面，而是這原本就是一個作為符號使用的 Unicode 文字。就好像英文中的 Trade Mark 可以用「™」表示一樣。類似的文字還有（如果底下只看到方框看不到字，表示你瀏覽器所用的字型沒有包含到下面這些 Unicode 字碼）：</p>
+
+<!-- more -->
+
 
 <h3>英文</h3>
 

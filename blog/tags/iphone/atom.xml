@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: iphone | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/iphone/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-04T15:43:54+08:00</updated>
+  <updated>2012-05-05T07:53:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,109 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone 主畫面的使用統計]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats/"/>
+    <updated>2012-04-19T11:27:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats</id>
+    <content type="html"><![CDATA[<p>大家 iPhone 上的 Home Screen 都放了哪些 App 呢？</p>
+
+<p><img src="/images/2012/2012-04-19-my-iphone-home-screen.jpg" alt="My iPhone Home Screen" /></p>
+
+<!-- more -->
+
+
+<p>我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈<a href="http://iphone.appstorm.net/roundups/lifestyle-roundups/45-iphone-home-screens/">45 Unique iPhone Home Screens Explained</a>〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。</p>
+
+<p>不過光這樣看完還不過癮，我決定做個統計。雖然上面那篇是去年八月的文章了，至今過了半年，不過大部分 App 現在還都蠻流行的。統計的結果如下，可以參考看看。</p>
+
+<h2>Home Screen 的應用方式</h2>
+
+<ul>
+<li>首頁中有 16 個格子（不考慮 dock）。這 45 個人平均放了 13.09 個 app 與 1.38 個 folder 在首頁。</li>
+<li>最少的甚至有完全不放任何 app，只在首頁留 dock 與一個 folder 的人 (Robin A.)。</li>
+<li>有 48.89% 的人在首頁有放 folder，也就是有五成多一點的人在首頁不放 folder。</li>
+<li>Dock 在每一頁都會出現，是最方便點選的地方。不過仍有 7 個人，15.56% 的比例，沒有在 dock 上放滿四格。</li>
+<li>有 4 個人在 dock 上放 folder（這我之前真的沒想過），比例為 8.89%。</li>
+<li>有 35.56% 的人沒有把首頁填滿。</li>
+</ul>
+
+
+<h2>App in Dock</h2>
+
+<p>最多人放在 Dock 上的 App 排名如下：<br/>
+（不包含 folder 以及 folder 中的 App。括號中數字為人數）</p>
+
+<ol>
+<li><strong>電話</strong> (33)</li>
+<li><strong>Mail</strong> (30)</li>
+<li><strong>Safari</strong> (21)</li>
+<li><strong>訊息</strong> (17)</li>
+<li><strong>音樂</strong> (17=13+4, iPod+Music, 新版 iOS 中這兩個合併了)</li>
+<li>設定 (9)</li>
+<li>相機 (6)</li>
+<li>Camera+ (4)</li>
+<li>Tweetbot (4)</li>
+</ol>
+
+
+<p>人數在 3 以下的我就省略不列了。另外，上表中的前七名就已經包辦 45 支 iPhone 裡八成以上的 dock 空格了。</p>
+
+<h2>App in Home Screen</h2>
+
+<p>不分 dock 與否，首頁最常看到的前 20 個 App 分別是：<br/>
+（不包含 folder 以及 folder 中的 App。括號數字中為人數）</p>
+
+<ol>
+<li>Mail (41)</li>
+<li>Safari (38)</li>
+<li>電話 (36)</li>
+<li>訊息 (30)</li>
+<li>設定 (28)</li>
+<li>行事曆 (26)</li>
+<li>音樂 (26=22+4, iPod+Music)</li>
+<li>照片 (22)</li>
+<li>相機 (18)</li>
+<li>時間 (17)</li>
+<li>Camera+ (16, <strong>非官方 App 中的第一名</strong>)</li>
+<li>地圖 (16)</li>
+<li>App Store (16)</li>
+<li>Facebook (14)</li>
+<li>Tweetbot (13)</li>
+<li>備忘錄 (13)</li>
+<li>聯絡資訊 (13)</li>
+<li>Twitter (12)</li>
+<li>Reeder (12)</li>
+<li>Instagram (10)</li>
+</ol>
+
+
+<p>再來的 App 就是少於 10 個人放在首頁的，分別是 Instapaper(9), Hipstamatic(9), Google+(7), Wunderlist(7), Evernote(7), Things(6), 天氣(6), Remote(6), iTunes(6), iBooks(6), 1Password(6), 計算機(5), Skype(5), Simplenote(5), Dropbox(5)。</p>
+
+<p>低於 4 以下的我就不列出了。</p>
+
+<h2>其他</h2>
+
+<ul>
+<li>大家平均放 App 的頁數為 4.56 頁（這個算得我眼睛好累）。最少的只有一頁（Zach）。</li>
+<li>除了官方的「相機」外，最常使用的拍照程式為 Camera+(16), 其次為 Instagram(10), Hipstamatic(9)。</li>
+<li>有四個人在首頁放了兩個以上的拍照App。其中一個放了三個，一個放了四個。</li>
+<li>Naceron 在首頁放了 6 個遊戲 App。</li>
+<li>Weid 說他的首頁只放 Universal（iPhone, iPad 均可使用）的 App。</li>
+<li>Sivil 和 Garrett G. 都把常用聯絡人作成 icon 放在首頁。</li>
+<li>Garrett G. 提供的圖片仔細看的話蠻奇怪的，為什麼他的首頁其實是第二頁？另外，他也是 Scan 這個 App 的開發者，在他的首頁中可以找到 Scan。</li>
+<li>Iynque 的 Dock 上放的都是有 '+' 號的 App，連 folder 也是！</li>
+<li>Shaun K 首頁左邊排了綠色一整排。</li>
+<li>Robin A. 的首頁最乾淨；Brad M. 只有首頁一頁。</li>
+</ul>
+
+
+<hr />
+
+<p>你怎麼運用你的主畫面呢？有任何的點子都歡迎與大家一起分享！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[國王的憂慮 攻略心得]]></title>
@@ -317,84 +420,6 @@
 
 
 <p>至於最後我選了哪套留在 iPhone 上呢？我只能說真的是「一分錢一分貨」了......</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1/"/>
-    <updated>2011-03-29T10:57:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/03/29/scanner-app-review-part-1</id>
-    <content type="html"><![CDATA[<p>iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 <a href="http://itunes.apple.com/tw/app/pdf-reader-file-scanner-file/id325924458?mt=8">PDF Reader</a> 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。</p>
-
-<p>當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：</p>
-
-<!-- more -->
-
-
-<ul>
-<li><a href="http://itunes.apple.com/us/app/camscanner-free/id388627783?mt=8#">CamScanner Free</a> / CamScanner+ ($4.99, a.k.a 《掃描全能王》)</li>
-<li><a href="http://itunes.apple.com/us/app/genius-scan/id377672876?mt=8">Genius Scan</a> / Genius Scan+ ($2.99)</li>
-<li><a href="http://itunes.apple.com/us/app/jotnot-scanner-free/id310789464?mt=8#">JotNot Scanner Free</a> / JotNot Scanner Pro ($0.99)</li>
-</ul>
-
-
-<p>這邊也順便說說我對掃描軟體的基本要求：</p>
-
-<ol>
-<li>自動辨識文件邊緣的功能要準確</li>
-<li>能針對不同文件類型作適當的影像調整</li>
-<li>可以輸出到 Google Docs, Evernote, Dropbox 等雲端服務</li>
-</ol>
-
-
-<p>簡單說就是要<strong>「掃的方便、掃的清楚，掃完輕鬆丟到雲端上」</strong>，至於文件管理之類的，我用其他工具，就不勞煩這些掃描軟體了。</p>
-
-<p>在進行比較之前，先說說這三款的共通之處：</p>
-
-<ol>
-<li>都有免費版與付費版，其中 CamScanner 的價格比另外兩套加起來還貴。不過 JotNot 的 $0.99 是特價，原價也是 $4.99，只是 JotNot 從去年(2010)九月開始特價到現在，不曉得還會不會調回原價？還是就這樣 0.99 下去了？</li>
-<li>三款都有「Wifi 分享」功能，也就是能透過區網內桌機端的瀏覽器連上指定的 port 來下載文件。因為我不常用這功能，所以下面就沒進一步測試比較。</li>
-<li>都可以透過直接拍照或是從相簿中載入的方式取得圖檔。</li>
-<li>CamScanner 與 JotNot 都有中文，前者甚至有中文名字 《掃描全能王》。雖然說英文不是問題，但是有中文大大加分啊！</li>
-</ol>
-
-
-<p>以下的測試都是針對免費版。至於免費跟付費版的差異這邊就不贅述了，多半都是廣告與附屬功能。對於最主要的「邊緣辨識」與「影像調整」兩個功能，免費與付費都是一樣的。</p>
-
-<p>先一起來看看基本介面吧（依序為 CamScanner, Genius Scan, JotNot Scanner）這三個的介面各有各的特色，三個我都喜歡。真要挑一個最高分的，大概是就 JotNot 了吧，他的介面設計跟 iPhone 本身的 APP 很一致，但是我不喜歡那個 Logo；Genius 的介面很簡潔，一進去就知道要做什麼；CamScanner 中規中矩，初次啟動還附了兩個文件作為說明檔案與範例，算是不錯的作法。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a01.jpeg" width="240" height="360" title="CamScanner" >
-<img src="/images/2011/2011-03-29-scan-app-a02.jpeg" width="240" height="360" title="Genius Scan" >
-<img src="/images/2011/2011-03-29-scan-app-a03.jpeg" width="240" height="360" title="JotNot Scanner" ></p>
-
-<p>接著是文件邊緣辨識的測試，為了公平起見，我用底下同樣的兩張圖作為輸入，分別看看在三款軟體中的辨識情況：</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a04.jpeg" width="240" height="360" title="Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a05.jpeg" width="240" height="360" title="Sample 2" ></p>
-
-<p>首先是 CamScanner 的辨識結果。相對於其他兩套，CamScanner 沒有對齊的格線，只有邊緣的八個點，算是比較可惜，但是辨識的結果卻是三套中最好的。左圖有確實找到盒子邊緣，右圖的則是上方邊線錯誤。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a06.jpeg" width="240" height="360" title="CamScanner with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a07.jpeg" width="240" height="360" title="CamScanner with Sample 2" ></p>
-
-<p>接著看看 Genius Scan。左圖只有辨識出主圖部分，盒子上方被忽略掉了。右圖辨識到的範圍則蠻令人匪夷所思......</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a08.jpeg" width="240" height="360" title="Genius with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a09.jpeg" width="240" height="360" title="Genius with Sample 1" ></p>
-
-<p>最後是 JotNot Scanner。JotNot 的辨識能力介於中間。左圖的辨識跟 Genius Scan 一樣，只有主圖；右圖的辨識跟 CamScanner 一樣，都是上邊線錯誤。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a10.jpeg" width="240" height="360" title="JotNot with Sample 1" >
-<img src="/images/2011/2011-03-29-scan-app-a11.jpeg" width="240" height="360" title="JotNot with Sample 1" ></p>
-
-<p>辨識出錯誤的範圍是難免的，因此也要順便看看調整邊界的功能方不方便。在這一點上，CamScanner 跟 JotNot 就很用心。前者在手指點下去要調整的時候，會出現小圓框特寫要調整的角角；後者點下去之後會自動針對該區域放大，以方便操作。兩種方式使用起來都很流暢。</p>
-
-<p><img src="/images/2011/2011-03-29-scan-app-a12.jpeg" width="240" height="360" title="CamScanner Close-up 1" >
-<img src="/images/2011/2011-03-29-scan-app-a13.jpeg" width="240" height="360" title="JotNot Close-up" ><br/>
-（左：CamScanner 的圓框特寫；右：JotNot 的自動放大）</p>
-
-<p>寫到這邊有點長，先休息一下。<a href="/blog/2011/03/29/scanner-app-review-part-2/">下一篇</a>將繼續從影像處理與文件分享兩個層面去做比較。</p>
 ]]></content>
   </entry>
   

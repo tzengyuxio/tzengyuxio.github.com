@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-04T15:43:54+08:00</updated>
+  <updated>2012-05-05T07:53:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[四個人兩天開發的《Dora》]]></title>
+    <title type="html"><![CDATA[四個人兩天開發的《Dora》- MIT Game Jam 心得分享]]></title>
     <link href="http://tzengyuxio.me/blog/2012/05/01/mit-game-jam-dora/"/>
     <updated>2012-05-01T06:00:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/05/01/mit-game-jam-dora</id>
@@ -23,6 +23,9 @@
 <p>上個週末，有一群熱愛遊戲的人參與了一個叫做 <strong>Game Jam</strong> 的活動，Game Jam 指的是在短時間內（通常是兩天 48 小時內）依照活動主辦者所公布的題目，快速開發出一款遊戲。上週所舉辦的 <a href="http://igdshare.org/mitjam">MIT Game Jam</a> 便是台灣第一次的 Game Jam 活動。我在前幾天參加了這場 Game Jam，並且和當天第一次碰面認識的朋友們，合力完成了一款 iOS 遊戲。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-05-02-dora-in-game.png" alt="dora the game" /></p>
+
+<!-- more -->
+
 
 <h2>關於遊戲</h2>
 
@@ -105,7 +108,14 @@
     <link href="http://tzengyuxio.me/blog/2012/04/26/game-of-dimension-transformation/"/>
     <updated>2012-04-26T17:48:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/04/26/game-of-dimension-transformation</id>
-    <content type="html"><![CDATA[<h2>Super Paper Mario</h2>
+    <content type="html"><![CDATA[<p>隨著電腦計算性能的突飛猛進，用來表達遊戲世界的畫面從早先的 2D 平面逐漸發展到 3D 立體空間。然而電腦性能不管再怎樣發展，我們仍無法（至少在可見的未來中）再增加一個維度到遊戲世界裡；畢竟我們所生活的就是一個三維的空間，即便數學上可證明，沒有人知道四維或以上的空間是什麼模樣。</p>
+
+<p>因此，開始有些遊戲試著將 2D 與 3D 的世界做融合，將次元（空間維度）轉換的概念帶進遊戲，藉以呈現出現實中無法體會到的神祕空間感。這類型遊戲目前數量不多，次元轉換的型態也各異其趣，以下文章便是想簡單介紹下目前筆者已知的次元轉換遊戲與形式。</p>
+
+<!-- more -->
+
+
+<h2>Super Paper Mario</h2>
 
 <ul>
 <li>Nintendo 2007 <a href="http://en.wikipedia.org/wiki/Super_Paper_Mario">[Link]</a></li>
@@ -185,6 +195,10 @@
 
 <p>玩家平常是在 3D 的世界進行探索，探索的時候可以切換不同角度視角，例如從角色的側面看過去，或是從正上方看下去。不管是在 3D 透視下的哪個視角，只要按下 Crush 鍵，遊戲就會立刻變成 2D 平面，世界像壓扁一樣，完全沒有視野深度。所以說這是真正<strong>從三次元到二次元</strong>的「次元轉換系統」</p>
 
+<p>附註。感謝 <a href="http://www.plurk.com/segafankwl">@segafankwl</a> 提供以下資訊補充：</p>
+
+<blockquote><p>補充一下，CRUSH在2007年就出在PSP上了，3DS版好像是重製(關卡設定不確定，至少故事設定一樣)，PSP版知名度很低，台灣也沒代理，但是很神奇的地下街出現過一片美版二手片，被我買走了XD﻿</p></blockquote>
+
 <h2>Fez</h2>
 
 <ul>
@@ -212,6 +226,9 @@
     <content type="html"><![CDATA[<p>前幾天討論了<a href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/">目前各家網站標籤功能的混亂</a>，即便有這些混亂，「標籤」仍是訊息管理非常重要的一個工具，也是落實真正<a href="http://zh.wikipedia.org/wiki/%E8%AF%AD%E4%B9%89Web">語義網</a>（semantic web）的一個基礎。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-21-too-many-tags.png" alt="too many tags!" /></p>
+
+<!-- more -->
+
 
 <p>然而正由於目前沒有一致性的標籤標準，人們對於標籤的使用也很隨興，所以會常常看到下面三種情形：</p>
 
@@ -241,11 +258,11 @@
 </ul>
 </blockquote>
 
-<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong>複數詞組，逗號分隔</strong> (Multi Word, Comma Seperated)。</p>
+<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong><a href="http://bhc3.com/2008/08/22/why-isnt-this-the-tag-standard-multi-word-comma-separated/">複數詞組，逗號分隔</a></strong> (Multi Word, Comma Seperated)。</p>
 
 <hr />
 
-<p>而我自己所使用標籤的標準如下：</p>
+<p>以上便是我個人使用標籤的一些而我自己所使用標籤的標準如下：</p>
 
 <ol>
 <li><p><strong>簡便性</strong></p>
@@ -263,7 +280,7 @@
 <li><p><strong>一個概念一個詞。</strong>所以 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 就只剩下用一個 <code>anime</code>。</p></li>
 <li><p><strong>小寫。</strong>同樣是為了方便輸入。</p></li>
 <li><p><strong>用單數，用名詞。</strong>當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。</p></li>
-<li><p><strong>人名的標記從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
+<li><p><strong>人名的標記盡可能從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
 <li><p><strong>除非是自己口語常用的縮寫，不然不使用縮寫作標記。</strong><code>nds</code> <code>win7</code> <code>xbox360</code> 都很好理解，可是用 <code>resp</code> <code>req</code> 來做為 <code>response</code> <code>request</code> 標籤的替代，就太過頭了。現在連寫程式都不鼓勵這種縮寫了。</p></li>
 </ol>
 </li>
@@ -276,6 +293,10 @@
 </li>
 </ol>
 
+
+<hr />
+
+<p>以上便是我個人使用的標籤規則。如果你有不錯的標籤習慣，也歡迎一起討論分享。</p>
 ]]></content>
   </entry>
   
@@ -285,6 +306,9 @@
     <updated>2012-04-20T08:52:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress</id>
     <content type="html"><![CDATA[<p>花了一個晚上沒睡覺，調整了一下這個 Octopress 的一些功能與設定。現在還懶得記詳細步驟，就先簡單寫個筆記吧，以防將來自己看 Source Repository 也看不出到底為什麼要這麼改。</p>
+
+<!-- more -->
+
 
 <h3>一、加入 LinkWithin 功能</h3>
 
@@ -316,6 +340,9 @@
     <content type="html"><![CDATA[<p>大家 iPhone 上的 Home Screen 都放了哪些 App 呢？</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-19-my-iphone-home-screen.jpg" alt="My iPhone Home Screen" /></p>
+
+<!-- more -->
+
 
 <p>我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈<a href="http://iphone.appstorm.net/roundups/lifestyle-roundups/45-iphone-home-screens/">45 Unique iPhone Home Screens Explained</a>〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。</p>
 
@@ -417,6 +444,9 @@
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-19-ugly-format-in-bbs.png" alt="ugly format in bbs" /></p>
 
+<!-- more -->
+
+
 <p>我不常在 BBS 上直接編輯，多半都是在習慣的編輯器上寫好再貼過去。不過問題來了，我寫文章的習慣都是一直打字一直打字，直到段落結束才換行，這樣的文字如果複製起來直接貼到 BBS 上發表，雖然還是能夠正常顯示，但在編輯與回文時就會出現過長的文字而造成如上圖般糟糕的版面效果。</p>
 
 <p>所以我在把文章貼到 BBS 上前，會先進行排版，將每行的字數限制在 72 字元以下。一開始我還乖乖手動一行一行按 Enter，可是這勤勞樸實的作風太不符合以 Lazy Easy 為最高指導原則的程式設計師身分了。經過一番研究後，我用 Vim 來做為我文章自動排版的工具。</p>
@@ -457,6 +487,9 @@ set tw=72
     <content type="html"><![CDATA[<p>今天心血來潮，想知道自己這幾年到底寫了多少文章，多少字數，於是寫了這麼一個小工具。</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-04-19-stats-of-my-blog-posts.png" alt="Stats of My Blog Posts" /></p>
+
+<!-- more -->
+
 
 <p>這小工具很簡單，按年份分別列出該年寫了幾篇文章，總共多少字數。由於 Octopress 的文章其實就是一個個 markdown 純文字檔，所以要做統計並不困難，我不用想盡辦法連到資料庫或是將網站匯出 XML 來做分析。不過這個工具使用到 *nix shell 環境，Linux 與 Mac OSX 的使用者可以無痛使用，Windows 的話可能就要安裝一下 cygwin 或其他類似套件了。</p>
 
@@ -500,6 +533,9 @@ echo</code></pre></noscript></div>
     <content type="html"><![CDATA[<p><img src="http://tzengyuxio.me/images/2012/2012-04-18-inconsistency-of-tags.jpg" alt="inconsistency of tags" /></p>
 
 <p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
+
+<!-- more -->
+
 
 <ul>
 <li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>
@@ -588,6 +624,9 @@ echo</code></pre></noscript></div>
 
 <p>簡單來說，這部戲的結構並不複雜：住在鎌倉的長倉家有四個兄弟姊妹，隔壁新搬來了一個東京來的單身職場女強人－－吉野千明，這給原本平靜的長倉家帶來了許多生活上的變化。</p>
 
+<!-- more -->
+
+
 <p>於是乎劇情多半都圍繞在這兩戶人的互動上，偶爾加入些千明在電視台，或是大哥長倉和平在市公所裡的職場工作。一個是電視人，一個是公務員，從男女主角兩人的工作上，其實就反映出兩個人截然不同的個性。在電視台工作的千明，一直在接受新的觀念與新的事物，工作過程中也經常會出現意外的變卦，需要臨時調整作法。而身為公務員的和平，就是很標準的一板一眼，對許多事情的態度，說難聽點是固執，說好聽點是擇善固執。</p>
 
 <p>不過就是因為有這樣的對比，故事的發展才有衝突，才有精采的過程。整齣戲的節奏還挺快的，不會拖泥帶水－－除了最終話千明與和平兩個人一邊喝著調酒一邊聊天這段，這一段我看到差點睡著，感覺就像是最終話時數不夠只好多講些話充場面似的。話說回來，雖然劇情進行的節奏快，不過角色鮮明，對話也多半生動有趣，所以看起來還蠻輕鬆的。</p>
@@ -617,6 +656,9 @@ echo</code></pre></noscript></div>
     <updated>2012-04-11T10:44:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question</id>
     <content type="html"><![CDATA[<p>最近讀到 <a href="http://raganwald.posterous.com/i-dont-hire-unlucky-people">I don&#8217;t hire unlucky people - raganwald&#8217;s posterous</a> 這篇文章，有些想法跟 <a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a> 這一篇所寫的不太一樣。想法不同也就算了，文章本來就是個別讀者與單一作者之間的心靈互動，讀者不同，互動不同，激發出的想法自然也不同，這無可厚非。</p>
+
+<!-- more -->
+
 
 <p>不過對於文章內容的解讀也不一樣，這讓我不由得想寫一篇文章來談談 &#8220;I don&#8217;t hire unlucky…&#8221; 這篇的內容。這篇文章很長，以對話小說式的方式來描述，講述如何節省 hire people 的時間與 hiring 時的考量，我懶得逐字翻譯，所以會簡單帶過故事內容。</p>
 
@@ -699,6 +741,9 @@ echo</code></pre></noscript></div>
 
 <p>什麼叫做「不和運氣差的人合作」？</p>
 
+<!-- more -->
+
+
 <p>這位作者舉了一個例子，如果你是某間店的店主，現在要找店員，現在收到了 100 份履歷，但你很忙，沒有時間一個一個看。最簡單的方式就是索性從 100 份中<strong>隨機挑出 10 份</strong>，然後從 10 份中挑出一個最棒的。至於那些被過濾掉的 90 份，只能怪他們<strong>運氣不好啦</strong>！</p>
 
 <p>聽起來很帥氣，不是嗎？</p>
@@ -739,6 +784,9 @@ echo</code></pre></noscript></div>
     <updated>2012-04-05T08:12:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac</id>
     <content type="html"><![CDATA[<p>有時候在網路上會看到像「㍿」這樣的文字符號，有沒有好奇這是怎麼打出來的呢？這可不是把四個字打在一個格子裡面，而是這原本就是一個作為符號使用的 Unicode 文字。就好像英文中的 Trade Mark 可以用「™」表示一樣。類似的文字還有（如果底下只看到方框看不到字，表示你瀏覽器所用的字型沒有包含到下面這些 Unicode 字碼）：</p>
+
+<!-- more -->
+
 
 <h3>英文</h3>
 
@@ -804,6 +852,11 @@ echo</code></pre></noscript></div>
     <updated>2012-04-02T05:12:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/04/02/google-maps-quest</id>
     <content type="html"><![CDATA[<p>照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。</p>
+
+<!-- more -->
+
+
+
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
 

@@ -83,7 +83,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/05/01/mit-game-jam-dora/">四個人兩天開發的《Dora》</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/05/01/mit-game-jam-dora/">四個人兩天開發的《Dora》- MIT Game Jam 心得分享</a></h1>
     
     
       <p class="meta">
@@ -112,81 +112,12 @@
 
 <p><img src="/images/2012/2012-05-02-dora-in-game.png" alt="dora the game" /></p>
 
-<h2>關於遊戲</h2>
-
-<p>我們做的遊戲叫做《Dora》，遊戲以 Objective-C + <a href="http://www.cocos2d-iphone.org/">cocos2d</a> 開發，在 iOS 上運作。活動結束後會放到 App Store 上供<strong>免費下載</strong>。除了遊戲本體外，程式碼也<strong>完全開放</strong>，兩天內兩名程式累積了 55 次 commit，有興趣的人可以點下面連結看看。不過真的是看看就好，Game Jam 時所寫的程式碼品質是非常慘不忍睹的…</p>
-
-<ul>
-<li>Source Code Repository at [<a href="https://bitbucket.org/ninjitaru/dora/overview">bitbucket</a>]</li>
-<li>App Store 下載：[審核中&#8230;]</li>
-<li>活動實況影片：[<a href="http://www.twitch.tv/igdshare">Link</a>]</li>
-<li>遊戲實際畫面可以<a href="http://www.twitch.tv/igdshare/b/316542229">看此實況影片</a>，從 <code>44:00</code> 到 <code>47:00</code>。影片中也有其他組的成果發表。</li>
-<li><a href="https://twitter.com/#!/search/realtime/%23mitgj">#mitgj</a> at Twitter (Twitter 上的相關推文)</li>
-</ul>
-
-
-<h3>背景</h3>
-
-<p>我們這款遊戲的故事，主要是說有一個叫 Dora 的超強大機器人，她在看購物頻道時，意外愛上了吸塵器這個小東西。然而製作出 Dora 的瘋狂博士卻不想看到他的 Dora 因為愛上吸塵器而不務正業（幫博士征服地球），於是派出大軍要消滅吸塵器與 Dora。</p>
-
-<h3>玩法</h3>
-
-<p>遊戲中有三個吸塵器。吸塵器會受到攻擊而消滅，不過 Dora 可以把吸塵器撿起來，裝備在自己身上，這時吸塵器不僅可以免於被 NPC 攻擊，Dora 也可以幫吸塵器回復 HP，但同時也會消耗自己的 HP。此外，裝備（保護）越多的吸塵器，Dora 的動作就會受到限制，當三個都裝備起來時，Dora 甚至無法攻擊，行動也會變得緩慢。</p>
-
-<p>這種<strong>「主角很強，配角很弱；主角的目的是要保護配角，但是當保護配角時，主角本身也會因為牽絆而喪失自己的強大。」</strong>便是我們對於這次主題的詮釋。</p>
-
-<p><img src="https://lh3.googleusercontent.com/-0_IFEGvl0RY/T55CI7QZg3I/AAAAAAAACVg/p0-Zxf8B3P8/s640/Theme03.png" alt="game jam topic" /></p>
-
-<h3>操作</h3>
-
-<p>遊戲的操作分成左右按鍵與 A, B, C 三個按鈕。左右是移動，A, B, C 則分別是「近攻」、「遠攻」與「把吸塵器抓起來」。當抓起一個吸塵器後，B 鈕的作用會變成「把第一個吸塵器拋出」；抓起第二個時，要按 A 鈕才能拋出。因此，抓越多吸塵器在身上保護，能作的攻擊選項就越少。</p>
-
-<h2>開發日誌</h2>
-
-<h3>Day 1</h3>
-
-<ul>
-<li><code>10:00</code> 離集合時間還很早就已經到元智了，天氣不錯。</li>
-<li><code>11:00</code> 公布<a href="http://igdshare.org/content/MITGJ">題目</a>與分組。我們組成員一企劃（橘之介）、一美術（建愷）、兩程式（Jason 和我），共四人。</li>
-<li><code>12:00</code> 針對要開發的題材與類型進行討論。</li>
-<li><code>13:00</code> 初步討論完後便悠閒地一起去吃午餐。吃完回來進行更細部的製作規劃，並決定以 Objective-C 作為開發語言。</li>
-<li><code>14:30</code> 各組開始進行報告。</li>
-<li><code>16:00</code> 有初步的角色移動，以及 UI 介面。</li>
-<li><code>18:00</code> 角色的移動與 UI (Virtual Pad) 整合。加入背景與角色移動動畫。</li>
-<li><code>20:00</code> 加入了產生 NPC 的功能，以及主角的攻擊動畫與操作。</li>
-<li><code>20:30</code> 各組階段性成果 demo。在 demo 前我們又加上了背景音樂。還有晚餐是麥當勞。</li>
-<li><code>21:00</code> Demo 結束後，程式與企劃都回家休息，企劃因為家住比較遠，所以留在現場過夜（辛苦了～）</li>
-</ul>
-
-
-<h3>Day 2</h3>
-
-<ul>
-<li><code>08:00</code> 我昨天回家後就休息了。早上比較早起來，編寫敵人的動畫演出。</li>
-<li><code>10:00</code> 由於出門比較晚（程式沒寫到一個段落，不想就這樣擱著先出門），到達會場的時間差點遲到。</li>
-<li><code>11:00</code> 隊友也完成了吸塵器（就是遊戲主角 Dora 要保護的對象）功能。美術今天開始將昨天所使用的圖全部重新刻一遍，企劃整理開發資料與簡報，準備下午的 present。</li>
-<li><code>12:00</code> 加入了 Dora 與吸塵器的血量，還有 NPC 出現的波次。已經比較有關卡的感覺了。</li>
-<li><code>13:00</code> 中午大家一起出去校外用餐，休息一下轉換心情。感謝建愷，推薦了不錯的涼麵店。下午 1 點回來後開始最後衝刺。</li>
-<li><code>14:00</code> 加入 Game Over 功能。NPC 原本只會亂走一通，現在會追著主角了。</li>
-<li><code>15:00</code> 更新美術繪製好的新圖檔，質感一整個提昇。加入 NPC 攻擊動作（但打了還不痛）</li>
-<li><code>16:00</code> Dora 與吸塵器會受傷了。換上新的 splash 圖檔與 icon。</li>
-<li><code>16:30</code> 修正 Bug, Game Over 顯示 NPC 進攻波次與砍殺數。進入最後各組 demo。對了，吃披薩。</li>
-</ul>
-
-
-<h2>心得感想</h2>
-
-<p>在參加 Game Jam 之前，我原本想要用 python + pygame 進行開發，還因此在活動開始前幾天刻意熟悉了一下，不過事後發現這些都是多餘的。事前的練習與準備，對於單人隊伍的開發或許 OK，不過如果是隨機湊隊的活動，我們無法預料到會與什麼樣的隊友合作，因此拼的就是<strong>平常累積的基本功</strong>了。在這方面，好在 Jason 對於我們所使用的 cocos2d 引擎有深厚的瞭解，我許多開發上遇到的問題都可以請教，從而省下許多開發時間。也在這短短的兩天裡學了不少，也許平常一個禮拜都還沒辦法做到這麼快的熟悉吧。</p>
-
-<p>另外，在 Game Jam 的過程中，休息本身－－或者說，<strong>開發的疏密節奏</strong>－－也是很重要的。雖然是短期開發，可是人的身體畢竟不能連續好幾個小時保持高速運轉狀態，適當的休息喘口氣，讓腦袋沈澱、身體充電，才是維持開發速度的不二法門。我第一天幾乎都忘了休息，結果第二天早上呵欠連連。</p>
-
-<h2>感謝</h2>
-
-<p>最後在這邊要感謝<a href="http://igdshare.org/">獨立遊戲開發者分享會 (IGDSHARE)</a> 與元智大學舉辦了這個活動，IGDSHARE 的工作人員可是從活動前一天開始就在會場準備了，最後也順利圓滿完成了第一屆以台灣開發者為主的 Game Jam。也要謝謝我們 E 組的每個組員：Jason, 建愷與橘之介，你們真是太棒了，少了任何一個人，我們都無法在這麼短的時間內做出這麼完整的遊戲。</p>
-
-<p>最後的最後，我想要感謝我的家人，謝謝你們的支持，讓我能無後顧之憂地全心投入開發。感謝你們。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/05/01/mit-game-jam-dora/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -220,104 +151,16 @@
   </header>
 
 
-  <div class="entry-content"><h2>Super Paper Mario</h2>
+  <div class="entry-content"><p>隨著電腦計算性能的突飛猛進，用來表達遊戲世界的畫面從早先的 2D 平面逐漸發展到 3D 立體空間。然而電腦性能不管再怎樣發展，我們仍無法（至少在可見的未來中）再增加一個維度到遊戲世界裡；畢竟我們所生活的就是一個三維的空間，即便數學上可證明，沒有人知道四維或以上的空間是什麼模樣。</p>
 
-<ul>
-<li>Nintendo 2007 <a href="http://en.wikipedia.org/wiki/Super_Paper_Mario">[Link]</a></li>
-<li>Wii</li>
-</ul>
+<p>因此，開始有些遊戲試著將 2D 與 3D 的世界做融合，將次元（空間維度）轉換的概念帶進遊戲，藉以呈現出現實中無法體會到的神祕空間感。這類型遊戲目前數量不多，次元轉換的型態也各異其趣，以下文章便是想簡單介紹下目前筆者已知的次元轉換遊戲與形式。</p>
 
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/flQTSrq7n_A?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>這大概是最早的一款次元轉換遊戲了。剛推出時的展示非常令人耳目一新：原本 2D 橫向捲軸的瑪莉歐，在遇到無法前進的關卡時，可以轉換視角變成具有 3D 透視的畫面，藉此發現在原本 2D 橫向視角下所無法注意到的道具或路徑。紙娃娃般的質感加上新鮮的遊戲系統，讓我對這遊戲抱著非常高的期待。</p>
-
-<p><img src="http://upload.wikimedia.org/wikipedia/en/e/e5/SPM_3D.jpg" alt="Image from Wikipedia" /></p>
-
-<p>不過實際玩了之後發現，遊戲的世界觀與我們所習以為常的瑪莉歐世界其實有很大的出入。根據說明書，這次瑪莉歐來到一個<strong>異世界</strong>（話說他原本所在的地方就算是異世界了啊&#8230;&#8230;）這異世界裡的怪物和居民的長相老是讓我覺得我在玩的遊戲不是《瑪莉歐兄弟》的系列作。加上關卡與關卡間還有類似村莊的設計，玩家得到處找異世界的居民對話收集情報，感覺實在很沒勁，因此玩了一陣子我便放棄這款遊戲了。</p>
-
-<p>嚴格來說，這款遊戲本質上是 RPG，然而他的賣點卻是在平台動作遊戲部分的視角切換，兩者相結合反倒成了一個不上不下的作品。</p>
-
-<h2>絕望高校</h2>
-
-<ul>
-<li>Studio G3 x 電算花組 2010</li>
-<li>虛擬作品</li>
-</ul>
-
-
-<p>這款是很有名的虛擬遊戲，出現在漫畫《大東京電玩箱》裡。《大東京電玩箱》是套描寫電玩業界的漫畫，幾乎是遊戲從業人員的必看讀物，而裡面的《絕望高校》則是主角們目前正在努力開發的作品，以目前台灣單行本的進度（第 6 集）來看，遊戲目前已經開發到了可以推出體驗版供人試玩的程度了。</p>
-
-<p>《絕望高校》是款捲軸射擊遊戲。一般射擊遊戲可以分成<strong>橫向捲軸</strong>和<strong>縱向捲軸</strong>，而《絕望高校》則是同時間揉合了兩種捲軸模式，可以想像成《兵蜂》與《極上瘋狂大射擊》兩者的結合。由於兩種視角有相當大的差異，因此這款遊戲的關卡設計對於開發人員是一項相當高的挑戰。</p>
-
-<h2>Revolver 360</h2>
-
-<ul>
-<li>Cross Eagle 2010 <a href="http://marketplace.xbox.com/en-US/Product/REVOLVER360/66acd000-77fe-1000-9115-d8025855074f">[Link]</a></li>
-<li>Xbox 360</li>
-</ul>
-
-
-<iframe width="640" height="360" src="http://www.youtube.com/embed/CT2UxnmZ4SM?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>Revolver 是左輪手槍的意思，這款遊戲也正如其名，具有如手槍轉輪一般的視角調整系統。遊戲的進行如同一般 2D 橫向捲軸射擊遊戲，但是實際上卻是在 3D 空間的關卡中進行遊戲。玩家可以旋轉本機角度，藉以改變投影到螢幕上的 2D 平面，進而閃躲原本滴水不漏的彈幕攻勢。</p>
-
-<p>這款遊戲與其他次元轉換遊戲相比，較為特別的一點是具有無段式的轉換。其他的遊戲都是一次旋轉 90 度的平面，但是 Revolver 360 的旋轉可大可小。遊戲的聲光效果華麗，但是關卡與敵人的設計則稍嫌單調，使得次元轉換的機制只能拿來閃閃子彈，沒有好好利用，相當可惜。</p>
-
-<h2>Sky Island</h2>
-
-<ul>
-<li>Neutronized 2011 <a href="http://www.kongregate.com/games/Neutronized/sky-island">[Kongregate]</a> <a href="http://armorgames.com/play/10899/sky-island">[Armor Games]</a></li>
-<li>Flash</li>
-</ul>
-
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/IYVM2q5hynE?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>這款遊戲的玩法跟下文所介紹 Fez 接近。遊戲是像瑪莉歐一樣的 2D 橫向捲軸，玩家藉由旋轉世界，得到不同的視野平面，以找到能夠往前進的道路。</p>
-
-<p>雖然 Sky Island 是在 Fez 提出概念 (2007) 之後才推出的，網路上也有認為 Sky Island 是山寨 Fez 的這種說法，不過我倒覺得不用如此看待，畢竟 Fez 當時只是個概念性想法，Sky Island 比較早出，而且在沒有前例的情況下，也做出了不錯的關卡設計。</p>
-
-<p>其實在遊戲界待久了會發現，沒有什麼點子或創意是完全獨創，只有某個人才想得出來，其他人都想不到的。在業界，大家接受的資訊都差不多，能想到的也相類似，很多創意，都是同時在不同的地方被不同的人所想到；有些點子，也是在某種技術成熟之下才變得可能，於是這時候要比的就是看誰作得快，或是看誰作得完整。</p>
-
-<p>Sky Island 的手腳夠快，他們交出了一個好玩的小品遊戲。而 Fez 則是做得完整，將「次元轉換」的平台遊戲發揮到一個極致，甚至到可以稱作<strong>藝術品</strong>的境界，這點我們稍後會再提到。</p>
-
-<h2>Nightmare Puzzle Crush</h2>
-
-<ul>
-<li>SEGA 2012</li>
-<li>Nintendo 3DS</li>
-</ul>
-
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/1T62FkPIhBk?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>這邊介紹的次元轉換遊戲，遊戲方式多半都是在 3D 的空間中轉換不同的 2D 視角。不過《Nightmare Puzzle Crush》則完全不同，或者說「次元轉換系統」的描述對於《Nightmare Puzzle Crush》這款遊戲更加名符其實。</p>
-
-<p>玩家平常是在 3D 的世界進行探索，探索的時候可以切換不同角度視角，例如從角色的側面看過去，或是從正上方看下去。不管是在 3D 透視下的哪個視角，只要按下 Crush 鍵，遊戲就會立刻變成 2D 平面，世界像壓扁一樣，完全沒有視野深度。所以說這是真正<strong>從三次元到二次元</strong>的「次元轉換系統」</p>
-
-<h2>Fez</h2>
-
-<ul>
-<li>Polytron 2012（2007 首次發表）</li>
-<li>Xbox 360</li>
-</ul>
-
-
-<iframe width="640" height="360" src="http://www.youtube.com/embed/0-LMU5T5vk8?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>如果說 2012 最值得一玩的遊戲是哪一款，即便今年過還不到一半，即便 D3 才剛剛上市，我所推薦的答案毫無意外，就是接下要介紹的 Fez。Fez 的概念很簡單，跟前面介紹過的 Sky Island 一樣，就是旋轉視角，然而 Fez 充分利用了這個概念，設計出許許多多的謎題與關卡，就如同 Braid 把時間倒流這個觀念發揮到淋漓盡致一樣。甚至連介面也採用了一致的操作。</p>
-
-<p>除了關卡設計外，Fez 這款遊戲也提出了一個相當完整的世界觀。這邊用來形容世界觀的「完整」兩字，並不是指創作者在這個世界裡設定了完整的曆法、完整的風土人情、完整的宗教與政治體系等等等；而是創作者的心中對於這個世界長什麼樣子有著清楚而一致的輪廓，並落實到設計上，使得玩家在探索這個世界的同時，會不斷透過蛛絲馬跡發現這個世界的輪廓，進而在遊玩過程中不停去思考：這個世界到底發生過什麼事？這又到底是個什麼樣的世界？</p>
-
-<p>對於 Fez 的介紹無法以此三言兩語短暫形容。有機會的話，再作更詳細的介紹吧。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/26/game-of-dimension-transformation/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -355,71 +198,12 @@
 
 <p><img src="/images/2012/2012-04-21-too-many-tags.png" alt="too many tags!" /></p>
 
-<p>然而正由於目前沒有一致性的標籤標準，人們對於標籤的使用也很隨興，所以會常常看到下面三種情形：</p>
-
-<ol>
-<li><p>同一個概念以不同的詞語組合方式標籤</p>
-
-<p> 例如一篇文章中同時加入了 <code>win7</code>, <code>Windows 7</code>, <code>MS windows 7</code>, <code>windows-7</code> 等標籤，有縮寫、有全名、有各種不同的連接詞。這種現象在以搜尋流量為主的媒體網站中尤為常見。上面的圖就是一個活生生血淋淋（？）的例子，這組關鍵字取自 Engadget 的<a href="http://chinese.engadget.com/2012/04/20/sony-patent-application-aims-to-put-names-to-faceless-mmo-player/">這篇文章</a>。</p></li>
-<li><p>同一個概念以不同的單字形式標籤</p>
-
-<p> 以英文做標籤的網站中很容易發生這種情形，因為一個概念在不同的詞性表現下就是不同的單字，因而成為不同的標籤關鍵字。例如我想要加上「部落格」這個標籤，用英文寫時就可能同時把名詞、動詞、動名詞，還有單數型複數型全部通通填上去，像這樣： <code>blog</code>, <code>blogging</code>, <code>blogs</code>。</p></li>
-<li><p>同一個概念以不同的語言標籤</p>
-
-<p> 這個就是多語言使用者的苦惱了。例如像我這樣的宅宅就會因為以下 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 等標籤到底要用哪個好而苦惱，而最後的結果通常就是全部都用。</p></li>
-</ol>
-
-
-<p>這三種情形都是用不同的方式去標籤同一個概念，雖然初衷是為了將來方便搜尋，但往往反而導致搜尋時的困難。考慮以下情形：假設我的一篇部落格文章用了 <code>win7</code> 與 <code>Window 7</code> 作為標籤，另一篇主題近似的文章卻是用了 <code>Windows 7</code> 與 <code>win-7</code> 作為標籤。這種不一致性會讓讀者在前篇文章中點下 <code>win7</code> 這個標籤連結時，無法將所有主題相關的文章列出。</p>
-
-<p>另外一個問題則是製造不必要的心力浪費。因為沒有一個標準來選擇用哪個單詞做標籤，因此也不知道自己將來要回頭找資料時，會用哪個單詞來做搜尋，只好想辦法把所有自己想得到的所有相關字一股腦兒全部填入。</p>
-
-<p>為了避免上述問題，雖然目前每個網站的標籤機制如同多頭馬車各行其道，制定一個自己個人使用的標籤習慣（或規範）倒是可行的一個作法。這個問題相信困擾的不只是我，上網找了一下，有兩篇值得參考的文章，第一個是 Calvin C. Yu 所寫的 <a href="http://www.slideshare.net/calvinyu/hitech-hi-tag">Taggin Guidelines</a> （在投影片中的第 13 頁），主要原則如下：</p>
-
-<blockquote><ul>
-<li>簡練</li>
-<li>小寫</li>
-<li>單數</li>
-</ul>
-</blockquote>
-
-<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong>複數詞組，逗號分隔</strong> (Multi Word, Comma Seperated)。</p>
-
-<hr />
-
-<p>而我自己所使用標籤的標準如下：</p>
-
-<ol>
-<li><p><strong>簡便性</strong></p>
-
-<ol>
-<li><p><strong>盡量簡單。</strong></p></li>
-<li><p><strong>方便輸入。</strong>所以標籤時會以英文為主，例如用 <code>browser</code> 而不用 <code>瀏覽器</code>。</p></li>
-<li><p><strong>自己容易想起。</strong>通常第一個想到的字詞就是了。</p></li>
-<li><p><strong>使用容易理解的詞。</strong></p></li>
-</ol>
-</li>
-<li><p><strong>一致性</strong></p>
-
-<ol>
-<li><p><strong>一個概念一個詞。</strong>所以 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 就只剩下用一個 <code>anime</code>。</p></li>
-<li><p><strong>小寫。</strong>同樣是為了方便輸入。</p></li>
-<li><p><strong>用單數，用名詞。</strong>當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。</p></li>
-<li><p><strong>人名的標記從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
-<li><p><strong>除非是自己口語常用的縮寫，不然不使用縮寫作標記。</strong><code>nds</code> <code>win7</code> <code>xbox360</code> 都很好理解，可是用 <code>resp</code> <code>req</code> 來做為 <code>response</code> <code>request</code> 標籤的替代，就太過頭了。現在連寫程式都不鼓勵這種縮寫了。</p></li>
-</ol>
-</li>
-<li><p><strong>格式</strong></p>
-
-<ol>
-<li><p><strong>省略單字間空白。</strong>也就是說用 <code>macosx</code> 而非 <code>mac os x</code>。不過英文人名是例外；日常用字如 <code>smartphone</code> 我們容易斷字，相對的人名如果省略空白有時候就不容易逆推。其他如果空白省略會造成歧異的話，也應該保留空白於關鍵字中。</p></li>
-<li><p><strong>以逗號區隔關鍵字。</strong>正確來說應該是以「逗號加空白」區隔關鍵字。</p></li>
-</ol>
-</li>
-</ol>
-
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/21/my-tagging-guideline/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -455,27 +239,12 @@
 
   <div class="entry-content"><p>花了一個晚上沒睡覺，調整了一下這個 Octopress 的一些功能與設定。現在還懶得記詳細步驟，就先簡單寫個筆記吧，以防將來自己看 Source Repository 也看不出到底為什麼要這麼改。</p>
 
-<h3>一、加入 LinkWithin 功能</h3>
-
-<p>原本以為 Octopress 沒辦法加，不過實際嘗試後發現並不難。要修改的地方主要有 <code>source/_layouts/default.html</code> 和 <code>source/_layouts/post.html</code> 這兩個檔案。</p>
-
-<h3>二、文章下方分享功能的版面調整</h3>
-
-<p>Octopress 內建的 twitter, google plus, facebook 三項文章分享功能如果全部打開，會佔掉約 680px 左右的畫面寬度。當文章區塊的寬度小於這個數值時，facebook 的按鈕會跳到下一行。這邊可以透過修改 <code>source/_includes/post/sharing.html</code> 的方式來稍微縮減 facebook 區塊的寬度，以符合需求。</p>
-
-<p>同區塊另外一個問題則是在預設版面中， twitter, google plus, facebook 三者按鈕的高度不同，尤其 facebook 的位置比較偏下。這邊我參考 <a href="https://stacksocial.com/">StackSocial</a> 頁面最下方區塊的作法，將三個按鈕改成 <code>ul → li</code> 格式。</p>
-
-<h3>三、加入標籤 (tag) 功能</h3>
-
-<p>這是花最多時間與腦力的一部分，尤其是我沒有 Ruby 基礎，好在 Ruby 的程式碼不難看懂，我雖然寫不出來，但是我看現有的 code 依樣畫葫蘆，一樣生出功能。這邊主要參考了 Octopress 內建的 Category Plugin，稍作修改，便得到了標籤功能。</p>
-
-<p>透過這次修改，同時也對 <a href="https://github.com/mojombo/jekyll">Jekyll</a> 所使用的 <a href="http://wiki.github.com/shopify/liquid/liquid-for-designers">Liquid Template System</a> 有更深入的了解。想想要整一個 Octopress 網站也真折騰，除了要懂 HTML, CSS, JavaScript 這些基本的之外，還得會摸 Ruby, Sass, Liquid Template，滿滿都是術語與新東西，真不是件簡單任務。</p>
-
-<p>話說既然加入了標籤功能，接下來就是找個時間好好整理每篇文章的「分類」和「標籤」了……嗯，這讓我想到一句老話：</p>
-
-<blockquote><p>要改的東西太多，那就改天吧。</p></blockquote>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/20/refinements-of-my-octopress/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -513,96 +282,12 @@
 
 <p><img src="/images/2012/2012-04-19-my-iphone-home-screen.jpg" alt="My iPhone Home Screen" /></p>
 
-<p>我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈<a href="http://iphone.appstorm.net/roundups/lifestyle-roundups/45-iphone-home-screens/">45 Unique iPhone Home Screens Explained</a>〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。</p>
-
-<p>不過光這樣看完還不過癮，我決定做個統計。雖然上面那篇是去年八月的文章了，至今過了半年，不過大部分 App 現在還都蠻流行的。統計的結果如下，可以參考看看。</p>
-
-<h2>Home Screen 的應用方式</h2>
-
-<ul>
-<li>首頁中有 16 個格子（不考慮 dock）。這 45 個人平均放了 13.09 個 app 與 1.38 個 folder 在首頁。</li>
-<li>最少的甚至有完全不放任何 app，只在首頁留 dock 與一個 folder 的人 (Robin A.)。</li>
-<li>有 48.89% 的人在首頁有放 folder，也就是有五成多一點的人在首頁不放 folder。</li>
-<li>Dock 在每一頁都會出現，是最方便點選的地方。不過仍有 7 個人，15.56% 的比例，沒有在 dock 上放滿四格。</li>
-<li>有 4 個人在 dock 上放 folder（這我之前真的沒想過），比例為 8.89%。</li>
-<li>有 35.56% 的人沒有把首頁填滿。</li>
-</ul>
-
-
-<h2>App in Dock</h2>
-
-<p>最多人放在 Dock 上的 App 排名如下：<br/>
-（不包含 folder 以及 folder 中的 App。括號中數字為人數）</p>
-
-<ol>
-<li><strong>電話</strong> (33)</li>
-<li><strong>Mail</strong> (30)</li>
-<li><strong>Safari</strong> (21)</li>
-<li><strong>訊息</strong> (17)</li>
-<li><strong>音樂</strong> (17=13+4, iPod+Music, 新版 iOS 中這兩個合併了)</li>
-<li>設定 (9)</li>
-<li>相機 (6)</li>
-<li>Camera+ (4)</li>
-<li>Tweetbot (4)</li>
-</ol>
-
-
-<p>人數在 3 以下的我就省略不列了。另外，上表中的前七名就已經包辦 45 支 iPhone 裡八成以上的 dock 空格了。</p>
-
-<h2>App in Home Screen</h2>
-
-<p>不分 dock 與否，首頁最常看到的前 20 個 App 分別是：<br/>
-（不包含 folder 以及 folder 中的 App。括號數字中為人數）</p>
-
-<ol>
-<li>Mail (41)</li>
-<li>Safari (38)</li>
-<li>電話 (36)</li>
-<li>訊息 (30)</li>
-<li>設定 (28)</li>
-<li>行事曆 (26)</li>
-<li>音樂 (26=22+4, iPod+Music)</li>
-<li>照片 (22)</li>
-<li>相機 (18)</li>
-<li>時間 (17)</li>
-<li>Camera+ (16, <strong>非官方 App 中的第一名</strong>)</li>
-<li>地圖 (16)</li>
-<li>App Store (16)</li>
-<li>Facebook (14)</li>
-<li>Tweetbot (13)</li>
-<li>備忘錄 (13)</li>
-<li>聯絡資訊 (13)</li>
-<li>Twitter (12)</li>
-<li>Reeder (12)</li>
-<li>Instagram (10)</li>
-</ol>
-
-
-<p>再來的 App 就是少於 10 個人放在首頁的，分別是 Instapaper(9), Hipstamatic(9), Google+(7), Wunderlist(7), Evernote(7), Things(6), 天氣(6), Remote(6), iTunes(6), iBooks(6), 1Password(6), 計算機(5), Skype(5), Simplenote(5), Dropbox(5)。</p>
-
-<p>低於 4 以下的我就不列出了。</p>
-
-<h2>其他</h2>
-
-<ul>
-<li>大家平均放 App 的頁數為 4.56 頁（這個算得我眼睛好累）。最少的只有一頁（Zach）。</li>
-<li>除了官方的「相機」外，最常使用的拍照程式為 Camera+(16), 其次為 Instagram(10), Hipstamatic(9)。</li>
-<li>有四個人在首頁放了兩個以上的拍照App。其中一個放了三個，一個放了四個。</li>
-<li>Naceron 在首頁放了 6 個遊戲 App。</li>
-<li>Weid 說他的首頁只放 Universal（iPhone, iPad 均可使用）的 App。</li>
-<li>Sivil 和 Garrett G. 都把常用聯絡人作成 icon 放在首頁。</li>
-<li>Garrett G. 提供的圖片仔細看的話蠻奇怪的，為什麼他的首頁其實是第二頁？另外，他也是 Scan 這個 App 的開發者，在他的首頁中可以找到 Scan。</li>
-<li>Iynque 的 Dock 上放的都是有 &#8216;+&#8217; 號的 App，連 folder 也是！</li>
-<li>Shaun K 首頁左邊排了綠色一整排。</li>
-<li>Robin A. 的首頁最乾淨；Brad M. 只有首頁一頁。</li>
-</ul>
-
-
-<hr />
-
-<p>你怎麼運用你的主畫面呢？有任何的點子都歡迎與大家一起分享！</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/19/iphone-home-screen-usage-stats/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -640,37 +325,12 @@
 
 <p><img src="/images/2012/2012-04-19-ugly-format-in-bbs.png" alt="ugly format in bbs" /></p>
 
-<p>我不常在 BBS 上直接編輯，多半都是在習慣的編輯器上寫好再貼過去。不過問題來了，我寫文章的習慣都是一直打字一直打字，直到段落結束才換行，這樣的文字如果複製起來直接貼到 BBS 上發表，雖然還是能夠正常顯示，但在編輯與回文時就會出現過長的文字而造成如上圖般糟糕的版面效果。</p>
-
-<p>所以我在把文章貼到 BBS 上前，會先進行排版，將每行的字數限制在 72 字元以下。一開始我還乖乖手動一行一行按 Enter，可是這勤勞樸實的作風太不符合以 Lazy Easy 為最高指導原則的程式設計師身分了。經過一番研究後，我用 Vim 來做為我文章自動排版的工具。</p>
-
-<p>要完成任務，首先得在 <code>.vimrc</code> 檔案裡加入以下設定：</p>
-
-<pre><code>set fo+=Bm
-set tw=72
-</code></pre>
-
-<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Bm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
-
-<p>接著，為了讓事情更方便些，可以加入以下的按鍵映射：</p>
-
-<pre><code>noremap &lt;silent&gt; &lt;F7&gt; gggqG
-</code></pre>
-
-<p>我把 F7 按鈕對應到 <code>gggqG</code>，這串指令可以分成三個部分：<code>gg</code>, <code>gq</code>, <code>G</code>。</p>
-
-<ul>
-<li><code>gg</code>: 將游標移至檔案最前頭</li>
-<li><code>gq</code>：從游標開始處進行格式重排</li>
-<li><code>G</code>：將游標移至檔案最尾端</li>
-</ul>
-
-
-<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 F7，就可以立刻排成 BBS 所需要的格式囉。</p>
-
-<p>只剩下一個問題&#8230;&#8230;如果文章中有太長的連結，要是能自動縮網址那就更完美了。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -708,39 +368,12 @@ set tw=72
 
 <p><img src="/images/2012/2012-04-19-stats-of-my-blog-posts.png" alt="Stats of My Blog Posts" /></p>
 
-<p>這小工具很簡單，按年份分別列出該年寫了幾篇文章，總共多少字數。由於 Octopress 的文章其實就是一個個 markdown 純文字檔，所以要做統計並不困難，我不用想盡辦法連到資料庫或是將網站匯出 XML 來做分析。不過這個工具使用到 *nix shell 環境，Linux 與 Mac OSX 的使用者可以無痛使用，Windows 的話可能就要安裝一下 cygwin 或其他類似套件了。</p>
-
-<p>工具的代碼如下，使用前，請先自行修改代碼中 <code>SYEAR</code> 與 <code>POSTPATH</code> 這兩個變數，以符合自己的需求：</p>
-
-<div><script src='https://gist.github.com/2417859.js?file=blogstats.sh'></script>
-<noscript><pre><code>#!/bin/bash 
-
-# start year and end year
-SYEAR=2005
-EYEAR=`date &quot;+%Y&quot;`
-
-POSTPATH=~/github/octopress/source/_posts/
-
-echo
-echo &quot;YEAR      File #    Word Count&quot;
-echo &quot;==============================&quot;
-for (( i=$SYEAR; i&lt;=$EYEAR; i=i+1 ))
-do
-    NUMFILES=`ls -l $POSTPATH$i* 2&gt; /dev/null | wc -l`
-    NUMWORDS=&quot;       0&quot;
-    test $NUMFILES != &quot;0&quot; &amp;&amp; NUMWORDS=`wc -m $POSTPATH$i-* | tail -n 1 | sed 's/ total//'`
-    echo &quot;$i    $NUMFILES      $NUMWORDS&quot;
-done
-echo &quot;==============================&quot;
-NUMFILES=`ls -1 $POSTPATH* | wc -l`
-NUMWORDS=`wc -m $POSTPATH* | tail -n 1 | sed 's/ total//'`
-echo &quot;Total   $NUMFILES      $NUMWORDS&quot;
-echo</code></pre></noscript></div>
-
-
-<p>附帶一提：字數的統計是直接使用 <code>wc -m</code>，也沒有去掉 YAML 檔頭，所以不是很精確，大概參考參考就好。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/19/stats-of-octopress-blog-posts/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -778,83 +411,12 @@ echo</code></pre></noscript></div>
 
 <p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
 
-<ul>
-<li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>
-<li><code>label</code>: Gmail, Blogger</li>
-<li><code>keyword</code>: iPhoto, Aperture</li>
-<li><code>hashtag</code>: Twitter, Google+</li>
-<li><code>category</code>: Anobii, WordPress</li>
-</ul>
-
-
-<p>考慮到中文翻譯的話，又更加混亂：</p>
-
-<ul>
-<li><strong>標籤</strong>：Flickr, Gmail, Blogger, 豆瓣, WordPress</li>
-<li><strong>標記</strong>：Picasa, YouTube</li>
-<li><strong>關鍵字</strong>：iPhoto</li>
-<li><strong>分類</strong>：Anobii, WordPress</li>
-</ul>
-
-
-<p>針對以上的清單進行耙梳，我們可以得到下面幾個觀察：</p>
-
-<ol>
-<li><p>這些類似的功能中，最常見的英文名字是 &#8220;tag&#8221;，中文名字是「標籤／标签」。</p></li>
-<li><p>然而在 Google 的產品中，&#8221;tag&#8221; 通常翻作「標記」；「標籤」這詞則是用在 &#8220;label&#8221; 上（儘管他們兩者功能接近）。</p></li>
-<li><p>hashtag 有其自有的形式：<code>#somewordswithoutspace</code>, 不過其使用的方式與目的和單純的標籤（tag）並無太大差別。</p></li>
-<li><p>有些應用服務存在著 category 與 tag 兩種機制，一個物件（例如部落格文章）可能只隸屬於單一分類（category）但可擁有多個標籤（tag）。但是現在越來越多的應用服務都可以讓使用者將單一物件同時歸屬於多個分類之下，使得分類與標籤的界線漸趨模糊。</p></li>
-<li><p>可以從另外一個角度來釐清分類與標籤的不同：分類屬於事先規劃好的清單，標籤則是依照物件內容隨意添加的清單。</p></li>
-<li><p>不過在只有「分類」沒有「標籤」機制的網站中（如 Anobii），「分類」的使用方式其實跟「標籤」是沒有兩樣的。</p></li>
-<li><p>反之，只有標籤機制的網站，如 Blogger, 某種程度上也可以透過標籤來模擬分類的機制（可以參考<a href="http://reader.aqualuna.me/">此網站</a>的右側選單）。</p></li>
-</ol>
-
-
-<p>蠻混亂的，不是嗎？為了方便起見，我這邊用「<strong>分類 (category)</strong>」、「<strong>標籤 (tag)</strong>」與「<strong>Hashtag</strong>」來稱呼上面一大堆名字所代表的功能，其中「標籤 (tag)」同時也代表了 <em>label</em> 與 <em>keyword</em>。</p>
-
-<p>分類、標籤與 Hashtag 三者的功能接近又互相重疊，命名也是各家網站各自為政，沒有個準。不過混亂還沒結束，讓我們針對「標籤」的部份，繼續深入研究下去。</p>
-
-<h3>標籤格式</h3>
-
-<p>標籤的格式牽扯的問題既廣且深，它不僅決定了使用者在輸入欄位中填入標籤的方法，也涉及到了資料儲存在資料庫中的方式。標籤的格式有以下幾個考量層面：</p>
-
-<ol>
-<li><p>間隔方式</p>
-
-<p> 常見的間隔方式分兩種：<strong>空白</strong>與<strong>逗號</strong>。Flickr 採用空白間隔，Blogger 與 YouTube 則是逗號間隔。這邊還看不出什麼大問題，請接著看下去。</p></li>
-<li><p>允許空白與否</p>
-
-<p> 基本上，大多數的標籤功能都允許標籤內含空白，我們免不了會遇到例如 <code>"White House"</code> 或 <code>"Windows Vista"</code> 這樣的標籤。這時候不同的間隔方式就會帶來不同的考量了。</p>
-
-<ol>
-<li><p><strong>以空白間隔的標籤</strong>，為了要允許空白字元作為標籤的一部分，所以必須引入引號，被引號包住的詞算做一個標籤，這是 Flickr 的作法。所以一張有「<code>white</code> <code>house</code>」標籤的照片，也許是張白色的房子；而一張有「<code>"white house"</code>」標籤的照片，則可能是美國白宮。不過這樣會使得引號無法作為標籤的一部分，比方說「<code>5'7"</code>」（五呎七吋）這樣的詞就不能拿來當標籤了。</p></li>
-<li><p><strong>以逗號間隔的標籤</strong>，在含有空白間隔的標籤問題上看起來比較單純。但實作上其實有一點要注意，就是真正的間隔符號並非單單只有逗號，而是<strong>逗號加上一個空白</strong>。因為人們在輸入時習慣在逗號後面加入空白，如果說空白是合法標籤字元的話，那麼為什麼只有單字間的空白才被記入，單字前後的空白都被忽略呢？</p></li>
-</ol>
-</li>
-<li><p>大小寫</p>
-
-<p> 這邊再以 Flickr 與 YouTube 為例子作比較。YouTube 對於標籤的大小寫是照單全收，所以 <code>"TREE"</code> 標籤點下去的搜尋就是 &#8220;TREE&#8221;，而反之全小寫標籤的搜尋文字就是小寫的，反正搜尋結果無視大小寫，所以不成問題。</p>
-
-<p> Flickr 的作法稍微複雜些，除了你所輸入的之外，Flickr 還會另外將標籤簡化，然後儲存。你可以在三張照片分別使用 <code>"TREE"</code> 與 <code>"Tree"</code> 與 <code>"tree"</code>  這三種大小不同的標籤名，顯示時也是顯示各自不同的大小寫，然而他們都是代表著同樣的一個標籤。所以，如果你在一張照片中使用了 <code>"TREE"</code> 的標籤後，接著再輸入 <code>"tree"</code> 標籤，會發現沒有任何反應，因為標籤重複了。</p></li>
-<li><p>內部處理</p>
-
-<p> Flickr 在輸入標籤時所做的處理，除了大小寫外，也套用在空白上。因此，<code>"White House"</code>, <code>"whitehouse"</code>, <code>"WhiteHouse"</code> 這三個標籤同樣都是指向 <code>"whitehouse"</code> 這個內部處理的標籤。Flickr 內部運作時的標籤，是會把空白去掉並且全部轉為小寫字母。</p>
-
-<p> Youtube 就不同了，如前所述，你輸入什麼標籤它就存什麼，所以 <code>"White House"</code> 跟 <code>"whitehouse"</code> 是不同的。事實上，你用這兩組字串去 YouTube 搜尋，也會得到不一樣的結果。</p></li>
-</ol>
-
-
-<hr />
-
-<p>延伸閱讀：<a href="http://37signals.com/svn/archives2/tag_formats_cant_we_all_just_get_along.php">Tag formats: Can&#8217;t we all just get along? - Signal vs. Noise (by 37signals)</a></p>
-
-<p>2005 年的文章。估計是 37signals 要實作標籤系統時，研究了當時幾個主流網站的標籤機制，對象包括 del.icio.us, 43things, Yahoo’s My Web, flickr 與 Amazon。這篇文章底下也有頗多值得一看的討論。文章的最後提到：</p>
-
-<blockquote><p>當新科技剛出現時，不一致是免不了的。然而這些不同的格式是否會持續下去，或是終將會有個標準一統天下呢？</p></blockquote>
-
-<p>2005 到現在，都六、七年了，標籤功能其實仍舊處於混沌未明的時代。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/18/inconsistency-of-tagging-formats/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -892,28 +454,12 @@ echo</code></pre></noscript></div>
 
 <p>簡單來說，這部戲的結構並不複雜：住在鎌倉的長倉家有四個兄弟姊妹，隔壁新搬來了一個東京來的單身職場女強人－－吉野千明，這給原本平靜的長倉家帶來了許多生活上的變化。</p>
 
-<p>於是乎劇情多半都圍繞在這兩戶人的互動上，偶爾加入些千明在電視台，或是大哥長倉和平在市公所裡的職場工作。一個是電視人，一個是公務員，從男女主角兩人的工作上，其實就反映出兩個人截然不同的個性。在電視台工作的千明，一直在接受新的觀念與新的事物，工作過程中也經常會出現意外的變卦，需要臨時調整作法。而身為公務員的和平，就是很標準的一板一眼，對許多事情的態度，說難聽點是固執，說好聽點是擇善固執。</p>
-
-<p>不過就是因為有這樣的對比，故事的發展才有衝突，才有精采的過程。整齣戲的節奏還挺快的，不會拖泥帶水－－除了最終話千明與和平兩個人一邊喝著調酒一邊聊天這段，這一段我看到差點睡著，感覺就像是最終話時數不夠只好多講些話充場面似的。話說回來，雖然劇情進行的節奏快，不過角色鮮明，對話也多半生動有趣，所以看起來還蠻輕鬆的。</p>
-
-<p>《最後から二番目の恋》大概是我看過的日劇裡，主要演員的平均年齡最高的一部。千明與長倉家的兄弟姊妹多是四、五十歲的人了，最小的雙胞胎姊弟也是三十五歲。說起來，大哥與最小的妹妹相差有 15 歲之多，也算是蠻大的年齡差距。</p>
-
-<p>主要演員裡的<strong>中井貴一</strong>與<strong>小泉今日子</strong>都是演技派，看他們倆鬥嘴實在很過癮。兩個人經常講話講著講著就拌起嘴來了，看起來像是感情不好，但某種程度上也算是一種默契吧，感情不好的人，想鬥嘴也鬥不起來。除了男女主角外，還有些演員我想提一下，第一個就是<strong>內田有紀</strong>。內田的戲我看過的只有《一個屋簷下》，好多年前的事了。雖然因為那齣戲記住了這個演員，可是當時卻覺得她演得很差，有內田出現的戲我都希望能快點結束。</p>
-
-<p>然而這次內田演出的万理子卻非常的特別：頂著一頭看不見眼睛的鳥巢亂髮，講話很快又讓人摸不著頭緒，加上一付陰沈的模樣，又不時盯著自己的手機－－乍看只會讓人覺得這傢伙是個怪胎，但相處久了卻讓人發現這個小妹還挺可愛的，活脫像是從漫畫中跳出的人物。在看不到眼神，只能用半張臉表情演戲的嚴苛限制下，內田完全演活了万理子這角色。</p>
-
-<p>其次就是大橋母女。這對母女長得還真像，讓我一度還誤以為是找真正的母女來演出。剛看前面幾集時，我還以為女兒大橋知美只是個偶爾露臉的小配角，沒想到之後的戲份還不輕！知美的聲音很可愛，在戲裡面有提到被說很像「動畫聲優」，但知美本人很不喜歡這聲音。相反的，媽媽大橋秀子的聲音就跟女兒完全不同，相當低沈，讓我聯想到石原里美，話說媽媽和石原也有幾分神似，搞不好現在的大橋媽媽就是二三十年後石原的模樣。</p>
-
-<p>再來就是替電視台寫腳本的栗山はるか老師，本來當她只是個靠美貌的美女作家，沒想到還挺有本事的，同時替兩個電視台寫腳本，而且還要兼顧家庭，早上幫小孩作便當，完全就是一副人生勝利組的模樣。和單身超熟女千明根本就是兩個不同世界的人。</p>
-
-<p>《最後から二番目の恋》的主題曲是由<strong>浜崎あゆみ</strong>所唱的 〈how beautiful you are〉，雖然我偶爾也會聽步姊的歌，但她這首我真的很難接受，覺得她的歌聲變得很難聽。反倒是配樂常出現的幾首英文歌我都蠻喜歡的，尤其是 Yael Naim 所演唱的〈Far Far〉讓人最為印象深刻。</p>
-
-<iframe width="480" height="360" src="http://www.youtube.com/embed/HKWE5m_2wug?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-<p>啊！最後還有件事差點忘了提，那就是千明的熟女摯友中，飾演啟子一角的是<a href="http://zh.wikipedia.org/wiki/%E6%A3%AE%E5%8F%A3%E5%8D%9A%E5%AD%90">森口博子</a>。說到森口博子，也許一般人比較少聽到這名字，不過對於動畫迷而言，森口博子所演唱過的<a href="http://youtu.be/rFOhzAEXRPo">〈水の星へ愛をこめて〉</a>（機動戰士Z鋼彈）、<a href="http://youtu.be/MJh5UjrHQ8w">〈ETERNAL WIND〜ほほえみは光る風の中〜〉</a>（機動戰士鋼彈F91），可都是動畫歌曲裡經典中的經典呢。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/18/saigo-kara-nibanme-no-koi/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -949,77 +495,12 @@ echo</code></pre></noscript></div>
 
   <div class="entry-content"><p>最近讀到 <a href="http://raganwald.posterous.com/i-dont-hire-unlucky-people">I don&#8217;t hire unlucky people - raganwald&#8217;s posterous</a> 這篇文章，有些想法跟 <a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a> 這一篇所寫的不太一樣。想法不同也就算了，文章本來就是個別讀者與單一作者之間的心靈互動，讀者不同，互動不同，激發出的想法自然也不同，這無可厚非。</p>
 
-<p>不過對於文章內容的解讀也不一樣，這讓我不由得想寫一篇文章來談談 &#8220;I don&#8217;t hire unlucky…&#8221; 這篇的內容。這篇文章很長，以對話小說式的方式來描述，講述如何節省 hire people 的時間與 hiring 時的考量，我懶得逐字翻譯，所以會簡單帶過故事內容。</p>
-
-<h2>Part 1</h2>
-
-<p>故事可以分成上下兩部分。第一個部分有兩個主角，Bertram 和 Ernestine，Bertram 負責招募零售商店的學徒，Ernestine 的工作則是在招募軟體開發的 programmer。Ernestine 有天問 Bertram，她手上有上百份履歷，要怎麼減少不必要的電話與面試呢？</p>
-
-<p>Bertram 說很簡單，他拿起一整疊履歷，丟掉一半，然後回答，<strong>「不要雇用運氣不好的人就好啦。」</strong>Ernestine 聽了之後想要試試看，於是回去問 Mark 意見，Mark 是她公司的 CFO 以及天使投資人，對於軟體產業也有些瞭解。Mark 點出了 Ernestine 與 Bertram 環境的不同。</p>
-
-<blockquote><p>Bert 那邊有相當多符合條件的人 (qualified people) 在應徵他的工作，假設 100 個裡面有 50 個好了，就算他刪去一半的人，平均來講，剩下的 50 個裡也還有 25 個符合條件的人可以挑選。而妳在招募的 programmer, 可能一百份履歷裡面只有一兩個符合資格的，<strong>妳如果一口氣刷掉一半的履歷，妳可能在剩下的那 50 份裡完全找不到半個合適的人。</strong></p></blockquote>
-
-<p>於是 Ernestine 放棄了 Bertram 告訴她的方法。開始不斷嘗試、調整，試著去找出自己的方法。</p>
-
-<h2>Part 2</h2>
-
-<p>故事來到兩年後。Oscar 是 Ernestine 公司裡的程式主管，他也有面對一堆履歷不知從何著手的問題，於是像她的上司 Ernestine 請教。</p>
-
-<p>Ernestine 告訴 Oscar，首先，她不再去注意<strong>一份履歷是否「專業」</strong>，比方說履歷的格式或是文字中是否有錯字等等。因為去在意這些東西，其實<strong>跟隨機丟掉一半運氣不好的履歷，是沒什麼兩樣的</strong>。</p>
-
-<p>於是 Oscar 提出質疑，Oscar 的質疑也是我們一般會有的想法：「可是從履歷的完整度，我們可以看出求職者的用心，知道對方是不是有熱誠想要進我們的公司不是嗎？」</p>
-
-<p>Ernestine 的回答點出了重點。如果我們今天有 50 個不錯的人才，那我很樂意找出到底哪一半的人有進公司的熱誠，哪一半沒有。但如果我們今天的履歷裡有 99 個庸才跟一個天才，<strong>那我的首要目標是要想辦法找出這一個天才是誰，至於誰比較有進公司的熱誠則是次要的了</strong>。</p>
-
-<p>Ernestine 繼續說下去，她用同樣的想法貫穿整個人才的挑選：她挑或不挑一個人，是決定於與工作技能本身相關的直接或間接衡量 (direct measurement or indirect measurement)，例如學歷算是間接衡量指標。</p>
-
-<p>講到這邊，Oscar 又打斷，並且說明了學歷的重要，學歷反應許多資訊，不應該只是間接衡量。Ernestine 大致上同意 Oscar 的看法：</p>
-
-<blockquote><p>幾乎每一個我們所雇用的都有大學學歷，但我在看履歷時不會依照他們的學位或學校排出優劣。我只是看他們的工作經驗或是提供的代碼範例。而結果就是，我們所想要的每個有經驗的人才都具有大學學歷。</p></blockquote>
-
-<p>但是她接下來的回答很有意思，值得令人多加思考：</p>
-
-<blockquote><p>然而把「關連性 (correlation)」與「因果關係 (causation)」兩件事搞混是非常危險的。而更糟糕的則是把「關連性」跟「必要性 (necessity)」搞混。如果說，有念過大學對 programmer 來說是一件好事，那麼我們在看他的經歷、程式代碼，或是與之面談時，也可以發現他的能力優秀。</p></blockquote>
-
-<p>所以我的理解是，念過大學可以幫助一個程式設計師成長，但這些成長會表現在他的工作經歷或是代碼上。所以經歷或是代碼是直接的衡量標準。大學教育與優秀的程式設計師有關連性，但不是必然的因果，更不是必要的條件。</p>
-
-<p>Ernestine 繼續說到，當她在看求職者的 blog 時也用同樣的標準去檢視。比如說有個求職者喜歡攀岩，聽起來不錯，公司裡也有許多同事喜歡攀岩，不過 Ernestine 會忽略掉興趣這項訊息。</p>
-
-<blockquote><p>畢竟，如果因為興趣不對就被刷掉，是非常不走運 (unlucky) 的。而我不想僅僅只是因為一份履歷不走運就把它刷掉。</p></blockquote>
-
-<p>這裡有句重點：</p>
-
-<p><strong>hiring programmers, not ascetics or rock stars</strong></p>
-
-<p>Ernestine 甚至會抗拒去查看求職者在社交媒體上分享的資訊。她不想因為求職者在政治、興趣等觀點上與她志趣相投或是理念不同，而產生偏見，進而影響求職者被錄用與不錄用（這在美國也是違法的），同時這對公司也不是件好事。她雇用時，<strong>單純只考量求職者在專業技能上是否滿足條件</strong>。從招聘的觀點來看，去考慮對方是否跟你合不合得來，其實就只是種運氣的問題，而非適任不適任的問題。</p>
-
-<p>Ernestine 最後提到招募廣告，她現在開始使用平舖直敘的文字廣告來招募。她之前也曾使用過「徵求忍者！搖滾巨星！」之類的誇張廣告。但她發現這類的廣告也許會吸引到喝 Dry Martini 的人（意指比較外向積極），但是那些不喝 Dry Martini 不見得就不適合這份工作。所以登「我們需要忍者！需要超級巨星！」這類廣告，跟單單只是因為不喜歡沒運氣的人而刷掉一半，其實沒什麼兩樣。</p>
-
-<p>接下來的問答很有趣，programmer 應該都會有更深的體會。Oscar 問到：「要是如果忍者廣告比起直白廣告真的能吸引到更多符合條件 (qualified) 的人前來應徵呢？」</p>
-
-<p>Ernestine 的回答相當妙了：「當你寫程式時，你怎麼知道哪一段 code 需要最佳化呢？」Oscar 回答：「我會去測量（measure）, Premature optimization is the—Oh, I get it!」這邊 Oscar 的話雖然講到一半，但是這句話相信 programmer 都應該熟悉：</p>
-
-<blockquote><p>Premature optimization is the root of all evil.</p>
-
-<p>過早優化是萬惡之源。</p>
-
-<p>&#8211; Donald Knuth</p></blockquote>
-
-<p>所以 Ernestine 會有這樣的結論也是測量過後的結果。她說，登廣告找人，跟登廣告賣東西都是一樣的，你必須追蹤測量所有數據 (track &amp; measure everything)，你才能分析，知道有沒有效果。</p>
-
-<h2>結論</h2>
-
-<p>所以，Ernestine 減少處理上百份履歷時間的方式，並不是用什麼隨機丟掉一半，把運氣不好的人排除掉。也不是什麼像下面這段所說的尋找一個點，一個感動、注意、雙眼為之一亮的點。不是尋找什麼鳳毛麟角。</p>
-
-<blockquote><p>作者建議，當100選1的時候，應該直接隨便看一張履歷表，看看此人是否有哪個「點」讓你感動、讓你注意、讓你雙眼為之一亮？不是想辦法刪去，而是「尋找」那個鳳毛麟角之特色。</p></blockquote>
-
-<p>Ernestine 的方法很簡單。今天如果我要找程式設計師，<strong>我就只專注在相關的技能、經驗或作品上。而不是看著履歷表上洋洋灑灑一大堆與適任與否無關的資訊或情報。</strong></p>
-
-<hr />
-
-<p>看完了這個故事，是不是覺得英文閱讀能力很重要呢？多培養自己的英文閱讀，直接吸收第一手資訊，才能夠間接提高自己的好運度喔！</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -1040,7 +521,7 @@ echo</code></pre></noscript></div>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/05/01/mit-game-jam-dora/">四個人兩天開發的《Dora》</a>
+        <a href="/blog/2012/05/01/mit-game-jam-dora/">四個人兩天開發的《Dora》- MIT Game Jam 心得分享</a>
       </li>
     
       <li class="post">

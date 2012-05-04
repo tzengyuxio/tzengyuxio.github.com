@@ -4,7 +4,7 @@
   <title><![CDATA[Category: productivity | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/categories/productivity/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-04T15:43:54+08:00</updated>
+  <updated>2012-05-05T07:53:54+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,178 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[我的貼標籤規範]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/"/>
+    <updated>2012-04-21T06:33:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline</id>
+    <content type="html"><![CDATA[<p>前幾天討論了<a href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/">目前各家網站標籤功能的混亂</a>，即便有這些混亂，「標籤」仍是訊息管理非常重要的一個工具，也是落實真正<a href="http://zh.wikipedia.org/wiki/%E8%AF%AD%E4%B9%89Web">語義網</a>（semantic web）的一個基礎。</p>
+
+<p><img src="/images/2012/2012-04-21-too-many-tags.png" alt="too many tags!" /></p>
+
+<!-- more -->
+
+
+<p>然而正由於目前沒有一致性的標籤標準，人們對於標籤的使用也很隨興，所以會常常看到下面三種情形：</p>
+
+<ol>
+<li><p>同一個概念以不同的詞語組合方式標籤</p>
+
+<p> 例如一篇文章中同時加入了 <code>win7</code>, <code>Windows 7</code>, <code>MS windows 7</code>, <code>windows-7</code> 等標籤，有縮寫、有全名、有各種不同的連接詞。這種現象在以搜尋流量為主的媒體網站中尤為常見。上面的圖就是一個活生生血淋淋（？）的例子，這組關鍵字取自 Engadget 的<a href="http://chinese.engadget.com/2012/04/20/sony-patent-application-aims-to-put-names-to-faceless-mmo-player/">這篇文章</a>。</p></li>
+<li><p>同一個概念以不同的單字形式標籤</p>
+
+<p> 以英文做標籤的網站中很容易發生這種情形，因為一個概念在不同的詞性表現下就是不同的單字，因而成為不同的標籤關鍵字。例如我想要加上「部落格」這個標籤，用英文寫時就可能同時把名詞、動詞、動名詞，還有單數型複數型全部通通填上去，像這樣： <code>blog</code>, <code>blogging</code>, <code>blogs</code>。</p></li>
+<li><p>同一個概念以不同的語言標籤</p>
+
+<p> 這個就是多語言使用者的苦惱了。例如像我這樣的宅宅就會因為以下 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 等標籤到底要用哪個好而苦惱，而最後的結果通常就是全部都用。</p></li>
+</ol>
+
+
+<p>這三種情形都是用不同的方式去標籤同一個概念，雖然初衷是為了將來方便搜尋，但往往反而導致搜尋時的困難。考慮以下情形：假設我的一篇部落格文章用了 <code>win7</code> 與 <code>Window 7</code> 作為標籤，另一篇主題近似的文章卻是用了 <code>Windows 7</code> 與 <code>win-7</code> 作為標籤。這種不一致性會讓讀者在前篇文章中點下 <code>win7</code> 這個標籤連結時，無法將所有主題相關的文章列出。</p>
+
+<p>另外一個問題則是製造不必要的心力浪費。因為沒有一個標準來選擇用哪個單詞做標籤，因此也不知道自己將來要回頭找資料時，會用哪個單詞來做搜尋，只好想辦法把所有自己想得到的所有相關字一股腦兒全部填入。</p>
+
+<p>為了避免上述問題，雖然目前每個網站的標籤機制如同多頭馬車各行其道，制定一個自己個人使用的標籤習慣（或規範）倒是可行的一個作法。這個問題相信困擾的不只是我，上網找了一下，有兩篇值得參考的文章，第一個是 Calvin C. Yu 所寫的 <a href="http://www.slideshare.net/calvinyu/hitech-hi-tag">Taggin Guidelines</a> （在投影片中的第 13 頁），主要原則如下：</p>
+
+<blockquote><ul>
+<li>簡練</li>
+<li>小寫</li>
+<li>單數</li>
+</ul>
+</blockquote>
+
+<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong><a href="http://bhc3.com/2008/08/22/why-isnt-this-the-tag-standard-multi-word-comma-separated/">複數詞組，逗號分隔</a></strong> (Multi Word, Comma Seperated)。</p>
+
+<hr />
+
+<p>以上便是我個人使用標籤的一些而我自己所使用標籤的標準如下：</p>
+
+<ol>
+<li><p><strong>簡便性</strong></p>
+
+<ol>
+<li><p><strong>盡量簡單。</strong></p></li>
+<li><p><strong>方便輸入。</strong>所以標籤時會以英文為主，例如用 <code>browser</code> 而不用 <code>瀏覽器</code>。</p></li>
+<li><p><strong>自己容易想起。</strong>通常第一個想到的字詞就是了。</p></li>
+<li><p><strong>使用容易理解的詞。</strong></p></li>
+</ol>
+</li>
+<li><p><strong>一致性</strong></p>
+
+<ol>
+<li><p><strong>一個概念一個詞。</strong>所以 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 就只剩下用一個 <code>anime</code>。</p></li>
+<li><p><strong>小寫。</strong>同樣是為了方便輸入。</p></li>
+<li><p><strong>用單數，用名詞。</strong>當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。</p></li>
+<li><p><strong>人名的標記盡可能從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
+<li><p><strong>除非是自己口語常用的縮寫，不然不使用縮寫作標記。</strong><code>nds</code> <code>win7</code> <code>xbox360</code> 都很好理解，可是用 <code>resp</code> <code>req</code> 來做為 <code>response</code> <code>request</code> 標籤的替代，就太過頭了。現在連寫程式都不鼓勵這種縮寫了。</p></li>
+</ol>
+</li>
+<li><p><strong>格式</strong></p>
+
+<ol>
+<li><p><strong>省略單字間空白。</strong>也就是說用 <code>macosx</code> 而非 <code>mac os x</code>。不過英文人名是例外；日常用字如 <code>smartphone</code> 我們容易斷字，相對的人名如果省略空白有時候就不容易逆推。其他如果空白省略會造成歧異的話，也應該保留空白於關鍵字中。</p></li>
+<li><p><strong>以逗號區隔關鍵字。</strong>正確來說應該是以「逗號加空白」區隔關鍵字。</p></li>
+</ol>
+</li>
+</ol>
+
+
+<hr />
+
+<p>以上便是我個人使用的標籤規則。如果你有不錯的標籤習慣，也歡迎一起討論分享。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[形形色色的標籤機制]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/"/>
+    <updated>2012-04-18T09:53:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats</id>
+    <content type="html"><![CDATA[<p><img src="/images/2012/2012-04-18-inconsistency-of-tags.jpg" alt="inconsistency of tags" /></p>
+
+<p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
+
+<!-- more -->
+
+
+<ul>
+<li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>
+<li><code>label</code>: Gmail, Blogger</li>
+<li><code>keyword</code>: iPhoto, Aperture</li>
+<li><code>hashtag</code>: Twitter, Google+</li>
+<li><code>category</code>: Anobii, WordPress</li>
+</ul>
+
+
+<p>考慮到中文翻譯的話，又更加混亂：</p>
+
+<ul>
+<li><strong>標籤</strong>：Flickr, Gmail, Blogger, 豆瓣, WordPress</li>
+<li><strong>標記</strong>：Picasa, YouTube</li>
+<li><strong>關鍵字</strong>：iPhoto</li>
+<li><strong>分類</strong>：Anobii, WordPress</li>
+</ul>
+
+
+<p>針對以上的清單進行耙梳，我們可以得到下面幾個觀察：</p>
+
+<ol>
+<li><p>這些類似的功能中，最常見的英文名字是 "tag"，中文名字是「標籤／标签」。</p></li>
+<li><p>然而在 Google 的產品中，"tag" 通常翻作「標記」；「標籤」這詞則是用在 "label" 上（儘管他們兩者功能接近）。</p></li>
+<li><p>hashtag 有其自有的形式：<code>#somewordswithoutspace</code>, 不過其使用的方式與目的和單純的標籤（tag）並無太大差別。</p></li>
+<li><p>有些應用服務存在著 category 與 tag 兩種機制，一個物件（例如部落格文章）可能只隸屬於單一分類（category）但可擁有多個標籤（tag）。但是現在越來越多的應用服務都可以讓使用者將單一物件同時歸屬於多個分類之下，使得分類與標籤的界線漸趨模糊。</p></li>
+<li><p>可以從另外一個角度來釐清分類與標籤的不同：分類屬於事先規劃好的清單，標籤則是依照物件內容隨意添加的清單。</p></li>
+<li><p>不過在只有「分類」沒有「標籤」機制的網站中（如 Anobii），「分類」的使用方式其實跟「標籤」是沒有兩樣的。</p></li>
+<li><p>反之，只有標籤機制的網站，如 Blogger, 某種程度上也可以透過標籤來模擬分類的機制（可以參考<a href="http://reader.aqualuna.me/">此網站</a>的右側選單）。</p></li>
+</ol>
+
+
+<p>蠻混亂的，不是嗎？為了方便起見，我這邊用「<strong>分類 (category)</strong>」、「<strong>標籤 (tag)</strong>」與「<strong>Hashtag</strong>」來稱呼上面一大堆名字所代表的功能，其中「標籤 (tag)」同時也代表了 <em>label</em> 與 <em>keyword</em>。</p>
+
+<p>分類、標籤與 Hashtag 三者的功能接近又互相重疊，命名也是各家網站各自為政，沒有個準。不過混亂還沒結束，讓我們針對「標籤」的部份，繼續深入研究下去。</p>
+
+<h3>標籤格式</h3>
+
+<p>標籤的格式牽扯的問題既廣且深，它不僅決定了使用者在輸入欄位中填入標籤的方法，也涉及到了資料儲存在資料庫中的方式。標籤的格式有以下幾個考量層面：</p>
+
+<ol>
+<li><p>間隔方式</p>
+
+<p> 常見的間隔方式分兩種：<strong>空白</strong>與<strong>逗號</strong>。Flickr 採用空白間隔，Blogger 與 YouTube 則是逗號間隔。這邊還看不出什麼大問題，請接著看下去。</p></li>
+<li><p>允許空白與否</p>
+
+<p> 基本上，大多數的標籤功能都允許標籤內含空白，我們免不了會遇到例如 <code>"White House"</code> 或 <code>"Windows Vista"</code> 這樣的標籤。這時候不同的間隔方式就會帶來不同的考量了。</p>
+
+<ol>
+<li><p><strong>以空白間隔的標籤</strong>，為了要允許空白字元作為標籤的一部分，所以必須引入引號，被引號包住的詞算做一個標籤，這是 Flickr 的作法。所以一張有「<code>white</code> <code>house</code>」標籤的照片，也許是張白色的房子；而一張有「<code>"white house"</code>」標籤的照片，則可能是美國白宮。不過這樣會使得引號無法作為標籤的一部分，比方說「<code>5'7"</code>」（五呎七吋）這樣的詞就不能拿來當標籤了。</p></li>
+<li><p><strong>以逗號間隔的標籤</strong>，在含有空白間隔的標籤問題上看起來比較單純。但實作上其實有一點要注意，就是真正的間隔符號並非單單只有逗號，而是<strong>逗號加上一個空白</strong>。因為人們在輸入時習慣在逗號後面加入空白，如果說空白是合法標籤字元的話，那麼為什麼只有單字間的空白才被記入，單字前後的空白都被忽略呢？</p></li>
+</ol>
+</li>
+<li><p>大小寫</p>
+
+<p> 這邊再以 Flickr 與 YouTube 為例子作比較。YouTube 對於標籤的大小寫是照單全收，所以 <code>"TREE"</code> 標籤點下去的搜尋就是 "TREE"，而反之全小寫標籤的搜尋文字就是小寫的，反正搜尋結果無視大小寫，所以不成問題。</p>
+
+<p> Flickr 的作法稍微複雜些，除了你所輸入的之外，Flickr 還會另外將標籤簡化，然後儲存。你可以在三張照片分別使用 <code>"TREE"</code> 與 <code>"Tree"</code> 與 <code>"tree"</code>  這三種大小不同的標籤名，顯示時也是顯示各自不同的大小寫，然而他們都是代表著同樣的一個標籤。所以，如果你在一張照片中使用了 <code>"TREE"</code> 的標籤後，接著再輸入 <code>"tree"</code> 標籤，會發現沒有任何反應，因為標籤重複了。</p></li>
+<li><p>內部處理</p>
+
+<p> Flickr 在輸入標籤時所做的處理，除了大小寫外，也套用在空白上。因此，<code>"White House"</code>, <code>"whitehouse"</code>, <code>"WhiteHouse"</code> 這三個標籤同樣都是指向 <code>"whitehouse"</code> 這個內部處理的標籤。Flickr 內部運作時的標籤，是會把空白去掉並且全部轉為小寫字母。</p>
+
+<p> Youtube 就不同了，如前所述，你輸入什麼標籤它就存什麼，所以 <code>"White House"</code> 跟 <code>"whitehouse"</code> 是不同的。事實上，你用這兩組字串去 YouTube 搜尋，也會得到不一樣的結果。</p></li>
+</ol>
+
+
+<hr />
+
+<p>延伸閱讀：<a href="http://37signals.com/svn/archives2/tag_formats_cant_we_all_just_get_along.php">Tag formats: Can't we all just get along? - Signal vs. Noise (by 37signals)</a></p>
+
+<p>2005 年的文章。估計是 37signals 要實作標籤系統時，研究了當時幾個主流網站的標籤機制，對象包括 del.icio.us, 43things, Yahoo’s My Web, flickr 與 Amazon。這篇文章底下也有頗多值得一看的討論。文章的最後提到：</p>
+
+<blockquote><p>當新科技剛出現時，不一致是免不了的。然而這些不同的格式是否會持續下去，或是終將會有個標準一統天下呢？</p></blockquote>
+
+<p>2005 到現在，都六、七年了，標籤功能其實仍舊處於混沌未明的時代。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣]]></title>
@@ -166,96 +338,6 @@
     <updated>2012-01-01T15:21:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred</id>
     <content type="html"><![CDATA[<p><a href="http://www.launchy.net/index.php">Launchy</a> 是一款快速啟動軟體。只要按下熱鍵，就會跳出一個視窗讓你輸入一些文字來啟動軟體或是上網搜索，可說是圖形介面下的命令列工具，對於習慣用鍵盤工作的人，可以大大提昇電腦操作上的生產力。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="194" src="http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">上為 Alfred, 下為 Launchy</td></tr></tbody></table><br />話說<a href="http://blog.aqualuna.me/2006/09/launchy.html">我用 Launchy 前前後後也有五年多的時間</a>了。這段時間裡，只要我安裝新電腦或是重灌系統，Launchy 幾乎都是最前幾個安裝的程式之一，通常裝了瀏覽器（為了抓最新版防毒軟體與防火牆）與防毒軟體（這東西在電腦越乾淨的時候裝越好）之後，就是安裝 Launchy 了。<br /><br />這一兩年，我主要的工作環境從 Windows 轉移到 Mac 上，一開始找不到滿意的快速啟動軟體。在 Mac 上曾經風雲一時的 QuickSilver, 也因為有段時間久未更新，傳出停止開發的風聲，對於新版 OS X的支援也不甚理想，讓我對於這套軟體缺乏信心。所幸，沒過多久，聽見 Launchy 推出 Mac 版的消息，我立刻就在 Mac 裡安裝了這套從 Windows 時代就一直陪伴著我的軟體，繼續享受快速啟動的樂趣。<br /><br />就這樣一直到了上個月，因為意外的緣故讓我注意到了 <a href="http://www.alfredapp.com/">Alfred</a> 這套軟體。一開始沒興趣，畢竟人家已經有了 Launchy 了（羞）。但是好死不死讓看見 Alfred 的官方網站做的很漂亮（可見門面很重要），於是想說安裝來看看吧，反正免費。結果不試則已，一試就成主顧。在預設安裝下，我都還沒作什麼設定，就可以進行許多的操作，包括啟動軟體、網路搜尋、數學計算。而且 Alfred 除了功能之外，介面與圖示比起 Launchy 也更加符合 Mac 的調性，使得我對 Launchy 的忠誠開始動搖。<br /><br />其實我對 Launchy 還是很滿意，但是 Alfred 給我的感覺卻是一整個驚艷。Launchy 有的功能，Alfred 都做到了，而且做的更好。Alfred&nbsp;讓我用沒一天就開始認真考慮購買 Power Pack 的可能性。所以，別了，Mac 上的 Launchy。不過別擔心，偶爾我們還是會在 Windows 上見面的。<br /><br /><em> * </em><br /><br />後記：<strike>其實 Launchy 還是有些 Alfred 比不上的地方。比方說 Alfred 的軟體搜尋只能從頭或是從斷字的地方開始，不能跳著搜尋，但 Launcy 可以。以 iTunes 為例，Alfred 可以透過 "itu" 或是 "tun" 找到 iTunes, 可是如果輸入 "une" 或是 "itn" 就找不到了；對於 Launchy 而言，上面四種方式都可以找到 "iTunes"。</strike><span style="color: red;">更正，Alfred 一樣可以透過輸入部分且不連續的字母來搜尋，只要到 Preference 裡勾選 "Fuzzy: Partial matching for Applications" 即可。</span></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Eclipse 的常用快速鍵]]></title>
-    <link href="http://tzengyuxio.me/blog/2011/07/30/eclipse-common-keyboard-shortcuts/"/>
-    <updated>2011-07-30T16:09:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2011/07/30/eclipse-common-keyboard-shortcuts</id>
-    <content type="html"><![CDATA[<p>我身為一個程式設計師，有個鍵盤在身邊，也很合邏輯。這個鍵盤呢，是我用來撰寫代碼用的，很合理吧？可話說回來，這扳子，啊不，這鍵盤如果只有拿來寫代碼，那可就浪費了；身為一個<strong>高生產力</strong>的程式設計師，應該充分活用鍵盤的各種功能，活用到甚至能夠取代大多數滑鼠的操作，那才叫<a href="http://youtu.be/yKWwrxaOxsY">專業</a>。所以說，善用功能熱鍵就很重要啦，江湖上有本武功秘笈，書名叫做<a href="http://www.anobii.com/books/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E6%8F%90%E5%8D%87%E7%94%9F%E7%94%A2%E5%8A%9B%E7%A7%98%E7%AC%88/9789866840340/01c423030629cd8ad5/">《程式設計師提昇生產力秘笈》</a>，裡頭就有一段關於「奧義，鍵盤捷徑」的心法敘述：</p>
-
-<blockquote><p>......程式設計（除了使用者介面設計外）是文字性活動，所以，你應該儘可能把你的手放在鍵盤上。......你一整天都使用 IDE 建立程式碼，而 IDE 有大量鍵盤捷徑。<strong>全都學！</strong>使用鍵盤捷徑在原始碼內走動，一定比使用滑鼠快。 (P.30)</p></blockquote>
-
-<p>當然，沒有必要每個人都成為一代武林宗師，因此也沒有必要像上面說的一樣將每個鍵盤捷徑全部學起來。大多數人只要學個一招半式，就可以闖蕩江湖，應付<a href="http://wiki.komica.org/wiki/?%E9%AB%98%E9%81%94%E5%85%AB%E6%88%90">高達八成</a>以上的滑鼠操作。可是，功能熱鍵百百款，到底哪些才是常用需要記得呢？底下整理一些 Eclipse 上常用的熱鍵表：</p>
-
-<h2>編輯相關</h2>
-
-<ul>
-<li><code>Ctrl + Shift + F</code> = 重新排版</li>
-<li><code>Ctrl + Shift + M</code> = 加入 import （加入游標所在類別所需的 import）</li>
-<li><code>Ctrl + Shift + O</code> = 整理 imports （掃描整個檔案，加入所需並刪除沒用的）</li>
-<li><code>Ctrl + /</code> = 切換註解（按一次加上註解，再按一次取消註解）</li>
-<li><code>Ctrl + I</code> = 修正縮排</li>
-<li><code>Alt + Shift + ↑</code> = 擴大選取</li>
-</ul>
-
-
-<h2>游標或檔案定位</h2>
-
-<ul>
-<li><code>F3</code> = 跳到定義</li>
-<li><code>Ctrl + E</code> = 已開啟檔案清單</li>
-<li><code>Ctrl + O</code> = 開啟符號清單</li>
-<li><code>Ctrl + J</code> = 漸增式搜尋</li>
-</ul>
-
-
-<h2>除錯與執行</h2>
-
-<ul>
-<li><code>F11</code> = 以除錯模式啟動 (Debug)</li>
-<li><code>Ctrl + F11</code> = 啟動 (Run)</li>
-<li><code>F5</code> = 步進，深入一層 (Step Into)</li>
-<li><code>F6</code> = 步進，往下一行 (Step Over)</li>
-<li><code>F7</code> = 步進，回上一層 (Step Return)</li>
-</ul>
-
-
-<h2>重構相關</h2>
-
-<ul>
-<li><code>Alt + Shift + R</code> = 重新命名 (Rename)</li>
-<li><code>Alt + Shift + M</code> = 提煉函式 (Extract Method)</li>
-<li><code>Alt + Shift + L</code> = 提煉區域變數 (Extract Local Variable)</li>
-</ul>
-
-
-<p>如果覺得上面這些功能熱鍵還不夠看，當然也可以自己進去 Eclipse 的設定中去挖掘更多的指上神功。查看功能熱鍵列表的途徑要從選單列的 Window → Preferences 進入，接著就可以看到下面這張圖，然後按圖索驥，找到自己常用功能的熱鍵。</p>
-
-<p><img src="http://4.bp.blogspot.com/-0Bds_glMARA/TjO3I7Q5cRI/AAAAAAAAAZw/Pn_C_vQoIYY/s400/eclipse-shortcut.png" alt="eclipse key binding" /></p>
-
-<p>好啦，上面列出這許多的熱鍵，要怎樣才能有效的背下來呢？很簡單，不用背－－最有效的記憶方法不是靠腦袋記，而是<strong>用身體去記</strong>。把常用功能熱鍵印出來貼到電腦旁邊，然後不斷的用、不停的用，直到每次要使用該功能時，腦袋想都來不及想手指就已經按出組合熱鍵，這樣就再也忘不掉了。（不過太久沒用的話，還是需要一小段時間來重新回復手感，只要一小段時間而已，真的。）</p>
-
-<p>除此之外，當每次要使用選單列（Menu Bar）或工具列（Toolbar）上某樣功能時，停下來多想兩秒鐘：不要急著按下滑鼠左鍵，先看看選單文字或按鈕的提示上有沒有快速鍵的按法，有的話將手放開滑鼠，重新以快速鍵的方式完成自己的目的。久而久之，這些操作自然都會內化成為身體上的一部分。只要持之以恆，每日精進，減少手指頭在鍵盤滑鼠上切換的次數，那麼總有一天，我想，要達到「每小時幾十萬行程式碼上下」也不再是個夢想啦！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[［情報］快速啟動軟體：Launchy]]></title>
-    <link href="http://tzengyuxio.me/blog/2006/09/23/launchy/"/>
-    <updated>2006-09-23T20:20:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2006/09/23/launchy</id>
-    <content type="html"><![CDATA[<p>最近常見到 <a href="http://quicksilver.blacktree.com/">Quicksilver</a> 這詞，google 了一下，原來這是在 Mac 上快速啟動軟體（但不僅止於快速啟動軟體）的程式。</p>
-
-<!-- more -->
-
-
-<p>Windows 上也有類似的軟體，我先前一直使用的是 <a href="http://pcman.ptt.cc/ko/ko.html">PCMan 的熱鍵超速啟動</a>，只要連按兩下 Caps Lock 加上熱鍵字串便可啟動程式，蠻方便順手的，不過似乎已經不再維護與更新。而且如果換電腦或是有新增軟體的話，需重新設定熱鍵字串，算是比較麻煩之處。google 後來推出 <a href="http://desktop.google.com.tw/zh/TW/">google desktop</a>，可以透過連按兩下 Ctrl 來搜尋檔案，操作上與熱鍵超速啟動有異曲同工之妙，於是我便想，若是有 plug-in 能夠讓 google desktop 也能快速啟動程式，統一在相同的操作與介面下，那就省事多了。可惜找了半天沒見到這類的 plug-in。</p>
-
-<p>回到 Quicksilver，當我在找 QuickSilver 的資料時，剛好見到<a href="http://www.11tmr.com/11tmr.nsf/d6plinks/DEVT-6A4G3G">有篇文章</a>提到 Windows 上也有類似 Quicksilver 的軟體，我分別上各軟體的首頁看了看：</p>
-
-<ul>
-<li><a href="http://www.candylabs.com/approcket/">AppRocket</a>: 看起來似乎不錯，不過要錢，我就懶得裝了。</li>
-<li><a href="http://www.boletrice.com/pccom/">PC-Com</a>: 網頁上的介紹與圖片吸引不了我……</li>
-<li><a href="http://www.launchy.net/">Launchy</a>: 看起來挺不賴，而且是 Open Source，大大的加分！</li>
-<li><a href="http://www.bayden.com/slickrun/">Colibri</a>: 好像也蠻不錯的，不過 Launchy 可以換 skin :-P</li>
-<li><a href="http://colibri.leetspeak.org/">SlickRun</a>: 連推薦 SlickRun 的人都說 Launchy 比較好，我還能說什麼呢？</li>
-</ul>
-
-
-<p>所以我就下載了 Launchy 來試了。初使用的感覺還不賴，也許我會逐漸改變習慣，讓陪伴我多年的「熱鍵超速啟動」慢慢退休吧。</p>
 ]]></content>
   </entry>
   
