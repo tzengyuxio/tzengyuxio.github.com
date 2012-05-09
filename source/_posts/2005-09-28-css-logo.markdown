@@ -15,7 +15,7 @@ tags: [css, html, sticker]
 
 <span style="color: blue;">flick</span><span style="color: red;">r</span>
 
-```html
+``` html
 <span style="color: blue;">flick</span><span style="color: red;">r</span>
 ```
 
@@ -29,7 +29,7 @@ tags: [css, html, sticker]
 
 <span style="color: #C89C19;">43</span> <span style="color: black;">Things</span>
 
-```html
+``` html
 <span style="color: #C89C19;">43</span> <span style="color: black;">Things</span>
 ```
 
@@ -41,7 +41,7 @@ tags: [css, html, sticker]
 
 <span style="color: #1393C0">Blog</span><span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px">lines</span>
 
-```html
+``` html
 <span style="color: #1393C0">Blog</span><span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px">lines</span>
 ```
 
@@ -53,7 +53,7 @@ tags: [css, html, sticker]
 
 <span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;">23</span>
 
-```html
+``` html
 <span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;">23</span>
 ```
 
@@ -65,7 +65,7 @@ tags: [css, html, sticker]
 
 <span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;">L<span style="color:#123466">i</span>VEJOURNAL</span>
 
-```html
+``` html
 <span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;">L<span style="color:#123466">i</span>VEJOURNAL</span>
 ```
 
@@ -77,7 +77,7 @@ tags: [css, html, sticker]
 
 <span style="font-weight: bold"><span style="color:#0075BE; font-family:Palatino Linotype">G</span><span style="font-family: Verdana"><span style="color: #DA3838; font-variant: small-caps">m</span><span style="color: #FFC514">a</span><span style="color: #0075BE">i</span><span style="color: #2EB457">l</span></span></span>
 
-```html
+``` html
 <span style="font-weight: bold"><span style="color:#0075BE; font-family:Palatino Linotype">G</span><span style="font-family: Verdana"><span style="color: #DA3838; font-variant: small-caps">m</span><span style="color: #FFC514">a</span><span style="color: #0075BE">i</span><span style="color: #2EB457">l</span></span></span>
 ```
 

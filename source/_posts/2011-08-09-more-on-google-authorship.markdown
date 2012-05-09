@@ -7,7 +7,7 @@ categories: [雜筆, coding]
 tags: [google]
 ---
 
-在[前一篇文章](/blog/2011/08/06/google-authorship/)中筆者介紹了 Google Authorship，並且也針對 Blogger 的使用者說明該如何設定來替自己的文章與個人檔案建立連結。今天讓我們更進一步來看看 Google Authorship 的運作機制，以及非 Blogger 的使用者應該如何設定 Google Authorship 來幫助自己的文章曝光。
+在[前一篇文章](/blog/2011/08/google-authorship/)中筆者介紹了 Google Authorship，並且也針對 Blogger 的使用者說明該如何設定來替自己的文章與個人檔案建立連結。今天讓我們更進一步來看看 Google Authorship 的運作機制，以及非 Blogger 的使用者應該如何設定 Google Authorship 來幫助自己的文章曝光。
 
 <a href="http://4.bp.blogspot.com/-eY0vKmYBfVo/TkAdC64IdKI/AAAAAAAAAcU/hEdDx2YEYdg/s1600/google_auth.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="184" src="http://4.bp.blogspot.com/-eY0vKmYBfVo/TkAdC64IdKI/AAAAAAAAAcU/hEdDx2YEYdg/s400/google_auth.png" width="400" /></a>
 
@@ -57,4 +57,4 @@ tags: [google]
 - 文章結尾處，例如把作者名字加上 Google Profile 連結
 - 使用作者頁面（Author Page）的方式
 
-至於[前篇文章](/blog/2011/08/06/google-authorship/)中的做法，便是利用 Blogger 本身會替每篇文章加上 `rel="author"` 連結到 [Blogger Profile 頁面](http://www.blogger.com/profile/14386691974182836637)的特性，如此一來，只要再替 Google Profile 與 Blogger Profile 兩者建立關連即可。
+至於[前篇文章](/blog/2011/08/google-authorship/)中的做法，便是利用 Blogger 本身會替每篇文章加上 `rel="author"` 連結到 [Blogger Profile 頁面](http://www.blogger.com/profile/14386691974182836637)的特性，如此一來，只要再替 Google Profile 與 Blogger Profile 兩者建立關連即可。

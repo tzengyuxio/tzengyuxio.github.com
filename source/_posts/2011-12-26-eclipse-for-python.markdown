@@ -6,7 +6,7 @@ categories: [coding]
 tags: [eclipse, pydev, python]
 ---
 
-這篇文章是[〈Eclipse 安裝筆記〉](/blog/2011/12/26/eclipse-setup-note/)系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：
+這篇文章是[〈Eclipse 安裝筆記〉](/blog/2011/12/eclipse-setup-note/)系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：
 
 - 作業系統：Mac OS X 10.7.2
 - 程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers

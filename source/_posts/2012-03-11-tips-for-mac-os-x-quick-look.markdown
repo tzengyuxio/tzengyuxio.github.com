@@ -21,11 +21,13 @@ tags: [mac, shell, quicklook, csv]
 
 把 [FILE] 替換成要開啟的檔名即可。不過這指令也不算短，要更方便的話，可以在 `~/.bashrc` 中加入以下指令別名 (alias)，這樣只要輸入 `ql [FILE]` 就可以立刻檢視了：
 
-    alias ql='qlmanage -p'
+``` sh
+alias ql='qlmanage -p'
+```
 
 對了，設定檔 .bashrc 預設在 Mac OS X 中是不起作用的，可以參考[這篇文章][bashrc]來讓 .bashrc work。
 
-[bashrc]: http://coder.aqualuna.me/2012/03/bashrc-in-mac-terminal-os-x-lion.html
+[bashrc]: /blog/2012/03/dot-bashrc-in-mac-terminal/
 
 ## 增加支援檔案類型的 Plugin
 

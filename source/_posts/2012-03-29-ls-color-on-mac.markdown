@@ -21,7 +21,9 @@ tags: [mac, shell, ls]
 
 當然，每次都加這參數也是麻煩。寫程式的都是懶人，所以我在 `~/.bashrc` 檔案中加入下面這行設定：
 
-    alias ls='ls -GF'
+``` sh
+alias ls='ls -GF'
+```
 
 要說明一下的是，上面的設定除了開啟顏色輸出外，還加了 `-F` 這個能夠在 ls 輸出中加入識別符號的參數。像是目錄的名字後面會加上 '/', 可執行檔會加上 '*',  符號連結 (symbolic link) 會加上 '@' 等等。
 
@@ -31,7 +33,9 @@ tags: [mac, shell, ls]
 
 直接說結果，我所使用的顏色組合如下：
 
-    export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+``` sh
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+```
 
 將這行加入 `~/.bash_profile` 就可以享受美美的 ls 了。這個配色設定是從 [LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD][1] 這網頁參考來的。
 

@@ -9,7 +9,7 @@ tags: [html, css, googlecodeprettify, solarized, colorscheme]
 
 [我用 google-code-prettify 來做 blog 文章中的代碼上色][mygcp]，google-code-prettify 本身有[附上幾個 Color Scheme][gcpcolor], 然而除了預設的之外，都是以暗色背景為主。
 
-[mygcp]: /blog/2011/08/07/embeded-code-with-google-code-prettify/
+[mygcp]: /blog/2011/08/embeded-code-with-google-code-prettify/
 [gcpcolor]: http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html
 
 <!-- more -->
@@ -17,7 +17,7 @@ tags: [html, css, googlecodeprettify, solarized, colorscheme]
 昨天心血來潮將 [Solarized][solarized] 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考[這篇文章][mysolarized]。
 
 [solarized]: http://ethanschoonover.com/solarized
-[mysolarized]: /blog/2012/02/10/from-zenburn-to-solarized/
+[mysolarized]: /blog/2012/02/from-zenburn-to-solarized/
 
 ## 下載 / Download
 - Solarized Light
@@ -41,7 +41,7 @@ tags: [html, css, googlecodeprettify, solarized, colorscheme]
 
 正常排版版本 ([download][1])：
 
-```css
+``` css
 .pln{color:#657b83}
 @media screen{
 	.str{color:#2aa198}
@@ -75,7 +75,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
 
 最小化版本 ([download][2])：
 
-```css
+``` css
 .pln{color:#657b83}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#93a1a1}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#657b83}.tag{color:#268bd2}.atn{color:#93a1a1}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
 ```
 
@@ -83,7 +83,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
 
 正常排版版本 ([download][3])：
 
-```css
+``` css
 .pln{color:#839496}
 @media screen{
 	.str{color:#2aa198}
@@ -117,7 +117,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
 
 最小化版本 ([download][4])：
 
-```css
+``` css
 .pln{color:#839496}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#586175}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#839496}.tag{color:#268bd2}.atn{color:#586175}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
 ```
 

@@ -39,4 +39,4 @@ iOS 版本製作的團隊主要是 2K Games China 的團隊，一進入遊戲就
 
 延伸閱讀：
 
-- [文明帝國V - 文化勝利與單城挑戰心得](/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/)
+- [文明帝國V - 文化勝利與單城挑戰心得](/blog/2011/04/civ5-cultural-victory-and-one-city-challenge/)

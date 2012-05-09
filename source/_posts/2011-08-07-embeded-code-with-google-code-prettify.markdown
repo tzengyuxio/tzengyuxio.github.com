@@ -41,7 +41,7 @@ tags: [html, googlecodeprettify]
 
 然後再修改自己網頁的範本。有兩個地方要修改，一個是在 `</head>` 標籤之前加上 css 與 javascript 的載入；另外一個是在 `<body>` 標籤內加上 onLoad 函式。
 
-```html
+``` html
 <head>
   <-- 中略 -->
   <-- 1. 在 /head 標籤前加入下面兩行 -->
@@ -57,7 +57,7 @@ tags: [html, googlecodeprettify]
 ## Step 3.
 接下來只要在想要使用代碼的地方，用 `<pre>` 或 `<code>` 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。
 
-```html
+``` html
 <pre class="prettyprint">
 #include <stdio.h>
  
@@ -82,7 +82,7 @@ int main(void)
 
 如果想要自己指定區塊內的程式語言，可以再加上 `lang-*`，其中 * 要替換成該程式語言的代碼。
 
-```html
+``` html
 <pre class="prettyprint lang-html">
   <-- HTML 的場合 -->
 </pre>

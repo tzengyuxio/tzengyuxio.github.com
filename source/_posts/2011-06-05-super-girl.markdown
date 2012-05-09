@@ -12,7 +12,7 @@ tags: [cityhunter, 岡村靖幸, ed]
 
 <!-- more -->
 
-〈Super Girl〉是《城市獵人》52 話到 88 話的 ED 曲，剛好介於[〈Get Wild〉](/blog/2011/06/03/get-wild/)與[〈STILL LOVE HER (失われた風景)〉](/blog/2011/06/02/still-love-her/)之間。我很喜歡這首 ED 畫面所呈現的感覺，唱盤、吊扇、百頁窗，一堆很有質感的小物件。這首 ED 動畫即使放到今天也仍舊是經典製作。
+〈Super Girl〉是《城市獵人》52 話到 88 話的 ED 曲，剛好介於[〈Get Wild〉](/blog/2011/06/get-wild/)與[〈STILL LOVE HER (失われた風景)〉](/blog/2011/06/02/still-love-her/)之間。我很喜歡這首 ED 畫面所呈現的感覺，唱盤、吊扇、百頁窗，一堆很有質感的小物件。這首 ED 動畫即使放到今天也仍舊是經典製作。
 
 <iframe width="480" height="360" src="http://www.youtube.com/embed/m352O_nZa70?rel=0" frameborder="0" allowfullscreen></iframe>
 

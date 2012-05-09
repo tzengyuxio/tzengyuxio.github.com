@@ -6,7 +6,7 @@ categories: [coding]
 tags: [git, eclipse, svn, egit, subclipse, subversive]
 ---
 
-這篇文章是[〈Eclipse 安裝筆記〉](/blog/2011/12/26/eclipse-setup-note/)系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：
+這篇文章是[〈Eclipse 安裝筆記〉](/blog/2011/12/eclipse-setup-note/)系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：
 
 - 作業系統：Mac OS X 10.7.2
 - 程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers
@@ -15,7 +15,7 @@ tags: [git, eclipse, svn, egit, subclipse, subversive]
 
 <!-- more -->
 
-Eclipse 的 Git 功能相關套件是官方所提供的 EGit，在預設的「Available Software Sites」中可以找到，安裝方法可以參考[〈在 Eclipse 開發 C/C++〉](/blog/2011/12/26/eclipse-for-cplusplus/)這篇，唯一的差別是在第 2 步驟中，原本在「type filter text」欄位輸入「cdt」作為過濾字元，改成輸入「git」，這樣就可以找到 EGit 的 Software Site 了。
+Eclipse 的 Git 功能相關套件是官方所提供的 EGit，在預設的「Available Software Sites」中可以找到，安裝方法可以參考[〈在 Eclipse 開發 C/C++〉](/blog/2011/12/eclipse-for-cplusplus/)這篇，唯一的差別是在第 2 步驟中，原本在「type filter text」欄位輸入「cdt」作為過濾字元，改成輸入「git」，這樣就可以找到 EGit 的 Software Site 了。
 
 Subversion 的部份稍微複雜點，但也不難，就是二選一的問題而已。Eclipse 的 Subversion 套件有兩個：Subclipse 和 Subversive。簡單的說，Subclipse 是 Subversion 官方出的套件，Subversive 是 Eclipse 官方出的套件，而為什麼兩邊的官方各自推出套件，這我就不想深究了，我也懶得同時裝起來測試看看哪個順手，所以就找了一下資料，以下的內容引用自[〈Eclipse SVN插件比较 Subclipse vs Subversive〉](http://www.akii.org/eclipse-svn-plugins-subclipse-vs-subversive.html)這篇文章：
 
@@ -29,7 +29,7 @@ Subversion 的部份稍微複雜點，但也不難，就是二選一的問題而
 >
 > 以上几点是否可以对你选择那个插件有所帮助呢？其实这两个插件都很不错，对于我们日常使用来说，哪个都能很好完成我们的任务，如果你还是不能确定， 就别再费神在这上面花工夫了，也不用再在网上寻找两者比较了，随便选一个就行了。
 
-我自己偶爾也會用用 TortoiseSVN, 或是直接用命令列，所以就選了 Subclipse。Subclipse 由於是非官方套件，安裝方式其實與 PyDev 一樣，所以只要參考[〈在 Eclipse 開發 Python〉](/blog/2011/12/26/eclipse-for-python/)這篇即可，唯一的差別是第 2 步驟中在 Market 進行搜尋時的關鍵字，要把 `pydev` 換成 `subclipse`。
+我自己偶爾也會用用 TortoiseSVN, 或是直接用命令列，所以就選了 Subclipse。Subclipse 由於是非官方套件，安裝方式其實與 PyDev 一樣，所以只要參考[〈在 Eclipse 開發 Python〉](/blog/2011/12/eclipse-for-python/)這篇即可，唯一的差別是第 2 步驟中在 Market 進行搜尋時的關鍵字，要把 `pydev` 換成 `subclipse`。
 
 當然，如果你想裝 Subversive 的話，因為 Subversive 是 Eclipse 官方推出的套件，所以安裝方式跟 EGit 一樣，只要進「Available Software Sites」尋找預設選項即可。至於細節我就不再多加贅述了。
 

@@ -8,14 +8,14 @@ tags: [python, crc32]
 
 用 Python 計算 CRC32 很簡單，只要使用內建的 binascii 模組即可。
 
-```python
+``` python
 import binascii
 print binascii.crc32("hello world")
 ```
 
 要反覆計算的話，可以用：
 
-```python
+``` python
 crc = binascii.crc32("hello")
 crc = binascii.crc32(" world", crc)
 ```
@@ -26,7 +26,7 @@ crc = binascii.crc32(" world", crc)
 
 <!-- more -->
 
-```python
+``` python
 import binascii
 def computeFileCRC(filename):
     try:
@@ -46,7 +46,9 @@ def computeFileCRC(filename):
 
 上面比較特別要注意的是這行：
 
-    crc = binascii.crc32(str,crc) & 0xffffffff
+``` python
+crc = binascii.crc32(str,crc) & 0xffffffff
+```
 
 根據官方文件，在 Python 2.x 的版本中，binascii.crc32 所計算出來的 CRC 值域為 [-2^31, 2^31-1] 之間的有號整數，為了要與一般 C 所實作的 CRC 結果作比對，需要將其轉為無號整數，所以加上 `& 0xffffffff` 這段來做轉換。如果是 Python 3.x 的版本，其計算結果為 [0, 2^32-1] 間的無號整數，因此不需額外加上修正。
 

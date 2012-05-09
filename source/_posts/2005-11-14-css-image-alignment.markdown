@@ -23,4 +23,4 @@ tags: [css]
 
 而 “float:left” 則是將所屬元件指定為浮動性質。
 
-[下一篇](/blog/2005/11/19/comics-no-topic/)便是應用範例。
+[下一篇](/blog/2005/11/comics-no-topic/)便是應用範例。

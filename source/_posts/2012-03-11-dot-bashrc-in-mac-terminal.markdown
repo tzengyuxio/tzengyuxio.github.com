@@ -13,7 +13,7 @@ tags: [mac, shell, terminal, bash]
 
 後來在家目錄下先建了個檔案 `.bash_profile`, 檔案內容如下：
 
-```sh
+``` sh
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi

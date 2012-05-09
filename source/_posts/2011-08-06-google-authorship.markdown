@@ -7,7 +7,7 @@ categories: [雜筆]
 tags: [google]
 ---
 
-<span style="color:red;">更新：關於 Google Authorship 的運作機制與非 Blogger 使用者的使用參考，[請見此篇](/blog/2011/08/09/more-on-google-authorship/)。</span>
+<span style="color:red;">更新：關於 Google Authorship 的運作機制與非 Blogger 使用者的使用參考，[請見此篇](/blog/2011/08/more-on-google-authorship/)。</span>
 
 Google 搜尋最近新加入了一項功能，就是可以在搜尋結果中顯示作者資訊。這項技術叫做 Google Authorship，實際的呈現結果如下圖（目前只有在 Google English 的搜尋才看得到）：
 

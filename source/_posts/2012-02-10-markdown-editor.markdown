@@ -57,8 +57,8 @@ iA Writer 看上去是個很簡單的編輯器，它也真的很簡單，簡單�
 
 iA Writer 在 App Store 的定價 $19.99，比起 Byword 倒是高了不少。不過最近似乎是在促銷，只要 $8.99，反倒比 Byword 便宜了些。喜歡用純文字寫文章的朋友，不妨考慮看看。
 
-[aqualuna]: http://coder.aqualuna.me/2011/10/asciidoc-markdown-restructuredtext.html
-[aqualuna 2]: http://coder.aqualuna.me/2012/02/os-x-markdown-html.html
+[aqualuna]: /blog/2011/10/lightweight-markup-language/
+[aqualuna 2]: /blog/2012/02/markdown-to-html-in-osx/
 [brooksreview]: http://brooksreview.net/2011/05/ia-writer/
 [bywordapp]: http://bywordapp.com/
 [hogbaysoftware]: http://www.hogbaysoftware.com/products/writeroom
