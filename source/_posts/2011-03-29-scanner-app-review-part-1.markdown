@@ -3,12 +3,15 @@ layout: post
 title: "iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）"
 date: 2011-03-29 10:57
 comments: true
-categories: app
+categories: [software]
+tags: [iphone, app, scanner]
 ---
 
 iPhone 的照相機除了拿來隨手拍拍外，偶爾拿來拍些白板、書頁之類的，作為記事用途也是挺方便的。之前都是用 [PDF Reader][apple] 將這些資料存起來，不過 PDF Reader 拍完照後必須手動調整頁面剪裁，當圖片一多就顯得麻煩，所以開始尋找專門的掃描軟體。
 
 當然 iPhone 上的「掃描軟體」跟實際的掃描器不同，主要是能夠對拍好的照片進行自動辨識與剪裁。大概看了一下網路上的討論，主要的就以下三款（依字母序排列，左邊免費版，右邊付費版）：
+
+<!-- more -->
 
 - [CamScanner Free][apple 2] / CamScanner+ ($4.99, a.k.a 《掃描全能王》)
 - [Genius Scan][apple 3] / Genius Scan+ ($2.99)

@@ -3,11 +3,13 @@ layout: post
 title: "在 Mac 輸入特殊文字符號"
 date: 2012-04-05 08:12
 comments: true
-categories: [mac]
-tags: [unicode]
+categories: [雜筆]
+tags: [mac, unicode]
 ---
 
 有時候在網路上會看到像「㍿」這樣的文字符號，有沒有好奇這是怎麼打出來的呢？這可不是把四個字打在一個格子裡面，而是這原本就是一個作為符號使用的 Unicode 文字。就好像英文中的 Trade Mark 可以用「™」表示一樣。類似的文字還有（如果底下只看到方框看不到字，表示你瀏覽器所用的字型沒有包含到下面這些 Unicode 字碼）：
+
+<!-- more -->
 
 ### 英文
 

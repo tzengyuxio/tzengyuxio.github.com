@@ -3,10 +3,13 @@ layout: post
 title: "To Iterate is Human, to Recurse, Divine"
 date: 2011-07-28 12:30
 comments: true
-categories: programming
+categories: [coding]
+tags: [recurse, iterate]
 ---
 
 今天偶然看到這句話，"To iterate is human, to recurse, divine."，無巧不巧，最近幾天的課程我也剛好在講解**遞迴**的概念。
+
+<!-- more -->
 
 說這句話的老兄是 [L. Peter Deutsch][deutsch]，雖然他的姓寫作是「德意志（Deutsch）」，可是這位德意志先生卻是個道道地地的美國麻省人。Deutsch 在電腦界最主要的貢獻就是 [Ghostscript][ghostscript] 和 [Archie][archie]。Ghostscript 是可以用來生成 PDF 或是 Postscript 格式文件的軟體，從 1988 第一版釋出一直到今年 2011 橫跨了 23 個年頭，仍然持續開發維護中（當然維護者早已換人接手，不再是 Deutsch 了），也衍生了許多分支專案。
 

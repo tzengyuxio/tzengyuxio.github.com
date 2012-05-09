@@ -3,13 +3,15 @@ layout: post
 title: "用 Vim 將不斷行文章轉為 BBS 格式"
 date: 2012-04-19 11:27
 comments: true
-categories: [editor]
-tags: [vim, bbs, ptt]
+categories: [coding]
+tags: [vim, bbs]
 ---
 
 我是一個鄉民。雖然大多數時間都在潛水，但偶爾也會浮上來寫些東西。
 
 ![ugly format in bbs](/images/2012/2012-04-19-ugly-format-in-bbs.png)
+
+<!-- more -->
 
 我不常在 BBS 上直接編輯，多半都是在習慣的編輯器上寫好再貼過去。不過問題來了，我寫文章的習慣都是一直打字一直打字，直到段落結束才換行，這樣的文字如果複製起來直接貼到 BBS 上發表，雖然還是能夠正常顯示，但在編輯與回文時就會出現過長的文字而造成如上圖般糟糕的版面效果。
 
@@ -17,10 +19,10 @@ tags: [vim, bbs, ptt]
 
 要完成任務，首先得在 `.vimrc` 檔案裡加入以下設定：
 
-    set fo+=Mm
+    set fo+=Bm
     set tw=72
 
-說明一下，`tw` 是 `textwidth`，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 `fo` 則是 `formatoptions` 的縮寫，其中的 Mm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。
+說明一下，`tw` 是 `textwidth`，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 `fo` 則是 `formatoptions` 的縮寫，其中的 Bm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。
 
 接著，為了讓事情更方便些，可以加入以下的按鍵映射：
 

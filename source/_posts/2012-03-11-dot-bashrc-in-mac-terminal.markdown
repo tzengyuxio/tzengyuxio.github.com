@@ -3,17 +3,21 @@ layout: post
 title: "設定 Mac Terminal 下的 .bashrc"
 date: 2012-03-11 09:33
 comments: true
-categories: [mac, shell]
+categories: [coding]
+tags: [mac, shell, terminal, bash]
 ---
 
 今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (`~/`) 下寫了個 `.bashrc`, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。
 
+<!-- more -->
+
 後來在家目錄下先建了個檔案 `.bash_profile`, 檔案內容如下：
 
-<pre class="prettyprint"><code>if [ -f ~/.bashrc ]; then
+```sh
+if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
-</code></pre>
+```
 
 這樣原本寫在 `.bashrc` 裡的指令稿就會被讀取並且發揮作用了。補充說明，我的作業系統版本為 **Mac OS X Lion (10.7)**。
 

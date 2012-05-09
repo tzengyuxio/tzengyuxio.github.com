@@ -1,9 +1,45 @@
 --- 
 layout: post
-title: "Milo Manara"
+title: "Milo Manara 的《激情香水》"
 date: 2011-06-07 02:30:00 +08:00
-categories: comics
+categories: [book, comics]
 tags: [Milo Manara, 陳弘耀]
 ---
 
-記得很久以前，曾經在時報出版的漫畫雜誌<s>《Tempo》</s>《High》（註）上看過一次〈激情香水〉的連載。也就只看過、翻過那麼一次，我就記住了〈激情香水〉這四個字了。雖然事隔多年我對那回連載的內容已經很模糊了，對作者名字更是壓根不知道，也不曉得這本漫畫是否有出單行本；但是每次去新的漫畫店時，總是會問問是否有〈激情香水〉這漫畫。當然答案是否定的，而且這漫畫幾乎沒人聽過。<br /><br /><div style="text-align: center;"><a href="http://www.anobii.com/books/%E6%BF%80%E6%83%85%E9%A6%99%E6%B0%B4I/9789572976654/01b567a8b213fafc08/" title="More about 激情香水I"><img alt="More about 激情香水I" height="320" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01b567a8b213fafc08&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 激情香水I" width="224" /></a>&nbsp;<a href="http://www.anobii.com/books/%E6%BF%80%E6%83%85%E9%A6%99%E6%B0%B4_II/9789868271906/01ed0bc2e05de5f1da/" title="More about 激情香水 II"><img alt="More about 激情香水 II" height="320" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01ed0bc2e05de5f1da&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 激情香水 II" width="228" /></a></div><br />但是皇天不負苦心人，有心不怕命來磨。在<s>《Tempo》</s>《High》早已收刊的多年之後，大辣出版了 Manara 的《格列芙遊記》，我當時見到封面時覺得這風格很熟悉，買來之後，看作者介紹後發現，果不其然，Manara 就是畫〈激情香水〉這部漫畫的原作者，霎時間所有記憶都回籠了（就像月在直昇機上拿到死神筆記那樣）。之後又不久，《激情香水 I》中譯本也出版了，這次終於能夠一窺故事全貌，盼了大概有十年的作品總算如願以償。<br /><br />《激情香水》的故事很簡單，基本上就是圍繞在隱形藥水所帶來的情色幻想。說起來，成為透明人間四處遊盪、偷窺，這樣的妄想相信每個人，至少每個男人都有過，日本的 AV 也曾見過類似的企劃。漫畫兩集的內容各自獨立，角色也都毫無相關，但劇情卻是同樣離奇有趣。有發明隱形藥水只是為了接近偶像名伶的童貞教授，也有想要靠隱形藥水大賺一票的金髮美女，還有想要用隱形藥水破壞國際會議引發戰爭的不良惡徒。兩本的劇情都不長，加起來差不多相當於一本日系單行本漫畫，一口氣變可讀完。<br /><br />台灣出版的《激情香水》是彩色的，原文版本是黑白。彩色的部份是由台灣漫畫家陳弘耀上色，其較為知名的漫畫為《一刀傳》。不過對我而言，陳弘耀最大的意義在於《軒轅劍 2》與《軒轅劍外傳》的封面都是由他畫的。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-i7VnohezHrc/Te0a-h8qb1I/AAAAAAAAAPM/TQ_N1s4QHmw/s1600/p-game001.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-i7VnohezHrc/Te0a-h8qb1I/AAAAAAAAAPM/TQ_N1s4QHmw/s320/p-game001.jpg" width="224" /></a>&nbsp;<a href="http://1.bp.blogspot.com/-iHN3OtZSvos/Te0a_MTUJhI/AAAAAAAAAPQ/_Dd08Uga9E0/s1600/p-game002.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-iHN3OtZSvos/Te0a_MTUJhI/AAAAAAAAAPQ/_Dd08Uga9E0/s320/p-game002.jpg" width="224" /></a></div><br />這兩本的書名有個令我不解的地方。為什麼第一集的數字是用羅馬數字，到了第二集卻變成阿拉伯數字標號呢？<br /><br />----<br />註 1：雖然我記得漫畫篇名是〈激情香水〉，但是我把雜誌名字記錯了。《Tempo》是尖端出版的漫畫雜誌，時報出的漫畫雜誌是《High》，除了馬那哈的〈激情香水〉，墨必斯的《貓之眼》等歐洲漫畫外，也有像是《家有賤狗》、《家栽之人》這樣的日系漫畫，以及麥人杰麥叔叔的漫畫。<br /><br />註 2：墨必斯的《貓之眼》台灣有出版。我曾買過，但後來似乎賣給舊書商了。<br />----<br />激情香水 I<br />ISBN：957-29766-5-6<br />作者：米羅·馬那哈 Milo Manara<br />譯者：于尚白<br />上色：陳弘耀<br /><br />激情香水 2<br />ISBN：978-986-82719-0-6<br />作者：米羅·馬那哈 Milo Manara<br />譯者：于尚白<br />上色：陳弘耀
+記得很久以前，曾經在時報出版的漫畫雜誌<s>《Tempo》</s>《High》（註）上看過一次〈激情香水〉的連載。也就只看過、翻過那麼一次，我就記住了〈激情香水〉這四個字了。雖然事隔多年我對那回連載的內容已經很模糊了，對作者名字更是壓根不知道，也不曉得這本漫畫是否有出單行本；但是每次去新的漫畫店時，總是會問問是否有〈激情香水〉這漫畫。當然答案是否定的，而且這漫畫幾乎沒人聽過。
+
+<a href="http://www.anobii.com/books/%E6%BF%80%E6%83%85%E9%A6%99%E6%B0%B4I/9789572976654/01b567a8b213fafc08/" title="More about 激情香水I"><img alt="More about 激情香水I" height="320" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01b567a8b213fafc08&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 激情香水I" width="224" /></a>
+<a href="http://www.anobii.com/books/%E6%BF%80%E6%83%85%E9%A6%99%E6%B0%B4_II/9789868271906/01ed0bc2e05de5f1da/" title="More about 激情香水 II"><img alt="More about 激情香水 II" height="320" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01ed0bc2e05de5f1da&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 激情香水 II" width="228" /></a>
+
+<!-- more -->
+
+但是皇天不負苦心人，有心不怕命來磨。在<s>《Tempo》</s>《High》早已收刊的多年之後，大辣出版了 Manara 的《格列芙遊記》，我當時見到封面時覺得這風格很熟悉，買來之後，看作者介紹後發現，果不其然，Manara 就是畫〈激情香水〉這部漫畫的原作者，霎時間所有記憶都回籠了（就像月在直昇機上拿到死神筆記那樣）。之後又不久，《激情香水 I》中譯本也出版了，這次終於能夠一窺故事全貌，盼了大概有十年的作品總算如願以償。
+
+《激情香水》的故事很簡單，基本上就是圍繞在隱形藥水所帶來的情色幻想。說起來，成為透明人間四處遊盪、偷窺，這樣的妄想相信每個人，至少每個男人都有過，日本的 AV 也曾見過類似的企劃。漫畫兩集的內容各自獨立，角色也都毫無相關，但劇情卻是同樣離奇有趣。有發明隱形藥水只是為了接近偶像名伶的童貞教授，也有想要靠隱形藥水大賺一票的金髮美女，還有想要用隱形藥水破壞國際會議引發戰爭的不良惡徒。兩本的劇情都不長，加起來差不多相當於一本日系單行本漫畫，一口氣變可讀完。
+
+台灣出版的《激情香水》是彩色的，原文版本是黑白。彩色的部份是由台灣漫畫家陳弘耀上色，其較為知名的漫畫為《一刀傳》。不過對我而言，陳弘耀最大的意義在於《軒轅劍 2》與《軒轅劍外傳》的封面都是由他畫的。
+
+<a href="http://2.bp.blogspot.com/-i7VnohezHrc/Te0a-h8qb1I/AAAAAAAAAPM/TQ_N1s4QHmw/s1600/p-game001.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-i7VnohezHrc/Te0a-h8qb1I/AAAAAAAAAPM/TQ_N1s4QHmw/s320/p-game001.jpg" width="224" /></a>
+<a href="http://1.bp.blogspot.com/-iHN3OtZSvos/Te0a_MTUJhI/AAAAAAAAAPQ/_Dd08Uga9E0/s1600/p-game002.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-iHN3OtZSvos/Te0a_MTUJhI/AAAAAAAAAPQ/_Dd08Uga9E0/s320/p-game002.jpg" width="224" /></a>
+
+這兩本的書名有個令我不解的地方。為什麼第一集的數字是用羅馬數字，到了第二集卻變成阿拉伯數字標號呢？
+
+----
+
+- 註 1：雖然我記得漫畫篇名是〈激情香水〉，但是我把雜誌名字記錯了。《Tempo》是尖端出版的漫畫雜誌，時報出的漫畫雜誌是《High》，除了馬那哈的〈激情香水〉，墨必斯的《貓之眼》等歐洲漫畫外，也有像是《家有賤狗》、《家栽之人》這樣的日系漫畫，以及麥人杰麥叔叔的漫畫。
+
+- 註 2：墨必斯的《貓之眼》台灣有出版。我曾買過，但後來似乎賣給舊書商了。
+
+----
+
+### 激情香水 I
+- ISBN：957-29766-5-6
+- 作者：米羅·馬那哈 Milo Manara
+- 譯者：于尚白
+- 上色：陳弘耀
+
+### 激情香水 2
+- ISBN：978-986-82719-0-6
+- 作者：米羅·馬那哈 Milo Manara
+- 譯者：于尚白
+- 上色：陳弘耀

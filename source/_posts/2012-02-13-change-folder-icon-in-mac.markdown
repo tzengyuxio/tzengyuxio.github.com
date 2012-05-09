@@ -2,8 +2,8 @@
 layout: post
 title: "Mac 更換資料夾圖示的方法"
 date: 2012-02-13 13:19:00 +08:00
-categories: [mac]
-tags: [icon]
+categories: [雜筆]
+tags: [mac, icon]
 ---
 
 最近想把 Mac 裡一些常用的資料夾換個圖示，找到的步驟如下：

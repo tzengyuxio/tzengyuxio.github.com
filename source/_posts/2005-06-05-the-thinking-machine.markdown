@@ -3,13 +3,16 @@ layout: post
 title: "思考機器 The Thinking Machine"
 date: 2005-06-05 03:27:00 +08:00
 comments: true
-categories: book
+categories: [book]
+tags: [唐諾]
 ---
 
 於是，俄國西洋棋冠軍對凡杜森教授說：「老天！你不是人，你是個腦子──是機器，一部思考機器！」
 
 ![image](http://addons.books.com.tw/G/001/3/0010291793.jpg)  
 （圖片來源：[博客來網路書店](http://www.books.com.tw/)）
+
+<!-- more -->
 
 話說有款 PC Game 也叫做《思考機器》（Mind Rover），不過這是題外話。或許哪天想到會來介紹一下也說不定。
 

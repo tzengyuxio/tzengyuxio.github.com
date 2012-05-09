@@ -3,11 +3,13 @@ layout: post
 title: "我不和運氣差的人合作，嗎？"
 date: 2012-04-11 10:44
 comments: true
-categories: [talks]
+categories: [雜筆]
 tags: [mr6]
 ---
 
 最近讀到 [I don't hire unlucky people - raganwald's posterous][posterous] 這篇文章，有些想法跟 [你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)][mr6] 這一篇所寫的不太一樣。想法不同也就算了，文章本來就是個別讀者與單一作者之間的心靈互動，讀者不同，互動不同，激發出的想法自然也不同，這無可厚非。
+
+<!-- more -->
 
 不過對於文章內容的解讀也不一樣，這讓我不由得想寫一篇文章來談談 "I don't hire unlucky…" 這篇的內容。這篇文章很長，以對話小說式的方式來描述，講述如何節省 hire people 的時間與 hiring 時的考量，我懶得逐字翻譯，所以會簡單帶過故事內容。
 

@@ -3,13 +3,16 @@ layout: post
 title: "歡迎來到臥夢螺館"
 date: 2005-06-05 11:13:00 +08:00
 comments: true
-categories: comics
+categories: [comics]
+tags: [福山庸治, 伊藤潤二, 津原泰水]
 ---
 
 於是，一點一滴......慢慢的......破壞是件快樂的事......破壞是件有趣的事......看著自己的身體逐漸被破壞......太有趣了......
 
-{% img /images/2005/2005-06-05-gamurakan-1.jpeg %}
-{% img /images/2005/2005-06-05-gamurakan-2.jpeg %}
+![book cover 1](/images/2005/2005-06-05-gamurakan-1.jpeg)
+![book cover 2](/images/2005/2005-06-05-gamurakan-2.jpeg)
+
+<!-- more -->
 
 第一眼的感覺：好厚的一本漫畫－－100出頭的定價竟然有300多頁的厚度。
 

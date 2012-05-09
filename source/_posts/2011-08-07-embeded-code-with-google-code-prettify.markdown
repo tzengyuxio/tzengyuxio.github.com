@@ -3,7 +3,8 @@ layout: post
 title: "用 google-code-prettify 在網頁中嵌入代碼"
 date: 2011-08-07 09:13
 comments: true
-categories: html
+categories: [coding]
+tags: [html, googlecodeprettify]
 ---
 
 作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 [github][] 的 [gist][] 服務來將程式代碼內嵌到網頁（[使用效果見此][sample]），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。
@@ -16,6 +17,8 @@ categories: html
 
 [sh]: http://alexgorbatchev.com/SyntaxHighlighter/
 [gcp]: http://code.google.com/p/google-code-prettify/
+
+<!-- more -->
 
 其實就功能上而言，SyntaxHighlighter 遠遠勝過 google-code-prettify，之所以選擇了 google-code-prettify，最主要的原因就在於「**簡單**」。兩者的比較如下（分別簡稱為 GCP 和 SH）：
 
@@ -38,31 +41,33 @@ categories: html
 
 然後再修改自己網頁的範本。有兩個地方要修改，一個是在 `</head>` 標籤之前加上 css 與 javascript 的載入；另外一個是在 `<body>` 標籤內加上 onLoad 函式。
 
-<pre class="prettyprint lang-html"><code>&lt;head&gt;
-  &lt;-- 中略 --&gt;
-  &lt;-- 1. 在 /head 標籤前加入下面兩行 --&gt;
-  &lt;link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/&gt;
-  &lt;script src="http://my.url.to/prettify.js" type="text/javascript"/&gt;
-&lt;/head&gt;
+```html
+<head>
+  <-- 中略 -->
+  <-- 1. 在 /head 標籤前加入下面兩行 -->
+  <link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/>
+  <script src="http://my.url.to/prettify.js" type="text/javascript"/>
+</head>
 
-&lt;-- 2. 在 body 標籤內加入 onload 設定 --&gt;
-&lt;body onload='prettyPrint()'&gt;
-&lt;/body&gt;
-</code></pre>
+<-- 2. 在 body 標籤內加入 onload 設定 -->
+<body onload='prettyPrint()'>
+</body>
+```
 
 ## Step 3.
 接下來只要在想要使用代碼的地方，用 `<pre>` 或 `<code>` 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。
 
-<pre class="prettyprint lang-html"><code>&lt;pre class="prettyprint"&gt;
-#include &lt;stdio.h&gt;
+```html
+<pre class="prettyprint">
+#include <stdio.h>
  
 int main(void)
 {
    printf("Hello, world!\n");
    return 0;
 }
-&lt;/pre&gt;
-</code></pre>
+</pre>
+```
 
 上面這段代碼的結果如下：
 
@@ -77,16 +82,17 @@ int main(void)
 
 如果想要自己指定區塊內的程式語言，可以再加上 `lang-*`，其中 * 要替換成該程式語言的代碼。
 
-<pre class="prettyprint"><code>&lt;pre class="prettyprint lang-html"&gt;
-  &lt;-- HTML 的場合 --&gt;
-&lt;/pre&gt;
-&lt;pre class="prettyprint lang-c"&gt;
+```html
+<pre class="prettyprint lang-html">
+  <-- HTML 的場合 -->
+</pre>
+<pre class="prettyprint lang-c">
   /* C 的場合 */
-&lt;/pre&gt;
-&lt;pre class="prettyprint lang-py"&gt;
+</pre>
+<pre class="prettyprint lang-py">
   " Python 的場合
-&lt;/pre&gt;
-</code></pre>
+</pre>
+```
 
 目前支援的代碼有
 

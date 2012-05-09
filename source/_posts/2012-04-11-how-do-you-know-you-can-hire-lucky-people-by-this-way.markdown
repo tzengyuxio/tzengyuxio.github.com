@@ -3,11 +3,13 @@ layout: post
 title: "你怎麼知道如何判斷運氣好壞？"
 date: 2012-04-11 08:53
 comments: true
-categories: [talks]
+categories: [雜筆]
 tags: [mr6]
 ---
 
 這幾天在 Facebook 出現一篇分享率很高的文章，叫做〈[你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)][mr6]〉，帶給我很多想法，在這裡分享一下。
+
+<!-- more -->
 
 什麼叫做「不和運氣差的人合作」？
 

@@ -3,13 +3,15 @@ layout: post
 title: "形形色色的標籤機制"
 date: 2012-04-18 09:53
 comments: true
-categories: [talks]
+categories: [productivity]
 tags: [tag, label, keyword, hashtag, category]
 ---
 
 ![inconsistency of tags](/images/2012/2012-04-18-inconsistency-of-tags.jpg)
 
 「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：
+
+<!-- more -->
 
 - `tag`: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣
 - `label`: Gmail, Blogger

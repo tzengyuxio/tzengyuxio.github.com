@@ -3,10 +3,13 @@ layout: post
 title: "Eclipse 的常用快速鍵"
 date: 2011-07-30 16:09
 comments: true
-categories: [eclipse, productivity]
+categories: [coding, productivity]
+tags: [eclipse]
 ---
 
 我身為一個程式設計師，有個鍵盤在身邊，也很合邏輯。這個鍵盤呢，是我用來撰寫代碼用的，很合理吧？可話說回來，這扳子，啊不，這鍵盤如果只有拿來寫代碼，那可就浪費了；身為一個**高生產力**的程式設計師，應該充分活用鍵盤的各種功能，活用到甚至能夠取代大多數滑鼠的操作，那才叫[專業][professional]。所以說，善用功能熱鍵就很重要啦，江湖上有本武功秘笈，書名叫做[《程式設計師提昇生產力秘笈》][productivity]，裡頭就有一段關於「奧義，鍵盤捷徑」的心法敘述：
+
+<!-- more -->
 
 [professional]: http://youtu.be/yKWwrxaOxsY
 [productivity]: http://www.anobii.com/books/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E6%8F%90%E5%8D%87%E7%94%9F%E7%94%A2%E5%8A%9B%E7%A7%98%E7%AC%88/9789866840340/01c423030629cd8ad5/

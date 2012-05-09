@@ -3,10 +3,13 @@ layout: post
 title: "UIGestureRecognizer 的共存"
 date: 2011-07-26 19:55
 comments: true
-categories: objective-C
+categories: [coding]
+tags: [objc, uigesturerecognizer, ios]
 ---
 
 在 iPhone 或 iPad 的開發中，除了用 `touchesBegan` / `touchesMoved` / `touchesEnded` 這組方法來控制使用者的手指觸控外，也可以用 [UIGestureRecognizer][] 的衍生類別來進行判斷。用 `UIGestureRecognizer` 的好處在於有現成的手勢，開發者不用自己計算手指移動的軌跡。`UIGestureRecognizer` 的衍生類別有以下數種：
+
+<!-- more -->
 
 [UIGestureRecognizer]: http://developer.apple.com/library/ios/#documentation/uikit/reference/UIGestureRecognizer_Class/Reference/Reference.html#//apple_ref/occ/cl/UIGestureRecognizer
 

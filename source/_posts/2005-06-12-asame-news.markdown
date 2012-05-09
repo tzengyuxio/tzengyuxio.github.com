@@ -3,7 +3,8 @@ layout: post
 title: "朝目新聞"
 date: 2005-06-12 13:10:00 +08:00
 comments: true
-categories: talks
+categories: [雜筆, comics]
+tags: [doraemon, deathnote]	
 ---
 
 [朝目新聞](http://asame.web.infoseek.co.jp/bbsgal.html)

@@ -3,7 +3,73 @@ layout: post
 title: "あなたに会えてよかった"
 date: 2009-02-08 09:04:00 +08:00
 comments: true
-categories: music
+categories: [music]
+tags: [小泉今日子, 青山テルマ, 中森明菜, 冬馬由美]
 ---
 
-<div style="font-family: Georgia, serif; font-size: 16px;"><div>作詞：小泉今日子</div><div>作曲：小林武史</div></div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div style="font-family: Georgia, serif; font-size: 16px;">在車上的廣播偶然聽到這首歌，旋律有點耳熟，卻又有更多陌生而新鮮的感覺。聽到的當下並不曉得歌名，憑著半調子的日文聽力硬是記下幾句歌詞，上網一查，才知道這是首年代久遠的歌曲。這首歌是日本 1991 年 Oricon&nbsp;年度排行第六的暢銷歌曲，這或許能解釋我剛聽到歌曲時那「遙遠的熟悉感」的由來吧，也許在我小時候曾經在什麼地方聽過這首曲子也說不定。</div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div style="font-family: Georgia, serif; font-size: 16px;">＜あなたに会えてよかった＞的原唱版本是小泉今日子，節奏比較輕快。這是小泉今日子最暢銷的一首，也是她唯一銷售破百萬的單曲：</div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/BVZRFFu7VlQ/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/BVZRFFu7VlQ&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/BVZRFFu7VlQ&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div style="font-family: Georgia, serif; font-size: 16px;">相隔 17 年，青山テルマ在 2008 年也唱了這一首，收錄在專輯《Diary》中。我在廣播中聽到的是這個版本，簡單的吉他與呢喃般的歌聲，聽了就是舒服：</div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://1.gvt0.com/vi/tCXB5cJTFJE/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/tCXB5cJTFJE&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/tCXB5cJTFJE&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div style="font-family: Georgia, serif; font-size: 16px;">令我意外的是，中森明菜也唱過這首歌。中森明菜的歌聲具有熟女的魅力，聽起來彷彿是經歷多次跌跌撞撞的感情後，終於遇到命中注定的那個人：</div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div class="separator" style="clear: both; text-align: center;"><object class="BLOGGER-youtube-video" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" data-thumbnail-src="http://0.gvt0.com/vi/OupSIKNpOMA/0.jpg" height="266" width="320"><param name="movie" value="http://www.youtube.com/v/OupSIKNpOMA&fs=1&source=uds" /><param name="bgcolor" value="#FFFFFF" /><embed width="320" height="266" src="http://www.youtube.com/v/OupSIKNpOMA&fs=1&source=uds" type="application/x-shockwave-flash"></embed></object></div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div style="font-family: Georgia, serif; font-size: 16px;">另外，從 wiki 上的資料看到，冬馬由美也唱過這首。冬馬由美是我很喜歡的聲優，只可惜我找不到她的版本。</div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div style="font-family: Georgia, serif; font-size: 16px;">歌詞：</div><div style="font-family: Georgia, serif; font-size: 16px;"><div></div><blockquote><div>サヨナラさえ 上手に言えなかった</div><div>Ah あなたの愛を 信じられず おびえていたの</div><div>時がすぎて 今心から言える</div><div>あなたに会えてよかったねきっと私</div><div><br /></div><div>淋しい夜 そばに居てくれたね</div><div>言葉に出来ない気持ち わかってくれたね</div><div>何にも言えず ただ泣いてるだけで</div><div>本当の気持ち いつでも 言えたなら</div><div>側に居れたね ずっと</div><div><br /></div><div>サヨナラさえ 上手に言えなかった</div><div>Ah あなたの愛に 答えられず 逃げてごめんね</div><div>時が過ぎて 今心から言える</div><div>あなたに会えてよかったねきっと私</div><div><br /></div><div>切ない夜 キレイに写ったね</div><div>こわれそうで 大切に抱きしめあったね</div><div>余裕がなくて ただ自信がなくて</div><div>あなたのゆれる気持ちに気づかない</div><div>ふりをしてたのずっと</div><div><br /></div><div>追いかけてた夢が叶うようにと</div><div>ねぇどこかでそっと祈ってるあなたのために</div><div>遠い空に輝く星のように</div><div>あなたはずっと そのままで</div><div>変らないで</div><div><br /></div><div>思い出が 星になる…</div><div><br /></div><div>時が過ぎて 今心から言える</div><div>あなたに会えてよかったねきっと私</div><div>世界で一番 素敵な恋をしたね</div></blockquote><div></div></div><div style="font-family: Georgia, serif; font-size: 16px;"><br /></div><div style="font-family: Georgia, serif; font-size: 16px;">參考資料：</div><div style="font-family: Georgia, serif; font-size: 16px;"><ul><li>維基百科－<a href="http://ja.wikipedia.org/wiki/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E4%BC%9A%E3%81%88%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F">あなたに会えてよかった</a></li><li>LyricsWiki－<a href="http://lyricwiki.org/%E5%B0%8F%E6%B3%89%E4%BB%8A%E6%97%A5%E5%AD%90:%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E4%BC%9A%E3%81%88%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F">小泉今日子:あなたに会えてよかった</a></li></ul></div>
+作詞：小泉今日子  
+作曲：小林武史
+
+在車上的廣播偶然聽到這首歌，旋律有點耳熟，卻又有更多陌生而新鮮的感覺。聽到的當下並不曉得歌名，憑著半調子的日文聽力硬是記下幾句歌詞，上網一查，才知道這是首年代久遠的歌曲。這首歌是日本 1991 年 Oricon 年度排行第六的暢銷歌曲，這或許能解釋我剛聽到歌曲時那「遙遠的熟悉感」的由來吧，也許在我小時候曾經在什麼地方聽過這首曲子也說不定。
+
+<!-- more -->
+
+＜あなたに会えてよかった＞的原唱版本是小泉今日子，節奏比較輕快。這是小泉今日子最暢銷的一首，也是她唯一銷售破百萬的單曲：
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/NYLGWqDzI14?rel=0" frameborder="0" allowfullscreen></iframe>
+
+相隔 17 年，青山テルマ在 2008 年也唱了這一首，收錄在專輯《Diary》中。我在廣播中聽到的是這個版本，簡單的吉他與呢喃般的歌聲，聽了就是舒服：
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/8dnjIi0YXe8?rel=0" frameborder="0" allowfullscreen></iframe>
+
+令我意外的是，中森明菜也唱過這首歌。中森明菜的歌聲具有熟女的魅力，聽起來彷彿是經歷多次跌跌撞撞的感情後，終於遇到命中注定的那個人：
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/OupSIKNpOMA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+另外，從 wiki 上的資料看到，冬馬由美也唱過這首。冬馬由美是我很喜歡的聲優，只可惜我找不到她的版本。
+
+### あなたに会えてよかった
+
+> サヨナラさえ 上手に言えなかった  
+> Ah あなたの愛を 信じられず おびえていたの  
+> 時がすぎて 今心から言える  
+> あなたに会えてよかったねきっと私  
+> 
+> 淋しい夜 そばに居てくれたね  
+> 言葉に出来ない気持ち わかってくれたね  
+> 何にも言えず ただ泣いてるだけで  
+> 本当の気持ち いつでも 言えたなら  
+> 側に居れたね ずっと  
+> 
+> サヨナラさえ 上手に言えなかった  
+> Ah あなたの愛に 答えられず 逃げてごめんね  
+> 時が過ぎて 今心から言える  
+> あなたに会えてよかったねきっと私  
+> 
+> 切ない夜 キレイに写ったね  
+> こわれそうで 大切に抱きしめあったね  
+> 余裕がなくて ただ自信がなくて  
+> あなたのゆれる気持ちに気づかない  
+> ふりをしてたのずっと  
+> 
+> 追いかけてた夢が叶うようにと  
+> ねぇどこかでそっと祈ってるあなたのために  
+> 遠い空に輝く星のように  
+> あなたはずっと そのままで  
+> 変らないで  
+> 
+> 思い出が 星になる…  
+> 
+> 時が過ぎて 今心から言える  
+> あなたに会えてよかったねきっと私  
+> 世界で一番 素敵な恋をしたね  
+
+----
+
+參考資料：
+
+- [維基百科－あなたに会えてよかった][wikipedia]
+- [LyricsWiki－小泉今日子:あなたに会えてよかった][lyricwiki]
+
+[lyricwiki]: http://lyricwiki.org/%E5%B0%8F%E6%B3%89%E4%BB%8A%E6%97%A5%E5%AD%90:%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E4%BC%9A%E3%81%88%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F
+[wikipedia]: http://ja.wikipedia.org/wiki/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E4%BC%9A%E3%81%88%E3%81%A6%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F

@@ -3,7 +3,8 @@ layout: post
 title: "ls Color on Mac"
 date: 2012-03-29 01:44
 comments: true
-categories: [mac, shell]
+categories: [coding]
+tags: [mac, shell, ls]
 ---
 
 ![ls color](/images/2012/2012-03-29-ls-color.png)
@@ -11,6 +12,8 @@ categories: [mac, shell]
 昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。
 
 是說原本預設的也夠我用了就是，不過有個多采多姿的 ls 輸出不僅能提昇工作效率，光看著心情也會好起來。
+
+<!-- more -->
 
 ## 開啟顏色輸出
 

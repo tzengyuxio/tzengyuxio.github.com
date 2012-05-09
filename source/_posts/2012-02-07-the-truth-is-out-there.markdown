@@ -3,8 +3,8 @@ layout: post
 title: "光鮮亮麗背後的真相"
 date: 2012-02-07 15:28:00 +08:00
 comments: true
-categories: talks
-tags: [職場]
+categories: [雜筆]
+tags: []
 ---
 
 今天看到很多人都在傳這一張圖片：
@@ -13,10 +13,11 @@ tags: [職場]
 
 乍看好像邪惡組織比較吸引人。但是別忘了，那些擁有偉大目標、為了實現夢想沒日沒夜地努力、即使失敗也不氣餒，能夠指揮組織行動，最後還笑容滿面的，都是**邪惡組織的頭目級領導人物**啊！真正加入邪惡組織後，底下就是最血淋淋的職場寫照：
 
+<!-- more -->
+
 <iframe width="480" height="360" src="http://www.youtube.com/embed/35Kc4jM2Sew?rel=0" frameborder="0" allowfullscreen></iframe>
 
-少年們，醒醒吧！  
-[別再相信沒有根據的說法了][komica]！
+少年們，醒醒吧！[別再相信沒有根據的說法了][komica]！
 
 ----
 

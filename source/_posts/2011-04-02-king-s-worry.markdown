@@ -3,8 +3,40 @@ layout: post
 title: "國王的憂慮 攻略心得"
 date: 2011-04-02 09:59:00 +08:00
 comments: true
-categories: [app, game]
-tags:
+categories: [game]
+tags: [iphone, app]
 ---
 
-<div class="separator" style="clear: both; text-align: left;">會下載這款遊戲，起先是因為看到名字很可愛：The King's Worry，圖示裡的國王也很可愛。</div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-VRApym96L7I/TZaALJiu5oI/AAAAAAAAAHk/14jA3E6kImA/s1600/Photo+4%25E6%259C%2588+02%252C+9+37+02+%25E4%25B8%258A%25E5%258D%2588.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/-VRApym96L7I/TZaALJiu5oI/AAAAAAAAAHk/14jA3E6kImA/s320/Photo+4%25E6%259C%2588+02%252C+9+37+02+%25E4%25B8%258A%25E5%258D%2588.jpg" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">國王之所以憂慮就是因為公主被抓走了</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-X-EmG0drU9A/TZaAK567GGI/AAAAAAAAAHg/T_7aLVXR97o/s1600/Photo+4%25E6%259C%2588+02%252C+9+36+52+%25E4%25B8%258A%25E5%258D%2588.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/-X-EmG0drU9A/TZaAK567GGI/AAAAAAAAAHg/T_7aLVXR97o/s320/Photo+4%25E6%259C%2588+02%252C+9+36+52+%25E4%25B8%258A%25E5%258D%2588.jpg" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">拿著星星盾牌的勇者比公主可愛許多</td></tr></tbody></table>遊戲的玩法也很特別，乍看感覺有點像 Puzzle Quest，一種寶石方塊的變種，不過實際玩了之後發現不是這麼一回事。規則大概如下：<br /><ol><li>三個或以上相同數字的方塊相鄰，可以消掉</li><li>點擊方塊可以改變方塊數字，點一下增加 1。點到 9 之後就不能改變。</li><li>標示為 HP 的方塊相當於 0，點了之後會變成 1。</li><li>消掉的方塊數字越小，攻擊力越大。</li><li>消掉方塊的連鎖越多，攻擊力就以倍數增加。例如 2 Combo 是乘以兩倍；3 Combo 是乘以三倍。</li></ol><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><img border="0" height="320" src="http://3.bp.blogspot.com/-xYKCEi1Ju3M/TZaAIi0tryI/AAAAAAAAAHA/OHVyuISn-aQ/s320/Photo+4%25E6%259C%2588+02%252C+9+35+38+%25E4%25B8%258A%25E5%258D%2588.jpg" style="margin-left: auto; margin-right: auto;" width="213" /></td></tr><tr><td class="tr-caption" style="text-align: center;">方塊的變化順序</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-IAcHiKvuTWc/TZaAMnpOXYI/AAAAAAAAAH0/WgGaBGyXaMs/s1600/Photo+4%25E6%259C%2588+02%252C+9+38+02+%25E4%25B8%258A%25E5%258D%2588.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/-IAcHiKvuTWc/TZaAMnpOXYI/AAAAAAAAAH0/WgGaBGyXaMs/s320/Photo+4%25E6%259C%2588+02%252C+9+38+02+%25E4%25B8%258A%25E5%258D%2588.jpg" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">透過消方塊來攻擊敵人</td></tr></tbody></table><div>第一次玩，隨興亂玩就過了第一關，覺得這遊戲還不難。不過馬上就在第二關卡住，怎麼玩都是失敗。歷經了幾次失敗，改變策略，終於成功玩到結局，救出公主。底下是一些攻略心得：</div><div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-48aIxQG4eqk/TZaAKmp_J1I/AAAAAAAAAHc/Sdcbpjt7A8o/s1600/Photo+4%25E6%259C%2588+02%252C+9+36+43+%25E4%25B8%258A%25E5%258D%2588.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-48aIxQG4eqk/TZaAKmp_J1I/AAAAAAAAAHc/Sdcbpjt7A8o/s320/Photo+4%25E6%259C%2588+02%252C+9+36+43+%25E4%25B8%258A%25E5%258D%2588.jpg" width="213" /></a></div><ol><li>連鎖數越多，攻擊力會成倍增加，所以要增加方塊消掉的連鎖次數。遊戲的說明中提供了一個多重連鎖的範例，如右圖。<br /><div style="text-align: center;"></div></li><li>但是像這樣排好好的情況，在有限時間且數字只能越點越大的情況下，是可遇不可求的。最有效的連鎖方式，就是在開始消去方塊的同時，眼明手快的同時改變數字，增加可消去的方塊組合，製造連鎖機會。</li><li>而在兩次攻擊的中間這段時間，我的方式是「盡可能的將所有方塊轉成兩到三種顏色」。因為沒有美國時間去刻意製造連鎖的排列，所以就是將方塊轉成剩下少數幾種顏色，以增加連鎖機率。</li><li>上述方式具體來說，比方上一次攻擊完後，剩下的版面看上去以「綠色的 3」、「紅色的 5」、「咖啡色的 8」這三個數量佔比較多，那麼在下次攻擊發動前，我就盡量把小於 3 的方塊點到 3、小於 5 的點到 5、小於 8 的點到 8 這樣。HP 的話則盡可能保留，以增加回復機會。</li><li>關於屬性的配點，建議第一次玩到破關之前，可以將點數全部投在 Defense, Health 跟 Block 這些防禦屬性。因為這時連鎖的功力還不夠，先爭取存活時間，慢慢將敵人磨死。</li><li>等到破過一次關後，對於攻擊也比較得心應手了，之後可以換把點數投在 Attack 跟 Crit 這兩項屬性上，嘗試一下快攻玩法的不一樣感覺。</li></ol><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-8X-4-QyYfpo/TZaAO6LgX2I/AAAAAAAAAIQ/7ZO-A68xCzg/s1600/Photo+4%25E6%259C%2588+02%252C+9+39+16+%25E4%25B8%258A%25E5%258D%2588.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://2.bp.blogspot.com/-8X-4-QyYfpo/TZaAO6LgX2I/AAAAAAAAAIQ/7ZO-A68xCzg/s320/Photo+4%25E6%259C%2588+02%252C+9+39+16+%25E4%25B8%258A%25E5%258D%2588.jpg" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">每過一關可以有 3 點能力配點</td></tr></tbody></table></div><div>這遊戲有個 Bug，當全破之後，遊戲會停在最後畫面，沒有選項可以回到標題選單。這時只好強制關掉遊戲再重新進去了。<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-SIXEWNHHly0/TZaFlQMAcGI/AAAAAAAAAIY/QV_zqrXNwz0/s1600/Photo+4%25E6%259C%2588+02%252C+9+34+58+%25E4%25B8%258A%25E5%258D%2588.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://2.bp.blogspot.com/-SIXEWNHHly0/TZaFlQMAcGI/AAAAAAAAAIY/QV_zqrXNwz0/s320/Photo+4%25E6%259C%2588+02%252C+9+34+58+%25E4%25B8%258A%25E5%258D%2588.jpg" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">完全沒印象怎麼連到 12 Combo...</td></tr></tbody></table><br /></div>
+會下載這款遊戲，起先是因為看到名字很可愛：The King’s Worry，圖示裡的國王也很可愛。
+
+{% caption_img http://1.bp.blogspot.com/-VRApym96L7I/TZaALJiu5oI/AAAAAAAAAHk/14jA3E6kImA/s320/Photo+4%25E6%259C%2588+02%252C+9+37+02+%25E4%25B8%258A%25E5%258D%2588.jpg 國王之所以憂慮就是因為公主被抓走了 %}
+<!-- more -->
+{% caption_img http://1.bp.blogspot.com/-X-EmG0drU9A/TZaAK567GGI/AAAAAAAAAHg/T_7aLVXR97o/s320/Photo+4%25E6%259C%2588+02%252C+9+36+52+%25E4%25B8%258A%25E5%258D%2588.jpg 拿星星盾牌的勇者比公主可愛許多 %}
+
+遊戲的玩法也很特別，乍看感覺有點像 Puzzle Quest，一種寶石方塊的變種，不過實際玩了之後發現不是這麼一回事。規則大概如下：
+
+1. 三個或以上相同數字的方塊相鄰，可以消掉
+2. 點擊方塊可以改變方塊數字，點一下增加 1。點到 9 之後就不能改變。
+3. 標示為 HP 的方塊相當於 0，點了之後會變成 1。
+4. 消掉的方塊數字越小，攻擊力越大。
+5. 消掉方塊的連鎖越多，攻擊力就以倍數增加。例如 2 Combo 是乘以兩倍；3 Combo 是乘以三倍。
+
+{% caption_img http://3.bp.blogspot.com/-xYKCEi1Ju3M/TZaAIi0tryI/AAAAAAAAAHA/OHVyuISn-aQ/s320/Photo+4%25E6%259C%2588+02%252C+9+35+38+%25E4%25B8%258A%25E5%258D%2588.jpg 方塊的變化順序 %}
+{% caption_img http://1.bp.blogspot.com/-IAcHiKvuTWc/TZaAMnpOXYI/AAAAAAAAAH0/WgGaBGyXaMs/s320/Photo+4%25E6%259C%2588+02%252C+9+38+02+%25E4%25B8%258A%25E5%258D%2588.jpg 透過消方塊來攻擊敵人 %}
+
+第一次玩，隨興亂玩就過了第一關，覺得這遊戲還不難。不過馬上就在第二關卡住，怎麼玩都是失敗。歷經了幾次失敗，改變策略，終於成功玩到結局，救出公主。底下是一些攻略心得：
+
+{% img right http://2.bp.blogspot.com/-48aIxQG4eqk/TZaAKmp_J1I/AAAAAAAAAHc/Sdcbpjt7A8o/s320/Photo+4%25E6%259C%2588+02%252C+9+36+43+%25E4%25B8%258A%25E5%258D%2588.jpg %}
+
+1. 連鎖數越多，攻擊力會成倍增加，所以要增加方塊消掉的連鎖次數。遊戲的說明中提供了一個多重連鎖的範例，如右圖。
+2. 但是像這樣排好好的情況，在有限時間且數字只能越點越大的情況下，是可遇不可求的。最有效的連鎖方式，就是在開始消去方塊的同時，眼明手快的同時改變數字，增加可消去的方塊組合，製造連鎖機會。
+3. 而在兩次攻擊的中間這段時間，我的方式是「盡可能的將所有方塊轉成兩到三種顏色」。因為沒有美國時間去刻意製造連鎖的排列，所以就是將方塊轉成剩下少數幾種顏色，以增加連鎖機率。
+4. 上述方式具體來說，比方上一次攻擊完後，剩下的版面看上去以「綠色的 3」、「紅色的 5」、「咖啡色的 8」這三個數量佔比較多，那麼在下次攻擊發動前，我就盡量把小於 3 的方塊點到 3、小於 5 的點到 5、小於 8 的點到 8 這樣。HP 的話則盡可能保留，以增加回復機會。
+5. 關於屬性的配點，建議第一次玩到破關之前，可以將點數全部投在 Defense, Health 跟 Block 這些防禦屬性。因為這時連鎖的功力還不夠，先爭取存活時間，慢慢將敵人磨死。
+6. 等到破過一次關後，對於攻擊也比較得心應手了，之後可以換把點數投在 Attack 跟 Crit 這兩項屬性上，嘗試一下快攻玩法的不一樣感覺。
+
+{% caption_img http://2.bp.blogspot.com/-8X-4-QyYfpo/TZaAO6LgX2I/AAAAAAAAAIQ/7ZO-A68xCzg/s320/Photo+4%25E6%259C%2588+02%252C+9+39+16+%25E4%25B8%258A%25E5%258D%2588.jpg 每過一關可以有 3 點能力配點 %}
+
+這遊戲有個 Bug，當全破之後，遊戲會停在最後畫面，沒有選項可以回到標題選單。這時只好強制關掉遊戲再重新進去了。
+
+{% caption_img http://2.bp.blogspot.com/-SIXEWNHHly0/TZaFlQMAcGI/AAAAAAAAAIY/QV_zqrXNwz0/s320/Photo+4%25E6%259C%2588+02%252C+9+34+58+%25E4%25B8%258A%25E5%258D%2588.jpg 完全沒印象怎麼連到 12 Combo... %}

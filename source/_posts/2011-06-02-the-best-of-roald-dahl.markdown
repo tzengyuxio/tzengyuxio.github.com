@@ -2,13 +2,15 @@
 layout: post
 title: "幻想大師 Roald Dahl 的異想世界"
 date: 2011-06-02 19:08:00 +08:00
-categories: book
+categories: [book]
 tags: [Roald Dahl]
 ---
 
 我喜歡各種稀奇古怪的故事，對於簡短俐落又詭異的故事更是沒有抵抗力。這本書的封面就這樣吸引了我，在我壓根還不知道誰是 Roald Dahl 的時候，就把書帶回家了。雖然如此，回家之後還是放在書架上供了許多年，直到前幾個禮拜才被我從書堆中挖出來拜讀。（下文有劇情透露）
 
 <a href="http://www.anobii.com/books/%E5%B9%BB%E6%83%B3%E5%A4%A7%E5%B8%ABRoald_Dahl%E7%9A%84%E7%95%B0%E6%83%B3%E4%B8%96%E7%95%8C/9789570519204/008f8125b4c89fc15c/" style="margin-left: 1em; margin-right: 1em;" title="More about 幻想大師Roald Dahl的異想世界"><img alt="More about 幻想大師Roald Dahl的異想世界" src="http://image.anobii.com/anobi/image_book.php?type=4&amp;item_id=008f8125b4c89fc15c&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about 幻想大師Roald Dahl的異想世界" /></a>
+
+<!-- more -->
 
 我在翻閱了作者簡介後才知道，原來 Roald Dahl 是《怪桃歷險記》(James and the Giant Peach)、《巧克力工廠的秘密》(Charlie and the Chocolate Factory) 等知名電影原著小說的作者。這讓我在閱讀前更多添了幾份期待。雖說是短篇故事集，但這本書還是挺厚一本，裡頭收錄了 20 篇短篇小說。不過最後兩篇〈訪客〉與〈克勞德的狗〉分別超過五十頁與一百頁，佔了將近全書三成的比例，姑且可以算的上是兩篇中篇小說了吧。
 
@@ -64,7 +66,8 @@ tags: [Roald Dahl]
 
 ----
 
-- 幻想大師 Roald Dahl 的異想世界
+### 幻想大師 Roald Dahl 的異想世界
+
 - ISBN：957-05-1920-7
 - 作者：羅爾德‧達爾 (Roald Dahl)
 - 譯者：吳俊宏

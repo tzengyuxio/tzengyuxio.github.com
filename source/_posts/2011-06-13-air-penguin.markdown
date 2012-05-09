@@ -2,8 +2,52 @@
 layout: post
 title: "企鵝爸爸大冒險 - Air Penguin"
 date: 2011-06-13 00:15:00 +08:00
-categories: [game, app]
-tags: [gamecenter, gamevil]
+categories: [game]
+tags: [iphone, app, gamecenter, gamevil]
 ---
 
-這款由 Gamevil 所出品的遊戲，原來只被我當成是小品遊戲，想說玩個幾關，頂多過完第一大關，大概了解一下遊戲的內容就可以把它砍了。沒想到它卻出乎意料的把我給黏住，光把故事模式（Story）破過一次不說，還一關一關重新挑戰高分，最後<b><span class="Apple-style-span" style="color: red;">甚至登上了 Game Center 世界排名第一的寶座！</span></b>這個遊戲到底有怎樣的魅力呢？底下就讓我們來看一看。<br /><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-SuTUIzvrTB0/TfThc1xwzVI/AAAAAAAAAPk/1PJkKWh7Hi4/s1600/%25E7%2585%25A7%25E7%2589%2587.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SuTUIzvrTB0/TfThc1xwzVI/AAAAAAAAAPk/1PJkKWh7Hi4/s320/%25E7%2585%25A7%25E7%2589%2587.PNG" width="213" /></a></div><br /><br />先簡單介紹一下遊戲玩法。玩家在遊戲中操作的是企鵝把拔，為了救失散的三個企鵝寶寶與企鵝馬麻，而在冰川中不停前進過關。企鵝把拔會不斷的跳躍，因此玩家必須透過前後左右的擺動 iPhone，來控制企鵝把拔的一動方向，並且確保企鵝把拔不會落至海裡。遊戲一開始分成四大關，每大關各 25 個小關卡。在上次的資料更新之後，又追加了一個新的大關，一共 5 大關，125 個小關卡。每個小關卡中會有五條小魚分布在固定的位置，玩家除了普通的過關之外，也可以順便收集小魚以增加得分，這就有點類似《新超級瑪莉兄弟》中，每個關卡都會有的三個大金幣一樣，普通的玩家追求過關，而進階的玩家則追求小魚全吃到的完美過關，可以滿足不同等級的玩家需求。<br /><br />這個遊戲之所以會吸引我一玩再玩，不停挑戰高分，最主要的原因就在於它的關卡設計。遊戲透過一些簡單的機制構成關卡，例如鯊魚、海豹、劍魚、海星、海龜等，每種個有每種的障礙或用處。光只是設計出這些機關其實稀鬆平常，但是 Gamevil 的開發人員卻利用這幾個簡單的機制，設計出一關又一關好玩的關卡，這才是遊戲設計的精髓所在；<b><span class="Apple-style-span" style="color: red;">關卡間雖然構成的元素就是那幾樣，玩起來的感覺卻是大異其趣，不會因為有限的元素而讓玩家感覺到關卡總是千篇一律。</span></b>說起來，我玩《Air Penguin》玩到後期時，遊戲有帶給我一種重溫『超級瑪莉兄弟』的感覺，雖然兩款遊戲的方式與內容截然不同，可是就是有勾起我這樣的聯想。事後回顧，其實每個小關卡最後要跳中旗桿取得加分的方式，不也是瑪莉兄弟每關最後拉旗子拿分的一種變形？<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ESGC_S0csiA/TfThzPnWH9I/AAAAAAAAAP8/wpCn54c-sB4/s1600/IMG_1027.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-ESGC_S0csiA/TfThzPnWH9I/AAAAAAAAAP8/wpCn54c-sB4/s320/IMG_1027.PNG" width="213" /></a></div><br />最後來談談我挑戰到全球最高分的心得：<br /><br /><ul><li>遊戲每關的分數理論上限為 10000 分，其中每條小魚各 1000 分，共 5000。過關所花費的時間佔 4000 分，最後的 1000 分則是過關時，企鵝離關卡旗子的距離。</li><li>由於五條小魚就 5000 分了，因此要拿高分，必須盡可能的把每個小關的小魚都吃到。</li><li>接著比較有把握要拿下的是過關旗子的 1000 分。只要不離太遠，通常都會有分數，但只有正中旗桿紅心才有可能拿到 1000。關於這部份，如果關卡不是很難，我就反覆挑戰，以拿到 800 以上甚至 1000 分為目標；如果關卡有點難度，不太容易一直挑戰，我就以拿到 400 ,500 分為目標。</li><li>在冰原上滑行的關卡比較特別，因為無法自由控制進入過關旗子的角度，基本上只要能拿到些分數就可以，有機會的話再回頭挑戰高分。</li><li>時間的 4000 分是最困難拿滿分的。前面兩大關努力一下倒還可能，後面的關卡通常都只能拿到一、兩千分。不過冰原滑行的關卡算是特例，因為滑行速度一樣，所以幾乎都可拿滿分。</li><li>要縮短過關所需時間，可以從幾個方面著手：</li><ul><li>能夠用最遠跳躍距離一口氣跳到下下下個小島就盡量跳，不用老實的一個挨著一個小島前進。</li><li>注意海星的節奏。同樣的，很多關卡會看到一堆海星排列在一起，也不要傻傻的一個接著一個跳，能越過多少往前進就越過多少。</li><li>騎了海龜雖然安全，但別忘了保持速度前進。海龜是最容易讓人放鬆而浪費時間的存在。</li><li>鯨魚可以一口氣飛到很遠的地方。不過有時候飛得最遠的不見得是最快捷徑，別忘了考慮落點處附近的海星規律，以及是否有其他的鯨魚可以做連續噴射。</li></ul><li>總之還是一句老話，就是練習、練習、再練習。一個關卡玩久了，自然就能掌握到快速過關的捷徑。</li></ul><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-AxderUIoR5U/TfThsAGve1I/AAAAAAAAAPs/KT3QQ_IRrSA/s1600/IMG_0973.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://4.bp.blogspot.com/-AxderUIoR5U/TfThsAGve1I/AAAAAAAAAPs/KT3QQ_IRrSA/s320/IMG_0973.PNG" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">2011.5.21 記錄</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-uxj2KWfo68c/TfThxi7JvYI/AAAAAAAAAP4/LzE_gqUpspo/s1600/IMG_1026.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://4.bp.blogspot.com/-uxj2KWfo68c/TfThxi7JvYI/AAAAAAAAAP4/LzE_gqUpspo/s320/IMG_1026.PNG" width="213" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">本篇截稿時 (6.13) 還有 68 名</td></tr></tbody></table><div>----</div><div><b>Air Penguin</b></div><div><a href="http://itunes.apple.com/us/app/air-penguin/id425609130?mt=8">Air Penguin for iPhone, iPod touch, and iPad on the iTunes App Store</a></div><div>$0.99 (2011.6.13)</div>
+這款由 Gamevil 所出品的遊戲，原來只被我當成是小品遊戲，想說玩個幾關，頂多過完第一大關，大概了解一下遊戲的內容就可以把它砍了。沒想到它卻出乎意料的把我給黏住，光把故事模式（Story）破過一次不說，還一關一關重新挑戰高分，最後<span style="color:red;">甚至登上了 Game Center 世界排名第一的寶座！</span>這個遊戲到底有怎樣的魅力呢？底下就讓我們來看一看。
+
+![](http://1.bp.blogspot.com/-SuTUIzvrTB0/TfThc1xwzVI/AAAAAAAAAPk/1PJkKWh7Hi4/s320/%25E7%2585%25A7%25E7%2589%2587.PNG)
+
+<!-- more -->
+
+先簡單介紹一下遊戲玩法。玩家在遊戲中操作的是企鵝把拔，為了救失散的三個企鵝寶寶與企鵝馬麻，而在冰川中不停前進過關。企鵝把拔會不斷的跳躍，因此玩家必須透過前後左右的擺動 iPhone，來控制企鵝把拔的一動方向，並且確保企鵝把拔不會落至海裡。遊戲一開始分成四大關，每大關各 25 個小關卡。在上次的資料更新之後，又追加了一個新的大關，一共 5 大關，125 個小關卡。每個小關卡中會有五條小魚分布在固定的位置，玩家除了普通的過關之外，也可以順便收集小魚以增加得分，這就有點類似《新超級瑪莉兄弟》中，每個關卡都會有的三個大金幣一樣，普通的玩家追求過關，而進階的玩家則追求小魚全吃到的完美過關，可以滿足不同等級的玩家需求。
+
+這個遊戲之所以會吸引我一玩再玩，不停挑戰高分，最主要的原因就在於它的關卡設計。遊戲透過一些簡單的機制構成關卡，例如鯊魚、海豹、劍魚、海星、海龜等，每種個有每種的障礙或用處。光只是設計出這些機關其實稀鬆平常，但是 Gamevil 的開發人員卻利用這幾個簡單的機制，設計出一關又一關好玩的關卡，這才是遊戲設計的精髓所在；<span style="color:red;">關卡間雖然構成的元素就是那幾樣，玩起來的感覺卻是大異其趣，不會因為有限的元素而讓玩家感覺到關卡總是千篇一律。</span>說起來，我玩《Air Penguin》玩到後期時，遊戲有帶給我一種重溫『超級瑪莉兄弟』的感覺，雖然兩款遊戲的方式與內容截然不同，可是就是有勾起我這樣的聯想。事後回顧，其實每個小關卡最後要跳中旗桿取得加分的方式，不也是瑪莉兄弟每關最後拉旗子拿分的一種變形？
+
+![](http://1.bp.blogspot.com/-ESGC_S0csiA/TfThzPnWH9I/AAAAAAAAAP8/wpCn54c-sB4/s320/IMG_1027.PNG)
+
+最後來談談我挑戰到全球最高分的心得：
+
+- 遊戲每關的分數理論上限為 10000 分，其中每條小魚各 1000 分，共 5000。過關所花費的時間佔 4000 分，最後的 1000 分則是過關時，企鵝離關卡旗子的距離。
+
+- 由於五條小魚就 5000 分了，因此要拿高分，必須盡可能的把每個小關的小魚都吃到。
+
+- 接著比較有把握要拿下的是過關旗子的 1000 分。只要不離太遠，通常都會有分數，但只有正中旗桿紅心才有可能拿到 1000。關於這部份，如果關卡不是很難，我就反覆挑戰，以拿到 800 以上甚至 1000 分為目標；如果關卡有點難度，不太容易一直挑戰，我就以拿到 400 ,500 分為目標。
+
+- 在冰原上滑行的關卡比較特別，因為無法自由控制進入過關旗子的角度，基本上只要能拿到些分數就可以，有機會的話再回頭挑戰高分。
+
+- 時間的 4000 分是最困難拿滿分的。前面兩大關努力一下倒還可能，後面的關卡通常都只能拿到一、兩千分。不過冰原滑行的關卡算是特例，因為滑行速度一樣，所以幾乎都可拿滿分。
+
+- 要縮短過關所需時間，可以從幾個方面著手：
+
+    - 能夠用最遠跳躍距離一口氣跳到下下下個小島就盡量跳，不用老實的一個挨著一個小島前進。
+
+    - 注意海星的節奏。同樣的，很多關卡會看到一堆海星排列在一起，也不要傻傻的一個接著一個跳，能越過多少往前進就越過多少。
+
+    - 騎了海龜雖然安全，但別忘了保持速度前進。海龜是最容易讓人放鬆而浪費時間的存在。
+
+    - 鯨魚可以一口氣飛到很遠的地方。不過有時候飛得最遠的不見得是最快捷徑，別忘了考慮落點處附近的海星規律，以及是否有其他的鯨魚可以做連續噴射。
+
+- 總之還是一句老話，就是練習、練習、再練習。一個關卡玩久了，自然就能掌握到快速過關的捷徑。
+
+{% caption_img http://4.bp.blogspot.com/-AxderUIoR5U/TfThsAGve1I/AAAAAAAAAPs/KT3QQ_IRrSA/s320/IMG_0973.PNG 2011.5.21 記錄 %}
+{% caption_img http://4.bp.blogspot.com/-uxj2KWfo68c/TfThxi7JvYI/AAAAAAAAAP4/LzE_gqUpspo/s320/IMG_1026.PNG 本篇截稿時 (6.13) 還有 68 名 %}
+
+----
+
+### Air Penguin
+
+- [Air Penguin for iPhone, iPod touch, and iPad on the iTunes App Store](http://itunes.apple.com/us/app/air-penguin/id425609130?mt=8)
+- $0.99 (2011.6.13)

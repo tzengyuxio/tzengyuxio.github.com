@@ -3,7 +3,7 @@ layout: post
 title: "JSON for Vim"
 date: 2012-03-26 10:42
 comments: true
-categories: [editor]
+categories: [coding]
 tags: [json, vim]
 ---
 
@@ -13,6 +13,6 @@ tags: [json, vim]
 
 不過看了下安裝說明，感覺麻煩了點。於是又找到了[這篇文章][2]，只要到 `~/.vimrc` 加入下面這行，就可以讓 JSON 檔案套用 JavaScript 的 syntax highlight, 簡單明瞭。
 
-<pre class="prettyprint"><code>autocmd BufNewFile,BufRead *.json set ft=javascript</code></pre>
+    autocmd BufNewFile,BufRead *.json set ft=javascript
 
 [2]: http://www.codeography.com/2010/07/13/json-syntax-highlighting-in-vim.html

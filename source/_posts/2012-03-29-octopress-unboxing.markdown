@@ -3,10 +3,13 @@ layout: post
 title: "Octopress 開箱首發文"
 date: 2012-03-29 16:55
 comments: true
-categories: octopress
+categories: [雜筆]
+tags: [blogger, octopress]
 ---
 
 前天與昨天兩天我都在修改 blogger 的 template－－起因是這樣：我在 Chrome 裝了個 [HTML5 Outliner][google] 的擴充，透過這個擴充，可以查看某個網頁的大綱排列是否如預想的一樣。很顯然，blogger 預設提供的幾個範本並沒有良好的 HTML5 大綱結構，於是我決定動手修改它。
+
+<!-- more -->
 
 原本以為這是個小工程，沒想到卻花了我整整一夜一天的時間在和 **blogger template** 的語法纏鬥。blogger template 用到了許多神乎奇技的技巧，可以在一個 template 檔案中同時提供桌面與行動等不同平台的版面；同時提供首頁、封存、標籤與單篇等不同文章組合的版面；可以提供各式各樣的參數讓你在後台中只要簡單選選顏色調整大小就可以做出各式各樣的變化。而這些全部都是在一個 XML 檔案裡就可以搞定。
 

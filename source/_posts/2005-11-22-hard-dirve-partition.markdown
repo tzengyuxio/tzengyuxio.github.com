@@ -3,11 +3,13 @@ layout: post
 title: ［心得］硬碟切割
 date: 2005-11-22 04:24:00 +08:00
 comments: true
-categories: memo
+categories: [雜筆, productivity]
 tags: [freebsd, windows]
 ---
 
-先前我的做法都依據 Clive Tong-I Lin 的 [8G 經驗法則](http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4)：
+每次安裝新電腦或重灌時，總要為硬碟分割的大小傷一下腦筋。先前我的做法都依據 Clive Tong-I Lin 的 [8G 經驗法則](http://groups.google.com.tw/group/tw.bbs.comp.386bsd/msg/ccf7216150299ee4)：
+
+<!-- more -->
 
 > 我的 8G 經驗法則是, 前 8G 系統用, 其它給 /home。  
 > 至於那前 8G 就在 sysinstall 直接給它 auto 不去煩惱了。
@@ -29,9 +31,9 @@ tags: [freebsd, windows]
 
     1. `/` : 256M
 
-    2. `/tmp` : 不大於 ram (或乾脆 = ram 就好)
+    2. `/tmp` : 不大於 RAM (或乾脆 =RAM 就好)
 
-    3. `swap` : 不小於 ram，ram 越小給越多，但不超過兩倍 (或乾脆 = ram 就好)
+    3. `swap` : 不小於 RAM，RAM 越小給越多，但不超過兩倍 (或乾脆 =RAM 就好)
 
     4. `/var` 視剩餘空間與 X 的安裝與否，分配 1～2G
 

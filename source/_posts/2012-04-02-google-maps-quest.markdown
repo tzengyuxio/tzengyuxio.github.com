@@ -3,11 +3,13 @@ layout: post
 title: "Google Maps Quest"
 date: 2012-04-02 05:12
 comments: true
-categories: [internet]
+categories: [雜筆]
 tags: [google, dragonquest, aprilfool]
 ---
 
 照往例，今年的四月一號 Google 又推出了許多令人驚奇的功能與服務，而且多到令人目不暇給。但今年有個令我最感動的產品，那就是 8-bit 版本的 Google Maps。
+
+<!-- more -->
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/rznYifPHxDg?rel=0" frameborder="0" allowfullscreen></iframe>
 

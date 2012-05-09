@@ -3,7 +3,8 @@ layout: post
 title: "Beta 成為一種時尚?"
 date: 2005-06-11 22:08:00 +08:00
 comments: true
-categories: talks
+categories: [雜筆]
+tags: [beta]
 ---
 
 ![image](/images/2005/2005-06-11-beta-1.png)  

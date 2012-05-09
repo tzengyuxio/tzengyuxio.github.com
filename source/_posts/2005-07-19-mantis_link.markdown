@@ -3,12 +3,15 @@ layout: post
 title: "Mantis 惱人連結"
 date: 2005-07-19 06:39:00 +08:00
 comments: true
-categories: php
+categories: [雜筆, coding]
+tags: [php, mantis, regex]
 ---
 
-之前用過 [mantis](http://www.mantisbt.org/)，一個 bug tracker 系統。這套系統簡潔、方便，對中文支援也 OK，雖然中文介面翻的不夠徹底，但語系檔是純文字，自己動手改就好了。
+之前用過 [mantis][mantisbt]，一個 bug tracker 系統。這套系統簡潔、方便，對中文支援也 OK，雖然中文介面翻的不夠徹底，但語系檔是純文字，自己動手改就好了。
 
 不過有個不算問題的問題讓人煩惱，就是 mantis 會把訊息字串中包含 "@" 的 email 字串改成郵件連結，這功能原本貼心，但這麼一來只要 big5 編碼中有包括 @ 字元的中文字－－例如「世」或「一」－－就會被 mantis 把整句中文轉換為一個無意義的 email 連結。雖然無礙於系統運作，但這個偽物連結總是讓人看了心煩。
+
+<!-- more -->
 
 最近重裝 mantis，自然又會看到假連結，於是下定決心解決這個問題。雖然看似小小的問題，前前後後卻花了我一個小時的時間來處理－－找到問題在哪用了快廿分鐘，解決這個問題則又耗去將近四十分鐘！
 
@@ -18,10 +21,13 @@ categories: php
 
 ![image](/images/2005/2005-07-19-mantis-patch.png)
 
-短短五個字，花了一小時。真是「台上一分鐘，台下十年功」啊
+短短五個字，花了一小時。實在是「台上一分鐘，台下十年功」啊
 
-後記：在找資料的時候，在[《正規式速查手冊》](http://www.oreilly.com.tw/product_perl.php?id=a160)的導讀中看到這麼一句話：
+後記：在找資料的時候，在[《正規式速查手冊》][oreilly]的導讀中看到這麼一句話：
 
 > Regular Expression（正規式）是一種 write-only language，寫得出來，但是很難看懂！
 
 真是於我心有戚戚焉（淚）
+
+[mantisbt]: http://www.mantisbt.org/
+[oreilly]: http://www.oreilly.com.tw/product_perl.php?id=a160

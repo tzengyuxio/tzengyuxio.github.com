@@ -3,12 +3,15 @@ layout: post
 title: "iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（下）"
 date: 2011-03-29 13:08
 comments: true
-categories: app
+categories: [software]
+tags: [iphone, app, scanner]
 ---
 
 上篇：[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）](http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html)
 
 這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。
+
+<!-- more -->
 
 CamScanner 的作法有點接近理想方式。在裁剪之前，左上方的按鈕可以選擇「色彩增強」模式，有五種方案：「普通」、「增強」、「增強並銳化」、「經濟模式」、「黑白模式」，可惜這些模式的名稱不夠直覺。裁剪完之後，有提供滑軸用來調整明暗跟對比。裁剪前的「色彩增強」模式無法預覽，裁剪後才知道結果，裁剪完後的明暗對比則會即時反應在畫面上，方便掌握。
 

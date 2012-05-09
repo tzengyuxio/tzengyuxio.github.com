@@ -3,12 +3,15 @@ layout: post
 title: "Starbucks 的女神"
 date: 2005-06-04 22:24:00 +08:00
 comments: true
-categories: doodle
+categories: [雜筆, 習作]
+tags: [palm, starbucks]
 ---
 
 於是，畫了一個失敗的 Starbucks Logo......
 
 ![image](/images/2005/2005-06-04-starbucks.jpeg)
+
+<!-- more -->
 
 今天下午在 Starbucks 查看 PDA，突然想說好久沒用 PDA 畫圖，於是拿起杯子對著上面的 Logo 畫了起來。第一次畫到一半當機，心血全毀。再接再厲。接下來就小心翼翼地、如履薄冰地，每作個滿意的動作就存檔。
 

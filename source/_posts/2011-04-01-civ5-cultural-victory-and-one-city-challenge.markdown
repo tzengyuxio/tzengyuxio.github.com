@@ -3,7 +3,8 @@ layout: post
 title: "文明帝國 V - 文化勝利＆單城挑戰心得"
 date: 2011-04-01 12:46
 comments: true
-categories: game
+categories: [game]
+tags: [civ, occ]
 ---
 
 原發表於 C_Chat版@PTT。Oct 10, 2010。
@@ -14,6 +15,8 @@ categories: game
 昨天（2010/10/09）剛完成文化勝利，分享一下這次發展的心得。
 
 ![國土空照](/images/2011/2011-04-01-civ5-occ-berlin.jpg)
+
+<!-- more -->
 
 ![首都圈特寫](/images/2011/2011-04-01-civ5-occ-berlin2.jpg)
 

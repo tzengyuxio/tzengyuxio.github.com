@@ -3,11 +3,13 @@ layout: post
 title: "BOM (Byte Order Mark) 與 UTF-8"
 date: 2012-03-09 20:28
 comments: true
-categories: [memo]
-tags: [vim, unicode, endian, bom]
+categories: [productivity]
+tags: [vim, unicode, endian, bom, utf8]
 ---
 
-一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。
+記一些關於 BOM 與 UTF-8 的個人筆記，省得以後每次遇到還得重新上網搜尋做功課。
+
+<!-- more -->
 
 * * *
 
@@ -21,29 +23,29 @@ UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律�
 
 ### 加入 BOM
 
-	:set bomb
+    :set bomb
 
 ### 移除 BOM
 
-	:set nobomb
+    :set nobomb
 
 ### 查詢 BOM 狀態
 
-	:set bomb?
+    :set bomb?
 
 ## 在 Terminal / Console 下的 BOM 相關操作
 
 ### 查詢包含 UTF-8 BOM 的檔案
 
-	$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+    $ grep -rIl $'^\xEF\xBB\xBF' [FILE]
 
 ### 找出並移除 UTF-8 的 BOM
 
-	$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+    $ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
 
 ### 編碼的轉換
 
-	$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+    $ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
 
 其中 ENCODING 的部份可以是以下數值：
 

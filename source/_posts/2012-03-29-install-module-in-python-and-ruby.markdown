@@ -3,8 +3,8 @@ layout: post
 title: "Python 與 Ruby 的模組安裝"
 date: 2012-03-29 08:39
 comments: true
-categories: [python, ruby]
-tags: [mac, gem]
+categories: [coding]
+tags: [mac, gem, python, ruby]
 ---
 
 其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。
@@ -12,6 +12,8 @@ tags: [mac, gem]
 雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。
 
 更重要的是，才不會因為上網問 google 然後**開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章**。我真是太容易*分心*了。
+
+<!-- more -->
 
 ## Python 的 easy_install
 

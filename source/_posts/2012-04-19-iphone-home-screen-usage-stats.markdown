@@ -3,13 +3,15 @@ layout: post
 title: "iPhone 主畫面的使用統計"
 date: 2012-04-19 11:27
 comments: true
-categories: [iphone, app]
-tags: [home screen]
+categories: [雜筆]
+tags: [iphone, app, homescreen]
 ---
 
 大家 iPhone 上的 Home Screen 都放了哪些 App 呢？
 
 ![My iPhone Home Screen](/images/2012/2012-04-19-my-iphone-home-screen.jpg)
+
+<!-- more -->
 
 我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈[45 Unique iPhone Home Screens Explained][appstorm]〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。
 

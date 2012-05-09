@@ -3,12 +3,15 @@ layout: post
 title: "Octopress 的開箱文系列"
 date: 2012-03-30 08:44
 comments: true
-categories: octopress
+categories: [雜筆]
+tags: [octopress]
 ---
 
 在安裝 Octopress 的時候，上網找了許多資料，也發現一個有趣的現象，就是大家的第一篇文章幾乎都是要對 Octopress 說幾句話。所以乾脆就來收集一下，看看大家的第一篇都寫些什麼？
 
 以下按照時間順序排列：
+
+<!-- more -->
 
 ---
 

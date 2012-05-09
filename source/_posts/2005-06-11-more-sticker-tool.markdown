@@ -3,7 +3,8 @@ layout: post
 title: "貼紙工具再來"
 date: 2005-06-11 21:58:00 +08:00
 comments: true
-categories: talks
+categories: [雜筆]
+tags: [generator, sticker]
 ---
 
 [圖像／標籤產生器：eoool](http://www.eoool.com/Default.aspx?TypeID=0)

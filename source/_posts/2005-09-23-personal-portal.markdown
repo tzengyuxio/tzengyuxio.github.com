@@ -3,7 +3,8 @@ layout: post
 title: "一些個人入口首頁"
 date: 2005-09-23 07:33:00 +08:00
 comments: true
-categories: internet
+categories: [雜筆]
+tags: [google, msn]
 ---
 
 - Google：[www.google.com/ig](http://www.google.com/ig)
@@ -11,6 +12,8 @@ categories: internet
 	![image](/images/2005/2005-09-23-google.jpeg)
 
 	沒有台北的天氣啊...
+
+<!-- more -->
 
 - msn start.com：[www.start.com/3/](http://www.start.com/3/)
 

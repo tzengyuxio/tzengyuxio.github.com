@@ -3,7 +3,7 @@ layout: post
 title: "Google Analytics 也可以彈鋼琴"
 date: 2012-04-01 09:23
 comments: true
-categories: [internet]
+categories: [雜筆]
 tags: [google, aprilfool]
 ---
 

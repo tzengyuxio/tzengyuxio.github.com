@@ -3,12 +3,15 @@ layout: post
 title: "關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣"
 date: 2012-03-11 18:17
 comments: true
-categories: [mac, shell, productivity]
+categories: [productivity]
+tags: [mac, shell, quicklook, csv]
 ---
 
 我用了 Mac 好一段時間了才知道，原來對檔案直接按空白鍵可以開啟快速檢視 (Quick Look)；又隔了好一段時間，才又知道原來快速檢視除了內建的之外，還可以加上些外掛以增加支援檔案類型。下面是一些我所用到的 QuickLook 相關技巧整理。
 
 ![BetterZip Plugin](/images/2012/2012-03-11-quicklook-of-zip.png)
+
+<!-- more -->
 
 ## 在 Terminal 下開啟快速檢視
 

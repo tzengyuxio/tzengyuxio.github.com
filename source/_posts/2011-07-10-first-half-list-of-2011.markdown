@@ -3,8 +3,90 @@ layout: post
 title: "2011上半年度閱讀清單"
 date: 2011-07-10 00:37:00 +08:00
 comments: true
-categories: life
-tags:
+categories: [雜筆, life, book, game, movie, music, comics, anime, drama]
+tags: [日劇, 涼宮春日, kaiji]
 ---
 
-紀錄一下今年上半年看了哪些東西。有些東西看完沒有隨手記，現在想不起來就沒法子列了，另外有些漫畫買個單行本第一集來翻翻，沒有繼續追下去的話也懶得列。<br /><br />上半年讀了 22 本書，印象中不只這數目（7/18 補充：整理了 aNobii 之後發現上半年含 4 本大塊漫畫一共讀了 30 本書，差異的部份我就懶得列了）；扣除掉 4 本大塊的漫畫後，平均三個禮拜看兩本書，還是不夠。電影的話，今年把史瑞克跟玩具總動員都補完了，15 部電影中就有將近一半的7部是屬於這兩個動畫電影的系列。另外，因為電影而去找來看的漫畫《賭博默示錄》系列，雖然畫風其差，但是作者的巧思卻很令人折服。動畫的話只有看完《魔法少女小圓》，會看《香格里拉》原本是衝著村田蓮爾的人設，以及《Last Exile》的製作團隊而開始看的，可是劇情卻讓我看不下去。<br /><br />遊戲的話不是玩要花很長時間的策略遊戲，不然就是一堆 iPhone 的小遊戲。不過我 iPhone 上玩的遊戲多到懶得列，光有花錢下載的就已經四、五十款，其中有不少都還玩到 Game Center 排名蠻前面的......<br /><br /><br /><br />書籍：<br /><br /><ul><li>感動，如此創造</li><li>十四堂人生創意課</li><li>推翻李欣頻的創意學</li><li>我的日常推理</li><li>飲食男女經濟學</li><li>大設計</li><li>我是乳房</li><li>2001 太空漫遊</li><li><a href="http://reading.aqualuna.me/2011/06/roald-dahl.html">幻想大師 Roald Dahl 的異想世界</a></li><li>新人生</li><li>槓桿閱讀術、槓桿思考術、槓桿時間術、槓桿人脈術</li><li>涼宮春日的分裂</li><li>涼宮春日的驚愕（上）</li><li>涼宮春日的驚愕（下）</li><li><a href="http://reading.aqualuna.me/2011/06/i-2.html">激情香水I、激情香水2</a></li><li><a href="http://reading.aqualuna.me/2011/06/blog-post_07.html">變驢綺情記</a></li><li>夜夜春夢</li><li><a href="http://reading.aqualuna.me/2011/06/blog-post_12.html">像樣的不倫人妻</a></li></ul><br /><br />電影：<br /><br /><ul><li>Shrek 1</li><li>Shrek 2</li><li>Shrek 3</li><li>Shrek Forever</li><li>The man from earth</li><li>詐欺遊戲：最後的舞台</li><li>2001 太空漫遊</li><li><a href="http://reading.aqualuna.me/2011/06/2010.html">涼宮春日的消失</a></li><li>銀翼殺手</li><li><a href="http://reading.aqualuna.me/2011/06/blog-post_05.html">賭博默示錄</a></li><li><a href="http://reading.aqualuna.me/2011/06/2010_12.html">消失在第七大街</a></li><li>玩具總動員 1</li><li>玩具總動員 2</li><li>玩具總動員 3</li><li>讓子彈飛</li></ul><br /><br />動畫：<br /><br /><ul><li>魔法少女小圓</li><li>香格里拉（看到中段看不下去）</li></ul><br /><br />漫畫：<br /><br /><ul><li>謎樣少女 （到 54 話）</li><li>邱比特的惡作劇「虹玉」</li><li>邱比特的惡作劇，櫻桃症候群</li><li>我 X 老婆大人</li><li>邱比特的惡作劇，S 慾望的印記 （到第3集）</li><li>海賊王（到單行本58）</li><li>Bleach （到單行本16）</li><li>七海遊龍</li><li><a href="http://reading.aqualuna.me/2011/06/blog-post.html">賭博默示錄</a></li><li><a href="http://reading.aqualuna.me/2011/06/blog-post_06.html">賭博破戒錄</a></li><li>賭博墮天錄</li><li>賭博墮天錄 和也篇 （未完）</li><li>賭博霸王傳 零 （未完）</li></ul><br /><br />遊戲：<br /><br /><ul><li>信長之野望 天道（以長宗我部統一）</li><li>三國志 XI（以劉備統一）</li><li><a href="http://reading.aqualuna.me/2011/06/2.html">歐陸戰爭</a>（戰役全破）</li><li><a href="http://reading.aqualuna.me/2011/06/air-penguin.html">Air Pengiun</a></li><li>GemCraft（全關卡發亮）</li><li><a href="http://reading.aqualuna.me/2011/06/blog-post_19.html">文明 變革</a>&nbsp;as 九鼎人, 忘了啥勝利</li><li>文明帝國 V as America, 科技勝利</li></ul><br /><br />日劇：<br /><br /><ul><li>外交官黑田康作</li><li>Marumo no Okite</li><li>喪失名字的女神</li></ul>
+紀錄一下今年上半年看了哪些東西。有些東西看完沒有隨手記，現在想不起來就沒法子列了，另外有些漫畫買個單行本第一集來翻翻，沒有繼續追下去的話也懶得列。
+
+<!-- more -->
+
+上半年讀了 22 本書，印象中不只這數目（7/18 補充：整理了 aNobii 之後發現上半年含 4 本大塊漫畫一共讀了 30 本書，差異的部份我就懶得列了）；扣除掉 4 本大塊的漫畫後，平均三個禮拜看兩本書，還是不夠。電影的話，今年把史瑞克跟玩具總動員都補完了，15 部電影中就有將近一半的7部是屬於這兩個動畫電影的系列。另外，因為電影而去找來看的漫畫《賭博默示錄》系列，雖然畫風其差，但是作者的巧思卻很令人折服。動畫的話只有看完《魔法少女小圓》，會看《香格里拉》原本是衝著村田蓮爾的人設，以及《Last Exile》的製作團隊而開始看的，可是劇情卻讓我看不下去。
+
+遊戲的話不是玩要花很長時間的策略遊戲，不然就是一堆 iPhone 的小遊戲。不過我 iPhone 上玩的遊戲多到懶得列，光有花錢下載的就已經四、五十款，其中有不少都還玩到 Game Center 排名蠻前面的……
+
+### 書籍
+
+- 感動，如此創造
+- 十四堂人生創意課
+- 推翻李欣頻的創意學
+- 我的日常推理
+- 飲食男女經濟學
+- 大設計
+- 我是乳房
+- 2001 太空漫遊
+- [幻想大師 Roald Dahl 的異想世界](/blog/2011/06/02/the-best-of-roald-dahl/)
+- 新人生
+- 槓桿閱讀術、槓桿思考術、槓桿時間術、槓桿人脈術
+- 涼宮春日的分裂
+- 涼宮春日的驚愕（上）
+- 涼宮春日的驚愕（下）
+- [激情香水I、激情香水2](/blog/2011/06/07/le-perfume/)
+- [變驢綺情記](/blog/2011/06/07/la-metamorphose/)
+- 夜夜春夢
+- [像樣的不倫人妻](/blog/2011/06/12/xianyang-de-bulung-renqi/)
+
+### 電影
+
+- Shrek 1
+- Shrek 2
+- Shrek 3
+- Shrek Forever
+- The man from earth
+- 詐欺遊戲：最後的舞台
+- 2001 太空漫遊
+- [涼宮春日的消失](/blog/2011/06/02/suzumiya-haruhi-2010/)
+- 銀翼殺手
+- [賭博默示錄](/blog/2011/06/05/kaiji-the-movie/)
+- [消失在第七大街](/blog/2011/06/12/vanishing-on-the-street/)
+- 玩具總動員 1
+- 玩具總動員 2
+- 玩具總動員 3
+- 讓子彈飛
+
+### 動畫
+
+- 魔法少女小圓
+- 香格里拉（看到中段看不下去）
+
+### 漫畫
+
+- 謎樣少女 （到 54 話）
+- 邱比特的惡作劇「虹玉」
+- 邱比特的惡作劇，櫻桃症候群
+- 我 X 老婆大人
+- 邱比特的惡作劇，S 慾望的印記 （到第3集）
+- 海賊王（到單行本58）
+- Bleach （到單行本16）
+- 七海遊龍
+- [賭博默示錄](/blog/2011/06/05/kaiji-comics/)
+- [賭博破戒錄](/blog/2011/06/06/kaiji-comics-part-2/)
+- 賭博墮天錄
+- 賭博墮天錄 和也篇 （未完）
+- 賭博霸王傳 零 （未完）
+
+### 遊戲
+
+- 信長之野望 天道（以長宗我部統一）
+- 三國志 XI（以劉備統一）
+- [歐陸戰爭](/blog/2011/06/06/european-war-2/)（戰役全破）
+- [Air Pengiun](/blog/2011/06/13/air-penguin/)
+- GemCraft（全關卡發亮）
+- [文明 變革](/blog/2011/06/19/civilization-revolution/) as 九鼎人, 忘了啥勝利
+- 文明帝國 V as America, 科技勝利
+
+### 日劇
+
+- 外交官黑田康作
+- Marumo no Okite
+- 喪失名字的女神
