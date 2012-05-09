@@ -7,4 +7,4 @@ sharing: true
 footer: true
 ---
 
-還沒想到要寫些什麼...
+吾少也賤，故多能鄙事。

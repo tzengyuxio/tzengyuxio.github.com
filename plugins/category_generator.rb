@@ -255,7 +255,7 @@ module Jekyll
       when 1
         tags[0].to_s
       else
-        "#{tags[0...-1].join(', ')}, #{tags[-1]}"
+        "#{tags[0...-1].join(' ')} #{tags[-1]}"
       end
     end
 
