@@ -22,18 +22,19 @@ $indented-lists: true;
 
 div.sharing {
   padding:0;
+  vertical-align: top;
 }
 
 div.sharing ul {
   list-style:none;
   margin:0;
   padding:0;
-  height:30px;
-  margin-top:10px;
+  height:32px;
+  margin-top:8px;
 }
 
 div.sharing ul li {
-  margin: 3px 5px 0 0;
+  margin:0;
   padding: 0;
   display: inline-block;
   vertical-align: top;
