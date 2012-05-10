@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: vim | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/vim/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -66,10 +66,8 @@ set tw=72
 
 <p>不過看了下安裝說明，感覺麻煩了點。於是又找到了<a href="http://www.codeography.com/2010/07/13/json-syntax-highlighting-in-vim.html">這篇文章</a>，只要到 <code>~/.vimrc</code> 加入下面這行，就可以讓 JSON 檔案套用 JavaScript 的 syntax highlight, 簡單明瞭。</p>
 
-<pre class="prettyprint"><code>autocmd BufNewFile,BufRead *.json set ft=javascript</code></pre>
-
-
-
+<pre><code>autocmd BufNewFile,BufRead *.json set ft=javascript
+</code></pre>
 ]]></content>
   </entry>
   
@@ -78,7 +76,10 @@ set tw=72
     <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
     <updated>2012-03-09T20:28:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
-    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+    <content type="html"><![CDATA[<p>記一些關於 BOM 與 UTF-8 的個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<!-- more -->
+
 
 <hr />
 
@@ -134,6 +135,62 @@ set tw=72
 
 
 <p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[代碼配色，從 Zenburn 到 Solarized]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized/"/>
+    <updated>2012-02-10T08:40:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized</id>
+    <content type="html"><![CDATA[<p>這些年來，我的代碼配色方案都是以 <a href="/blog/tags/zenburn/">zenburn</a> 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse 再到 XCode 都可以<a href="http://slinky.imukuppi.org/zenburnpage/">找到現成的 zenburn 設定</a>。</p>
+
+<p><img src="https://lh4.googleusercontent.com/-m9F65JqmUDI/TzRk4vBNMkI/AAAAAAAAJVc/mShL8z4NQAc/s640/vim_zenburn.png" alt="zenburn @ vim" /></p>
+
+<!-- more -->
+
+
+<p>上圖就是目前在用的 zenburn。由於用這麼久都已經習慣了，從沒有想過會有第二種配色讓我如此滿意，結果前天突然發現 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這一組配色，當場就被迷住了，我才認識這組配色不到 24 小時，就把 zenburn 從我的 vimrc 中換掉了。</p>
+
+<ul>
+<li>官方網站：<a href="http://ethanschoonover.com/solarized">Solarized - Ethan Schoonover</a></li>
+<li>GitHub 檔案庫：<a href="https://github.com/altercation/solarized">altercation / solarized - GitHub</a></li>
+</ul>
+
+
+<p>說起來，會注意到 Solarized 也是無心插柳。原本是在找 markdown + blogger 的 solution, 沒有找著，倒是見到了一個以 github 為基礎的 blog framework, 叫 Octopress。我對 <a href="http://octopress.org/">Octopress</a> 沒有太多興趣，純粹好奇它的技術架構（畢竟以 SCM 作為 blog 後端，是很有趣的想法），所以研究了一下。然後意外地在<a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html">〈使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章〉</a>這篇文章中意外地注意到 Solarized 這組配色。</p>
+
+<p>Solarized 最令我覺得神奇的地方，就在於同一組基本色，可以任意搭配淺白色或淺黑色背景，都一樣清晰明瞭。它的色盤也控制在 16 色內，所以即使在終端機模式下使用也不會突兀。在官方網站上，也列出了 Visual Studio 與 Xcode 等 IDE 的配色支援；for eclipse 的配色網路上搜尋得到，不過官網上沒列出，不曉得是不是名字相衝的緣故（太陽 vs. 日蝕）=P</p><p>我在終端機純文字模式下的 Vim 與圖形介面的 MacVim 分別指定了 Light 與 Dark 兩種配色。這樣在 Vim 中編輯時，只要瞄一下我就可以知道現在是在終端機模式下還是獨立的 Mac App。</p>
+
+<p><img src="https://lh3.googleusercontent.com/-wTKa4GLQKZE/TzRk46EP8GI/AAAAAAAAJVY/uhEJUnmBN14/s640/vim_solarized_yin.png" alt="solarized(yin) @ vim" /></p>
+
+<p><img src="https://lh4.googleusercontent.com/-nIid_yCO9y4/TzRk4nK58FI/AAAAAAAAJVU/Sbt62oMbNAY/s640/macvim_solarized_yang.png" alt="solarized(yang) @ macvim" /></p>
+
+<p>另外這配色除了用在程式碼外，也有提供給一般應用程式使用的版本，例如常見的 putty, OSX 自帶的 Terminal, 以及 iTerm 2 等。一樣都可以在 Solarized 放在 GitHub 上的 Repository 上找到。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的 vimrc 配置]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/12/30/my-vimrc/"/>
+    <updated>2011-12-30T05:10:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/12/30/my-vimrc</id>
+    <content type="html"><![CDATA[<p>我的 vimrc 配置 @ GitHub: <a href="https://github.com/tzengyuxio/vimrc">github</a></p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://4.bp.blogspot.com/-SoWAf_kGFPo/TvzTjBvAFQI/AAAAAAAAJG4/clbERtQVV9s/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.49.11.png' width='' height='' alt='Vim in Terminal (Mac)' title='Vim in Terminal (Mac)'><span class='caption-text'>Vim in Terminal (Mac)</span></span></p>
+
+<!-- more -->
+
+
+<p>我一直在用的 vimrc 配置是在我還在以 WinXP 作為主要工作電腦時所配置的， 有超過一年多沒動過了。現在的主要工作電腦以 Mac OS X 為主，當初寫的配置如今有些不合用，然而這好些個日子以來也都是一直將就著用，懶得動手改。終於今天決定要趁著年底來個大掃除，整理一下 vimrc，順便也把程式碼從原本的自家用 SVN 轉移到 GitHub 上。</p>
+
+<p>這次最大的修補就是狀態列了。原本狀態列的配色只有寫了 GUI 模式下的版本，因此在 Terminal 的純文字模式下，只會見到模糊不清的文字配色，要看清楚狀態列訊息得特別花眼力。今天重新調整了狀態列在 GUI 模式與純文字模式下的配色，另外也加上了隨著視窗寬度調整，能夠自動增減狀態列訊息的功能。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://1.bp.blogspot.com/-tO5LBggCPPE/TvzTj2R8bmI/AAAAAAAAJHA/bb3vgwSzoNY/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-30+%25E4%25B8%258A%25E5%258D%25884.50.02.png' width='' height='' alt='MacVim' title='MacVim'><span class='caption-text'>MacVim</span></span></p>
+
+<p>另外一個比較大的改變不在於程式碼本身，而在於 vimrc 與相關外掛的管理方式。這次加入了 <a href="http://www.vim.org/scripts/script.php?script_id=2332">pathogen</a> 來做為外掛套件管理。另外，除了將專案移到了 GitHub 外，也特別研究了 "git submodule" 的使用方式，把 NERD tree 等外掛的 git 加入到自己的 git repository 中，而不是單純地把檔案加進來。關於 "git submodule" 的進一步介紹與說明，可以參考<a href="http://josephjiang.com/entry.php?id=342">〈Git Submodule 的認識與正確使用！〉</a>這篇文章，講解的非常清楚。</p>
+
+<p>有時間的話再來寫幾篇文章來對自己 vimrc 中的設定作個詳細的說明。</p>
 ]]></content>
   </entry>
   

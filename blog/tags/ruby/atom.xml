@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ruby | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/ruby/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -42,6 +42,75 @@
 <p>話說既然加入了標籤功能，接下來就是找個時間好好整理每篇文章的「分類」和「標籤」了……嗯，這讓我想到一句老話：</p>
 
 <blockquote><p>要改的東西太多，那就改天吧。</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Python 與 Ruby 的模組安裝]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby/"/>
+    <updated>2012-03-29T08:39:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby</id>
+    <content type="html"><![CDATA[<p>其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。</p>
+
+<p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
+
+<p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
+
+<!-- more -->
+
+
+<h2>Python 的 easy_install</h2>
+
+<p>Python 的 easy_install 人如其名，真的很 easy。比方說我看到 <a href="http://pypi.python.org/pypi/Markdown">Markdown 2.1.1 : Python Package Index</a> 這個套件想要安裝，我只要到終端機輸入下面指令就行了：</p>
+
+<pre><code>$ easy_install markdown
+</code></pre>
+
+<p>要刪除模組的話則是輸入：</p>
+
+<pre><code>$ easy_install -m markdown
+</code></pre>
+
+<p>easy_install 主要的功能就是安裝，如果需要進一步說明，可以參考</p>
+
+<pre><code>$ easy_install --help
+</code></pre>
+
+<h2>Ruby 的 gem</h2>
+
+<p>相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的<strong>套件管理工具</strong>。例如我想安裝一個叫 <a href="http://toodledo.rubyforge.org/toodledo/">toodledo</a> 的套件，可以這麼輸入：</p>
+
+<pre><code>$ gem install toodledo
+</code></pre>
+
+<p>或是指定版本號：</p>
+
+<pre><code>$ gem install toodledo --version 1.3.8
+</code></pre>
+
+<p>移除的話是：</p>
+
+<pre><code>$ gem uninstall toodledo
+</code></pre>
+
+<p>我想知道有沒有跟 markdown 相關的套件，我可以用如下方式尋找：</p>
+
+<pre><code>$ gem list markdown --remote
+</code></pre>
+
+<p>如果沒有加上 <code>--remote</code>, 則會列出本機已經安裝的套件。</p>
+
+<pre><code>$ gem list
+</code></pre>
+
+<p>更詳細的說明可以參考線上說明。</p>
+
+<pre><code>$ gem help
+</code></pre>
+
+<h2>在 Mac 上</h2>
+
+<p>上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 <code>sudo</code> 再執行就好了。</p>
 ]]></content>
   </entry>
   
@@ -92,6 +161,9 @@
     <id>http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode</id>
     <content type="html"><![CDATA[<p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。</p>
 
+<!-- more -->
+
+
 <p>然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為 <code>UTF-8 Unicode (utf8)</code>，MySQL 連線校對設為 <code>utf8_general_ci</code>，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。</p>
 
 <p>這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 <code>config/database.yml</code> 中加入一行設定即可：</p>
@@ -120,6 +192,9 @@
     <content type="html"><![CDATA[<h3>Step 1: Install Ruby</h3>
 
 <p>先前不曉得裝什麼軟體就一併裝好了，所以跳過。</p>
+
+<!-- more -->
+
 
 <h3>Step 2: Install RubyGems</h3>
 

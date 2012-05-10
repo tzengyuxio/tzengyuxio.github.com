@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: hacks | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/hacks/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-10T08:46:42+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［網摘］丙戌新春 Google 篇]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/02/03/google-news/"/>
+    <updated>2006-02-03T14:59:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/02/03/google-news</id>
+    <content type="html"><![CDATA[<p>過個年，Google 的消息與動作絲毫沒減少。</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.dearbook.com.cn/2006/googlehack/index.htm">GOOGLE HACKS 简体中文版</a></p>
+
+<p>  简中版都有了，希望不久之後能夠看到繁中版。</p></li>
+<li><p><a href="http://www.andyrutledge.com/google-redux.php">Google Redux - 重新設計 Google 介面</a></p>
+
+<p>  <a href="http://www.andyrutledge.com/googleredux_example.html" title="Photo Sharing"><img src="http://static.flickr.com/31/94750464_2daebf8f34_m.jpg" alt="Google Redux" height="213" width="240" /></a></p>
+
+<p>  作者 Andy Rutledge，重點是他所提出的這個概念，我很喜歡：</p>
+
+<blockquote><p>In design, if you don’t know why you’re putting something somewhere you’re likely making a mistake.</p></blockquote></li>
+<li><p><a href="http://blog.outer-court.com/archive/2006-02-02-n58.html">Redesigning Google</a></p>
+
+<p>  另一位老兄，Philipp Lenssen 的設計。他的<a href="http://blog.outer-court.com/">網站</a>頗值得一看。底下列兩篇有趣的：</p>
+
+<ul>
+<li><a href="http://blog.outer-court.com/archive/2006-02-01-n75.html">如果電腦也懂模糊邏輯（Fuzzy Logic）？</a></li>
+<li><a href="http://blog.outer-court.com/archive/2006-01-05-n11.html">被退掉的 Google 節慶 Logo 設計</a></li>
+</ul>
+</li>
+<li><p><a href="http://www.kenwong.cn/post/google-news-no-more-beta-now.html">Google 新聞正式推出</a></p>
+
+<p>  來自對岸的消息。不過為啥 <a href="http://news.google.com.tw/news?ned=tw">Google 新聞 台灣版</a> 的還是 BETA 中呢？還有怎麼每次我連上 Google News 就會自動被導向 Google News HK？</p></li>
+<li><p><a href="http://www.kenwong.cn/post/google-is-developing-its-own-os-Goobuntu.html">Google 開發作業系統傳聞已經確認</a>。</p>
+
+<p>  是以 <a href="http://www.ubuntu.org.tw/">Ubuntu</a> 為基礎去作修改的，一個最近頗熱門的 Linux 版本。蠻好奇做出來的桌面系統使用介面（desktop interface）會是長啥模樣。</p></li>
+<li><p><a href="http://www.google.com/reader/">Google Reader</a> 改版</p>
+
+<p>  變得更好用了，訂閱標題的中文支援也 OK 了。可以開始考慮將 Bloglines 的訂閱轉移到 Google Reader 上。</p></li>
+<li><p><a href="http://www.google.com/bookmarks/">Google Bookmarks</a></p>
+
+<p>  好像出了一陣子，而且我以前還試用過，留下兩個書籤在裡頭。不過我壓根忘了這回事，一點印象也沒有，直到這兩天看到介紹才又連進去看。話說我美味書籤用得好好的，應該還不用跳槽吧。</p></li>
+<li><p><a href="http://www.google.com/support/toolbar/bin/static.py?page=features.html&amp;v=4">Google Toolbar version 4</a></p>
+
+<p>  最大的特色就是可以<a href="http://www.google.com/tools/toolbar/buttons/gallery">新增自定 Button</a>，以及整合了 Google Bookmarks 在工具列中。</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

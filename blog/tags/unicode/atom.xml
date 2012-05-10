@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: unicode | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/unicode/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -86,7 +86,10 @@
     <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
     <updated>2012-03-09T20:28:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
-    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+    <content type="html"><![CDATA[<p>記一些關於 BOM 與 UTF-8 的個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<!-- more -->
+
 
 <hr />
 
@@ -151,6 +154,9 @@
     <updated>2006-01-21T13:19:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode</id>
     <content type="html"><![CDATA[<p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。</p>
+
+<!-- more -->
+
 
 <p>然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為 <code>UTF-8 Unicode (utf8)</code>，MySQL 連線校對設為 <code>utf8_general_ci</code>，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。</p>
 

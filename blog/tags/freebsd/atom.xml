@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: freebsd | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/freebsd/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -45,6 +45,9 @@ grep _enable *
     <content type="html"><![CDATA[<h3>Step 1: Install Ruby</h3>
 
 <p>先前不曉得裝什麼軟體就一併裝好了，所以跳過。</p>
+
+<!-- more -->
+
 
 <h3>Step 2: Install RubyGems</h3>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: endian | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/endian/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -18,7 +18,10 @@
     <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
     <updated>2012-03-09T20:28:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
-    <content type="html"><![CDATA[<p>一些個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+    <content type="html"><![CDATA[<p>記一些關於 BOM 與 UTF-8 的個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<!-- more -->
+
 
 <hr />
 

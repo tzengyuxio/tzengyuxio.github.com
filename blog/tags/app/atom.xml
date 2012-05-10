@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: app | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/app/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-10T08:46:42+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[iPhone 主畫面的使用統計]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats/"/>
+    <updated>2012-04-19T11:27:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats</id>
+    <content type="html"><![CDATA[<p>大家 iPhone 上的 Home Screen 都放了哪些 App 呢？</p>
+
+<p><img src="/images/2012/2012-04-19-my-iphone-home-screen.jpg" alt="My iPhone Home Screen" /></p>
+
+<!-- more -->
+
+
+<p>我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈<a href="http://iphone.appstorm.net/roundups/lifestyle-roundups/45-iphone-home-screens/">45 Unique iPhone Home Screens Explained</a>〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。</p>
+
+<p>不過光這樣看完還不過癮，我決定做個統計。雖然上面那篇是去年八月的文章了，至今過了半年，不過大部分 App 現在還都蠻流行的。統計的結果如下，可以參考看看。</p>
+
+<h2>Home Screen 的應用方式</h2>
+
+<ul>
+<li>首頁中有 16 個格子（不考慮 dock）。這 45 個人平均放了 13.09 個 app 與 1.38 個 folder 在首頁。</li>
+<li>最少的甚至有完全不放任何 app，只在首頁留 dock 與一個 folder 的人 (Robin A.)。</li>
+<li>有 48.89% 的人在首頁有放 folder，也就是有五成多一點的人在首頁不放 folder。</li>
+<li>Dock 在每一頁都會出現，是最方便點選的地方。不過仍有 7 個人，15.56% 的比例，沒有在 dock 上放滿四格。</li>
+<li>有 4 個人在 dock 上放 folder（這我之前真的沒想過），比例為 8.89%。</li>
+<li>有 35.56% 的人沒有把首頁填滿。</li>
+</ul>
+
+
+<h2>App in Dock</h2>
+
+<p>最多人放在 Dock 上的 App 排名如下：<br/>
+（不包含 folder 以及 folder 中的 App。括號中數字為人數）</p>
+
+<ol>
+<li><strong>電話</strong> (33)</li>
+<li><strong>Mail</strong> (30)</li>
+<li><strong>Safari</strong> (21)</li>
+<li><strong>訊息</strong> (17)</li>
+<li><strong>音樂</strong> (17=13+4, iPod+Music, 新版 iOS 中這兩個合併了)</li>
+<li>設定 (9)</li>
+<li>相機 (6)</li>
+<li>Camera+ (4)</li>
+<li>Tweetbot (4)</li>
+</ol>
+
+
+<p>人數在 3 以下的我就省略不列了。另外，上表中的前七名就已經包辦 45 支 iPhone 裡八成以上的 dock 空格了。</p>
+
+<h2>App in Home Screen</h2>
+
+<p>不分 dock 與否，首頁最常看到的前 20 個 App 分別是：<br/>
+（不包含 folder 以及 folder 中的 App。括號數字中為人數）</p>
+
+<ol>
+<li>Mail (41)</li>
+<li>Safari (38)</li>
+<li>電話 (36)</li>
+<li>訊息 (30)</li>
+<li>設定 (28)</li>
+<li>行事曆 (26)</li>
+<li>音樂 (26=22+4, iPod+Music)</li>
+<li>照片 (22)</li>
+<li>相機 (18)</li>
+<li>時間 (17)</li>
+<li>Camera+ (16, <strong>非官方 App 中的第一名</strong>)</li>
+<li>地圖 (16)</li>
+<li>App Store (16)</li>
+<li>Facebook (14)</li>
+<li>Tweetbot (13)</li>
+<li>備忘錄 (13)</li>
+<li>聯絡資訊 (13)</li>
+<li>Twitter (12)</li>
+<li>Reeder (12)</li>
+<li>Instagram (10)</li>
+</ol>
+
+
+<p>再來的 App 就是少於 10 個人放在首頁的，分別是 Instapaper(9), Hipstamatic(9), Google+(7), Wunderlist(7), Evernote(7), Things(6), 天氣(6), Remote(6), iTunes(6), iBooks(6), 1Password(6), 計算機(5), Skype(5), Simplenote(5), Dropbox(5)。</p>
+
+<p>低於 4 以下的我就不列出了。</p>
+
+<h2>其他</h2>
+
+<ul>
+<li>大家平均放 App 的頁數為 4.56 頁（這個算得我眼睛好累）。最少的只有一頁（Zach）。</li>
+<li>除了官方的「相機」外，最常使用的拍照程式為 Camera+(16), 其次為 Instagram(10), Hipstamatic(9)。</li>
+<li>有四個人在首頁放了兩個以上的拍照App。其中一個放了三個，一個放了四個。</li>
+<li>Naceron 在首頁放了 6 個遊戲 App。</li>
+<li>Weid 說他的首頁只放 Universal（iPhone, iPad 均可使用）的 App。</li>
+<li>Sivil 和 Garrett G. 都把常用聯絡人作成 icon 放在首頁。</li>
+<li>Garrett G. 提供的圖片仔細看的話蠻奇怪的，為什麼他的首頁其實是第二頁？另外，他也是 Scan 這個 App 的開發者，在他的首頁中可以找到 Scan。</li>
+<li>Iynque 的 Dock 上放的都是有 '+' 號的 App，連 folder 也是！</li>
+<li>Shaun K 首頁左邊排了綠色一整排。</li>
+<li>Robin A. 的首頁最乾淨；Brad M. 只有首頁一頁。</li>
+</ul>
+
+
+<hr />
+
+<p>你怎麼運用你的主畫面呢？有任何的點子都歡迎與大家一起分享！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fragger - 更殺腦細胞的 Angry Birds]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/01/21/fragger/"/>
+    <updated>2012-01-21T08:21:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/01/21/fragger</id>
+    <content type="html"><![CDATA[<p>簡單的說，Fragger 也是一款 "Angry Birds"-like 的遊戲。稍微岔個題，話說雖然我用 "Angry Birds"-like 這詞，不過類似的「拋物線物理打擊」玩法的遊戲，在 Angry Birds 發表之前我就有在網路上玩過同性質的 flash 遊戲，<a href="http://armorgames.com/play/3614/crush-the-castle">Crush The Castle</a>。照理以時間先後來看，應該得稱作 "Crush The Castle"-like 才對；不過說到底還是 Angry Birds 有名，那款 flash 遊戲就先別下不表，有機會的話再多做介紹。</p>
+
+<p><img src="http://1.bp.blogspot.com/-Ke-sDWQrSLw/TxoEHsH1dyI/AAAAAAAAJNA/CSf2uaIYr2g/s480/IMG_4711.PNG" alt="" /></p>
+
+<!-- more -->
+
+
+<p>既然已經說了是 "Angry Birds"-like，Fragger 的玩法自然就不難想像，最主要差別的就是題材換成了拋手榴彈，然後炸恐怖份子炸外星人炸木乃伊等等等。與用彈弓發射憤怒鳥所不同的是，憤怒鳥砸過去就開始破壞了，可手榴彈丟過去還不一定立刻爆炸，得滾個一小段時間，所以時機與力道的拿捏就更為重要。</p>
+
+<p>在關卡的玩法上另外一個主要差別就是憤怒鳥的種類多樣，各有不同飛行方式與功能；但是在 Fragger 中，你能丟的就只有手榴彈。因此 Fragger 的重心就完全放在關卡場景上的設計，玩家必須透過每一關中的場景物件，如箱子、炸藥、木棍等，來完成把敵人炸成碎片的任務。</p>
+
+<p><img src="http://3.bp.blogspot.com/-599d5WB7eh4/TxoEIuzCN1I/AAAAAAAAJNI/PLWhiWbpxb0/s480/IMG_4712.PNG" alt="" /></p>
+
+<p>Fragger 有分 Lite 版與正式版，我是先玩了 Lite 版之後，便立刻決定購買正式版。正式版只有 &nbsp;0.99 美金，但是 Fragger 經常有更新，所以相當物超所值。Fragger 的更新有些是搭配聖誕節、復活節等節慶，還有些是以同公司其他遊戲為主題，例如 Monster Dash。到這篇文章撰寫為止，正式版中共有十二大關卡，每個大關卡有 30~40 關左右，就遊戲內容而言其實是相當豐富的。</p>
+
+<p>平心而論，Fragger 的關卡設計比起 Angry Birds 來得有挑戰性，難度相對較高；兩者相比，我個人對於 Fragger 的評價與喜好要勝過 Angry Birds, 但是面對大眾玩家時，Fragger 的題材與內容反而是不如 Angry Birds 來得討喜。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://2.bp.blogspot.com/-CPZ9pauDY1E/TxoEKPbCIyI/AAAAAAAAJNQ/_L5_P_cnPMg/s480/IMG_4713.PNG' width='' height='' alt='復活節彩蛋關' title='復活節彩蛋關'><span class='caption-text'>復活節彩蛋關</span></span></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Princess Punt - 公主的高跟鞋穿幾號?]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/01/04/princess-punt/"/>
+    <updated>2012-01-04T18:55:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/01/04/princess-punt</id>
+    <content type="html"><![CDATA[<p>簡單來個重點作為結論。在所有 "Angry Birds"-like 的遊戲中，這款遊戲的出發點是最有創意的，但在我玩過所有 "Angry Birds"-like 的遊戲中，這款是最難玩的一款。好奇這款遊戲值不值得下載來玩的，現在就可以離開了；而想知道怎麼樣才能做出一款令玩家討厭的 Freemium 遊戲，則歡迎繼續看下去。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://2.bp.blogspot.com/-IOVZpWQEiB8/TwQtBqjWesI/AAAAAAAAJLk/sMo4EgY_96Q/s480/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+34+04.png' width='' height='' alt='遊戲到處要花錢，標題畫面還是放了廣告' title='遊戲到處要花錢，標題畫面還是放了廣告'><span class='caption-text'>遊戲到處要花錢，標題畫面還是放了廣告</span></span></p>
+
+<!-- more -->
+
+
+<p>先說說這款遊戲。Princess Punt 第一眼看上去最大的特點，就是它是以公主踢飛護衛的方式進行攻擊，這比起其他用彈弓（Angry Birds）、丟手榴彈（Frapper）、汽車發射台（Trucks and Skulls NITRO）來得有意思多了。跟前面幾款比起來，Princess Punt 也有一個比較完整的故事，因此它在關卡設計上可以結合劇情，讓玩家對遊戲有更多的投入感，想好奇接下來的故事發展。比起前面幾款各自獨立毫無關連的關卡層次設計，其實是能給玩家帶來更大的粘性。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://3.bp.blogspot.com/-SW0ru_teHYA/TwQtEFzHYOI/AAAAAAAAJL0/u2tnjM5L6Ok/s480/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+35+28.png' width='' height='' alt='好奇公主最後是否會情歸主角？可惜我已經放棄看到結局了' title='好奇公主最後是否會情歸主角？可惜我已經放棄看到結局了'><span class='caption-text'>好奇公主最後是否會情歸主角？可惜我已經放棄看到結局了</span></span></p>
+
+<p>然而，有好的創意與好的出發點，不代表就會有好的遊戲。首先是技術上的問題，這遊戲到處充滿了 Loading：過個關卡、進入商店或是回到選單，全部都要 Loading。過多的 Loading 使得遊戲的節奏感被破壞殆盡。這種兩三分鐘就發生一次的 break，使人玩沒幾場就想跳出，很難讓玩家在玩遊戲時進入到 Flow 般的投入狀態。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://3.bp.blogspot.com/-LsQDrEmoiFQ/TwQtDJTCbbI/AAAAAAAAJLs/ZF-zkP0D2Mk/s480/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+34+22.png' width='' height='' alt='Loading, Loading, Loading...' title='Loading, Loading, Loading...'><span class='caption-text'>Loading, Loading, Loading...</span></span></p>
+
+<p>再來，這遊戲雖然故事有趣，但串連故事章節之間的關卡設計卻頗為無聊。遊戲一共有 8 個 Area，每個 Area 分成 6 個 Level，每個 Level 裡還有 5 小關，這樣算下來一共是 240 關，加上每個 Area 可能會隨機遇上的 Boss 關卡，248 關，看上去還蠻豐富的。但是每個 Level 中的 5 小關長得幾乎都一樣，只有怪物強弱差別；而每個 Area 中的 6 個 Level，多半都只是地形與怪物的配置位置不同，Level 間的差異甚至比 Angry Birds 小關和小關之間的差異來得小。所以就算沒有 Loading 問題，與 Angry Birds 或 Frapper 等遊戲相比，Princess Punt 的關卡也顯得單調而枯燥。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://3.bp.blogspot.com/-or027-3nUDs/TwQtF8ktwnI/AAAAAAAAJL8/r0qpTSTE0sU/s480/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+36+51.png' width='' height='' alt='拿到三星的關鍵不在踢的次數少，而是賺得錢要多' title='拿到三星的關鍵不在踢的次數少，而是賺得錢要多'><span class='caption-text'>拿到三星的關鍵不在踢的次數少，而是賺得錢要多</span></span></p>
+
+<p>不過對 RPG 遊戲而言，枯燥的戰鬥偶爾是可以容忍的，因為玩家可以從戰鬥結束後的角色成長獲得樂趣，這時候就不得不提一下這款遊戲的成長方式了。玩家在每場戰鬥結束後，可以獲得金錢與不同類型的經驗值玉，使用這些經驗值玉可以提昇角色或道具的等級－－問題就在這邊，使用經驗值玉是要花錢的，一場戰鬥賺到的錢往往還不夠你用來消費這些經驗值玉，更別提買武器或是升級技能也要花錢了。遊戲中有收費的設計這合情合理，但是一款遊戲做到從標題開始就到處都充滿向玩家伸手要錢的訊息，那就太令人反感了。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://4.bp.blogspot.com/-RsHbBDm56eI/TwQuRZJKidI/AAAAAAAAJMI/1l_cCGPort4/s480/Photo+12-1-4+%25E4%25B8%258B%25E5%258D%25886+36+16.png' width='' height='' alt='遊戲中的裝備不少，但裝備的升級都是要花錢使用經驗值玉的' title='遊戲中的裝備不少，但裝備的升級都是要花錢使用經驗值玉的'><span class='caption-text'>遊戲中的裝備不少，但裝備的升級都是要花錢使用經驗值玉的</span></span></p>
+
+<p>對了，就算是有這麼多需要玩家購買的項目，這款遊戲還不是完整版呢。免費下載的玩家可以玩完前兩大關（Area），從第三大關起就得付費購買了，而且一次只有買一關，還不是後面的關卡整個解鎖。不過之後在一次改版後，免費的關卡增加到第四大關，只可惜我已經沒有動力繼續玩下去了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[從 Launchy 到 Alfred]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred/"/>
+    <updated>2012-01-01T15:21:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/01/01/from-launchy-to-alfred</id>
+    <content type="html"><![CDATA[<p><a href="http://www.launchy.net/index.php">Launchy</a> 是一款快速啟動軟體。只要按下熱鍵，就會跳出一個視窗讓你輸入一些文字來啟動軟體或是上網搜索，可說是圖形介面下的命令列工具，對於習慣用鍵盤工作的人，可以大大提昇電腦操作上的生產力。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://3.bp.blogspot.com/-pol5lKC_fOM/TwABMA6qztI/AAAAAAAAJKo/_LVtYNhXr3Y/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2012-01-01+%25E4%25B8%258B%25E5%258D%25882.38.32.png' width='' height='' alt='上為 Alfred, 下為 Launchy' title='上為 Alfred, 下為 Launchy'><span class='caption-text'>上為 Alfred, 下為 Launchy</span></span></p>
+
+<!-- more -->
+
+
+<p>話說<a href="/blog/2006/09/23/launchy/">我用 Launchy 前前後後也有五年多的時間</a>了。這段時間裡，只要我安裝新電腦或是重灌系統，Launchy 幾乎都是最前幾個安裝的程式之一，通常裝了瀏覽器（為了抓最新版防毒軟體與防火牆）與防毒軟體（這東西在電腦越乾淨的時候裝越好）之後，就是安裝 Launchy 了。</p>
+
+<p>這一兩年，我主要的工作環境從 Windows 轉移到 Mac 上，一開始找不到滿意的快速啟動軟體。在 Mac 上曾經風雲一時的 QuickSilver, 也因為有段時間久未更新，傳出停止開發的風聲，對於新版 OS X的支援也不甚理想，讓我對於這套軟體缺乏信心。所幸，沒過多久，聽見 Launchy 推出 Mac 版的消息，我立刻就在 Mac 裡安裝了這套從 Windows 時代就一直陪伴著我的軟體，繼續享受快速啟動的樂趣。</p>
+
+<p>就這樣一直到了上個月，因為意外的緣故讓我注意到了 <a href="http://www.alfredapp.com/">Alfred</a> 這套軟體。一開始沒興趣，畢竟人家已經有了 Launchy 了（羞）。但是好死不死讓看見 Alfred 的官方網站做的很漂亮（可見門面很重要），於是想說安裝來看看吧，反正免費。結果不試則已，一試就成主顧。在預設安裝下，我都還沒作什麼設定，就可以進行許多的操作，包括啟動軟體、網路搜尋、數學計算。而且 Alfred 除了功能之外，介面與圖示比起 Launchy 也更加符合 Mac 的調性，使得我對 Launchy 的忠誠開始動搖。</p>
+
+<p>其實我對 Launchy 還是很滿意，但是 Alfred 給我的感覺卻是一整個驚艷。Launchy 有的功能，Alfred 都做到了，而且做的更好。Alfred&nbsp;讓我用沒一天就開始認真考慮購買 Power Pack 的可能性。所以，別了，Mac 上的 Launchy。不過別擔心，偶爾我們還是會在 Windows 上見面的。</p>
+
+<hr />
+
+<p>後記：<s>其實 Launchy 還是有些 Alfred 比不上的地方。比方說 Alfred 的軟體搜尋只能從頭或是從斷字的地方開始，不能跳著搜尋，但 Launcy 可以。以 iTunes 為例，Alfred 可以透過 "itu" 或是 "tun" 找到 iTunes, 可是如果輸入 "une" 或是 "itn" 就找不到了；對於 Launchy 而言，上面四種方式都可以找到 "iTunes"。</s></p>
+
+<p><span style="color:red;">更正，Alfred 一樣可以透過輸入部分且不連續的字母來搜尋，只要到 Preference 裡勾選 "Fuzzy: Partial matching for Applications" 即可。</span></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[玩起來直覺就是好遊戲 - Drop of Life]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/12/23/drop-of-life/"/>
+    <updated>2011-12-23T00:23:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/12/23/drop-of-life</id>
+    <content type="html"><![CDATA[<p>最近新出了一款風格獨特且非常治癒的遊戲，Drop of Life。在介紹之前，先看看他的片頭動畫與遊戲畫面吧：</p>
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/aanC-KZX0-o?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<p>遊戲的背景很簡單，玩家要扮演的就是一個水珠，要淨化地下的土壤，並讓種子開出花朵。雖然對於關卡解謎的遊戲而言，故事不是最重要，不過整個遊戲的設計都是圍繞著這個故事主題去發揮，讓人覺得耳目一新，這一點後面會再說明。遊戲最主要的操作有三種：傾斜手機來讓水珠向前或向後移動；點擊畫面讓水珠跳躍；以及對手機吹氣可以讓水珠結成冰塊，摩擦冰塊則恢復成為水珠。傾斜、點擊與吹氣，算是充分利用了 iPhone 的各種輸入方式。</p>
+
+<p><a href="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s1600/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-mQdAj5OZCUs/TvNYuUFMPzI/AAAAAAAAJDM/0h4Mx4zT9VM/s320/Photo+11-12-16+%25E4%25B8%258A%25E5%258D%25884+30+47.png" width="213" /></a></p>
+
+<p>關卡的進行有點類似 Loco Roco，基本上，玩家只要能從頭走到尾，找到最後的種子，就算過關了。不過通往終點的路上免不了有些障礙，許多設計都很有意思，必須充分利用水珠與冰塊的性質差異來進行，例如有些障礙物必須藉由冰塊的撞擊才能敲破，有些平面冰塊可以直接滑過，而水珠則是黏在上頭慢慢移動。</p>
+
+<p><a href="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://2.bp.blogspot.com/-oMWfqVeZjac/TvNY0B5A-6I/AAAAAAAAJDs/_vr61dRsGV8/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+39+14.png" width="213" /></a></p>
+
+<p>另外關卡中有些地方有積水，基本上只要水珠掉到水中就會消滅，只好回到先前的 check point 繼續開始。不過遊戲的設計中沒有真正的 Game Over，水珠或冰塊破掉了，可以無限次嘗試。遊戲的關卡設計的不錯，單純要過關的話都不難，可以順利讓種子開出小白花；不過如果想要取得每關中能讓種子開出小黃花的四葉草，或是要收集散落的拼圖圖塊，就得稍稍動些腦筋，注意有沒有容易被忽略掉的路線。</p>
+
+<p><a href="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-a50nwDAGrNo/TvNYy5uJlbI/AAAAAAAAJDk/q3udcDMQHqo/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+35+01.png" width="213" /></a></p>
+
+<p>話說回來，這遊戲最讓我驚艷的地方就在於，許多遊戲裡的設計都巧妙結合了主題。例如遊戲裡沒有主選單，一開始就是讓玩家操作水珠在地面上滾動，所以選關的方式跟遊戲方式一樣。每個關卡完成的程度會用花的大小來表示，如果有找到四葉草，就是是黃色的小花，這比 Angry Bird 裡冷冰冰的一二三顆星星表示來得親切許多。最特別的是連工作人員名單都像是可以玩的關卡，只要在選關畫面移動到最右邊的懸崖跳下去，那就是了。</p>
+
+<p><a href="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s1600/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-SQBSqZmLR7I/TvNYv7nb4OI/AAAAAAAAJDU/XtHRUNQS5Mk/s320/Photo+11-12-22+%25E4%25B8%258B%25E5%258D%258811+31+32.png" width="213" /></a></p>
+
+<p>最後、最後，最重要的是，這款遊戲是免費下載的喔。下載完後可以玩到第一大關，如果玩了喜歡的話，只要 0.99 鎂就可以解開完整的遊戲版本。</p>
+]]></content>
+  </entry>
+  
+</feed>

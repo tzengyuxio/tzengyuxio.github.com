@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: utf8 | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/utf8/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-10T08:46:42+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
+    <updated>2012-03-09T20:28:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
+    <content type="html"><![CDATA[<p>記一些關於 BOM 與 UTF-8 的個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<!-- more -->
+
+
+<hr />
+
+<p>Byte Order Mark 在 UTF-16 Big Endian 是 "FE FF"，Little Endian 是 "FF FE"。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
+
+<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 "EF BB BF"。</p>
+
+<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
+
+<h2>在 VIM 中的 BOM 相關操作</h2>
+
+<h3>加入 BOM</h3>
+
+<pre><code>:set bomb
+</code></pre>
+
+<h3>移除 BOM</h3>
+
+<pre><code>:set nobomb
+</code></pre>
+
+<h3>查詢 BOM 狀態</h3>
+
+<pre><code>:set bomb?
+</code></pre>
+
+<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
+
+<h3>查詢包含 UTF-8 BOM 的檔案</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+</code></pre>
+
+<h3>找出並移除 UTF-8 的 BOM</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+</code></pre>
+
+<h3>編碼的轉換</h3>
+
+<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+</code></pre>
+
+<p>其中 ENCODING 的部份可以是以下數值：</p>
+
+<ul>
+<li>UTF-8 UTF8</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UCS-2BE UNICODEBIG</li>
+<li>UCS-2LE UNICODELITTLE</li>
+</ul>
+
+
+<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/"/>
+    <updated>2006-01-21T13:19:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode</id>
+    <content type="html"><![CDATA[<p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。</p>
+
+<!-- more -->
+
+
+<p>然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為 <code>UTF-8 Unicode (utf8)</code>，MySQL 連線校對設為 <code>utf8_general_ci</code>，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。</p>
+
+<p>這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 <code>config/database.yml</code> 中加入一行設定即可：</p>
+
+<pre><code>development:
+  adapter: mysql
+  database: example_development
+  encoding: utf8    # add this line
+  username: root
+  password:
+</code></pre>
+
+<p>如果 Rails 是 1.0 之前或者用的資料庫是 PostgreSQL 的話呢？懶得寫了，直接上 <a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">Rails 的 Wiki</a> 上看說明吧。</p>
+
+<hr />
+
+<p><span style="color:gray;">參考自：<a href="http://wiki.rubyonrails.com/rails/pages/HowToUseUnicodeStrings">HowToUseUnicodeString in Ruby on Rails</a></span></p>
+]]></content>
+  </entry>
+  
+</feed>

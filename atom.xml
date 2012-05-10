@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -739,10 +739,10 @@ echo</code></pre></noscript></div>
     <id>http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way</id>
     <content type="html"><![CDATA[<p>這幾天在 Facebook 出現一篇分享率很高的文章，叫做〈<a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a>〉，帶給我很多想法，在這裡分享一下。</p>
 
-<p>什麼叫做「不和運氣差的人合作」？</p>
-
 <!-- more -->
 
+
+<p>什麼叫做「不和運氣差的人合作」？</p>
 
 <p>這位作者舉了一個例子，如果你是某間店的店主，現在要找店員，現在收到了 100 份履歷，但你很忙，沒有時間一個一個看。最簡單的方式就是索性從 100 份中<strong>隨機挑出 10 份</strong>，然後從 10 份中挑出一個最棒的。至於那些被過濾掉的 90 份，只能怪他們<strong>運氣不好啦</strong>！</p>
 
@@ -911,6 +911,9 @@ Goolge 總部，感覺怪物很多……</p>
 
 <p>以下按照時間順序排列：</p>
 
+<!-- more -->
+
+
 <hr />
 
 <h4><a href="http://blog.xdite.net/posts/2011/10/07/migrate-to-octopress/">Migrate to Octopress - Blog.XDite.net</a></h4>
@@ -1034,6 +1037,9 @@ Goolge 總部，感覺怪物很多……</p>
     <id>http://tzengyuxio.me/blog/2012/03/29/octopress-unboxing</id>
     <content type="html"><![CDATA[<p>前天與昨天兩天我都在修改 blogger 的 template－－起因是這樣：我在 Chrome 裝了個 <a href="https://chrome.google.com/webstore/detail/afoibpobokebhgfnknfndkgemglggomo">HTML5 Outliner</a> 的擴充，透過這個擴充，可以查看某個網頁的大綱排列是否如預想的一樣。很顯然，blogger 預設提供的幾個範本並沒有良好的 HTML5 大綱結構，於是我決定動手修改它。</p>
 
+<!-- more -->
+
+
 <p>原本以為這是個小工程，沒想到卻花了我整整一夜一天的時間在和 <strong>blogger template</strong> 的語法纏鬥。blogger template 用到了許多神乎奇技的技巧，可以在一個 template 檔案中同時提供桌面與行動等不同平台的版面；同時提供首頁、封存、標籤與單篇等不同文章組合的版面；可以提供各式各樣的參數讓你在後台中只要簡單選選顏色調整大小就可以做出各式各樣的變化。而這些全部都是在一個 XML 檔案裡就可以搞定。</p>
 
 <p>但也正因如此，許多設定與參數都是牽一髮動全身，想改也不曉得從哪邊改才安全。偏偏 blogger template 的設定與參數目前還缺乏文件，網路上能找到的多半是舊版的 template 語法。很多時候看到一個 css class 你只能先用猜的猜他的用途，然後慢慢試誤。最後雖然整出了滿意的結果，也獲得了不少寶貴的經驗－－但心中卻冒出了一個更大的疑問：</p>
@@ -1058,6 +1064,9 @@ Goolge 總部，感覺怪物很多……</p>
 <p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
 
 <p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
+
+<!-- more -->
+
 
 <h2>Python 的 easy_install</h2>
 
@@ -1125,14 +1134,19 @@ Goolge 總部，感覺怪物很多……</p>
 
 <p>是說原本預設的也夠我用了就是，不過有個多采多姿的 ls 輸出不僅能提昇工作效率，光看著心情也會好起來。</p>
 
+<!-- more -->
+
+
 <h2>開啟顏色輸出</h2>
 
 <p>在 Linux 要開啟顏色輸出是透過 <code>ls --color</code> 指令。而在 Mac 或 BSD 上則是使用 <code>ls -G</code>。</p>
 
 <p>當然，每次都加這參數也是麻煩。寫程式的都是懶人，所以我在 <code>~/.bashrc</code> 檔案中加入下面這行設定：</p>
 
-<pre><code>alias ls='ls -GF'
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">alias </span><span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;ls -GF&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>要說明一下的是，上面的設定除了開啟顏色輸出外，還加了 <code>-F</code> 這個能夠在 ls 輸出中加入識別符號的參數。像是目錄的名字後面會加上 &#8216;/&#8217;, 可執行檔會加上 &#8216;*&#8217;,  符號連結 (symbolic link) 會加上 &#8216;@&#8217; 等等。</p>
 
@@ -1142,8 +1156,10 @@ Goolge 總部，感覺怪物很多……</p>
 
 <p>直接說結果，我所使用的顏色組合如下：</p>
 
-<pre><code>export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">export </span><span class="nv">LSCOLORS</span><span class="o">=</span>gxfxbEaEBxxEhEhBaDaCaD
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>將這行加入 <code>~/.bash_profile</code> 就可以享受美美的 ls 了。這個配色設定是從 <a href="https://github.com/seebi/dircolors-solarized/issues/10">LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD</a> 這網頁參考來的。</p>
 
@@ -1170,10 +1186,8 @@ Goolge 總部，感覺怪物很多……</p>
 
 <p>不過看了下安裝說明，感覺麻煩了點。於是又找到了<a href="http://www.codeography.com/2010/07/13/json-syntax-highlighting-in-vim.html">這篇文章</a>，只要到 <code>~/.vimrc</code> 加入下面這行，就可以讓 JSON 檔案套用 JavaScript 的 syntax highlight, 簡單明瞭。</p>
 
-<pre class="prettyprint"><code>autocmd BufNewFile,BufRead *.json set ft=javascript</code></pre>
-
-
-
+<pre><code>autocmd BufNewFile,BufRead *.json set ft=javascript
+</code></pre>
 ]]></content>
   </entry>
   
@@ -1186,6 +1200,9 @@ Goolge 總部，感覺怪物很多……</p>
 
 <p><img src="http://tzengyuxio.me/images/2012/2012-03-11-quicklook-of-zip.png" alt="BetterZip Plugin" /></p>
 
+<!-- more -->
+
+
 <h2>在 Terminal 下開啟快速檢視</h2>
 
 <p>除了在 Finder 中按空白鍵外，有時候在 Terminal 底下工作時，也可以利用指令來開啟快速檢視，這樣可以減少鍵盤滑鼠的切換以提升效率。開啟的指令如下：</p>
@@ -1195,10 +1212,12 @@ Goolge 總部，感覺怪物很多……</p>
 
 <p>把 [FILE] 替換成要開啟的檔名即可。不過這指令也不算短，要更方便的話，可以在 <code>~/.bashrc</code> 中加入以下指令別名 (alias)，這樣只要輸入 <code>ql [FILE]</code> 就可以立刻檢視了：</p>
 
-<pre><code>alias ql='qlmanage -p'
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">alias </span><span class="nv">ql</span><span class="o">=</span><span class="s1">&#39;qlmanage -p&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>對了，設定檔 .bashrc 預設在 Mac OS X 中是不起作用的，可以參考<a href="http://coder.aqualuna.me/2012/03/bashrc-in-mac-terminal-os-x-lion.html">這篇文章</a>來讓 .bashrc work。</p>
+
+<p>對了，設定檔 .bashrc 預設在 Mac OS X 中是不起作用的，可以參考<a href="http://tzengyuxio.me/blog/2012/03/11/dot-bashrc-in-mac-terminal/">這篇文章</a>來讓 .bashrc work。</p>
 
 <h2>增加支援檔案類型的 Plugin</h2>
 

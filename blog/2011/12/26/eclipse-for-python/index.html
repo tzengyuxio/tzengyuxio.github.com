@@ -9,7 +9,8 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：作業系統：Mac OS X 10.7.2程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers步驟流程如下1. 準備 Python 的編譯環境同樣的，這步驟在 &hellip;">
+  <meta name="description" content="這篇文章是〈Eclipse 安裝筆記〉系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考： 作業系統：Mac OS X 10.7.2
+程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers 步驟流程如下 Step 1. 準備 Python &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -128,8 +129,40 @@
   </header>
 
 
-<div class="entry-content"><br />這篇文章是<a href="http://coder.aqualuna.me/2011/12/eclipse.html">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：<br /><br />作業系統：Mac OS X 10.7.2<br />程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers<br /><br />步驟流程如下<br /><br /><u>1. 準備 Python 的編譯環境</u><br /><br />同樣的，這步驟在 Mac 上可以略過。在 Windows 上要做的也很簡單，就上 Python 官網抓個 Python Binary 來安裝就好了。相對於 C++ 的準備工作來得簡單些。<br /><br /><u>2. 安裝 PyDev</u><br /><br />在 Eclipse Indigo 之後，套件的安裝變得簡單許多，只要透過滑鼠就可以搞定。首先，先上 <a href="http://marketplace.eclipse.org/">Eclipse Marketplace</a>, 一個類似 firefox Extensions 或 Android Market 的地方。搜尋「pydev」，找到後點進去套件頁面，在套件 Logo 下可以看到一個「Install」按鈕，只要將該按鈕拖曳到 Eclipse 視窗中，就可以開始安裝了。<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-C_V3nxc2Z0I/TvfjPTDCbfI/AAAAAAAAJFU/ygD2IDbYz1k/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.58.51.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="205" src="http://3.bp.blogspot.com/-C_V3nxc2Z0I/TvfjPTDCbfI/AAAAAAAAJFU/ygD2IDbYz1k/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.58.51.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">拖曳圖中紫色說明區塊所指向的按鈕就能直接安裝</td></tr></tbody></table><br /><u>3. 開始寫 Python</u><br /><br />安裝完後重開 Eclipse，如果在選單「File」→「New」→「Project」的對話視窗有看到如下圖的 PyDev 選項資料夾，就表示安裝成功了，可以開始寫 Python 的程式。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-kvvmlpzhScs/TvfoxGUi98I/AAAAAAAAJFs/xaKtFOwcTQk/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.08.08.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="304" src="http://1.bp.blogspot.com/-kvvmlpzhScs/TvfoxGUi98I/AAAAAAAAJFs/xaKtFOwcTQk/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.08.08.png" width="320" /></a></div><br />不過，等等，要讓齒輪動起來，還少了點東西。CDT 可以自動找到 C++ Compiler 的所在，可是 PyDev 不行，我們得手動指定 Python 直譯器的路徑。<br /><br />從選單列開啟 Eclipse 的「偏好設定」，切到 PyDev 如下的頁面，點選上半部視窗的「New&#8230;」按鈕，輸入路徑「/usr/bin/python」，至於名字可以任意輸入，我習慣加上個版本號。完成之後，PyDev 會自動抓取 PYTHONPATH，也就是下圖中下半部份的視窗。好在這部份不用傷神輸入。<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/--dQy7oHi8XU/Tvfockstk5I/AAAAAAAAJFg/s59aFMnJvZ4/s1600/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.18.55.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="200" src="http://2.bp.blogspot.com/--dQy7oHi8XU/Tvfockstk5I/AAAAAAAAJFg/s59aFMnJvZ4/s320/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.18.55.png" width="320" /></a></div><br />
+<div class="entry-content"><p>這篇文章是<a href="/blog/2011/12/26/eclipse-setup-note/">〈Eclipse 安裝筆記〉</a>系列之一，算是個人的安裝過程紀錄。以下是安裝時的環境參考：</p>
 
+<ul>
+<li>作業系統：Mac OS X 10.7.2</li>
+<li>程式版本：Eclipse Indigo 3.7.1,IDE for Java Developers</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>步驟流程如下</p>
+
+<h3>Step 1. 準備 Python 的編譯環境</h3>
+
+<p>同樣的，這步驟在 Mac 上可以略過。在 Windows 上要做的也很簡單，就上 Python 官網抓個 Python Binary 來安裝就好了。相對於 C++ 的準備工作來得簡單些。</p>
+
+<h3>Step 2. 安裝 PyDev</h3>
+
+<p>在 Eclipse Indigo 之後，套件的安裝變得簡單許多，只要透過滑鼠就可以搞定。首先，先上 <a href="http://marketplace.eclipse.org">Eclipse Marketplace</a>, 一個類似 firefox Extensions 或 Android Market 的地方。搜尋「pydev」，找到後點進去套件頁面，在套件 Logo 下可以看到一個「Install」按鈕，只要將該按鈕拖曳到 Eclipse 視窗中，就可以開始安裝了。</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://3.bp.blogspot.com/-C_V3nxc2Z0I/TvfjPTDCbfI/AAAAAAAAJFU/ygD2IDbYz1k/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258810.58.51.png' width='' height='' alt='拖曳圖中紫色說明區塊所指向的按鈕就能直接安裝' title='拖曳圖中紫色說明區塊所指向的按鈕就能直接安裝'><span class='caption-text'>拖曳圖中紫色說明區塊所指向的按鈕就能直接安裝</span></span></p>
+
+<h3>Step 3. 開始寫 Python</h3>
+
+<p>安裝完後重開 Eclipse，如果在選單「File」→「New」→「Project」的對話視窗有看到如下圖的 PyDev 選項資料夾，就表示安裝成功了，可以開始寫 Python 的程式。</p>
+
+<p><img src="http://1.bp.blogspot.com/-kvvmlpzhScs/TvfoxGUi98I/AAAAAAAAJFs/xaKtFOwcTQk/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.08.08.png" alt="" /></p>
+
+<p>不過，等等，要讓齒輪動起來，還少了點東西。CDT 可以自動找到 C++ Compiler 的所在，可是 PyDev 不行，我們得手動指定 Python 直譯器的路徑。</p>
+
+<p>從選單列開啟 Eclipse 的「偏好設定」，切到 PyDev 如下的頁面，點選上半部視窗的「New&#8230;」按鈕，輸入路徑 <code>/usr/bin/python</code>，至於名字可以任意輸入，我習慣加上個版本號。完成之後，PyDev 會自動抓取 <code>PYTHONPATH</code>，也就是下圖中下半部份的視窗。好在這部份不用傷神輸入。</p>
+
+<p><img src="http://2.bp.blogspot.com/--dQy7oHi8XU/Tvfockstk5I/AAAAAAAAJFg/s59aFMnJvZ4/s800/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2011-12-26+%25E4%25B8%258A%25E5%258D%258811.18.55.png" alt="" /></p>
 </div>
 
 
@@ -157,7 +190,7 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/eclipse/'>eclipse</a>] [<a class='category' href='/blog/categories/python/'>python</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 

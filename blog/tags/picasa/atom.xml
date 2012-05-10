@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: picasa | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/picasa/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -18,7 +18,61 @@
     <link href="http://tzengyuxio.me/blog/2012/02/06/aperture-iphoto-lightroom-picasa/"/>
     <updated>2012-02-06T19:55:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/02/06/aperture-iphoto-lightroom-picasa</id>
-    <content type="html"><![CDATA[<p>雖然不是說很專業，其實連業餘也稱不上，不過從買了第一台數位相機（CASIO QV-2800UX）到現在，前前後後也經歷過九個年頭、五台相機，之中還被偷走了一台，而這中間所累積的相片也有數千張之譜。然而因為缺乏整理，使得這些照片散落在家中不同的電腦、不同的網路分享區、不同的外接式硬碟以及不同的隨身碟中。更有甚者，同樣的照片還有不同版本放在不同的儲存設備，有原始版的，有為了傳給朋友縮過大小的，有 retouch 過的，不仔細比對還真的想不起來到底這些照片的先後順序因果關係。<br /><br />雖然想到就覺得累人，但總歸還是得找個時間徹底好好整理下照片。去年年底狠下心來，買了 Aperture 這套軟體，然後一個一個電腦、外接硬碟、隨身碟檢查，花了好幾個禮拜終於將照片全部匯入到 Aperture 中進行管理。也才知道自己這些年到底拍了多少張照片，去過哪些地方，也不用在每次想要回憶美好時光時，都要先想辦法回憶起那些美好時光的照片到底放在哪裡。<br /><br />其實在決定買下 Aperture 之前，也有考慮與試過其他選項，像是 iPhoto, Picasa, Lightroom, 但是每個軟體都有其優勢與不足之處，沒有完美無缺的 Solution。以下就簡單記錄下我對這四個軟體的使用感想，以及最後為什麼選擇 Aperture。<br /><br /><h2>Picasa</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" width="320" /></a></div>我在自己還在以 Windows 為主要環境的時代，就裝了 Picasa 來玩－－可是裝不久就移除掉了；後來 Picasa 出了新版，我又裝了，又移掉；又過一陣子注意到改版了，又裝，這次沒移，但是我僅僅是把 Picasa 留下當做看圖軟體。我喜歡 Picasa 他那把照片凸顯，其他桌面部分暗掉的無視窗方式瀏覽介面－－然而他主打的照片管理功能，我卻壓根不想使用。<br /><br />到了換以 Mac 作為主要環境的時候後，先後也裝過兩三次 Picasa, 也試著開始用 Picasa 來管理照片，但最後怎樣就是無法習慣，可能是軟體設計思維的不同吧，總覺得跟我自己對於照片管理的想法處處格格不入。<br /><br />Picasa 充分體現了 Google 作為一家搜尋引擎公司的思維，第一次啟動 Picasa 時，就會搜尋你整個電腦裡面的圖檔，全部加入，而這正是我最討厭的一點。我想要的是照片管理，可是 Picasa 卻會試著把你電腦裡所有圖片檔案列入他的管轄範圍內。圖片檔案有太多意義了，也許是照片、也許是工作用的中間圖片、也許是網路下載的有趣漫畫、也許是文件意義比圖片意義強烈的 Infographic，我不想要 Picasa 包山包海地把這些東西都納入他的檔案庫中。我只是單純的想要一個照片管理軟體。<br /><br />其實我很希望我能用 Picasa 這套軟體來管理照片，畢竟我買了 Google 的儲存空間，如果能夠直接把照片同步 Picasa Web 上，我就不用煩惱照片備份的問題了。不過 Picasa Web 的照片管理功能也是充滿問題的設計，用手機隨手上傳一張圖檔，就會多出一個以日期為名的小資料夾，這種資料夾一多，看了也心煩。更別提 Picasa 與 Picasa Web 的同步其實設計的很不貼心，許多地方必須手動。最好是能夠像 Dropbox 一樣，讓我指定一個本機資料夾，自動把網路相簿抓到該資料夾，丟到該資料夾的也會自動上傳。<br /><h2>iPhoto</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="211" src="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" width="320" /></a></div>換到 Mac 上作業後，曾經用過一段時間的 iPhoto。剛開始不習慣他把所有圖檔都放在一個叫做 "iPhoto Library" 的黑盒子中，畢竟在長久以來習慣了用資料夾作管理的形式，突然間沒有了資料夾作為存取照片的管道，心理總覺得不踏實。<br /><br />不過黑盒子的方式用久了其實倒也還好，就像是 Gmail 剛推出時只有標籤（Tag）沒有資料夾的管理，只要用不同的方式去思考，很快就可以習慣這樣的方式。反正檔案要給別人時就直接匯出，剩下的原始檔通通藏在黑盒子中，我也樂得輕鬆，不用去煩惱到底要怎麼安排這些檔案的存放方式。<br /><br />基本上，iPhoto 的使用經驗對我而言是無懈可擊的。人臉辨識與地點標記都是相當棒的功能體驗，照片的編輯與調整我也覺得夠用了，介面簡潔，很直覺便可找到你想做的工作該怎麼進行。然而他有兩個問題使我不得不考慮其他方案。第一個是無法顯示完整的 EXIF 資訊，也許是我的使用不夠深入，總之就是找不到顯示完整 EXIF 的方法。<br /><br />第二個問題就比較令人頭痛。在 iPhoto 上調整一張照片，就會產生一份該照片的副本，也就是當你調整的照片越多，所佔去的硬碟空間就越大，對於記憶體的使用也有相當影響。然而在 Picasa 和 Aperture 中，當你進行照片的修改時，Picasa 與 Aperture 只會儲存這些照片的修改參數的 Metadata，就算一張照片有十個不同風格的修改版本，也只會多用到一點點的容量，而不會消耗掉十倍的硬碟空間。因為 iPhoto 這樣的設計，所以據說當照片數目多到一個程度時，開啟的速度像牛步一樣。我自己的照片是還沒多到能感受到牛步，但是無法接受每修一個版本就會多一份照片副本，這是我放棄 iPhoto 最主要的原因。<br /><h2>Lightroom</h2><br />老實說，其實我沒有真正使用過 Lightroom, 只有買了本 Lightroom 的書來研究數位照片的管理，加上網路上看了幾篇文章比較比較 Lightroom 與 Aperture 的異同這樣。其實我蠻想試試看 Lightroom，但是由於以下幾個因素使得 Lightroom 還沒有真正上場就在我的相片管理名單中除名了。<br /><ul><li>對 Adobe 越來越沒好感。Adobe 的軟體越來越龐大，不管是功能與價格。</li><li>在 Adobe 的官網找不到試用下載，也沒有簡便的購買方式，得透過經銷商購買。</li><li>對於 iPhoto 的良好體驗，使得我對 Aperture 更有信心。</li></ul><h2>Aperture</h2><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="241" src="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" width="320" /></a></div>最後則是我目前在使用的 Aperture。其實剛進入 Aperture 時很不習慣，一堆術語像是 Master / Version / Folder / Album / Project 讓我如陷五里霧中，這些單字都看得懂，可是代表什麼意思、彼此間有什麼差別我卻是一竅不通。現在用了一陣子後總算明白些，但我總覺得 Apple 應該可以更簡化這些術語或關係才對，例如 Origin 就比 Master 來得容易理解；Event &nbsp;也比 Project 符合情境。<br /><br />除了術語多，介面比起 iPhoto 複雜外，用到現在倒也沒什麼好挑的，真要說的話就是希望他能早日有正體中文的介面，雖然英文介面對我不構成使用障礙，但是有熟悉的語言，情感上就大大的加分。<br /><br />另一個與 iPhoto 相比的好處，就是你的檔案可以儲存在外部文件夾，甚至是外接式硬碟，而不用一定得放在 "Aperture Library" 這個黑盒子中。如果是放在外部的文件夾，Aperture 會建立一張縮圖在黑盒子中，所以就算外接式硬碟沒有接上，也可以對該照片進行瀏覽與編輯，頂多只是匯出時無法從更精細的原始版本匯出罷了。這項特點對於習慣以文件夾進行管理與分類的人算是一項福音，不過我已經習慣 iPhoto 的方式了，所以也就索性通通丟入 Aperture 的黑盒子中去。<br /><br />另外隨著這幾個月 Aperture 的使用，也逐漸發現 Aperture 一些讓人離不開的順手好功能。例如照片的管理可以透過 Keyword, Label, Rating 與 Flag，這些機制的組合增加了不少彈性；另外像是命名、編修、調整等批次功能，也可以幫助自己省下不少寶貴的時間。有機會的話再來對自己使用 Aperture 的心得作更進一步的介紹。</p>
+    <content type="html"><![CDATA[<p>雖然不是說很專業，其實連業餘也稱不上，不過從買了第一台數位相機（CASIO QV-2800UX）到現在，前前後後也經歷過九個年頭、五台相機，之中還被偷走了一台，而這中間所累積的相片也有數千張之譜。然而因為缺乏整理，使得這些照片散落在家中不同的電腦、不同的網路分享區、不同的外接式硬碟以及不同的隨身碟中。更有甚者，同樣的照片還有不同版本放在不同的儲存設備，有原始版的，有為了傳給朋友縮過大小的，有 retouch 過的，不仔細比對還真的想不起來到底這些照片的先後順序因果關係。</p>
+
+<!-- more -->
+
+
+<p>雖然想到就覺得累人，但總歸還是得找個時間徹底好好整理下照片。去年年底狠下心來，買了 Aperture 這套軟體，然後一個一個電腦、外接硬碟、隨身碟檢查，花了好幾個禮拜終於將照片全部匯入到 Aperture 中進行管理。也才知道自己這些年到底拍了多少張照片，去過哪些地方，也不用在每次想要回憶美好時光時，都要先想辦法回憶起那些美好時光的照片到底放在哪裡。</p>
+
+<p>其實在決定買下 Aperture 之前，也有考慮與試過其他選項，像是 iPhoto, Picasa, Lightroom, 但是每個軟體都有其優勢與不足之處，沒有完美無缺的 Solution。以下就簡單記錄下我對這四個軟體的使用感想，以及最後為什麼選擇 Aperture。</p>
+
+<h2>Picasa</h2>
+
+<p><a href="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-2qwWrj1KGvA/Ty-9nAb_trI/AAAAAAAAJQ8/bNJMOMipv0k/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.40.12.png" width="320" /></a></p>
+
+<p>我在自己還在以 Windows 為主要環境的時代，就裝了 Picasa 來玩－－可是裝不久就移除掉了；後來 Picasa 出了新版，我又裝了，又移掉；又過一陣子注意到改版了，又裝，這次沒移，但是我僅僅是把 Picasa 留下當做看圖軟體。我喜歡 Picasa 他那把照片凸顯，其他桌面部分暗掉的無視窗方式瀏覽介面－－然而他主打的照片管理功能，我卻壓根不想使用。</p>
+
+<p>到了換以 Mac 作為主要環境的時候後，先後也裝過兩三次 Picasa, 也試著開始用 Picasa 來管理照片，但最後怎樣就是無法習慣，可能是軟體設計思維的不同吧，總覺得跟我自己對於照片管理的想法處處格格不入。</p>
+
+<p>Picasa 充分體現了 Google 作為一家搜尋引擎公司的思維，第一次啟動 Picasa 時，就會搜尋你整個電腦裡面的圖檔，全部加入，而這正是我最討厭的一點。我想要的是照片管理，可是 Picasa 卻會試著把你電腦裡所有圖片檔案列入他的管轄範圍內。圖片檔案有太多意義了，也許是照片、也許是工作用的中間圖片、也許是網路下載的有趣漫畫、也許是文件意義比圖片意義強烈的 Infographic，我不想要 Picasa 包山包海地把這些東西都納入他的檔案庫中。我只是單純的想要一個照片管理軟體。</p>
+
+<p>其實我很希望我能用 Picasa 這套軟體來管理照片，畢竟我買了 Google 的儲存空間，如果能夠直接把照片同步 Picasa Web 上，我就不用煩惱照片備份的問題了。不過 Picasa Web 的照片管理功能也是充滿問題的設計，用手機隨手上傳一張圖檔，就會多出一個以日期為名的小資料夾，這種資料夾一多，看了也心煩。更別提 Picasa 與 Picasa Web 的同步其實設計的很不貼心，許多地方必須手動。最好是能夠像 Dropbox 一樣，讓我指定一個本機資料夾，自動把網路相簿抓到該資料夾，丟到該資料夾的也會自動上傳。</p>
+
+<h2>iPhoto</h2>
+
+<p><a href="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="211" src="http://3.bp.blogspot.com/-_zmXbDLFrWY/Ty-90OzFvBI/AAAAAAAAJRE/ONDXdXujW8s/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.45.23.png" width="320" /></a></p>
+
+<p>換到 Mac 上作業後，曾經用過一段時間的 iPhoto。剛開始不習慣他把所有圖檔都放在一個叫做 "iPhoto Library" 的黑盒子中，畢竟在長久以來習慣了用資料夾作管理的形式，突然間沒有了資料夾作為存取照片的管道，心理總覺得不踏實。</p>
+
+<p>不過黑盒子的方式用久了其實倒也還好，就像是 Gmail 剛推出時只有標籤（Tag）沒有資料夾的管理，只要用不同的方式去思考，很快就可以習慣這樣的方式。反正檔案要給別人時就直接匯出，剩下的原始檔通通藏在黑盒子中，我也樂得輕鬆，不用去煩惱到底要怎麼安排這些檔案的存放方式。</p>
+
+<p>基本上，iPhoto 的使用經驗對我而言是無懈可擊的。人臉辨識與地點標記都是相當棒的功能體驗，照片的編輯與調整我也覺得夠用了，介面簡潔，很直覺便可找到你想做的工作該怎麼進行。然而他有兩個問題使我不得不考慮其他方案。第一個是無法顯示完整的 EXIF 資訊，也許是我的使用不夠深入，總之就是找不到顯示完整 EXIF 的方法。</p>
+
+<p>第二個問題就比較令人頭痛。在 iPhoto 上調整一張照片，就會產生一份該照片的副本，也就是當你調整的照片越多，所佔去的硬碟空間就越大，對於記憶體的使用也有相當影響。然而在 Picasa 和 Aperture 中，當你進行照片的修改時，Picasa 與 Aperture 只會儲存這些照片的修改參數的 Metadata，就算一張照片有十個不同風格的修改版本，也只會多用到一點點的容量，而不會消耗掉十倍的硬碟空間。因為 iPhoto 這樣的設計，所以據說當照片數目多到一個程度時，開啟的速度像牛步一樣。我自己的照片是還沒多到能感受到牛步，但是無法接受每修一個版本就會多一份照片副本，這是我放棄 iPhoto 最主要的原因。</p>
+
+<h2>Lightroom</h2>
+
+<p>老實說，其實我沒有真正使用過 Lightroom, 只有買了本 Lightroom 的書來研究數位照片的管理，加上網路上看了幾篇文章比較比較 Lightroom 與 Aperture 的異同這樣。其實我蠻想試試看 Lightroom，但是由於以下幾個因素使得 Lightroom 還沒有真正上場就在我的相片管理名單中除名了。</p>
+
+<ul>
+<li>對 Adobe 越來越沒好感。Adobe 的軟體越來越龐大，不管是功能與價格。</li>
+<li>在 Adobe 的官網找不到試用下載，也沒有簡便的購買方式，得透過經銷商購買。</li>
+<li>對於 iPhoto 的良好體驗，使得我對 Aperture 更有信心。</li>
+</ul>
+
+
+<h2>Aperture</h2>
+
+<p><a href="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s1600/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="241" src="http://1.bp.blogspot.com/-ijf8w6AZWS0/Ty-96eqxhfI/AAAAAAAAJRM/hlrVa7O6yNk/s320/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7+2012-02-06+%E4%B8%8B%E5%8D%887.43.38.png" width="320" /></a></p>
+
+<p>最後則是我目前在使用的 Aperture。其實剛進入 Aperture 時很不習慣，一堆術語像是 Master / Version / Folder / Album / Project 讓我如陷五里霧中，這些單字都看得懂，可是代表什麼意思、彼此間有什麼差別我卻是一竅不通。現在用了一陣子後總算明白些，但我總覺得 Apple 應該可以更簡化這些術語或關係才對，例如 Origin 就比 Master 來得容易理解；Event &nbsp;也比 Project 符合情境。</p>
+
+<p>除了術語多，介面比起 iPhoto 複雜外，用到現在倒也沒什麼好挑的，真要說的話就是希望他能早日有正體中文的介面，雖然英文介面對我不構成使用障礙，但是有熟悉的語言，情感上就大大的加分。</p>
+
+<p>另一個與 iPhoto 相比的好處，就是你的檔案可以儲存在外部文件夾，甚至是外接式硬碟，而不用一定得放在 "Aperture Library" 這個黑盒子中。如果是放在外部的文件夾，Aperture 會建立一張縮圖在黑盒子中，所以就算外接式硬碟沒有接上，也可以對該照片進行瀏覽與編輯，頂多只是匯出時無法從更精細的原始版本匯出罷了。這項特點對於習慣以文件夾進行管理與分類的人算是一項福音，不過我已經習慣 iPhoto 的方式了，所以也就索性通通丟入 Aperture 的黑盒子中去。</p>
+
+<p>另外隨著這幾個月 Aperture 的使用，也逐漸發現 Aperture 一些讓人離不開的順手好功能。例如照片的管理可以透過 Keyword, Label, Rating 與 Flag，這些機制的組合增加了不少彈性；另外像是命名、編修、調整等批次功能，也可以幫助自己省下不少寶貴的時間。有機會的話再來對自己使用 Aperture 的心得作更進一步的介紹。</p>
 ]]></content>
   </entry>
   

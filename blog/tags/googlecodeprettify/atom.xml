@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: googlecodeprettify | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/googlecodeprettify/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-10T08:46:42+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Solarized for google-code-prettify]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify/"/>
+    <updated>2012-03-11T07:20:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify</id>
+    <content type="html"><![CDATA[<p><a href="/blog/2011/08/07/embeded-code-with-google-code-prettify/">我用 google-code-prettify 來做 blog 文章中的代碼上色</a>，google-code-prettify 本身有<a href="http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html">附上幾個 Color Scheme</a>, 然而除了預設的之外，都是以暗色背景為主。</p>
+
+<!-- more -->
+
+
+<p>昨天心血來潮將 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考<a href="/blog/2012/02/10/from-zenburn-to-solarized/">這篇文章</a>。</p>
+
+<h2>下載 / Download</h2>
+
+<ul>
+<li><p>Solarized Light</p>
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">Minified version</a></li>
+</ul>
+</li>
+<li><p>Solarized Dark</p>
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">Minified version</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>代碼 / Code</h2>
+
+<h3>Solarized Light</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">download</a>)：</p>
+
+<p>``` css
+.pln{color:#657b83}
+@media screen{</p>
+
+<pre><code>.str{color:#2aa198}
+.kwd{color:#859900}
+.com{color:#93a1a1}
+.typ{color:#b58900}
+.lit{color:#2aa198}
+.pun,.opn,.clo{color:#657b83}
+.tag{color:#268bd2}
+.atn{color:#93a1a1}
+.atv{color:#2aa198}
+.dec,.var{color:#268bd2}
+.fun{color:red}
+</code></pre>
+
+<p>}
+@media print,projection{</p>
+
+<pre><code>.str{color:#060}
+.kwd{color:#006;font-weight:bold}
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:bold}
+.lit{color:#044}
+.pun{color:#440}
+.tag{color:#006;font-weight:bold}
+.atn{color:#404}
+.atv{color:#060}
+</code></pre>
+
+<p>}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+```</p>
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">download</a>)：</p>
+
+<p><code>css
+.pln{color:#657b83}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#93a1a1}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#657b83}.tag{color:#268bd2}.atn{color:#93a1a1}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+</code></p>
+
+<h3>Solarized Dark</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">download</a>)：</p>
+
+<p>``` css
+.pln{color:#839496}
+@media screen{</p>
+
+<pre><code>.str{color:#2aa198}
+.kwd{color:#859900}
+.com{color:#586175}
+.typ{color:#b58900}
+.lit{color:#2aa198}
+.pun,.opn,.clo{color:#839496}
+.tag{color:#268bd2}
+.atn{color:#586175}
+.atv{color:#2aa198}
+.dec,.var{color:#268bd2}
+.fun{color:red}
+</code></pre>
+
+<p>}
+@media print,projection{</p>
+
+<pre><code>.str{color:#060}
+.kwd{color:#006;font-weight:bold}
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:bold}
+.lit{color:#044}
+.pun{color:#440}
+.tag{color:#006;font-weight:bold}
+.atn{color:#404}
+.atv{color:#060}
+</code></pre>
+
+<p>}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+```</p>
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">download</a>)：</p>
+
+<p><code>css
+.pln{color:#839496}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#586175}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#839496}.tag{color:#268bd2}.atn{color:#586175}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+</code></p>
+
+<h2>範例 / Example (in dark version)</h2>
+
+<pre class="prettyprint lang-java"><code>import java.util.Map;
+import java.util.TreeSet;
+
+public class GetEnv {
+  /**
+   * let's test generics
+   * @param args the command line arguments
+   */
+  public static void main(String[] args) {
+    // get a map of environment variables
+    Map&lt;String, String&gt; env = System.getenv();
+    // build a sorted set out of the keys and iterate
+    for(String k: new TreeSet&lt;String&gt;(env.keySet())) {
+      System.out.printf("%s = %s\n", k, env.get(k));
+    }
+  }    
+}
+</code></pre>
+
+
+<hr />
+
+<p>網路上有找到<a href="http://subtech.g.hatena.ne.jp/h2u/20110408/1302198319">這篇也有 solarized color for google-pretty-code</a>, 不過只有暗色背景的版本。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用 google-code-prettify 在網頁中嵌入代碼]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify/"/>
+    <updated>2011-08-07T09:13:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/08/07/embeded-code-with-google-code-prettify</id>
+    <content type="html"><![CDATA[<p>作為一個以程式技術為主的網誌，文章中免不了得出現一兩段程式碼。原本我使用 <a href="https://github.com/">github</a> 的 <a href="http://www.gist.com/">gist</a> 服務來將程式代碼內嵌到網頁（<a href="http://tzengyuxio.me/blog/2011/07/26/which-uigesturerecognizer-will-response/">使用效果見此</a>），另一方面 gist 也可以用來當作是自己的小小代碼備忘錄，許多程式碼片段直接丟上去就好了，非常便利，可說是一舉兩得。</p>
+
+<p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>
+
+<!-- more -->
+
+
+<p>其實就功能上而言，SyntaxHighlighter 遠遠勝過 google-code-prettify，之所以選擇了 google-code-prettify，最主要的原因就在於「<strong>簡單</strong>」。兩者的比較如下（分別簡稱為 GCP 和 SH）：</p>
+
+<ul>
+<li>遇到過長的程式碼，SH 可以顯示出 Scrollbar，維持原排版；而 GCP 則會強制換行。</li>
+<li>SH 預設有行號，GCP 也可加入行號，但不方便。</li>
+<li>兩者都支援顏色主題。包含預設的在內，SH 現有 7 種顏色主題，GCP 則有 4 種。</li>
+<li>SH 支援 23 種程式語法，GCP 預設內建的也有 20 種左右。</li>
+<li>就安裝上，GCP 只要加入兩個檔案，就可以處理大多數的語言；SH 則除了得加入核心的 CSS 與 JavaScript 檔共三個檔外，還必須加入對應使用程式語言的 JavaScript。</li>
+<li>使用上兩者差異不大。SH 除了 <code>&lt;pre&gt;</code> 標籤外也提供了 <code>&lt;script&gt;</code> 的使用方式；GCP 則是可以省略語法指定，自動判斷。</li>
+</ul>
+
+
+<p>由於我經常跨不同程式語言撰寫，因此 SH 在安裝上對我而言就顯得比較不便。雖然新版提供了 Autoloader 來動態決定要載入哪些程式語言語法的 JavaScript，不過我最後還是選擇單純一點的 GCP。GCP 對我而言最大的缺點就是沒有行號，我在 IDE 上寫 code 一定會打開行號顯示，不過反正網頁上顯示的代碼行數都不多，沒有行號這一點倒是還可以接受。</p>
+
+<p>以下就是我的 google-code-prettify 安裝筆記：</p>
+
+<h2>Step 1.</h2>
+
+<p>到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a> 首頁下載好檔案後，解壓放到自己的網路空間上。我是放到 Dropbox 的 public 資料夾下。</p>
+
+<h2>Step 2.</h2>
+
+<p>然後再修改自己網頁的範本。有兩個地方要修改，一個是在 <code>&lt;/head&gt;</code> 標籤之前加上 css 與 javascript 的載入；另外一個是在 <code>&lt;body&gt;</code> 標籤內加上 onLoad 函式。</p>
+
+<p>``` html
+<head>
+  <-- 中略 -->
+  <-- 1. 在 /head 標籤前加入下面兩行 -->
+  <link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/>
+  <script src="http://my.url.to/prettify.js" type="text/javascript"/>
+</head></p>
+
+<p><-- 2. 在 body 標籤內加入 onload 設定 -->
+<body onload='prettyPrint()'>
+</body>
+```</p>
+
+<h2>Step 3.</h2>
+
+<p>接下來只要在想要使用代碼的地方，用 <code>&lt;pre&gt;</code> 或 <code>&lt;code&gt;</code> 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。</p>
+
+<p>``` html</p>
+
+<pre class="prettyprint">
+#include <stdio.h>
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+</pre>
+
+
+<p>```</p>
+
+<p>上面這段代碼的結果如下：</p>
+
+<pre class="prettyprint"><code>#include &lt;stdio.h&gt;
+ 
+int main(void)
+{
+   printf("Hello, world!\n");
+   return 0;
+}
+</code></pre>
+
+
+<p>如果想要自己指定區塊內的程式語言，可以再加上 <code>lang-*</code>，其中 * 要替換成該程式語言的代碼。</p>
+
+<p>``` html</p>
+
+<pre class="prettyprint lang-html">
+  <-- HTML 的場合 -->
+</pre>
+
+
+<pre class="prettyprint lang-c">
+  /* C 的場合 */
+</pre>
+
+
+<pre class="prettyprint lang-py">
+  " Python 的場合
+</pre>
+
+
+<p>```</p>
+
+<p>目前支援的代碼有</p>
+
+<blockquote><p>"bsh", "c", "cc", "cpp", "cs", "csh", "cyc", "cv", "htm", "html", "java", "js", "m", "mxml", "perl", "pl", "pm", "py", "rb", "sh", "xhtml", "xml", "xsl"</p></blockquote>
+
+<p>看得出來是以程式碼的副檔名做區隔。基本上常見的幾乎都包含在裡面了。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<ul>
+<li><a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a></li>
+<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a></li>
+<li><a href="http://www.vixual.net/blog/archives/197">在 Blogger 中使用 google-code-prettify 顯示程式碼 | Vixual</a></li>
+<li><a href="http://www.vixual.net/blog/archives/198">在 Blogger 中使用 dp.SyntaxHighlighter 顯示程式碼 | Vixual</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/google-code-prettify.html">幻影千瞳的部落格: 使用 google-code-prettify</a></li>
+<li><a href="http://yuanfarn.blogspot.com/2009/10/syntaxhighlighter.html">幻影千瞳的部落格: 使用 SyntaxHighlighter</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

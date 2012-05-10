@@ -9,7 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="因為最近使用 GitHub 的關係，注意到了 Markdown 這個輕量級標記語言 (Lightweight markup language)，跟著查了一下資料才發現原來輕量級標記語言的選項百百款，其中比較常見的有 Markdown,&nbsp;reStructuredText 以及 &hellip;">
+  <meta name="description" content="因為最近使用 GitHub 的關係，注意到了 Markdown 這個輕量級標記語言 (Lightweight markup language)，跟著查了一下資料才發現原來輕量級標記語言的選項百百款，其中比較常見的有 Markdown, reStructuredText 以及 textile， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -128,7 +128,47 @@
   </header>
 
 
-<div class="entry-content"><p>因為最近使用 GitHub 的關係，注意到了 Markdown 這個輕量級標記語言 (<a href="http://en.wikipedia.org/wiki/Lightweight_markup_language">Lightweight markup language</a>)，跟著查了一下資料才發現原來<a href="http://superuser.com/questions/209897/text-formatter-tools/209902#209902">輕量級標記語言的選項百百款</a>，其中比較常見的有 Markdown,&nbsp;reStructuredText 以及 <a href="http://www.textism.com/tools/textile/">textile</a>，這三種語法也同時被 BitBucket 和 GitHub 所支援。<br /><br />稍微看過三者的語法比較後，覺得 textile 的語法太過接近 HTML, 使得文字檔本身無法呈現容易理解的架構。而除了前述三者之外，也另外注意到 AsciiDoc 這一款輕量級標記語言，GitHub 有支援 AsciiDoc。下面就是我對 Markdown, reStructuredText 與 AsciiDoc 的一些比較筆記：<br /><br /><a href="http://daringfireball.net/projects/markdown/">Markdown</a><br />使用最為廣泛也最簡單的輕量級標記語言。除了前面提到的 GitHub 與 BitBucket 之外，StackOverflow 的語法基本上也是 Markdown 的強化版，另外 Tumblr 與 Posterous 這兩個輕量級的 blog 也都支援 Markdown 語法。<br /><br />然而正如前面所提到的，StackOverflow 用的是修改過的 Markdown, 實際上 GitHub 用的也是 Markdown 的修改版本。Markdown 簡單卻又略顯不足，使得許多網站的應用必須增添額外的修改。另外，缺乏表格功能的支援是最大的遺憾。<br /><br /><a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a><br />以 Python 寫成，主要也使用於 Python 社群中；Python 的文件產生器 <a href="http://sphinx.pocoo.org/">Sphinx</a> 就是以 reStructuredText 為基礎。是三者之中功能最為完整的一套，事實上，即便要說是所有輕量級標記語言中功能最為完整的一套也不為過，要拿來寫論文也不成問題。腳注 (footnote) 功能讓人眼睛一亮。不過真的是太複雜了，快要脫離「輕量級」的範圍了。<br /><br /><a href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a><br />跟 reStructuredText 同樣也是 Python 寫成，不過語法上比較接近 Markdown 的簡單，但也提供了表格的功能。會讓我注意到這一套，最主要原因是因為開源遊戲<a href="http://www.wesnoth.org/">韋諾之戰</a> (The Battle for Wesnoth) 的 Manual 就是以 AsciiDoc 所寫成。<br /><br />線上工具<br /><ul><li>Markdown: Dingus<br /><a href="http://daringfireball.net/projects/markdown/dingus">http://daringfireball.net/projects/markdown/dingus</a></li><li>reStructuredText:<br /><a href="http://www.tele3.cz/jbar/rest/rest.html">http://www.tele3.cz/jbar/rest/rest.html</a></li><li>AsciiDoc:<br /><a href="http://andrewk.webfactional.com/asciidoc.php">http://andrewk.webfactional.com/asciidoc.php</a></li></ul><br />BitBucket 的 <a href="http://confluence.atlassian.com/display/BITBUCKET/Displaying+README+Text+on+your+Bitbucket+Source+Tab">README 支援列表</a>，主要就是以 reStructuredText, Markdown, Textile 這三種為主，README 和 README.txt 這兩個檔名預設為 Plain Text, 不過如果該專案所使用的語言為 Python 的話，上述兩個檔案則會以 reStructuredText 的格式去轉為網頁。<br /><br /><a href="https://github.com/github/markup#readme">GitHub 支援的格式</a>&nbsp;比較多種，其中 Markdown 應該是最優先的，從許多專案的 README 都是以 .md 作為檔名後綴不難看出。有趣的是 GitHub 是以 Ruby 開發，然而在 Ruby 社群中比較活躍的輕量標記語言其實是 textile。（順帶一提，BitBucket 是以 Python 開發，Mercurial 也是以 Python 開發的）<br /><br />10.21 補充：根據 AcsiiDoc 官網上記載，Git User&#8217;s Manual 也是以 AsciiDoc 所製作。</p>
+<div class="entry-content"><p>因為最近使用 GitHub 的關係，注意到了 Markdown 這個輕量級標記語言 (<a href="http://en.wikipedia.org/wiki/Lightweight_markup_language">Lightweight markup language</a>)，跟著查了一下資料才發現原來<a href="http://superuser.com/questions/209897/text-formatter-tools/209902#209902">輕量級標記語言的選項百百款</a>，其中比較常見的有 Markdown, reStructuredText 以及 <a href="http://www.textism.com/tools/textile/">textile</a>，這三種語法也同時被 BitBucket 和 GitHub 所支援。</p>
+
+<p>稍微看過三者的語法比較後，覺得 textile 的語法太過接近 HTML, 使得文字檔本身無法呈現容易理解的架構。而除了前述三者之外，也另外注意到 AsciiDoc 這一款輕量級標記語言，GitHub 有支援 AsciiDoc。下面就是我對 Markdown, reStructuredText 與 AsciiDoc 的一些比較筆記：</p>
+
+<!-- more -->
+
+
+<hr />
+
+<h3><a href="http://daringfireball.net/projects/markdown/">Markdown</a></h3>
+
+<p>使用最為廣泛也最簡單的輕量級標記語言。除了前面提到的 GitHub 與 BitBucket 之外，StackOverflow 的語法基本上也是 Markdown 的強化版，另外 Tumblr 與 Posterous 這兩個輕量級的 blog 也都支援 Markdown 語法。</p>
+
+<p>然而正如前面所提到的，StackOverflow 用的是修改過的 Markdown, 實際上 GitHub 用的也是 Markdown 的修改版本。Markdown 簡單卻又略顯不足，使得許多網站的應用必須增添額外的修改。另外，缺乏表格功能的支援是最大的遺憾。</p>
+
+<h3><a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a></h3>
+
+<p>以 Python 寫成，主要也使用於 Python 社群中；Python 的文件產生器 Sphinx 就是以 reStructuredText 為基礎。是三者之中功能最為完整的一套，事實上，即便要說是所有輕量級標記語言中功能最為完整的一套也不為過，要拿來寫論文也不成問題。腳注 (footnote) 功能讓人眼睛一亮。不過真的是太複雜了，快要脫離「輕量級」的範圍了。</p>
+
+<h3><a href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a></h3>
+
+<p>跟 reStructuredText 同樣也是 Python 寫成，不過語法上比較接近 Markdown 的簡單，但也提供了表格的功能。會讓我注意到這一套，最主要原因是因為開源遊戲韋諾之戰 (The Battle for Wesnoth) 的 Manual 就是以 AsciiDoc 所寫成。</p>
+
+<hr />
+
+<h3>線上工具</h3>
+
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/dingus">Markdown: Dingus</a></li>
+<li><a href="http://www.tele3.cz/jbar/rest/rest.html">reStructuredText</a></li>
+<li><a href="http://andrewk.webfactional.com/asciidoc.php">AsciiDoc</a></li>
+</ul>
+
+
+<h3>支援</h3>
+
+<p>BitBucket 的 <a href="http://confluence.atlassian.com/display/BITBUCKET/Displaying+README+Text+on+your+Bitbucket+Source+Tab">README 支援列表</a>，主要就是以 reStructuredText, Markdown, Textile 這三種為主，README 和 README.txt 這兩個檔名預設為 Plain Text, 不過如果該專案所使用的語言為 Python 的話，上述兩個檔案則會以 reStructuredText 的格式去轉為網頁。</p>
+
+<p><a href="https://github.com/github/markup#readme">GitHub 支援的格式</a>比較多種，其中 Markdown 應該是最優先的，從許多專案的 README 都是以 .md 作為檔名後綴不難看出。有趣的是 GitHub 是以 Ruby 開發，然而在 Ruby 社群中比較活躍的輕量標記語言其實是 textile。（順帶一提，BitBucket 是以 Python 開發，Mercurial 也是以 Python 開發的）</p>
+
+<p>10.21 補充：根據 AcsiiDoc 官網上記載，Git User’s Manual 也是以 AsciiDoc 所製作。</p>
 </div>
 
 
@@ -156,7 +196,7 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/memo/'>memo</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 
@@ -165,7 +205,7 @@
 
 <span class="tags">
   
-    #<a class='tag' href='/blog/tags/asciidoc/'>asciidoc</a> #<a class='tag' href='/blog/tags/bitbucket-/'>bitbucket,</a> #<a class='tag' href='/blog/tags/github-/'>github,</a> #<a class='tag' href='/blog/tags/markdown-/'>markdown,</a> #<a class='tag' href='/blog/tags/python-/'>python,</a> #<a class='tag' href='/blog/tags/restructuredtext-/'>restructuredtext,</a>
+    #<a class='tag' href='/blog/tags/asciidoc/'>asciidoc</a> #<a class='tag' href='/blog/tags/bitbucket/'>bitbucket</a> #<a class='tag' href='/blog/tags/github/'>github</a> #<a class='tag' href='/blog/tags/markdown/'>markdown</a> #<a class='tag' href='/blog/tags/python/'>python</a> #<a class='tag' href='/blog/tags/restructuredtext/'>restructuredtext</a>
   
 </span>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: css | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/css/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,207 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Solarized for google-code-prettify]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify/"/>
+    <updated>2012-03-11T07:20:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify</id>
+    <content type="html"><![CDATA[<p><a href="/blog/2011/08/07/embeded-code-with-google-code-prettify/">我用 google-code-prettify 來做 blog 文章中的代碼上色</a>，google-code-prettify 本身有<a href="http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html">附上幾個 Color Scheme</a>, 然而除了預設的之外，都是以暗色背景為主。</p>
+
+<!-- more -->
+
+
+<p>昨天心血來潮將 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考<a href="/blog/2012/02/10/from-zenburn-to-solarized/">這篇文章</a>。</p>
+
+<h2>下載 / Download</h2>
+
+<ul>
+<li><p>Solarized Light</p>
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">Minified version</a></li>
+</ul>
+</li>
+<li><p>Solarized Dark</p>
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">Minified version</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>代碼 / Code</h2>
+
+<h3>Solarized Light</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">download</a>)：</p>
+
+<p>``` css
+.pln{color:#657b83}
+@media screen{</p>
+
+<pre><code>.str{color:#2aa198}
+.kwd{color:#859900}
+.com{color:#93a1a1}
+.typ{color:#b58900}
+.lit{color:#2aa198}
+.pun,.opn,.clo{color:#657b83}
+.tag{color:#268bd2}
+.atn{color:#93a1a1}
+.atv{color:#2aa198}
+.dec,.var{color:#268bd2}
+.fun{color:red}
+</code></pre>
+
+<p>}
+@media print,projection{</p>
+
+<pre><code>.str{color:#060}
+.kwd{color:#006;font-weight:bold}
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:bold}
+.lit{color:#044}
+.pun{color:#440}
+.tag{color:#006;font-weight:bold}
+.atn{color:#404}
+.atv{color:#060}
+</code></pre>
+
+<p>}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+```</p>
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">download</a>)：</p>
+
+<p><code>css
+.pln{color:#657b83}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#93a1a1}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#657b83}.tag{color:#268bd2}.atn{color:#93a1a1}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+</code></p>
+
+<h3>Solarized Dark</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">download</a>)：</p>
+
+<p>``` css
+.pln{color:#839496}
+@media screen{</p>
+
+<pre><code>.str{color:#2aa198}
+.kwd{color:#859900}
+.com{color:#586175}
+.typ{color:#b58900}
+.lit{color:#2aa198}
+.pun,.opn,.clo{color:#839496}
+.tag{color:#268bd2}
+.atn{color:#586175}
+.atv{color:#2aa198}
+.dec,.var{color:#268bd2}
+.fun{color:red}
+</code></pre>
+
+<p>}
+@media print,projection{</p>
+
+<pre><code>.str{color:#060}
+.kwd{color:#006;font-weight:bold}
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:bold}
+.lit{color:#044}
+.pun{color:#440}
+.tag{color:#006;font-weight:bold}
+.atn{color:#404}
+.atv{color:#060}
+</code></pre>
+
+<p>}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+```</p>
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">download</a>)：</p>
+
+<p><code>css
+.pln{color:#839496}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#586175}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#839496}.tag{color:#268bd2}.atn{color:#586175}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+</code></p>
+
+<h2>範例 / Example (in dark version)</h2>
+
+<pre class="prettyprint lang-java"><code>import java.util.Map;
+import java.util.TreeSet;
+
+public class GetEnv {
+  /**
+   * let's test generics
+   * @param args the command line arguments
+   */
+  public static void main(String[] args) {
+    // get a map of environment variables
+    Map&lt;String, String&gt; env = System.getenv();
+    // build a sorted set out of the keys and iterate
+    for(String k: new TreeSet&lt;String&gt;(env.keySet())) {
+      System.out.printf("%s = %s\n", k, env.get(k));
+    }
+  }    
+}
+</code></pre>
+
+
+<hr />
+
+<p>網路上有找到<a href="http://subtech.g.hatena.ne.jp/h2u/20110408/1302198319">這篇也有 solarized color for google-pretty-code</a>, 不過只有暗色背景的版本。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[［漫畫］雜談]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/11/19/comics-no-topic/"/>
+    <updated>2005-11-19T13:50:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/11/19/comics-no-topic</id>
+    <content type="html"><![CDATA[<div style="float: left; clear: left; background-color:lavender;">
+<a href="http://www.flickr.com/photos/30215143@N00/62823064/" title="Photo Sharing"><img src="http://static.flickr.com/29/62823064_a47d1d5ffc_m.jpg" alt="萬祝 04" align="left" height="240" width="168" style="margin-right: 8px;" /></a>
+<br />
+萬祝的封面依然是那麼樣地搶眼。連書名、集數與作者都完全融入了封面圖中－－唯一的敗筆是譯者名。出版社好歹也想個辦法將譯者內嵌到海賊圖中吧。<br /><br />話說大和一行人已經出海尋找寶藏了，可是我至今還是不曉得「萬祝」一詞有什麼涵義。不過這不是重點，重點是望月峯太郎在這次的作品中畫了很多<u>露小褲褲的畫面</u>。莫非是前一部《末日》太過灰暗了，所以這次特別放了很多青春洋溢的「讀者服務」？
+</div>
+
+
+
+
+<div style="float: left; clear: left; background-color:lavenderblush;">
+<a href="http://www.flickr.com/photos/30215143@N00/62823038/" title="Photo Sharing"><img src="http://static.flickr.com/31/62823038_a2aed68b96_m.jpg" alt="蜜桃17 07" align="right" height="240" width="168" style="margin-left: 8px;" /></a>
+<br />
+這部漫畫改編成日劇了。雖然說封面標了 <span style="color:red;">18禁</span>， 加上中文名字取那個「蜜桃」取得讓人容易想入非非，但是別害怕，不要在意周圍異樣的眼光，勇敢地拿起這漫畫到櫃檯結帳吧。《はるか 17》（我真的不想用「蜜桃」這詞）的內容主要是描寫演藝圈的生態，劇情張力夠，角色個性鮮明，作者的畫技也成熟穩定，各方面表現都在水準之上，是不可多 得的好作品；不過大概是知名度低吧，身邊沒幾個人看，感覺蠻冷門的。
+</div>
+
+
+
+
+<div style="float: left; clear: left; background-color:lavender; vertical-align: middle;">
+<a href="http://www.flickr.com/photos/30215143@N00/62823009/" title="Photo Sharing"><img src="http://static.flickr.com/31/62823009_e16d4f8170_m.jpg" alt="現視研 01" align="left" height="240" width="169" style="margin-right: 8px;" /></a>
+<br />
+先前看過動畫，總算漫畫也在台灣出版了，真是可喜可樂，可喜可樂。動畫裡第一集一開場就是《不公正抽籤》的片頭曲，乍看還以為放錯動畫了。漫畫的口味在某些方面比動畫來得重，雖然這部漫畫沒有標上<span style="color:red;">18禁</span>，可是許多笑點如果沒有<u>特殊天份</u>可是參不透的。<br /><br /><strong>「我缺少的就是這份覺悟。」</strong>嗯...這是第一集裡很喜歡的一句話。好！我也要以高坂為目標！！
+</div>
+
+
+
+
+<div style="float: left; clear: left; background-color:lavenderblush; vertical-align: middle;">
+<a href="http://www.flickr.com/photos/30215143@N00/62822985/" title="Photo Sharing"><img src="http://static.flickr.com/29/62822985_da7e93b98f_m.jpg" alt="迷糊天使俏護士 01" align="right" height="240" width="171" /></a>
+<br />
+看在佐佐木倫子的面子上而買的，對她的認識源自於《天國餐館》，除此之外我對這部漫畫一無所知。買了果然沒讓我失望，笑了一整天。<br /><br />佐佐木的漫畫在畫面處理上有一種<strong>「停格的突兀感」</strong>。她的漫畫不像許多少年漫畫會大量使用各種效果來營造動感，許多明明應該是非常動態的畫面，在她筆下看起來就像停格了一般，這種突兀反而營造出一種特別的趣味。
+</div>
+
+
+<p><span style="color:gray;">PS. 本篇是<a href="/blog/2005/11/14/css-image-alignment/">前篇</a> CSS 的應用實例。</span></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[［CSS］圖文對齊排列]]></title>
@@ -51,8 +252,9 @@
 
 <p><span style="color: blue;">flick</span><span style="color: red;">r</span></p>
 
-<pre><code>&lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style="color: red;"&gt;r&lt;/span&gt;
-</code></pre>
+<p><code>html
+&lt;span style="color: blue;"&gt;flick&lt;/span&gt;&lt;span style="color: red;"&gt;r&lt;/span&gt;
+</code></p>
 
 <p>※第一課：只是更改顏色，不難。沒有特地使用 flickr 自己的標準色與字體。</p>
 
@@ -65,8 +267,9 @@
 
 <p><span style="color: #C89C19;">43</span> <span style="color: black;">Things</span></p>
 
-<pre><code>&lt;span style="color: #C89C19;"&gt;43&lt;/span&gt; &lt;span style="color: black;"&gt;Things&lt;/span&gt;
-</code></pre>
+<p><code>html
+&lt;span style="color: #C89C19;"&gt;43&lt;/span&gt; &lt;span style="color: black;"&gt;Things&lt;/span&gt;
+</code></p>
 
 <p>※第二課：上一課的複習，重點仍是顏色。</p>
 
@@ -76,8 +279,9 @@
 
 <p><span style="color: #1393C0">Blog</span><span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px">lines</span></p>
 
-<pre><code>&lt;span style="color: #1393C0"&gt;Blog&lt;/span&gt;&lt;span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px"&gt;lines&lt;/span&gt;
-</code></pre>
+<p><code>html
+&lt;span style="color: #1393C0"&gt;Blog&lt;/span&gt;&lt;span style="color: #1393C0; border-bottom-style: dotted; border-width: 1px"&gt;lines&lt;/span&gt;
+</code></p>
 
 <p>※第三課：替後半段文字加下邊框，可以試著改變 border-width 看看不同的感覺。</p>
 
@@ -87,8 +291,9 @@
 
 <p><span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;">23</span></p>
 
-<pre><code>&lt;span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;"&gt;23&lt;/span&gt;
-</code></pre>
+<p><code>html
+&lt;span style="color: black; border-color: #C00; border-style: solid; border-width: 2px; font-family: Arial; font-weight: bold; padding: 4px 2px 0px 2px;"&gt;23&lt;/span&gt;
+</code></p>
 
 <p>※第四課：將數字加框。不能作出圓角框是遺憾之處。</p>
 
@@ -98,8 +303,9 @@
 
 <p><span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;">L<span style="color:#123466">i</span>VEJOURNAL</span></p>
 
-<pre><code>&lt;span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;"&gt;L&lt;span style="color:#123466"&gt;i&lt;/span&gt;VEJOURNAL&lt;/span&gt;
-</code></pre>
+<p><code>html
+&lt;span style="background-color: #6699CC; color: white; font-family: Arial; font-weight: bold; padding: 4px 4px 0px 4px;"&gt;L&lt;span style="color:#123466"&gt;i&lt;/span&gt;VEJOURNAL&lt;/span&gt;
+</code></p>
 
 <p>※第五課：上底色，以及巢狀樣式定義。</p>
 
@@ -109,10 +315,11 @@
 
 <p><span style="font-weight: bold"><span style="color:#0075BE; font-family:Palatino Linotype">G</span><span style="font-family: Verdana"><span style="color: #DA3838; font-variant: small-caps">m</span><span style="color: #FFC514">a</span><span style="color: #0075BE">i</span><span style="color: #2EB457">l</span></span></span></p>
 
-<pre><code>&lt;span style="font-weight: bold"&gt;&lt;span style="color:#0075BE; font-family:Palatino Linotype"&gt;G&lt;/span&gt;&lt;span style="font-family: Verdana"&gt;&lt;span style="color: #DA3838; font-variant: small-caps"&gt;m&lt;/span&gt;&lt;span style="color: #FFC514"&gt;a&lt;/span&gt;&lt;span style="color: #0075BE"&gt;i&lt;/span&gt;&lt;span style="color: #2EB457"&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-</code></pre>
+<p><code>html
+&lt;span style="font-weight: bold"&gt;&lt;span style="color:#0075BE; font-family:Palatino Linotype"&gt;G&lt;/span&gt;&lt;span style="font-family: Verdana"&gt;&lt;span style="color: #DA3838; font-variant: small-caps"&gt;m&lt;/span&gt;&lt;span style="color: #FFC514"&gt;a&lt;/span&gt;&lt;span style="color: #0075BE"&gt;i&lt;/span&gt;&lt;span style="color: #2EB457"&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+</code></p>
 
-<p>※第六課：為了更接近原 Logo，故有指定字型（均為 WinXP 內建）。關鍵之處在於 m 為小寫，但加入了 “font-variant: small-caps;”。此一樣式可將小寫字母轉為大寫，但大小略有差異；若是使用 “text-transform: uppercase;” 則是會將小寫字母以大寫表示。</p>
+<p>※第六課：為了更接近原 Logo，故有指定字型（均為 WinXP 內建）。關鍵之處在於 "Gmail" 的 "m" 為小寫，但加入了 <code>font-variant: small-caps;</code>。此一樣式可將小寫字母轉為大寫，但大小略有差異；若是使用 <code>text-transform: uppercase;</code> 則是會將小寫字母以大寫表示。</p>
 ]]></content>
   </entry>
   

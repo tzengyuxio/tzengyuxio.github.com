@@ -132,6 +132,9 @@
 
 <p>不過有時候只是想要顯示幾行代碼，這些代碼也許不具有完整性，如果將代碼一股腦兒地全丟上 gist，總有一天代碼庫會變成亂葬崗。所以除了 gist 之外，我也找了其他網頁貼程式碼的方案。原本前幾天已經物色好了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>，打算趁週末有空時來實裝測試。結果因為在安裝前四處蒐集資訊，意外又發現到 <a href="http://code.google.com/p/google-code-prettify/">google-code-prettify</a>，看了一下立刻就變心決定改用 google-code-prettify。</p>
 
+<!-- more -->
+
+
 <p>其實就功能上而言，SyntaxHighlighter 遠遠勝過 google-code-prettify，之所以選擇了 google-code-prettify，最主要的原因就在於「<strong>簡單</strong>」。兩者的比較如下（分別簡稱為 GCP 和 SH）：</p>
 
 <ul>
@@ -156,33 +159,52 @@
 
 <p>然後再修改自己網頁的範本。有兩個地方要修改，一個是在 <code>&lt;/head&gt;</code> 標籤之前加上 css 與 javascript 的載入；另外一個是在 <code>&lt;body&gt;</code> 標籤內加上 onLoad 函式。</p>
 
-<pre class="prettyprint lang-html"><code>&lt;head&gt;
-  &lt;-- 中略 --&gt;
-  &lt;-- 1. 在 /head 標籤前加入下面兩行 --&gt;
-  &lt;link href="http://my.url.to/prettify.css" rel="stylesheet" type="text/css"/&gt;
-  &lt;script src="http://my.url.to/prettify.js" type="text/javascript"/&gt;
-&lt;/head&gt;
-
-&lt;-- 2. 在 body 標籤內加入 onload 設定 --&gt;
-&lt;body onload='prettyPrint()'&gt;
-&lt;/body&gt;
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>  <span class="err">&lt;</span>-- 中略 --&gt;
+</span><span class='line'>  <span class="err">&lt;</span>-- 1. 在 /head 標籤前加入下面兩行 --&gt;
+</span><span class='line'>  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://my.url.to/prettify.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://my.url.to/prettify.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">&lt;</span>-- 2. 在 body 標籤內加入 onload 設定 --&gt;
+</span><span class='line'><span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&#39;prettyPrint()&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <h2>Step 3.</h2>
 
 <p>接下來只要在想要使用代碼的地方，用 <code>&lt;pre&gt;</code> 或 <code>&lt;code&gt;</code> 包起來，並且設定 class 為 prettiprint 即可。google-code-prettify 會自動判斷裡面的代碼是屬於何種語言。</p>
 
-<pre class="prettyprint lang-html"><code>&lt;pre class="prettyprint"&gt;
-#include &lt;stdio.h&gt;
- 
-int main(void)
-{
-   printf("Hello, world!\n");
-   return 0;
-}
-&lt;/pre&gt;
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;pre</span> <span class="na">class=</span><span class="s">&quot;prettyprint&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>#include <span class="nt">&lt;stdio</span><span class="err">.</span><span class="na">h</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>int main(void)
+</span><span class='line'>{
+</span><span class='line'>   printf(&quot;Hello, world!\n&quot;);
+</span><span class='line'>   return 0;
+</span><span class='line'>}
+</span><span class='line'><span class="nt">&lt;/pre&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>上面這段代碼的結果如下：</p>
@@ -199,16 +221,25 @@ int main(void)
 
 <p>如果想要自己指定區塊內的程式語言，可以再加上 <code>lang-*</code>，其中 * 要替換成該程式語言的代碼。</p>
 
-<pre class="prettyprint"><code>&lt;pre class="prettyprint lang-html"&gt;
-  &lt;-- HTML 的場合 --&gt;
-&lt;/pre&gt;
-&lt;pre class="prettyprint lang-c"&gt;
-  /* C 的場合 */
-&lt;/pre&gt;
-&lt;pre class="prettyprint lang-py"&gt;
-  " Python 的場合
-&lt;/pre&gt;
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;pre</span> <span class="na">class=</span><span class="s">&quot;prettyprint lang-html&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="err">&lt;</span>-- HTML 的場合 --&gt;
+</span><span class='line'><span class="nt">&lt;/pre&gt;</span>
+</span><span class='line'><span class="nt">&lt;pre</span> <span class="na">class=</span><span class="s">&quot;prettyprint lang-c&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  /* C 的場合 */
+</span><span class='line'><span class="nt">&lt;/pre&gt;</span>
+</span><span class='line'><span class="nt">&lt;pre</span> <span class="na">class=</span><span class="s">&quot;prettyprint lang-py&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  &quot; Python 的場合
+</span><span class='line'><span class="nt">&lt;/pre&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>目前支援的代碼有</p>
@@ -257,12 +288,18 @@ int main(void)
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/html/'>html</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 
 
       
+
+<span class="tags">
+  
+    #<a class='tag' href='/blog/tags/googlecodeprettify/'>googlecodeprettify</a> #<a class='tag' href='/blog/tags/html/'>html</a>
+  
+</span>
 
 
     </p>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: deepshot | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/deepshot/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-10T08:46:42+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[用手機鏡頭傳送網頁 - DeepShot]]></title>
+    <link href="http://tzengyuxio.me/blog/2011/06/17/deep-shot/"/>
+    <updated>2011-06-17T10:31:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2011/06/17/deep-shot</id>
+    <content type="html"><![CDATA[<p>今天看到這個東西，像是魔法一樣。只要把手機鏡頭對著電腦螢幕，就可以把現在電腦上的網頁傳到手機上，反之也行。</p>
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/odjSlKO0YsY?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<p>之前要在手機跟電腦間傳送觀看的網頁，我在 iPhone 上只能透過 email 的方式，一堆步驟顯得麻煩。在 Android 上要好一點，我是用 <a href="https://chrome.google.com/webstore/detail/oadboiipflhobonjjffjbfekfjcgkhco">Chrome to Phone</a> 這個 Chrome 的擴充功能，可以避開打開信箱這個中間步驟。不過要用 Chrome to Phone 有幾個先決條件：</p>
+
+<ol>
+<li>使用 Android 手機 2.2 (Froyo) 之後版本</li>
+<li>在手機上安裝 Chrome to Phone 應用程式</li>
+<li>使用 Chrome 瀏覽器</li>
+<li>在瀏覽器上安裝 Chrome to Phone 擴充功能</li>
+</ol>
+
+
+<p>上面有關安裝程式的部分或許是免不了的，但是使用平台只有 Android 與 Chrome 這種搭配，就多了許多限制。</p>
+
+<p>另外關於 Deep Shot 支援的網站，剛剛看了 <a href="http://www.engadget.com/2011/06/16/deep-shot-transfers-open-websites-from-desktop-to-mobile-sans-w/">Engadget 的報導</a>，目前只有 Google Map 跟 <a href="http://www.yelp.com/">Yelp</a>（評論網站，類似台灣的愛評網）兩個，不過理論上只要有支援 URIs 的網站便可以支援。不過這樣聽起來，雖然比起 Chrome to Phone 方便，但是又不像 Chrome to Phone 那樣到處通用。</p>
+
+<p>最後附帶一題，Deep Shot 的開發者之一是目前正在 MIT 就讀博士班的 vgod。之前有個<a href="http://www.techbang.com.tw/posts/1907-drawings-to-write-programs-sikuli-will-change-the-world">用抓圖寫程式的 Sikuli</a>，也是 vgod 的作品。</p>
+
+<hr />
+
+<p>延伸閱讀：</p>
+
+<ul>
+<li><a href="http://blog.vgod.tw/">vgod's blog</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

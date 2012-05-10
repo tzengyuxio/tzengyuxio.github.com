@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: bash | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/bash/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -56,6 +56,55 @@ echo</code></pre></noscript></div>
 </p>
 
 <p>附帶一提：字數的統計是直接使用 <code>wc -m</code>，也沒有去掉 YAML 檔頭，所以不是很精確，大概參考參考就好。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[設定 Mac Terminal 下的 .bashrc]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/dot-bashrc-in-mac-terminal/"/>
+    <updated>2012-03-11T09:33:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/11/dot-bashrc-in-mac-terminal</id>
+    <content type="html"><![CDATA[<p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
+
+<!-- more -->
+
+
+<p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
+
+<p>``` sh
+if [ -f ~/.bashrc ]; then</p>
+
+<pre><code>source ~/.bashrc
+</code></pre>
+
+<p>fi
+```</p>
+
+<p>這樣原本寫在 <code>.bashrc</code> 裡的指令稿就會被讀取並且發揮作用了。補充說明，我的作業系統版本為 <strong>Mac OS X Lion (10.7)</strong>。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，簡述如下：</p>
+
+<h3>.bash_profile</h3>
+
+<p>輸入帳號密碼登入時，不論遠端或本地，都會執行此設定檔。</p>
+
+<h3>.bashrc</h3>
+
+<p>在已經登入的情況下，開啟終端機視窗（如 Gnome 的 xterm），在命令提示符號出現前，就會先執行 .bashrc 內的指令。</p>
+
+<p>不過 Mac OS X 的行為是上述流程的例外，詳細可參考本文最後面的連結。</p>
+
+<hr />
+
+<p>參考資訊：</p>
+
+<p><a href="http://macfidelity.de/2008/07/02/mac-customizing-terminal-in-mac-os-x-105/">Customizing Terminal in Mac OS X 10.5 | macfidelity</a></p>
+
+<p>上面這篇文章中的步驟比較多，甚至還要進 Terminal 的「偏好設定」畫面去修改打開 Shell 的指令。不過我自己的操作結果是就算沒有設定那些指令也沒關係，只要有包含文章中那段代碼的 <code>.bash_profile</code>, 就可以讀取 <code>.bashrc</code> 了。</p>
+
+<p>關於 <code>.bash_profile</code> 與 <code>.bashrc</code> 的差別，請見下面這篇文章。</p>
+
+<p><a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">.bash_profile vs .bashrc</a></p>
 ]]></content>
   </entry>
   

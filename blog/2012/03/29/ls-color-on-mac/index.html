@@ -134,14 +134,19 @@
 
 <p>是說原本預設的也夠我用了就是，不過有個多采多姿的 ls 輸出不僅能提昇工作效率，光看著心情也會好起來。</p>
 
+<!-- more -->
+
+
 <h2>開啟顏色輸出</h2>
 
 <p>在 Linux 要開啟顏色輸出是透過 <code>ls --color</code> 指令。而在 Mac 或 BSD 上則是使用 <code>ls -G</code>。</p>
 
 <p>當然，每次都加這參數也是麻煩。寫程式的都是懶人，所以我在 <code>~/.bashrc</code> 檔案中加入下面這行設定：</p>
 
-<pre><code>alias ls='ls -GF'
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">alias </span><span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;ls -GF&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>要說明一下的是，上面的設定除了開啟顏色輸出外，還加了 <code>-F</code> 這個能夠在 ls 輸出中加入識別符號的參數。像是目錄的名字後面會加上 &#8216;/&#8217;, 可執行檔會加上 &#8216;*&#8217;,  符號連結 (symbolic link) 會加上 &#8216;@&#8217; 等等。</p>
 
@@ -151,8 +156,10 @@
 
 <p>直接說結果，我所使用的顏色組合如下：</p>
 
-<pre><code>export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">export </span><span class="nv">LSCOLORS</span><span class="o">=</span>gxfxbEaEBxxEhEhBaDaCaD
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>將這行加入 <code>~/.bash_profile</code> 就可以享受美美的 ls 了。這個配色設定是從 <a href="https://github.com/seebi/dircolors-solarized/issues/10">LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD</a> 這網頁參考來的。</p>
 
@@ -194,12 +201,18 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/mac/'>mac</a>] [<a class='category' href='/blog/categories/shell/'>shell</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 
 
       
+
+<span class="tags">
+  
+    #<a class='tag' href='/blog/tags/ls/'>ls</a> #<a class='tag' href='/blog/tags/mac/'>mac</a> #<a class='tag' href='/blog/tags/shell/'>shell</a>
+  
+</span>
 
 
     </p>

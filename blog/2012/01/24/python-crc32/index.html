@@ -9,7 +9,12 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="用 Python 計算 CRC32 很簡單，只要使用內建的 binascii 模組即可。import binasciiprint binascii.crc32("hello world")要反覆計算的話，可以用：crc = binascii.crc32("hello")crc = binascii &hellip;">
+  <meta name="description" content="用 Python 計算 CRC32 很簡單，只要使用內建的 binascii 模組即可。 1
+2
+import binascii
+print binascii.crc32(&quot;hello world&quot;) 要反覆計算的話，可以用： 1
+2
+crc = binascii.crc32 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -128,7 +133,88 @@
   </header>
 
 
-<div class="entry-content"><p>用 Python 計算 CRC32 很簡單，只要使用內建的 binascii 模組即可。<br /><pre class="prettyprint lang-py">import binascii<br />print binascii.crc32("hello world")<br /></pre>要反覆計算的話，可以用：<br /><pre class="prettyprint lang-py">crc = binascii.crc32("hello")<br />crc = binascii.crc32(" world", crc)<br /></pre>其中的第二行，將前一步驟所計算的 CRC 結果作為參數再次傳入函式中。<br /><br /><br />如果要計算檔案的 CRC32，可以透過以下函式來計算：<br /><pre class="prettyprint lang-py">import binascii<br />def computeFileCRC(filename):<br />    try:<br />        blocksize = 1024 * 64<br />        f = open(filename, "rb")<br />        str = f.read(blocksize)<br />        crc = 0<br />        while len(str) != 0:<br />            crc = binascii.crc32(str,crc) &amp; 0xffffffff<br />            str = f.read(blocksize)<br />        f.close()<br />    except:<br />        print "compute file crc failed!"<br />        return 0<br />    return crc<br /></pre><br />上面比較特別要注意的是這行：<br /><pre class="prettyprint lang-py">crc = binascii.crc32(str,crc) &amp; 0xffffffff<br /></pre>根據官方文件，在 Python 2.x 的版本中，binascii.crc32 所計算出來的 CRC 值域為 [-2<sup>31,</sup> 2<sup>31-1]</sup> 之間的有號整數，為了要與一般 C 所實作的 CRC 結果作比對，需要將其轉為無號整數，所以加上「<span style="font-family: 'Courier New', Courier, monospace;">&amp; 0xffffffff</span>」這段來做轉換。如果是 Python 3.x 的版本，其計算結果為 [0, 2<sup>32-1]</sup> 間的無號整數，因此不需額外加上修正。<br /><br /><br />另外，上述 <span style="font-family: 'Courier New', Courier, monospace;">computeFileCRC</span> 計算的結果為十進位整數，而通常見到的 CRC32 字串會以 16 進位方式表示，所以可以這樣轉換：<br /><pre class="prettyprint lang-py">crcstr = hex(computeFileCRC("somefile"))[2:]<br /></pre>或是，如果要直接使用在字串中，也可以用 format 的方式轉換成 16 進位格式：<br /><pre class="prettyprint lang-py">print ("crc32: %08x" % computeFileCRC("somefile"))<br /></pre></p>
+<div class="entry-content"><p>用 Python 計算 CRC32 很簡單，只要使用內建的 binascii 模組即可。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">binascii</span>
+</span><span class='line'><span class="k">print</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="s">&quot;hello world&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>要反覆計算的話，可以用：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">crc</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">crc</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="s">&quot; world&quot;</span><span class="p">,</span> <span class="n">crc</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>其中的第二行，將前一步驟所計算的 CRC 結果作為參數再次傳入函式中。</p>
+
+<p>如果要計算檔案的 CRC32，可以透過以下函式來計算：</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">binascii</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">computeFileCRC</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">try</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">blocksize</span> <span class="o">=</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">64</span>
+</span><span class='line'>        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&quot;rb&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="nb">str</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">blocksize</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">crc</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">crc</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">crc</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span>
+</span><span class='line'>            <span class="nb">str</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">blocksize</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span><span class='line'>    <span class="k">except</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot;compute file crc failed!&quot;</span>
+</span><span class='line'>        <span class="k">return</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">crc</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上面比較特別要注意的是這行：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">crc</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">crc</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>根據官方文件，在 Python 2.x 的版本中，binascii.crc32 所計算出來的 CRC 值域為 [-2<sup>31,</sup> 2<sup>31-1]</sup> 之間的有號整數，為了要與一般 C 所實作的 CRC 結果作比對，需要將其轉為無號整數，所以加上 <code>&amp; 0xffffffff</code> 這段來做轉換。如果是 Python 3.x 的版本，其計算結果為 [0, 2<sup>32-1]</sup> 間的無號整數，因此不需額外加上修正。</p>
+
+<p>另外，上述 <code>computeFileCRC</code> 計算的結果為十進位整數，而通常見到的 CRC32 字串會以 16 進位方式表示，所以可以這樣轉換：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">crcstr</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">computeFileCRC</span><span class="p">(</span><span class="s">&quot;somefile&quot;</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或是，如果要直接使用在字串中，也可以用 format 的方式轉換成 16 進位格式：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">print</span> <span class="p">(</span><span class="s">&quot;crc32: </span><span class="si">%08x</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">computeFileCRC</span><span class="p">(</span><span class="s">&quot;somefile&quot;</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -156,7 +242,7 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/python/'>python</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 
@@ -165,7 +251,7 @@
 
 <span class="tags">
   
-    #<a class='tag' href='/blog/tags/crc32/'>crc32</a>
+    #<a class='tag' href='/blog/tags/crc32/'>crc32</a> #<a class='tag' href='/blog/tags/python/'>python</a>
   
 </span>
 

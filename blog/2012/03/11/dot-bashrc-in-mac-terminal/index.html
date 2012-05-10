@@ -130,12 +130,18 @@
 
 <div class="entry-content"><p>今天想要替 Terminal 下一些常用的指令建立 alias, 我按照以前在 FreeBSD/Linux 的習慣，直接進 Terminal，在家目錄 (<code>~/</code>) 下寫了個 <code>.bashrc</code>, 重開 Terminal, 剛剛寫的 alias 卻沒有任何反應。</p>
 
+<!-- more -->
+
+
 <p>後來在家目錄下先建了個檔案 <code>.bash_profile</code>, 檔案內容如下：</p>
 
-<pre class="prettyprint"><code>if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
-fi
-</code></pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="k">if</span> <span class="o">[</span> -f ~/.bashrc <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">  </span><span class="nb">source</span> ~/.bashrc
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>這樣原本寫在 <code>.bashrc</code> 裡的指令稿就會被讀取並且發揮作用了。補充說明，我的作業系統版本為 <strong>Mac OS X Lion (10.7)</strong>。</p>
@@ -190,12 +196,18 @@ fi
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/mac/'>mac</a>] [<a class='category' href='/blog/categories/shell/'>shell</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>]
   
 </span>
 
 
       
+
+<span class="tags">
+  
+    #<a class='tag' href='/blog/tags/bash/'>bash</a> #<a class='tag' href='/blog/tags/mac/'>mac</a> #<a class='tag' href='/blog/tags/shell/'>shell</a> #<a class='tag' href='/blog/tags/terminal/'>terminal</a>
+  
+</span>
 
 
     </p>

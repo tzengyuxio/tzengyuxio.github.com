@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: iawriter | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/iawriter/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,39 +14,110 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Blogging with Markdown]]></title>
+    <title type="html"><![CDATA[用 Markdown 寫部落格]]></title>
     <link href="http://tzengyuxio.me/blog/2012/02/10/blogging-with-markdown/"/>
     <updated>2012-02-10T13:24:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/02/10/blogging-with-markdown</id>
-    <content type="html"><![CDATA[<h1>用 Markdown 寫部落格</h1>
+    <content type="html"><![CDATA[<p>前陣子<a href="/blog/2011/10/18/lightweight-markup-language/">比較了一些輕量級標記語言</a>，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。</p>
 
-
-<p>前陣子<a href="http://coder.aqualuna.me/2011/10/asciidoc-markdown-restructuredtext.html">比較了一些輕量級標記語言</a>，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。</p>
+<!-- more -->
 
 
 <p>不過比起 AsciiDoc, Markdown 的應用支援顯然要來得廣泛得多，除了 GitHub 與 BitBucket 等網站外，有相當多的工具或編輯器支援 Markdown 語法，例如 Day One, iA Writer 或是 Byword，這方面壓倒性勝過 AsciiDoc。於是乎 Markdown 便逐漸成為我的首選，至於不能製作表格的問題嘛，反正作表格的機會也不是那麼多，大部分時候也可以用清單方式來呈現資料，所以倒不是太大問題。</p>
 
-
 <p>決定用 Markdown 作為主要規範後，第一個想到的就是用 Markdown 來寫 blog。不過 blogger 本身沒有支援 Markdown 語法，也沒有外掛或工具支援直接將 Markdown 寫好的文章發佈。大部分用 Markdown 在 blogger 寫文章的方式，都與 <a href="http://notely.blogspot.com/2011/08/how-to-use-markdown-in-blogspot-posts.html">Notely: How to use Markdown in Blogspot posts</a> 這篇文章的作業流程大同小異：</p>
 
-
-<ol><li>在你的電腦中用文字編輯器撰寫文章並儲存成檔案（原作者 Joel 使用 yyyy-mm-dd post title.txt 的檔案命名方式）</li><li>開啟 <a href="http://daringfireball.net/projects/markdown/dingus">Daring Fireball: Markdown Web Dingus</a> 網站，複製貼上文章內容，進行轉換。</li><li>最後，將轉換完成的 HTML 碼貼到 blogspot 的新文章中。</li></ol>
+<ol>
+<li>在你的電腦中用文字編輯器撰寫文章並儲存成檔案（原作者 Joel 使用 yyyy-mm-dd post title.txt 的檔案命名方式）</li>
+<li>開啟 <a href="http://daringfireball.net/projects/markdown/dingus">Daring Fireball: Markdown Web Dingus</a> 網站，複製貼上文章內容，進行轉換。</li>
+<li>最後，將轉換完成的 HTML 碼貼到 blogspot 的新文章中。</li>
+</ol>
 
 
 <p>另外，貼上時要注意以下兩點：</p>
 
+<ol>
+<li>在貼上新文章時，確定文字輸入區上方的模式是在「HTML」下而非「撰寫」。</li>
+<li>開啟右側「文章設定」最下方的選項，
 
-<ol><li>在貼上新文章時，確定文字輸入區上方的模式是在「HTML」下而非「撰寫」。</li><li>開啟右側「文章設定」最下方的選項，<ol><li>「撰寫模式」勾選<strong>解譯輸入的 HTML</strong>。</li><li>「換行符號」勾選<strong>使用 &lt;br&gt; 標記</strong>。</li></ol></li></ol>
+<ol>
+<li>「撰寫模式」勾選<strong>解譯輸入的 HTML</strong>。</li>
+<li>「換行符號」勾選<strong>使用 <code>&lt;br&gt;</code> 標記</strong>。</li>
+</ol>
+</li>
+</ol>
 
 
 <p>我目前也是採用類似的流程。比較特別要提的有以下幾點：</p>
 
+<ol>
+<li>標題除了作為檔名外，檔案內的第一行也會放上一級標題；最後一行則是列出這篇文章的標籤。所以在轉換為 HTML 時，要去首尾行。</li>
+<li>檔案存放在 dropbox 空間中。這樣可以確保文章有多份備份。</li>
+<li>文章是<a href="/blog/2012/02/10/markdown-editor/">用 iA Writer 寫</a>的。寫完之後用<a href="/blog/2012/02/10/markdown-to-html-in-osx/">〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉</a>這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。</li>
+</ol>
 
-<ol><li>標題除了作為檔名外，檔案內的第一行也會放上一級標題；最後一行則是列出這篇文章的標籤。所以在轉換為 HTML 時，要去首尾行。</li><li>檔案存放在 dropbox 空間中。這樣可以確保文章有多份備份。</li><li>文章是<a href="http://blog.aqualuna.me/2012/02/byword-ia-writer.html">用 iA Writer 寫</a>的。寫完之後用<a href="http://coder.aqualuna.me/2012/02/os-x-markdown-html.html">〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉</a>這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。</li></ol>
+
+<hr />
+
+<p>這篇文章就是用上述流程所寫的，原始檔案可以到<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20%E7%94%A8%20Markdown%20%E5%AF%AB%20blogger%20%E6%96%87%E7%AB%A0.md">這邊</a>參考。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Byword, iA Writer 以及一些其他的]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/02/10/markdown-editor/"/>
+    <updated>2012-02-10T03:00:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/02/10/markdown-editor</id>
+    <content type="html"><![CDATA[<p>我發現我是編輯器控。</p>
+
+<p><img src="/images/2012/2012-02-10-iawriter.png" alt="iawriter" /></p>
+
+<!-- more -->
 
 
-<hr /><p>這篇文章就是用上述流程所寫的，你可以<a href="http://dl.dropbox.com/u/1324456/2012-02-10%20Blogging%20with%20Markdown.md">到這邊看看原始模樣</a>。</p>
+<p>前些時日<a href="/blog/2011/10/18/lightweight-markup-language/">研究了幾個輕量級標記語言</a>，最後情定 Markdown，結果沒多久就開始在想「Markdown 要用什麼編輯器來寫比較好？」雖然已經有了 Vim 這個強力武器，也支援 Markdown（沒有什麼語法是 Vim 支援不了的），但總是想找個更體面點的編輯器來感受一下輕量級標記語言之美，最好是即便在純文字模式下也能清楚標示出 Markdown 的語法。</p>
 
+<p>經過簡單的搜尋，適合 Markdown 的編輯器大概鎖定了 <a href="http://bywordapp.com/">Byword</a> 與 <a href="http://www.iawriter.com/">iA Writer</a> 這兩套。然而這兩套軟體都沒有試用下載，價格也不算低，我不想兩套都買，只好上網找些比較的文章來看，看是哪一套軟體較好。這兩套軟體有個共同的特色，就是具有專注模式（focus mode），最近的編輯器市場似乎有個潮流，好幾套編輯器都強調介面的簡化，讓使用者專注在文字輸入 (distract-free writing) 上。果然分心是打文章的大敵，一不小心就會忘記寫到哪邊，然後一篇短短的文章寫個老半天這樣（笑）。</p>
+
+<p>以專注於文章撰寫為訴求的編輯器，除了 Byword 與 iA Writer 外，比較有名的還有 <a href="http://www.hogbaysoftware.com/products/writeroom">WriteRoom</a> 以及 <a href="http://www.ommwriter.com/en/">OmmWriter</a>，找資料時也跟著看了不少評論，底下就一起寫一下介紹與心得吧。</p>
+
+<h2>WriteRoom</h2>
+
+<p>這一套應該是最早出現的專注型編輯器吧，首頁的副標寫的就是 "Distraction free writing." 有 Mac 和 iPhone 版，Mac 版在寫這篇文章時賣 $9.99，不過在許多文章中看到他的歷史價格是 $25，也許因為是最早推出的專注型編輯器的關係吧，那時還缺乏競爭對手。</p>
+
+<p>另外，WriteRoom 似乎尚未支援 Markdown 語法的樣子，我在 App Store 的敘述中和官網的介紹裡都沒有看到。這樣的話，反而有語法標記的 Vim 還來得有用些，而且 Vim 也可以切換到 WriteRoom 模式（<a href="http://www.vim.org/scripts/script.php?script_id=2231">方法一</a>, <a href="http://mutelight.org/articles/vim-is-writeroom-level-2">方法二</a>）</p>
+
+<h2>OmmWriter</h2>
+
+<p>這是很特別的一款編輯器，他讓使用者在輸入文字時，能夠完全進入到一個<strong>禪的境界</strong>。當使用者在打字時，除了簡單卻不擾人的打字音效外，背景同時也會播放輕柔淡雅的音樂。介面簡單，可以做些簡單的字型與背景設定，平常打字時介面則會自動隱藏。本文所介紹的編輯器都是以 MAC 為主，不過 OmmWriter 也有 PC 版本，都可以免費下載。</p>
+
+<p>不過我不喜歡他的編輯區外面有個虛線的框，除此之外，我工作通常時也不需要背景音樂。對了，這一款也沒有支援 Markdown 語法。如果不是因為 Markdown 這點，我想免費且跨平台的 OmmWriter 應該是不錯的選擇。</p>
+
+<h2>Byword</h2>
+
+<p>這款在 WriteRoom 和 iA Writer for iPad 之後推出，算是結合了 WriterRoom 的專注模式與 iA Writer 優雅介面兩方面特色。售價 $9.99, 還算平易近人。我喜歡 Byword 的雙色模式，可以選擇要以白色或是黑色作背景。Byword 的 focus 模式作的也比 iA Writer 好，除了可以自己選擇 focus 的範圍（一句、一段或幾行）外，focus 模式時上下邊緣漸層淡出的設計也很別緻。</p>
+
+<p>Byword 支援 Rich Text 與 Markdown 兩種格式。不過老實說，雖然從 Windows 的小作家就有 Rich Text 了，可是我用了這麼多年電腦，真的很少見到（更不用說自己寫了）Rich Text 格式的文件，要嘛就純文字，要嘛就 Word/HTML, Rich Text 實在是個不上不下的格式。</p>
+
+<p>我喜歡 Byword 的地方還有一點，就是他可以直接將 Markdown 輸出成 HTML, 這對於寫 blog 很方便，寫好後轉換貼上就好。iA Writer 雖然也可以寫 Markdown, 但就沒辦法像 Byword 這樣直接轉換。不過我最後還是選了 iA Writer, 為什麼呢？</p>
+
+<h2>iA Writer</h2>
+
+<p>我對 iA Writer 第一眼的感覺就是它的 Markdown 排版是很棒的設計。與其他軟體所不同，iA Writer 利用它左邊的空白處（Margin）來處理標題與清單列表的前綴標記，相當有創意。</p>
+
+<p>在此引用一下 <a href="http://brooksreview.net/2011/05/ia-writer/">Review: iA Writer for Mac</a> 這篇文章中的一段話，作為 Byword 與 iA Writer 的比較：</p>
+
+<blockquote><p>Byword is for people that know they want to do all their writing in one app. Writer is for people that just want to open something and write.（Byword 是給那些清楚自己要在一個 app 中完成所有撰寫工作的人。而 Writer 則是設計給想要打開個什麼然後就開始寫字的人。）</p></blockquote>
+
+<p>iA Writer 看上去是個很簡單的編輯器，它也真的很簡單，簡單卻又不簡單。這話怎麼說呢？iA Writer 完全沒有任何自定項目：沒有偏好設定視窗；不能改變字型、背景、顏色；只有支援 Markdown, 還強迫一定得是 Markdown，不能取消標記功能；不管視窗拉多寬，每行固定 64 個字母寬。完全沒有妥協餘地。</p>
+
+<p>然而在這麼限制重重的環境下，iA Writer 卻能帶給我一種「嗯，就是這麼剛好。」的感覺，在 iA Writer 裡面打字似乎是天經地義極為自然的一件事，一點都不會想要去改動什麼設定。它微白又略略帶點紋路的背景，配上青藍色閃爍的游標，順眼而不搶眼。整個程式的設計都是圍繞在打字本身的體驗上，至於各種花俏功能、排版的格式樣式、巨集或是插入範本、分割視窗遠端編輯什麼的，通通都不管。</p>
+
+<p>當然沒有程式是完美的，然而 iA Writer 已經很接近完美了。前面說過，我喜歡 Byword 的雙色模式，不過用了 iA Writer 後，覺得雙色背景的選擇也是多餘。而 Byword 可以直接輸出成 HTML 這個功能，也可以透過<a href="/blog/2012/02/10/markdown-to-html-in-osx/">在 Automator 新增服務</a>的方式，讓 iA Writer 也能直接輸出 HTML 結果。</p>
+
+<p>實際使用一陣子後，iA Writer 倒是有兩個地方我覺得可以再改進的。一個是 Markdown 的連結模式區別不夠明顯，同顏色的連結與連結文字混淆在正文中容易造成閱讀不便。另外一個可改進之處是中文與英文文字對齊方式不同，中文預設對齊字型的降部（Descenders）底緣，如果一行中有英文的話，該行內的中文字會與英文一樣對齊基線（Baseline），這使得中英夾雜的文章中看起來會有行高不同的錯覺。</p>
+
+<p>iA Writer 在 App Store 的定價 $19.99，比起 Byword 倒是高了不少。不過最近似乎是在促銷，只要 $8.99，反倒比 Byword 便宜了些。喜歡用純文字寫文章的朋友，不妨考慮看看。</p>
 ]]></content>
   </entry>
   

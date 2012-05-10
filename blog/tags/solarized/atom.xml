@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: solarized | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/solarized/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,39 +14,192 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Solarized for google-code-prettify]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify/"/>
+    <updated>2012-03-11T07:20:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/03/11/solarized-for-google-code-prettify</id>
+    <content type="html"><![CDATA[<p><a href="/blog/2011/08/07/embeded-code-with-google-code-prettify/">我用 google-code-prettify 來做 blog 文章中的代碼上色</a>，google-code-prettify 本身有<a href="http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html">附上幾個 Color Scheme</a>, 然而除了預設的之外，都是以暗色背景為主。</p>
+
+<!-- more -->
+
+
+<p>昨天心血來潮將 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考<a href="/blog/2012/02/10/from-zenburn-to-solarized/">這篇文章</a>。</p>
+
+<h2>下載 / Download</h2>
+
+<ul>
+<li><p>Solarized Light</p>
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">Minified version</a></li>
+</ul>
+</li>
+<li><p>Solarized Dark</p>
+
+<ul>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">Normal version</a></li>
+<li>Download <a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">Minified version</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>代碼 / Code</h2>
+
+<h3>Solarized Light</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.css">download</a>)：</p>
+
+<p>``` css
+.pln{color:#657b83}
+@media screen{</p>
+
+<pre><code>.str{color:#2aa198}
+.kwd{color:#859900}
+.com{color:#93a1a1}
+.typ{color:#b58900}
+.lit{color:#2aa198}
+.pun,.opn,.clo{color:#657b83}
+.tag{color:#268bd2}
+.atn{color:#93a1a1}
+.atv{color:#2aa198}
+.dec,.var{color:#268bd2}
+.fun{color:red}
+</code></pre>
+
+<p>}
+@media print,projection{</p>
+
+<pre><code>.str{color:#060}
+.kwd{color:#006;font-weight:bold}
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:bold}
+.lit{color:#044}
+.pun{color:#440}
+.tag{color:#006;font-weight:bold}
+.atn{color:#404}
+.atv{color:#060}
+</code></pre>
+
+<p>}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+```</p>
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-light.min.css">download</a>)：</p>
+
+<p><code>css
+.pln{color:#657b83}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#93a1a1}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#657b83}.tag{color:#268bd2}.atn{color:#93a1a1}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#fdf6e3}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+</code></p>
+
+<h3>Solarized Dark</h3>
+
+<p>正常排版版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.css">download</a>)：</p>
+
+<p>``` css
+.pln{color:#839496}
+@media screen{</p>
+
+<pre><code>.str{color:#2aa198}
+.kwd{color:#859900}
+.com{color:#586175}
+.typ{color:#b58900}
+.lit{color:#2aa198}
+.pun,.opn,.clo{color:#839496}
+.tag{color:#268bd2}
+.atn{color:#586175}
+.atv{color:#2aa198}
+.dec,.var{color:#268bd2}
+.fun{color:red}
+</code></pre>
+
+<p>}
+@media print,projection{</p>
+
+<pre><code>.str{color:#060}
+.kwd{color:#006;font-weight:bold}
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:bold}
+.lit{color:#044}
+.pun{color:#440}
+.tag{color:#006;font-weight:bold}
+.atn{color:#404}
+.atv{color:#060}
+</code></pre>
+
+<p>}
+pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+```</p>
+
+<p>最小化版本 (<a href="http://dl.dropbox.com/u/1324456/google-code-prettify/solarized-dark.min.css">download</a>)：</p>
+
+<p><code>css
+.pln{color:#839496}@media screen{.str{color:#2aa198}.kwd{color:#859900}.com{color:#586175}.typ{color:#b58900}.lit{color:#2aa198}.pun,.opn,.clo{color:#839496}.tag{color:#268bd2}.atn{color:#586175}.atv{color:#2aa198}.dec,.var{color:#268bd2}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:5px;border:1px solid #888;background:#002b36}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111}
+</code></p>
+
+<h2>範例 / Example (in dark version)</h2>
+
+<pre class="prettyprint lang-java"><code>import java.util.Map;
+import java.util.TreeSet;
+
+public class GetEnv {
+  /**
+   * let's test generics
+   * @param args the command line arguments
+   */
+  public static void main(String[] args) {
+    // get a map of environment variables
+    Map&lt;String, String&gt; env = System.getenv();
+    // build a sorted set out of the keys and iterate
+    for(String k: new TreeSet&lt;String&gt;(env.keySet())) {
+      System.out.printf("%s = %s\n", k, env.get(k));
+    }
+  }    
+}
+</code></pre>
+
+
+<hr />
+
+<p>網路上有找到<a href="http://subtech.g.hatena.ne.jp/h2u/20110408/1302198319">這篇也有 solarized color for google-pretty-code</a>, 不過只有暗色背景的版本。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[代碼配色，從 Zenburn 到 Solarized]]></title>
     <link href="http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized/"/>
     <updated>2012-02-10T08:40:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/02/10/from-zenburn-to-solarized</id>
-    <content type="html"><![CDATA[<p>這些年來，我的代碼配色方案都是以 <a href="http://coder.aqualuna.me/search/label/Zenburn">zenburn</a> 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse 再到 XCode 都可以<a href="http://slinky.imukuppi.org/zenburnpage/">找到現成的 zenburn 設定</a>。</p>
-
+    <content type="html"><![CDATA[<p>這些年來，我的代碼配色方案都是以 <a href="/blog/tags/zenburn/">zenburn</a> 為首選。深色底，低對比，對眼睛舒服，代碼的段落也清晰。zenburn 也是網路上很受歡迎的配色，這有一個好處，就是越多人用就越有可能被 porting 到不同的 IDE 或 Editor 上，所以從 Visual Studio 到 Eclipse 再到 XCode 都可以<a href="http://slinky.imukuppi.org/zenburnpage/">找到現成的 zenburn 設定</a>。</p>
 
 <p><img src="https://lh4.googleusercontent.com/-m9F65JqmUDI/TzRk4vBNMkI/AAAAAAAAJVc/mShL8z4NQAc/s640/vim_zenburn.png" alt="zenburn @ vim" /></p>
+
+<!-- more -->
 
 
 <p>上圖就是目前在用的 zenburn。由於用這麼久都已經習慣了，從沒有想過會有第二種配色讓我如此滿意，結果前天突然發現 <a href="http://ethanschoonover.com/solarized">Solarized</a> 這一組配色，當場就被迷住了，我才認識這組配色不到 24 小時，就把 zenburn 從我的 vimrc 中換掉了。</p>
 
-
-<ul><li>官方網站：<a href="http://ethanschoonover.com/solarized">Solarized - Ethan Schoonover</a></li><li>GitHub 檔案庫：<a href="https://github.com/altercation/solarized">altercation / solarized - GitHub</a></li></ul>
+<ul>
+<li>官方網站：<a href="http://ethanschoonover.com/solarized">Solarized - Ethan Schoonover</a></li>
+<li>GitHub 檔案庫：<a href="https://github.com/altercation/solarized">altercation / solarized - GitHub</a></li>
+</ul>
 
 
 <p>說起來，會注意到 Solarized 也是無心插柳。原本是在找 markdown + blogger 的 solution, 沒有找著，倒是見到了一個以 github 為基礎的 blog framework, 叫 Octopress。我對 <a href="http://octopress.org/">Octopress</a> 沒有太多興趣，純粹好奇它的技術架構（畢竟以 SCM 作為 blog 後端，是很有趣的想法），所以研究了一下。然後意外地在<a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html">〈使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章〉</a>這篇文章中意外地注意到 Solarized 這組配色。</p>
 
-
-<p>Solarized 最令我覺得神奇的地方，就在於同一組基本色，可以任意搭配淺白色或淺黑色背景，都一樣清晰明瞭。它的色盤也控制在 16 色內，所以即使在終端機模式下使用也不會突兀。在官方網站上，也列出了 Visual Studio 與 Xcode 等 IDE 的配色支援；for eclipse 的配色網路上搜尋得到，不過官網上沒列出，不曉得是不是名字相衝的緣故（太陽 vs. 日蝕）=P</p>
-
-
-<p>我在終端機純文字模式下的 Vim 與圖形介面的 MacVim 分別指定了 Light 與 Dark 兩種配色。這樣在 Vim 中編輯時，只要瞄一下我就可以知道現在是在終端機模式下還是獨立的 Mac App。</p>
-
+<p>Solarized 最令我覺得神奇的地方，就在於同一組基本色，可以任意搭配淺白色或淺黑色背景，都一樣清晰明瞭。它的色盤也控制在 16 色內，所以即使在終端機模式下使用也不會突兀。在官方網站上，也列出了 Visual Studio 與 Xcode 等 IDE 的配色支援；for eclipse 的配色網路上搜尋得到，不過官網上沒列出，不曉得是不是名字相衝的緣故（太陽 vs. 日蝕）=P</p><p>我在終端機純文字模式下的 Vim 與圖形介面的 MacVim 分別指定了 Light 與 Dark 兩種配色。這樣在 Vim 中編輯時，只要瞄一下我就可以知道現在是在終端機模式下還是獨立的 Mac App。</p>
 
 <p><img src="https://lh3.googleusercontent.com/-wTKa4GLQKZE/TzRk46EP8GI/AAAAAAAAJVY/uhEJUnmBN14/s640/vim_solarized_yin.png" alt="solarized(yin) @ vim" /></p>
 
-
 <p><img src="https://lh4.googleusercontent.com/-nIid_yCO9y4/TzRk4nK58FI/AAAAAAAAJVU/Sbt62oMbNAY/s640/macvim_solarized_yang.png" alt="solarized(yang) @ macvim" /></p>
 
-
 <p>另外這配色除了用在程式碼外，也有提供給一般應用程式使用的版本，例如常見的 putty, OSX 自帶的 Terminal, 以及 iTerm 2 等。一樣都可以在 Solarized 放在 GitHub 上的 Repository 上找到。</p>
-
 ]]></content>
   </entry>
   

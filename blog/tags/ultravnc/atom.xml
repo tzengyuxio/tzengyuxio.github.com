@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: ultravnc | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/ultravnc/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-05-10T08:46:42+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[［情報］VNC 軟體比較]]></title>
+    <link href="http://tzengyuxio.me/blog/2006/02/28/vnc-comparation/"/>
+    <updated>2006-02-28T09:55:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2006/02/28/vnc-comparation</id>
+    <content type="html"><![CDATA[<p><a href="http://www.masternewmedia.org/news/2004/10/23/best_vncbased_screen_sharing_solutions.htm">Best VNC-Based Screen Sharing Solutions: Slashdot Reports</a><br/>
+(October 23, 2004)</p>
+
+<p>想挑一套 VNC 來裝，因此找了幾篇 <code>Ultr@VNC</code> 與 <code>TightVNC</code> 的比較，不重要的文章我就不貼了，只留一篇作為結論放在上面。懶得直接看全文的就直接看各款間的主要特色吧：</p>
+
+<!-- more -->
+
+
+<blockquote><ul>
+<li><a href="http://www.realvnc.com/">RealVNC</a>: the original.</li>
+<li><a href="http://www.tightvnc.com/">TightVNC</a>: optimized for low-bandwidth</li>
+<li><a href="http://ultravnc.sourceforge.net/">UltraVNC</a>: tons of extras - file transfer, chat, video driver, NT/AD security</li>
+<li><a href="http://www.tridiavnc.com/">TridiaVNC</a>: get around firewalls, more management features</li>
+<li><a href="http://sourceforge.net/projects/win2vnc/">Win2VNC</a>: One virtual desktop across two computers</li>
+</ul>
+</blockquote>
+
+<p>以及最重要的，總評：</p>
+
+<blockquote><p>and from the over 500 user contributed opinions, which you can access all on Slashdot, I have selected these few ultra-synthetic snippets:</p>
+
+<blockquote><p>"UltraVNC is miles ahead of the others when used with the video driver on Windows on a broadband or better connection.</p>
+
+<p><strong>It is smooth</strong>, very usable for most office applications.</p>
+
+<p>Personally, I find file transfer to be useful too. The client side has some nice GUI touches for fullscreen mode - a little control bar that is very similar to the one in Remote Desktop.</p>
+
+<p><strong>On the other hand</strong>, RealVNC is the "gold standard".</p>
+
+<p>If you're using VNC, you probably notice how slow it is.</p>
+
+<p>UltraVNC/TightVNC is a big improvement over regular VNC ... <strong>but they're all dog slow</strong>."</p></blockquote></blockquote>
+
+<p>所以得獎的是－－<strong>Ultr@VNC</strong>！恭喜 Ultra，妳可以獲得我的硬碟住宿券一張，無限期的唷！</p>
+]]></content>
+  </entry>
+  
+</feed>

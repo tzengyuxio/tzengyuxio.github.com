@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: gem | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/gem/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -23,6 +23,9 @@
 <p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
 
 <p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
+
+<!-- more -->
+
 
 <h2>Python 的 easy_install</h2>
 

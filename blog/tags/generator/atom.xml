@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: generator | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/generator/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-05T07:53:54+08:00</updated>
+  <updated>2012-05-10T08:46:42+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,11 +14,28 @@
 
   
   <entry>
+    <title type="html"><![CDATA[貼紙工具再來]]></title>
+    <link href="http://tzengyuxio.me/blog/2005/06/11/more-sticker-tool/"/>
+    <updated>2005-06-11T21:58:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2005/06/11/more-sticker-tool</id>
+    <content type="html"><![CDATA[<p><a href="http://www.eoool.com/Default.aspx?TypeID=0">圖像／標籤產生器：eoool</a></p>
+
+<p>各式各樣小圖檔，從大頭照到 email 再到 80x15 小貼紙都有。<br/>
+上傳照片編輯頭像的介面頗簡易的。</p>
+
+<p>然缺點是對 Firefox 不友善。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[貼紙地圖]]></title>
     <link href="http://tzengyuxio.me/blog/2005/06/06/sticker-map/"/>
     <updated>2005-06-06T08:36:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2005/06/06/sticker-map</id>
     <content type="html"><![CDATA[<p>我一直很喜歡許多網站上可以看得到的小貼紙，看到他們整整齊齊的排列在一起。一致的大小，裡頭卻有著各種不同的設計；每個人在有限的空間中飆逐無限的創意組合；若再加上各種別具特色的 logo 更顯得可愛。相信有跟我一樣感覺的人一定不少。</p>
+
+<!-- more -->
+
 
 <p>如今 <a href="http://www.littleoslo.com/cnt/home/">LittleOslo</a> 作了一張<a href="http://littleoslo.com/cnt/stickermap.htm">貼紙地圖</a>。數大就是美，許多小小的貼紙拼湊在一起也頗為壯觀。喜歡貼紙的人不妨去看看。除了貼紙地圖計畫，順道一題，LittleOslo 也作了個 <a href="http://littleoslo.com/cnt/blogpoly.htm">Blogpoly</a>，是以 Internet 為背景的大富翁紙盤遊戲。這也是相當有趣的企劃呢。蠻期待哪天能看到他把 Trackback 卡與Comments 卡也做出來。說不定就真的可以拿來玩了。</p>
 

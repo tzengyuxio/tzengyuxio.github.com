@@ -130,6 +130,9 @@
 
 <div class="entry-content"><p>Ruby on Rails 是預設使用 Unicode 的；MySQL 對於 Unicode 的支援也相當完整－－照理說兩者合作起來應該琴瑟和鳴才是。</p>
 
+<!-- more -->
+
+
 <p>然而我把 RoR 與 MyQL 兜在一起之後，即便已將 MySQL 文字編碼設為 <code>UTF-8 Unicode (utf8)</code>，MySQL 連線校對設為 <code>utf8_general_ci</code>，編碼的問題還是讓人傷透腦筋－－那些在 phpMyAdmin 中所 INSERT 進去的資料，在 RoR 的頁面中總是亂碼一串；而經由 RoR 頁面所輸入的資料，不僅無法透過 phpMyAdmin 看到正確編碼，甚至不能將資料正確地存入資料庫中。</p>
 
 <p>這樣子的問題會出現在 MySQL 4.1 （及以後）的版本，因為 MySQL 在 4.1 版之後大幅強化了對各種編碼的支援。如果安裝的 Rails 是 1.0 之後的版本，解決問題的方法只要在 <code>config/database.yml</code> 中加入一行設定即可：</p>
@@ -174,7 +177,7 @@
 
 <span class="categories">
   
-    [<a class='category' href='/blog/categories/coding/'>coding</a>]
+    [<a class='category' href='/blog/categories/coding/'>coding</a>] [<a class='category' href='/blog/categories/雜筆/'>雜筆</a>]
   
 </span>
 
@@ -183,7 +186,7 @@
 
 <span class="tags">
   
-    #<a class='tag' href='/blog/tags/mysql/'>mysql</a> #<a class='tag' href='/blog/tags/ror/'>ror</a> #<a class='tag' href='/blog/tags/ruby/'>ruby</a> #<a class='tag' href='/blog/tags/unicode/'>unicode</a>
+    #<a class='tag' href='/blog/tags/mysql/'>mysql</a> #<a class='tag' href='/blog/tags/ror/'>ror</a> #<a class='tag' href='/blog/tags/ruby/'>ruby</a> #<a class='tag' href='/blog/tags/unicode/'>unicode</a> #<a class='tag' href='/blog/tags/utf8/'>utf8</a>
   
 </span>
 
