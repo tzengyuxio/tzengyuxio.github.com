@@ -43,7 +43,7 @@ tags: [mr6]
 
 - - - -
 
-關於給六先生帶來許多想法的這篇 [I don't hire unlucky people - raganwald's posterous][posterous]，我運氣很好，剛好也看了。有一些不太一樣的解讀。可惜這裡空白的地方太小，寫不下，只好[另外寫一篇來討論](/blog/2012/04/to-hire-lucky-or-unlucky-its-a-question/)了。
+關於給六先生帶來許多想法的這篇 [I don't hire unlucky people - raganwald's posterous][posterous]，我運氣很好，剛好也看了。有一些不太一樣的解讀。可惜這裡空白的地方太小，寫不下，只好[另外寫一篇來討論](/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/)了。
 
 [mr6]: http://mr6.cc/?p=7363#more-7363
 [posterous]: http://raganwald.posterous.com/i-dont-hire-unlucky-people

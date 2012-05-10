@@ -25,16 +25,16 @@ tags: [日劇, 涼宮春日, kaiji]
 - 大設計
 - 我是乳房
 - 2001 太空漫遊
-- [幻想大師 Roald Dahl 的異想世界](/blog/2011/06/the-best-of-roald-dahl/)
+- [幻想大師 Roald Dahl 的異想世界](/blog/2011/06/02/the-best-of-roald-dahl/)
 - 新人生
 - 槓桿閱讀術、槓桿思考術、槓桿時間術、槓桿人脈術
 - 涼宮春日的分裂
 - 涼宮春日的驚愕（上）
 - 涼宮春日的驚愕（下）
-- [激情香水I、激情香水2](/blog/2011/06/le-perfume/)
-- [變驢綺情記](/blog/2011/06/la-metamorphose/)
+- [激情香水I、激情香水2](/blog/2011/06/07/le-perfume/)
+- [變驢綺情記](/blog/2011/06/07/la-metamorphose/)
 - 夜夜春夢
-- [像樣的不倫人妻](/blog/2011/06/xianyang-de-bulung-renqi/)
+- [像樣的不倫人妻](/blog/2011/06/12/xianyang-de-bulung-renqi/)
 
 ### 電影
 
@@ -45,10 +45,10 @@ tags: [日劇, 涼宮春日, kaiji]
 - The man from earth
 - 詐欺遊戲：最後的舞台
 - 2001 太空漫遊
-- [涼宮春日的消失](/blog/2011/06/suzumiya-haruhi-2010/)
+- [涼宮春日的消失](/blog/2011/06/02/suzumiya-haruhi-2010/)
 - 銀翼殺手
-- [賭博默示錄](/blog/2011/06/kaiji-the-movie/)
-- [消失在第七大街](/blog/2011/06/vanishing-on-the-street/)
+- [賭博默示錄](/blog/2011/06/05/kaiji-the-movie/)
+- [消失在第七大街](/blog/2011/06/12/vanishing-on-the-street/)
 - 玩具總動員 1
 - 玩具總動員 2
 - 玩具總動員 3
@@ -69,8 +69,8 @@ tags: [日劇, 涼宮春日, kaiji]
 - 海賊王（到單行本58）
 - Bleach （到單行本16）
 - 七海遊龍
-- [賭博默示錄](/blog/2011/06/kaiji-comics/)
-- [賭博破戒錄](/blog/2011/06/kaiji-comics-part-2/)
+- [賭博默示錄](/blog/2011/06/05/kaiji-comics/)
+- [賭博破戒錄](/blog/2011/06/06/kaiji-comics-part-2/)
 - 賭博墮天錄
 - 賭博墮天錄 和也篇 （未完）
 - 賭博霸王傳 零 （未完）
@@ -79,10 +79,10 @@ tags: [日劇, 涼宮春日, kaiji]
 
 - 信長之野望 天道（以長宗我部統一）
 - 三國志 XI（以劉備統一）
-- [歐陸戰爭](/blog/2011/06/european-war-2/)（戰役全破）
-- [Air Pengiun](/blog/2011/06/air-penguin/)
+- [歐陸戰爭](/blog/2011/06/06/european-war-2/)（戰役全破）
+- [Air Pengiun](/blog/2011/06/13/air-penguin/)
 - GemCraft（全關卡發亮）
-- [文明 變革](/blog/2011/06/civilization-revolution/) as 九鼎人, 忘了啥勝利
+- [文明 變革](/blog/2011/06/19/civilization-revolution/) as 九鼎人, 忘了啥勝利
 - 文明帝國 V as America, 科技勝利
 
 ### 日劇

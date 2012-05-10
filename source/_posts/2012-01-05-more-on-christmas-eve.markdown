@@ -6,7 +6,7 @@ categories: [advertising, music]
 tags: [山下達郎, 新垣結衣]
 ---
 
-在[山下達郎](/blog/tags/%E5%B1%B1%E4%B8%8B%E9%81%94%E9%83%8E/)的[〈クリスマス・イブ〉](/blog/2012/01/christmas-eve-and-xmas-express/)這張單曲 CD 中，另外也收錄了同名歌曲的英文版。英文版本由&nbsp;Alan O'Day 作詞。
+在[山下達郎](/blog/tags/%E5%B1%B1%E4%B8%8B%E9%81%94%E9%83%8E/)的[〈クリスマス・イブ〉](/blog/2012/01/04/christmas-eve-and-xmas-express/)這張單曲 CD 中，另外也收錄了同名歌曲的英文版。英文版本由&nbsp;Alan O'Day 作詞。
 
 <iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/_aOyI8kp4CY" width="420"></iframe>
 

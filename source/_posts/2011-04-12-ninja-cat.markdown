@@ -9,8 +9,8 @@ tags: [iphone, app]
 
 無限跳跳遊戲系列：
 
-1. [Doodle Jump - 令人無法自拔的簡單遊戲](/blog/2011/04/doodle-jump/)
-2. [Sir Lovalot - 為了愛，跳一生](/blog/2011/04/sir-lovalot/)
+1. [Doodle Jump - 令人無法自拔的簡單遊戲](/blog/2011/04/04/doodle-jump/)
+2. [Sir Lovalot - 為了愛，跳一生](/blog/2011/04/04/sir-lovalot/)
 
 隔了快一個禮拜才又來介紹我 iPhone 裡的第三款跳跳遊戲。因為這陣子一直裝 App、試 App、砍 App，好不容易從 324 個 App 刪到昨天剩下 256 個，每個刪掉的 App 我都會寫個簡單的使用心得或感想。話說回來，才過一天，現在又 258 個 App 了。
 

@@ -7,7 +7,7 @@ categories: [software]
 tags: [iphone, app, scanner]
 ---
 
-上篇：[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）](http://tzengyuxio.blogspot.com/2011/03/iphone-camscanner-genius-scan-jotnot.html)
+上篇：[iPhone 掃描 App 比較：CamScanner, Genius Scan, JotNot Scanner（上）](/blog/2011/03/29/scanner-app-review-part-1/)
 
 這篇接著來看看掃描好的圖片，可以做哪些影像處理的調整。最理想的作法是，軟體提供一些預存的調整方式，例如「彩稿」、「黑白文件」、「板書」，我只要輕鬆依照文件類型選擇就可以了。有需要進一步調整的，再透過進階選單操作就好，但最好百分之九十以上都不要讓我進去進階選單。
 

@@ -27,7 +27,7 @@ alias ql='qlmanage -p'
 
 對了，設定檔 .bashrc 預設在 Mac OS X 中是不起作用的，可以參考[這篇文章][bashrc]來讓 .bashrc work。
 
-[bashrc]: /blog/2012/03/dot-bashrc-in-mac-terminal/
+[bashrc]: /blog/2012/03/11/dot-bashrc-in-mac-terminal/
 
 ## 增加支援檔案類型的 Plugin
 

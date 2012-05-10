@@ -7,7 +7,7 @@ categories: [game]
 tags: [iphone, app]
 ---
 
-我玩的遊戲類型很廣，所以通常性質類似的遊戲，我只會裝一個。不過跳跳類遊戲在我的 iPhone 上卻裝了三個，並不是因為我偏愛這類型遊戲，而是這三個遊戲各有所長，讓我不忍割捨。除了前篇所介紹的 [Doodle Jump](/blog/2011/04/doodle-jump/) 之外，接下來介紹的 Sir Lovalot 操作上更簡單，而內容卻更豐富，充滿許多惡搞的趣味。
+我玩的遊戲類型很廣，所以通常性質類似的遊戲，我只會裝一個。不過跳跳類遊戲在我的 iPhone 上卻裝了三個，並不是因為我偏愛這類型遊戲，而是這三個遊戲各有所長，讓我不忍割捨。除了前篇所介紹的 [Doodle Jump](/blog/2011/04/04/doodle-jump/) 之外，接下來介紹的 Sir Lovalot 操作上更簡單，而內容卻更豐富，充滿許多惡搞的趣味。
 
 ![](http://3.bp.blogspot.com/-oKSf1G3s8CY/TZnBicAnCcI/AAAAAAAAAJs/e88JTgOsGX4/s320/Photo+4%25E6%259C%2588+04%252C+6+58+50+%25E4%25B8%258B%25E5%258D%2588.jpg)
 

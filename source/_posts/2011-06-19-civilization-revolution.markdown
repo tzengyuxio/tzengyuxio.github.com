@@ -6,7 +6,7 @@ categories: [game]
 tags: [iphone, app, civ, slg, 回合制策略]
 ---
 
-文明帝國（Civilization）這個最受歡迎的[回合制策略](http://localhost:4000/blog/tags/%E5%9B%9E%E5%90%88%E5%88%B6%E7%AD%96%E7%95%A5/)遊戲系列終於登陸 iPhone / iPad 了！
+文明帝國（Civilization）這個最受歡迎的[回合制策略](/blog/tags/%E5%9B%9E%E5%90%88%E5%88%B6%E7%AD%96%E7%95%A5/)遊戲系列終於登陸 iPhone / iPad 了！
 
 <a href="http://3.bp.blogspot.com/-a0x0PNRwpq8/Tf0MHJLjEDI/AAAAAAAAAQw/Ebw_SmP835A/s1600/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+28+27.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="213" src="http://3.bp.blogspot.com/-a0x0PNRwpq8/Tf0MHJLjEDI/AAAAAAAAAQw/Ebw_SmP835A/s320/Photo+11-6-19+%25E4%25B8%258A%25E5%258D%25884+28+27.png" width="320" /></a>
 
@@ -39,4 +39,4 @@ iOS 版本製作的團隊主要是 2K Games China 的團隊，一進入遊戲就
 
 延伸閱讀：
 
-- [文明帝國V - 文化勝利與單城挑戰心得](/blog/2011/04/civ5-cultural-victory-and-one-city-challenge/)
+- [文明帝國V - 文化勝利與單城挑戰心得](/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/)

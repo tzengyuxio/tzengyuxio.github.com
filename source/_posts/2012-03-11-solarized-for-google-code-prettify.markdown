@@ -9,7 +9,7 @@ tags: [html, css, googlecodeprettify, solarized, colorscheme]
 
 [我用 google-code-prettify 來做 blog 文章中的代碼上色][mygcp]，google-code-prettify 本身有[附上幾個 Color Scheme][gcpcolor], 然而除了預設的之外，都是以暗色背景為主。
 
-[mygcp]: /blog/2011/08/embeded-code-with-google-code-prettify/
+[mygcp]: /blog/2011/08/07/embeded-code-with-google-code-prettify/
 [gcpcolor]: http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html
 
 <!-- more -->
@@ -17,7 +17,7 @@ tags: [html, css, googlecodeprettify, solarized, colorscheme]
 昨天心血來潮將 [Solarized][solarized] 這個 Color Scheme 移植到 google-code-prettify 下，同樣也是 dark/light 雙版本。關於 Solarized 的介紹可以參考[這篇文章][mysolarized]。
 
 [solarized]: http://ethanschoonover.com/solarized
-[mysolarized]: /blog/2012/02/from-zenburn-to-solarized/
+[mysolarized]: /blog/2012/02/10/from-zenburn-to-solarized/
 
 ## 下載 / Download
 - Solarized Light

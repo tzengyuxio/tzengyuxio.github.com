@@ -17,6 +17,6 @@ tags: [bash, sh, octopress]
 
 工具的代碼如下，使用前，請先自行修改代碼中 `SYEAR` 與 `POSTPATH` 這兩個變數，以符合自己的需求：
 
-{%gist 2417859 blogstats.sh %}
+{% gist 2417859 blogstats.sh %}
 
 附帶一提：字數的統計是直接使用 `wc -m`，也沒有去掉 YAML 檔頭，所以不是很精確，大概參考參考就好。

@@ -39,10 +39,10 @@ tags: [cpp, java, eclipse, svn, python, git]
 
 為了方便起見，分成以下四篇文章說明：
 
-- [在 Eclipse 開發 C/C++](/blog/2011/12/eclipse-for-cplusplus/)
-- [在 Eclipse 開發 Python](/blog/2011/12/eclipse-for-python/)
-- [在 Eclipse 使用 Git 與 SVN](/blog/2011/12/eclipse-with-git-and-svn/)
-- [我的 Eclipse 初始設定調教](/blog/2011/12/my-eclipse-settings/)
+- [在 Eclipse 開發 C/C++](/blog/2011/12/26/eclipse-for-cplusplus/)
+- [在 Eclipse 開發 Python](/blog/2011/12/26/eclipse-for-python/)
+- [在 Eclipse 使用 Git 與 SVN](/blog/2011/12/26/eclipse-with-git-and-svn/)
+- [我的 Eclipse 初始設定調教](/blog/2011/12/27/my-eclipse-settings/)
 
 最後補充一點說明，我的安裝環境是 Mac OS X, 所以 C++ 的 compiler 與 Python 的 interpreter 都已經系統內建。在 Windows 上對應的話，得要先安裝個 MinGW 與 Python for Windows 來提供編譯與直譯環境。
 

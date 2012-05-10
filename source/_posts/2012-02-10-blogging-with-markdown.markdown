@@ -6,7 +6,7 @@ categories: [雜筆]
 tags: [blogger, dayone, markdown, iawriter]
 ---
 
-前陣子[比較了一些輕量級標記語言](/blog/2011/10/lightweight-markup-language/)，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。
+前陣子[比較了一些輕量級標記語言](/blog/2011/10/18/lightweight-markup-language/)，想作為之後自己撰寫文件的格式依據。其中 reStructuredText 太過複雜，就不考慮了；剩下的 AsciiDoc 與 Markdown 兩者中，剛開始我比較喜歡 AsciiDoc 多一些。因為 AsciiDoc 有支援表格的語法，而 Markdown 則必須透過 Inline HTML 的方式，這麼一來如果文章中想包含表格，免不了還是得塞入一堆礙眼的 HTML 語法。
 
 <!-- more -->
 
@@ -29,7 +29,7 @@ tags: [blogger, dayone, markdown, iawriter]
 
 1. 標題除了作為檔名外，檔案內的第一行也會放上一級標題；最後一行則是列出這篇文章的標籤。所以在轉換為 HTML 時，要去首尾行。
 2. 檔案存放在 dropbox 空間中。這樣可以確保文章有多份備份。
-3. 文章是[用 iA Writer 寫](/blog/2012/02/markdown-editor/)的。寫完之後用[〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉](/blog/2012/02/10/markdown-to-html-in-osx/)這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。
+3. 文章是[用 iA Writer 寫](/blog/2012/02/10/markdown-editor/)的。寫完之後用[〈在 OS X 中隨時隨地將 Markdown 轉為 HTML〉](/blog/2012/02/10/markdown-to-html-in-osx/)這一篇提到的方法轉換為 HTML 碼，這樣就不用再開啟線上轉換的網頁了。
 
 * * *
 
