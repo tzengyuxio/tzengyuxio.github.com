@@ -122,7 +122,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2005/10/23/death-note/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:25:22+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2005/10/23/long-time-no-play-game/</loc>
@@ -142,7 +142,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2005/11/19/if-we-fall-in-love-together-next-time/</loc>
-        <lastmod>2012-05-10T08:12:07+08:00</lastmod>
+        <lastmod>2012-05-10T09:18:44+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2005/11/19/revolution-frontier/</loc>
@@ -182,7 +182,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:21:41+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2006/01/22/baofu-geng-gen/</loc>
@@ -202,11 +202,11 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2006/01/23/blogger-as-blank-by-ie/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:28:58+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2006/01/23/what-gender-is-your-brain/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:22:27+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2006/01/23/tango-desktop-project/</loc>
@@ -242,7 +242,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2006/03/10/browsershots/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:25:56+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2006/06/04/abbreviation-glossaries-afaik/</loc>
@@ -278,12 +278,10 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2011/04/01/finger-technique/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:26:19+08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://tzengyuxio.me/blog/2011/04/01/civ5-cultural-victory-and-one-city-challenge/
-        </loc>
+        <loc>http://tzengyuxio.me/blog/2011/04/01/civ5-cultural-victory-one-city-challenge/</loc>
         <lastmod>2012-05-09T19:49:53+08:00</lastmod>
     </url>
     <url>
@@ -384,7 +382,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2011/06/16/oracle-migrate-oo-dot-o-to-apache/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:16:08+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2011/06/17/deep-shot/</loc>
@@ -392,7 +390,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2011/06/19/civilization-revolution/</loc>
-        <lastmod>2012-05-10T08:31:54+08:00</lastmod>
+        <lastmod>2012-05-10T09:11:15+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2011/06/19/seven-lip-dup/</loc>
@@ -556,7 +554,7 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/02/06/aperture-iphoto-lightroom-picasa/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T09:29:34+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/02/07/seven-eleven/</loc>
@@ -643,9 +641,7 @@
         <lastmod>2012-05-09T19:50:04+08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-you-can-hire-lucky-people-by-this-way/
-        </loc>
+        <loc>http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-how-lucky-someone-is/</loc>
         <lastmod>2012-05-10T08:23:00+08:00</lastmod>
     </url>
     <url>
@@ -686,7 +682,11 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/2012/05/01/mit-game-jam-dora/</loc>
-        <lastmod>2012-05-09T19:52:31+08:00</lastmod>
+        <lastmod>2012-05-10T13:14:48+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tzengyuxio.me/blog/2012/06/04/why-have-the-english-name/</loc>
+        <lastmod>2012-06-04T22:30:15+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/about/</loc>
@@ -694,10 +694,10 @@
     </url>
     <url>
         <loc>http://tzengyuxio.me/blog/archives/</loc>
-        <lastmod>2012-05-10T08:32:16+08:00</lastmod>
+        <lastmod>2012-06-04T22:30:15+08:00</lastmod>
     </url>
     <url>
         <loc>http://tzengyuxio.me/</loc>
-        <lastmod>2012-05-10T08:32:16+08:00</lastmod>
+        <lastmod>2012-06-04T22:30:15+08:00</lastmod>
     </url>
 </urlset>

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: cocos2d | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/cocos2d/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-10T08:46:42+08:00</updated>
+  <updated>2012-06-04T22:30:55+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[四個人兩天開發的《Dora》- MIT Game Jam 心得分享]]></title>
+    <title type="html"><![CDATA[四人兩天開發的《Dora》- MIT Game Jam 心得分享]]></title>
     <link href="http://tzengyuxio.me/blog/2012/05/01/mit-game-jam-dora/"/>
     <updated>2012-05-01T06:00:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2012/05/01/mit-game-jam-dora</id>
@@ -33,7 +33,7 @@
 
 <ul>
 <li>Source Code Repository at [<a href="https://bitbucket.org/ninjitaru/dora/overview">bitbucket</a>]</li>
-<li>App Store 下載：[審核中...]</li>
+<li>App Store 下載：<a href="http://itunes.apple.com/tw/app/id523501590?mt=8">iTunes Link</a></li>
 <li>活動實況影片：[<a href="http://www.twitch.tv/igdshare">Link</a>]</li>
 <li>遊戲實際畫面可以<a href="http://www.twitch.tv/igdshare/b/316542229">看此實況影片</a>，從 <code>44:00</code> 到 <code>47:00</code>。影片中也有其他組的成果發表。</li>
 <li><a href="https://twitter.com/#!/search/realtime/%23mitgj">#mitgj</a> at Twitter (Twitter 上的相關推文)</li>

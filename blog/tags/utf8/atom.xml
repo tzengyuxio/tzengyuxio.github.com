@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: utf8 | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/blog/tags/utf8/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-05-10T08:46:42+08:00</updated>
+  <updated>2012-06-04T22:30:55+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -81,7 +81,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼]]></title>
+    <title type="html"><![CDATA[Ruby on Rails 與 MySQL 的 Unicode 編碼]]></title>
     <link href="http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode/"/>
     <updated>2006-01-21T13:19:00+08:00</updated>
     <id>http://tzengyuxio.me/blog/2006/01/21/ruby-on-rails-and-mysql-unicode</id>
