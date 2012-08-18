@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "［雋永］我總是聽你說、下次如果我們在相愛／葉良俊"
+title: "［雋永］我總是聽你說、下次如果我們在相愛"
 date: 2005-11-19 16:11:00 +08:00
 comments: true
 categories: [music]

@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "［網際］Browsershots - 瀏覽器呈現結果大閱兵"
+title: "［網際］Browsershots 瀏覽器呈現結果大閱兵"
 date: 2006-03-10 05:19:00 +08:00
 comments: true
 categories: [雜筆]

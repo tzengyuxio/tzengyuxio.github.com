@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "［解決］以 IE 瀏覽 Blogger.com 時出現空白頁的問題"
+title: "［解決］以 IE 瀏覽 Blogger.com 時出現空白網頁的問題"
 date: 2006-01-23 01:14:00 +08:00
 comments: true
 categories: [雜筆, coding]

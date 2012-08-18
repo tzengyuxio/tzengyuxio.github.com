@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "勤練指技，你也可以是加藤...喔不，是高橋名人"
+title: "勤練指技，你也是加藤...喔不，是高橋名人"
 date: 2011-04-01 08:36:00 +08:00
 comments: true
 categories: [game]

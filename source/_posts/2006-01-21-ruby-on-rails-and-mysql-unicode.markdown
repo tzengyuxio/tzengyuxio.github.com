@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "［RoR］Ruby on Rails 與 MySQL 的 Unicode 編碼"
+title: "Ruby on Rails 與 MySQL 的 Unicode 編碼"
 date: 2006-01-21 13:19:00 +08:00
 comments: true
 categories: [雜筆, coding]

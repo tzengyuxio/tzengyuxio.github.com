@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "我看 Oracle 將 OpenOffice.org 移交 Apache 管理"
+title: "Oracle 移交 OpenOffice.org 給 Apache 之我見"
 date: 2011-06-16 12:57:00 +08:00
 comments: true
 categories: [雜筆, software]

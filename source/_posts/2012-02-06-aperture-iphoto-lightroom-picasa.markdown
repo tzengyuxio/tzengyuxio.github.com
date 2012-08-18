@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "相片管理的選擇, Aperture, iPhoto, Lightroom, Picasa"
+title: "相片管理的選擇 - Aperture, iPhoto, Lightroom, Picasa"
 date: 2012-02-06 19:55:00 +08:00
 comments: true
 categories: [software]

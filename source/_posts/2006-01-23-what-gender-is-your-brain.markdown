@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "［測驗］What Gender Is Your Brain ?"
+title: "［測驗］What Gender Is Your Brain?"
 date: 2006-01-23 01:35:00 +08:00
 comments: true
 categories: [雜筆]

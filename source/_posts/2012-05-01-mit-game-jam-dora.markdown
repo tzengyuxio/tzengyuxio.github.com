@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "四個人兩天開發的《Dora》- MIT Game Jam 心得分享"
+title: "四人兩天開發的《Dora》- MIT Game Jam 心得分享"
 date: 2012-05-01 06:00
 comments: true
 categories: [gamedev]
@@ -20,7 +20,7 @@ tags: [cocos2d, gamejam, mitgj]
 我們做的遊戲叫做《Dora》，遊戲以 Objective-C + [cocos2d](http://www.cocos2d-iphone.org/) 開發，在 iOS 上運作。活動結束後會放到 App Store 上供**免費下載**。除了遊戲本體外，程式碼也**完全開放**，兩天內兩名程式累積了 55 次 commit，有興趣的人可以點下面連結看看。不過真的是看看就好，Game Jam 時所寫的程式碼品質是非常慘不忍睹的…
 
 - Source Code Repository at [[bitbucket](https://bitbucket.org/ninjitaru/dora/overview)]
-- App Store 下載：[審核中...]
+- App Store 下載：[iTunes Link](http://itunes.apple.com/tw/app/id523501590?mt=8)
 - 活動實況影片：[[Link](http://www.twitch.tv/igdshare)]
 - 遊戲實際畫面可以[看此實況影片](http://www.twitch.tv/igdshare/b/316542229)，從 `44:00` 到 `47:00`。影片中也有其他組的成果發表。
 - [#mitgj](https://twitter.com/#!/search/realtime/%23mitgj) at Twitter (Twitter 上的相關推文)

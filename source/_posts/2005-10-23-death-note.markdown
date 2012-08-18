@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "［感想］Death Note － 讀者與作者宿命的對決!?"
+title: "［感想］Death Note 讀者與作者宿命的對決!?"
 date: 2005-10-23 03:52:00 +08:00
 comments: true
 categories: [comics]
