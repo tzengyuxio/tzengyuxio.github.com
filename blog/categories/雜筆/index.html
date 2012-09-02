@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 雜筆 | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-06-05T05:21:14+08:00</updated>
+  <updated>2012-09-03T01:04:34+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,28 +14,370 @@
 
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[Octopress 調教筆記]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress/"/>
+<updated>2012-04-20T08:52:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress</id>
+
+      <content type="html"><![CDATA[<p>花了一個晚上沒睡覺，調整了一下這個 Octopress 的一些功能與設定。現在還懶得記詳細步驟，就先簡單寫個筆記吧，以防將來自己看 Source Repository 也看不出到底為什麼要這麼改。</p>
+
+<!-- more -->
+
+
+<h3>一、加入 LinkWithin 功能</h3>
+
+<p>原本以為 Octopress 沒辦法加，不過實際嘗試後發現並不難。要修改的地方主要有 <code>source/_layouts/default.html</code> 和 <code>source/_layouts/post.html</code> 這兩個檔案。</p>
+
+<h3>二、文章下方分享功能的版面調整</h3>
+
+<p>Octopress 內建的 twitter, google plus, facebook 三項文章分享功能如果全部打開，會佔掉約 680px 左右的畫面寬度。當文章區塊的寬度小於這個數值時，facebook 的按鈕會跳到下一行。這邊可以透過修改 <code>source/_includes/post/sharing.html</code> 的方式來稍微縮減 facebook 區塊的寬度，以符合需求。</p>
+
+<p>同區塊另外一個問題則是在預設版面中， twitter, google plus, facebook 三者按鈕的高度不同，尤其 facebook 的位置比較偏下。這邊我參考 <a href="https://stacksocial.com/&lt;p>&lt;a">StackSocial</a> 頁面最下方區塊的作法，將三個按鈕改成 <code>ul → li</code> 格式。</p>
+
+<h3>三、加入標籤 (tag) 功能</h3>
+
+<p>這是花最多時間與腦力的一部分，尤其是我沒有 Ruby 基礎，好在 Ruby 的程式碼不難看懂，我雖然寫不出來，但是我看現有的 code 依樣畫葫蘆，一樣生出功能。這邊主要參考了 Octopress 內建的 Category Plugin，稍作修改，便得到了標籤功能。</p>
+
+<p>透過這次修改，同時也對 <a href="https://github.com/mojombo/jekyll">Jekyll</a> 所使用的 <a href="http://wiki.github.com/shopify/liquid/liquid-for-designers">Liquid Template System</a> 有更深入的了解。想想要整一個 Octopress 網站也真折騰，除了要懂 HTML, CSS, JavaScript 這些基本的之外，還得會摸 Ruby, Sass, Liquid Template，滿滿都是術語與新東西，真不是件簡單任務。</p>
+
+<p>話說既然加入了標籤功能，接下來就是找個時間好好整理每篇文章的「分類」和「標籤」了……嗯，這讓我想到一句老話：</p>
+
+<blockquote><p>要改的東西太多，那就改天吧。</p></blockquote>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[iPhone 主畫面的使用統計]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats/"/>
+<updated>2012-04-19T11:27:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/19/iphone-home-screen-usage-stats</id>
+
+      <content type="html"><![CDATA[<p>大家 iPhone 上的 Home Screen 都放了哪些 App 呢？</p>
+
+<p><img src="/images/2012/2012-04-19-my-iphone-home-screen.jpg" alt="My iPhone Home Screen" /></p>
+
+<!-- more -->
+
+
+<p>我很好奇每個人都是怎麼樣使用手上的智慧型手機，有時候在和朋友聊天時，往往可以發現一些自己從未想過卻很方便的小技巧。前陣子剛好看到一篇文章〈<a href="http://iphone.appstorm.net/roundups/lifestyle-roundups/45-iphone-home-screens/&lt;p>&lt;a">45 Unique iPhone Home Screens Explained</a>〉，有 45 個人的 iPhone 首頁耶，身邊的好友有 iPhone 的也沒這麼多。看完這篇，真的可以發現每個人都有屬於自己獨特的使用方式。</p>
+
+<p>不過光這樣看完還不過癮，我決定做個統計。雖然上面那篇是去年八月的文章了，至今過了半年，不過大部分 App 現在還都蠻流行的。統計的結果如下，可以參考看看。</p>
+
+<h2>Home Screen 的應用方式</h2>
+
+<ul>
+<li>首頁中有 16 個格子（不考慮 dock）。這 45 個人平均放了 13.09 個 app 與 1.38 個 folder 在首頁。</li>
+<li>最少的甚至有完全不放任何 app，只在首頁留 dock 與一個 folder 的人 (Robin A.)。</li>
+<li>有 48.89% 的人在首頁有放 folder，也就是有五成多一點的人在首頁不放 folder。</li>
+<li>Dock 在每一頁都會出現，是最方便點選的地方。不過仍有 7 個人，15.56% 的比例，沒有在 dock 上放滿四格。</li>
+<li>有 4 個人在 dock 上放 folder（這我之前真的沒想過），比例為 8.89%。</li>
+<li>有 35.56% 的人沒有把首頁填滿。</li>
+</ul>
+
+
+<h2>App in Dock</h2>
+
+<p>最多人放在 Dock 上的 App 排名如下：<br/>
+（不包含 folder 以及 folder 中的 App。括號中數字為人數）</p>
+
+<ol>
+<li><strong>電話</strong> (33)</li>
+<li><strong>Mail</strong> (30)</li>
+<li><strong>Safari</strong> (21)</li>
+<li><strong>訊息</strong> (17)</li>
+<li><strong>音樂</strong> (17=13+4, iPod+Music, 新版 iOS 中這兩個合併了)</li>
+<li>設定 (9)</li>
+<li>相機 (6)</li>
+<li>Camera+ (4)</li>
+<li>Tweetbot (4)</li>
+</ol>
+
+
+<p>人數在 3 以下的我就省略不列了。另外，上表中的前七名就已經包辦 45 支 iPhone 裡八成以上的 dock 空格了。</p>
+
+<h2>App in Home Screen</h2>
+
+<p>不分 dock 與否，首頁最常看到的前 20 個 App 分別是：<br/>
+（不包含 folder 以及 folder 中的 App。括號數字中為人數）</p>
+
+<ol>
+<li>Mail (41)</li>
+<li>Safari (38)</li>
+<li>電話 (36)</li>
+<li>訊息 (30)</li>
+<li>設定 (28)</li>
+<li>行事曆 (26)</li>
+<li>音樂 (26=22+4, iPod+Music)</li>
+<li>照片 (22)</li>
+<li>相機 (18)</li>
+<li>時間 (17)</li>
+<li>Camera+ (16, <strong>非官方 App 中的第一名</strong>)</li>
+<li>地圖 (16)</li>
+<li>App Store (16)</li>
+<li>Facebook (14)</li>
+<li>Tweetbot (13)</li>
+<li>備忘錄 (13)</li>
+<li>聯絡資訊 (13)</li>
+<li>Twitter (12)</li>
+<li>Reeder (12)</li>
+<li>Instagram (10)</li>
+</ol>
+
+
+<p>再來的 App 就是少於 10 個人放在首頁的，分別是 Instapaper(9), Hipstamatic(9), Google+(7), Wunderlist(7), Evernote(7), Things(6), 天氣(6), Remote(6), iTunes(6), iBooks(6), 1Password(6), 計算機(5), Skype(5), Simplenote(5), Dropbox(5)。</p>
+
+<p>低於 4 以下的我就不列出了。</p>
+
+<h2>其他</h2>
+
+<ul>
+<li>大家平均放 App 的頁數為 4.56 頁（這個算得我眼睛好累）。最少的只有一頁（Zach）。</li>
+<li>除了官方的「相機」外，最常使用的拍照程式為 Camera+(16), 其次為 Instagram(10), Hipstamatic(9)。</li>
+<li>有四個人在首頁放了兩個以上的拍照App。其中一個放了三個，一個放了四個。</li>
+<li>Naceron 在首頁放了 6 個遊戲 App。</li>
+<li>Weid 說他的首頁只放 Universal（iPhone, iPad 均可使用）的 App。</li>
+<li>Sivil 和 Garrett G. 都把常用聯絡人作成 icon 放在首頁。</li>
+<li>Garrett G. 提供的圖片仔細看的話蠻奇怪的，為什麼他的首頁其實是第二頁？另外，他也是 Scan 這個 App 的開發者，在他的首頁中可以找到 Scan。</li>
+<li>Iynque 的 Dock 上放的都是有 '+' 號的 App，連 folder 也是！</li>
+<li>Shaun K 首頁左邊排了綠色一整排。</li>
+<li>Robin A. 的首頁最乾淨；Brad M. 只有首頁一頁。</li>
+</ul>
+
+
+<hr />
+
+<p>你怎麼運用你的主畫面呢？有任何的點子都歡迎與大家一起分享！</p>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[我不和運氣差的人合作，嗎？]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/"/>
+<updated>2012-04-11T10:44:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question</id>
+
+      <content type="html"><![CDATA[<p>最近讀到 <a href="http://raganwald.posterous.com/i-dont-hire-unlucky-people&lt;p>&lt;a">I don't hire unlucky people - raganwald's posterous</a> 這篇文章，有些想法跟 <a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a> 這一篇所寫的不太一樣。想法不同也就算了，文章本來就是個別讀者與單一作者之間的心靈互動，讀者不同，互動不同，激發出的想法自然也不同，這無可厚非。</p>
+
+<!-- more -->
+
+
+<p>不過對於文章內容的解讀也不一樣，這讓我不由得想寫一篇文章來談談 "I don't hire unlucky…" 這篇的內容。這篇文章很長，以對話小說式的方式來描述，講述如何節省 hire people 的時間與 hiring 時的考量，我懶得逐字翻譯，所以會簡單帶過故事內容。</p>
+
+<h2>Part 1</h2>
+
+<p>故事可以分成上下兩部分。第一個部分有兩個主角，Bertram 和 Ernestine，Bertram 負責招募零售商店的學徒，Ernestine 的工作則是在招募軟體開發的 programmer。Ernestine 有天問 Bertram，她手上有上百份履歷，要怎麼減少不必要的電話與面試呢？</p>
+
+<p>Bertram 說很簡單，他拿起一整疊履歷，丟掉一半，然後回答，<strong>「不要雇用運氣不好的人就好啦。」</strong>Ernestine 聽了之後想要試試看，於是回去問 Mark 意見，Mark 是她公司的 CFO 以及天使投資人，對於軟體產業也有些瞭解。Mark 點出了 Ernestine 與 Bertram 環境的不同。</p>
+
+<blockquote><p>Bert 那邊有相當多符合條件的人 (qualified people) 在應徵他的工作，假設 100 個裡面有 50 個好了，就算他刪去一半的人，平均來講，剩下的 50 個裡也還有 25 個符合條件的人可以挑選。而妳在招募的 programmer, 可能一百份履歷裡面只有一兩個符合資格的，<strong>妳如果一口氣刷掉一半的履歷，妳可能在剩下的那 50 份裡完全找不到半個合適的人。</strong></p></blockquote>
+
+<p>於是 Ernestine 放棄了 Bertram 告訴她的方法。開始不斷嘗試、調整，試著去找出自己的方法。</p>
+
+<h2>Part 2</h2>
+
+<p>故事來到兩年後。Oscar 是 Ernestine 公司裡的程式主管，他也有面對一堆履歷不知從何著手的問題，於是像她的上司 Ernestine 請教。</p>
+
+<p>Ernestine 告訴 Oscar，首先，她不再去注意<strong>一份履歷是否「專業」</strong>，比方說履歷的格式或是文字中是否有錯字等等。因為去在意這些東西，其實<strong>跟隨機丟掉一半運氣不好的履歷，是沒什麼兩樣的</strong>。</p>
+
+<p>於是 Oscar 提出質疑，Oscar 的質疑也是我們一般會有的想法：「可是從履歷的完整度，我們可以看出求職者的用心，知道對方是不是有熱誠想要進我們的公司不是嗎？」</p>
+
+<p>Ernestine 的回答點出了重點。如果我們今天有 50 個不錯的人才，那我很樂意找出到底哪一半的人有進公司的熱誠，哪一半沒有。但如果我們今天的履歷裡有 99 個庸才跟一個天才，<strong>那我的首要目標是要想辦法找出這一個天才是誰，至於誰比較有進公司的熱誠則是次要的了</strong>。</p>
+
+<p>Ernestine 繼續說下去，她用同樣的想法貫穿整個人才的挑選：她挑或不挑一個人，是決定於與工作技能本身相關的直接或間接衡量 (direct measurement or indirect measurement)，例如學歷算是間接衡量指標。</p>
+
+<p>講到這邊，Oscar 又打斷，並且說明了學歷的重要，學歷反應許多資訊，不應該只是間接衡量。Ernestine 大致上同意 Oscar 的看法：</p>
+
+<blockquote><p>幾乎每一個我們所雇用的都有大學學歷，但我在看履歷時不會依照他們的學位或學校排出優劣。我只是看他們的工作經驗或是提供的代碼範例。而結果就是，我們所想要的每個有經驗的人才都具有大學學歷。</p></blockquote>
+
+<p>但是她接下來的回答很有意思，值得令人多加思考：</p>
+
+<blockquote><p>然而把「關連性 (correlation)」與「因果關係 (causation)」兩件事搞混是非常危險的。而更糟糕的則是把「關連性」跟「必要性 (necessity)」搞混。如果說，有念過大學對 programmer 來說是一件好事，那麼我們在看他的經歷、程式代碼，或是與之面談時，也可以發現他的能力優秀。</p></blockquote>
+
+<p>所以我的理解是，念過大學可以幫助一個程式設計師成長，但這些成長會表現在他的工作經歷或是代碼上。所以經歷或是代碼是直接的衡量標準。大學教育與優秀的程式設計師有關連性，但不是必然的因果，更不是必要的條件。</p>
+
+<p>Ernestine 繼續說到，當她在看求職者的 blog 時也用同樣的標準去檢視。比如說有個求職者喜歡攀岩，聽起來不錯，公司裡也有許多同事喜歡攀岩，不過 Ernestine 會忽略掉興趣這項訊息。</p>
+
+<blockquote><p>畢竟，如果因為興趣不對就被刷掉，是非常不走運 (unlucky) 的。而我不想僅僅只是因為一份履歷不走運就把它刷掉。</p></blockquote>
+
+<p>這裡有句重點：</p>
+
+<p><strong>hiring programmers, not ascetics or rock stars</strong></p>
+
+<p>Ernestine 甚至會抗拒去查看求職者在社交媒體上分享的資訊。她不想因為求職者在政治、興趣等觀點上與她志趣相投或是理念不同，而產生偏見，進而影響求職者被錄用與不錄用（這在美國也是違法的），同時這對公司也不是件好事。她雇用時，<strong>單純只考量求職者在專業技能上是否滿足條件</strong>。從招聘的觀點來看，去考慮對方是否跟你合不合得來，其實就只是種運氣的問題，而非適任不適任的問題。</p>
+
+<p>Ernestine 最後提到招募廣告，她現在開始使用平舖直敘的文字廣告來招募。她之前也曾使用過「徵求忍者！搖滾巨星！」之類的誇張廣告。但她發現這類的廣告也許會吸引到喝 Dry Martini 的人（意指比較外向積極），但是那些不喝 Dry Martini 不見得就不適合這份工作。所以登「我們需要忍者！需要超級巨星！」這類廣告，跟單單只是因為不喜歡沒運氣的人而刷掉一半，其實沒什麼兩樣。</p>
+
+<p>接下來的問答很有趣，programmer 應該都會有更深的體會。Oscar 問到：「要是如果忍者廣告比起直白廣告真的能吸引到更多符合條件 (qualified) 的人前來應徵呢？」</p>
+
+<p>Ernestine 的回答相當妙了：「當你寫程式時，你怎麼知道哪一段 code 需要最佳化呢？」Oscar 回答：「我會去測量（measure）, Premature optimization is the—Oh, I get it!」這邊 Oscar 的話雖然講到一半，但是這句話相信 programmer 都應該熟悉：</p>
+
+<blockquote><p>Premature optimization is the root of all evil.</p>
+
+<p>過早優化是萬惡之源。</p>
+
+<p>-- Donald Knuth</p></blockquote>
+
+<p>所以 Ernestine 會有這樣的結論也是測量過後的結果。她說，登廣告找人，跟登廣告賣東西都是一樣的，你必須追蹤測量所有數據 (track &amp; measure everything)，你才能分析，知道有沒有效果。</p>
+
+<h2>結論</h2>
+
+<p>所以，Ernestine 減少處理上百份履歷時間的方式，並不是用什麼隨機丟掉一半，把運氣不好的人排除掉。也不是什麼像下面這段所說的尋找一個點，一個感動、注意、雙眼為之一亮的點。不是尋找什麼鳳毛麟角。</p>
+
+<blockquote><p>作者建議，當100選1的時候，應該直接隨便看一張履歷表，看看此人是否有哪個「點」讓你感動、讓你注意、讓你雙眼為之一亮？不是想辦法刪去，而是「尋找」那個鳳毛麟角之特色。</p></blockquote>
+
+<p>Ernestine 的方法很簡單。今天如果我要找程式設計師，<strong>我就只專注在相關的技能、經驗或作品上。而不是看著履歷表上洋洋灑灑一大堆與適任與否無關的資訊或情報。</strong></p>
+
+<hr />
+
+<p>看完了這個故事，是不是覺得英文閱讀能力很重要呢？多培養自己的英文閱讀，直接吸收第一手資訊，才能夠間接提高自己的好運度喔！</p>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[你怎麼知道如何判斷運氣好壞？]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-how-lucky-someone-is/"/>
+<updated>2012-04-11T08:53:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-how-lucky-someone-is</id>
+
+      <content type="html"><![CDATA[<p>這幾天在 Facebook 出現一篇分享率很高的文章，叫做〈<a href="http://mr6.cc/?p=7363#more-7363">你有膽量說：「我不和運氣差的人合作」？ (Mr. 6)</a>〉，帶給我很多想法，在這裡分享一下。</p>
+
+<!-- more -->
+
+
+<p>什麼叫做「不和運氣差的人合作」？</p>
+
+<p>這位作者舉了一個例子，如果你是某間店的店主，現在要找店員，現在收到了 100 份履歷，但你很忙，沒有時間一個一個看。最簡單的方式就是索性從 100 份中<strong>隨機挑出 10 份</strong>，然後從 10 份中挑出一個最棒的。至於那些被過濾掉的 90 份，只能怪他們<strong>運氣不好啦</strong>！</p>
+
+<p>聽起來很帥氣，不是嗎？</p>
+
+<p>這過濾的方法真是簡單、漂亮又優雅－－但我深深覺得還有哪裡不夠。</p>
+
+<p>「你怎麼確定被挑出的代表運氣好？萬一，我是說萬一，你的店下個月突然發生意外，週轉不靈發不出薪水，那麼<strong>被挑出的反而都是倒楣的人</strong>，真正運氣好的人早在你挑的時候成為漏網之魚，從你手中逃掉啦！」</p>
+
+<p>是的，華生，你突破盲點了。</p>
+
+<p>我相信，運氣好的人是會互相吸引的。所以在我使用這個「隨機運氣過濾法」之前，我得要先確定一下自己的運氣到底是好是壞：如果我運氣好，那麼被我挑到的人他們也都是具有好運的；如果我生來就是不走運，那麼沒被我挑到的人才是真正運氣好的人。只要我能夠知道自己的運氣是好或壞，我就能夠知道到底我要從被我挑出的那 10 份裡面去挑人，還是從被我放棄的那 90 份裡面去挑人。</p>
+
+<p>那麼要怎麼確定自己的運氣是好或壞呢？我想到兩個方法。第一方法呢，就是如法炮製，我把我的履歷寄到另外一間採用同樣「隨機運氣過濾法」的公司，如果有被挑上，那我就是運氣好；如果沒被挑上，那我就是壞運氣－－等等，不對，我怎麼知道另外一間公司負責挑選員工的雇主也是好運氣呢？如果我被挑上，但是另外一間公司的雇主是壞運氣的，那不就表示我被挑上但其實是壞運氣的？這豈不成了無窮迴圈？</p>
+
+<p>好吧，看來第一個方法行不通，換下一個。第二個方案就比較簡單了：<strong>去買樂透</strong>。中了就中了，沒中就沒中，一翻兩瞪眼，多乾脆。不過要是我今天運氣好，中了樂透，我索性就把店收了，退休度假去，何必還在那邊辛辛苦苦地煩惱到底要雇用什麼樣的員工呢？</p>
+
+<hr />
+
+<p>每個人都想要和「運氣好」的人一起合作，但問題就出在於什麼叫做「運氣好」？成為「在 100 份履歷中被挑出的 10 份中的其中之一」就算運氣好嗎？我不以為然。即便是中了樂透，也未必是就真的是運氣好的人－－對於許多心理尚未做好準備的人，中了樂透往往是人生悲劇的開始：中了樂透之後到達人生最高潮，然後朋友反目、妻離子散、揮霍度日、散盡家產這樣的故事俯拾皆是，我也懶得舉例了。所謂<strong>「塞翁失馬，焉知非福？」</strong>一件事情究竟是好是壞，其實是沒辦法從當下發生的事情本身來判斷的。</p>
+
+<p>所以到底什麼算是「運氣好」的人呢？我覺得只要「有做好準備」的人，就很容易遇到好運氣。運氣這東西，不外乎就是種機率。即使單一事件成功的機率極低，然而當你準備的越多，準備的越周全，這個極低機率發生成功的可能性就越大，成功的可能性比其他人來得大，自然就可以看做是「運氣好」的人了。</p>
+
+<p>讓我們這樣來看：假設開發一百款遊戲中只有一款會成功，也就是說，成功的機率是百分之一，失敗的機率是 0.99。那麼，<a href="http://www.rovio.com/">作了 52 款遊戲的公司</a>，至少有一款成功的機率是多少？換個角度想或許會比較簡單，52 款遊戲全部都失敗的機率是多少？</p>
+
+<p>答案是，52 款遊戲都失敗的機率是 59%，所以相反的，有逾四成的機率這家公司能夠有一款以上的成功遊戲。<strong>四成</strong>跟<strong>百分之一</strong>，很大的差距不是？而只要能有一款成功的遊戲，這家公司就能夠開始踏上好運的高速公路，吸引到更多「運氣好」的員工一起加入，進入正向循環。</p>
+
+<p>所以，運氣人人都有，但你準備的越多越充分，你就能夠比其他人來得更強運。</p>
+
+<hr />
+
+<p>關於給六先生帶來許多想法的這篇 <a href="http://raganwald.posterous.com/i-dont-hire-unlucky-people">I don't hire unlucky people - raganwald's posterous</a>，我運氣很好，剛好也看了。有一些不太一樣的解讀。可惜這裡空白的地方太小，寫不下，只好<a href="/blog/2012/04/11/to-hire-lucky-or-unlucky-its-a-question/">另外寫一篇來討論</a>了。</p>
+
+<p><a rel="bookmark" href="http://tzengyuxio.me/blog/2012/04/11/how-do-you-know-how-lucky-someone-is/">&infin; Permalink</a></p>
+
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[在 Mac 輸入特殊文字符號]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac/"/>
+<updated>2012-04-05T08:12:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac</id>
+
+      <content type="html"><![CDATA[<p>有時候在網路上會看到像「㍿」這樣的文字符號，有沒有好奇這是怎麼打出來的呢？這可不是把四個字打在一個格子裡面，而是這原本就是一個作為符號使用的 Unicode 文字。就好像英文中的 Trade Mark 可以用「™」表示一樣。類似的文字還有（如果底下只看到方框看不到字，表示你瀏覽器所用的字型沒有包含到下面這些 Unicode 字碼）：</p>
+
+<!-- more -->
+
+
+<h3>英文</h3>
+
+<ul>
+<li>℡ ℻ №</li>
+</ul>
+
+
+<h3>日本年號</h3>
+
+<ul>
+<li>㍻ ㍼ ㍽ ㍾</li>
+</ul>
+
+
+<h3>日期時間</h3>
+
+<ul>
+<li>㋀ ㋁ ㋂ ㋃ ㋄ ㋅ ㋆ ㋇ ㋈ ㋉ ㋊ ㋋</li>
+<li>㏠ ㏡ ㏢ ㏣ ㏤ ㏥ ㏦ ㏧ ㏨ ㏩ ㏪ ㏫ ㏬ ㏭ ㏮ ㏯ ㏰ ㏱ ㏲ ㏳ ㏴ ㏵ ㏶ ㏷ ㏸ ㏹ ㏺ ㏻ ㏼ ㏽ ㏾</li>
+<li>㍘ ㍙ ㍚ ㍛ ㍜ ㍝ ㍞ ㍟ ㍠ ㍡ ㍢ ㍣ ㍤ ㍥ ㍦ ㍧ ㍨ ㍩ ㍪ ㍫ ㍬ ㍭ ㍮ ㍯ ㍰</li>
+</ul>
+
+
+<h3>星期</h3>
+
+<ul>
+<li>㈪ ㈫ ㈬ ㈭ ㈮ ㈯ ㈰</li>
+<li>㈠ ㈡ ㈢ ㈣ ㈤ ㈥ ㈰</li>
+</ul>
+
+
+<h3>加框字</h3>
+
+<ul>
+<li>㈱ ㈲ ㈶ ㈳ ㈸ ㈾ ㉀ ㉁ ㈻</li>
+<li>㊙ ㊚ ㊛ ㊞ ㊣ ㊤ ㊥ ㊦ ㊧ ㊨ ㊩ ㊰</li>
+</ul>
+
+
+<hr />
+
+<p>那麼，要如何輸入這些特殊符號呢？在 Mac 中很簡單，只要開啟「特殊字元」的輸入視窗。絕大多數 Mac 下的應用程式都可以在選單列的「編輯」或「Edit」最下方找到「特殊字元...」或「Special Characters…」；通常也可以透過快捷鍵「⌥⌘T」來開啟特殊字元視窗。</p>
+
+<p><img src="/images/2012/2012-04-05-special-characters.png" alt="image" /></p>
+
+<p>上面就是特殊字元的輸入視窗。到這邊已經可以輸入各種奇奇怪怪的符號了，不過如果想要輸入像「㍿」或「㊙」這類的特殊字則還不夠，得要進「自定列表」加入新的類別。點左上角的齒輪便可開啟自定列表，然後選取以下類別：</p>
+
+<ul>
+<li>數字 - 全部</li>
+<li>類字母符號 - 全部</li>
+<li>框住的字元</li>
+</ul>
+
+
+<p>這樣子就可以輸入上文中提到的文字符號囉！</p>
+
+<p><a rel="bookmark" href="http://tzengyuxio.me/blog/2012/04/05/how-to-input-character-symbol-in-mac/">&infin; Permalink</a></p>
+
+]]></content>
     </entry>
   
 </feed>

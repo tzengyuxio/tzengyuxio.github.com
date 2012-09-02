@@ -9,8 +9,13 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="偶然發現這個地方竟然有人 subcribe。或許是存在著什麼共同興趣，也或許是「一度以外，六度之內」的朋友。總言之，竊喜。以及－－感謝。
-">
+  <meta name="description" content="當圖文並列時，若要讓圖片能夠對齊排列，而不是呈現出梯狀的分佈。
+可以使用下列語法： 1
+2
+3
+4
+5
+&lt;img src=&quot;http://where.image.is/picture-01.jpg&quot; style=&quot;float:left&quot;&gt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +83,63 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/11/14/css-image-alignment/">［CSS］圖文對齊排列</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-11-14T01:34:00+08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>當圖文並列時，若要讓圖片能夠對齊排列，而不是呈現出梯狀的分佈。
+可以使用下列語法：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://where.image.is/picture-01.jpg&quot;</span> <span class="na">style=</span><span class="s">&quot;float:left&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>文字段落一<span class="nt">&lt;br&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://where.image.is/picture-02.jpg&quot;</span> <span class="na">style=</span><span class="s">&quot;float:left; clear:left&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>文字段落二<span class="nt">&lt;br&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>重點在於第二個 img 內的 “clear:left”
+這個屬性的意思是<strong>如果左邊有浮動元件的話，此元件便移到該浮動元件下方</strong>。</p>
+
+<p>而 “float:left” 則是將所屬元件指定為浮動性質。</p>
+
+<p><a href="/blog/2005/11/19/comics-no-topic/">下一篇</a>便是應用範例。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -463,52 +525,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/10/06/xiao-lu-luan/">［小鹿乱］無題</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-10-06T06:37:00+08:00" pubdate data-updated="true">Oct 6<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li>被找去其他樓層代表開會。各部門派出一個。她的部門與會議似乎沒有直接關係。正想說她應該不會去吧，就聽到她也是同樓層代表之一的宣布。</li>
-<li>進到會議室內大家找位置坐。進得較晚以致她的身旁已沒有空位。拉了一張椅子遠離人群坐著，沒想到要開始前她也把椅子拉到自己的座位旁邊。</li>
-<li>儘管兩人相鄰而坐，還是沒有對話，沒有相視而談。他只是自顧自地注意她動作的小細節，默默地跟著她一起翹著腿，換腿，打呵欠；<u>學生般青澀靦腆的暗戀</u>。</li>
-<li>與男同事下班後一同到公司附近吃晚餐，她意外地與其他女同事出現同一間小吃店買晚餐。他們在店裡用餐；她們買完了先走。不久他接到她電話，說是要請他跟老闆多拿碗湯帶回公司。<u>這是她給他的第一通電話</u>。</li>
-</ol>
-
-
-<hr />
-
-<p><span style="color:gray;">先這樣吧，想不出會怎麼發展。</span></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/16/">&larr; Older</a>
@@ -524,6 +540,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/09/02/roads-named-after-other-place/">為什麼台北有中國路名？兼談「馬路」一詞由來</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/06/05/whats-in-your-wallet/">你的錢包裝了什麼？</a>
@@ -547,10 +567,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/19/iphone-home-screen-usage-stats/">iPhone 主畫面的使用統計</a>
       </li>
     
   </ul>

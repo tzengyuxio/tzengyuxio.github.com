@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coding | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-06-05T05:21:14+08:00</updated>
+  <updated>2012-09-03T01:04:34+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,28 +14,279 @@
 
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[Octopress 調教筆記]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress/"/>
+<updated>2012-04-20T08:52:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/20/refinements-of-my-octopress</id>
+
+      <content type="html"><![CDATA[<p>花了一個晚上沒睡覺，調整了一下這個 Octopress 的一些功能與設定。現在還懶得記詳細步驟，就先簡單寫個筆記吧，以防將來自己看 Source Repository 也看不出到底為什麼要這麼改。</p>
+
+<!-- more -->
+
+
+<h3>一、加入 LinkWithin 功能</h3>
+
+<p>原本以為 Octopress 沒辦法加，不過實際嘗試後發現並不難。要修改的地方主要有 <code>source/_layouts/default.html</code> 和 <code>source/_layouts/post.html</code> 這兩個檔案。</p>
+
+<h3>二、文章下方分享功能的版面調整</h3>
+
+<p>Octopress 內建的 twitter, google plus, facebook 三項文章分享功能如果全部打開，會佔掉約 680px 左右的畫面寬度。當文章區塊的寬度小於這個數值時，facebook 的按鈕會跳到下一行。這邊可以透過修改 <code>source/_includes/post/sharing.html</code> 的方式來稍微縮減 facebook 區塊的寬度，以符合需求。</p>
+
+<p>同區塊另外一個問題則是在預設版面中， twitter, google plus, facebook 三者按鈕的高度不同，尤其 facebook 的位置比較偏下。這邊我參考 <a href="https://stacksocial.com/&lt;p>&lt;a">StackSocial</a> 頁面最下方區塊的作法，將三個按鈕改成 <code>ul → li</code> 格式。</p>
+
+<h3>三、加入標籤 (tag) 功能</h3>
+
+<p>這是花最多時間與腦力的一部分，尤其是我沒有 Ruby 基礎，好在 Ruby 的程式碼不難看懂，我雖然寫不出來，但是我看現有的 code 依樣畫葫蘆，一樣生出功能。這邊主要參考了 Octopress 內建的 Category Plugin，稍作修改，便得到了標籤功能。</p>
+
+<p>透過這次修改，同時也對 <a href="https://github.com/mojombo/jekyll">Jekyll</a> 所使用的 <a href="http://wiki.github.com/shopify/liquid/liquid-for-designers">Liquid Template System</a> 有更深入的了解。想想要整一個 Octopress 網站也真折騰，除了要懂 HTML, CSS, JavaScript 這些基本的之外，還得會摸 Ruby, Sass, Liquid Template，滿滿都是術語與新東西，真不是件簡單任務。</p>
+
+<p>話說既然加入了標籤功能，接下來就是找個時間好好整理每篇文章的「分類」和「標籤」了……嗯，這讓我想到一句老話：</p>
+
+<blockquote><p>要改的東西太多，那就改天吧。</p></blockquote>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[用 Vim 將不斷行文章轉為 BBS 格式]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/"/>
+<updated>2012-04-19T11:27:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim</id>
+
+      <content type="html"><![CDATA[<p>我是一個鄉民。雖然大多數時間都在潛水，但偶爾也會浮上來寫些東西。</p>
+
+<p><img src="/images/2012/2012-04-19-ugly-format-in-bbs.png" alt="ugly format in bbs" /></p>
+
+<!-- more -->
+
+
+<p>我不常在 BBS 上直接編輯，多半都是在習慣的編輯器上寫好再貼過去。不過問題來了，我寫文章的習慣都是一直打字一直打字，直到段落結束才換行，這樣的文字如果複製起來直接貼到 BBS 上發表，雖然還是能夠正常顯示，但在編輯與回文時就會出現過長的文字而造成如上圖般糟糕的版面效果。</p>
+
+<p>所以我在把文章貼到 BBS 上前，會先進行排版，將每行的字數限制在 72 字元以下。一開始我還乖乖手動一行一行按 Enter，可是這勤勞樸實的作風太不符合以 Lazy Easy 為最高指導原則的程式設計師身分了。經過一番研究後，我用 Vim 來做為我文章自動排版的工具。</p>
+
+<p>要完成任務，首先得在 <code>.vimrc</code> 檔案裡加入以下設定：</p>
+
+<pre><code>set fo+=Bm
+set tw=72
+</code></pre>
+
+<p>說明一下，<code>tw</code> 是 <code>textwidth</code>，這邊的意思是每行長度為 72，你可以依個人喜好調整數值。而 <code>fo</code> 則是 <code>formatoptions</code> 的縮寫，其中的 Bm 都是與 Multibyte 相關的選項。沒加的話，預設是會採用英文規則，也就把空白當做字的間隔，因此一連串中文文字不會被斷開，那就達不到自動斷行的效果了。</p>
+
+<p>接著，為了讓事情更方便些，可以加入以下的按鍵映射：</p>
+
+<pre><code>noremap &lt;silent&gt; &lt;F7&gt; gggqG
+</code></pre>
+
+<p>我把 F7 按鈕對應到 <code>gggqG</code>，這串指令可以分成三個部分：<code>gg</code>, <code>gq</code>, <code>G</code>。</p>
+
+<ul>
+<li><code>gg</code>: 將游標移至檔案最前頭</li>
+<li><code>gq</code>：從游標開始處進行格式重排</li>
+<li><code>G</code>：將游標移至檔案最尾端</li>
+</ul>
+
+
+<p>所以以後只要在 Vim 寫好文章，或是把寫好的文字貼到 Vim 上，再按下 F7，就可以立刻排成 BBS 所需要的格式囉。</p>
+
+<p>只剩下一個問題......如果文章中有太長的連結，要是能自動縮網址那就更完美了。<p><a rel="bookmark" href="http://tzengyuxio.me/blog/2012/04/19/from-autowrap-text-to-bbs-format-by-vim/">&infin; Permalink</a></p></p>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[Octopress 發表文章的統計工具]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/19/stats-of-octopress-blog-posts/"/>
+<updated>2012-04-19T10:29:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/19/stats-of-octopress-blog-posts</id>
+
+      <content type="html"><![CDATA[<p>今天心血來潮，想知道自己這幾年到底寫了多少文章，多少字數，於是寫了這麼一個小工具。</p>
+
+<p><img src="/images/2012/2012-04-19-stats-of-my-blog-posts.png" alt="Stats of My Blog Posts" /></p>
+
+<!-- more -->
+
+
+<p>這小工具很簡單，按年份分別列出該年寫了幾篇文章，總共多少字數。由於 Octopress 的文章其實就是一個個 markdown 純文字檔，所以要做統計並不困難，我不用想盡辦法連到資料庫或是將網站匯出 XML 來做分析。不過這個工具使用到 *nix shell 環境，Linux 與 Mac OSX 的使用者可以無痛使用，Windows 的話可能就要安裝一下 cygwin 或其他類似套件了。</p>
+
+<p>工具的代碼如下，使用前，請先自行修改代碼中 <code>SYEAR</code> 與 <code>POSTPATH</code> 這兩個變數，以符合自己的需求：</p>
+
+<p><div><script src='https://gist.github.com/2417859.js?file=blogstats.sh'></script>
+<noscript><pre><code>#!/bin/bash 
+
+# start year and end year
+SYEAR=2005
+EYEAR=`date &quot;+%Y&quot;`
+
+POSTPATH=~/github/octopress/source/_posts/
+
+echo
+echo &quot;YEAR      File #    Word Count&quot;
+echo &quot;==============================&quot;
+for (( i=$SYEAR; i&lt;=$EYEAR; i=i+1 ))
+do
+    NUMFILES=`ls -l $POSTPATH$i* 2&gt; /dev/null | wc -l`
+    NUMWORDS=&quot;       0&quot;
+    test $NUMFILES != &quot;0&quot; &amp;&amp; NUMWORDS=`wc -m $POSTPATH$i-* | tail -n 1 | sed 's/ total//'`
+    echo &quot;$i    $NUMFILES      $NUMWORDS&quot;
+done
+echo &quot;==============================&quot;
+NUMFILES=`ls -1 $POSTPATH* | wc -l`
+NUMWORDS=`wc -m $POSTPATH* | tail -n 1 | sed 's/ total//'`
+echo &quot;Total   $NUMFILES      $NUMWORDS&quot;
+echo</code></pre></noscript></div>
+</p>
+
+<p>附帶一提：字數的統計是直接使用 <code>wc -m</code>，也沒有去掉 YAML 檔頭，所以不是很精確，大概參考參考就好。</p>
+
+<p><a rel="bookmark" href="http://tzengyuxio.me/blog/2012/04/19/stats-of-octopress-blog-posts/">&infin; Permalink</a></p>
+
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[Python 與 Ruby 的模組安裝]]></title>
+<link href="http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby/"/>
+<updated>2012-03-29T08:39:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby</id>
+
+      <content type="html"><![CDATA[<p>其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。</p>
+
+<p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
+
+<p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
+
+<!-- more -->
+
+
+<h2>Python 的 easy_install</h2>
+
+<p>Python 的 easy_install 人如其名，真的很 easy。比方說我看到 <a href="http://pypi.python.org/pypi/Markdown">Markdown 2.1.1 : Python Package Index</a> 這個套件想要安裝，我只要到終端機輸入下面指令就行了：</p>
+
+<pre><code>$ easy_install markdown
+</code></pre>
+
+<p>要刪除模組的話則是輸入：</p>
+
+<pre><code>$ easy_install -m markdown
+</code></pre>
+
+<p>easy_install 主要的功能就是安裝，如果需要進一步說明，可以參考</p>
+
+<pre><code>$ easy_install --help
+</code></pre>
+
+<h2>Ruby 的 gem</h2>
+
+<p>相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的<strong>套件管理工具</strong>。例如我想安裝一個叫 <a href="http://toodledo.rubyforge.org/toodledo/&lt;p>&lt;a">toodledo</a> 的套件，可以這麼輸入：</p>
+
+<pre><code>$ gem install toodledo
+</code></pre>
+
+<p>或是指定版本號：</p>
+
+<pre><code>$ gem install toodledo --version 1.3.8
+</code></pre>
+
+<p>移除的話是：</p>
+
+<pre><code>$ gem uninstall toodledo
+</code></pre>
+
+<p>我想知道有沒有跟 markdown 相關的套件，我可以用如下方式尋找：</p>
+
+<pre><code>$ gem list markdown --remote
+</code></pre>
+
+<p>如果沒有加上 <code>--remote</code>, 則會列出本機已經安裝的套件。</p>
+
+<pre><code>$ gem list
+</code></pre>
+
+<p>更詳細的說明可以參考線上說明。</p>
+
+<pre><code>$ gem help
+</code></pre>
+
+<h2>在 Mac 上</h2>
+
+<p>上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 <code>sudo</code> 再執行就好了。</p>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[ls Color on Mac]]></title>
+<link href="http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac/"/>
+<updated>2012-03-29T01:44:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/03/29/ls-color-on-mac</id>
+
+      <content type="html"><![CDATA[<p><img src="/images/2012/2012-03-29-ls-color.png" alt="ls color" /></p>
+
+<p>昨天突然心血來潮想到來替 ls 上個顏色。以前用 Linux 時都有很漂亮的 ls 輸出，除此之外也會認真打造個人的 shell 環境。怎知開始用 Mac 兩年多來，都忘記來把 shell 好好調教一番，幾乎一直維持著原汁原味。</p>
+
+<p>是說原本預設的也夠我用了就是，不過有個多采多姿的 ls 輸出不僅能提昇工作效率，光看著心情也會好起來。</p>
+
+<!-- more -->
+
+
+<h2>開啟顏色輸出</h2>
+
+<p>在 Linux 要開啟顏色輸出是透過 <code>ls --color</code> 指令。而在 Mac 或 BSD 上則是使用 <code>ls -G</code>。</p>
+
+<p>當然，每次都加這參數也是麻煩。寫程式的都是懶人，所以我在 <code>~/.bashrc</code> 檔案中加入下面這行設定：</p>
+
+<p><code>sh
+alias ls='ls -GF'
+</code></p>
+
+<p>要說明一下的是，上面的設定除了開啟顏色輸出外，還加了 <code>-F</code> 這個能夠在 ls 輸出中加入識別符號的參數。像是目錄的名字後面會加上 '/', 可執行檔會加上 '*',  符號連結 (symbolic link) 會加上 '@' 等等。</p>
+
+<h2>顏色的指定</h2>
+
+<p>關於顏色的指定，Linux 使用 <code>LS_COLORS</code> 環境變數，BSD 則是使用 <code>LSCOLORS</code>。兩者的設定方式也不同，這部份網路上資料很好找，就不贅述。</p>
+
+<p>直接說結果，我所使用的顏色組合如下：</p>
+
+<p><code>sh
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+</code></p>
+
+<p>將這行加入 <code>~/.bash_profile</code> 就可以享受美美的 ls 了。這個配色設定是從 <a href="https://github.com/seebi/dircolors-solarized/issues/10">LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD</a> 這網頁參考來的。</p>
+
+<p>附帶一提，Mac 或 BSD 的 <code>LSCOLORS</code> 參數只能指定預設檔案類型的顏色，比較常見的類型只有檔案、可執行檔、符號連結三種。Linux 的 <code>LS_COLORS</code> 除了上述這些之外，還可以針對附檔名作指定，像是把 .zip .rar .tgz 等壓縮檔設成黃色；然後 .avi .m4v .mov 等影片檔設成洋紅色之類的。</p>
+
+<h2>補充資訊</h2>
+
+<ol>
+<li>BSD 下還有一個環境變數 <code>CLICOLOR</code>, 在 <code>~/.bash_profile</code> 中加入 <code>export CLICOLOR=1</code> 可以得到跟 <code>ls -G</code> 一樣的效果。</li>
+<li>如果想要自己配色的，<a href="http://geoff.greer.fm/lscolors/">LSCOLORS Generator</a> 這個網頁提供了一個方便的配色小工具。</li>
+<li>喜歡 Solarized 的話，<a href="https://github.com/seebi/dircolors-solarized">seebi/dircolors-solarized</a> 是一個將 Solarized 延伸到 ls color 的專案。可惜只適用在 <strong>GNU ls</strong>, 也就是 Linux 系統上的 ls。</li>
+<li>如果你無論如何也想在 Mac 上看到壓縮檔、影片檔、音樂檔等不同類型檔案也有不同顏色，或是想要使用上面提到的 Solarized ls 配色，那麼可以考慮安裝 <a href="http://www.gnu.org/software/coreutils/&lt;p>&lt;a">Coreutils - GNU core utilities</a> 這套件。</li>
+</ol>
+
+]]></content>
     </entry>
   
 </feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: productivity | Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-06-05T05:21:14+08:00</updated>
+  <updated>2012-09-03T01:04:34+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -14,28 +14,485 @@
 
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[我的貼標籤規範]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/"/>
+<updated>2012-04-21T06:33:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline</id>
+
+      <content type="html"><![CDATA[<p>前幾天討論了<a href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/">目前各家網站標籤功能的混亂</a>，即便有這些混亂，「標籤」仍是訊息管理非常重要的一個工具，也是落實真正<a href="http://zh.wikipedia.org/wiki/%E8%AF%AD%E4%B9%89Web&lt;p>&lt;a">語義網</a>（semantic web）的一個基礎。</p>
+
+<p><img src="/images/2012/2012-04-21-too-many-tags.png" alt="too many tags!" /></p>
+
+<!-- more -->
+
+
+<p>然而正由於目前沒有一致性的標籤標準，人們對於標籤的使用也很隨興，所以會常常看到下面三種情形：</p>
+
+<ol>
+<li><p>同一個概念以不同的詞語組合方式標籤</p>
+
+<p> 例如一篇文章中同時加入了 <code>win7</code>, <code>Windows 7</code>, <code>MS windows 7</code>, <code>windows-7</code> 等標籤，有縮寫、有全名、有各種不同的連接詞。這種現象在以搜尋流量為主的媒體網站中尤為常見。上面的圖就是一個活生生血淋淋（？）的例子，這組關鍵字取自 Engadget 的<a href="http://chinese.engadget.com/2012/04/20/sony-patent-application-aims-to-put-names-to-faceless-mmo-player/">這篇文章</a>。</p></li>
+<li><p>同一個概念以不同的單字形式標籤</p>
+
+<p> 以英文做標籤的網站中很容易發生這種情形，因為一個概念在不同的詞性表現下就是不同的單字，因而成為不同的標籤關鍵字。例如我想要加上「部落格」這個標籤，用英文寫時就可能同時把名詞、動詞、動名詞，還有單數型複數型全部通通填上去，像這樣： <code>blog</code>, <code>blogging</code>, <code>blogs</code>。</p></li>
+<li><p>同一個概念以不同的語言標籤</p>
+
+<p> 這個就是多語言使用者的苦惱了。例如像我這樣的宅宅就會因為以下 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 等標籤到底要用哪個好而苦惱，而最後的結果通常就是全部都用。</p></li>
+</ol>
+
+
+<p>這三種情形都是用不同的方式去標籤同一個概念，雖然初衷是為了將來方便搜尋，但往往反而導致搜尋時的困難。考慮以下情形：假設我的一篇部落格文章用了 <code>win7</code> 與 <code>Window 7</code> 作為標籤，另一篇主題近似的文章卻是用了 <code>Windows 7</code> 與 <code>win-7</code> 作為標籤。這種不一致性會讓讀者在前篇文章中點下 <code>win7</code> 這個標籤連結時，無法將所有主題相關的文章列出。</p>
+
+<p>另外一個問題則是製造不必要的心力浪費。因為沒有一個標準來選擇用哪個單詞做標籤，因此也不知道自己將來要回頭找資料時，會用哪個單詞來做搜尋，只好想辦法把所有自己想得到的所有相關字一股腦兒全部填入。</p>
+
+<p>為了避免上述問題，雖然目前每個網站的標籤機制如同多頭馬車各行其道，制定一個自己個人使用的標籤習慣（或規範）倒是可行的一個作法。這個問題相信困擾的不只是我，上網找了一下，有兩篇值得參考的文章，第一個是 Calvin C. Yu 所寫的 <a href="http://www.slideshare.net/calvinyu/hitech-hi-tag">Taggin Guidelines</a> （在投影片中的第 13 頁），主要原則如下：</p>
+
+<blockquote><ul>
+<li>簡練</li>
+<li>小寫</li>
+<li>單數</li>
+</ul>
+</blockquote>
+
+<p>另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個標準就是<strong><a href="http://bhc3.com/2008/08/22/why-isnt-this-the-tag-standard-multi-word-comma-separated/">複數詞組，逗號分隔</a></strong> (Multi Word, Comma Seperated)。</p>
+
+<hr />
+
+<p>以上便是我個人使用標籤的一些而我自己所使用標籤的標準如下：</p>
+
+<ol>
+<li><p><strong>簡便性</strong></p>
+
+<ol>
+<li><p><strong>盡量簡單。</strong></p></li>
+<li><p><strong>方便輸入。</strong>所以標籤時會以英文為主，例如用 <code>browser</code> 而不用 <code>瀏覽器</code>。</p></li>
+<li><p><strong>自己容易想起。</strong>通常第一個想到的字詞就是了。</p></li>
+<li><p><strong>使用容易理解的詞。</strong></p></li>
+</ol>
+</li>
+<li><p><strong>一致性</strong></p>
+
+<ol>
+<li><p><strong>一個概念一個詞。</strong>所以 <code>動畫</code>, <code>アニメ</code>, <code>Anime</code>, <code>動画</code> 就只剩下用一個 <code>anime</code>。</p></li>
+<li><p><strong>小寫。</strong>同樣是為了方便輸入。</p></li>
+<li><p><strong>用單數，用名詞。</strong>當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。</p></li>
+<li><p><strong>人名的標記盡可能從主人。</strong>例如使用 <code>菅野よう子</code> 而非 <code>菅野洋子</code>, <code>韩寒</code> 而非 <code>韓寒</code>。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼拼，那就直接用<code>戈巴契夫</code>吧。同樣是以<strong>自己方便</strong>為最高原則。</p></li>
+<li><p><strong>除非是自己口語常用的縮寫，不然不使用縮寫作標記。</strong><code>nds</code> <code>win7</code> <code>xbox360</code> 都很好理解，可是用 <code>resp</code> <code>req</code> 來做為 <code>response</code> <code>request</code> 標籤的替代，就太過頭了。現在連寫程式都不鼓勵這種縮寫了。</p></li>
+</ol>
+</li>
+<li><p><strong>格式</strong></p>
+
+<ol>
+<li><p><strong>省略單字間空白。</strong>也就是說用 <code>macosx</code> 而非 <code>mac os x</code>。不過英文人名是例外；日常用字如 <code>smartphone</code> 我們容易斷字，相對的人名如果省略空白有時候就不容易逆推。其他如果空白省略會造成歧異的話，也應該保留空白於關鍵字中。</p></li>
+<li><p><strong>以逗號區隔關鍵字。</strong>正確來說應該是以「逗號加空白」區隔關鍵字。</p></li>
+</ol>
+</li>
+</ol>
+
+
+<hr />
+
+<p>以上便是我個人使用的標籤規則。如果你有不錯的標籤習慣，也歡迎一起討論分享。</p>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[形形色色的標籤機制]]></title>
+<link href="http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats/"/>
+<updated>2012-04-18T09:53:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/04/18/inconsistency-of-tagging-formats</id>
+
+      <content type="html"><![CDATA[<p><img src="/images/2012/2012-04-18-inconsistency-of-tags.jpg" alt="inconsistency of tags" /></p>
+
+<p>「標籤」功能，在今天的網站應用中，已經是極為普遍的一種機制，甚至在許多桌面的應用上也可以見到「標籤」的蹤跡。在不同的地方，標籤可能有不同的名字，例如：</p>
+
+<!-- more -->
+
+
+<ul>
+<li><code>tag</code>: Picasa, Flickr, YouTube, amazon, WordPress, 豆瓣</li>
+<li><code>label</code>: Gmail, Blogger</li>
+<li><code>keyword</code>: iPhoto, Aperture</li>
+<li><code>hashtag</code>: Twitter, Google+</li>
+<li><code>category</code>: Anobii, WordPress</li>
+</ul>
+
+
+<p>考慮到中文翻譯的話，又更加混亂：</p>
+
+<ul>
+<li><strong>標籤</strong>：Flickr, Gmail, Blogger, 豆瓣, WordPress</li>
+<li><strong>標記</strong>：Picasa, YouTube</li>
+<li><strong>關鍵字</strong>：iPhoto</li>
+<li><strong>分類</strong>：Anobii, WordPress</li>
+</ul>
+
+
+<p>針對以上的清單進行耙梳，我們可以得到下面幾個觀察：</p>
+
+<ol>
+<li><p>這些類似的功能中，最常見的英文名字是 "tag"，中文名字是「標籤／标签」。</p></li>
+<li><p>然而在 Google 的產品中，"tag" 通常翻作「標記」；「標籤」這詞則是用在 "label" 上（儘管他們兩者功能接近）。</p></li>
+<li><p>hashtag 有其自有的形式：<code>#somewordswithoutspace</code>, 不過其使用的方式與目的和單純的標籤（tag）並無太大差別。</p></li>
+<li><p>有些應用服務存在著 category 與 tag 兩種機制，一個物件（例如部落格文章）可能只隸屬於單一分類（category）但可擁有多個標籤（tag）。但是現在越來越多的應用服務都可以讓使用者將單一物件同時歸屬於多個分類之下，使得分類與標籤的界線漸趨模糊。</p></li>
+<li><p>可以從另外一個角度來釐清分類與標籤的不同：分類屬於事先規劃好的清單，標籤則是依照物件內容隨意添加的清單。</p></li>
+<li><p>不過在只有「分類」沒有「標籤」機制的網站中（如 Anobii），「分類」的使用方式其實跟「標籤」是沒有兩樣的。</p></li>
+<li><p>反之，只有標籤機制的網站，如 Blogger, 某種程度上也可以透過標籤來模擬分類的機制（可以參考<a href="http://reader.aqualuna.me/&lt;p>&lt;a">此網站</a>的右側選單）。</p></li>
+</ol>
+
+
+<p>蠻混亂的，不是嗎？為了方便起見，我這邊用「<strong>分類 (category)</strong>」、「<strong>標籤 (tag)</strong>」與「<strong>Hashtag</strong>」來稱呼上面一大堆名字所代表的功能，其中「標籤 (tag)」同時也代表了 <em>label</em> 與 <em>keyword</em>。</p>
+
+<p>分類、標籤與 Hashtag 三者的功能接近又互相重疊，命名也是各家網站各自為政，沒有個準。不過混亂還沒結束，讓我們針對「標籤」的部份，繼續深入研究下去。</p>
+
+<h3>標籤格式</h3>
+
+<p>標籤的格式牽扯的問題既廣且深，它不僅決定了使用者在輸入欄位中填入標籤的方法，也涉及到了資料儲存在資料庫中的方式。標籤的格式有以下幾個考量層面：</p>
+
+<ol>
+<li><p>間隔方式</p>
+
+<p> 常見的間隔方式分兩種：<strong>空白</strong>與<strong>逗號</strong>。Flickr 採用空白間隔，Blogger 與 YouTube 則是逗號間隔。這邊還看不出什麼大問題，請接著看下去。</p></li>
+<li><p>允許空白與否</p>
+
+<p> 基本上，大多數的標籤功能都允許標籤內含空白，我們免不了會遇到例如 <code>"White House"</code> 或 <code>"Windows Vista"</code> 這樣的標籤。這時候不同的間隔方式就會帶來不同的考量了。</p>
+
+<ol>
+<li><p><strong>以空白間隔的標籤</strong>，為了要允許空白字元作為標籤的一部分，所以必須引入引號，被引號包住的詞算做一個標籤，這是 Flickr 的作法。所以一張有「<code>white</code> <code>house</code>」標籤的照片，也許是張白色的房子；而一張有「<code>"white house"</code>」標籤的照片，則可能是美國白宮。不過這樣會使得引號無法作為標籤的一部分，比方說「<code>5'7"</code>」（五呎七吋）這樣的詞就不能拿來當標籤了。</p></li>
+<li><p><strong>以逗號間隔的標籤</strong>，在含有空白間隔的標籤問題上看起來比較單純。但實作上其實有一點要注意，就是真正的間隔符號並非單單只有逗號，而是<strong>逗號加上一個空白</strong>。因為人們在輸入時習慣在逗號後面加入空白，如果說空白是合法標籤字元的話，那麼為什麼只有單字間的空白才被記入，單字前後的空白都被忽略呢？</p></li>
+</ol>
+</li>
+<li><p>大小寫</p>
+
+<p> 這邊再以 Flickr 與 YouTube 為例子作比較。YouTube 對於標籤的大小寫是照單全收，所以 <code>"TREE"</code> 標籤點下去的搜尋就是 "TREE"，而反之全小寫標籤的搜尋文字就是小寫的，反正搜尋結果無視大小寫，所以不成問題。</p>
+
+<p> Flickr 的作法稍微複雜些，除了你所輸入的之外，Flickr 還會另外將標籤簡化，然後儲存。你可以在三張照片分別使用 <code>"TREE"</code> 與 <code>"Tree"</code> 與 <code>"tree"</code>  這三種大小不同的標籤名，顯示時也是顯示各自不同的大小寫，然而他們都是代表著同樣的一個標籤。所以，如果你在一張照片中使用了 <code>"TREE"</code> 的標籤後，接著再輸入 <code>"tree"</code> 標籤，會發現沒有任何反應，因為標籤重複了。</p></li>
+<li><p>內部處理</p>
+
+<p> Flickr 在輸入標籤時所做的處理，除了大小寫外，也套用在空白上。因此，<code>"White House"</code>, <code>"whitehouse"</code>, <code>"WhiteHouse"</code> 這三個標籤同樣都是指向 <code>"whitehouse"</code> 這個內部處理的標籤。Flickr 內部運作時的標籤，是會把空白去掉並且全部轉為小寫字母。</p>
+
+<p> Youtube 就不同了，如前所述，你輸入什麼標籤它就存什麼，所以 <code>"White House"</code> 跟 <code>"whitehouse"</code> 是不同的。事實上，你用這兩組字串去 YouTube 搜尋，也會得到不一樣的結果。</p></li>
+</ol>
+
+
+<hr />
+
+<p>延伸閱讀：<a href="http://37signals.com/svn/archives2/tag_formats_cant_we_all_just_get_along.php">Tag formats: Can't we all just get along? - Signal vs. Noise (by 37signals)</a></p>
+
+<p>2005 年的文章。估計是 37signals 要實作標籤系統時，研究了當時幾個主流網站的標籤機制，對象包括 del.icio.us, 43things, Yahoo’s My Web, flickr 與 Amazon。這篇文章底下也有頗多值得一看的討論。文章的最後提到：</p>
+
+<blockquote><p>當新科技剛出現時，不一致是免不了的。然而這些不同的格式是否會持續下去，或是終將會有個標準一統天下呢？</p></blockquote>
+
+<p>2005 到現在，都六、七年了，標籤功能其實仍舊處於混沌未明的時代。</p>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[關於 Mac 快速檢視 (Quick Look) 的幾個小秘訣]]></title>
+<link href="http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look/"/>
+<updated>2012-03-11T18:17:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look</id>
+
+      <content type="html"><![CDATA[<p>我用了 Mac 好一段時間了才知道，原來對檔案直接按空白鍵可以開啟快速檢視 (Quick Look)；又隔了好一段時間，才又知道原來快速檢視除了內建的之外，還可以加上些外掛以增加支援檔案類型。下面是一些我所用到的 QuickLook 相關技巧整理。</p>
+
+<p><img src="/images/2012/2012-03-11-quicklook-of-zip.png" alt="BetterZip Plugin" /></p>
+
+<!-- more -->
+
+
+<h2>在 Terminal 下開啟快速檢視</h2>
+
+<p>除了在 Finder 中按空白鍵外，有時候在 Terminal 底下工作時，也可以利用指令來開啟快速檢視，這樣可以減少鍵盤滑鼠的切換以提升效率。開啟的指令如下：</p>
+
+<pre><code>$ qlmanage -p [FILE]
+</code></pre>
+
+<p>把 [FILE] 替換成要開啟的檔名即可。不過這指令也不算短，要更方便的話，可以在 <code>~/.bashrc</code> 中加入以下指令別名 (alias)，這樣只要輸入 <code>ql [FILE]</code> 就可以立刻檢視了：</p>
+
+<p><code>sh
+alias ql='qlmanage -p'
+</code></p>
+
+<p>對了，設定檔 .bashrc 預設在 Mac OS X 中是不起作用的，可以參考<a href="/blog/2012/03/11/dot-bashrc-in-mac-terminal/">這篇文章</a>來讓 .bashrc work。</p>
+
+<h2>增加支援檔案類型的 Plugin</h2>
+
+<p>快速檢視本身支援文字、圖片、音樂、影片等基本檔案格式，至於其他不支援的格式則只會顯示一個大大的檔案 icon。透過以下 Plugin 可以增加快速檢視支援的檔案格式，安裝很簡單，只要將下載下來的 <code>*.qlgenerator</code> 檔案放到下面路徑之一：</p>
+
+<ul>
+<li><code>(Macintosh HD)/Library/QuickLook/</code> 安裝給本機的所有使用者</li>
+<li><code>~/Library/QuickLook/</code> 只安裝給自己使用</li>
+</ul>
+
+
+<h3>壓縮檔 (Archives)</h3>
+
+<p><a href="http://macitbetter.com/BetterZip-Quick-Look-Generator/">BetterZip 2 - The Next Generation of Archiving</a></p>
+
+<p>上面這個外掛預設是暗色背景的，如果喜歡白色背景的（如同文章開頭那張圖），可以考慮下面這個修改版本：</p>
+
+<p><a href="https://github.com/farfanoide/BetterZ-QuickLook-plugin-theme-for-Lion">farfanoide/BetterZ-QuickLook-plugin-theme-for-Lion</a></p>
+
+<h3>程式碼 (Code)</h3>
+
+<p><a href="http://code.google.com/p/qlcolorcode/">qlcolorcode - A Quick Look plugin for source code with syntax highlighting - Google Project Hosting</a></p>
+
+<h3>CSV 檔案</h3>
+
+<p><a href="http://code.google.com/p/quicklook-csv/">quicklook-csv - A QuickLook plugin to quick look CSV files for Mac OS X 10.5+ - Google Project Hosting</a></p>
+
+<h2>快速檢視文字檔案時，可以複製文字</h2>
+
+<p>按空白鍵檢視文字檔案內容很方便，可是有時候如果想要複製文字，就得另外再開啟文字編輯，相當麻煩。在 Terminal 下輸入以下指令，可以讓你在快速檢視文字檔時，也能選取想要的片段，然後按 Cmd+C 複製出來。</p>
+
+<pre><code>$ defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
+</code></pre>
+
+<h2>用不同的應用程式開啟</h2>
+
+<p>在快速檢視時，右上方會有個按鈕讓你以預設關連的應用程式開啟。如果你想要用其他的應用程式開啟，例如用 Photoshop 開啟圖檔，那麼只要按著右上方按鈕不放，就會出現選單供你選擇想要開啟的應用程式。</p>
+
+<h2>以全螢幕開啟快速檢視</h2>
+
+<p>選取檔案，然後按下 <code>Cmd+Opt+Y</code>，就可以直接以全螢幕方式進入快速檢視，這對影像或是影片格式相當有用。</p>
+
+<p>其實也可以在按著 Opt 的狀態下按空白鍵進入全螢幕的快速檢視，不過像我有安裝 Alfred, <code>Opt+空白鍵</code> 預設會啟動 Alfred 的輸入視窗，因此就沒辦法用來開啟快速檢視了。</p>
+
+<p><a rel="bookmark" href="http://tzengyuxio.me/blog/2012/03/11/tips-for-mac-os-x-quick-look/">&infin; Permalink</a></p>
+
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[BOM (Byte Order Mark) 與 UTF-8]]></title>
+<link href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/"/>
+<updated>2012-03-09T20:28:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8</id>
+
+      <content type="html"><![CDATA[<p>記一些關於 BOM 與 UTF-8 的個人筆記，省得以後每次遇到還得重新上網搜尋做功課。</p>
+
+<!-- more -->
+
+
+<hr />
+
+<p>Byte Order Mark 在 UTF-16 Big Endian 是 "FE FF"，Little Endian 是 "FF FE"。其中 Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。</p>
+
+<p>UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 "EF BB BF"。</p>
+
+<p>不過個人建議，文字文件要儲存的話，<strong>盡量以 UTF-8 格式存</strong>。而以 UTF-8 儲存的文件，<strong>盡量不要放 BOM 進去</strong>。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就破壞了這相容性。</p>
+
+<h2>在 VIM 中的 BOM 相關操作</h2>
+
+<h3>加入 BOM</h3>
+
+<pre><code>:set bomb
+</code></pre>
+
+<h3>移除 BOM</h3>
+
+<pre><code>:set nobomb
+</code></pre>
+
+<h3>查詢 BOM 狀態</h3>
+
+<pre><code>:set bomb?
+</code></pre>
+
+<h2>在 Terminal / Console 下的 BOM 相關操作</h2>
+
+<h3>查詢包含 UTF-8 BOM 的檔案</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE]
+</code></pre>
+
+<h3>找出並移除 UTF-8 的 BOM</h3>
+
+<pre><code>$ grep -rIl $'^\xEF\xBB\xBF' [FILE] | xargs sed -i 's/^\xEF\xBB\xBF//;g'
+</code></pre>
+
+<h3>編碼的轉換</h3>
+
+<pre><code>$ iconv -f [FROM_ENCODING] -t [TO_ENCODING] [FILE]
+</code></pre>
+
+<p>其中 ENCODING 的部份可以是以下數值：</p>
+
+<ul>
+<li>UTF-8 UTF8</li>
+<li>UTF-16BE</li>
+<li>UTF-16LE</li>
+<li>UCS-2BE UNICODEBIG</li>
+<li>UCS-2LE UNICODELITTLE</li>
+</ul>
+
+
+<p>更多 ENCODING 代碼可以透過 <code>iconv --list</code> 查詢。<p><a rel="bookmark" href="http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/">&infin; Permalink</a></p></p>
+]]></content>
     </entry>
   
     <entry>
-      Included file 'feed_entry.xml' not found in _includes directory
-      <content type="html"><![CDATA[Liquid error: wrong argument type nil (expected String)]]></content>
+      
+
+
+
+
+<title type="html"><![CDATA[幾個我常用的 Alfred 自定搜尋]]></title>
+<link href="http://tzengyuxio.me/blog/2012/02/19/alfred-search/"/>
+<updated>2012-02-19T23:45:00+08:00</updated>
+<id>http://tzengyuxio.me/blog/2012/02/19/alfred-search</id>
+
+      <content type="html"><![CDATA[<p>雖然用了 <a href="/blog/tags/alfred/">Alfred</a> 一段時間，但是直到最近才開始認真挖掘裡面的設定。其實 Alfred 安裝好不用特別設定，就已經很好用了，像是程式本身預設許多網頁搜尋，從常見的 Google、Yahoo!、Amazon 與維基百科，到比較少人知道但很好用的 <a href="http://www.wolframalpha.com/">wolfram</a> 等，都是現成裝好就可以用的。</p>
+
+<p><img src="https://lh6.googleusercontent.com/-6Z65mn0aLAo/T0EV13h5vFI/AAAAAAAAJdU/ijKmwmls5p8/s800/alfred_custom_search.png&lt;p>&lt;a" alt="Alfred Custom Search" /></p>
+
+<!-- more -->
+
+
+<p>不過每個人常用網站不同，在軟體的預設網站之外一定有遺珠之憾。好在 Alfred 也有提供自定搜尋選項的功能，以下就來分享我自己設定的 Alfred Custom Search。</p>
+
+<p>這些 Custom Search 的安裝方式很簡單，只要將底下以 alfredapp 開頭的一串文字複製起來，叫出 Alfred 的指令視窗（預設是使用 ⌥Space），貼上剛才複製的文字，按下 Enter 就好了。</p>
+
+<h3>奇摩字典搜尋</h3>
+
+<ul>
+<li>Keyword: <code>dict</code></li>
+<li>說明：就是查字典。dict 後面可以接中文詞或是英文單字。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Yahoo%21%E5%A5%87%E6%91%A9%E5%AD%97%E5%85%B8%E6%9F%A5%E8%A9%A2/dict/utf8/url=http://tw.dictionary.yahoo.com/dictionary?p={query}
+</code></p>
+
+<h3>flickr Creative Common 搜尋</h3>
+
+<ul>
+<li>Keyword: <code>fcc</code></li>
+<li>說明：Alfred 已經有內建 flickr 搜尋了，不過並不是任何找到的圖片都可以隨意使用。如果你有在寫 blog 並且會上 flickr 找圖片來點綴文章的話，這個搜尋可以幫助你找到合適的圖片。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Search%20Flickr%20CC%20for/fcc/ascii/url=http://www.flickr.com/search/?q={query}&amp;l=commderiv&amp;ss=0&amp;ct=0&amp;mt=all&amp;w=all&amp;adv=1
+</code></p>
+
+<h3>世界時間查詢</h3>
+
+<ul>
+<li>Keyword: <code>time</code></li>
+<li>說明：Time.is 是個簡單但方便的網站，可以以城市名稱查詢該地目前時間。安裝好此 Custom Search 後，就能用 <code>time tokyo</code> 或 <code>time 東京</code> 的語法來查詢當地時間。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/%E7%9B%AE%E5%89%8D%E7%9A%84%E6%99%82%E9%96%93%EF%BC%8C%E5%9C%A8/time/ascii/url=http://time.is/{query}
+</code></p>
+
+<h3>線上音樂搜尋</h3>
+
+<ul>
+<li>Keyword: <code>gs</code></li>
+<li>說明：Grooveshark 是很大的線上音樂網站，找到就可以直接串流播放了，中英文搜尋都 OK。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Search%20Grooveshark%20for/gs/ascii/url=http://grooveshark.com/#/search?q={query}
+</code></p>
+
+<h3>Stack Overflow 搜尋</h3>
+
+<ul>
+<li>Keyword: <code>so</code></li>
+<li>說明：寫程式的人幾乎都得拜訪的聖地。google 程式問題時幾乎都會找到這邊來，乾脆就直接在 Stack Overflow 上搜尋吧。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Search%20Stack%20Overflow%20for/so/ascii/url=http://stackoverflow.com/search?q={query}
+</code></p>
+
+<h3>Apple Developer Connection 搜尋</h3>
+
+<ul>
+<li>Keyword: <code>adc</code></li>
+<li>說明：對 Apple 開發者很方便的搜尋。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Search%20ADC%20for/adc/ascii/url=http://developer.apple.com/library/mac/search/?q={query}
+</code></p>
+
+<h3>PChome 線上購物 搜尋</h3>
+
+<ul>
+<li>Keyword: <code>pchome</code></li>
+<li>說明：台灣最大的購物網站......吧？我沒有數據，單純只是自己蠻常用的。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Search%20PChome%20for/pchome/ascii/url=http://ecshweb.pchome.com.tw/search/v1/{query}
+</code></p>
+
+<h3>Mac App Store 搜尋</h3>
+
+<ul>
+<li>Keyword: <code>mas</code></li>
+<li>說明：尋找 Mac App Store 裡面的應用程式，也是我相當常用到的功能。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/%10Search%20Mac%20App%20Store%20for/mas/ascii/url=macappstore://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/search?q={query}
+</code></p>
+
+<h3>博客來搜尋（僅書籍）</h3>
+
+<ul>
+<li>Keyword: <code>books</code></li>
+<li>說明：博客來相信我就不用介紹了吧。以下的語法專門用來查詢書籍，如果要查包含書籍以外的物品，可以用下面的語法來查詢。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%E6%9B%B8%E7%B1%8D%20for/books/ascii/url=http://search.books.com.tw/exep/prod_search.php?cat=BKA&amp;key={query}&amp;apid=books&amp;areaid=head_wel_search
+</code></p>
+
+<h3>博客來搜尋（全站）</h3>
+
+<ul>
+<li>Keyword: <code>bkl</code></li>
+<li>說明：同上，就不另外說明了。</li>
+</ul>
+
+
+<p><code>
+alfredapp://customsearch/Search%20%E5%8D%9A%E5%AE%A2%E4%BE%86%20for/bkl/ascii/url=http://search.books.com.tw/exep/prod_search.php?cat=all&amp;key={query}&amp;apid=books&amp;areaid=head_wel_search
+</code></p>
+]]></content>
     </entry>
   
 </feed>
