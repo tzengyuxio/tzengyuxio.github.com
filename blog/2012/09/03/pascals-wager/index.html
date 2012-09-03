@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>帕斯卡的賭注 - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="說到「布萊茲·帕斯卡」這名字，可能很多人不曉得是誰。但若是提到「帕斯卡三角」這個國中就會學到的數學概念，也許就不難猜到布萊茲．帕斯卡正是提出這個二項式係數三角的數學家。帕斯卡三十歲後篤信宗教，也因此幾乎荒廢了數學方面的工作，然而他之所以投身宗教，是有他一套論述基礎的，這套論述稱之為「帕斯卡的賭注 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2012/09/03/pascals-wager">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<style type="text/css">
+  #floating {
+    float:left;position:fixed;
+    top:25%;margin-left:-64px;
+    text-align:left;
+    background:#f8f8f8 url('/images/noise.png?1333026006') top left;
+    box-shadow:-5px 0 7px rgba(0,0,0,0.45);
+    padding:8px 5px 0 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index:10;
+  }
+  #floating div {border:0;display:block;}
+</style>
+<div id="floating">
+  <!--div class="g-plusone" data-size="tall" data-annotation="bubble"></div-->
+  <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="tzengyuxio" data-count="vertical" data-lang="zh-tw" data-size="medium">Tweet</a></div>
+  <div class="g-plus" data-action="share" data-annotation="vertical-bubble"></div>
+  <div class="fb-like" data-send="false" data-layout="box_count" data-width="50" data-show-faces="true"></div>
+</div>
+
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">帕斯卡的賭注</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-03T17:35:00+08:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>說到「布萊茲·帕斯卡」這名字，可能很多人不曉得是誰。但若是提到「<a href="http://zh.wikipedia.org/wiki/%E5%B8%95%E6%96%AF%E5%8D%A1%E4%B8%89%E8%A7%92">帕斯卡三角</a>」這個國中就會學到的數學概念，也許就不難猜到布萊茲．帕斯卡正是提出這個二項式係數三角的數學家。帕斯卡三十歲後篤信宗教，也因此幾乎荒廢了數學方面的工作，然而他之所以投身宗教，是有他一套論述基礎的，這套論述稱之為「帕斯卡的賭注」。</p>
+
+<p><img src="/images/2012/2012-09-03-temple.jpg" alt="" /></p>
+
+<!-- more -->
+
+
+<p>「帕斯卡的賭注」內容如下：</p>
+
+<blockquote><p>我不知上帝是否存在。如果我信上帝，而上帝存在，則我會得到獎賞；而上帝不存在的話，我也沒有損失。如果我不信上帝，而上帝存在，則我會得到處罰；上帝不存在的話，我也沒有什麼好處。因此，正常趨善避惡的人都應該相信上帝。</p></blockquote>
+
+<p>乍聽還頗有道理。哲學哲學雞蛋糕在<a href="http://phiphicake.blogspot.tw/2008/05/blog-post_2520.html">這篇文章</a>中，從邏輯論證的角度來反駁「帕斯卡的賭注」。簡單的說，就是該賭注在論證的「前提」為真情況下成立，但「前提」是否為真卻無法判定。然而這論證方式稍嫌複雜，對一般人或沒有邏輯訓練基礎的人不容易說明。我這邊用更簡單的方式來加以反駁：</p>
+
+<p>先姑且假設「帕斯卡的賭注」是正確的，如果不正確的話，自然也不用反駁了。接著我們將賭注中的「上帝」替換成「媽祖」，結論自然是我們應該信媽祖；把「上帝」替換成「閻羅王」，也會得到相信閻羅王存在的結論。綜合以上，任何趨善避惡的善男信女應該又信上帝又信媽祖同時又信閻羅王。</p>
+
+<p>然而這麼一來就產生衝突了：上帝是獨一無二的，如果承認上帝，則媽祖與閻羅王不可能也是神。由於我們不知道上帝、媽祖、閻羅王甚至其他林林總總八百萬眾神是否存在，只能假設他們存在的或然率都一樣。於是從機率角度來看，我們應該信仰那些屬於多數且互不排斥的神，死後獲得獎賞的機會會比較大。</p>
+
+<p>因此結論是，「帕斯卡的賭注」證明了多神論者死後上天堂的機率高於一神論者（誤）。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-03T17:35:00+08:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2012</time>
+      
+
+
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium" data-annotation="inline"></div>
+  
+  
+  <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/09/02/roads-named-after-other-place/" title="Previous Post: 為什麼台北有中國路名？兼談「馬路」一詞由來">&laquo; 為什麼台北有中國路名？兼談「馬路」一詞由來</a>
+      
+      
+    </p>
+  </footer>
+</article>
+  <section>
+    <div class="linkwithin_div"></div>
+  </section>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/09/03/pascals-wager/">帕斯卡的賭注</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/02/roads-named-after-other-place/">為什麼台北有中國路名？兼談「馬路」一詞由來</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/05/whats-in-your-wallet/">你的錢包裝了什麼？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/04/why-have-the-english-name/">抱歉，我沒有英文名字</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/01/mit-game-jam-dora/">四人兩天開發的《Dora》- MIT Game Jam 心得分享</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/26/game-of-dimension-transformation/">次元轉換遊戲介紹</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/21/my-tagging-guideline/">我的貼標籤規範</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.me/blog/2012/09/03/pascals-wager/';
+        var disqus_url = 'http://tzengyuxio.me/blog/2012/09/03/pascals-wager/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    window.___gcfg = {lang: 'zh-TW', parsetags: 'onload'};
+    (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+  <script>
+    var linkwithin_site_id = 1254157;
+  </script>
+  <script src="http://www.linkwithin.com/widget.js"></script>
+  <a href="http://linkwithin.com/"><img
+    src="http://www.linkwithin.com/pixel.png" alt="Related Posts Plugin
+    for WordPress, Blogger..." style="border: 0" /></a>
+</body>
+</html>

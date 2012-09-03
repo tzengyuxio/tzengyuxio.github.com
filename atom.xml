@@ -4,7 +4,7 @@
   <title><![CDATA[Tzeng Yuxio]]></title>
   <link href="http://tzengyuxio.me/atom.xml" rel="self"/>
   <link href="http://tzengyuxio.me/"/>
-  <updated>2012-09-03T01:18:22+08:00</updated>
+  <updated>2012-09-03T18:28:50+08:00</updated>
   <id>http://tzengyuxio.me/</id>
   <author>
     <name><![CDATA[Tzeng Yuxio]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[帕斯卡的賭注]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/09/03/pascals-wager/"/>
+    <updated>2012-09-03T17:35:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/09/03/pascals-wager</id>
+    <content type="html"><![CDATA[<p>說到「布萊茲·帕斯卡」這名字，可能很多人不曉得是誰。但若是提到「<a href="http://zh.wikipedia.org/wiki/%E5%B8%95%E6%96%AF%E5%8D%A1%E4%B8%89%E8%A7%92">帕斯卡三角</a>」這個國中就會學到的數學概念，也許就不難猜到布萊茲．帕斯卡正是提出這個二項式係數三角的數學家。帕斯卡三十歲後篤信宗教，也因此幾乎荒廢了數學方面的工作，然而他之所以投身宗教，是有他一套論述基礎的，這套論述稱之為「帕斯卡的賭注」。</p>
+
+<p><img src="http://tzengyuxio.me/images/2012/2012-09-03-temple.jpg" alt="" /></p>
+
+<!-- more -->
+
+
+<p>「帕斯卡的賭注」內容如下：</p>
+
+<blockquote><p>我不知上帝是否存在。如果我信上帝，而上帝存在，則我會得到獎賞；而上帝不存在的話，我也沒有損失。如果我不信上帝，而上帝存在，則我會得到處罰；上帝不存在的話，我也沒有什麼好處。因此，正常趨善避惡的人都應該相信上帝。</p></blockquote>
+
+<p>乍聽還頗有道理。哲學哲學雞蛋糕在<a href="http://phiphicake.blogspot.tw/2008/05/blog-post_2520.html">這篇文章</a>中，從邏輯論證的角度來反駁「帕斯卡的賭注」。簡單的說，就是該賭注在論證的「前提」為真情況下成立，但「前提」是否為真卻無法判定。然而這論證方式稍嫌複雜，對一般人或沒有邏輯訓練基礎的人不容易說明。我這邊用更簡單的方式來加以反駁：</p>
+
+<p>先姑且假設「帕斯卡的賭注」是正確的，如果不正確的話，自然也不用反駁了。接著我們將賭注中的「上帝」替換成「媽祖」，結論自然是我們應該信媽祖；把「上帝」替換成「閻羅王」，也會得到相信閻羅王存在的結論。綜合以上，任何趨善避惡的善男信女應該又信上帝又信媽祖同時又信閻羅王。</p>
+
+<p>然而這麼一來就產生衝突了：上帝是獨一無二的，如果承認上帝，則媽祖與閻羅王不可能也是神。由於我們不知道上帝、媽祖、閻羅王甚至其他林林總總八百萬眾神是否存在，只能假設他們存在的或然率都一樣。於是從機率角度來看，我們應該信仰那些屬於多數且互不排斥的神，死後獲得獎賞的機會會比較大。</p>
+
+<p>因此結論是，「帕斯卡的賭注」證明了多神論者死後上天堂的機率高於一神論者（誤）。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[為什麼台北有中國路名？兼談「馬路」一詞由來]]></title>
@@ -1292,75 +1318,6 @@ Goolge 總部，感覺怪物很多……</p>
 <p>裝的過程還算順利，但也不是完全一帆風順。我遇到了一個 <code>rb-fsevent</code> 編譯錯誤的問題，幸好在 <a href="http://newbsd.com/blog/2012/03/19/my-first-try-install-octopress-on-my-mac-os-x-lion-10-dot-7-3-and-some-thing-stuff/">這篇文章</a> 中找到了解決方式，重點在於一行 <code>xcode-select</code> 指令。</p>
 
 <p>架設好了環境，索性又申請了一個新的域名，這下真的是徹頭徹尾搬了新家。鷹架都搭好了，剩下的就是充實內容了。希望新的環境能夠帶來更愉快的書寫體驗，也期許自己今年能夠有更充實文章記錄。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Python 與 Ruby 的模組安裝]]></title>
-    <link href="http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby/"/>
-    <updated>2012-03-29T08:39:00+08:00</updated>
-    <id>http://tzengyuxio.me/blog/2012/03/29/install-module-in-python-and-ruby</id>
-    <content type="html"><![CDATA[<p>其實這兩個語言的模組安裝都很簡單。不過我不是個成天都在安裝新玩意兒的人，偶爾因為業務需求或是心血來潮想要裝個模組，卻又忘了指令怎下，免不了得又得上網搜尋。</p>
-
-<p>雖說資料不難找，但每次都問 google 也是折騰，索性自己記個筆記，將來若有需要時，翻自己筆記總比上網搜尋來得快速。</p>
-
-<p>更重要的是，才不會因為上網問 google 然後<strong>開一堆網頁邊看又繼續邊開連結搞到最後開了一大堆自己好像有興趣但其實跟原本問題一點也不相干的文章</strong>。我真是太容易<em>分心</em>了。</p>
-
-<!-- more -->
-
-
-<h2>Python 的 easy_install</h2>
-
-<p>Python 的 easy_install 人如其名，真的很 easy。比方說我看到 <a href="http://pypi.python.org/pypi/Markdown">Markdown 2.1.1 : Python Package Index</a> 這個套件想要安裝，我只要到終端機輸入下面指令就行了：</p>
-
-<pre><code>$ easy_install markdown
-</code></pre>
-
-<p>要刪除模組的話則是輸入：</p>
-
-<pre><code>$ easy_install -m markdown
-</code></pre>
-
-<p>easy_install 主要的功能就是安裝，如果需要進一步說明，可以參考</p>
-
-<pre><code>$ easy_install --help
-</code></pre>
-
-<h2>Ruby 的 gem</h2>
-
-<p>相比之下，Ruby 的 gem 就不僅僅只是個安裝工具，它是個完整的<strong>套件管理工具</strong>。例如我想安裝一個叫 <a href="http://toodledo.rubyforge.org/toodledo/">toodledo</a> 的套件，可以這麼輸入：</p>
-
-<pre><code>$ gem install toodledo
-</code></pre>
-
-<p>或是指定版本號：</p>
-
-<pre><code>$ gem install toodledo --version 1.3.8
-</code></pre>
-
-<p>移除的話是：</p>
-
-<pre><code>$ gem uninstall toodledo
-</code></pre>
-
-<p>我想知道有沒有跟 markdown 相關的套件，我可以用如下方式尋找：</p>
-
-<pre><code>$ gem list markdown --remote
-</code></pre>
-
-<p>如果沒有加上 <code>--remote</code>, 則會列出本機已經安裝的套件。</p>
-
-<pre><code>$ gem list
-</code></pre>
-
-<p>更詳細的說明可以參考線上說明。</p>
-
-<pre><code>$ gem help
-</code></pre>
-
-<h2>在 Mac 上</h2>
-
-<p>上面這兩個工具程式在 Mac OS X 中都是預設已經安裝在系統中的，省了不少麻煩。安裝的過程如果有遇到權限問題，那麼就在上面所列的指令最前面加上 <code>sudo</code> 再執行就好了。</p>
 ]]></content>
   </entry>
   

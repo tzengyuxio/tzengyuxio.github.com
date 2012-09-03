@@ -9,8 +9,7 @@
   <meta name="author" content="Tzeng Yuxio">
 
   
-  <meta name="description" content="The Code Project - DataLayer - Freeware ODBC Library 經過包裝的 ODBC 函式庫，比直接調用 ODBC API 來得簡單些。上面的網頁中包含了如何使用的範例程式碼，相當容易上手。
-">
+  <meta name="description" content="過個年，Google 的消息與動作絲毫沒減少。 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,47 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/02/03/google-news/">［網摘］丙戌新春 Google 篇</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-02-03T14:59:00+08:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>過個年，Google 的消息與動作絲毫沒減少。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2006/02/03/google-news/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -479,57 +519,6 @@ But you’re tough enough not to let anyone take advantage of you!</p></blockquo
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/21/mysql-launch-on-boot/">［FreeBSD］MySQL 的啟動</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-21T10:05:00+08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>重裝了 MySQL 後發現，當 server 整個 reboot 的時候，MySQL 並沒有被啟動。找了一下發現<a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&amp;forum=5">原因</a>。現在得像 apache 或 sendmail 等服務一樣，在 <code>rc.conf</code> 中加入</p>
-
-<pre><code>mysql_enable="YES"
-</code></pre>
-
-<p>另外，若要知道有哪些 server 必須透過 <code>rc.conf</code> 來啟動的，可以透過下列方式：</p>
-
-<pre><code>cd /usr/local/etc/rc.d/
-grep _enable *
-</code></pre>
-
-<p>或是在安裝完套件後，view 一下 <code>/usr/local/etc/rc.d/xxx.sh</code>，看看要在 <code>rc.conf</code> 中加入什麼選項才能於開機時自動啟動。</p>
-
-<hr />
-
-<p><span style="color:gray;">參考自：<a href="http://www.lab.mlc.edu.tw/modules/newbb/viewtopic.php?topic_id=238&amp;forum=5">The FreeBSD Network Laboratory Studio</a>.</span></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/14/">&larr; Older</a>
@@ -545,6 +534,10 @@ grep _enable *
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/09/03/pascals-wager/">帕斯卡的賭注</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/09/02/roads-named-after-other-place/">為什麼台北有中國路名？兼談「馬路」一詞由來</a>
@@ -568,10 +561,6 @@ grep _enable *
     
       <li class="post">
         <a href="/blog/2012/04/21/my-tagging-guideline/">我的貼標籤規範</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/20/refinements-of-my-octopress/">Octopress 調教筆記</a>
       </li>
     
   </ul>
