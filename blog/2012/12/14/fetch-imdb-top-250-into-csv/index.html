@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>將 IMDb Top 250 排行榜轉為 CSV - Tzeng Yuxio</title>
+  <meta name="author" content="Tzeng Yuxio">
+
+  
+  <meta name="description" content="IMDb Top 250 是許多喜愛電影人士的觀影參考。這份排行榜不知道多久更新一次，今天心血來潮，想要記錄一下目前的排行，然後隔一陣子再來比較。但是如果只是把網頁存下來，或是貼到 Evernote 去，到時候想要比較資料免不了又是一陣人力活，於是想到將排行榜的內容抓下來存為 CSV 檔， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://tzengyuxio.me/blog/2012/12/14/fetch-imdb-top-250-into-csv">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/tzengyuxio" rel="alternate" title="Tzeng Yuxio" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23745502-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Tzeng Yuxio</a></h1>
+  
+    <h2>博觀而約取，厚積而薄發</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/tzengyuxio" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:tzengyuxio.me" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<style type="text/css">
+  #floating {
+    float:left;position:fixed;
+    top:25%;margin-left:-64px;
+    text-align:left;
+    background:#f8f8f8 url('/images/noise.png?1333026006') top left;
+    box-shadow:-5px 0 7px rgba(0,0,0,0.45);
+    padding:8px 5px 0 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index:10;
+  }
+  #floating div {border:0;display:block;}
+</style>
+<div id="floating">
+  <!--div class="g-plusone" data-size="tall" data-annotation="bubble"></div-->
+  <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="tzengyuxio" data-count="vertical" data-lang="zh-tw" data-size="medium">Tweet</a></div>
+  <div class="g-plus" data-action="share" data-annotation="vertical-bubble"></div>
+  <div class="fb-like" data-send="false" data-layout="box_count" data-width="50" data-show-faces="true"></div>
+</div>
+
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">將 IMDb Top 250 排行榜轉為 CSV</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-14T16:23:00+08:00" pubdate data-updated="true">Dec 14<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://www.imdb.com/chart/top">IMDb Top 250</a> 是許多喜愛電影人士的觀影參考。這份排行榜不知道多久更新一次，今天心血來潮，想要記錄一下目前的排行，然後隔一陣子再來比較。但是如果只是把網頁存下來，或是貼到 Evernote 去，到時候想要比較資料免不了又是一陣人力活，於是想到將排行榜的內容抓下來存為 CSV 檔，以後看是要做進一步的處理或分析都好辦。</p>
+
+<p>所幸有 Python，抓網頁、分析 HTML，以及處理 CSV 檔這些事情不會太難應付。</p>
+
+<p><a href="http://www.flickr.com/photos/tzengyuxio/8271221423/" title="Flickr 上 tzengyuxio 的 imdb-top250-csv"><img src="http://farm9.staticflickr.com/8070/8271221423_ae636b2814.jpg" width="500" height="375" alt="imdb-top250-csv"></a></p>
+
+<!-- more -->
+
+
+<p>用來抓取網頁並轉存 CSV 的工具我放在 Gist 上，<a href="https://gist.github.com/4284108">連結在此</a>，程式不大，120 行左右，其中還有 20 幾行是直接從 Python 文件拿來用的，所以實際寫不到 100 行。</p>
+
+<p>以下就程式碼做個簡單說明：</p>
+
+<ol>
+<li><p>程式主要就 <code>UnicodeWriter</code>, <code>IMDbTop250HTMLParser</code> 這兩個 Class。</p></li>
+<li><p><code>UnicodeWriter</code> 是從 <a href="http://docs.python.org/2/library/csv.html">Python Documentation</a> 直接拿來用的 Class，作用是 unicode 編碼 csv 檔的輸出。</p></li>
+<li><p><code>IMDbTop250HTMLParser</code> 則是繼承自 <code>HTMLParser</code>，繼承後要做的事就是覆寫 <code>handle_starttag</code>, <code>handle_endtag</code>, <code>handle_data</code> 這些個方法。比方說遇到 <code>&lt;tr&gt;</code> 就開始記錄一筆電影資料的 list，等到遇到 <code>&lt;\tr&gt;</code> 時就結束該筆記錄。</p></li>
+</ol>
+
+
+<p>IMDb 這網站有多年歷史了，其 HTML 的撰寫也是相當原始，有許多不規範的地方。這也是撰寫這個小程式時主要遇到的困難點。例如在 IMDb Top 250 頁面的原始碼中有這麼一段：</p>
+
+<p><code>&lt;a href=http://www.imdb.com/games/guess/title:top_250?ref_=ch_qz&gt;</code></p>
+
+<p>注意，在屬性 <code>href</code> 之後的網址前後是沒有引號包夾的，這會造成 <code>HTMLParser</code> 解析時的錯誤。本來是想在 Parse 前把這個連結整個拿掉的，不過算了，這只是個小工具，不需要也不應該大費周章；所以用簡單的 hack 來解決就行。程式碼中的底下兩行有點突兀 (行號 13, 14)，其實就是在幫上述連結加引號。</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;href=http&#39;</span><span class="p">,</span> <span class="s">&#39;href=&quot;http&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;ch_qz&#39;</span><span class="p">,</span> <span class="s">&#39;ch_qz&quot;&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>另一個麻煩就是 IMDb 其實並不真正支援 Unicode，畢竟是那麼多年的老網站了。所以在英文字母之外的文字都會以 <code>&amp;#x1234;</code> 之類的形式出現。例如電影 &#8220;8½&#8221;，這兩個字實際在 HTML 中的樣子是 <code>8&amp;#xBD;</code>。這邊要將十六進位碼（在本例中為 &#8220;xBD&#8221;）轉為對應的 Unicode Char，實際的作法可以看代碼中的 <code>UnicodeWriter.handle_charref()</code> 這個方法。</p>
+
+<p>程式完成後，接著只要執行程式，就會得到以日期為檔名的 CSV 檔，本文最上方的圖片就是成果。圖片中的表格是在 Finder 快速檢視的視窗，如果想要在 Finder 中按空白鍵就能檢視 CSV 檔的內容，可以參考<a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">這篇文章</a>。</p>
+
+<p>喔，對了，寫這程式需要花多少時間？嗯…大概比寫這篇文章的時間還要少一點吧……</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Tzeng Yuxio</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-14T16:23:00+08:00" pubdate data-updated="true">Dec 14<span>th</span>, 2012</time>
+      
+
+
+      
+
+<span class="tags">
+  
+    #<a class='tag' href='/blog/tags/csv/'>csv</a> #<a class='tag' href='/blog/tags/imdb/'>imdb</a> #<a class='tag' href='/blog/tags/python/'>python</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium" data-annotation="inline"></div>
+  
+  
+  <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/09/03/pascals-wager/" title="Previous Post: 帕斯卡的賭注">&laquo; 帕斯卡的賭注</a>
+      
+      
+    </p>
+  </footer>
+</article>
+  <section>
+    <div class="linkwithin_div"></div>
+  </section>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/12/14/fetch-imdb-top-250-into-csv/">將 IMDb Top 250 排行榜轉為 CSV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/03/pascals-wager/">帕斯卡的賭注</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/02/roads-named-after-other-place/">為什麼台北有中國路名？兼談「馬路」一詞由來</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/05/whats-in-your-wallet/">你的錢包裝了什麼？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/04/why-have-the-english-name/">抱歉，我沒有英文名字</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/01/mit-game-jam-dora/">四人兩天開發的《Dora》- MIT Game Jam 心得分享</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/26/game-of-dimension-transformation/">次元轉換遊戲介紹</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tzengyuxio">@tzengyuxio</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tzengyuxio',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tzengyuxio", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tzengyuxio" class="twitter-follow-button" data-show-count="false">Follow @tzengyuxio</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/116861989911994383287?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Tzeng Yuxio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tzyxblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://tzengyuxio.me/blog/2012/12/14/fetch-imdb-top-250-into-csv/';
+        var disqus_url = 'http://tzengyuxio.me/blog/2012/12/14/fetch-imdb-top-250-into-csv/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    window.___gcfg = {lang: 'zh-TW', parsetags: 'onload'};
+    (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+  <script>
+    var linkwithin_site_id = 1254157;
+  </script>
+  <script src="http://www.linkwithin.com/widget.js"></script>
+  <a href="http://linkwithin.com/"><img
+    src="http://www.linkwithin.com/pixel.png" alt="Related Posts Plugin
+    for WordPress, Blogger..." style="border: 0" /></a>
+</body>
+</html>

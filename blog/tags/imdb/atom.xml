@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: imdb | Tzeng Yuxio]]></title>
+  <link href="http://tzengyuxio.me/blog/tags/imdb/atom.xml" rel="self"/>
+  <link href="http://tzengyuxio.me/"/>
+  <updated>2012-12-14T19:23:06+08:00</updated>
+  <id>http://tzengyuxio.me/</id>
+  <author>
+    <name><![CDATA[Tzeng Yuxio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[將 IMDb Top 250 排行榜轉為 CSV]]></title>
+    <link href="http://tzengyuxio.me/blog/2012/12/14/fetch-imdb-top-250-into-csv/"/>
+    <updated>2012-12-14T16:23:00+08:00</updated>
+    <id>http://tzengyuxio.me/blog/2012/12/14/fetch-imdb-top-250-into-csv</id>
+    <content type="html"><![CDATA[<p><a href="http://www.imdb.com/chart/top">IMDb Top 250</a> 是許多喜愛電影人士的觀影參考。這份排行榜不知道多久更新一次，今天心血來潮，想要記錄一下目前的排行，然後隔一陣子再來比較。但是如果只是把網頁存下來，或是貼到 Evernote 去，到時候想要比較資料免不了又是一陣人力活，於是想到將排行榜的內容抓下來存為 CSV 檔，以後看是要做進一步的處理或分析都好辦。</p>
+
+<p>所幸有 Python，抓網頁、分析 HTML，以及處理 CSV 檔這些事情不會太難應付。</p>
+
+<p><a href="http://www.flickr.com/photos/tzengyuxio/8271221423/" title="Flickr 上 tzengyuxio 的 imdb-top250-csv"><img src="http://farm9.staticflickr.com/8070/8271221423_ae636b2814.jpg" width="500" height="375" alt="imdb-top250-csv"></a></p>
+
+<!-- more -->
+
+
+<p>用來抓取網頁並轉存 CSV 的工具我放在 Gist 上，<a href="https://gist.github.com/4284108">連結在此</a>，程式不大，120 行左右，其中還有 20 幾行是直接從 Python 文件拿來用的，所以實際寫不到 100 行。</p>
+
+<p>以下就程式碼做個簡單說明：</p>
+
+<ol>
+<li><p>程式主要就 <code>UnicodeWriter</code>, <code>IMDbTop250HTMLParser</code> 這兩個 Class。</p></li>
+<li><p><code>UnicodeWriter</code> 是從 <a href="http://docs.python.org/2/library/csv.html">Python Documentation</a> 直接拿來用的 Class，作用是 unicode 編碼 csv 檔的輸出。</p></li>
+<li><p><code>IMDbTop250HTMLParser</code> 則是繼承自 <code>HTMLParser</code>，繼承後要做的事就是覆寫 <code>handle_starttag</code>, <code>handle_endtag</code>, <code>handle_data</code> 這些個方法。比方說遇到 <code>&lt;tr&gt;</code> 就開始記錄一筆電影資料的 list，等到遇到 <code>&lt;\tr&gt;</code> 時就結束該筆記錄。</p></li>
+</ol>
+
+
+<p>IMDb 這網站有多年歷史了，其 HTML 的撰寫也是相當原始，有許多不規範的地方。這也是撰寫這個小程式時主要遇到的困難點。例如在 IMDb Top 250 頁面的原始碼中有這麼一段：</p>
+
+<p><code>&lt;a href=http://www.imdb.com/games/guess/title:top_250?ref_=ch_qz&gt;</code></p>
+
+<p>注意，在屬性 <code>href</code> 之後的網址前後是沒有引號包夾的，這會造成 <code>HTMLParser</code> 解析時的錯誤。本來是想在 Parse 前把這個連結整個拿掉的，不過算了，這只是個小工具，不需要也不應該大費周章；所以用簡單的 hack 來解決就行。程式碼中的底下兩行有點突兀 (行號 13, 14)，其實就是在幫上述連結加引號。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;href=http&#39;</span><span class="p">,</span> <span class="s">&#39;href=&quot;http&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="n">html</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;ch_qz&#39;</span><span class="p">,</span> <span class="s">&#39;ch_qz&quot;&#39;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>另一個麻煩就是 IMDb 其實並不真正支援 Unicode，畢竟是那麼多年的老網站了。所以在英文字母之外的文字都會以 <code>&amp;#x1234;</code> 之類的形式出現。例如電影 "8½"，這兩個字實際在 HTML 中的樣子是 <code>8&amp;#xBD;</code>。這邊要將十六進位碼（在本例中為 "xBD"）轉為對應的 Unicode Char，實際的作法可以看代碼中的 <code>UnicodeWriter.handle_charref()</code> 這個方法。</p>
+
+<p>程式完成後，接著只要執行程式，就會得到以日期為檔名的 CSV 檔，本文最上方的圖片就是成果。圖片中的表格是在 Finder 快速檢視的視窗，如果想要在 Finder 中按空白鍵就能檢視 CSV 檔的內容，可以參考<a href="/blog/2012/03/11/tips-for-mac-os-x-quick-look/">這篇文章</a>。</p>
+
+<p>喔，對了，寫這程式需要花多少時間？嗯…大概比寫這篇文章的時間還要少一點吧……</p>
+]]></content>
+  </entry>
+  
+</feed>
