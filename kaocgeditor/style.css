@@ -43,39 +43,42 @@ figcaption {
 
 /* 左侧的下拉菜单和上传按钮 */
 .left {
-  /* float: left; */
-  /* display: inline-block; */
   width: 200px;
   text-align: center;
 }
 
 /* 右侧的拖拽区域和画布 */
 .right {
-  /* float: left; */
-  /* display: inline-block; */
-  /* display: block; */
-  /* width: calc(100% - 200px - 20px); */
   width: 400px;
   margin-right: 10px;
   text-align: center;
   background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 用于拖拽区域的样式 */
 .dropzone {
+  display: inline;
   border: 2px dashed #aaa;
   width: 200px;
   height: 150px;
   margin: 20px auto;
   line-height: 150px;
   font-size: 18px;
-  display: inline-block;
+  float: left;
 }
 
 /* 用于画布的样式 */
-canvas {
-  border: 1px solid #aaa;
+#myCanvas {
+  border: 1px solid #f00;
   margin-top: 20px;
+  width: 72;
+  height: 88;
+  border: 3px;
+  float: right;
+  background: green;
 }
 
 .canvasContainer {
