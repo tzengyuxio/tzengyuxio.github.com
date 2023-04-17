@@ -43,10 +43,11 @@ dateCreated: 2023-04-15T17:59:27.200Z
 
   <!-- 右侧的拖放区域和画布 -->
   <div class="right">
-    <div id="dropzone" class="dropzone" ondragover="event.preventDefault();" ondrop="handleDrop(event)">
+    <!--div id="dropzone" class="dropzone" ondragover="event.preventDefault();" ondrop="handleDrop(event)"-->
+    <div id="dropzone" class="dropzone" ondragover="event.preventDefault();">
       Drop image here
     </div> ->
-    <div id="myCanvas"> a </div>
+    <canvas id="myCanvas"> a </canvas>
   </div>
   </div>
 
@@ -56,6 +57,7 @@ dateCreated: 2023-04-15T17:59:27.200Z
   <div id="canvasContainer"></div>
   <!--canvas id="canvas" width="200" height="200"></canvas-->
 
+  <script src="rgbquant.js"></script>
   <script src="gameinfo.js"></script>
   <script src="app.js"></script>
 

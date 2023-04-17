@@ -29,10 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var faceNames = faceParameters.names;
 
-      // canvas.width = width * num_col;
-      // canvas.height = height * Math.ceil(faceCount / num_col);
-
-      //   const ctx = canvas.getContext("2d");
       for (let i = 0; i < faceCount; i++) {
         var pos = i * faceDataSize;
         var posX = (i % num_col) * width;
@@ -69,6 +65,71 @@ document.addEventListener("DOMContentLoaded", function () {
         canvasContainer.appendChild(newFigure);
       }
     };
+  });
+
+  let dropzone = document.getElementById("dropzone");
+  let mycanvas = document.getElementById("myCanvas");
+  let resizedImg;
+
+  dropzone.addEventListener("drop", function (event) {
+    event.preventDefault();
+    let file = event.dataTransfer.files[0];
+    if (file.type.match(/image.*/)) {
+      let img = new Image();
+      img.onload = function () {
+        let w = img.width;
+        let h = img.height;
+        let scale = Math.max(64 / w, 80 / h);
+        console.log("scale", scale, 64 / w, 80 / h);
+        w *= scale;
+        h *= scale;
+        let tempCanvas = document.createElement("canvas");
+        let ctx = tempCanvas.getContext("2d");
+        tempCanvas.width = w;
+        tempCanvas.height = h;
+        ctx.drawImage(img, 0, 0, w, h);
+
+        resizedImg = new Image();
+        resizedImg.src = tempCanvas.toDataURL("image/jpeg");
+
+        // rgb quant
+        var opts = {
+          colors: 8,
+          method: 1,
+          dithKern: "Atkinson",
+          palette: faceParameters.palette.map(hexToRgb),
+        };
+        var q = new RgbQuant(opts);
+
+        mycanvas.width = 64;
+        mycanvas.height = 80;
+        ctx = mycanvas.getContext("2d");
+        let x = (64 - w) / 2;
+        let y = (80 - h) / 2;
+        ctx.drawImage(resizedImg, x, y, w, h);
+
+        out = q.reduce(mycanvas);
+        console.log("resizedImg", resizedImg);
+        console.log("mycanvas", mycanvas);
+        console.log("out", out);
+        finalImage = ctx.createImageData(64,80);
+        finalImage.data.set(out);
+        ctx.putImageData(finalImage, 0, 0);
+      };
+      let reader = new FileReader();
+      reader.onload = function (event) {
+        img.src = event.target.result;
+
+        var imgEl = document.createElement("img");
+        imgEl.src = event.target.result;
+
+        // 添加图像元素到拖放区域
+        // var dropzone = document.getElementById("dropzone");
+        dropzone.innerHTML = "";
+        dropzone.appendChild(imgEl);
+      };
+      reader.readAsDataURL(file);
+    }
   });
 });
 
@@ -200,7 +261,7 @@ function formatString(str, ...args) {
   return str.replace(/{(\d+)}/g, (match, index) => args[index] || "");
 }
 
-// 处理拖放事件
+/*/ 处理拖放事件
 function handleDrop(event) {
   event.preventDefault();
 
@@ -223,12 +284,21 @@ function handleDrop(event) {
         dropzone.innerHTML = "";
         dropzone.appendChild(img);
       };
+      img.src = URL.createObjectURL(file);
 
       // 读取文件
       reader.readAsDataURL(files[i]);
+
+      // 添加到 myCanvas 元素
+      let canvasEl = document.getElementById("myCanvas");
+      let dataURL = canvasEl.toDataURL(); // 从 canvas 获取 Data URL
+      let imgEl = document.createElement("img");
+      imgEl.src = dataURL;
+      canvasEl.after(imgEl);
     }
   }
 }
+*/
 
 // 在画布上绘制圆形
 // drawCircle();
