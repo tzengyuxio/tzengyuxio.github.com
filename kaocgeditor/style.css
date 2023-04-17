@@ -81,10 +81,8 @@ figcaption {
   background: green;
 }
 
-.canvasContainer {
-  width: 400px;
-  height: 400px;
+#canvasContainer {
   margin: 0 auto;
-  background-color: darkolivegreen;
+  background-color: rgb(255, 255, 255);
   max-width: 1024px;
 }
