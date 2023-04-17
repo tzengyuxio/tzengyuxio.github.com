@@ -13,34 +13,51 @@ dateCreated: 2023-04-15T17:59:27.200Z
 <head>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>顏CG編輯器</h1>
+  <h1>顏CG編輯器</h1>
 
-<p>Some text here</p>
+  <p>Some text here</p>
 
-<!-- 上傳檔案用的按鈕和下拉式選單 -->
-<select id="selectOption" onchange="checkButtonStatusByOption()">
-  <option value="" disabled selected>Select an option</option>
-  <option value="san2">三國志II</option>
-  <option value="san3">三國志III</option>
-  <option value="kohryuki">項劉記</option>
-  <option value="suikoden">水滸傳</option>
-</select>
-<!-- 顯示選項值的區塊 -->
-請上傳：<span id="selectedOption"></span>
-<input type="file" id="fileInput" onchange="checkButtonStatusByFileInput()" disabled>
+  <div class="container">
+  <div class="left">
+    <!-- 上傳檔案用的按鈕和下拉式選單 -->
+    <select id="selectOption" onchange="checkButtonStatusByOption()">
+      <option value="" disabled selected>Select an option</option>
+      <option value="san2">三國志II</option>
+      <option value="san3">三國志III</option>
+      <option value="kohryuki">項劉記</option>
+      <option value="suikoden">水滸傳</option>
+    </select>
+    <!-- 顯示選項值的區塊 -->
+    請上傳：<span id="selectedOption"></span>
+    <input type="file" id="fileInput" onchange="checkButtonStatusByFileInput()" disabled>
 
-<!-- 下載檔案的按鈕 -->
-<button onclick="downloadFile()" id="downloadButton" disabled>Download file</button>
+    <!-- 下載檔案的按鈕 -->
+    <button onclick="downloadFile()" id="downloadButton" disabled>Download file</button>
+  </div>
 
-<hr />
+  <!-- 分割線 -->
+  <div class="divider"></div>
 
-<!-- 畫圖的 canvas -->
-<div id="canvasContainer" style="max-width:1024px"></div>
-<canvas id="canvas" width="200" height="200"></canvas>
+  <!-- 右侧的拖放区域和画布 -->
+  <div class="right">
+    <div id="dropzone" class="dropzone" ondragover="event.preventDefault();" ondrop="handleDrop(event)">
+      Drop image here
+    </div>
+    <canvas id="myCanvas" width="64" height="80"></canvas>
+  </div>
+  </div>
 
-<script src="app.js"></script>
+  <hr/>
+
+  <!-- 畫圖的 canvas -->
+  <div id="canvasContainer"></div>
+  <!--canvas id="canvas" width="200" height="200"></canvas-->
+
+  <script src="app.js"></script>
 
 </body>
+
 </html>

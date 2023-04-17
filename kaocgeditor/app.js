@@ -45,7 +45,7 @@ let optionDict = {
       "夏侯惇",
       "夏侯德",
       "夏侯霸",
-      "",
+      "華佗",
       "華雄",
       "關羽",
       "韓玄",
@@ -210,14 +210,14 @@ let optionDict = {
       "閻圃",
       "",
       "新武將",
-      "",
       "新武將",
       "新武將",
       "新武將",
-      "",
       "新武將",
       "新武將",
-      "",
+      "新武將",
+      "新武將",
+      "新武將",
       "新武將",
       "新武將",
       "新武將",
@@ -956,11 +956,11 @@ let optionDict = {
       "鄧龍",
       "劉高",
       "毛仲義",
-      "",
-      "",
-      "",
+      "造船所",
+      "雜貨店",
+      "兵工廠",
       "徽宗皇帝",
-      "",
+      "太宗",
     ],
   },
 };
@@ -1028,8 +1028,8 @@ document.addEventListener("DOMContentLoaded", function () {
         newCanvas.height = height;
         var newCtx = newCanvas.getContext("2d");
         newCtx.putImageData(faceImage, 0, 0);
-        newFigcaption.appendChild(document.createTextNode(i+1));
-        newFigcaption.appendChild(document.createElement('br'));
+        newFigcaption.appendChild(document.createTextNode(i + 1));
+        newFigcaption.appendChild(document.createElement("br"));
         newFigcaption.appendChild(document.createTextNode(captionText));
         newFigure.appendChild(newCanvas);
         newFigure.appendChild(newFigcaption);
@@ -1105,12 +1105,12 @@ function grouper(arr, size, fillValue = null) {
 
 function checkButtonStatusByOption() {
   deleteSubtree(canvasContainer);
-  checkButtonStatus()
+  checkButtonStatus();
 }
 
 function checkButtonStatusByFileInput() {
   deleteSubtree(canvasContainer);
-  checkButtonStatus()
+  checkButtonStatus();
 }
 
 /* 檢查按鈕狀態 */
@@ -1166,3 +1166,36 @@ function hexToRgb(hex) {
 function formatString(str, ...args) {
   return str.replace(/{(\d+)}/g, (match, index) => args[index] || "");
 }
+
+// 处理拖放事件
+function handleDrop(event) {
+  event.preventDefault();
+
+  // 获取拖放事件中的文件列表
+  var files = event.dataTransfer.files;
+
+  // 循环处理每个文件
+  for (var i = 0; i < files.length; i++) {
+    // 只处理图像类型的文件
+    if (files[i].type.match(/^image\//)) {
+      var reader = new FileReader();
+
+      // 获取文件并在拖放区域内显示
+      reader.onload = function (event) {
+        var img = document.createElement("img");
+        img.src = event.target.result;
+
+        // 添加图像元素到拖放区域
+        var dropzone = document.getElementById("dropzone");
+        dropzone.innerHTML = "";
+        dropzone.appendChild(img);
+      };
+
+      // 读取文件
+      reader.readAsDataURL(files[i]);
+    }
+  }
+}
+
+// 在画布上绘制圆形
+drawCircle();

@@ -18,3 +18,70 @@ figcaption {
   margin-top: 0px;
   color: #666;
 }
+
+/* 布局容器 */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left .divider .right {
+  flex-grow: 1;
+}
+
+/* 用來分割左右兩塊的圆弧框线 */
+.divider {
+  /* float: left; */
+  border-radius: 50%;
+  width: 6px;
+  height: 100px;
+  background-color: #ddd;
+  margin: 0 10px;
+  /* display: inline-block; */
+}
+
+/* 左侧的下拉菜单和上传按钮 */
+.left {
+  /* float: left; */
+  /* display: inline-block; */
+  width: 200px;
+  text-align: center;
+}
+
+/* 右侧的拖拽区域和画布 */
+.right {
+  /* float: left; */
+  /* display: inline-block; */
+  /* display: block; */
+  /* width: calc(100% - 200px - 20px); */
+  width: 400px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: aqua;
+}
+
+/* 用于拖拽区域的样式 */
+.dropzone {
+  border: 2px dashed #aaa;
+  width: 200px;
+  height: 150px;
+  margin: 20px auto;
+  line-height: 150px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* 用于画布的样式 */
+canvas {
+  border: 1px solid #aaa;
+  margin-top: 20px;
+}
+
+.canvasContainer {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: darkolivegreen;
+  max-width: 1024px;
+}
