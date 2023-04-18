@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       for (let i = 0; i < faceCount; i++) {
         var pos = i * faceDataSize;
-        var posX = (i % num_col) * width;
-        var posY = Math.floor(i / num_col) * height;
         var faceData = uint8Buffer.slice(pos, pos + faceDataSize);
         faceImage = dataToImage(
           faceData,
@@ -40,29 +38,35 @@ document.addEventListener("DOMContentLoaded", function () {
           height,
           faceParameters.halfHeight
         );
-        // ctx.putImageData(faceImage, posX, posY);
 
-        // var captionText = formatString(
-        //   "{0} {1}",
-        //   i + 1,
-        //   faceNames[i] === "" ? "(無名)" : faceNames[i]
-        // );
         var captionText = faceNames[i] === "" ? "(無名)" : faceNames[i];
 
-        // add a new canvas in the container, and copy the image data to it
-        var newFigure = document.createElement("figure");
-        var newCanvas = document.createElement("canvas");
-        var newFigcaption = document.createElement("figcaption");
-        newCanvas.width = width;
-        newCanvas.height = height;
-        var newCtx = newCanvas.getContext("2d");
-        newCtx.putImageData(faceImage, 0, 0);
-        newFigcaption.appendChild(document.createTextNode(i + 1));
-        newFigcaption.appendChild(document.createElement("br"));
-        newFigcaption.appendChild(document.createTextNode(captionText));
-        newFigure.appendChild(newCanvas);
-        newFigure.appendChild(newFigcaption);
-        canvasContainer.appendChild(newFigure);
+        createImage(faceImage, canvasContainer, i, captionText);
+        const figures = canvasContainer.querySelectorAll("figure");
+
+        // 在每個 figure element 上綁定 click event
+        figures.forEach((figure) => {
+          figure.addEventListener("click", (event) => {
+            event.stopPropagation(); // 阻止事件冒泡，避免多個 figure 同時被選中
+            const isSelected = figure.classList.toggle("selected"); // 切換選中狀態
+            if (isSelected) {
+              figure.style.outline = "3px solid red"; // 設置紅色編框
+            } else {
+              figure.style.outline = "none"; // 取消邊框樣式
+            }
+          });
+        });
+
+        // 給指定按鈕綁定 click event
+        const btn = document.getElementById("apply");
+        btn.addEventListener("click", (event) => {
+          const selectedFigure = canvasContainer.querySelector(".selected");
+          if (selectedFigure) {
+            // selectedFigure.remove();
+            selectedFigure.classList.add("dirty");
+            selectedFigure.style.backgroundColor = "green";
+          }
+        });
       }
     };
   });
@@ -112,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("resizedImg", resizedImg);
         console.log("mycanvas", mycanvas);
         console.log("out", out);
-        finalImage = ctx.createImageData(64,80);
+        finalImage = ctx.createImageData(64, 80);
         finalImage.data.set(out);
         ctx.putImageData(finalImage, 0, 0);
       };
@@ -261,44 +265,34 @@ function formatString(str, ...args) {
   return str.replace(/{(\d+)}/g, (match, index) => args[index] || "");
 }
 
-/*/ 处理拖放事件
-function handleDrop(event) {
-  event.preventDefault();
+function createImage(imageData, parentNode, i, captionText) {
+  const figure = document.createElement("figure");
+  const canvas = document.createElement("canvas");
+  canvas.width = imageData.width;
+  canvas.height = imageData.height;
+  const context = canvas.getContext("2d");
+  context.putImageData(imageData, 0, 0);
+  const dataURL = canvas.toDataURL();
 
-  // 获取拖放事件中的文件列表
-  var files = event.dataTransfer.files;
+  /*/ 自定義檔案名稱並創建下載連結
+  const filename = formatString("face_{0}_{1}.png", i + 1, captionText);
+  const a = document.createElement("a");
+  a.href = dataURL;
+  a.download = filename;
+  parentNode.appendChild(a);
 
-  // 循环处理每个文件
-  for (var i = 0; i < files.length; i++) {
-    // 只处理图像类型的文件
-    if (files[i].type.match(/^image\//)) {
-      var reader = new FileReader();
+  // 點擊下載連結時，下載圖片
+  a.click();
+  parentNode.removeChild(a);
+  */
 
-      // 获取文件并在拖放区域内显示
-      reader.onload = function (event) {
-        var img = document.createElement("img");
-        img.src = event.target.result;
-
-        // 添加图像元素到拖放区域
-        var dropzone = document.getElementById("dropzone");
-        dropzone.innerHTML = "";
-        dropzone.appendChild(img);
-      };
-      img.src = URL.createObjectURL(file);
-
-      // 读取文件
-      reader.readAsDataURL(files[i]);
-
-      // 添加到 myCanvas 元素
-      let canvasEl = document.getElementById("myCanvas");
-      let dataURL = canvasEl.toDataURL(); // 从 canvas 获取 Data URL
-      let imgEl = document.createElement("img");
-      imgEl.src = dataURL;
-      canvasEl.after(imgEl);
-    }
-  }
+  const img = document.createElement("img");
+  img.src = dataURL;
+  const figcaption = document.createElement("figcaption");
+  figcaption.appendChild(document.createTextNode(i + 1));
+  figcaption.appendChild(document.createElement("br"));
+  figcaption.appendChild(document.createTextNode(captionText));
+  figure.appendChild(img);
+  figure.appendChild(figcaption);
+  parentNode.appendChild(figure);
 }
-*/
-
-// 在画布上绘制圆形
-// drawCircle();
