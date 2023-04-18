@@ -1,5 +1,14 @@
 let faceParameters;
 
+// TODO:
+// 7. [ ] single select of figure
+// 1. [ ] apply button
+// 6. [ ] refactor drag-and-drop and resize
+// 2. [ ] save and download button
+// 4. [ ] clipboard copy (add, remove)
+// 5. [ ] clipboard redraw when game changed with different palette, keep uint8array and img
+// 3. [ ] resize and apply of half-height image
+
 document.addEventListener("DOMContentLoaded", function () {
   const fileInput = document.getElementById("fileInput");
   const canvas = document.getElementById("canvas");
@@ -16,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const uint8Buffer = new Uint8Array(arrayBuffer);
       let width = faceParameters.width;
       let height = faceParameters.height;
-      let num_col = 16;
 
       var faceDataSize = faceParameters.halfHeight
         ? (width * height * 3) / 8 / 2
