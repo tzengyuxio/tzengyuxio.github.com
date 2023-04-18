@@ -42,32 +42,31 @@ document.addEventListener("DOMContentLoaded", function () {
         var captionText = faceNames[i] === "" ? "(無名)" : faceNames[i];
 
         createImage(faceImage, canvasContainer, i, captionText);
-        const figures = canvasContainer.querySelectorAll("figure");
-
-        // 在每個 figure element 上綁定 click event
-        figures.forEach((figure) => {
-          figure.addEventListener("click", (event) => {
-            event.stopPropagation(); // 阻止事件冒泡，避免多個 figure 同時被選中
-            const isSelected = figure.classList.toggle("selected"); // 切換選中狀態
-            if (isSelected) {
-              figure.style.outline = "3px solid red"; // 設置紅色編框
-            } else {
-              figure.style.outline = "none"; // 取消邊框樣式
-            }
-          });
-        });
-
-        // 給指定按鈕綁定 click event
-        const btn = document.getElementById("apply");
-        btn.addEventListener("click", (event) => {
-          const selectedFigure = canvasContainer.querySelector(".selected");
-          if (selectedFigure) {
-            // selectedFigure.remove();
-            selectedFigure.classList.add("dirty");
-            selectedFigure.style.backgroundColor = "green";
+      }
+      // 在每個 figure element 上綁定 click event
+      const figures = canvasContainer.querySelectorAll("figure");
+      figures.forEach((figure) => {
+        figure.addEventListener("click", (event) => {
+          event.stopPropagation(); // 阻止事件冒泡，避免多個 figure 同時被選中
+          const isSelected = figure.classList.toggle("selected"); // 切換選中狀態
+          if (isSelected) {
+            figure.style.outline = "3px solid red"; // 設置紅色編框
+          } else {
+            figure.style.outline = "none"; // 取消邊框樣式
           }
         });
-      }
+      });
+
+      // 給指定按鈕綁定 click event
+      const btn = document.getElementById("apply");
+      btn.addEventListener("click", (event) => {
+        const selectedFigure = canvasContainer.querySelector(".selected");
+        if (selectedFigure) {
+          // selectedFigure.remove();
+          selectedFigure.classList.add("dirty");
+          selectedFigure.style.backgroundColor = "green";
+        }
+      });
     };
   });
 
