@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kaocgeditor/static/css/main.981fa2ba.css",
-    "main.js": "/kaocgeditor/static/js/main.23ffc269.js",
+    "main.js": "/kaocgeditor/static/js/main.926ebc64.js",
     "static/js/787.39674ae9.chunk.js": "/kaocgeditor/static/js/787.39674ae9.chunk.js",
     "index.html": "/kaocgeditor/index.html",
     "main.981fa2ba.css.map": "/kaocgeditor/static/css/main.981fa2ba.css.map",
-    "main.23ffc269.js.map": "/kaocgeditor/static/js/main.23ffc269.js.map",
+    "main.926ebc64.js.map": "/kaocgeditor/static/js/main.926ebc64.js.map",
     "787.39674ae9.chunk.js.map": "/kaocgeditor/static/js/787.39674ae9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.981fa2ba.css",
-    "static/js/main.23ffc269.js"
+    "static/js/main.926ebc64.js"
   ]
 }
